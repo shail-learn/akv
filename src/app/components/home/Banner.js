@@ -48,7 +48,7 @@ export const Banner2 = () => {
     return (
         <>
             <div
-                className="bg-cover bg-center relative pt-20 pb-20  lg:pt-28 lg:pb-28 flex items-center justify-center"
+                className="bg-cover bg-center relative pt-14 pb-20  lg:pt-28 lg:pb-28 flex items-center justify-center"
                 style={{ backgroundImage: `url(${banner2.src})` }}
             >
                 <div className="absolute  right-0 bottom-0">
@@ -65,7 +65,7 @@ export const Banner2 = () => {
                             alt="shape"
                             className='w-20 lg:w-24'
                         />
-                        <h2 className="lg:leading-snug cofee poppins text-2xl md:text-4xl   font-light   w-full"> "{text.heading1} <br />  {text.heading2}"</h2>
+                        <h2 className="lg:leading-snug cofee poppins text-2xl md:text-4xl  font-light  w-full"> "{text.heading1} <br />  {text.heading2}"</h2>
 
 
 
