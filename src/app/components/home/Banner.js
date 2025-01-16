@@ -7,6 +7,10 @@ import icon from "../../../assets/images/logo-icon.svg";
 
 
 
+
+
+
+
 import Image from 'next/image';
 import Link from 'next/link';
 export const Banner = () => {
@@ -23,7 +27,7 @@ export const Banner = () => {
                 <div className="absolute inset-0 bg-black opacity-40"></div>
                 <div className="relative text-center z-1 flex flex-wrap items-center justify-center">
                     <div className='w-11/12 md:w-3/4 lg:w-8/12'>
-                        <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-light w-full">  {text.heading}</h1>
+                        <h1 className="text-white text-3xl md:text-4xl lg:leading-tight lg:text-5xl font-light w-full">  {text.heading}</h1>
 
                         <p className='w-full text-white italic mt-7 mb-7 lg:mt-10 lg:mb-10'>
                             {text.title}
@@ -71,6 +75,33 @@ export const Banner2 = () => {
 
                     </div>
                 </div>
+            </div>
+
+        </>
+    )
+}
+
+
+
+
+export const VedioHome = () => {
+     const vedio = "https://cruxcreativedemo2.com/web-image/Website-Banner-AKV.mp4"
+    return (
+        <>
+            <div
+                className="bg-cover bg-center relative " >
+
+
+                  <div className="iframe-container">
+      {/* <iframe
+        src={vedio}
+        controls={false}
+        className="w-full h-auto"
+        frameBorder="0"
+        allow="autoplay"
+      /> */}
+       <video className='w-full h-full' src={vedio} autoPlay={true} loop muted></video>
+    </div>
             </div>
 
         </>

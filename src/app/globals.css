@@ -112,6 +112,57 @@ z-index: 1;
 .journey-line li:nth-child(even) {
  transform: translateX(4px) rotate(240deg);
 }
+.card1:hover img{
+  filter: brightness(0) invert(1);
+}
+
+.outer-arrow .mySwiper2 {
+  padding: 2rem 0;
+}
+.left-outer .mySwiper2 {
+  padding-left: 4rem;
+}
+.green_icon_slider.outer_arrow .swiper-button-next, .green_icon_slider.outer_arrow .swiper-button-prev{
+ background: transparent;
+}
+.green_icon_slider .swiper-button-next::after, .green_icon_slider .swiper-button-prev::after{
+  font-size: 1.8rem;
+  color: #000;
+  font-weight: 500;
+}
+
+.outer_hide_slider .mySwiper2::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:40px;
+  height: 100%;
+  background: #fff;
+  z-index: 2;
+
+}
+.active_gold .swiper-slide.swiper-slide-active .rounded-3xl {
+  background: #D2AE6D;
+  transform: scale(1.1);
+}
+.active_gold .swiper-slide.swiper-slide-active .rounded-3xl img{
+  filter: brightness(0) invert(1);
+}
+.active_gold .swiper-slide.swiper-slide-active .rounded-3xl h2{
+  color: #634E29;
+}
+.active_gold .swiper-slide.swiper-slide-active .rounded-3xl p{
+  color:#3D2E14;
+  display: block;
+}
+.active_gold .swiper-slide p{
+  display: none;
+}
+.active_gold .swiper-wrapper{
+  align-items: center;
+}
+
 
 @media(min-width:1024px){
   .vision-sec .swiper-slide-next{
@@ -131,6 +182,16 @@ z-index: 1;
   .vision-sec .swiper-slide-next .item_slider img{
     filter: brightness(0) invert(1);
 
+  }
+  .outer_hide_slider .mySwiper2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    background: linear-gradient(89deg, #fff0 -25.84%, #fffffff5 95.85%);
+    z-index: 9;
   }
 
 }
@@ -184,5 +245,20 @@ z-index: 1;
 }
 .journey-line{
   width: 50px;
+}
+.left-outer .mySwiper2{
+  padding: 2rem 1.6rem;
+}
+.left-outer .swiper-button-next{
+   right: 0;
+}
+.left-outer .swiper-button-prev{
+  left: 0;
+}
+.outer_hide_slider .mySwiper2:after{
+ background: transparent;
+}
+.active_gold .swiper-slide.swiper-slide-active .rounded-3xl {
+  transform: scale(1);
 }
 }

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import {Banner,Banner2} from "./components/home/Banner";
+import {Banner,VedioHome} from "./components/home/Banner";
 import WhatWeDo from "./components/home/WhatWeDo";
 import ImpactHighlights from "./components/home/impactHighlights";
 import { OurBusiness } from "./components/home/OurBusiness";
@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <>
      <Banner/>
-     <Banner2/>
+     <VedioHome/>
      <WhatWeDo/>
      <ImpactHighlights/>
      <OurBusiness/>
