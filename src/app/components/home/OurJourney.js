@@ -12,33 +12,9 @@ import Link from 'next/link';
 export const OurJourney = () => {
 
     const journey = [
+
         {
-            year: "2018",
-            title: "Inception and Early Challenges",
-            description: "Acquired 400 acres of barren land. ꟷ Initiated land development and plantation efforts.             Overcame hurdles in water harvesting, biological processes, and  creating efficient water, electricity, and labor management  systems."
-        },
-        {
-            year: "2019",
-            title: "Inception and Early Challenges",
-            description: "Acquired 400 acres of barren land. ꟷ Initiated land development and plantation efforts.             Overcame hurdles in water harvesting, biological processes, and  creating efficient water, electricity, and labor management  systems."
-        },
-        {
-            year: "2020",
-            title: "Inception and Early Challenges",
-            description: "Acquired 400 acres of barren land. ꟷ Initiated land development and plantation efforts.             Overcame hurdles in water harvesting, biological processes, and  creating efficient water, electricity, and labor management  systems."
-        },
-        {
-            year: "2021",
-            title: "Inception and Early Challenges",
-            description: "Acquired 400 acres of barren land. ꟷ Initiated land development and plantation efforts.             Overcame hurdles in water harvesting, biological processes, and  creating efficient water, electricity, and labor management  systems."
-        },
-        {
-            year: "2022",
-            title: "Inception and Early Challenges",
-            description: "Acquired 400 acres of barren land. ꟷ Initiated land development and plantation efforts.             Overcame hurdles in water harvesting, biological processes, and  creating efficient water, electricity, and labor management  systems."
-        },
-        {
-            year: "2023",
+            year: "2025",
             title: "Inception and Early Challenges",
             description: "Acquired 400 acres of barren land. ꟷ Initiated land development and plantation efforts.             Overcame hurdles in water harvesting, biological processes, and  creating efficient water, electricity, and labor management  systems."
         },
@@ -48,10 +24,36 @@ export const OurJourney = () => {
             description: "Acquired 400 acres of barren land. ꟷ Initiated land development and plantation efforts.             Overcame hurdles in water harvesting, biological processes, and  creating efficient water, electricity, and labor management  systems."
         },
         {
-            year: "2025",
+            year: "2023",
             title: "Inception and Early Challenges",
             description: "Acquired 400 acres of barren land. ꟷ Initiated land development and plantation efforts.             Overcame hurdles in water harvesting, biological processes, and  creating efficient water, electricity, and labor management  systems."
         },
+        {
+            year: "2022",
+            title: "Inception and Early Challenges",
+            description: "Acquired 400 acres of barren land. ꟷ Initiated land development and plantation efforts.             Overcame hurdles in water harvesting, biological processes, and  creating efficient water, electricity, and labor management  systems."
+        },
+        {
+            year: "2021",
+            title: "Inception and Early Challenges",
+            description: "Acquired 400 acres of barren land. ꟷ Initiated land development and plantation efforts.             Overcame hurdles in water harvesting, biological processes, and  creating efficient water, electricity, and labor management  systems."
+        },
+        {
+            year: "2020",
+            title: "Inception and Early Challenges",
+            description: "Acquired 400 acres of barren land. ꟷ Initiated land development and plantation efforts.             Overcame hurdles in water harvesting, biological processes, and  creating efficient water, electricity, and labor management  systems."
+        },
+        {
+            year: "2019",
+            title: "Inception and Early Challenges",
+            description: "Acquired 400 acres of barren land. ꟷ Initiated land development and plantation efforts.             Overcame hurdles in water harvesting, biological processes, and  creating efficient water, electricity, and labor management  systems."
+        },
+        {
+            year: "2018",
+            title: "Inception and Early Challenges",
+            description: "Acquired 400 acres of barren land. ꟷ Initiated land development and plantation efforts.             Overcame hurdles in water harvesting, biological processes, and  creating efficient water, electricity, and labor management  systems."
+        },
+
     ]
 
     const [activeIndex, setActiveIndex] = useState(journey.length - 1);
@@ -97,7 +99,7 @@ export const OurJourney = () => {
                                 {journey.map((item, index) => (
                                     <div
                                     style={{
-                                        marginTop: `${3 * (index + 1)}%`, // Dynamic margin-top calculation
+                                        marginTop: `${3 * (index + 1)}%`,
                                       }}
                                         key={index}
                                         className={`div-${index + 1}  ${activeIndex === index ? "block fade-in transition delay-150 duration-300 ease-in-out" : "hidden"
