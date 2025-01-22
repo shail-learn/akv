@@ -6,22 +6,22 @@ import Image from 'next/image';
 import Link from 'next/link';
 const ImpactHighlights = () => {
     const text = {
-        heading: 'Making a Difference, One Tree at a Time',
-        title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis consectetur neque. Integer vel rutrum neque, a fermentum dolor. Aliquam erat volutpat. Nullam auctor, justo eu sollicitudin suscipit, ipsum odio tempor velit, ut fermentum ipsum libero vel justo.'
+        heading: 'We Believe in Making a Real Green Revolution',
+        title: 'At Atulye Krishi Van, we are committed to building the world’s most impactful agri-company through sustainable agriculture and agroforestry. Our mission is to address climate change, global warming, and greenhouse gas emissions while fostering environmental resilience. <br> Our journey began in Madhya Pradesh, India, with a flagship project focused on sustainable forestry and organic plantations. By creating ecosystems that balance resource generation with environmental preservation, we aim to secure a prosperous and sustainable future for generations to come.'
     }
     const card = [
         {
-            description: 'More than 175,000 trees growing strong',
+            description: 'Over 500 Acres of Forest Planted',
             icon: icon1,
 
         },
         {
-            description: 'Over 400 acres of forest planted',
+            description: 'Planted Over 1,75,000 Trees',
             icon: icon1,
 
         },
         {
-            description: ' Carbon emissions reduced through sustainable forestry',
+            description: 'Reduced Carbon Footprinted',
             icon: icon1,
 
         }
@@ -36,12 +36,12 @@ const ImpactHighlights = () => {
                 <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2 relative z-1 '>
                     <div className='mx-auto lg:w-10/12 w-12/12'>
                         <div className='flex flex-col lg:flex-row justify-between items-center gap-4 lg:gap-12'>
-                            <div className='lg:w-4/12  w-12/12'>
+                            <div className='lg:w-5/12  w-12/12'>
                                 <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-normal redhat text-white'>{text.heading}</h2>
                             </div>
                             <div className='lg:w-6/12  w-12/12'>
-                                <p className='text-white text-sm font-light text-light italic'>
-                                    {text.title}
+                                <p className='text-white text-sm font-light text-light italic' dangerouslySetInnerHTML={{ __html: text.title }}>
+
                                 </p>
                             </div>
                         </div>
