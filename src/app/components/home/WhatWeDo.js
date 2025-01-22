@@ -9,7 +9,7 @@ import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 
-import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
+import { FreeMode, Navigation, Thumbs, Autoplay } from 'swiper/modules';
 import Link from 'next/link';
 
 
@@ -19,7 +19,7 @@ function WhatWeDo() {
     const text = [
 
         {
-            description: "<b>Atulye Krishi Vana</b>, incorporated in September 2018, is an agriventure based in New Delhi, India. Our first project, covering 400 acres in Madhya Pradesh, includes over 175,000 trees across multiple species. With state-of-the-art farming techniques, we promote agroforestry that provides fresh air, clean water, and a sustainable livelihood. </br></br> Our dedication to protecting life and resources continues to expand across different states as we finalize regulatory formalities for future projects."
+            description: "<b>Established in 2018, Atulye Krishi Vana</b>, stands at the forefront of agroforestry innovation, driving sustainable solutions for a better planet. Dedicated to transforming degraded landscapes into thriving, biodiverse ecosystems, we are committed to addressing climate change while fostering economic growth. As a leader in sustainable agriculture, our mission is to redefine land restoration and create long-lasting value for communities and the environment alike."
 
         },
 
@@ -61,7 +61,7 @@ function WhatWeDo() {
                          </div>
                     </div>
                     <div className='md:min-h-28 rounded md:col-span-7'>
-                         <div className='grid gap-8 lg:gap-12 grid-cols-1 lg:grid-cols-12'>
+                         <div className='grid gap-8 lg:gap-10 grid-cols-1 lg:grid-cols-12'>
                             <div className='md:col-span-9 '>
                             <Swiper
                             style={{
@@ -71,7 +71,11 @@ function WhatWeDo() {
                             spaceBetween={10}
                             navigation={true}
                             thumbs={{ swiper: thumbsSwiper }}
-                            modules={[FreeMode, Navigation, Thumbs]}
+                            autoplay={{
+                                delay: 2000,
+                                disableOnInteraction: false,
+                              }}
+                            modules={[FreeMode, Navigation, Thumbs,Autoplay]}
                             className="mySwiperMain w-full outer_arrow"
                         >
                             {sliderImages.map((item, index) => (
@@ -99,7 +103,8 @@ function WhatWeDo() {
                             slidesPerView={3}
                             freeMode={true}
                             watchSlidesProgress={true}
-                            modules={[FreeMode, Navigation, Thumbs]}
+
+                            modules={[FreeMode, Navigation, Thumbs ]}
                             className="mySwiperThumbs w-full h-auto lg:h-96"
                             breakpoints={{
 

@@ -8,6 +8,9 @@ import 'swiper/css/navigation';
 import Image from 'next/image';
 import icon1 from "../../../assets/images/business/eco-friendly.svg";
 
+import banner from "../../../assets/images/business/Banner-Agroforestry.webp";
+
+
 export const OurApproach = () => {
   const heading=" Our Approach to Agroforestry"
   const shortdescription= "Our mission is built on three core pillars:"
@@ -49,7 +52,7 @@ export const OurApproach = () => {
   return (
     <>
        <section
-        className=" bg-white   pt-14 pb-14 lg:pt-14 lg:pb-14 outer-arrow left-outer green_icon_slider outer_hide_slider active_gold" >
+        className=" bg-white   pt-10 pb-8 lg:pt-14 lg:pb-14 outer-arrow left-outer green_icon_slider outer_hide_slider active_gold" >
         <div className='mx-auto max-w-[1400px] md:mr-0 px-4 md:px-8 lg:px-2 '>
           <div className='flex flex-wrap lg:flex-nowrap items-center gap-6 px-0 md:px-6    lg:px-2'>
             <div className='w-full lg:w-3/12 '>
@@ -126,4 +129,18 @@ export const OurApproach = () => {
       </section>
     </>
   )
+}
+
+
+
+export const Plantbanner = () => {
+
+  return (
+    <>
+    <section>
+     <Image className='w-full h-full'  alt="plant banner" src={banner} />
+    </section>
+    </>
+  )
+
 }
