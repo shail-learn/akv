@@ -14,6 +14,7 @@ import Image from 'next/image';
 
 
 export const OurBusiness = () => {
+    const heading = "Our Commitment to a Sustainable Tomorrow"
     const boxslider = [
         {
             image: icon1,
@@ -22,18 +23,18 @@ export const OurBusiness = () => {
         },
         {
             image: icon2,
-            title: 'Soil Conservation:',
-            description: 'Protecting the soil from  degradation, deterioration, and  erosion through best practices  and continuously developing it  as a living ecosystem.',
+            title: 'Soil Conservation and Water Management',
+            description: 'Protecting and reclamation of degraded soil ',
         },
         {
             image: icon3,
-            title: 'Carbon  Sequestration:',
-            description: 'Combatting climate  change.',
+            title: 'Carbon Sequestration and Climate Change Mitigation',
+            description: 'Reducing atmospheric carbon through sustainable practices.',
         },
         {
             image: icon1,
-            title: 'Afforestation, Reforestation, and Revegetation:',
-            description: 'Transforming unused  barren land.',
+            title: 'Biodiversity Preservation and Habitat Restoration ',
+            description: 'Enhancing ecosystems and safeguarding diverse species.',
         },
         {
             image: icon2,
@@ -49,9 +50,11 @@ export const OurBusiness = () => {
     return (
         <>
             <section
-                className=" bg-white   pt-12 pb-16 lg:pt-16 lg:pb-24 long_arrow" >
+                className=" bg-white   pt-12 pb-16 lg:pt-16 lg:pb-24 outer-arrow arrow_black gray_circle inner-arrow" >
                 <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2 '>
-                    <h2 className="lg:leading-snug text-black redhat mb-8 text-center text-3xl md:text-4xl  font-normal  w-full"> Our Business</h2>
+                    <h2 className="lg:leading-snug text-black redhat mb-8 text-center text-3xl md:text-4xl  font-normal  w-full">
+                         {heading}</h2>
+
                 </div>
                 <div className='mx-auto  px-4 md:px-8 lg:px-10 '>
                     <div className='bg-cover rounded-2xl px-4 py-14' style={{ backgroundImage: `url(${banner.src})` }}>
@@ -92,7 +95,7 @@ export const OurBusiness = () => {
 
                                     {boxslider.map((item, index) => (
                                         <SwiperSlide key={index}>
-                                            <div className='w-[110%] md:w-full h-96 lg:h-80 text-center px-8 lg:px-16 py-8 bg-[#fffafaca] bg-opacity-6'>
+                                            <div className='w-[110%] md:w-full h-96 lg:h-[400px] text-center px-8 lg:px-16 py-8 bg-[#fffafaca] bg-opacity-6'>
                                                 <div className='lg:w-12/12 mx-auto'>
                                                     <div className='grid gap-2 items-center justify-center'>
                                                         <Image src={item.image} alt='icon' className='w-16 lg:w-20 lg:h-20 mx-auto' />
