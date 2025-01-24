@@ -39,7 +39,7 @@ export const Ourteam = () => {
 
   return (
     <>
-        <section className="container  pb-0 lg:pb-20  lg:py-0 ">
+        <section className="container mx-auto pb-0 lg:pb-20  lg:py-0 ">
         <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2 '>
       <h4 className="text-3xl md:text-4xl redhat text-center mb-8">
       Our Visionary <span className="text-[#498A8A]">Team</span>

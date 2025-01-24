@@ -32,7 +32,7 @@ export const WorkingOn = () => {
     },
     {
       image: icon1,
-      description: 'Shri Tulsidas Ji Panchvati Vatika : A combination of 5 trees Pipal + Bargad, Bael, Aonla, Ashok. Brahma is at the root, Vishnu is in the bark and Sankara is in the branches.',
+      description: 'Shri Tulsidas Ji Panchvati Vatika : A combination of 5 trees Pipal, Bargad, Bael, Aonla, Ashok. Brahma is at the root, Vishnu is in the bark and Sankara is in the branches.',
     },
 
   ]
