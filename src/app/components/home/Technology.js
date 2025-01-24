@@ -11,12 +11,12 @@ import Image from 'next/image';
 export const Technology = () => {
     const text = 'Our sustainable agriculture approach is powered by precision farming, drones, and real-time monitoring systems. We aim to optimize resource use and enhance productivity while protecting the environment.'
 
-    const text1 = 'Drone Monitoring: Real-time crop health checks';
-    const text2 = 'Solar Fence Control and Alarm Monitoring';
+    const text1 = 'Crop Health Check through Drone Monitoring';
+    const text2 = 'Solar Fence Control & Fence Monitoring';
 
-    const text3 = 'Data & Analytics: Precision planning through GIS and sensor-based monitoring';
+    const text3 = 'GIS & Sensor Based Monitoring';
 
-    const text4 = 'Irrigation Automation: Smart water management';
+    const text4 = 'Smart Water Management through Irrigation Automation';
 
 
     return (

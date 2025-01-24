@@ -17,35 +17,51 @@ export const OurBusiness = () => {
     const heading = "Our Commitment to a Sustainable Tomorrow"
     const boxslider = [
         {
-            image: icon1,
-            title: 'Afforestation, Reforestation, and Revegetation:',
-            description: 'Transforming unused  barren land.',
-        },
-        {
-            image: icon2,
-            title: 'Soil Conservation and Water Management',
-            description: 'Protecting and reclamation of degraded soil ',
-        },
-        {
             image: icon3,
             title: 'Carbon Sequestration and Climate Change Mitigation',
             description: 'Reducing atmospheric carbon through sustainable practices.',
         },
         {
+            image: icon2,
+            title: 'Soil Conservation and Water Management',
+            description: 'Protecting and reclamation of degraded soil',
+        },
+        {
             image: icon1,
-            title: 'Biodiversity Preservation and Habitat Restoration ',
+            title: 'Biodiversity Preservation and Habitat Restoration',
             description: 'Enhancing ecosystems and safeguarding diverse species.',
+        },
+
+        {
+            image: icon1,
+            title: 'Agroforestry',
+            description: 'Implementing sustainable agroforestry practices, enhancing biodiversity.',
         },
         {
             image: icon2,
-            title: 'Soil Conservation:',
-            description: 'Protecting the soil from  degradation, deterioration, and  erosion through best practices  and continuously developing it  as a living ecosystem.',
+            title: 'Education and Training',
+            description: 'Comprehensive training programs to empower communities with sustainable farming knowledge and skills.',
         },
         {
             image: icon3,
-            title: 'Carbon  Sequestration:',
-            description: 'Combatting climate  change.',
-        }
+            title: 'Water Conservation and Harvesting',
+            description: 'Focus on innovative water conservation techniques and efficient use and harvesting.',
+        },
+        {
+            image: icon1,
+            title: 'Animal Husbandry',
+            description: 'Promote ethical animal husbandry practices and enhance livestock productivity.',
+        },
+        {
+            image: icon3,
+            title: 'Renewable Energy Integration',
+            description: 'Reducing carbon footprints and promoting sustainable farming operations.',
+        },
+        {
+            image: icon1,
+            title: 'Agro Eco - tourism',
+            description: 'Connecting visitors with sustainable practices while supporting local economies.',
+        },
     ]
     return (
         <>
@@ -95,13 +111,13 @@ export const OurBusiness = () => {
 
                                     {boxslider.map((item, index) => (
                                         <SwiperSlide key={index}>
-                                            <div className='w-[110%] md:w-full h-96 lg:h-[400px] text-center px-8 lg:px-16 py-8 bg-[#fffafaca] bg-opacity-6'>
+                                            <div className='w-[100%] grid items-center md:w-full h-96 lg:h-[400px] text-center px-12 lg:px-16 py-8 bg-[#fffafaca] bg-opacity-6'>
                                                 <div className='lg:w-12/12 mx-auto'>
                                                     <div className='grid gap-2 items-center justify-center'>
                                                         <Image src={item.image} alt='icon' className='w-16 lg:w-20 lg:h-20 mx-auto' />
                                                         <h3 className='text-xl mt-3 lg:text-[24px] font-normal text-black italic mb-4'>{item.title}</h3>
                                                     </div>
-                                                    <p className='text-sm text-black italic font-light'>{item.description}</p>
+                                                    <p className='text-base text-black italic font-light'>{item.description}</p>
                                                 </div>
                                             </div>
                                         </SwiperSlide>

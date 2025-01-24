@@ -15,29 +15,26 @@ export const WorkingOn = () => {
   const boxslider = [
     {
       image: icon1,
-      description: 'Shri Narayan Falodhyan: 40 types of fruit trees creating biodiversity.',
+      description: 'Shri Bhrigu Vana ,Navagraha, Rashi, Nakshatra Vatika : These trees are of high medicinal, social, aesthetic, and economic value.',
     },
     {
       image: icon1,
-      description: 'Shri Tridev Triveni Vatika: Sacred trees for ecological and spiritual harmony.',
+      description: 'Sushma Sangrahalaya : This is an endangered species garden preserving several tree species in a natural way.',
     },
     {
       image: icon1,
-      description: ' Shri Dhanvantri Vatika: 108 medicinal species, fostering health through Ayurveda.',
+      description: 'Aushadh Manav : A human body organ garden, that has herbs used for the treatment of various diseases of different body organs.',
     },
     {
       image: icon1,
 
-      description: 'Shri Narayan Falodhyan: 40 types of fruit trees creating biodiversity.',
+      description: 'Shringi Yagyashala : Yagyashala is a unique place for gathering around five plants. Yagyashala is located around these plants and can accommodate 30 persons.',
     },
     {
       image: icon1,
-      description: 'Shri Tridev Triveni Vatika: Sacred trees for ecological and spiritual harmony.',
+      description: 'Shri Tulsidas Ji Panchvati Vatika : A combination of 5 trees Pipal + Bargad, Bael, Aonla, Ashok. Brahma is at the root, Vishnu is in the bark and Sankara is in the branches.',
     },
-    {
-      image: icon1,
-      description: ' Shri Dhanvantri Vatika: 108 medicinal species, fostering health through Ayurveda.',
-    },
+
   ]
   return (
     <>
@@ -90,7 +87,7 @@ export const WorkingOn = () => {
 
                 {boxslider.map((item, index) => (
                   <SwiperSlide key={index}>
-                    <div className='w-full h-40 lg:h-40 item-center flex text-center items-center rounded-3xl px-8 lg:px-4 md:pt-5 mb-5 border-black border-[1px] item_slider relative'>
+                    <div className='w-full h-60 lg:h-60 item-center flex text-center items-center rounded-3xl px-8 lg:px-4 md:pt-5 mb-5 border-black border-[1px] item_slider relative'>
                       <div className='lg:w-12/12 mx-auto'>
                         <div className='absolute left-1/2 -translate-x-1/2 -top-8'>
                           <Image src={item.image} alt='icon' className='w-16 lg:w-[70px] lg:h-[70px] mx-auto' />
