@@ -78,7 +78,11 @@ export const OurJourney = () => {
                 },
                 {
                     item: 4,
-                    content: "Focused on youth and women empowerment, biodiversity conservation, soil and water resource management, natural resource preservation, and working on how carbon is sequestering year to year and changes in agro meteorological data.",
+                    content: "Focused on youth and women empowerment, biodiversity conservation, soil and water resource management, natural resource preservation and carbon sequestration.",
+                },
+                {
+                    item: 5,
+                    content: "Monitoring year-on-year carbon sequestration to mitigate climate change while studying its impact on agro-meteorological data and long-term environmental shifts.",
                 },
             ]
         },
@@ -144,7 +148,7 @@ export const OurJourney = () => {
                 className=" bg-[#ECF7F3]   pt-0 pb-14 lg:pt-0 lg:pb-0">
                 <div className='mx-auto max-full flex flex-wrap md:flex-nowrap gap-0 md:gap-12'>
                     <div className='w-full md:w-6/12'>
-                        <Image src={banner} alt="banner" />
+                        <Image className='h-full w-full' src={banner} alt="banner" />
 
                     </div>
                     <div className='w-full md:w-6/12' onMouseEnter={() => setIsHovered(true)}
@@ -200,10 +204,10 @@ export const OurJourney = () => {
                                                 <ul className="list-disc pl-5 text-gray-600">
                                                     {Array.isArray(item.description) ? (
                                                         item.description.map((desc) => (
-                                                            <li className='italic  text-sm mb-1   md:leading-7' key={desc.item}>{desc.content}</li>
+                                                            <li className='italic  text-sm mb-1   md:leading-6' key={desc.item}>{desc.content}</li>
                                                         ))
                                                     ) : (
-                                                        <li className='italic  text-sm mb-1 md:leading-7'>{item.description}</li>
+                                                        <li className='italic  text-sm mb-1 md:leading-6'>{item.description}</li>
                                                     )}
                                                 </ul>
 
