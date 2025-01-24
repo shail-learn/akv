@@ -11,39 +11,40 @@ import icon2 from "../../../assets/images/home/friendship.svg";
 import icon3 from "../../../assets/images/home/rocket.svg";
 
 export const PurposeVision = () => {
-    const text = [" Our goal is to create a legacy of environmental preservation without taking from future generations. Our vision is to foster ‘billionaires’ of natural wealth by ensuring sustainable prosperity and environmental protection."]
-
+    const text = [" Our vision is to create the largest sustainable forest in the country, and eventually, the world.    "]
+     const heading1 = "Our Vision - A Vision for a"
+     const greenheading = "Greener Planet"
 
     const boxslider = [
         {
             image: icon1,
 
-            description: 'Kindness to people and the planet',
+            description: 'Transparency, Diversity & Accountability',
         },
         {
             image: icon2,
 
-            description: 'Transparency, accountability, and respect',
+            description: 'Kind towards the Planet',
         },
         {
             image: icon3,
 
-            description: 'Innovation and excellence in sustainable practices',
+            description: 'Innovation in Agroforestry and Sustainability',
         },
         {
             image: icon1,
 
-            description: 'Kindness to people and the planet',
+            description: 'Kind towards biodiversity',
         },
         {
             image: icon2,
 
-            description: 'Transparency, accountability, and respect',
+            description: 'Committed towards people and built shelters during pandemic',
         },
         {
             image: icon3,
 
-            description: 'Innovation and excellence in sustainable practices',
+            description: 'Green zone development',
         },
     ]
 
@@ -54,7 +55,7 @@ export const PurposeVision = () => {
                 className=" bg-[#1A3232]   pt-14 pb-16 lg:pt-16 lg:pb-20 vision-sec" >
                 <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2 '>
                     <h2 className="lg:leading-snug text-white redhat mb-7 text-center text-3xl md:text-4xl  font-normal  w-full">
-                        Our Purpose & <span className='text-[#4C9E8C]'>Vision</span></h2>
+                    {heading1} <span className='text-[#4C9E8C]'>{greenheading}</span></h2>
                     <div className='lg:w-6/12 mx-auto text-center'>
                         <p className='italic text-white text-normal text-sm lg:text-base'>
                             {text}

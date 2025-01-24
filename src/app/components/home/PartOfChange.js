@@ -9,8 +9,8 @@ import Image from 'next/image';
 export const PartOfChange = () => {
     const box1 = [
         {
-            title: "Be a Part of the Change",
-            description: "We invite you to join our journey toward a greener, more sustainable world. Become a partner, sponsor a project, or volunteer with us to help shape the future of sustainable forestry."
+            title: "Be a Part of Change",
+            description: "Join us for a Greener and Sustainable tomorrow. Become a part of this initiative as a partner, volunteer, or a sponsor to shape the future of sustainable forestry."
         }
     ];
     const card = [

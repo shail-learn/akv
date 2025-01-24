@@ -20,11 +20,11 @@ export const OurJourney = () => {
             description: [
                 {
                     item: 1,
-                    content: "Expanded greenery coverage to over 500 acres.",
+                    content: "Expanded phase wise greenery coverage to over 250 -500, 650 - 5000 acres with future plan of 10000 acres.",
                 },
                 {
                     item: 2,
-                    content: "Implemented innovative revenue-generating models.",
+                    content: "Implemented innovative revenue-generating models. ",
                 },
                 {
                     item: 3,
@@ -37,20 +37,13 @@ export const OurJourney = () => {
             year: "2023",
             title: "Growth and Innovation",
             description: [
+
                 {
                     item: 1,
-                    content: "Developed a lotus pond, Miyawaki forest, and endangered species garden.",
-                },
-                {
-                    item: 2,
-                    content: "Constructed a guest house and employee quarters.",
-                },
-                {
-                    item: 3,
                     content: "Established a soil testing laboratory for internal use and support for local farmers.",
                 },
                 {
-                    item: 4,
+                    item: 2,
                     content: "Enhanced agro-eco-tourism with solar energy, stargazing, drone technology, planetary astronomy, and AI robotics, while promoting empowerment through local material procurement and handicraft production.",
                 },
             ]
@@ -85,7 +78,7 @@ export const OurJourney = () => {
                 },
                 {
                     item: 4,
-                    content: "Focused on youth and women empowerment, biodiversity conservation, soil and water resource management, natural resource preservation, and carbon sequestration.",
+                    content: "Focused on youth and women empowerment, biodiversity conservation, soil and water resource management, natural resource preservation, and working on how carbon is sequestering year to year and changes in agro meteorological data.",
                 },
             ]
         },
@@ -99,7 +92,7 @@ export const OurJourney = () => {
                 },
                 {
                     item: 2,
-                    content: "nstalled solar fencing and introduced deep irrigation techniques.",
+                    content: "Installed solar fencing and introduced deep irrigation techniques.",
                 }
             ]
         },
@@ -160,7 +153,7 @@ export const OurJourney = () => {
                             Our <span className='text-[#498A8A]'>Journey</span></h2>
                         <p className='text-center mb-8'>Steps Towards a Thriving Tomorrow
                         </p>
-                        <div className='flex gap-4'>
+                        <div className='flex gap-4 px-4 lg:px-0'>
                             <div className='flex gap-4 md:gap-12'>
                                 {/* <Image src={banner1} alt="banner" /> */}
                                 <div>
