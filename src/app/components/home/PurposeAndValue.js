@@ -7,18 +7,14 @@ const categories = [
     {
         name: "Purpose",
         posts:
-            "We are here not to borrow from future generations but to create an ecosystem that provides the resources needed to live sustainably. Our work protects life and nurtures prosperity through agroforestry.",
+            "We are the protectors of life & invaluable resources and are on a mission to protect our ecosystem through agro-forestry. We are here to create a sustainable ecosystem that provides resources for the generations to come.",
     },
     {
         name: "Values",
         posts:
-            "From future generations but to create an ecosystem that provides the resources needed to live sustainably. Our work protects life and nurtures prosperity through agroforestry.",
+            "Our only objective is to deliver to the humankind and the environment.  We have created a sustainable plan, cutting-age technology and innovation to protect our surrounding, nature, environment, and planet.",
     },
-    {
-        name: "Quotes",
-        posts:
-            "But to create an ecosystem that provides the resources needed to live sustainably. Our work protects life and nurtures prosperity through agroforestry.",
-    },
+
 ];
 
 
@@ -47,7 +43,7 @@ export const PurposeAndValue = () => {
                             </h3>
                         </div>
                         <TabGroup selectedIndex={activeIndex} onChange={handleTabChange}>
-                            <TabList className="flex flex-wrap justify-center md:justify-start  lg:flex-col items-center space-y-3">
+                            <TabList className="flex flex-wrap justify-center md:justify-start md:pt-6  lg:flex-col items-center space-y-3">
                                 {categories.map(({ name }, index) => (
                                     <Tab
                                         key={name}
