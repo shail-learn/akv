@@ -14,6 +14,7 @@ import icon from "../../../assets/images/logo-icon.svg";
 import Image from 'next/image';
 import Link from 'next/link';
 export const Banner = () => {
+    const vedio = "https://cruxcreativedemo2.com/web-image/Akv-Banner-Video1.mp4"
     const text = {
         heading: 'Forests of Tomorrow, Prosperity  for Generations',
         title: 'Join us in building a greener, more sustainable world through agroforestry and innovation.'
@@ -21,10 +22,14 @@ export const Banner = () => {
     return (
         <>
             <div
-                className="bg-cover bg-center relative h-96 md:h-screen  flex items-center justify-center"
-                style={{ backgroundImage: `url(${banner.src})` }}
+                className="    flex items-center justify-center"
+
+                // style={{ backgroundImage: `url(${banner.src})` }}
+
             >
-                <div className="absolute inset-0 bg-black opacity-40"></div>
+                   <video className='w-full' src={vedio} autoPlay={true} loop muted></video>
+
+                {/* <div className="absolute inset-0 bg-black opacity-40"></div>
                 <div className="relative text-center z-1 flex flex-wrap items-center justify-center">
                     <div className='w-11/12 md:w-3/4 lg:w-8/12'>
                         <h1 className="text-white text-3xl md:text-4xl lg:leading-tight lg:text-5xl font-light w-full">  {text.heading}</h1>
@@ -34,7 +39,7 @@ export const Banner = () => {
                         </p>
                         <Link className='text-white border-2 p-2 px-12 lg:px-20 hover:bg-white hover:text-black transition delay-100 duration-100 ease-in-out' href="#">Read More</Link>
                     </div>
-                </div>
+                </div> */}
             </div>
 
         </>
