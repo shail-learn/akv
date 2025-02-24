@@ -1,7 +1,10 @@
+"use client"
+
 import Image from "next/image";
 import {Banner,VedioHome} from "./components/home/Banner";
 import WhatWeDo from "./components/home/WhatWeDo";
 import ImpactHighlights from "./components/home/impactHighlights";
+import {useEffect,useState} from 'react';
 import { OurBusiness } from "./components/home/OurBusiness";
 import { OurJourney } from "./components/home/OurJourney";
 import { PurposeVision } from "./components/home/PurposeVision";
@@ -16,24 +19,50 @@ import { Contact, Map } from "./components/home/Contact";
 
 
 export default function Home() {
-  return (
-    <>
-     <Banner/>
-     <VedioHome/>
-     <WhatWeDo/>
-     <ImpactHighlights/>
-     <OurBusiness/>
-     <OurJourney/>
-     <PurposeVision/>
-     <WorkingOn/>
-     <Technology/>
-     <Ourteam/>
-     <PurposeAndValue/>
-     <EmpoweringBanner/>
-     <EmpoweringBox/>
-     <PartOfChange/>
-     <Contact/>
-     <Map/>
-    </>
-  );
+
+  const [homepagedata,sethomepagedata]=useState({});
+  const [loading, setLoading] = useState(true);
+
+  useEffect(()=>{
+
+    async function getinfo(){
+
+      console.log('get info test');
+        let fet=await fetch('/api/homepage');
+        console.log('line new ',fet);
+        let resp=await fet.json();
+
+        sethomepagedata(resp);
+        console.log(resp);
+        setLoading(false);
+    }
+
+    getinfo();
+
+    
+
+
+  },[]);
+
+
+  return loading?(<p>loading</p>):(<>
+    <Banner data={homepagedata}/>
+    <VedioHome data={homepagedata}/>
+    <WhatWeDo data={homepagedata}/>
+    <ImpactHighlights data={homepagedata}/>
+    <OurBusiness data={homepagedata}/>
+    <OurJourney data={homepagedata}/>
+    <PurposeVision data={homepagedata}/>
+    <WorkingOn data={homepagedata}/>
+    <Technology data={homepagedata}/>
+    <Ourteam data={homepagedata}/>
+    <PurposeAndValue data={homepagedata}/>
+    <EmpoweringBanner data={homepagedata}/>
+    <EmpoweringBox data={homepagedata}/>
+    <PartOfChange data={homepagedata}/>
+    <Contact data={homepagedata}/>
+    <Map data={homepagedata}/>
+   </>)
+    
+  ;
 }

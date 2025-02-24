@@ -13,8 +13,14 @@ import icon from "../../../assets/images/logo-icon.svg";
 
 import Image from 'next/image';
 import Link from 'next/link';
-export const Banner = () => {
-    const vedio = "https://cruxcreativedemo2.com/web-image/Akv-Banner-Video1.mp4"
+export const Banner = (props) => {
+
+    console.log('Banner props',props);
+    console.log("Data: ", props.data);
+console.log("Sec1 Video: ", props.data?.data?.data?.sec1_vid);
+
+    console.log(props.data);
+    const vedio = `http://127.0.0.1:8000/homepage/${props.data.data.data.sec1_vid}`;
     const text = {
         heading: 'Forests of Tomorrow, Prosperity  for Generations',
         title: 'Join us in building a greener, more sustainable world through agroforestry and innovation.'
