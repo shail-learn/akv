@@ -85,7 +85,7 @@ export const SliderCard = () => {
                     },
                     1024: {
                         slidesPerView: 3,
-                        spaceBetween: 35,
+                        spaceBetween: 20,
                     },
                 }}
 

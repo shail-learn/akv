@@ -1,8 +1,19 @@
 import React from 'react'
+import { AboutSlider, Banner, UnderBanner } from '../components/about/Banner'
+import { Guide, Mission } from '../components/about/GuideMission'
+import { Jounery } from '../components/about/JouneryRoot'
 
 function page() {
   return (
-    <div>About PAGE</div>
+    <>
+     <Banner/>
+     <AboutSlider/>
+     <UnderBanner/>
+     <Guide/>
+     <Mission/>
+     <Jounery/>
+
+       </>
   )
 }
 

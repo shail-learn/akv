@@ -18,7 +18,7 @@ export const Banner = () => {
 
     <div className="relative text-center z-1 flex flex-wrap items-center justify-center">
         <div className='w-11/12 md:w-8/4 lg:w-7/12   bg-black bg-opacity-50 py-6 pb-8 px-4; lg:py-10 lg:px-12 lg:pt-8 rounded-3xl'>
-            <h1 className="text-white text-2xl md:text-4xl lg:leading-tight   redhat  font-normal  w-full">  {text.heading}</h1>
+            <h1 className="text-white text-3xl md:text-4xl lg:leading-tight   redhat  font-normal  w-full">  {text.heading}</h1>
 
             <p className='w-full text-white text-sm lg:text-[15px] italic mt-4 mb-7 lg:mt-4 lg:mb-10'>
                 {text.title}
