@@ -3,7 +3,7 @@ import React from "react";
 import Team1 from "../../../assets/images/home/team.webp";
 import Image from "next/image";
 
-export const Ourteam = () => {
+export const Ourteam = (props) => {
     const ourTeamData = [
         {
           id: 1,

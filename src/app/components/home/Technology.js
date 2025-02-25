@@ -8,7 +8,7 @@ import Image from 'next/image';
 
 
 
-export const Technology = () => {
+export const Technology = (props) => {
     const text = 'Our sustainable agriculture approach is powered by precision farming, drones, and real-time monitoring systems. We aim to optimize resource use and enhance productivity while protecting the environment.'
 
     const text1 = 'Crop Health Check through Drone Monitoring';
@@ -26,15 +26,15 @@ export const Technology = () => {
                 <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2 '>
                     <div className='mx-auto justify-between flex flex-wrap lg:flex-nowrap gap-5 lg:gap-12'>
                         <div className='w-full lg:w-4/12'>
-                            <h2 className="lg:leading-snug text-black redhat mb-4 lg:mb-7 text-center lg:text-left text-3xl md:text-4xl  font-normal  w-full">
-                                Technology-Driven  <span className='text-[#4C9E8C]'>Agriculture</span></h2>
-                            <p className='text-center lg:text-left text-black text-lg lg:text-xl'>Features:</p>
+                            <h2 className="lg:leading-snug text-black redhat mb-4 lg:mb-7 text-center lg:text-left text-3xl md:text-4xl  font-normal  w-full" dangerouslySetInnerHTML={{ __html: props.data.data.data.sec9title }}>
+                                </h2>
+                            <p className='text-center lg:text-left text-black text-lg lg:text-xl' dangerouslySetInnerHTML={{ __html: props.data.data.data.sec9_featurestext }}/>
                         </div>
                         <div className='w-full lg:w-6/12 text-center lg:text-left'>
                             <p className='italic text-[#9C9C9C] text-normal text-sm lg:text-base mb-8 lg:mb-10'>
-                                {text}
+                                {props.data.data.data.sec9content}
                             </p>
-                            <Link className='text-[#A2A2A2] bg-white border-[1px] font-normal  p-2 px-12 lg:px-12 border-black hover:bg-teal-900 hover:text-white transition delay-100 duration-100 ease-in-out' href="#">Learn About Our Technology</Link>
+                            <Link className='text-[#A2A2A2] bg-white border-[1px] font-normal  p-2 px-12 lg:px-12 border-black hover:bg-teal-900 hover:text-white transition delay-100 duration-100 ease-in-out' href={props.data.data.data.sec9btn_url}>{props.data.data.data.sec9btn_text}</Link>
                         </div>
                     </div>
 

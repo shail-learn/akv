@@ -8,7 +8,7 @@ import 'swiper/css/navigation';
 import Image from 'next/image';
 import icon1 from "../../../assets/images/home/logo2.png";
 
-export const WorkingOn = () => {
+export const WorkingOn = (props) => {
   const text = [" Our goal is to create a legacy of environmental preservation without taking from future generations. Our vision is to foster ‘billionaires’ of natural wealth by ensuring sustainable prosperity and environmental protection."]
 
 
@@ -43,8 +43,8 @@ export const WorkingOn = () => {
         <div className='mx-auto max-w-7xl px-4 md:px-8 lg:px-2 '>
           <div className='flex flex-wrap lg:flex-nowrap items-center gap-6 px-0 md:px-6 lg:px-2'>
             <div className='w-full lg:w-3/12 '>
-              <h2 className="lg:leading-snug text-black redhat lg:mb-7 text-center lg:text-left text-3xl md:text-4xl  font-normal  w-full">
-                What We’re <br /> <span className='text-[#4C9E8C]'>Working</span> On</h2>
+              <h2 className="lg:leading-snug text-black redhat lg:mb-7 text-center lg:text-left text-3xl md:text-4xl  font-normal  w-full" dangerouslySetInnerHTML={{ __html: props.data.data.data.sec8_title }}>
+                </h2>
             </div>
 
             <div className='w-full lg:w-9/12'>

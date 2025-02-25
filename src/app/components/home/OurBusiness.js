@@ -13,8 +13,8 @@ import Image from 'next/image';
 
 
 
-export const OurBusiness = () => {
-    const heading = "Our Commitment to a Sustainable Tomorrow"
+export const OurBusiness = (props) => {
+    const heading = props.data.data.data.sec5_title;
     const boxslider = [
         {
             image: icon3,

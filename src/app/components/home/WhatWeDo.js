@@ -3,6 +3,7 @@ import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from 'next/image';
 import icon from "../../../assets/images/logo-icon.svg";
+import CONFIG from "../../../../config/config.js";
 
 import 'swiper/css';
 import 'swiper/css/free-mode';
@@ -13,24 +14,27 @@ import { FreeMode, Navigation, Thumbs, Autoplay } from 'swiper/modules';
 import Link from 'next/link';
 
 
-function WhatWeDo() {
+function WhatWeDo(props) {
 
-    const heading = ["What We Do"]
+    const heading = [props.data.data.data.sec3title]
     const text = [
 
         {
-            description: "<b>Established in 2018, Atulye Krishi Vana</b>, stands at the forefront of agroforestry innovation, driving sustainable solutions for a better planet. Dedicated to transforming degraded landscapes into thriving, biodiverse ecosystems, we are committed to addressing climate change while fostering economic growth. As a leader in sustainable agriculture, our mission is to redefine land restoration and create long-lasting value for communities and the environment alike."
+            // description: "<b>Established in 2018, Atulye Krishi Vana</b>, stands at the forefront of agroforestry innovation, driving sustainable solutions for a better planet. Dedicated to transforming degraded landscapes into thriving, biodiverse ecosystems, we are committed to addressing climate change while fostering economic growth. As a leader in sustainable agriculture, our mission is to redefine land restoration and create long-lasting value for communities and the environment alike."
+            description: props.data.data.data.sec3content
 
         },
 
     ]
 
-    const sliderImages = [
-        { img: "https://images.unsplash.com/photo-1499529112087-3cb3b73cec95" },
-        { img: "https://images.unsplash.com/photo-1499529112087-3cb3b73cec95" },
-        { img: "https://images.unsplash.com/photo-1499529112087-3cb3b73cec95" },
-        { img: "https://images.unsplash.com/photo-1499529112087-3cb3b73cec95" },
-    ];
+    // const sliderImages = [
+    //     { img: "https://images.unsplash.com/photo-1499529112087-3cb3b73cec95" },
+    //     { img: "https://images.unsplash.com/photo-1499529112087-3cb3b73cec95" },
+    //     { img: "https://images.unsplash.com/photo-1499529112087-3cb3b73cec95" },
+    //     { img: "https://images.unsplash.com/photo-1499529112087-3cb3b73cec95" },
+    // ];
+
+    const sliderImages = props.data.data.section3.map((it)=>{return{img:`${CONFIG.BASE_URL}homepage/${it.whatwe_doimg}`} });
 
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
     return (
@@ -57,7 +61,7 @@ function WhatWeDo() {
 
                         })}
                         <div className='mt-8'>
-                         <Link href="#" className='text-white bg-teal-900 rounded-full p-3 px-12 lg:px-20 hover:bg-gray-800 hover:text-white transition delay-100 duration-100 ease-in-out'>Read More</Link>
+                         <Link href="#" className='text-white bg-teal-900 rounded-full p-3 px-12 lg:px-20 hover:bg-gray-800 hover:text-white transition delay-100 duration-100 ease-in-out'>{props.data.data.data.sec3btn_text}</Link>
                          </div>
                     </div>
                     <div className='md:min-h-28 rounded md:col-span-7'>

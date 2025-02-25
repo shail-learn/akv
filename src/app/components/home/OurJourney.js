@@ -9,7 +9,7 @@ import branch from "../../../assets/images/home/branch.svg";
 
 import Image from 'next/image';
 import Link from 'next/link';
-export const OurJourney = () => {
+export const OurJourney = (props) => {
 
     const journey = [
 
@@ -153,8 +153,9 @@ export const OurJourney = () => {
                     </div>
                     <div className='w-full md:w-6/12' onMouseEnter={() => setIsHovered(true)}
                         onMouseLeave={() => setIsHovered(false)}>
-                        <h2 className="lg:leading-snug text-black redhat mb-2 pt-10 text-center text-3xl md:text-4xl  font-normal  w-full">
-                            Our <span className='text-[#498A8A]'>Journey</span></h2>
+                        
+                            <h2 className="lg:leading-snug text-black redhat mb-2 pt-10 text-center text-3xl md:text-4xl  font-normal  w-full" dangerouslySetInnerHTML={{ __html: `${props.data.data.data.sec6_title}` }}>
+                            </h2>
                         <p className='text-center mb-8'>Steps Towards a Thriving Tomorrow
                         </p>
                         <div className='flex gap-4 px-4 lg:px-0'>

@@ -18,7 +18,7 @@ const categories = [
 ];
 
 
-export const PurposeAndValue = () => {
+export const PurposeAndValue = (props) => {
     const [activeTabContent, setActiveTabContent] = useState(categories[0].posts);
     const [fade, setFade] = useState(false);
     const [activeIndex, setActiveIndex] = useState(0);
@@ -38,8 +38,7 @@ export const PurposeAndValue = () => {
                 <div className="flex flex-col md:flex-row gap-10 md:gap-20 p-10 bg-white">
                     <div>
                         <div className="text-center">
-                            <h3 className="text-3xl md:text-4xl  pb-10 redhat">
-                                Our Purpose <span className="text-[#498A8A]">& Values</span>
+                            <h3 className="text-3xl md:text-4xl  pb-10 redhat" dangerouslySetInnerHTML={{ __html: `${props.data.data.data.sec10_title}` }}>
                             </h3>
                         </div>
                         <TabGroup selectedIndex={activeIndex} onChange={handleTabChange}>

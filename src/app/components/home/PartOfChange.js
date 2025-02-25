@@ -6,11 +6,11 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 
-export const PartOfChange = () => {
+export const PartOfChange = (props) => {
     const box1 = [
         {
-            title: "Be a Part of Change",
-            description: "Join us for a Greener and Sustainable tomorrow. Become a part of this initiative as a partner, volunteer, or a sponsor to shape the future of sustainable forestry."
+            title: props.data.data.data.sec13_title,
+            description: props.data.data.data.sec13_content
         }
     ];
     const card = [

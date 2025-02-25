@@ -3,6 +3,7 @@ import banner from "../../../assets/images/home/banner.webp";
 import banner2 from "../../../assets/images/home/bg-img.webp";
 import shape from "../../../assets/images/home/shape.png";
 import icon from "../../../assets/images/logo-icon.svg";
+import CONFIG from "../../../../config/config.js";
 
 
 
@@ -15,12 +16,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 export const Banner = (props) => {
 
-    console.log('Banner props',props);
-    console.log("Data: ", props.data);
-console.log("Sec1 Video: ", props.data?.data?.data?.sec1_vid);
+  
 
     console.log(props.data);
-    const vedio = `http://127.0.0.1:8000/homepage/${props.data.data.data.sec1_vid}`;
+    // const vedio = `http://127.0.0.1:8000/homepage/${props.data.data.data.sec1_vid}`;
+    const vedio = `${CONFIG.BASE_URL}homepage/${props.data.data.data.sec1_vid}`;
+    
     const text = {
         heading: 'Forests of Tomorrow, Prosperity  for Generations',
         title: 'Join us in building a greener, more sustainable world through agroforestry and innovation.'
@@ -95,8 +96,9 @@ export const Banner2 = () => {
 
 
 
-export const VedioHome = () => {
-     const vedio = "https://cruxcreativedemo2.com/web-image/Website-Banner-AKV.mp4"
+export const VedioHome = (props) => {
+    //  const vedio = "https://cruxcreativedemo2.com/web-image/Website-Banner-AKV.mp4"
+    const vedio =`${CONFIG.BASE_URL}homepage/${props.data.data.data.sec2gif}`; 
     return (
         <>
             <div

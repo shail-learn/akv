@@ -10,10 +10,10 @@ import icon1 from "../../../assets/images/home/care.svg";
 import icon2 from "../../../assets/images/home/friendship.svg";
 import icon3 from "../../../assets/images/home/rocket.svg";
 
-export const PurposeVision = () => {
-    const text = [" Our vision is to create the largest sustainable forest in the country, and eventually, the world.    "]
-     const heading1 = "Our Vision - A Vision for a"
-     const greenheading = "Greener Planet"
+export const PurposeVision = (props) => {
+    const text = [props.data.data.data.sec7_content]
+    //  const heading1 = "Our Vision - A Vision for a"
+    //  const greenheading = "Greener Planet"
 
     const boxslider = [
         {
@@ -54,11 +54,11 @@ export const PurposeVision = () => {
             <section
                 className=" bg-[#1A3232]   pt-14 pb-16 lg:pt-16 lg:pb-20 vision-sec" >
                 <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2 '>
-                    <h2 className="lg:leading-snug text-white redhat mb-7 text-center text-3xl md:text-4xl  font-normal  w-full">
-                    {heading1} <span className='text-[#4C9E8C]'>{greenheading}</span></h2>
+                    <h2 className="lg:leading-snug text-white redhat mb-7 text-center text-3xl md:text-4xl  font-normal  w-full" dangerouslySetInnerHTML={{ __html: `${props.data.data.data.sec7_title}` }}>
+                   </h2>
                     <div className='lg:w-6/12 mx-auto text-center'>
                         <p className='italic text-white text-normal text-sm lg:text-base'>
-                            {text}
+                            {props.data.data.data.sec7_content}
                         </p>
                     </div>
 
@@ -123,7 +123,7 @@ export const PurposeVision = () => {
 
                             </Swiper>
                                 <div className='text-center'>
-                            <Link href="#" className='text-white bg-[#498A8A] rounded-full p-3 px-12 lg:px-20 hover:bg-[#2D6B5E] hover:text-white transition delay-100 duration-100 ease-in-out'>Join the Mission</Link>
+                            <Link href={props.data.data.data.sec7btn_url} className='text-white bg-[#498A8A] rounded-full p-3 px-12 lg:px-20 hover:bg-[#2D6B5E] hover:text-white transition delay-100 duration-100 ease-in-out'>{props.data.data.data.sec7btn_text}</Link>
 
                             </div>
 
