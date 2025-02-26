@@ -44,7 +44,7 @@ export default function Home() {
 
   },[]);
 
-
+//test
   return loading?(<p>loading</p>):(<>
     <Banner data={homepagedata}/>
     <VedioHome data={homepagedata}/>

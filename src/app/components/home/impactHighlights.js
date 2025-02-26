@@ -5,29 +5,36 @@ import icon1 from "../../../assets/images/home/leaf.svg";
 import Image from 'next/image';
 import Link from 'next/link';
 import CONFIG from "../../../../config/config.js";
-const ImpactHighlights = (props) => {
+const ImpactHighlights = (props) => {//this got changed to what sets us apart
     const heading =props.data.data.data.sec4_title;
     const text = {
         heading: props.data.data.data.sec4_tinytitle,
         title: props.data.data.data.sec4_content,
     };
-    const card = [
-        {
-            description: 'Over 500 Acres of Forest Planted',
-            icon: icon1,
+    const card = 
+        props.data.data.section4.map((li)=>{
+            return {description:li.sec4_text,icon:icon1}
+        });
 
-        },
-        {
-            description: 'Planted Over 1,75,000 Trees',
-            icon: icon1,
 
-        },
-        {
-            description: 'Reduced Carbon Footprinted',
-            icon: icon1,
+    //     const card = [
+    //     {
+    //         description: 'Over 500 Acres of Forest Planted',
+    //         icon: icon1,
 
-        }
-    ]
+    //     },
+    //     {
+    //         description: 'Planted Over 1,75,000 Trees',
+    //         icon: icon1,
+
+    //     },
+    //     {
+    //         description: 'Reduced Carbon Footprinted',
+    //         icon: icon1,
+
+    //     }
+    // ]
+        
     return (
         <>
             <section
