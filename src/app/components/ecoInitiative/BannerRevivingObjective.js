@@ -162,29 +162,29 @@ export const Objective = () => {
                     <div className="mt-10 relative">
                         <div className='grid col-span-8 justify-center '>
                             <div className="border_number relative">
-                            {objectives.map((obj, index) => (
-                                <div key={index} className="flex  gap-4 md:gap-6 items-center mb-10 relative">
+                                {objectives.map((obj, index) => (
+                                    <div key={index} className="flex  gap-4 md:gap-6 items-center mb-10 relative">
 
 
-                                    <div className="md:w-28 md:h-28 w-28 rounded-lg overflow-hidden">
-                                        <Image src={obj.image} alt={obj.title} width={100} height={100} className="object-cover" />
-                                    </div>
-                                    <div className=' '>
-                                    {/* <div className="absolute lg:left-5 top-0 h-full border-l-2 border-dashed border-white"></div> */}
-                                        <div
-                                            className={`left-4 z-10 md:w-10 md:h-10 w-8 h-8 text-sm md:text-base relative flex items-center justify-center text-black font-bold rounded-full bg-white`}
-                                        >
-                                            {obj.id}
+                                        <div className="md:w-28 md:h-28 w-28 rounded-lg overflow-hidden">
+                                            <Image src={obj.image} alt={obj.title} width={100} height={100} className="object-cover" />
+                                        </div>
+                                        <div className=' '>
+                                            {/* <div className="absolute lg:left-5 top-0 h-full border-l-2 border-dashed border-white"></div> */}
+                                            <div
+                                                className={`left-4 z-10 md:w-10 md:h-10 w-8 h-8 text-sm md:text-base relative flex items-center justify-center text-black font-bold rounded-full bg-white`}
+                                            >
+                                                {obj.id}
 
+                                            </div>
+                                        </div>
+
+                                        <div className="ml-6 w-3/4 text-left">
+                                            <h3 className="text-xl lg:text-2xl text-white redhat mt-6 mb-3 font-semibold">{obj.title}:</h3>
+                                            <p className="text-gray-300 redhat text-sm">{obj.description}</p>
                                         </div>
                                     </div>
-
-                                    <div className="ml-6 w-3/4 text-left">
-                                        <h3 className="text-xl lg:text-2xl text-white redhat mt-6 mb-3 font-semibold">{obj.title}:</h3>
-                                        <p className="text-gray-300 redhat text-sm">{obj.description}</p>
-                                    </div>
-                                </div>
-                            ))}
+                                ))}
                             </div>
                         </div>
                     </div>
