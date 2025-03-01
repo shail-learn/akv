@@ -1,0 +1,73 @@
+[
+    {
+        "id": "1",
+        "image": "https://cruxcreativedemo2.com/web-image/service/service1.webp",
+        "title": "Agroforestry",
+        "designation": [
+            "Combining trees with agriculture for sustainable growth.",
+            "Agroforestry integrates trees, shrubs, and crops on the same land, promoting biodiversity, improving soil health, and providing additional income streams."
+          ],
+          "link":"/"
+
+    },
+    {
+        "id": "2",
+        "image": "https://cruxcreativedemo2.com/web-image/service/service2.webp",
+        "title": "Carbon Sequestration",
+        "designation": [
+            "Capturing carbon for a cleaner, greener planet.",
+            "We implement strategies that trap atmospheric carbon in plants and soil, combating climate change while boosting agricultural productivity."
+
+          ]
+          ,
+          "link":"/"
+    },
+    {
+        "id": "3",
+        "image": "https://cruxcreativedemo2.com/web-image/service/service3.webp",
+        "title": "Soil Conservation",
+        "designation": [
+            "Protecting and enriching soil for future generations.",
+            "Through techniques like contour farming and mulching, we prevent erosion, maintain fertility, and ensure long-term land productivity."
+
+          ],
+          "link":"/"
+
+    },
+    {
+        "id": "4",
+        "image": "https://cruxcreativedemo2.com/web-image/service/service4.webp",
+        "title": "Education & Training",
+        "designation": [
+            "Empowering farmers and communities through knowledge.",
+            "Our workshops and training programs equip farmers with skills in sustainable farming, resource management, and new technologies."
+
+          ],
+          "link":"/"
+
+    },
+    {
+        "id": "5",
+        "image": "https://cruxcreativedemo2.com/web-image/service/service5.webp",
+        "title": "Water Conservation & Harvesting",
+        "designation": [
+            "Preserving water for agricultural resilience.",
+            "We design water management systems, such as rainwater harvesting and drip irrigation, to optimize usage and ensure availability."
+
+          ],
+          "link":"/"
+
+    },
+    {
+        "id": "6",
+        "image": "https://cruxcreativedemo2.com/web-image/service/service6.webp",
+        "title": "Animal Husbandry",
+        "designation": [
+            "Sustainable livestock management for rural prosperity.",
+            "Our practices focus on improving livestock health, productivity, and welfare, contributing to community livelihood."
+
+          ],
+          "link":"/"
+
+    }
+    ]
