@@ -116,35 +116,30 @@ export const Objective = () => {
             title: "Afforestation and Reforestation",
             description: "Transforming barren lands into thriving green zones.",
             image: img1,
-
         },
         {
             id: "02",
             title: "Carbon Sequestration",
             description: "Reducing climate impact through innovative practices.",
             image: img2,
-
         },
         {
             id: "03",
             title: "Water Conservation",
             description: "Rainwater harvesting and groundwater recharging.",
             image: img3,
-
         },
         {
             id: "04",
             title: "Soil Regeneration",
             description: "Reviving soil health for sustainable farming.",
             image: img4,
-
         },
         {
             id: "05",
             title: "Community Empowerment",
             description: "Skill development, employment, and health awareness programs.",
             image: img5,
-
         },
     ];
     return (
