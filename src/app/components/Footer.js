@@ -28,7 +28,7 @@ export const Footer = (htmlContent ) => {
   ]
   const address = [
     {
-        phone: "+91 9696967616",
+        phone: "+91 9220152225",
         location:
             "A&M Agriventures Pvt Ltd, <br/> Village: Ramgarh, Tehsil: lchhawar, <br/> District: Sehore- 466115 Madhya Pradesh, India",
     },
@@ -70,7 +70,7 @@ export const Footer = (htmlContent ) => {
                           A&M Agriventures Pvt Ltd, <br/> Village: Ramgarh, Tehsil: lchhawar, <br/> District: Sehore- 466115 Madhya Pradesh, India</li>
                           <li className='text-white font-light flex gap-4'>
                           <span className='text-[#D2AE6D] text-xl mt-1'><FaPhone /></span>
-                          +91 9696967616</li>
+                          +91 9220152225</li>
                       </ul>
 
 
