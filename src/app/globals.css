@@ -604,7 +604,7 @@ border-radius: 34%;
 }
 @media (max-width:767px) {
   .border_number:after{
-    left: 134px;
+    left: 129px;
     height: 77%;
   }
 }
