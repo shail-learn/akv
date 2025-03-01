@@ -21,13 +21,16 @@ export const Guide = () => {
             img: 'https://cruxcreativedemo2.com/web-image/about/img03.webp',
         }
     ]
+    const myStyle = {
+      background: "linear-gradient(180deg, rgba(245,245,245,1) 0%, rgba(255,255,255,1) 70%)"
+    };
   return (
     <>
           <section
-                className="py-14 lg:py-16" style={{background:'linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(240,240,240,1) 70%)'}} >
+                className="py-14 lg:py-16" style={myStyle} >
                 <div className='mx-auto max-full max-w-7xl px-4 md:px-6 lg:px-2'>
                     <div className='w-full text-center'>
-                        <div className='mx-auto w-7/12'>
+                        <div className='mx-auto w-full lg:w-7/12'>
                         <h2 className="text-[#1B453C] text-3xl md:text-4xl mb-6 lg:leading-tight  redhat  font-normal  w-full">{heading}</h2>
                         <p className='text-[15px] font-normal mb-10 md:mb-16'>{description}</p>
                         </div>
@@ -35,7 +38,7 @@ export const Guide = () => {
                             {imgroup.map((item, index) => {
                                 return (
 
-                                        <div key={index} className='grid items-center justify-center gap-4 '>
+                                        <div key={index} className='grid items-center mb-4 md:mb-0 justify-center gap-4 '>
                                             <div className=' text-center'>
                                                 <Image src={item.img} className='w-full h-full' width="500" height="500" alt="icon" />
                                             </div>
@@ -96,7 +99,7 @@ export const Mission = () => {
   return (
     <>
           <section
-        className=" bg-white pt-10 pb-8 lg:pt-20 lg:pb-20 outer-arrow left-outer green_icon_slider outer_hide_slider" >
+        className=" bg-white pt-0 pb-8 lg:pt-20 lg:pb-20 outer-arrow left-outer green_icon_slider outer_hide_slider" >
         <div className='mx-auto max-w-[1400px] md:mr-0 px-4 md:px-8 lg:px-2 '>
           <div className='flex flex-wrap lg:flex-nowrap items-center gap-6 px-0 md:px-6    lg:px-2'>
             <div className='w-full lg:w-3/12 '>

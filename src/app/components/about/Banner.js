@@ -9,29 +9,19 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import Image from 'next/image';
+import BannerPage from '../BannerPage';
 export const Banner = () => {
     const text = {
-        heading: 'Our Essence:',
-        headingcolor: "Who We Are",
-        title: 'Atulye Krishi Vana is a pioneering initiative dedicated to reshaping the future of agroforestry. By combining innovative, sustainable practices with a strong focus on community empowerment, we aim to restore ecosystems, uplift rural livelihoods, and foster long-term prosperity. Our work goes beyond agriculture – it’s a movement to create a greener, more resilient world.'
+        banner: banner,
+        heading: `Our Essence: <span style="color:#48A490">Who We Are</span>`,
+        title: 'Atulye Krishi Vana is a pioneering initiative dedicated to reshaping the future of agroforestry. By combining innovative, sustainable practices with a strong focus on community empowerment, we aim to restore ecosystems, uplift rural livelihoods, and foster long-term prosperity. Our work goes beyond agriculture – it’s a movement to create a greener, more resilient world.',
+
+         link : "/contact",
+         button:"Read More"
     }
     return (
         <>
-            <div
-                className="lg:h-[550px] flex items-center justify-center relative" style={{ background: `url(${banner.src})center center / cover no-repeat` }} >
-                <div className="absolute h-full top-0 bottom-0 w-full bg-black opacity-20"></div>
-                <div className="relative text-center z-1 flex flex-wrap items-center justify-center">
-                    <div className='w-11/12 md:w-3/4 lg:w-7/12'>
-                        <h1 className="text-white text-3xl md:text-4xl lg:leading-tight lg:text-[40px] font-normal w-full">
-                            {text.heading} <span className='text-[#48A490]'>{text.headingcolor}</span>
-                        </h1>
-                        <p className='w-full text-white italic text-[15px] mt-5 mb-7 lg:mt-7 lg:mb-10'>
-                            {text.title}
-                        </p>
-                        <Link className='text-white border-2 p-2 px-12 lg:px-20 hover:bg-white hover:text-black transition delay-100 duration-100 ease-in-out' href="#">Read More</Link>
-                    </div>
-                </div>
-            </div>
+           <BannerPage heading={text.heading}  title={text.title} banner={text.banner} button={text.button} link={text.link} />
         </>
     )
 }
@@ -89,7 +79,7 @@ export const AboutSlider = () => {
 export const UnderBanner = () => {
     const heading = "Cultivating Sustainable Future";
     const description = "Founded in 2018,our mission is to revolutionize forestry and farming by creating the world’s most sustainable and impactful forest systems. Through innovative techniques and unwavering dedication, we proudly protect life and vital resources. Our ultimate promise is to nurture an environment that breathes fresh air, flows with crystal-clear water, and sustains life for generations to come. <br><br> Inspired by the primordial sound of the universe, often considered the original vibration from which all creation arose, we believe in creating lasting contributions to Earth and its communities. Just as sound needs a medium to travel and leave its mark, we aim to build tangible models of sustainability that resonate with nature, fostering harmony and well-being for all."
-
+    const pageUrl = "/";
     return (
         <>
             <section className='bg-cover bg-bottom md:bg-center relative text-center md:text-left -mt-10 pt-16 pb-16 lg:pt-36 lg:pb-36' style={{ background: `url(${bgbanner.src})center / cover no-repeat` }}>
@@ -101,7 +91,7 @@ export const UnderBanner = () => {
 
                             </p>
                             <div className='pt-12 md:pt-16'>
-                                <Link href="#" className='text-white bg-transparent border border-white rounded-full p-3 px-8 lg:px-20 hover:bg-white hover:text-teal-900 transition delay-100 duration-100 ease-in-out'>Read More</Link>
+                                <Link href={pageUrl} className='text-white bg-transparent border border-white rounded-full p-3 px-20 hover:bg-white hover:text-teal-900 transition delay-100 duration-100 ease-in-out'>Read More</Link>
 
                             </div>
                         </div>
