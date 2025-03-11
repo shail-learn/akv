@@ -10,7 +10,7 @@ export const BannerTraining = () => {
     heading: `Nurturing Knowledge, Cultivating Success`,
     title:
       "Empowering individuals through expert training and sustainable practices.",
-    className: "bg-white !text-black hover:bg-transparent py-4 hover:!text-white",
+    className: "bg-white !text-black hover:!bg-transparent py-4 hover:!text-white",
     link: "/contact",
     button: "Explore Training Programs",
   };
