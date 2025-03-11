@@ -52,7 +52,7 @@ export const Value = () => {
                         {coreValues.map((value, index) => (
                             <div key={index} className="relative flex flex-col items-center text-center">
 
-                                <div className="w-32 h-32 flex items-center justify-center rounded-full outline-dashed outline-[#c4a87c]  border-2 border-solid border-[#F5F5F5] bg-[#1B453C]">
+                                <div className="w-32 h-32 flex items-center justify-center rounded-full outline-dashed outline-[#c4a87c]  outline-2  border-4 border-solid border-[#F5F5F5] bg-[#1B453C]">
                                     <Image src={value.icon} alt={value.title} width={50} height={50} className="w-20 h-20" />
                                 </div>
 

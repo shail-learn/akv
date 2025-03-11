@@ -30,7 +30,7 @@ const navigation = [
       { name: "AKV - Agroforestry", href: "/agroForestry" },
       { name: "Agrotourism", href: "/agrotourism" },
       { name: "CSR", href: "/csr" },
-      { name: "Contract Farming MP Agroforestry", href: "/contract-farming-mp" },
+      { name: "Contract Farming MP Agroforestry", href: "/contract-farming-mp-agroforestry" },
       { name: "Contract Farming Fodder", href: "/contract-farming-fodder" },
       { name: "Training & Development", href: "/training-development" },
       { name: "MIDH Nursery", href: "/midh-nursery" },
