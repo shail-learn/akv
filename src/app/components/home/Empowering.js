@@ -45,12 +45,8 @@ export const EmpoweringBox = () => {
                             </div>
                         ))}
 
-
                     </div>
                 </div>
-
-
-
             </section>
 
         </>
