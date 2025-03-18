@@ -492,6 +492,16 @@ border-radius: 34%;
 .dark_active .swiper-slide-next h3{
   color: #000;
 }
+.point_border::after{
+  left: 170px;
+}
+
+.bigger_expand .swiper-slide-active h3{
+  font-size: 26px;
+}
+.bigger_expand .swiper-slide-active ul{
+  font-size: 14px;
+}
 
 @media(min-width:1024px) {
   .vision-sec .swiper-slide-next {
@@ -687,6 +697,18 @@ border-radius: 34%;
   }
   .dark_active .swiper-slide-active h3{
     color: #000 !important;
+  }
+  .bigger_expand .swiper-slide h3{
+    font-size: 22px;
+  }
+  .bigger_expand .swiper-slide ul{
+    font-size: 14px;
+  }
+  .bigger_expand .swiper-slide .h-32{
+    height: 100%;
+  }
+  .bigger_expand .swiper-button-prev::after,  .bigger_expand .swiper-button-next::after{
+    font-size: 2rem;
   }
 }
 

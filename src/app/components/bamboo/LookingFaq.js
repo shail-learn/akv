@@ -104,7 +104,7 @@ export const Faq = () => {
                                         slidesPerView={1}
                                         spaceBetween={10}
                                         navigation={true}
-
+                                        loop={true}
                                         modules={[Autoplay, Navigation, Pagination]}
                                         autoplay={{
                                             delay: 6000,
