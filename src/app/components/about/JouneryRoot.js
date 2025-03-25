@@ -38,9 +38,9 @@ export const Jounery = () => {
                     className="py-14 lg:py-16 lg:pb-40" style={myStyle} >
                     <div className='mx-auto max-full max-w-7xl px-4 md:px-6 lg:px-2 relative'>
                         <div className='w-full text-center'>
-                            <h2 className="text-[#1B453C] text-3xl md:text-4xl mb-4 lg:leading-tight  redhat  font-normal  w-full">{heading}</h2>
+                            <h2 className="text-[#1B453C] text-3xl md:text-4xl mb-4 lg:leading-tight  redhat  font-medium  w-full">{heading}</h2>
                             <div className='mx-auto max-full w-full lg:w-5/12'>
-                                <h5 className='text-black italic font-normal text-[15px]'>{subheading}</h5>
+                                <h5 className='text-black font-normal text-base'>{subheading}</h5>
                                 <h6 className='text-black italic text-[20px] mt-8 mb-10 md:mt-16 md:mb-16'>{smallHeading}</h6>
                             </div>
                             <div className='lg:grid flex flex-wrap gap-4 grid-cols-1 lg:grid-cols-12'>
@@ -53,7 +53,7 @@ export const Jounery = () => {
                                             }}
                                         >
                                             <div className='grid items-center justify-center gap-6 '>
-                                                <h3 className='text-base text-[#4B8B8B]'>{item.title}</h3>
+                                                <h3 className='text-2xl text-[#4B8B8B]'>{item.title}</h3>
                                                 <p className='text-base'>{item.description}</p>
                                             </div>
                                         </div>
@@ -110,9 +110,9 @@ export const JouneryRoot = () => {
                 className="bg-cover bg-center relative text-center md:text-left  flex items-center justify-center pt-16 pb-16 lg:pt-20 lg:pb-20"
                 style={{ backgroundImage: `url(${banner.src})` }}
             >
-                <div className="absolute inset-0 bg-[#1A3232] opacity-85"></div>
+                <div className="absolute inset-0 bg-[#000] opacity-80"></div>
                 <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2 relative z-1 '>
-                    <h2 className='text-3xl text-center md:leading-[1.3] md:text-4xl font-normal redhat text-white mb-14'>{text.heading}</h2>
+                    <h2 className='text-3xl text-center md:leading-[1.3] md:text-4xl font-medium redhat text-white mb-14'>{text.heading}</h2>
                     <div className='lg:grid flex flex-wrap gap-4 lg:gap-4 grid-cols-1 lg:grid-cols-12 border_remove'>
                         {card.map((item, index) => {
                             return (
@@ -122,7 +122,7 @@ export const JouneryRoot = () => {
                                             <Image src={item.icon} width="100" height="100" alt="icon" />
                                         </div>
                                         <h3 className='  md:mb-6 md:mt-6 mb-4 mt-4 text-xl lg:text-[22px] font-light text-white'>{item.title}</h3>
-                                        <p className='text-base redhat  font-normal text-[#859A9A]'>{item.description}</p>
+                                        <p className='text-base redhat text-justify font-normal text-[#859A9A]'>{item.description}</p>
                                     </div>
                                 </div>
                             )

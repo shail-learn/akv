@@ -11,6 +11,10 @@ import 'swiper/css/thumbs';
 
 import { FreeMode, Navigation, Thumbs, Autoplay } from 'swiper/modules';
 import Link from 'next/link';
+import images1 from "../../../assets/images/home/what/1.webp";
+import images2 from "../../../assets/images/home/what/2.webp";
+import images3 from "../../../assets/images/home/what/3.webp";
+import images4 from "../../../assets/images/home/what/4.webp";
 
 
 function WhatWeDo() {
@@ -26,10 +30,10 @@ function WhatWeDo() {
     ]
 
     const sliderImages = [
-        { img: "https://images.unsplash.com/photo-1499529112087-3cb3b73cec95" },
-        { img: "https://images.unsplash.com/photo-1499529112087-3cb3b73cec95" },
-        { img: "https://images.unsplash.com/photo-1499529112087-3cb3b73cec95" },
-        { img: "https://images.unsplash.com/photo-1499529112087-3cb3b73cec95" },
+        { img: images1 },
+        { img: images2 },
+        { img: images3 },
+        { img: images4 },
     ];
 
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -45,24 +49,24 @@ function WhatWeDo() {
                                 className='h-auto w-auto'
                             />
                         </div>
-                        <h3 className='mb-4 text-[28px] md:text-3xl mt-2 font-normal poppins'>{heading}</h3>
+                        <h3 className='mb-4 text-[28px] md:text-3xl mt-2 font-medium poppins'>{heading}</h3>
                         {text.map((item, index) => {
                             return (
                                 <p
                                     key={index}
-                                    className="text-black-400 poppins text-sm lg:text-[15px]"
+                                    className="text-black-400 leading-6 text-justify letter tracking-[0.5] text-sm lg:text-[15px]"
                                     dangerouslySetInnerHTML={{ __html: item.description }}
                                 ></p>
                             )
 
                         })}
-                        <div className='mt-8'>
-                         <Link href="#" className='text-white bg-teal-900 rounded-full p-3 px-12 lg:px-20 hover:bg-gray-800 hover:text-white transition delay-100 duration-100 ease-in-out'>Read More</Link>
+                        <div className='mt-14'>
+                         <Link href="#" className='text-[#1B453C] bg-white border border-[#1B453C] p-3 px-12 lg:px-20 hover:bg-[#1B453C] hover:text-white transition delay-100 duration-100 ease-in-out'>Read More</Link>
                          </div>
                     </div>
                     <div className='md:min-h-28 rounded md:col-span-7'>
                          <div className='grid gap-8 lg:gap-10 grid-cols-1 lg:grid-cols-12'>
-                            <div className='md:col-span-9 '>
+                            <div className='md:col-span-8'>
                             <Swiper
                             style={{
                                 "--swiper-navigation-color": "#fff",
@@ -79,33 +83,29 @@ function WhatWeDo() {
                             className="mySwiperMain w-full outer_arrow"
                         >
                             {sliderImages.map((item, index) => (
-                                <SwiperSlide key={index}>
+                                <SwiperSlide key={index} className='text-center'>
+                                    <div className='rounded-2xl overflow-hidden w-auto inline-block mx-auto'>
                                     <Image
                                         src={item.img}
-                                        width={500}
-                                        height={500}
                                         alt={`Slide ${index + 1}`}
-                                        className="w-full h-auto object-cover rounded-md"
-                                        style={{
-                                            width: '100% !important',
-                                            height: 'auto',
-                                          }}
+                                        className="w-full h-[500px] object-contain rounded-2xl"
+
                                     />
+                                    </div>
                                 </SwiperSlide>
                             ))}
                         </Swiper>
                             </div>
-                            <div className='md:col-span-3'>
+                            <div className='md:col-span-4'>
                             <Swiper
                             onSwiper={setThumbsSwiper}
-
-                            spaceBetween={10}
+                            spaceBetween={20}
                             slidesPerView={3}
                             freeMode={true}
                             watchSlidesProgress={true}
 
                             modules={[FreeMode, Navigation, Thumbs ]}
-                            className="mySwiperThumbs w-full h-auto lg:h-96"
+                            className="mySwiperThumbs w-full  h-auto lg:h-[500px]"
                             breakpoints={{
 
                                 640: {
@@ -125,27 +125,17 @@ function WhatWeDo() {
                                         width={500}
                                         height={500}
                                         alt={`Slide ${index + 1}`}
-                                        className="w-full h-auto object-cover rounded-md"
-                                        style={{
-                                            width: '100%',
-                                            height: 'auto',
-                                          }}
+                                        className="w-full h-20 md:h-32 object-cover object-top rounded-2xl"
+
                                     />
                                 </SwiperSlide>
                             ))}
                         </Swiper>
                             </div>
-
-
                         </div>
-
                     </div>
-
-
                 </div>
             </div>
-
-
         </section>
     )
 }
