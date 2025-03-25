@@ -6,10 +6,10 @@ export const Contact = () => {
     const text = "Whether you have questions, want to collaborate, or simply want to learn more, we’re here to help!"
     return (
         <section className='mx-auto max-w-7xl px-4 pt-0 md:px-8 lg:px-2 lg:pt-4  py-16'>
-            <h2 className='text-black redhat text-center mb-0 font-medium leading-relaxed text-3xl md:text-4xl  md:mb-8'>Get in Touch</h2>
+            <h2 className='text-black redhat text-center mb-0 font-semibold leading-relaxed text-3xl md:text-4xl  md:mb-8'>Get in Touch</h2>
             <div className='  gap-10  grid  grid-cols-1  lg:grid-cols-12 items-center justify-center'>
                 <div className='col-span-1'></div>
-                <div className='w-full  p-6 py-16 md:h-full border-[1px] poppins text-xl text-center border-[#A1A1A1] md:p-6 rounded-3xl lg:p-10 col-span-5  h-full grid items-center justify-center '>
+                <div className='w-full  p-6 py-16 md:h-full border-[1px] poppins text-xl text-justify border-[#A1A1A1] md:p-6 rounded-3xl lg:p-10 col-span-5  h-full grid items-center justify-center '>
                     <h3>"{text}</h3>
                 </div>
                 <div className='w-full col-span-5 p-6  rounded-3xl h-full grid   '

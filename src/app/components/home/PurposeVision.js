@@ -6,12 +6,12 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import Image from 'next/image';
-import icon1 from "../../../assets/images/home/care.svg";
-import icon2 from "../../../assets/images/home/friendship.svg";
-import icon3 from "../../../assets/images/home/rocket.svg";
+import icon1 from "../../../assets/images/home/icon1.png";
+import icon2 from "../../../assets/images/home/icon2.png";
+import icon3 from "../../../assets/images/home/icon3.png";
 
 export const PurposeVision = () => {
-    const text = [" Our vision is to create the largest sustainable forest in the country, and eventually, the world.    "]
+    const text = ["Our vision is to create the largest sustainable forest in the country, and eventually, the world."]
      const heading1 = "Our Vision - A Vision for a"
      const greenheading = "Greener Planet"
 
@@ -54,22 +54,18 @@ export const PurposeVision = () => {
             <section
                 className=" bg-[#1A3232]   pt-14 pb-16 lg:pt-16 lg:pb-20 vision-sec" >
                 <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2 '>
-                    <h2 className="lg:leading-snug text-white redhat mb-7 text-center text-3xl md:text-4xl  font-normal  w-full">
+                    <h2 className="lg:leading-snug text-white redhat mb-7 text-center text-3xl md:text-4xl  font-medium  w-full">
                     {heading1} <span className='text-[#4C9E8C]'>{greenheading}</span></h2>
                     <div className='lg:w-6/12 mx-auto text-center'>
-                        <p className='italic text-white text-normal text-sm lg:text-base'>
+                        <p className=' text-white text-normal text-sm lg:text-base'>
                             {text}
                         </p>
                     </div>
 
                 </div>
                 <div className='mx-auto max-w-7xl px-4 md:px-8 lg:px-10 '>
-
-
                     <div className='  px-0 md:px-6 lg:px-2 relative z-1 '>
-
                         <div className='mx-auto  w-12/12'>
-
                             <Swiper
                                 style={{
                                     '--swiper-navigation-color': '#fff',
@@ -108,10 +104,10 @@ export const PurposeVision = () => {
 
                                 {boxslider.map((item, index) => (
                                     <SwiperSlide key={index}>
-                                        <div className='w-full h-60 lg:h-60 item-center flex text-center items-center rounded-3xl px-8 lg:px-12 py-8 bg-white item_slider'>
+                                        <div className='w-full h-60 lg:h-72 item-center flex text-center items-center rounded-[20px] px-8 lg:px-12 py-8 bg-white item_slider'>
                                             <div className='lg:w-12/12 mx-auto'>
-                                                <div className='grid gap-2 items-center justify-center mb-5'>
-                                                    <Image src={item.image} alt='icon' className='w-12 lg:w-14 lg:h-14 mx-auto' />
+                                                <div className='grid gap-2 items-center justify-center mb-8'>
+                                                    <Image src={item.image} alt='icon' className='w-16 lg:w-[80px] lg:h-[80px] mx-auto' />
 
                                                 </div>
                                                 <p className='text-md text-black font-normal'>{item.description}</p>
@@ -122,16 +118,13 @@ export const PurposeVision = () => {
 
 
                             </Swiper>
-                                <div className='text-center'>
-                            <Link href="#" className='text-white bg-[#498A8A] rounded-full p-3 px-12 lg:px-20 hover:bg-[#2D6B5E] hover:text-white transition delay-100 duration-100 ease-in-out'>Join the Mission</Link>
+                                <div className='text-center pt-6 md:pt-12'>
+                            <Link href="#" className='text-white bg-transparent border border-white p-3 px-12 lg:px-20 hover:bg-white hover:text-[#1B453C] transition delay-100 duration-100 ease-in-out'>Join the Mission</Link>
 
                             </div>
-
                         </div>
                     </div>
-
                 </div>
-
             </section>
 
         </>

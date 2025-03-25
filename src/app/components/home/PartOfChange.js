@@ -34,16 +34,16 @@ export const PartOfChange = () => {
         <>
             <div className='mx-auto max-w-7xl px-4 md:px-8 lg:px-2  py-16'>
                 <div className='flex gap-4  flex-wrap  lg:flex-nowrap items-center justify-center'>
-                    <div className='w-full lg:w-5/12 bg-[#BBA167] grid items-center justify-center lg:h-[504px]  p-12'>
+                    <div className='w-full lg:w-5/12 bg-[#BBA167] rounded-[20px] grid items-center justify-center lg:h-[504px]  p-12'>
                         <div>
                             <h2 className='text-white poppins text-center md:text-left leading-relaxed text-3xl md:text-4xl  mb-5'>{box1[0].title}</h2>
-                            <p className='poppins text-justify  md:text-left font-normal text-[15px] text-white'>{box1[0].description}</p>
+                            <p className='poppins text-justify font-normal text-[15px] text-white'>{box1[0].description}</p>
                         </div>
                     </div>
                     {card.map((item, index) => (
                         <div
                             key={index}
-                            className="group w-full  p-10 lg:w-3/12 h-96 lg:h-[504px] text-black grid items-center justify-center relative transition-all duration-400"
+                            className="group w-full rounded-[20px] overflow-hidden  p-10 lg:w-3/12 h-96 lg:h-[504px] text-black grid items-center justify-center relative transition-all duration-400"
                             style={{
                                 backgroundImage: `url(${item.bgimg})`,
                                 backgroundSize: 'cover',

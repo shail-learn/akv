@@ -42,15 +42,22 @@ export const ProductPage = () => {
 
         {
             img: img7,
+            link:"agroForestry/guava"
         },
         {
             img: img8,
+            link:"/"
+
         },
         {
             img: img9,
+            link:"/"
+
         },
         {
             img: img10,
+            link:"/"
+
         }
     ]
     return (
@@ -145,7 +152,7 @@ export const ProductPage = () => {
                                                 alt="product"
                                                 className=" h-full"
                                             />
-                                            <Link href="#" className="text-sm border-[1px] border-[#646464] w-full text-center rounded-full p-2 hover:bg-[#1B453C] hover:text-white ">
+                                            <Link href={item.link} className="text-sm border-[1px] border-[#646464] w-full text-center rounded-full p-2 hover:bg-[#1B453C] hover:text-white ">
 
                                                 Explore More
 

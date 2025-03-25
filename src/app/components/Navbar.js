@@ -11,7 +11,7 @@ import { IoCloseSharp } from "react-icons/io5";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "../../assets/images/logo-icon.svg";
+import Logo from "../../assets/images/logo-akv.webp";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -79,11 +79,11 @@ function Navbar() {
       <header className="sticky top-0 z-50 bg-white shadow-md">
         <Disclosure as="nav">
           <div className="mx-auto max-w-7xl px-4 md:px-4 lg:px-2">
-            <div className="flex items-center justify-between py-2">
+            <div className="flex items-center justify-between py-0">
               {/* Logo */}
               <div className="flex items-center">
-                <Link href="/" className="bg-teal-900 p-2 rounded-full">
-                  <Image src={Logo} alt="Logo" width={56} height={56} className="h-14 w-14 object-contain" />
+                <Link href="/" className="p-2">
+                  <Image src={Logo} alt="Logo" width={100} height={100} className="h-20 md:h-[100px] w-auto object-contain" />
                 </Link>
               </div>
 

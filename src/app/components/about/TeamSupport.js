@@ -19,7 +19,7 @@ export const Team = () => {
                 className="text-center md:text-left  flex items-center justify-center pt-16 pb-16 lg:pt-20 lg:pb-20"
             >
                 <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2'>
-                    <h2 className='text-3xl text-center md:leading-[1.3] md:text-4xl font-normal redhat text-[#1B453C] mb-14'>{heading}</h2>
+                    <h2 className='text-3xl text-center md:leading-[1.3] md:text-4xl font-medium redhat text-[#1B453C] mb-14'>{heading}</h2>
                     <div className='lg:w-10/12 mx-auto w-full'>
                         <div className='lg:grid flex flex-wrap gap-4 lg:gap-6 grid-cols-1 lg:grid-cols-12 flex-col-reverse'>
                             <div className='lg:col-span-8 w-full w-12/12' >
