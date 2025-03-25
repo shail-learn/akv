@@ -71,7 +71,7 @@ export const PurposeAndValue = () => {
                             className={`flex justify-center items-center h-full w-full transition-opacity duration-300 ${fade ? "opacity-0" : "opacity-100"
                                 }`}
                         >
-                            <p className="text-white text-center p-6 lg:px-20 lg:py-5 text-[16px] md:text-[18px] leading-8 lg:leading-[36px] font-[300]">
+                            <p className="text-white text-justify p-6 lg:px-20 lg:py-5 text-[16px] md:text-[18px] leading-8 lg:leading-[36px] font-[300]">
                                 {activeTabContent ||
                                     "Select a tab to see the content displayed here."}
                             </p>

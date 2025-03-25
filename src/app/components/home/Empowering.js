@@ -39,7 +39,7 @@ export const EmpoweringBox = () => {
                 <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2 '>
                     <div className='mx-auto justify-between flex flex-wrap lg:flex-nowrap gap-5 lg:gap-5'>
                         {box.map((item,index) => (
-                            <div key={index} className='w-[47%] lg:w-3/12 text-black text-center grid items-center justify-center p-4 h-40 lg:h-32 border-[1px] border-[#1B453C] hover:bg-[#1B453C] hover:text-white hover:rounded-[15px] transition-all  duration-400'>
+                            <div key={index} className='w-[47%] lg:w-3/12 text-black text-center grid items-center justify-center p-4 h-40 lg:h-32 border-[1px] border-[#1B453C] hover:bg-[#1B453C] hover:text-white rounded-[20px] transition-all  duration-400'>
                                 <h2 className="lg:leading-snug  poppins text-center text-sm lg:text-[15px]  font-normal  w-full">{item.text}</h2>
 
                             </div>
