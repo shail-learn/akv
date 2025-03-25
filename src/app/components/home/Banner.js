@@ -105,7 +105,11 @@ export const VedioHome = () => {
         frameBorder="0"
         allow="autoplay"
       /> */}
-       <video className='w-full h-full' src={vedio} autoPlay loop   muted={true} ></video>
+       <video className='w-full h-full'
+        src={vedio}
+         autoPlay
+         loop
+         muted={true} ></video>
     </div>
             </div>
 
