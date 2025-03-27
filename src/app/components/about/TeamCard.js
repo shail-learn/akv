@@ -11,7 +11,18 @@ export const TeamCard = ({ data }) => {
     return (
         <>
             <div className="text-center">
-                <Image
+            <div className="bg-[#A8A8A8] rounded-[20px] overflow-hidden">
+                  <Image
+                    src={image}
+                    alt={name}
+                    className="w-full h-full mx-auto"
+                    width={200}
+                    height={200}
+                  />
+                </div>
+                <h5 className="text-lg mb-0 mt-2 font-normal">{name}</h5>
+                <h6 className="text-sm font-semibold">{designation}</h6>
+                {/* <Image
                     src={image}
                     alt={name}
                     className=" w-full h-full rounded-lg"
@@ -19,12 +30,10 @@ export const TeamCard = ({ data }) => {
                     height={300}
 
                 />
-
-
                 <Button className="border rounded-full mt-4 w-full py-1 p-2 border-black hover:bg-[#1A3232] hover:text-white transition-all duration-400" onClick={() => router.push("/")}>
                     <h5 className=" poppins text-sm md:text-base font-normal">{name}</h5>
                     <h6 className="md:text-sm text-xs font-bold poppins">{designation}</h6>
-                </Button>
+                </Button> */}
 
             </div>
 

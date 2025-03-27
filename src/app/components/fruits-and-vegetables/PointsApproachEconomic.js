@@ -249,7 +249,7 @@ export const Economic = () => {
                         <div className='md:w-5/12 bg-[#D9D9D9] bg-opacity-85 p-8  w-full  w-12/12'>
 
                             <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-semibold text-center md:text-left redhat text-[#1B453C] mb-6'>{heading}</h2>
-                            <p className='text-[#1B453C] text-normal font-normal text-[15px] lg:text-base mb-8 lg:mb-10 text-center md:text-left'>{description}</p>
+                            <p className='text-[#1B453C] text-normal font-normal text-[15px] lg:text-base mb-8 lg:mb-10 text-justify'>{description}</p>
                             <div className='text-center md:text-left'>
                             <Link href="#" className='bg-transparent border border-[#1B453C] text-[#1B453C] shadow-lg py-2 px-8 inline-block text-center text-base hover:bg-[#1B453C] hover:text-white transition-all duration-500 '>Read more</Link>
                             </div>

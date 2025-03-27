@@ -34,7 +34,7 @@ export const OurCard = () => {
                 className=" bg-white   py-14 lg:py-16" >
                 <div className='mx-auto max-full max-w-7xl px-4 md:px-6 lg:px-2'>
                     <div className='w-full text-center'>
-                        <h2 className="text-[#1B453C] text-3xl md:text-4xl mb-12 lg:leading-tight  redhat  font-normal  w-full">{heading}</h2>
+                        <h2 className="text-[#1B453C] text-3xl md:text-4xl mb-12 lg:leading-tight  redhat  font-medium  w-full">{heading}</h2>
                         <div className='lg:grid flex flex-wrap gap-4 grid-cols-1 lg:grid-cols-12'>
                             {card.map((item, index) => {
                                 return (

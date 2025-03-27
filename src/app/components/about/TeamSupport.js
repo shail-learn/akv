@@ -21,9 +21,9 @@ export const Team = () => {
                 <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2'>
                     <h2 className='text-3xl text-center md:leading-[1.3] md:text-4xl font-medium redhat text-[#1B453C] mb-14'>{heading}</h2>
                     <div className='lg:w-10/12 mx-auto w-full'>
-                        <div className='lg:grid flex flex-wrap gap-4 lg:gap-6 grid-cols-1 lg:grid-cols-12 flex-col-reverse'>
-                            <div className='lg:col-span-8 w-full w-12/12' >
-                                <div className='lg:grid flex flex-wrap gap-6 content-between lg:gap-6 grid-cols-1 lg:grid-cols-12'>
+                        <div className='lg:grid flex flex-wrap justify-items-between  gap-4 lg:gap-6 grid-cols-1 lg:grid-cols-12 flex-col-reverse'>
+                            <div className='lg:col-span-7 w-full w-12/12' >
+                                <div className='lg:grid flex flex-wrap gap-6  lg:gap-6 grid-cols-1 lg:grid-cols-12'>
                                     {teamMember.map((item, index) => (
                                         <div key={index} className='md:col-span-4 md:w-full md:w-12/12 col-span-2 w-[46%]' >
                                             <TeamCard data={item} />
@@ -31,7 +31,8 @@ export const Team = () => {
                                     ))}
                                 </div>
                             </div>
-                            <div className='lg:col-span-4 w-full w-12/12' >
+                            <div className='lg:col-span-1  w-full w-12/12' ></div>
+                            <div className='lg:col-span-4   w-full w-12/12' >
                                 <div className='bg-[#1A3232] p-10 md:p-10 mb-10  grid items-center rounded-xl h-full text-white'>
                                     <div>
                                         <h3 className='text-2xl redhat mb-6'>{heading2}</h3>
@@ -64,7 +65,7 @@ export const GreenSupport = () => {
                 style={{ backgroundImage: `url(${banner.src})` }}
             >
                 <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2'>
-                    <h2 className="text-3xl text-center lg:text-start md:leading-[1.3] md:text-4xl font-normal redhat text-white mb-10" dangerouslySetInnerHTML={{ __html: heading }}></h2>
+                    <h2 className="text-3xl text-center lg:text-start md:leading-[1.3] md:text-4xl font-medium redhat text-white mb-10" dangerouslySetInnerHTML={{ __html: heading }}></h2>
 
                     <div className='lg:w-6/12   w-full'>
                         <div className='text-white'>
@@ -102,14 +103,14 @@ export const Support = () => {
                         <div className='lg:w-6/12 w-full bg-[#F2F2F2] p-8 lg:p-10 py-16 lg:py-24'>
                             <div className='w-full lg:w-4/6'>
                             <h2 className="text-3xl text-center lg:text-start md:leading-[1.3] md:text-4xl font-normal redhat text-[#1B453C] mb-6" dangerouslySetInnerHTML={{ __html: heading1 }}></h2>
-                            <p className="italic text-black mb-10 lg:mb-16" dangerouslySetInnerHTML={{ __html: info1 }}></p>
+                            <p className="text-black mb-10 lg:mb-16" dangerouslySetInnerHTML={{ __html: info1 }}></p>
                             <Link href={pageUrl} className='rounded border border-black py-2 px-10 w-4/5 inline-block text-center text-base hover:bg-white transition-all  duration-500 ' >Read More</Link>
                         </div>
                         </div>
                         <div className='lg:w-6/12 bg-cover bg-center p-8 lg:p-10 py-16 lg:py-24 w-full' style={{ backgroundImage: `url(${banner2.src})` }}>
                         <div className='w-full lg:w-4/6 text-white'>
                             <h2 className="text-3xl text-center lg:text-start md:leading-[1.3] md:text-4xl font-normal redhat mb-6" dangerouslySetInnerHTML={{ __html: heading2 }}></h2>
-                            <p className="italic  mb-10 lg:mb-16" dangerouslySetInnerHTML={{ __html: info2 }}></p>
+                            <p className=" mb-10 lg:mb-16" dangerouslySetInnerHTML={{ __html: info2 }}></p>
                             <Link href={pageUrl} className='rounded border border-white py-2 px-10 w-4/5 inline-block text-center text-base hover:bg-[#1b453c] transition-all  duration-500 ' >Read More</Link>
                         </div>
                         </div>

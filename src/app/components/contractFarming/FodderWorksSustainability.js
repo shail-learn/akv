@@ -111,7 +111,7 @@ export const Fodder = () => {
                         }}
                       >
                         <h2
-                          className="text-3xl md:leading-[1.3] md:text-4xl h-full font-normal redhat text-white mb-10 md:mb-14"
+                          className="text-3xl md:leading-[1.3] md:text-4xl h-full font-medium redhat text-white mb-10 md:mb-14"
                           dangerouslySetInnerHTML={{ __html: item.title }}
                         ></h2>
                         <p className="text-sm font-medium redhat text-white">
@@ -146,7 +146,7 @@ export const Fodder = () => {
               </div>
             </div>
             <div className='md:w-5/12  w-full  w-12/12'>
-              <h2 className='text-3xl md:leading-[1.3] md:text-4xl  text-center md:text-left font-normal redhat text-[#1B453C] mt-10 mb-4'>{heading}</h2>
+              <h2 className='text-3xl md:leading-[1.3] md:text-4xl  text-center md:text-left font-medium redhat text-[#1B453C] mt-10 mb-4'>{heading}</h2>
               <p className="text-base text-center md:text-left font-medium redhat text-black">
                 {description}
               </p>
@@ -194,7 +194,7 @@ export const Works = () => {
     <>
       <section className='relative text-center bg-[#F5F5F5] md:text-left pt-12 pb-12 lg:pt-10 lg:pb-20'>
         <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2 relative'>
-          <h2 className='text-3xl text-center md:leading-[1.3] md:text-4xl font-normal redhat text-black mt-4 mb-16'>{heading}</h2>
+          <h2 className='text-3xl text-center md:leading-[1.3] md:text-4xl font-medium redhat text-black mt-4 mb-16'>{heading}</h2>
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             {coreValues.map((value, index) => (
               <div key={index} className="relative flex flex-col items-center text-center">
@@ -269,10 +269,10 @@ export const Sustainability = () => {
         <div className='mx-auto max-w-[1400px] md:mr-0 px-4 md:px-8 lg:px-2 '>
           <div className='flex flex-wrap lg:flex-nowrap items-center gap-6 px-0 md:px-6    lg:px-2'>
             <div className='w-full lg:w-3/12 '>
-              <h2 className="lg:leading-snug  text-white redhat mb-4 lg:mb-7 text-center lg:text-left text-3xl md:text-4xl  font-normal  w-full">
+              <h2 className="lg:leading-snug  text-white redhat mb-4 lg:mb-7 text-center lg:text-left text-3xl md:text-4xl  font-medium  w-full">
                 {heading}
               </h2>
-              <p className='text-sm text-center md:text-left text-white '>{text}</p>
+              <p className='text-sm md:text-[15px] text-center md:text-left text-white '>{text}</p>
 
             </div>
 
@@ -328,9 +328,9 @@ export const Sustainability = () => {
                           <div className='mb-4'>
                             <Image src={item.image} alt='icon' className='w-full h-full rounded-xl' />
                           </div>
-                          <h2 className='text-2xl font-light pb-4' dangerouslySetInnerHTML={{ __html: item.heading }}></h2>
+                          <h2 className='text-2xl font-normal pb-4' dangerouslySetInnerHTML={{ __html: item.heading }}></h2>
 
-                          <p className='text-sm lg:text-[15] font-light italic' dangerouslySetInnerHTML={{ __html: item.description }}>
+                          <p className='text-sm lg:text-[16] font-light' dangerouslySetInnerHTML={{ __html: item.description }}>
                           </p>
                         </div>
                       </div>
@@ -419,7 +419,7 @@ export const Economic = () => {
         <div className='mx-auto max-w-[1400px] md:mr-0 px-4 md:px-8 lg:px-2 '>
           <div className='flex flex-wrap lg:flex-nowrap items-center gap-6 px-0 md:px-6    lg:px-2'>
             <div className='w-full lg:w-3/12 '>
-              <h2 className="lg:leading-snug  text-[#1B453C] redhat mb-4 lg:mb-7 text-center lg:text-left text-3xl md:text-4xl  font-normal  w-full">
+              <h2 className="lg:leading-snug  text-[#1B453C] redhat mb-4 lg:mb-7 text-center lg:text-left text-3xl md:text-4xl  font-medium  w-full">
                 {heading}
               </h2>
 

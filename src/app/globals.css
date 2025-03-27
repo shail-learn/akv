@@ -126,7 +126,17 @@ body {
   background: #C8D9D3;
   z-index: 1;
 }
-
+.journey-line::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  top: 101%;
+  left: 50%;
+  transform:translateX(-50%);
+   background: url(../assets/images/home/plant-pot.png) center center/ contain no-repeat;
+   width: 3.5rem;
+   height: 3.5rem;
+}
 .journey-line li:nth-child(even) {
   transform: translateX(6px) rotate(240deg);
 }
@@ -714,4 +724,6 @@ border-radius: 34%;
     font-size: 2rem;
   }
 }
+
+
 

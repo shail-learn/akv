@@ -2,15 +2,15 @@
 import Image from 'next/image'
 import React from 'react'
 import img1 from "../../../assets/images/business/product-left.webp";
-import img2 from "../../../assets/images/business/product1.webp";
-import img3 from "../../../assets/images/business/product2.webp";
-import img4 from "../../../assets/images/business/product3.webp";
-import img5 from "../../../assets/images/business/product4.webp";
-import img6 from "../../../assets/images/business/product5.webp";
-import img7 from "../../../assets/images/business/product6.webp";
-import img8 from "../../../assets/images/business/product7.webp";
-import img9 from "../../../assets/images/business/product8.webp";
-import img10 from "../../../assets/images/business/product9.webp";
+import img2 from "../../../assets/images/business/product01.webp";
+import img3 from "../../../assets/images/business/product02.webp";
+import img4 from "../../../assets/images/business/product03.webp";
+import img5 from "../../../assets/images/business/product04.webp";
+import img6 from "../../../assets/images/business/product-right.webp";
+import img7 from "../../../assets/images/business/product06.webp";
+import img8 from "../../../assets/images/business/product07.webp";
+import img9 from "../../../assets/images/business/product08.webp";
+import img10 from "../../../assets/images/business/product09.webp";
 
 import Link from 'next/link';
 
@@ -21,7 +21,7 @@ export const ProductPage = () => {
     const category1 = "Timber"
     const category2 = "Fruits and Vegetables"
     const bigimg = img1
-    const bigimg2 = img1
+    const bigimg2 = img6
 
     const productlist = [
 
@@ -65,11 +65,9 @@ export const ProductPage = () => {
             <section
                 className="py-6 pt-16" >
                 <div className='mx-auto max-w-7xl px-4 md:px-8 lg:px-2 max-full bg-white'>
-                    <h2 className="text-black text-center md:text-left text-3xl md:text-4xl mb-4 lg:mb-8 lg:leading-tight  redhat  font-normal  w-full">
+                    <h2 className="text-black text-center md:text-left text-3xl md:text-4xl mb-4 lg:mb-8 lg:leading-tight  redhat  font-medium  w-full">
                         {heading}
                     </h2>
-
-
                 </div>
             </section>
 
@@ -83,8 +81,7 @@ export const ProductPage = () => {
                             <Image
                                 src={bigimg}
                                 alt="product"
-
-                                className="  h-auto"
+                                className="w-full h-auto rounded-tl-3xl rounded-tr-3xl"
                             />
                             <div className="bg-[#9A9771] text-center md:text-left text-2xl text-white px-6 lg:px-8 p-4 lg:p-5">
 
@@ -132,11 +129,11 @@ export const ProductPage = () => {
                             <Image
                                 src={bigimg2}
                                 alt="product"
-                                className="  h-auto"
+                                className="w-full h-auto rounded-tl-3xl rounded-tr-3xl"
                             />
-                            <div className="bg-[#719A8E] text-center md:text-left text-2xl text-white px-6 lg:px-8 p-4 lg:p-5">
+                            <Link href="/agroForestry/fruits-and-vegetables" className="bg-[#719A8E] text-center md:text-left text-2xl text-white px-6 block w-full lg:px-8 p-4 lg:p-5">
                                 {category2}
-                            </div>
+                            </Link>
 
                         </div>
                         <div className='w-full md:col-span-6'>

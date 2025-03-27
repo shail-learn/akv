@@ -43,8 +43,8 @@ export const Who = () => {
           <div className='flex flex-col lg:flex-row justify-between items-center gap-4 lg:gap-12'>
             <div className='lg:w-6/12  w-full w-12/12'>
 
-              <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-normal redhat text-[#488540] mt-4  mb-6'>{heading}</h2>
-              <p className='text-[#A8A8A8] text-base redhat mt-6 mb-10 md:my-12' dangerouslySetInnerHTML={{ __html: description }}>
+              <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-medium redhat text-[#488540] mt-4  mb-6'>{heading}</h2>
+              <p className='text-[#7b7b7b] text-justify text-base md:text-[17px] redhat mt-6 mb-10 md:my-12' dangerouslySetInnerHTML={{ __html: description }}>
               </p>
               <Link href="#" className='bg-transparent border border-[#488540] text-[#488540] shadow-lg py-3 px-12 inline-block text-center text-base hover:bg-[#488540] hover:text-white transition-all  duration-500 '>Read more</Link>
 
@@ -98,7 +98,7 @@ export const Know = () => {
           </div>
           <div className='w-full md:w-6/12 px-3'>
             <h2 className="lg:leading-snug text-[#1B453C] font-semibold redhat pt-10 md:pt-16 text-center md:text-left text-3xl md:text-4xl w-full"> {heading}</h2>
-            <p className='text-[#455050] text-base  text-center md:text-left redhat my-8' dangerouslySetInnerHTML={{ __html: description }}>
+            <p className='text-[#455050] text-base text-justify redhat my-8' dangerouslySetInnerHTML={{ __html: description }}>
             </p>
             <div className='py-6 mb-12 text-center md:text-left'>
               <Link href="#" className='bg-transparent border border-[#1B453C] text-[#1B453C] shadow-lg py-2 px-8 inline-block text-center text-base hover:bg-[#1B453C] hover:text-white transition-all duration-500 '>Know more</Link>
