@@ -76,7 +76,7 @@ export const CategoryCard = () => {
                 {card.map((item,index) => {
                        return(
                     <div key={index} className='w-full md:col-span-4'>
-                        <Image src={item.image} alt="banner" className='w-full h-full' />
+                        <Image src={item.image} alt="banner" className='w-full h-full rounded-tl-3xl rounded-tr-3xl' />
                         <div className='flex gap-4 items-center justify-between my-4'>
                             <p className='text-black text-xl'>{item.title}</p> <Link href="#" className='text-sm border-[1px] border-[#646464] w-[150px] text-center rounded-xl p-2 hover:bg-[#1B453C] hover:text-white '>Explore More</Link>
                         </div>

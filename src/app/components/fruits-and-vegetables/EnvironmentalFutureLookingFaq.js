@@ -43,7 +43,7 @@ export const Future = () => {
                     <div className='flex md:flex-col flex-col-reverse lg:flex-row justify-between items-center gap-10 md:gap-4 lg:gap-12'>
                         <div className='lg:w-7/12  w-full w-12/12'>
                             <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-semibold text-center md:text-left redhat text-[#1B453C] mb-8'>{heading}</h2>
-                            <p className='text-black text-base redhat my-4' dangerouslySetInnerHTML={{ __html: description }}>
+                            <p className='text-black text-base text-justify redhat my-4' dangerouslySetInnerHTML={{ __html: description }}>
                             </p>
                         </div>
                         <div className='lg:w-5/12  w-full w-12/12'>
@@ -75,7 +75,7 @@ export const Looking = () => {
                     <div className='flex flex-col md:flex-row items-center gap-0'>
 
                         <div className='w-full md:w-1/2 bg-[#D9D9D9] p-8 md:py-20 shadow-md'>
-                            <p className='text-[#1B453C] text-[15px] md:text-base leading-7 my-4' dangerouslySetInnerHTML={{ __html: description }}>
+                            <p className='text-[#1B453C] text-[15px] text-justify md:text-base leading-7 my-4' dangerouslySetInnerHTML={{ __html: description }}>
                             </p>
 
                         </div>
@@ -153,7 +153,7 @@ export const Faq = () => {
 
                         <div className='lg:w-6/12  w-full w-12/12'>
                             <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-semibold text-center md:text-left redhat text-black mb-8'>{heading}</h2>
-                            <p className='text-[#1B453C] text-[15px] leading-6 my-4' dangerouslySetInnerHTML={{ __html: description }}>
+                            <p className='text-[#1B453C] text-[15px] leading-6 text-justify my-4' dangerouslySetInnerHTML={{ __html: description }}>
                             </p>
                             <Image src={fruits} className='w-4/5 md:w-4/6 h-auto' alt='image' />
 

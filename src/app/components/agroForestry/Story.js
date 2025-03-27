@@ -39,7 +39,7 @@ export const Story = () => {
                             <div key={index} className='w-full text-white h-full rounded-2xl px-10 py-10 md:p-8 md:py-14 md:col-span-4  bg-[#729A71] hover:bg-[#8DBAAD]'>
                                 <div className='flex gap-4 lg:gap-8 items-center'>
                                     <Image src={item.icon} className='w-14 md:w-auto md:h-auto' alt="icon" />
-                                    <p className='text-base  md:text-left  font-normal'> {item.quote}   </p>
+                                    <p className='text-base md:w-2/4 md:text-left  font-normal'> {item.quote}   </p>
                                 </div>
                             </div>
 
@@ -92,7 +92,7 @@ export const Testimonial = () => {
                 className=" py-14 lg:py-20 bg-[#F2F2F2] outer-arrow middle_upar arrow_black" >
 
                 <div className='mx-auto max-w-7xl px-4 md:px-8 lg:px-2 max-ful'>
-                    <h2 className="text-black text-center  md:text-left text-3xl md:text-4xl mb-4 lg:mb-8 lg:leading-tight  redhat  font-normal  w-full">
+                    <h2 className="text-black text-center  md:text-left text-3xl md:text-4xl mb-4 lg:mb-8 lg:leading-tight  redhat  font-medium  w-full">
                         {heading1} <br /> <span className='text-[#1B453C]'>{heading}</span>
                     </h2>
 
@@ -147,7 +147,7 @@ export const Testimonial = () => {
                                         <div className='lg:w-12/ 12 mx-auto'>
                                             <div className='gap-6 flex items-center h-full '>
                                                 <Image src={item.image} alt='client' className='w-w-3/6 h-full lg:w-3/6 lg:h-full' />
-                                                <p className=' pl-0 p-4 text-sm lg:text-[16] font-normal'>{item.quote}</p>
+                                                <p className=' pl-0 p-4 text-sm lg:text-[16]  font-normal'>{item.quote}</p>
                                             </div>
                                         </div>
                                     </div>

@@ -110,6 +110,7 @@ export const VedioHome = () => {
          autoPlay
          loop
          muted={true} ></video>
+
     </div>
             </div>
 
