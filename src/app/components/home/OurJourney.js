@@ -4,6 +4,14 @@ import banner from "../../../assets/images/home/img.webp";
 import banner1 from "../../../assets/images/home/journey.svg";
 import branch from "../../../assets/images/home/branch.svg";
 
+import jounery1 from "../../../assets/images/home/jounery1.webp";
+import jounery2 from "../../../assets/images/home/jounery2.webp";
+import jounery3 from "../../../assets/images/home/jounery3.webp";
+import jounery4 from "../../../assets/images/home/jounery4.webp";
+import jounery5 from "../../../assets/images/home/jounery5.webp";
+import jounery6 from "../../../assets/images/home/jounery6.webp";
+
+
 
 
 
@@ -15,6 +23,7 @@ export const OurJourney = () => {
 
 
         {
+            image: jounery6,
             year: "2024",
             title: "Expansion and Revenue Models",
             description: [
@@ -34,6 +43,7 @@ export const OurJourney = () => {
             ]
         },
         {
+            image: jounery5,
             year: "2023",
             title: "Growth and Innovation",
             description: [
@@ -50,6 +60,7 @@ export const OurJourney = () => {
 
         },
         {
+            image: jounery4,
             year: "2021-2022",
             title: "Pandemic Resilience",
             description: [
@@ -61,6 +72,7 @@ export const OurJourney = () => {
 
         },
         {
+            image: jounery3,
             year: "2020",
             title: "Sustainable Practices",
             description: [
@@ -87,6 +99,7 @@ export const OurJourney = () => {
             ]
         },
         {
+            image: jounery2,
             year: "2019",
             title: "Infrastructure and Irrigation",
             description: [
@@ -102,6 +115,7 @@ export const OurJourney = () => {
         },
 
         {
+            image: jounery1,
             year: "2018",
             title: "Inception and Early Challenges",
             description: [
@@ -124,7 +138,7 @@ export const OurJourney = () => {
     ]
     const [activeIndex, setActiveIndex] = useState(journey.length - 1);
     const [isHovered, setIsHovered] = useState(false);
-    const [isManual, setIsManual] = useState(false); // Track manual selection
+    const [isManual, setIsManual] = useState(false);
 
     useEffect(() => {
         if (isHovered || isManual) return; // Stop interval if hovered or manually selected
@@ -140,7 +154,7 @@ export const OurJourney = () => {
 
     const handleLeafClick = (index) => {
         setActiveIndex(index);
-        setIsManual(true); // Stop the interval on manual click
+        setIsManual(true);
     };
     return (
         <>
@@ -148,7 +162,11 @@ export const OurJourney = () => {
                 className=" bg-[#ECF7F3]   pt-0 pb-14 lg:pt-0 lg:pb-0">
                 <div className='mx-auto max-full flex flex-wrap md:flex-nowrap gap-0 md:gap-12'>
                     <div className='w-full md:w-6/12'>
-                        <Image className='h-full w-full' src={banner} alt="banner" />
+                        <Image
+                            className='h-full w-full'
+                            src={journey[activeIndex].image}
+                            alt="banner"
+                        />
 
                     </div>
                     <div className='w-full md:w-6/12' onMouseEnter={() => setIsHovered(true)}
@@ -174,8 +192,8 @@ export const OurJourney = () => {
                                                         handleLeafClick(index);
                                                     }}
                                                     className={`text-base font-medium ${activeIndex === index
-                                                            ? "text-[#1B453C] underline opacity-100"
-                                                            : "text-[#C6C6C6] opacity-20"
+                                                        ? "text-[#1B453C] underline opacity-100"
+                                                        : "text-[#C6C6C6] opacity-20"
                                                         } hover:text-[#1B453C]`}
                                                 >
                                                     <Image src={branch} className='relative z-0' alt="banner" width="40px" height="40px" />

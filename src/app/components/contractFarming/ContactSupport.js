@@ -126,7 +126,7 @@ export const Contact = () => {
                 <div className='col-span-1'></div>
                 <div className='w-full  p-6 py-16 md:h-full border-[1px] poppins text-xl text-center border-[#F7C35F] md:p-6 rounded-3xl lg:p-10 col-span-5  h-full grid items-center justify-center '>
                     <h2 className='text-black redhat text-center md:text-left mb-0 font-medium leading-relaxed text-3xl md:text-4xl  md:mb-8'>{heading}</h2>
-                    <h3 className=' text-center md:text-left'>{text}</h3>
+                    <h3 className=' text-justify'>{text}</h3>
                 </div>
                 <div className='w-full col-span-5 p-6 border border-[#E9E9E9]  rounded-3xl h-full grid   '
                     style={{ boxShadow: '8px 8px 8px 0px #0000001A' }}

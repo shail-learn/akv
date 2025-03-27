@@ -90,8 +90,8 @@ export const Project = () => {
 
                                         <div className='lg:w-6/12 mt-32 md:mt-4 w-full  w-12/12'>
                                             <h3 className='text-xl font-medium'>{item.subtitle}</h3>
-                                            <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-normal redhat text-black mt-4 mb-6'>{item.heading}</h2>
-                                            <p className='text-black text-base redhat mb-10' dangerouslySetInnerHTML={{ __html: item.info }}>
+                                            <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-medium redhat text-black mt-4 mb-6'>{item.heading}</h2>
+                                            <p className='text-black text-base text-justify redhat mb-10' dangerouslySetInnerHTML={{ __html: item.info }}>
                                             </p>
                                             <div className='description_project redhat mb-10' dangerouslySetInnerHTML={{ __html: item.description }}>
                                             </div>
@@ -173,7 +173,7 @@ export const Impact = () => {
 
                     </div>
                     <div className='w-full md:w-6/12'>
-                        <h2 className="lg:leading-snug text-white redhat mb-4 pt-10 text-center md:text-left text-3xl md:text-4xl  font-normal  w-full"> {heading}</h2>
+                        <h2 className="lg:leading-snug text-white redhat mb-4 pt-10 text-center md:text-left text-3xl md:text-4xl  font-medium  w-full"> {heading}</h2>
 
                         <div ref={containerRef} className='custom_left_scroll mr-6
           overflow-y-scroll   h-[800px]' >
@@ -231,7 +231,7 @@ export const FeatureGoal = () => {
         <>
             <section className='relative text-center md:text-left pt-12 pb-12 overflow-hidden lg:pt-20 lg:pb-24' style={{ background: `url(${banner.src})center center / cover no-repeat` }}>
                 <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2 relative'>
-                    <h2 className='text-3xl text-center md:leading-[1.3] md:text-4xl font-normal redhat text-black mt-4 mb-12 lg:mb-16'>{heading}</h2>
+                    <h2 className='text-3xl text-center md:leading-[1.3] md:text-4xl font-medium redhat text-black mt-4 mb-12 lg:mb-16'>{heading}</h2>
                     <div className='border-full'>
                         <Swiper
                             slidesPerView={1}

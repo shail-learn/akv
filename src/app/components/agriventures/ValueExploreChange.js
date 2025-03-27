@@ -47,7 +47,7 @@ export const Value = () => {
         <>
             <section className='relative text-center bg-[#F5F5F5] md:text-left pt-12 pb-12 lg:pt-10 lg:pb-20'>
                 <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2 relative'>
-                    <h2 className='text-3xl text-center md:leading-[1.3] md:text-4xl font-normal redhat text-black mt-4 mb-16'>{heading}</h2>
+                    <h2 className='text-3xl text-center md:leading-[1.3] md:text-4xl font-medium redhat text-black mt-4 mb-16'>{heading}</h2>
                     <div className="flex flex-col md:flex-row items-center justify-between gap-8">
                         {coreValues.map((value, index) => (
                             <div key={index} className="relative flex flex-col items-center text-center">
@@ -113,7 +113,7 @@ export const Explore = () => {
 
                     </div>
                     <div className='w-full md:w-6/12'>
-                        <h2 className="lg:leading-snug text-white redhat mb-14 pt-16 text-center md:text-left text-3xl md:text-4xl  font-normal  w-full"> {heading}</h2>
+                        <h2 className="lg:leading-snug text-white redhat mb-14 pt-16 text-center md:text-left text-3xl md:text-4xl  font-medium  w-full"> {heading}</h2>
 
                         <div className="grid grid-cols-1 md:grid-cols-1 gap-8 px-4 lg:px-0">
                             {initiatives.map((item, index) => (
@@ -169,9 +169,9 @@ export const Change = () => {
                 <div className='mx-auto max-w-7xl w-full'>
                     <div className='mx-auto max-full flex flex-wrap md:flex-nowrap gap-0 md:gap-12 '>
                         <div className='w-full md:w-6/12 text-center md:text-left'>
-                            <h2 className="lg:leading-snug text-[#344C31] redhat text-center mb-6 md:text-left text-3xl md:text-4xl  font-normal  w-full"> {heading}</h2>
+                            <h2 className="lg:leading-snug text-[#344C31] redhat text-center mb-6 md:text-left text-3xl md:text-4xl  font-medium  w-full"> {heading}</h2>
                             <button className="poppins mx-auto  font-normal text-white w-[200px] py-3 rounded-[4px] bg-[#344C31] inline-block transition-all duration-500  hover:bg-white hover:text-[#344C31]">JOIN US</button>
-                            <p className='mt-6 text-black opacity-80'>{description}</p>
+                            <p className='mt-6 text-black text-justify opacity-80'>{description}</p>
 
                         </div>
                         <div className='w-full md:w-6/12 '>

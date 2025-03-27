@@ -32,7 +32,7 @@ export const Guide = () => {
                     <div className='w-full text-center'>
                         <div className='mx-auto w-full lg:w-7/12'>
                         <h2 className="text-white text-3xl md:text-4xl mb-6 lg:leading-tight  redhat  font-medium  w-full">{heading}</h2>
-                        <p className='text-[15px] text-white text-justify font-light mb-10 md:mb-16'>{description}</p>
+                        <p className='text-[15px] text-white text-center font-light mb-10 md:mb-16'>{description}</p>
                         </div>
                     </div>
                 </div>
@@ -45,10 +45,7 @@ export const Guide = () => {
                                             <div className='w-full text-center'>
                                                 <Image src={item.img} className='w-full h-full' width="900" height="900" alt="icon" />
                                             </div>
-
-
                                         </div>
-
                                 )
                             })}
 
