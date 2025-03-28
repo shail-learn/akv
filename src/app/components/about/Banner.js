@@ -12,7 +12,7 @@ import Image from 'next/image';
 import BannerPage from '../BannerPage';
 export const Banner = () => {
     const text = {
-        banner: banner,
+        vedio : "https://cruxcreativedemo2.com/web-image/about-vedio.mp4",
         heading: `Our Essence: <span style="color:#48A490">Who We Are</span>`,
         title: 'Atulye Krishi Vana is a pioneering initiative dedicated to reshaping the future of agroforestry. By combining innovative, sustainable practices with a strong focus on community empowerment, we aim to restore ecosystems, uplift rural livelihoods, and foster long-term prosperity. Our work goes beyond agriculture – it’s a movement to create a greener, more resilient world.',
 
@@ -21,7 +21,7 @@ export const Banner = () => {
     }
     return (
         <>
-           <BannerPage heading={text.heading}  title={text.title} banner={text.banner} button={text.button} link={text.link} />
+           <BannerPage heading={text.heading}  title={text.title} video={text.vedio} button={text.button} link={text.link} />
         </>
     )
 }
