@@ -45,8 +45,6 @@ export const Footer = (htmlContent ) => {
                  <li className='text-[#D2AE6D] hidden md:block hover:text-white mb-3' key={item.name}><Link href={item.href}>{item.name}</Link></li>
 
                ))}
-
-
             </ul>
           </div>
 
