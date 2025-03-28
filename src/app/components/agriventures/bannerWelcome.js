@@ -5,7 +5,7 @@ import image2 from "../../../assets/images/about/image2.webp";
 import icon1 from "../../../assets/images/about/mssion.svg";
 import icon2 from "../../../assets/images/about/vision.svg";
 
-// import BannerPage from '../BannerPage';
+import BannerPage from '../BannerPage';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -21,45 +21,7 @@ export const AmBanner = () => {
     }
     return (
         <>
-            <div
-                className="py-16 lg:h-[550px] flex items-center justify-center relative">
-                     <video className='absolute top-0 left-0 w-full h-full object-cover' src={text.vedio} autoPlay={true} loop muted></video>
-
-                {/* <video
-                    className="absolute top-0 left-0 w-full h-full object-cover"
-                    src={vedio}
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                /> */}
-                <div className="absolute h-full top-0 bottom-0 w-full bg-black opacity-40"></div>
-                <div className="relative text-center z-1 flex flex-wrap w-full items-center justify-center">
-                    <div className='w-11/12 md:w-3/4 lg:w-7/12'>
-
-                        <h1 className="text-white text-3xl md:text-4xl lg:leading-tight lg:text-[40px] font-normal w-full" dangerouslySetInnerHTML={{ __html: text.heading }}></h1>
-                        <p
-                            className="'w-full text-white text-xl md:text-2xl mt-3 mb-7 lg:mt-4 lg:mb-4'"
-                        >
-                            {text.subtitle}
-                        </p>
-
-                        <p className='w-full text-white italic text-[15px] mt-5 mb-7 lg:mt-7 lg:mb-10'>
-                            {text.title}
-                        </p>
-
-                        <Link
-                            className="text-white border-2 p-2 px-12 lg:px-20 hover:bg-white hover:text-black transition delay-100 duration-100 ease-in-out"
-                            href={text.buttonLink}
-                        >
-                            {text.buttonText}
-                        </Link>
-
-
-
-                    </div>
-                </div>
-            </div>
+       <BannerPage heading={text.heading} title={text.title} video={text.vedio} button={text.buttonText} link={text.buttonLink}/>
 
             {/* <BannerPage heading={text.heading} title={text.title} banner={text.banner} button={text.buttonText} link={text.buttonLink} /> */}
 
