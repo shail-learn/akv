@@ -73,7 +73,7 @@ export const Cultivation = () => {
         <div className='mx-auto max-w-7xl  px-4 md:px-8 lg:px-2 '>
           <div className='flex flex-wrap  items-center gap-6 px-0 md:px-6  lg:px-2'>
             <div className='w-full lg:w-12/12 '>
-              <h2 className="lg:leading-snug  text-white redhat mb-4 lg:mb-7 text-center   text-3xl md:text-4xl  font-normal  w-full">
+              <h2 className="lg:leading-snug  text-white redhat mb-4 lg:mb-7 text-center   text-3xl md:text-4xl  font-medium  w-full">
                 {heading}
               </h2>
             </div>
@@ -165,6 +165,7 @@ export const Harvesting = () => {
     <>
       <section className="py-14 lg:py-16">
         <div className="mx-auto max-full max-w-7xl px-4 md:px-6 lg:px-2">
+        <div className='w-[95%] md:w-[92%] mx-auto'>
           <div className="relative rounded-lg">
             <Image
               src={harvestimg}
@@ -178,6 +179,7 @@ export const Harvesting = () => {
 
             </div>
             <div className="absolute top-8 md:-right-8 -right-3  bg-[#6D8C54] md:w-16 w-10 h-28 rounded-md"></div>
+          </div>
           </div>
 
           <div className="mt-6 text-gray-700">
@@ -219,7 +221,7 @@ export const Market = () => {
 
 <section className="py-14 lg:py-16 pt-0 lg:pt-2 relative overflow-hidden">
       <div className="mx-auto max-full max-w-7xl px-4 md:px-6 lg:px-2">
-        <h2 className="lg:leading-snug  text-[#1B453C] redhat mb-4 lg:mb-7 text-center   text-3xl md:text-4xl  font-normal  w-full">
+        <h2 className="lg:leading-snug  text-[#1B453C] redhat mb-4 lg:mb-7 text-center text-3xl md:text-4xl font-medium  w-full">
           {heading}
         </h2>
           <div className='flex flex-wrap'>

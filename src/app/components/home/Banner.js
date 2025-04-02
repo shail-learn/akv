@@ -24,10 +24,10 @@ export const Banner = () => {
             <div
                 className="    flex items-center justify-center"
 
-                // style={{ backgroundImage: `url(${banner.src})` }}
+            // style={{ backgroundImage: `url(${banner.src})` }}
 
             >
-                   <video className='w-full' src={vedio} autoPlay={true} loop muted></video>
+                <video className='w-full' src={vedio} autoPlay={true} loop muted></video>
 
                 {/* <div className="absolute inset-0 bg-black opacity-40"></div>
                 <div className="relative text-center z-1 flex flex-wrap items-center justify-center">
@@ -90,28 +90,20 @@ export const Banner2 = () => {
 
 
 export const VedioHome = () => {
-     const vedio = "https://cruxcreativedemo2.com/web-image/Website-Banner-AKv.mp4"
+    const vedio = "https://cruxcreativedemo2.com/web-image/Website-Banner-AKv.mp4"
     return (
         <>
             <div
                 className="bg-cover bg-center relative " >
+                <div className="iframe-container">
+                    <video className='w-full h-full'
+                        src={vedio}
+                        autoPlay
+                        loop
+                        playsInline
+                        muted={false} ></video>
 
-
-                  <div className="iframe-container">
-      {/* <iframe
-        src={vedio}
-        controls={false}
-        className="w-full h-auto"
-        frameBorder="0"
-        allow="autoplay"
-      /> */}
-       <video className='w-full h-full'
-        src={vedio}
-         autoPlay
-         loop
-         muted={true} ></video>
-
-    </div>
+                </div>
             </div>
 
         </>
