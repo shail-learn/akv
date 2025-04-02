@@ -8,7 +8,7 @@ const ImpactHighlights = () => {
     const heading ="What Sets Us Apart"
     const text = {
         heading: 'We Believe in Making a Real Green Revolution',
-        title: 'At Atulye Krishi Van, we are committed to building the world’s most impactful agri-company through sustainable agriculture and agroforestry. Our mission is to address climate change, global warming, and greenhouse gas emissions while fostering environmental resilience. <br> Our journey began in Madhya Pradesh, India, with a flagship project focused on sustainable forestry and organic plantations. By creating ecosystems that balance resource generation with environmental preservation, we aim to secure a prosperous and sustainable future for generations to come.'
+        title: 'At Atulye Krishi Vana, we are committed to building the world’s most impactful agri-company through sustainable agriculture and agroforestry. Our mission is to address climate change, global warming, and greenhouse gas emissions while fostering environmental resilience. <br> Our journey began in Madhya Pradesh, India, with a flagship project focused on sustainable forestry and organic plantations. By creating ecosystems that balance resource generation with environmental preservation, we aim to secure a prosperous and sustainable future for generations to come.'
     }
     const card = [
         {

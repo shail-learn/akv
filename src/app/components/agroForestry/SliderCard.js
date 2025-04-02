@@ -16,32 +16,32 @@ export const SliderCard = () => {
     {
         title: "Seeds",
         image: img1,
-        link: "/ornamental-plants/mulethi",
+        link: "/agroForestry/mulethi",
     },
     {
         title: "Bamboo",
         image: img1,
-        link: "/ornamental-plants/bamboo",
+        link: "/agroForestry/bamboo",
     },
     {
         title: "Neem",
         image: img1,
-        link: "/ornamental-plants/neem",
+        link: "/agroForestry/neem",
     },
     {
       title: "Seeds",
       image: img1,
-      link: "/ornamental-plants/neem",
+      link: "/agroForestry/neem",
   },
   {
     title: "Neem",
     image: img1,
-    link: "/ornamental-plants/neem",
+    link: "/agroForestry/neem",
 },
 {
   title: "Neem",
   image: img1,
-  link: "/ornamental-plants/neem",
+  link: "/agroForestry/neem",
 },
 
 ]
@@ -98,7 +98,8 @@ export const SliderCard = () => {
                     <div key={index} className='w-full md:col-span-4 relative'>
                         <Image src={item.image} alt="banner" className='w-full h-full rounded-tl-3xl rounded-tr-3xl' />
                         <div className='  hidden gap-4 items-center justify-between absolute bottom-0 left-0 bg-[#719A8E] w-full md:p-4 py-2 px-4'>
-                            <p className='text-white text-xl md:text-2xl'>{item.title}</p> <Link href="#" className='text-sm border-[1px] border-[#646464] w-[150px] text-center rounded-xl p-2 hover:bg-[#1B453C] hover:text-white '>Explore More</Link>
+                            <p className='text-white text-xl md:text-2xl'>{item.title}</p>
+                             <Link href={item.link} className='text-sm border-[1px] border-[#646464] w-[150px] text-center rounded-xl p-2 hover:bg-[#1B453C] hover:text-white '>Explore More</Link>
                         </div>
                     </div>
 
