@@ -79,7 +79,7 @@ export const Uses = () => {
 
         <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2 relative z-1 '>
           <div className='lg:w-12/12  w-full  w-12/12'>
-            <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-normal redhat text-center text-white mb-4'>{heading}</h2>
+            <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-medium redhat text-center text-white mb-4'>{heading}</h2>
 
           </div>
 
@@ -154,21 +154,21 @@ export const Sustainable = () => {
     <>
 
       <section className="py-14 lg:py-16">
-        <h2 className='px-4 lg:leading-snug  text-[#1B453C] redhat mb-4  text-center   text-3xl md:text-4xl  font-normal  w-full'>{heading}</h2>
+        <h2 className='px-4 lg:leading-snug  text-[#1B453C] redhat mb-4  text-center   text-3xl md:text-4xl  font-medium  w-full'>{heading}</h2>
         <div
           className="text-[#1B453C] redhat mb-7 text-xl text-center md:mb-12"
           dangerouslySetInnerHTML={{ __html: subtitle }}
         />
         <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {data.map((item, index) => (
-            <div key={index} className="group rounded-tl-[60px] overflow-hidden">
+            <div key={index} className="group rounded-tl-[60px] overflow-hidden transition-all duration-500">
               <div>
                 <Image
                   src={item.img}
                   alt={item.title}
                   width={600}
                   height={400}
-                  className="w-full h-full object-cover transition-all md:group-hover:h-80"
+                  className="w-full h-full object-cover transition-all duration-100  md:group-hover:h-80"
                 />
               </div>
               <div className="p-4">
@@ -204,7 +204,7 @@ export const Invest = () => {
 
         <div className="w-full md:w-3/5 grid grid-cols-1 gap-6">
         <div className="w-full md:w-full grid grid-cols-1 gap-6">
-      <h2 className='w-full lg:leading-snug  text-[#1B453C] redhat mb-4 lg:mb-7 text-center text-3xl md:text-4xl  font-normal '>{heading}</h2>
+      <h2 className='w-full lg:leading-snug  text-[#1B453C] redhat mb-4 lg:mb-7 text-center text-3xl md:text-4xl  font-medium '>{heading}</h2>
       </div>
            <div className='w-full grid grid-cols-2 gap-8 md:gap-12 lg:gap-20'>
           {data.map((item, index) => (
