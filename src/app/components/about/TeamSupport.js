@@ -20,18 +20,17 @@ export const Team = () => {
             >
                 <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2'>
                     <h2 className='text-3xl text-center md:leading-[1.3] md:text-4xl font-medium redhat text-[#1B453C] mb-14'>{heading}</h2>
-                    <div className='lg:w-10/12 mx-auto w-full'>
-                        <div className='lg:grid flex flex-wrap justify-items-between  gap-4 lg:gap-6 grid-cols-1 lg:grid-cols-12 flex-col-reverse'>
-                            <div className='lg:col-span-7 w-full w-12/12' >
+                    <div className='lg:w-12/12 mx-auto w-full'>
+                        <div className='lg:grid flex items-center flex-wrap justify-items-between  gap-4 lg:gap-6 grid-cols-1 lg:grid-cols-12 flex-col-reverse'>
+                            <div className='lg:col-span-8 w-full w-12/12' >
                                 <div className='lg:grid flex flex-wrap gap-6  lg:gap-6 grid-cols-1 lg:grid-cols-12'>
                                     {teamMember.map((item, index) => (
-                                        <div key={index} className='md:col-span-4 md:w-full md:w-12/12 col-span-2 w-[46%]' >
+                                        <div key={index} className='md:col-span-3 md:w-full md:w-12/12 col-span-2 w-[46%]' >
                                             <TeamCard data={item} />
                                         </div>
                                     ))}
                                 </div>
                             </div>
-                            <div className='lg:col-span-1  w-full w-12/12' ></div>
                             <div className='lg:col-span-4   w-full w-12/12' >
                                 <div className='bg-[#1A3232] p-10 md:p-10 mb-10  grid items-center rounded-xl h-full text-white'>
                                     <div>
