@@ -1,8 +1,12 @@
 import React from 'react'
+import ContactPage from '../components/contact/ContactPage'
+
 
 function page() {
   return (
-    <div>Contact Us</div>
+    <>
+     <ContactPage/>
+    </>
   )
 }
 

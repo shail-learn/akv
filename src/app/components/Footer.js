@@ -12,7 +12,7 @@ import { FaPhone } from "react-icons/fa6";
 
 
 
-export const Footer = (htmlContent ) => {
+export const Footer = (htmlContent) => {
   const navigation = [
     { name: 'Home', href: '/', current: true },
     { name: 'About Us', href: '/about-us', current: false },
@@ -27,55 +27,59 @@ export const Footer = (htmlContent ) => {
   ]
   const address = [
     {
-        phone: "+91 9220152225",
-        location:
-            "A&M Agriventures Pvt Ltd, <br/> Village: Ramgarh, Tehsil: lchhawar, <br/> District: Sehore- 466115 Madhya Pradesh, India",
+      phone: "+91 9220152225",
+      location:
+        "A&M Agriventures Pvt Ltd, <br/> Village: Ramgarh, Tehsil: lchhawar, <br/> District: Sehore- 466115 Madhya Pradesh, India",
     },
-];
+  ];
   return (
     <footer className='bg-[#1B453C]  px-4 md:px-8 lg:px-2  py-8  md:py-16' >
       <Link className='fixed right-2 bottom-4 z-10' target="_blank" href="https://wa.me/919220152225?text=Hey!%0A%0AWelcome%20to%20Krishi%20Vana%20-%0A%0">
-     <Image className='h-16 w-auto' src={whatsapp} alt='whatsapp' />
-    </Link>
+        <Image className='h-16 w-auto' src={whatsapp} alt='whatsapp' />
+      </Link>
       <section className='mx-auto max-w-7xl'>
         <div className='flex gap-4 md:gap-0 flex-wrap'>
           <div className='w-full md:w-4/12'>
-          <ul className='footer_menu'>
-               {navigation.map((item,key)=>(
-                 <li className='text-[#D2AE6D] hidden md:block hover:text-white mb-3' key={item.name}><Link href={item.href}>{item.name}</Link></li>
+            <ul className='footer_menu'>
+              {navigation.map((item, key) => (
+                <li className='text-[#D2AE6D] hidden md:block hover:text-white mb-3' key={item.name}><Link href={item.href}>{item.name}</Link></li>
 
-               ))}
+              ))}
             </ul>
           </div>
 
           <div className='w-full md:w-4/12 grid justify-center'>
-               <div className='rounded-full bg-white p-4 w-28 h-28 flex justify-center items-center'>
-                 <Image src={logo} className='w-auto h-full' alt="logo" height="30px" width="30px" />
-               </div>
-               <ul className="flex gap-2 justify-center mt-5 md:mt-8">
-                  <li><Link className='bg-[#D2AE6D] p-2 rounded-full grid hover:bg-white' href="#"><FaFacebookF /></Link></li>
-                  <li><Link className='bg-[#D2AE6D] p-2 rounded-full grid hover:bg-white' href="#"><SiInstagram  /></Link></li>
-                  <li><Link className='bg-[#D2AE6D] p-2 rounded-full grid hover:bg-white' href="#"><FaLinkedinIn /></Link></li>
+            <div className='rounded-full bg-white p-4 w-28 h-28 flex justify-center items-center'>
+              <Image src={logo} className='w-auto h-full' alt="logo" height="30px" width="30px" />
+            </div>
+            <ul className="flex gap-2 justify-center mt-5 md:mt-8">
+              <li><Link className='bg-[#D2AE6D] p-2 rounded-full grid hover:bg-white' href="#"><FaFacebookF /></Link></li>
+              <li><Link className='bg-[#D2AE6D] p-2 rounded-full grid hover:bg-white' href="#"><SiInstagram /></Link></li>
+              <li><Link className='bg-[#D2AE6D] p-2 rounded-full grid hover:bg-white' href="#"><FaLinkedinIn /></Link></li>
 
-                </ul>
+            </ul>
           </div>
 
           <div className='w-full md:w-4/12 md:grid  justify-end'>
             <div>
-                    <p className='text-white font-semibold md:mt-0 mt-4 text-lg mb-5 text-center md:text-left'>Get in Touch!</p>
+              <p className='text-white font-semibold md:mt-0 mt-4 text-lg mb-5 text-center md:text-left'>Project Office</p>
 
-                      <ul>
-                        <li className='text-white font-light flex gap-4 mb-6'>
-                          <span className='text-[#D2AE6D] text-xl mt-1'><IoLocationSharp /></span>
-                          A&M Agriventures Pvt Ltd, <br/> Village: Ramgarh, Tehsil: lchhawar, <br/> District: Sehore- 466115 Madhya Pradesh, India</li>
-                          <li className='text-white font-light flex gap-4'>
-                          <span className='text-[#D2AE6D] text-xl mt-1'><FaPhone /></span>
-                          +91 9220152225</li>
-                      </ul>
+              <ul>
+                <li className='text-white font-light flex gap-4 mb-6'>
+                  <span className='text-[#D2AE6D] text-xl mt-1'><IoLocationSharp /></span>
+                  Atulye Krishi Vana
+                  <br /> Mithlesh Nagar, Village, Ramgarh,
+                  <br /> P.O. : Brijesh Nagar, Tehsil: Icchawar,
+                  <br />Dist. : Sehore, Bhopal, (MP) - 466115
+                </li>
+                <li className='text-white font-light flex gap-4'>
+                  <span className='text-[#D2AE6D] text-xl mt-1'><FaPhone /></span>
+                  +91 9220152225</li>
+              </ul>
 
 
-                      </div>
             </div>
+          </div>
 
         </div>
       </section>

@@ -42,18 +42,18 @@ export const Ourteam = () => {
       name: "Mr. Sanjay Mittal",
       designation: "Head of Engineering & Technical Solutions",
     },
-    {
-      id: 5,
-      img: Team5,
-      name: "Mrs. Taran",
-      designation: "Head of PR & Communications",
-    },
-    {
-      id: 6,
-      img: Team6,
-      name: "Ms. Shweta Sharma",
-      designation: "Head of HR & Corporate Governance",
-    },
+    // {
+    //   id: 5,
+    //   img: Team5,
+    //   name: "Mrs. Taran",
+    //   designation: "Head of PR & Communications",
+    // },
+    // {
+    //   id: 6,
+    //   img: Team6,
+    //   name: "Ms. Shweta Sharma",
+    //   designation: "Head of HR & Corporate Governance",
+    // },
 
   ];
 
