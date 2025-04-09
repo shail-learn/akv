@@ -19,8 +19,10 @@ const navigation = [
     name: "About Us",
     href: "#",
     submenu: [
-      { name: "About Atulyekrishi Vanna", href: "/about-us" },
+      { name: "About Atulye Krishi Vana", href: "/about-us" },
       { name: "About A&M Agriventure", href: "/a-m-agriventures" },
+      { name: "Our Team", href: "/our-team" },
+
     ],
   },
   {
