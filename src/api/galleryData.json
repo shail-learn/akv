@@ -1,0 +1,22 @@
+
+  [
+    {
+      "title": "Our Office Moments",
+      "images": [
+        { "id": 1, "src": "https://cruxcreativedemo2.com/web-image/gallary/demo1.webp", "alt": "Office 1" },
+        { "id": 2, "src": "https://cruxcreativedemo2.com/web-image/gallary/demo2.webp", "alt": "Office 2" },
+        { "id": 3, "src": "https://cruxcreativedemo2.com/web-image/gallary/demo3.webp", "alt": "Office 3" },
+        { "id": 4, "src": "https://cruxcreativedemo2.com/web-image/gallary/demo4.webp", "alt": "Office 4" }
+
+      ]
+    },
+    {
+      "title": "Field Visits",
+      "images": [
+        { "id": 5, "src": "https://cruxcreativedemo2.com/web-image/gallary/demo5.webp", "alt": "Visit 1" },
+        { "id": 6, "src": "https://cruxcreativedemo2.com/web-image/gallary/demo6.webp", "alt": "Visit 2" },
+        { "id": 7, "src": "https://cruxcreativedemo2.com/web-image/gallary/demo7.webp", "alt": "Visit 2" }
+
+      ]
+    }
+  ]

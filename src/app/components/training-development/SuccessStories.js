@@ -7,9 +7,9 @@ import "swiper/css/pagination";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import { BsChevronLeft, BsChevronRight} from "react-icons/bs";
 
-import story1 from "../../../assets/images/training-development/story1.webp";
-import story2 from "../../../assets/images/training-development/story2.webp";
-import story3 from "../../../assets/images/training-development/story3.webp";
+import story1 from "../../../assets/images/training/story1.webp";
+import story2 from "../../../assets/images/training/story2.webp";
+import story3 from "../../../assets/images/training/story3.webp";
 import Image from "next/image";
 
 
@@ -48,7 +48,7 @@ export const SuccessStories = () => {
         <>
             <section className='pt-8 pb-6 lg:pt-12 lg:pb-8'>
                 <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2'>
-                    <h2 className="text-3xl md:leading-[1.3] md:text-4xl font-medium text-center redhat text-[#1F1E17] mb-6">Success Stories</h2>
+                    <h2 className="text-3xl md:leading-[1.3] md:text-4xl font-medium text-center redhat text-[#1F1E17] mb-12">Success Stories</h2>
 
                     <div className="relative">
                         <Swiper
@@ -76,9 +76,9 @@ export const SuccessStories = () => {
                                         <Image
                                             src={story.image}
                                             alt={story.title}
-                                            className="w-full h-full object-cover"
+                                            className="w-full h-full object-cover rounded-2xl"
                                         />
-                                        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/45 to-black/70 flex flex-col justify-end p-6 text-white">
+                                        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/25 to-black/35 flex flex-col justify-end p-6 text-white">
                                             <h3 className="text-xl md:text-2xl font-light my-4">{story.title}</h3>
                                             <p className="text-xl md:text-2xl font-medium">{story.name}</p>
                                             <p className="text-[15px] my-4 redhat font-normal">{story.description}</p>
