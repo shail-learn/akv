@@ -10,7 +10,7 @@ export const BusinessCard = ({ image, title, info ,link}) => {
 
 
       <div>
-        <Image src={image} alt="service img" width="500" height="500" className='w-full h-full' />
+        <Image src={image} alt="service img" width="500" height="500" className='w-full h-full rounded-2xl' />
         <h2 className='text-black redhat text-xl mt-4 lg:text-2xl mb-3'>{title}</h2>
         <ul className="mt-2 space-y-2">
           {info.map((point, index) => (

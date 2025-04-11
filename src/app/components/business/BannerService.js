@@ -1,5 +1,5 @@
 import React from 'react'
-import banner from "../../../assets/images/business1/banner.webp";
+import banner from "../../../assets/images/business1/banner-business.webp";
 import image2 from "../../../assets/images/business1/imgge1.webp";
 import service from './../../../api/service.json'
 import BannerPage from '../BannerPage';
