@@ -1,0 +1,27 @@
+{
+    "heading": "Get In Touch!",
+    "left": {
+      "title": "Send Message",
+      "description": "We’d love to hear from you! Whether you have inquiries about our sustainable Agroforestry initiatives, partnerships, or investment opportunities, feel free to connect with us.",
+      "formFields": [
+        { "placeholder": "Name", "name": "name" },
+        { "placeholder": "Phone", "name": "phone" },
+        { "placeholder": "Email", "name": "email" },
+        { "placeholder": "City", "name": "city" },
+        { "placeholder": "Message", "name": "message", "type": "textarea" }
+      ],
+      "button": "Submit"
+    },
+    "right": {
+      "officeTitle": "Our Project Office:",
+      "officeName": "Atyule Krishi Vana",
+      "address": [
+        "Mithlesh Nagar, Village: Ramgarh,",
+        "P.O: Brijish Nagar, Tehsil: Icchawar,",
+        "Dist: Sehore, Bhopal, (MP)- 466115"
+      ],
+      "callUs": "+91 9220152225",
+      "website": "www.atyulekrishivana.com",
+      "email": "info@atulyekrishivana.com"
+    }
+  }

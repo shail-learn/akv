@@ -25,10 +25,11 @@ export const Banner = () => {
         heading: `A Journey Towards Prosperous <br> Sustainability`,
         buttonText: "Join Our Mission",
         buttonLink: "/",
+        opacity :"opacity-10"
     }
     return (
         <>
-            <BannerPage className="white_btn_banner" heading={text.heading} title={text.title} banner={text.banner} button={text.buttonText} link={text.buttonLink} classname='py-3 !lg:px-10 !px-10 bg-white !text-[#203008] inline-block' />
+            <BannerPage className="white_btn_banner" opacity={text.opacity} heading={text.heading} title={text.title} banner={text.banner} button={text.buttonText} link={text.buttonLink} classname='py-3 !lg:px-10 !px-10 bg-white !text-[#203008] inline-block' />
         </>
     )
 }

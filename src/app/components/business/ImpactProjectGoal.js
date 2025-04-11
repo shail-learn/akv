@@ -10,7 +10,7 @@ import icon6 from "../../../assets/images/business1/Icon6.png";
 import icon7 from "../../../assets/images/business1/Icon7.png";
 import icon8 from "../../../assets/images/business1/Icon8.png";
 import icon9 from "../../../assets/images/business1/Icon9.png";
-import image3 from "../../../assets/images/about/explore.webp";
+import image3 from "../../../assets/images/business1/projectimg1.webp";
 import explore1 from "../../../assets/images/about/explore1.svg";
 import explore2 from "../../../assets/images/about/explore2.svg";
 import explore3 from "../../../assets/images/about/explore3.svg";
@@ -144,9 +144,9 @@ export const Project = () => {
         <>
             <section
                 className=" bg-[#9A9771] pt-0 pb-14 lg:pt-0 lg:pb-0 mt-6">
-                <div className='mx-auto max-full flex flex-wrap md:flex-nowrap gap-0 md:gap-12'>
-                    <div className='w-full md:w-6/12'>
-                        <Image className='h-full w-full' src={image3} alt="banner" />
+                <div className='mx-auto max-full justify-between flex flex-wrap md:flex-nowrap gap-0 md:gap-12'>
+                    <div className='w-full md:w-5/12'>
+                        <Image className='h-auto w-full' src={image3} alt="banner" />
 
                     </div>
                     <div className='w-full md:w-6/12'>
@@ -164,7 +164,7 @@ export const Project = () => {
 
                                     <div>
                                         <h3 className="text-xl mb-1 redhat font-medium text-white">{item.title}</h3>
-                                        <p className="text-white redhat text-sm whitespace-pre-line">{item.description}</p>
+                                        <p className="text-white  redhat text-sm whitespace-pre-line">{item.description}</p>
                                     </div>
                                 </div>
                             ))}

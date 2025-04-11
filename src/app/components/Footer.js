@@ -1,8 +1,9 @@
+'use client';
 import Link from 'next/link'
 import React from 'react'
 import logo from "../../assets/images/color-logo.png"
 import whatsapp from "../../assets/images/WhatsApp.svg"
-
+import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import { FaFacebookF } from "react-icons/fa";
 import { SiInstagram } from "react-icons/si";
@@ -12,7 +13,11 @@ import { FaPhone } from "react-icons/fa6";
 
 
 
+
 export const Footer = (htmlContent) => {
+  const pathname = usePathname();
+  const isContactPage = pathname === '/contact-us';
+
   const navigation = [
     { name: 'Home', href: '/', current: true },
     { name: 'About Us', href: '/about-us', current: false },
@@ -49,13 +54,15 @@ export const Footer = (htmlContent) => {
           </div>
 
           <div className='w-full md:w-4/12 grid justify-center'>
-            <div className='rounded-full bg-white p-4 w-28 h-28 flex justify-center items-center'>
+          {!isContactPage && (
+            <div className={`rounded-full bg-white p-4 w-28 h-28 flex justify-center items-center `}  >
               <Image src={logo} className='w-auto h-full' alt="logo" height="30px" width="30px" />
             </div>
+)}
             <ul className="flex gap-2 justify-center mt-5 md:mt-8">
-              <li><Link className='bg-[#D2AE6D] p-2 rounded-full grid hover:bg-white' href="#"><FaFacebookF /></Link></li>
-              <li><Link className='bg-[#D2AE6D] p-2 rounded-full grid hover:bg-white' href="#"><SiInstagram /></Link></li>
-              <li><Link className='bg-[#D2AE6D] p-2 rounded-full grid hover:bg-white' href="#"><FaLinkedinIn /></Link></li>
+              <li><Link className='bg-[#D2AE6D] p-2 rounded-full grid hover:bg-white' href="https://www.facebook.com/profile.php?id=61552925864614" target='_blank'><FaFacebookF /></Link></li>
+              <li><Link className='bg-[#D2AE6D] p-2 rounded-full grid hover:bg-white' href="https://www.instagram.com/atulyekrishivana/" target='_blank'><SiInstagram /></Link></li>
+              <li><Link className='bg-[#D2AE6D] p-2 rounded-full grid hover:bg-white' href="https://www.linkedin.com/company/atulyekrishivana/" target='_blank'><FaLinkedinIn /></Link></li>
 
             </ul>
           </div>
