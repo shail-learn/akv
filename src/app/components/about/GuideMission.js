@@ -8,50 +8,50 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 export const Guide = () => {
-    const heading = "Our Guiding Light"
-    const description = "Our vision is to bring forth a thriving ecosystem that safeguards crucial resources for the coming generations. On leading the charge in eco-friendly farming and forestry techniques, we aim to stimulate massive economic influence by growing a lucrative venture worth multiple billion—a venture intertwining environmental care with wealth creation for communities scattered across India."
-    const imgroup = [
-        {
-            img: 'https://cruxcreativedemo2.com/web-image/about/imagess1.webp',
-        },
-        {
-            img: 'https://cruxcreativedemo2.com/web-image/about/imagess2.webp',
-        },
-        {
-            img: 'https://cruxcreativedemo2.com/web-image/about/imagess3.webp',
-        }
-    ]
-    const myStyle = {
-      background: "linear-gradient(180deg, rgba(245,245,245,1) 0%, rgba(255,255,255,1) 70%)"
-    };
+  const heading = "Our Guiding Light"
+  const description = "Our vision is to bring forth a thriving ecosystem that safeguards crucial resources for the coming generations. On leading the charge in eco-friendly farming and forestry techniques, we aim to stimulate massive economic influence by growing a lucrative venture worth multiple billion—a venture intertwining environmental care with wealth creation for communities scattered across India."
+  const imgroup = [
+    {
+      img: 'https://cruxcreativedemo2.com/web-image/about/imagess1.webp',
+    },
+    {
+      img: 'https://cruxcreativedemo2.com/web-image/about/imagess2.webp',
+    },
+    {
+      img: 'https://cruxcreativedemo2.com/web-image/about/imagess3.webp',
+    }
+  ]
+  const myStyle = {
+    background: "linear-gradient(180deg, rgba(245,245,245,1) 0%, rgba(255,255,255,1) 70%)"
+  };
   return (
     <>
-          <section
-                className="py-14 lg:py-16 bg-[#4B8B8B] overflow-hidden " >
-                <div className='mx-auto max-full max-w-7xl px-4 md:px-6 lg:px-2'>
-                    <div className='w-full text-center'>
-                        <div className='mx-auto w-full lg:w-7/12'>
-                        <h2 className="text-white text-3xl md:text-4xl mb-6 lg:leading-tight  redhat  font-medium  w-full">{heading}</h2>
-                        <p className='text-[15px] text-white text-center font-light mb-10 md:mb-16'>{description}</p>
-                        </div>
-                    </div>
-                </div>
-                <div className='w-full mx-4 md:mx-12'>
-                <div className='lg:grid flex flex-wrap gap-0 grid-cols-1 lg:grid-cols-3'>
-                            {imgroup.map((item, index) => {
-                                return (
+      <section
+        className="py-14 lg:py-16 bg-[#4B8B8B] overflow-hidden " >
+        <div className='mx-auto max-full max-w-7xl px-4 md:px-6 lg:px-4'>
+          <div className='w-full text-center'>
+            <div className='mx-auto w-full lg:w-7/12'>
+              <h2 className="text-white text-3xl md:text-4xl mb-6 lg:leading-tight  redhat  font-medium  w-full">{heading}</h2>
+              <p className='text-[15px] text-white text-center font-light mb-10 md:mb-16'>{description}</p>
+            </div>
+          </div>
+        </div>
+        <div className='w-full px-6'>
+          <div className='lg:grid flex flex-wrap gap-4 [min-width:1240px]:gap-1 grid-cols-1 lg:grid-cols-3'>
+            {imgroup.map((item, index) => {
+              return (
 
-                                        <div key={index} className='grid items-center mb-4 md:mb-0 justify-center gap-2 '>
-                                            <div className='w-full text-center'>
-                                                <Image src={item.img} className='w-full h-full' width="900" height="900" alt="icon" />
-                                            </div>
-                                        </div>
-                                )
-                            })}
-
-                        </div>
+                <div key={index} className='grid items-center mb-4 md:mb-0 justify-center gap-2 '>
+                  <div className='w-full text-center'>
+                    <Image src={item.img} className='!w-full h-full' width="1400" height="1200" alt="icon" />
+                  </div>
                 </div>
-            </section>
+              )
+            })}
+
+          </div>
+        </div>
+      </section>
     </>
   )
 }
@@ -59,44 +59,44 @@ export const Guide = () => {
 
 
 export const Mission = () => {
-    const heading=" Our Mission: Growing Sustainability, Together"
-    const shortdescription= "Our mission is built on three core pillars:"
-    const text = [" Our goal is to create a legacy of environmental preservation without taking from future generations. Our vision is to foster ‘billionaires’ of natural wealth by ensuring sustainable prosperity and environmental protection."]
-    const boxslider = [
-        {
-          image: icon1,
-          heading:"Building <span style='color:#5CA9A9'>Ecosystems</span>",
-          description: 'Through Afforestation, Reforestation & Revegatation',
-        },
-        {
-          image: icon1,
-          heading:"Fight <span style='color:#5CA9A9'>Climate Change</span> ",
-          description: 'Improving soil health, sequestering carbon, and promoting biodiversity.',
-        },
-        {
-          image: icon1,
-          heading:"Preserve the Soil for <span style='color:#5CA9A9'>Future Generations:</span> ",
-          description: 'Protecting the soil from degradation, deterioration, and erosion.',
-        },
-        {
-            image: icon1,
-            heading:"Building <span style='color:#5CA9A9'>Ecosystems</span>",
-            description: 'Through Afforestation, Reforestation & Revegatation',
-          },
-          {
-            image: icon1,
-            heading:"Fight <span style='color:#5CA9A9'>Climate Change</span> ",
-            description: 'Improving soil health, sequestering carbon, and promoting biodiversity.',
-          },
-          {
-            image: icon1,
-            heading:"Preserve the Soil for <span style='color:#5CA9A9'>Future Generations:</span> ",
-            description: 'Protecting the soil from degradation, deterioration, and erosion.',
-          },
-      ]
+  const heading = " Our Mission: Growing Sustainability, Together"
+  const shortdescription = "Our mission is built on three core pillars:"
+  const text = [" Our goal is to create a legacy of environmental preservation without taking from future generations. Our vision is to foster ‘billionaires’ of natural wealth by ensuring sustainable prosperity and environmental protection."]
+  const boxslider = [
+    {
+      image: icon1,
+      heading: "Building <span style='color:#5CA9A9'>Ecosystems</span>",
+      description: 'Through Afforestation, Reforestation & Revegatation',
+    },
+    {
+      image: icon1,
+      heading: "Fight <span style='color:#5CA9A9'>Climate Change</span> ",
+      description: 'Improving soil health, sequestering carbon, and promoting biodiversity.',
+    },
+    {
+      image: icon1,
+      heading: "Preserve the Soil for <span style='color:#5CA9A9'>Future Generations:</span> ",
+      description: 'Protecting the soil from degradation, deterioration, and erosion.',
+    },
+    {
+      image: icon1,
+      heading: "Building <span style='color:#5CA9A9'>Ecosystems</span>",
+      description: 'Through Afforestation, Reforestation & Revegatation',
+    },
+    {
+      image: icon1,
+      heading: "Fight <span style='color:#5CA9A9'>Climate Change</span> ",
+      description: 'Improving soil health, sequestering carbon, and promoting biodiversity.',
+    },
+    {
+      image: icon1,
+      heading: "Preserve the Soil for <span style='color:#5CA9A9'>Future Generations:</span> ",
+      description: 'Protecting the soil from degradation, deterioration, and erosion.',
+    },
+  ]
   return (
     <>
-          <section
+      <section
         className=" bg-white pt-0 pb-8 lg:pt-20 lg:pb-20 outer-arrow left-outer green_icon_slider outer_hide_slider" >
         <div className='mx-auto max-w-[1400px] md:mr-0 px-4 md:px-8 lg:px-2 '>
           <div className='flex flex-wrap lg:flex-nowrap items-center gap-6 px-0 md:px-6    lg:px-2'>
@@ -157,7 +157,7 @@ export const Mission = () => {
                         <h2 className='text-2xl font-medium pb-6' dangerouslySetInnerHTML={{ __html: item.heading }}></h2>
 
                         <p className='text-sm lg:text-base font-light' dangerouslySetInnerHTML={{ __html: item.description }}>
-                             </p>
+                        </p>
                       </div>
                     </div>
 

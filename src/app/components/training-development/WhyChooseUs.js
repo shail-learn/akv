@@ -55,7 +55,7 @@ const WhyChooseUs = () => {
                 src={feature.image}
                 alt={feature.title}
                 layout="fill"
-                objectFit="cover"
+                objectFit="cover rounded-full"
               />
             </div>
             <div>

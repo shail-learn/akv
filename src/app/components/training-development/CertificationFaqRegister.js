@@ -6,7 +6,7 @@ import icon03 from "../../../assets/images/training-development/New-Job.png";
 import circle1 from "../../../assets/images/training-development/circle1.png";
 import circle2 from "../../../assets/images/training-development/circle2.png";
 import circle3 from "../../../assets/images/training-development/circle3.png";
-import contactbg from "../../../assets/images/training-development/bgcontact.webp";
+import contactbg from "../../../assets/images/training/join-bg.webp";
 import { FaCalendarDays } from "react-icons/fa6";
 
 
@@ -167,7 +167,7 @@ export const Register = () => {
     <>
 
       <section className="pt-14 pb-14 lg:pt-20 lg:pb-20 relative " style={{ background: `url(${contactbg.src}) center center / cover no-repeat` }}>
-        <div className="absolute inset-0 bg-black bg-opacity-45"></div>
+        <div className="absolute inset-0 bg-black bg-opacity-35"></div>
         <div className="relative max-w-7xl mx-auto px-6 md:px-12 text-white text-center">
           <div className='flex flex-col lg:flex-row justify-between items-center gap-4 lg:gap-12'>
             <div className='md:w-5/12  w-12/12'>
