@@ -5,7 +5,7 @@ import value3 from "../../../assets/images/about/value3.svg";
 import value4 from "../../../assets/images/about/value4.svg";
 
 import indicateicon from "../../../assets/images/about/indicate.svg";
-import image3 from "../../../assets/images/about/explore.webp";
+import image3 from "../../../assets/images/about/exploreimg.webp";
 import explore1 from "../../../assets/images/about/explore1.svg";
 import explore2 from "../../../assets/images/about/explore2.svg";
 import explore3 from "../../../assets/images/about/explore3.svg";

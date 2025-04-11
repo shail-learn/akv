@@ -65,7 +65,7 @@ export const CsrProject = () => {
                                         alt={item.title}
                                         width={400}
                                         height={300}
-                                        className="w-full h-60 object-cover"
+                                        className="w-full h-60 object-cover rounded-2xl"
                                     />
                                 </div>
                                 <h3 className="text-lg font-semibold redhat mt-4 lg:h-[4rem] line-clamp-2 overflow-hidden">{item.title}</h3>
@@ -109,12 +109,12 @@ export const CsrProject = () => {
                                     spaceBetween: 20,
                                 },
                             }}
-                            className="mySwiper2 pagination_long "
+                            className="mySwiper2 pagination_long !pb-8 "
                         >
                             {aboutSlider.map((item, index) => (
                                 <SwiperSlide key={index}>
                                     <div className='w-full  relative'>
-                                        <Image src={item.image} alt="banner" width="600" height="600" className='w-full h-full border-2 border-[#1B453C]' />
+                                        <Image src={item.image} alt="banner" width="600" height="600" className='rounded-2xl w-full h-full border-1 border-[#1B453C]' />
                                     </div>
                                 </SwiperSlide>
                             ))}

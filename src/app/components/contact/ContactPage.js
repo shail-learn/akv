@@ -1,11 +1,28 @@
 import React from 'react'
 import contactbg from "../../../assets/images/contact/contact-banner.webp";
+import contactFooter from "../../../assets/images/contact/contactFooter.svg";
+import instagram from "../../../assets/images/contact/instagram.svg";
+import linkedin from "../../../assets/images/contact/linkedin.svg";
+import twitter from "../../../assets/images/contact/twitter.svg";
+
+import Image from 'next/image';
+import contactData from '../../../api/contactData.json'
+import { BiSolidPhoneCall } from "react-icons/bi";
+import { Map } from '../home/Contact';
+import Link from 'next/link';
+
 
 const ContactPage = () => {
   const banner = contactbg;
-  const heading = `Contact Us <br/> Atulye Krishi Vana`
+  const headingbanner = `Contact Us <br/> Atulye Krishi Vana`
   const subtitle = `Sustaining Ecosystems, Empowering Communities`;
+  const { heading, left, right } = contactData;
 
+  const socialLink=[
+    { name: 'linkedin', icon: linkedin, link: 'https://www.linkedin.com/company/atulyekrishivana/' },
+    { name: 'Instagram', icon: instagram, link: 'https://www.instagram.com/atulyekrishivana/' },
+    { name: 'twitter', icon: twitter, link: '#' },
+  ]
   return (
     <>
 
@@ -15,13 +32,25 @@ const ContactPage = () => {
       >
 
         <div className="relative text-center z-10 flex flex-wrap w-full items-center justify-center">
-          <div className="w-11/12 md:w-3/4 lg:w-7/12">
+        <div className='absolute z-10 top-2/4 left-2 md:left-10 -translate-y-2/4'>
+              <ul>
+                {socialLink.map((item, index) => (
+                  <li key={index} className='text-white text-2xl mb-2 md:mb-4'>
+                    <Link href={item.link} target="_blank">
+                       <Image src={item.icon} alt={item.name} width={30} height={30} className='w-8 h-8 md:w-10 md:h-10' />
+                    </Link>
+                  </li>
+                ))}
+               </ul>
+
+         </div>
+          <div className="w-10/12 md:w-3/4 lg:w-7/12">
             <h1
-              className="text-black text-3xl md:text-4xl lg:leading-tight lg:text-[40px] font-medium w-full"
-              dangerouslySetInnerHTML={{ __html: heading }}
+              className="text-white text-3xl md:text-4xl lg:leading-tight lg:text-[40px] font-medium w-full"
+              dangerouslySetInnerHTML={{ __html: headingbanner }}
             ></h1>
 
-            <p className="w-full text-black text-base md:text-lg mt-5 mb-7 lg:mt-7 lg:mb-10">
+            <p className="w-full text-white text-base md:text-lg mt-5 mb-7 lg:mt-7 lg:mb-10">
               {subtitle}
             </p>
           </div>
@@ -29,82 +58,87 @@ const ContactPage = () => {
       </section>
 
       <section
-        className=" relative text-center md:text-left  flex items-center justify-center pt-16 pb-16"
+        className=" relative text-center md:text-left  flex items-center justify-center py:8 md:py-12"
 
       >
-        <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2'>
-          <div className='lg:w-10/12 mx-auto w-full'>
-            <h2 className="text-3xl text-center lg:text-start md:leading-[1.3] md:text-4xl font-medium redhat text-[#1B453C] mb-6">Get In Touch!</h2>
-            <div className='grid gap-4 md:flex'>
-              <div className='lg:w-6/12 w-full bg-[#F2F2F2] p-8'>
+        <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2 pt-10 md:pt-0'>
+          <h2 className="text-3xl text-center md:leading-[1.3] md:text-4xl font-semibold redhat text-[#1B453C] md:mb-6">
+            {heading}
+          </h2>
+          <div className="max-w-6xl mx-auto px-4 py-8 md:py-12">
 
-                  <h2 className="text-lg lg:text-start md:leading-[1.3] md:text-xl font-medium text-black mb-3">Send Message</h2>
-                  <p className="text-black mb-6 lg:mb-8">
-                    We’d love to hear from you! Whether you have inquiries
-                    about our sustainable Agroforestry initiatives, partnerships,
-                    or investment opportunities, feel free to connect with us.
 
-                  </p>
-                  <form className="max-w-4xl mx-auto">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <div>
-                        <label className="block font-semibold mb-2">Name</label>
-                        <input
-                          type="text"
-                          placeholder="Your name"
-                          className="w-full bg-transparent border-b border-gray-400 outline-none py-2"
-                        />
-                      </div>
-                      <div>
-                        <label className="block font-semibold mb-2">Email</label>
-                        <input
-                          type="email"
-                          placeholder="Your email"
-                          className="w-full bg-transparent border-b border-gray-400 outline-none py-2"
-                        />
-                      </div>
-                    </div>
+            <div className="flex flex-col md:flex-row gap-8">
+              {/* Left Section */}
+              <div className="md:w-[55%]">
+                <h3 className="text-xl font-semibold mb-2">{left.title}</h3>
+                <p className="text-sm text-black mb-6 md:mb-8">{left.description}</p>
 
-                    <div className="mt-6">
-                      <label className="block font-semibold mb-2">Ph. No.</label>
+                <div className="bg-[#D9D9D9E0] rounded-tr-[50px] rounded-tl-[50px]  p-10 md:p-14">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {left.formFields.slice(0, 4).map((field, i) => (
                       <input
-                        type="text"
-                        placeholder="Your phone number"
-                        className="w-full bg-transparent border-b border-gray-400 outline-none py-2"
+                        key={i}
+                        name={field.name}
+                        placeholder={field.placeholder}
+                        className="px-4 py-3 rounded-md border border-none focus:outline-none"
                       />
-                    </div>
-
-                    <div className="mt-6">
-                      <label className="block font-semibold mb-2">Message</label>
-                      <textarea
-                        rows={2}
-                        placeholder="Your message"
-                        className="w-full bg-transparent border-b border-gray-400 outline-none py-2 resize-none"
-                      />
-                    </div>
-
-                    <div className="mt-8">
-                      <button
-                        type="submit"
-                        className="bg-black font-semibold text-white px-12 py-4 hover:bg-[#1A3232] transition-all duration-300"
-                      >
-                        Submit
-                      </button>
-                    </div>
-                  </form>
-
+                    ))}
+                  </div>
+                  <div className="mt-4">
+                    <textarea
+                      name={left.formFields[4].name}
+                      placeholder={left.formFields[4].placeholder}
+                      rows={2}
+                      className="w-full px-4 py-3 rounded-md border border-none focus:outline-none"
+                    ></textarea>
+                  </div>
+                  <div className='text-center'>
+                    <button className="mt-4 bg-[#234134] text-white px-8 py-2 rounded-[4px] hover:opacity-90 transition">
+                      {left.button}
+                    </button>
+                  </div>
+                </div>
               </div>
-              <div className='lg:w-6/12 bg-cover bg-center p-8 lg:p-10 py-16 lg:py-24 w-full'>
-                {/* <div className='w-full lg:w-4/6 text-white'>
-                  <h2 className="text-3xl text-center lg:text-start md:leading-[1.3] md:text-4xl font-normal redhat mb-6" dangerouslySetInnerHTML={{ __html: heading2 }}></h2>
-                  <p className=" mb-10 lg:mb-16" dangerouslySetInnerHTML={{ __html: info2 }}></p>
-                  <Link href={pageUrl} className='rounded border border-white py-2 px-10 w-4/5 inline-block text-center text-base hover:bg-[#1b453c] transition-all  duration-500 ' >Read More</Link>
-                </div> */}
+
+              {/* Right Section */}
+              <div className="md:w-1/3 border-t pt-6 md:pt-0 md:border-l border-black md:ml-12 md:pl-12">
+                <h4 className="font-bold text-lg text-black">{right.officeTitle}</h4>
+                <p className="font-semibold text-black mb-2">{right.officeName}</p>
+                {right.address.map((line, i) => (
+                  <p key={i} className="text-sm md:text-base text-gray-700">{line}</p>
+                ))}
+
+                <div className="mt-4 md:mt-8">
+                  <h5 className="font-semibold text-lg mb-2 " >Call Us</h5>
+                  <p className="text-sm flex gap-2 items-center justify-center md:justify-start"><BiSolidPhoneCall className='text-base' /> {right.callUs}</p>
+                </div>
+
+                <div className="mt-4 md:mt-8">
+                  <h5 className="font-semibold text-lg mb-2">Website</h5>
+                  <a href={`https://${right.website}`} className="text-[#3771C8] text-sm underline">
+                    {right.website}
+                  </a>
+                </div>
+
+                <div className="mt-4 md:mt-8">
+                  <h5 className="font-semibold text-lg mb-2">Email Us</h5>
+                  <p className="text-sm">{right.email}</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <section
+        className=" relative text-center md:text-left  flex items-center justify-center pb-20 md:pb-24" >
+        <div className='mx-auto w-full max-w-7xl px-4 md:px-6 lg:px-2'>
+          <Map />
+        </div>
+      </section>
+      <Image src={contactFooter} alt="contact img" width={600} height={300} className='w-full h-full' />
+
 
 
 
