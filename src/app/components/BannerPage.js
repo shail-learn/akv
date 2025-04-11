@@ -39,7 +39,7 @@ const BannerPage = ({video, heading, title, banner, button, link, classname = ""
               {subtitle}
             </p>
 
-            <p className="w-full text-white italic text-[15px] mt-5 mb-7 lg:mt-7 lg:mb-10">
+            <p className="w-full text-white   text-[15px] mt-5 mb-7 lg:mt-7 lg:mb-10">
               {title}
             </p>
 

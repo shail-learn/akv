@@ -3,7 +3,7 @@ import contactbg from "../../../assets/images/contact/contact-banner.webp";
 import contactFooter from "../../../assets/images/contact/contactFooter.svg";
 import instagram from "../../../assets/images/contact/instagram.svg";
 import linkedin from "../../../assets/images/contact/linkedin.svg";
-import twitter from "../../../assets/images/contact/twitter.svg";
+import facebook from "../../../assets/images/contact/facebook.svg";
 
 import Image from 'next/image';
 import contactData from '../../../api/contactData.json'
@@ -21,7 +21,7 @@ const ContactPage = () => {
   const socialLink=[
     { name: 'linkedin', icon: linkedin, link: 'https://www.linkedin.com/company/atulyekrishivana/' },
     { name: 'Instagram', icon: instagram, link: 'https://www.instagram.com/atulyekrishivana/' },
-    { name: 'twitter', icon: twitter, link: '#' },
+    { name: 'facebook', icon: facebook, link: 'https://www.facebook.com/profile.php?id=61552925864614' },
   ]
   return (
     <>
@@ -35,7 +35,7 @@ const ContactPage = () => {
         <div className='absolute z-10 top-2/4 left-2 md:left-10 -translate-y-2/4'>
               <ul>
                 {socialLink.map((item, index) => (
-                  <li key={index} className='text-white text-2xl mb-2 md:mb-4'>
+                  <li key={index} className='text-white text-2xl mb-2 md:mb-3'>
                     <Link href={item.link} target="_blank">
                        <Image src={item.icon} alt={item.name} width={30} height={30} className='w-8 h-8 md:w-10 md:h-10' />
                     </Link>
@@ -102,7 +102,7 @@ const ContactPage = () => {
               </div>
 
               {/* Right Section */}
-              <div className="md:w-1/3 border-t pt-6 md:pt-0 md:border-l border-black md:ml-12 md:pl-12">
+              <div className="md:w-1/3 border-t md:border-0 pt-6 md:pt-0 md:border-l border-black md:ml-12 md:pl-12">
                 <h4 className="font-bold text-lg text-black">{right.officeTitle}</h4>
                 <p className="font-semibold text-black mb-2">{right.officeName}</p>
                 {right.address.map((line, i) => (

@@ -1,18 +1,19 @@
 "use client";
 import React from "react";
-import banner from "../../../assets/images/training/trainingbanner.webp";
+import banner from "../../../assets/images/training/training-banner1.webp";
 import Image from "next/image";
 import BannerPage from "../BannerPage";
 import IntroImg from "../../../assets/images/training/introImg.webp";
 export const BannerTraining = () => {
   const text = {
     banner: banner,
-    heading: `Nurturing Knowledge, Cultivating Success`,
+    heading: `Nurturing Knowledge, <br/> Cultivating Success`,
     title:
       "Empowering individuals through expert training and sustainable practices.",
     className: "bg-white !text-black hover:!bg-transparent py-4 hover:!text-white",
     link: "/contact",
     button: "Explore Training Programs",
+    opacity: "opacity-60"
   };
   return (
     <>
@@ -23,6 +24,7 @@ export const BannerTraining = () => {
         button={text.button}
         link={text.link}
         classname={text.className}
+        opacity={text.opacity}
       />
     </>
   );
