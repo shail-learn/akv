@@ -160,50 +160,54 @@ function Navbar() {
             className={`fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform ${menuOpen ? "translate-x-0" : "-translate-x-full"
               } transition-transform duration-300 ease-in-out md:hidden`}
           >
-            <ul className="mt-12 px-4 space-y-4">
-              {navigation.map((item, index) => {
-                const isActive =
-                  pathname === item.href ||
-                  (item.submenu &&
-                    item.submenu.some((sub) => pathname === sub.href));
+          <ul className="mt-12 px-4 space-y-4">
+          {navigation.map((item, index) => {
+            const isActive =
+              pathname === item.href ||
+              (item.submenu && item.submenu.some((sub) => pathname === sub.href));
 
-                return (
-                  <li key={index}>
-                    <div
-                      onClick={() =>
-                        item.submenu &&
-                        setOpenDropdown(openDropdown === index ? null : index)
-                      }
-                      className={`flex justify-between items-center cursor-pointer ${isActive ? "text-[#469E8E]" : "text-gray-600"
-                        }`}
-                    >
-                      <Link href={item.href}>{item.name}</Link>
-                      {item.submenu && <MdKeyboardArrowDown />}
-                    </div>
-                    {item.submenu && openDropdown === index && (
-                      <ul className="ml-2 mt-2 space-y-2">
-                        {item.submenu.map((subItem, subIndex) => {
-                          const isSubActive = pathname === subItem.href;
-                          return (
-                            <li key={subIndex}>
-                              <Link
-                                href={subItem.href}
-                                className={`block py-1 ${isSubActive
-                                    ? "text-[#469E8E]"
-                                    : "text-gray-500"
-                                  }`}
-                              >
-                                {subItem.name}
-                              </Link>
-                            </li>
-                          );
-                        })}
-                      </ul>
-                    )}
-                  </li>
-                );
-              })}
-            </ul>
+            return (
+              <li key={index}>
+                <div
+                  onClick={() =>
+                    item.submenu
+                      ? setOpenDropdown(openDropdown === index ? null : index)
+                      : setMenuOpen(false) // close on non-submenu item click
+                  }
+                  className={`flex justify-between items-center cursor-pointer ${
+                    isActive ? "text-[#469E8E]" : "text-gray-600"
+                  }`}
+                >
+                  <Link href={item.href} onClick={() => setMenuOpen(false)}>
+                    {item.name}
+                  </Link>
+                  {item.submenu && <MdKeyboardArrowDown />}
+                </div>
+
+                {item.submenu && openDropdown === index && (
+                  <ul className="ml-2 mt-2 space-y-2">
+                    {item.submenu.map((subItem, subIndex) => {
+                      const isSubActive = pathname === subItem.href;
+                      return (
+                        <li key={subIndex}>
+                          <Link
+                            href={subItem.href}
+                            onClick={() => setMenuOpen(false)}
+                            className={`block py-1 ${
+                              isSubActive ? "text-[#469E8E]" : "text-gray-500"
+                            }`}
+                          >
+                            {subItem.name}
+                          </Link>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                )}
+              </li>
+            );
+          })}
+        </ul>
           </div>
         </Disclosure>
       </header>
