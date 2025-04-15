@@ -30,7 +30,7 @@ const navigation = [
     href: "/our-business",
     submenu: [
       { name: "AKV - Agroforestry", href: "/agroForestry" },
-      { name: "Agrotourism", href: "/agrotourism" },
+      { name: "Agro-Tourism", href: "/agro-tourism" },
       { name: "CSR", href: "/csr" },
       { name: "Contract Farming MP Agroforestry", href: "/contract-farming-mp-agroforestry" },
       { name: "Contract Farming Fodder", href: "/contract-farming-fodder" },
@@ -56,6 +56,9 @@ const navigation = [
       { name: "PR Activity", href: "/pr-activity" },
     ],
   },
+
+  { name: "Career", href: "/career" },
+
   { name: "Contact Us", href: "/contact-us" },
 ];
 
@@ -106,11 +109,10 @@ function Navbar() {
                     >
                       <Link
                         href={item.href}
-                        className={`flex items-center px-3 py-2 text-base font-normal transition-colors duration-200 ${
-                          isActive
+                        className={`flex items-center px-3 py-2 text-base font-normal transition-colors duration-200 ${isActive
                             ? "text-[#469E8E]"
                             : "text-[#A8A8A8] hover:text-[#469E8E]"
-                        }`}
+                          }`}
                       >
                         {item.name}
                         {item.submenu && <MdKeyboardArrowDown className="ml-1" />}
@@ -128,11 +130,10 @@ function Navbar() {
                               <Link
                                 key={subIndex}
                                 href={subItem.href}
-                                className={`block px-4 py-2 text-sm ${
-                                  isSubActive
+                                className={`block px-4 py-2 text-sm ${isSubActive
                                     ? "text-[#469E8E]  hover:bg-teal-50"
                                     : "text-gray-600 hover:bg-teal-50"
-                                }`}
+                                  }`}
                               >
                                 {subItem.name}
                               </Link>
@@ -157,9 +158,8 @@ function Navbar() {
 
           {/* Mobile Sidebar Menu */}
           <div
-            className={`fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform ${
-              menuOpen ? "translate-x-0" : "-translate-x-full"
-            } transition-transform duration-300 ease-in-out md:hidden`}
+            className={`fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform ${menuOpen ? "translate-x-0" : "-translate-x-full"
+              } transition-transform duration-300 ease-in-out md:hidden`}
           >
             <ul className="mt-12 px-4 space-y-4">
               {navigation.map((item, index) => {
@@ -175,9 +175,8 @@ function Navbar() {
                         item.submenu &&
                         setOpenDropdown(openDropdown === index ? null : index)
                       }
-                      className={`flex justify-between items-center cursor-pointer ${
-                        isActive ? "text-[#469E8E]" : "text-gray-600"
-                      }`}
+                      className={`flex justify-between items-center cursor-pointer ${isActive ? "text-[#469E8E]" : "text-gray-600"
+                        }`}
                     >
                       <Link href={item.href}>{item.name}</Link>
                       {item.submenu && <MdKeyboardArrowDown />}
@@ -190,11 +189,10 @@ function Navbar() {
                             <li key={subIndex}>
                               <Link
                                 href={subItem.href}
-                                className={`block py-1 ${
-                                  isSubActive
+                                className={`block py-1 ${isSubActive
                                     ? "text-[#469E8E]"
                                     : "text-gray-500"
-                                }`}
+                                  }`}
                               >
                                 {subItem.name}
                               </Link>
