@@ -101,7 +101,7 @@ const ContactPage = () => {
                 </div>
               </div>
 
-              {/* Right Section */}
+
               <div className="md:w-1/3 border-t md:border-0 pt-6 md:pt-0 md:border-l border-black md:ml-12 md:pl-12">
                 <h4 className="font-bold text-lg text-black">{right.officeTitle}</h4>
                 <p className="font-semibold text-black mb-2">{right.officeName}</p>
