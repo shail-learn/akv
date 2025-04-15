@@ -541,7 +541,23 @@ border-radius: 34%;
 .link_blue a{
   color: #5F5FFF;
 }
+.img_big_slide .swiper-slide.swiper-slide-active .relative{
+   height: 350px;
+   object-fit: cover;
+}
+.black_fade::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:  linear-gradient(179.87deg, rgba(0, 0, 0, 0) 31.23%, rgba(0, 0, 0, 0.79) 95.23%);
 
+}
+.items-end-slider.expant_slider .swiper-wrapper {
+  align-items: end;
+}
 @media(min-width:1024px) {
   .vision-sec .swiper-slide-next {
     transform: scale(1.3);

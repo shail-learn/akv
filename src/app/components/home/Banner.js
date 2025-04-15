@@ -1,13 +1,10 @@
-import React from 'react'
+'use client';
+import { React, useEffect, useRef } from 'react'
+import { usePathname } from 'next/navigation';
 import banner from "../../../assets/images/home/banner.webp";
 import banner2 from "../../../assets/images/home/bg-img.webp";
 import shape from "../../../assets/images/home/shape.png";
 import icon from "../../../assets/images/logo-icon.svg";
-
-
-
-
-
 
 
 
@@ -45,8 +42,6 @@ export const Banner = () => {
         </>
     )
 }
-
-
 export const Banner2 = () => {
     const text = {
         heading1: 'वृक्षाणां रक्षणं धर्मः, वसुंधरायाः संरक्षणम्।',
@@ -87,21 +82,54 @@ export const Banner2 = () => {
 }
 
 
-
-
 export const VedioHome = () => {
     const vedio = "https://cruxcreativedemo2.com/web-image/Website-Banner-AKv.mp4"
+
+    const videoRef = useRef(null);
+    const pathname = usePathname();
+
+    useEffect(() => {
+        const video = videoRef.current;
+
+        if (video) {
+            const playVideo = async () => {
+                try {
+
+                    video.muted = pathname !== '/';
+                    await video.play();
+                } catch (err) {
+                    console.warn('Autoplay with audio failed:', err);
+
+                    video.muted = true;
+                    try {
+                        await video.play();
+                    } catch (e) {
+                        console.warn('Retry (muted) failed too:', e);
+                    }
+                }
+            };
+
+            if (video.readyState >= 2) {
+                playVideo();
+            } else {
+                video.addEventListener('loadedmetadata', playVideo, { once: true });
+            }
+        }
+    }, [pathname]);
+
     return (
         <>
             <div
                 className="bg-cover bg-center relative " >
                 <div className="iframe-container">
-                    <video className='w-full h-full'
+                    <video
+                        ref={videoRef}
+                        className="w-full h-full object-cover"
                         src={vedio}
                         autoPlay
                         loop
                         playsInline
-                        muted={false} ></video>
+                    />
 
                 </div>
             </div>
