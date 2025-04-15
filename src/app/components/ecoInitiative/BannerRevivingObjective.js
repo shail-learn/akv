@@ -29,7 +29,7 @@ export const Banner = () => {
     }
     return (
         <>
-            <BannerPage className="white_btn_banner" opacity={text.opacity} heading={text.heading} title={text.title} banner={text.banner} button={text.buttonText} link={text.buttonLink} classname='py-3 !lg:px-10 !px-10 bg-white !text-[#203008] inline-block' />
+            <BannerPage className="white_btn_banner" opacity={text.opacity} heading={text.heading} title={text.title} banner={text.banner} button={text.buttonText} link={text.buttonLink} classname='py-3 mt-6 !lg:px-10 !px-10 bg-white !text-[#203008] inline-block' />
         </>
     )
 }

@@ -7,7 +7,7 @@ import 'swiper/css/grid';
 import 'swiper/css/pagination';
 import { Grid, Pagination, Navigation, Autoplay } from 'swiper/modules';
 
-export const SliderBlur = ({boxslider=[]}) => {
+export const SliderBlur = ({boxslider=[], font}) => {
     const [swiperInstance, setSwiperInstance] = useState(null);
     const [isBeginning, setIsBeginning] = useState(true);
     const [isEnd, setIsEnd] = useState(false);
@@ -78,7 +78,7 @@ export const SliderBlur = ({boxslider=[]}) => {
                                     </div>
                                     <h2 className='text-2xl font-normal pb-4' dangerouslySetInnerHTML={{ __html: item.heading }}></h2>
 
-                                    <p className='text-sm lg:text-[16] font-light' dangerouslySetInnerHTML={{ __html: item.description }}>
+                                    <p className={`text-sm lg:text-[16px] font-light ${font}`} dangerouslySetInnerHTML={{ __html: item.description }}>
                                     </p>
                                 </div>
                             </div>

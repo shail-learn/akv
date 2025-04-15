@@ -16,6 +16,11 @@
 
 body {
   font-family: var(--secondary-font);
+  cursor: none !important;
+}
+body a,body button{
+  cursor: none !important;
+
 }
 
 .poppins {

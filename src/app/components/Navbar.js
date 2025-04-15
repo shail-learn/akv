@@ -31,7 +31,6 @@ const navigation = [
     submenu: [
       { name: "AKV - Agroforestry", href: "/agroForestry" },
       { name: "Agro-Tourism", href: "/agro-tourism" },
-      { name: "CSR", href: "/csr" },
       { name: "Contract Farming MP Agroforestry", href: "/contract-farming-mp-agroforestry" },
       { name: "Contract Farming Fodder", href: "/contract-farming-fodder" },
       { name: "Training & Development", href: "/training-development" },
