@@ -12,7 +12,7 @@ import Link from 'next/link';
 
 export const OrnamentalPlants = () => {
     const heading = "Ornamental Plants"
-    const description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since."
+    const description = "Ornamental plants add beauty and vibrance to any space, blending nature’s charm with aesthetic appeal. They enrich landscapes while promoting environmental well-being."
     return (
 
         <section className='mx-auto py-6 pt-0 md:pt-16'>
@@ -25,7 +25,7 @@ export const OrnamentalPlants = () => {
                         {heading}
                     </h2>
                     <p className='text-white font-light mb-8'>{description}</p>
-                    <Link
+                    {/* <Link
                         className="text-sm relative bg-[#9A9771] text-white inline-block w-2/3 text-center rounded-full p-3 hover:bg-white hover:text-[#9A9771] group"
                         href="#"
                     >
@@ -35,7 +35,7 @@ export const OrnamentalPlants = () => {
                                 className="text-5xl absolute top-2/4 right-0 -translate-y-1/2 transition-colors duration-300 group-hover:text-[#9A9771]"
                             />
                         </span>
-                    </Link>
+                    </Link> */}
 
                 </div>
                 <div className='w-full md:col-span-4'>
@@ -56,17 +56,17 @@ export const CategoryCard = () => {
         {
             title: "Mulethi",
             image: img3,
-            link: "/agroForestry/mulethi",
+            link: "#",
         },
         {
             title: "Bamboo",
             image: img4,
-            link: "/agroForestry/bamboo",
+            link: "/agroforestry/bamboo",
         },
         {
             title: "Neem",
             image: img5,
-            link: "/agroForestry/neem",
+            link: "#",
         },
 
     ]

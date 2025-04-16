@@ -46,7 +46,7 @@ const ContactPage = () => {
          </div>
           <div className="w-10/12 md:w-3/4 lg:w-7/12">
             <h1
-              className="text-white text-3xl md:text-4xl lg:leading-tight lg:text-[40px] font-medium w-full"
+              className="text-white text-3xl md:text-4xl lg:leading-tight lg:text-[40px] font-bold w-full"
               dangerouslySetInnerHTML={{ __html: headingbanner }}
             ></h1>
 

@@ -29,7 +29,7 @@ export const Banner = () => {
     const text = {
         banner: banner,
         heading: `Contract Farming for Fodder - Atulye Krishi Vana <br/>
-         <b>A Partnership Rooted in Sustainability!</b>`,
+         A Partnership Rooted in Sustainability! `,
         title: 'Welcome to Atulye Krishi Vana’s Contract Farming Program for Fodder. We are on a mission to create a sustainable and profitable agricultural ecosystem that supports farmers, enhances livestock nutrition, and contributes to environmental conservation. Our contract farming model ensures a steady supply of high-quality fodder while offering financial security and technical assistance to farmers.',
 
 
@@ -111,7 +111,7 @@ export const Why = () => {
                     <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-medium text-center redhat text-[#1B453C] mb-10 md:mb-14'>{heading}</h2>
                     <div className='flex md:flex-col flex-col lg:flex-row justify-between gap-8 md:gap-10'>
                         <div className='md:w-7/12  w-full  w-12/12'>
-                            <Image src={leftimg} alt='banner' className='w-full rounded-2xl' />
+                            <Image src={leftimg} alt='banner' className='w-full rounded-2xl mt-2' />
                         </div>
                         <div className='md:w-5/12  w-full  w-12/12'>
                             <h3 className='text-xl md:leading-[1.3] md:text-2xl font-medium redhat text-black mb-6'>{heading2}</h3>
@@ -208,13 +208,14 @@ export const Mission = () => {
     ]
     return (
         <>
-            <section className='pt-14 pb-14 lg:pt-20 lg:pb-20' style={{ background: `url(${missionbanner.src})center center / cover no-repeat` }}>
-                <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2'>
+            <section className='pt-14 pb-14 lg:pt-20 lg:pb-20 relative' style={{ background: `url(${missionbanner.src})center center / cover no-repeat` }}>
+                <div className='absolute left-0 top-0 w-full h-full bg-black bg-opacity-30'></div>
+                <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2 relative z-10'>
                     <div className='flex md:flex-col flex-col lg:flex-row justify-between items-center gap-8 md:gap-10'>
                         <div className='md:w-4/12  w-full  w-12/12'>
                             <div className='md:max-w-[80%]'>
                                 <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-medium text-center md:text-left redhat text-white mb-6'>{heading}</h2>
-                                <p className='text-white text-normal font-light text-justify text-sm lg:text-base mb-8 lg:mb-10'>{subtitle}</p>
+                                <p className='text-white text-normal font-normal text-justify text-sm lg:text-base mb-8 lg:mb-10'>{subtitle}</p>
                             </div>
                         </div>
                         <div className='md:w-8/12  w-full  w-12/12'>

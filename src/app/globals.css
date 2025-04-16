@@ -18,9 +18,8 @@ body {
   font-family: var(--secondary-font);
   cursor: none !important;
 }
-body a,body button{
+body a,body button, .swiper-button-next,.swiper-button-prev, .cursor-pointer{
   cursor: none !important;
-
 }
 
 .poppins {
@@ -562,6 +561,32 @@ border-radius: 34%;
 }
 .items-end-slider.expant_slider .swiper-wrapper {
   align-items: end;
+}
+.blog_details h2 {
+  font-size: 28px;
+  font-family: var(--ternary-font);
+  font-weight: 600;
+  margin: 20px 0;
+}
+.blog_details h3{
+  font-size: 24px;
+  font-family: var(--ternary-font);
+  font-weight: 600;
+  margin: 20px 0;
+}
+.blog_details p {
+  margin-bottom: 10px;
+}
+.blog_details ul {
+  list-style: disc;
+  padding-left: 30px;
+}
+.blog_details p, .blog_details ul li{
+  color: #000000aa;
+  font-size: 16px;
+}
+.blog_details p b,.blog_details p strong{
+  font-weight: 600;
 }
 @media(min-width:1024px) {
   .vision-sec .swiper-slide-next {

@@ -32,7 +32,7 @@ const BannerPage = ({ video, heading, title, banner, button, link, classname = "
             {/* Heading */}
             {heading && (
               <h1
-                className="text-white text-3xl md:text-4xl lg:leading-tight lg:text-[40px] font-normal w-full"
+                className="text-white text-3xl md:text-4xl lg:leading-tight lg:text-[40px] font-bold w-full"
                 dangerouslySetInnerHTML={{ __html: heading }}
               />
             )}

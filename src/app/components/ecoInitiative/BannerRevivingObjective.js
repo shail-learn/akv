@@ -23,9 +23,9 @@ export const Banner = () => {
     const text = {
         banner: banner,
         heading: `A Journey Towards Prosperous <br> Sustainability`,
-        buttonText: "Join Our Mission",
-        buttonLink: "/",
-        opacity :"opacity-10"
+        // buttonText: "Join Our Mission",
+        // buttonLink: "/",
+        opacity :"opacity-0"
     }
     return (
         <>

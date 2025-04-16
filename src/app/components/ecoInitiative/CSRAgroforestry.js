@@ -182,12 +182,12 @@ export const Agroforestry = () => {
 
                                     <div>
                                         <h3 className="text-xl mb-1 redhat font-medium text-[#1F1E17]">{item.title}</h3>
-                                        <p className="text-[#878680] redhat text-sm whitespace-pre-line">{item.description}</p>
+                                        <p className="text-[#878680] redhat text-base whitespace-pre-line">{item.description}</p>
                                     </div>
                                 </div>
                             ))}
                             <div className='mt-6'>
-                            <Link href="#" className='bg-[#1B453C] text-white   py-3 px-12 inline-block text-center text-base hover:bg-black hover:text-[#fff] transition-all  duration-500 '>Explore Our Agroforestry Projects</Link>
+                            <Link href="/agroforestry" className='bg-[#1B453C] text-white   py-3 px-12 inline-block text-center text-base hover:bg-black hover:text-[#fff] transition-all  duration-500 '>Explore Our Agroforestry Projects</Link>
                             </div>
                         </div>
 

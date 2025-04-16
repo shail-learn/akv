@@ -47,18 +47,23 @@ function page() {
     },
     {
       "name": "Mr. Atul Aggarwal",
-      "title": "Co-Founder & Chairman",
+      "title": "Founder & MD, Atulye Krishi Vana | Agroforestry Visionary      ",
       "quote": "\"Leading Agroforestry into a Sustainable Future\"",
       "linkedin": "https://www.linkedin.com/in/atul-aggarwal-a1851646/",
       "image": member2,
       "description": [
-        "A dynamic entrepreneur, <strong>Mr. Atul Aggarwal</strong> is the driving force behind <strong>Atulye Krishi Vana</strong>, shaping its <strong>growth, sustainability, and global impact</strong>. With a strong background in <strong>finance, agriculture, and business development,</strong> he has transformed agroforestry into a <strong>scalable and profitable industry</strong>.",
-        "His leadership is focused on <strong>integrating modern agricultural techniques with traditional sustainability models,</strong> ensuring that <strong>forestry benefits both the environment and communities.</strong>",
+        "Mr. Atul Aggarwal, an enthusiastic changemaker since childhood, is the founder of Atulye Krishi Vana (AKV)—a pioneering agroforestry initiative focused on transforming barren land into thriving, sustainable ecosystems. Deeply inspired by his father, the late Shri M.K. Aggarwal, Atul combines financial expertise with a deep-rooted commitment to ecological and social impact.",
+        'With a belief that modern life demands more than just Roti, Kapda, Makaan, he champions what he calls the "Redefined Necessities": ',
 
-        "**His Vision:**",
-        "Develop <strong>the world’s most sustainable forestry systems.</strong>",
-        "Promote <strong>agroforestry as a tool for economic and ecological stability.</strong>",
-        "Strengthen <strong>farmer incomes, climate resilience, and reforestation projects.</strong>"
+        "Health: Physical & mental well-being through nature.",
+        "Wealth: Sustainable income via regenerative farming. ",
+        "Nature: A thriving environment for future generations.",
+        "Under his leadership, AKV has:",
+        "Restored 5,000+ acres of degraded land",
+        "Planted over 2 lakh trees",
+        "Empowered rural communities, especially women and youth ",
+        "Integrated cutting-edge tech like AI, drones, and solar power",
+        "His vision is to develop the world’s most sustainable private forestry system and position agroforestry as a global solution to climate change, food security, and economic resilience."
       ]
     },
     {
@@ -118,14 +123,14 @@ function page() {
                   } items-center gap-8 md:gap-16 px-4 md:px-16`}
               >
 
-                <div className="relative w-full md:w-1/2 md:mb-0 mb-12">
+                <div className="relative w-full md:w-1/2 md:mb-0 mb-12 ">
                   <div className="relative z-10 rounded-xl">
                     <Image
                       src={founder.image}
                       alt={founder.name}
                       width={500}
                       height={600}
-                      className="rounded-[16px] object-cover"
+                      className="rounded-[16px] w-full object-cover bg-[#A8A8A8]"
                     />
                   </div>
 

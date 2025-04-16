@@ -118,10 +118,10 @@ export const PurposeVision = () => {
 
 
                             </Swiper>
-                                <div className='text-center pt-6 md:pt-12'>
+                                {/* <div className='text-center pt-6 md:pt-12'>
                             <Link href="#" className='text-white bg-transparent border border-white p-3 px-12 lg:px-20 hover:bg-white hover:text-[#1B453C] transition delay-100 duration-100 ease-in-out'>Join the Mission</Link>
 
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
