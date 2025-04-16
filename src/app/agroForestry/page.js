@@ -9,8 +9,6 @@ import { OrnamentalPlants, CategoryCard } from '../components/agroforestry/Ornam
 import { SliderCard, SliderVarieties } from '../components/agroforestry/SliderCard'
 import { PartnerUs } from '../components/agroforestry/PartnerUs'
 
-
-
 function page() {
   return (
     <>
