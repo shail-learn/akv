@@ -46,8 +46,6 @@ function page() {
     classname={text.className}
 
 />
-
-
 <section className="py-14 md:py-20 !pt-14">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl text-center md:leading-[1.3] md:text-4xl font-semibold redhat mb-6 md:mb-10 text-[#1B453C]">
