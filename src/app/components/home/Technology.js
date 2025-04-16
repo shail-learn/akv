@@ -34,7 +34,7 @@ export const Technology = () => {
                             <p className=' text-[#1B453C] text-normal text-sm md:text-[15px] mb-8 lg:mb-10'>
                                 {text}
                             </p>
-                            <Link className='text-[#1B453C] bg-white border-[1px] font-normal p-2 px-12 lg:px-12 border-[#1B453C] hover:bg-teal-900 hover:text-white transition delay-100 duration-100 ease-in-out' href="#">Learn About Our Technology</Link>
+                            <Link className='text-[#1B453C] bg-white border-[1px] font-normal p-2 px-12 lg:px-12 border-[#1B453C] hover:bg-teal-900 hover:text-white transition delay-100 duration-100 ease-in-out' href="/training-development">Learn About Our Technology</Link>
                         </div>
                     </div>
 

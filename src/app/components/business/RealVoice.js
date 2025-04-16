@@ -60,7 +60,7 @@ life-changing!" `,
                 className=" py-14 lg:py-20 bg-[#F2F2F2] outer-arrow arrow_black" >
 
                 <div className='mx-auto max-w-7xl px-4 md:px-8 lg:px-2 max-ful'>
-                    <h2 className="text-black text-center  md:text-left text-3xl md:text-4xl mb-4 lg:mb-8 lg:leading-tight  redhat  font-normal  w-full">
+                    <h2 className="text-black text-center  md:text-left text-3xl md:text-4xl mb-4 lg:mb-8 lg:leading-tight  redhat  font-medium  w-full">
                         {heading1} <br /> <span className='text-[#1B453C]'>{heading}</span>
                     </h2>
 
@@ -143,7 +143,7 @@ export const Making = () => {
     const heading = `Join Us <br/>
     in Making a  Difference!`;
     const info = "Be a part of the movement to create a greener and more sustainable future. Whether you're a farmer, a partner, or someone passionate about the environment, there’s a place for you in our journey."
-    const pageurl = "/contact";
+    const pageurl = "/contact-us";
     return (
         <>
          <section
@@ -158,7 +158,7 @@ export const Making = () => {
                             <p className="font-light mb-4" dangerouslySetInnerHTML={{ __html: info }}></p>
 
                         </div>
-                        <Link href={pageurl} className='inline-flex items-center mt-6 mb-8 justify-center gap-4 py-3 px-8 lg:px-12 text-black redhat font-medium bg-white border hover:bg-[#f8f8f8] transition-all duration-300'>Get Involved Today</Link>
+                        <Link href={pageurl} className='inline-flex items-center mt-6 mb-8 justify-center gap-4 py-3 px-8 lg:px-12 text-black redhat font-medium bg-white border hover:bg-[#f8f8f8] transition-all duration-300'>Join us</Link>
                     </div>
 
 

@@ -11,8 +11,8 @@ export const Banner = () => {
         banner:banner,
         heading:  `Revolutionizing Agriculture <br/> through Sustainable Forestry.`,
         title: "At Atulye Krishi Vana, agroforestry isn't just farming; it's a commitment to nurturing biodiversity, empowering communities, and sustaining the planet.",
-        buttonText:"Read More",
-        buttonLink:"/",
+        // buttonText:"Read More",
+        // buttonLink:"/",
         opacity:'opacity-50'
     }
   return (

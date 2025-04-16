@@ -61,7 +61,7 @@ function WhatWeDo() {
 
                         })}
                         <div className='mt-14'>
-                         <Link href="#" className='text-[#1B453C] bg-white border border-[#1B453C] p-3 px-12 lg:px-20 hover:bg-[#1B453C] hover:text-white transition delay-100 duration-100 ease-in-out'>Read More</Link>
+                         <Link href="/about-us" className='text-[#1B453C] bg-white border border-[#1B453C] p-3 px-12 lg:px-20 hover:bg-[#1B453C] hover:text-white transition delay-100 duration-100 ease-in-out'>Read More</Link>
                          </div>
                     </div>
                     <div className='md:min-h-28 rounded md:col-span-7'>

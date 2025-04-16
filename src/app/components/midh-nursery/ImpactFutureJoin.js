@@ -151,17 +151,17 @@ export const Join = () => {
           {
             icon: FaMapMarkerAlt,
             label: 'Visit Us:',
-            value: 'Atulye Krishi Vana, [Tripura / Madhya Pradesh]',
+            value: 'Atulye Krishi Vana Mithlesh Nagar, Village, Ramgarh, Sehore, Bhopal, MP',
           },
           {
             icon: FaPhoneAlt,
             label: 'Contact Us:',
-            value: '+91 XXXXX XXXXX',
+            value: '+91 9220152225',
           },
           {
             icon: IoIosMail,
             label: 'Email:',
-            value: 'info@akv.co.in',
+            value: 'info@akv.org.in',
           },
 
 

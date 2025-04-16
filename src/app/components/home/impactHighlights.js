@@ -70,7 +70,7 @@ const ImpactHighlights = () => {
 
                         <div className='flex flex-col  pt-14 lg:flex-row justify-center items-center gap-4 lg:gap-12'>
                             <div className='w-12/12'>
-                                <Link href="#" className='text-white bg-transparent border border-white p-3 px-12 lg:px-20 hover:bg-white hover:text-[#1B453C] transition delay-100 duration-100 ease-in-out'>Join the Mission</Link>
+                                <Link href="/contact-us" className='text-white bg-transparent border border-white p-3 px-12 lg:px-20 hover:bg-white hover:text-[#1B453C] transition delay-100 duration-100 ease-in-out'>Join the Mission</Link>
 
                             </div>
                         </div>

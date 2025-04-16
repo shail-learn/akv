@@ -15,8 +15,8 @@ export const AmBanner = () => {
         vedio : "https://cruxcreativedemo2.com/web-image/about-vedio.mp4",
         heading: `Welcome to <br/> <span style="color:#48A490">A&M Agriventures Pvt. Ltd.</span>`,
         title: 'At A&M Agriventures, we are redefining the future of sustainable agriculture by harmonizing innovation, traditional practices, and environmental stewardship. Through our agroforestry, contract farming, eco-tourism, and more, we aim to combat climate change, restore ecosystems, and empower communities.',
-        buttonText: "Read More",
-        buttonLink: "/"
+        // buttonText: "Read More",
+        // buttonLink: "/"
 
     }
     return (
@@ -64,7 +64,7 @@ export const AmWelcome = () => {
 
 export const Whoam = () => {
     const heading = "Who We Are"
-    const description = "A&M Agriventures Pvt. Ltd. is a pioneering initiative in sustainable farming and agroforestry. Established in 2018, we focus on transforming barren lands into vibrant ecosystems, promoting agro-tourism, and empowering rural communities through innovative agricultural practices."
+    const description = `A&M Agriventures Pvt. Ltd. is a pioneering initiative in sustainable farming and agroforestry. Established in 2018, we focus on transforming barren lands into vibrant ecosystems, promoting agro-tourism, and empowering rural communities through innovative agricultural practices.<br/><br/> Driven by the belief that environmental restoration and rural prosperity go hand in hand, we blend traditional wisdom with modern techniques to create self-sustaining green zones. From afforestation and organic farming to community-led development and eco-tourism, our projects are designed to generate livelihoods, improve biodiversity, and contribute meaningfully to climate resilience.`
     const vision = [
         {
             icon: icon1,
@@ -87,7 +87,7 @@ export const Whoam = () => {
                             <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-medium redhat text-black mt-4 mb-6'>{heading}</h2>
                             <p className='text-black text-base redhat text-justify mb-10' dangerouslySetInnerHTML={{ __html: description }}>
                             </p>
-                            <Link href="#" className='bg-[#1B453C] text-white py-4 px-16 inline-block text-center text-base hover:bg-black transition-all  duration-500 '>More About Us</Link>
+                            {/* <Link href="#" className='bg-[#1B453C] text-white py-4 px-16 inline-block text-center text-base hover:bg-black transition-all  duration-500 '>More About Us</Link> */}
                         </div>
                         <div className='lg:w-6/12  w-full  w-12/12'>
                             <Image className='w-full h-full rounded-xl' src={image2} alt='banner' />

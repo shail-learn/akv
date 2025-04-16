@@ -9,10 +9,10 @@ import { BusinessCard } from './ServiceCard';
 export const Banner = () => {
     const text = {
         banner: banner,
-        heading: `Our Business: <br/> <b>Transforming Agriculture and Sustainability</b>`,
+        heading: `Our Business: <br/>  Transforming Agriculture and Sustainability `,
         title: 'Harnessing innovation and tradition for a sustainable future',
-        buttonText: "Discover Our Impact",
-        buttonLink: "/",
+        // buttonText: "Discover Our Impact",
+        // buttonLink: "/",
     }
     return (
         <>
@@ -37,7 +37,7 @@ export const WhoAre = () => {
                             <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-normal redhat text-black mb-6'>{heading}</h2>
                             <p className='text-black text-base redhat mb-10' dangerouslySetInnerHTML={{ __html: description }}>
                             </p>
-                            <Link href="#" className='bg-[#e9e9e9] text-black border-black border py-3 px-16 inline-block text-center text-base hover:bg-white transition-all  duration-500 '>About Us</Link>
+                            <Link href="/about-us" className='bg-[#e9e9e9] text-black border-black border py-3 px-16 inline-block text-center text-base hover:bg-white transition-all  duration-500 '>About Us</Link>
 
                         </div>
                         <div className='lg:w-6/12  w-full  w-12/12'>

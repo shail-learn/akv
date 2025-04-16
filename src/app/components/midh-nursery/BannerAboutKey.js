@@ -13,7 +13,7 @@ import Image from 'next/image';
 export const Banner = () => {
     const text = {
         banner: banner,
-        heading: `<b>MIDH Nursery - Cultivating a Greener Tomorrow </b> <br/>Welcome to MIDH Nursery`,
+        heading: `MIDH Nursery - Cultivating a Greener Tomorrow <br/>Welcome to MIDH Nursery`,
         title: `A hub for sustainable agroforestry and ecological preservation, MIDH Nursery under Atulye Krishi Vana is dedicated to fostering biodiversity, promoting afforestation, and empowering rural communities.`,
         opacity: "opacity-55"
     };
