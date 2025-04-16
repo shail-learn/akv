@@ -12,6 +12,7 @@ import { IoCloseOutline } from "react-icons/io5";
 
 
 function page() {
+
     const text = {
         banner: banner,
         heading: `Gallery`,
@@ -25,19 +26,24 @@ function page() {
 
     const [isOpen, setIsOpen] = useState(false);
     const [startIndex, setStartIndex] = useState(0);
-    const [flatImages, setFlatImages] = useState([]);
-    const handleImageClick = (sectionIndex, imgIndex) => {
-        const flat = gallerySections.flatMap((s) => s.images);
-        setFlatImages(flat);
-        const index = gallerySections
-            .slice(0, sectionIndex)
-            .reduce((sum, sec) => sum + sec.images.length, 0) + imgIndex;
-        setStartIndex(index);
-        setIsOpen(true);
-    };
+    const [activeImages, setActiveImages] = useState([]);
 
     const closeModal = () => {
         setIsOpen(false);
+        setActiveImages([]);
+    };
+
+    const handleImageClick = (secIdx, imgIdx) => {
+        const selectedSection = gallerySections[secIdx];
+        const clickedImage = selectedSection.images[imgIdx];
+
+        if (clickedImage.youtubeLink) {
+            window.open(clickedImage.youtubeLink, '_blank');
+        } else {
+            setActiveImages(selectedSection.images);
+            setStartIndex(imgIdx);
+            setIsOpen(true);
+        }
     };
 
 
@@ -55,14 +61,16 @@ function page() {
             />
 
             <section className="py-12 lg:py-16">
-                <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-2  ">
+                <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-2">
                     {gallerySections.map((section, secIdx) => (
-                        <div key={secIdx}>
-                            <h2 className="text-2xl md:text-3xl font-normal py-3 mb-10 bg-[#1B453C] text-white text-center">{section.title}</h2>
+                        <div key={`section-${secIdx}`}>
+                            <h2 className="text-2xl md:text-3xl font-normal py-3 mb-10 bg-[#1B453C] text-white text-center">
+                                {section.title}
+                            </h2>
                             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mb-14 gap-6">
                                 {section.images.map((img, imgIdx) => (
                                     <div
-                                        key={img.id}
+                                        key={`img-${secIdx}-${img.id}`}
                                         onClick={() => handleImageClick(secIdx, imgIdx)}
                                         className="cursor-pointer group"
                                     >
@@ -95,10 +103,10 @@ function page() {
                                     initialSlide={startIndex}
                                     spaceBetween={10}
                                     slidesPerView={1}
-                                    className="outer_arrow "
+                                    className="outer_arrow"
                                 >
-                                    {flatImages.map((img) => (
-                                        <SwiperSlide key={img.id}>
+                                    {activeImages.map((img) => (
+                                        <SwiperSlide key={`modal-${img.id}`}>
                                             <Image
                                                 src={img.src}
                                                 alt={img.alt}
@@ -114,6 +122,7 @@ function page() {
                     )}
                 </div>
             </section>
+
 
         </>
     )

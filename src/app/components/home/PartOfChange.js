@@ -61,7 +61,7 @@ export const PartOfChange = () => {
                                 style={{
                                     boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)',
                                 }}
-                                href="#">Learn More</Link>
+                                href="/contact-us">Learn More</Link>
                             </div>
                         </div>
                     ))}

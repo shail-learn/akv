@@ -10,8 +10,8 @@ export const Banner = () => {
         banner: banner,
         heading: `Shape Your Future with AKV`,
         title: 'Explore exciting opportunities and become part of a dynamic, growing team.',
-         link : "/contact",
-         button:"View Openings",
+        //  link : "/contact",
+        //  button:"View Openings",
          opacity:"opacity-40"
     }
   return (

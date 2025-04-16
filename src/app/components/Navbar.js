@@ -29,10 +29,10 @@ const navigation = [
     name: "Our Business",
     href: "/our-business",
     submenu: [
-      { name: "AKV - Agroforestry", href: "/agroForestry" },
+      { name: "Agroforestry", href: "/agroforestry" },
       { name: "Agro-Tourism", href: "/agro-tourism" },
       { name: "Contract Farming MP Agroforestry", href: "/contract-farming-mp-agroforestry" },
-      { name: "Contract Farming Fodder", href: "/contract-farming-fodder" },
+      // { name: "Contract Farming Fodder", href: "/contract-farming-fodder" },
       { name: "Training & Development", href: "/training-development" },
       { name: "MIDH Nursery", href: "/midh-nursery" },
     ],
@@ -42,7 +42,7 @@ const navigation = [
     name: "Insights",
     href: "#",
     submenu: [
-      { name: "CSR Activity", href: "/csr-activity" },
+      // { name: "CSR Activity", href: "/csr-activity" },
       { name: "Our Projects", href: "/our-projects" },
       { name: "Blogs", href: "/blogs" },
     ],

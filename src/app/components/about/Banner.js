@@ -16,8 +16,8 @@ export const Banner = () => {
         heading: `Our Essence: <span style="color:#48A490">Who We Are</span>`,
         title: 'Atulye Krishi Vana is a pioneering initiative dedicated to reshaping the future of agroforestry. By combining innovative, sustainable practices with a strong focus on community empowerment, we aim to restore ecosystems, uplift rural livelihoods, and foster long-term prosperity. Our work goes beyond agriculture – it’s a movement to create a greener, more resilient world.',
 
-         link : "/contact",
-         button:"Read More"
+        //  link : "/contact",
+        //  button:"Read More"
     }
     return (
         <>
@@ -90,10 +90,10 @@ export const UnderBanner = () => {
                             <p className='text-white text-sm font-light text-light text-justify italic' dangerouslySetInnerHTML={{ __html: description }}>
 
                             </p>
-                            <div className='pt-12 md:pt-16'>
+                            {/* <div className='pt-12 md:pt-16'>
                                 <Link href={pageUrl} className='text-white bg-transparent border border-white rounded-full p-3 px-20 hover:bg-white hover:text-teal-900 transition delay-100 duration-100 ease-in-out'>Read More</Link>
 
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

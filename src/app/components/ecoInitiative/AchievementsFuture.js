@@ -120,7 +120,7 @@ export const Future = () => {
           {/* Button */}
           <div className="mt-10 md:mt-20">
             <Link
-              href="#"
+              href="/contact-us"
               className="bg-[#1B453C] text-white px-10 redhat py-4 rounded-[4px] text-sm font-medium hover:bg-black"
             >
               JOIN THE MOVEMENT

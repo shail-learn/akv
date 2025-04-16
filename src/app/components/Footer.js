@@ -23,10 +23,10 @@ export const Footer = (htmlContent) => {
     { name: 'About Us', href: '/about-us', current: false },
     { name: 'Our Business', href: '/our-business', current: false },
     { name: 'Eco Initiatives', href: '/eco-initiatives', current: false },
-    { name: 'Insights', href: '/insights', current: false },
-    { name: 'Media', href: '/media', current: false },
+    { name: 'Blogs', href: '/blogs', current: false },
+    { name: 'Gallery', href: '/gallery', current: false },
     { name: 'Contact Us', href: '/contact-us', current: false },
-    { name: 'Career', href: '/contact-us', current: false },
+    { name: 'Career', href: '/career', current: false },
 
 
   ]

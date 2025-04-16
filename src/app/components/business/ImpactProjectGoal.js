@@ -180,7 +180,8 @@ export const Project = () => {
 
 
 export const Goal = () => {
-    const heading = 'Making a Difference  on the Ground'
+    const vedio = "https://cruxcreativedemo2.com/web-image/making.mp4"
+    const heading = 'Making a Difference on the Ground'
     const heading1 = "Carbon Sequestration in INDIA"
     const info1 = `Plantation of <b>100,000</b> trees, reducing carbon emissions by <b>10,000</b> tons over five years.`
 
@@ -197,7 +198,21 @@ export const Goal = () => {
         <section className='relative text-center md:text-left pb-16 pt-16 lg:pb-20 lg:pt-20'>
 
             <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2 relative z-1 '>
-                <div className='lg:w-12/12  w-full  w-12/12'>
+            <div
+                className="bg-cover bg-center relative " >
+                <div className="iframe-container">
+                    <video
+
+                        className="w-full h-full object-cover"
+                        src={vedio}
+                        autoPlay
+                        loop
+                        muted
+                    />
+
+                </div>
+            </div>
+                {/* <div className='lg:w-12/12  w-full  w-12/12'>
                     <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-normal redhat text-center text-[#1B453C] mb-16'>{heading}</h2>
                 </div>
 
@@ -239,7 +254,7 @@ export const Goal = () => {
                         </div>
 
                     </div>
-                </div>
+                </div> */}
 
 
             </div>

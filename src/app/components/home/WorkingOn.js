@@ -98,9 +98,9 @@ export const WorkingOn = () => {
                         ></p>
                       </div>
                     </div>
-                    <div className='text-center mt-10'>
+                    {/* <div className='text-center mt-10'>
                       <Link href="#" className='text-[#1B453C] border border-[#1B453C] p-2 px-10 lg:px-12 hover:bg-[#2D6B5E] hover:text-white transition delay-100 duration-100 ease-in-out'>View Project</Link>
-                    </div>
+                    </div> */}
                   </SwiperSlide>
                 ))}
 

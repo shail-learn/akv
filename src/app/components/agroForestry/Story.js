@@ -3,8 +3,8 @@ import React from 'react'
 import icon1 from "../../../assets/images/business/plant.svg";
 import icon2 from "../../../assets/images/business/co2.svg";
 import icon3 from "../../../assets/images/business/job-offer.svg";
-import client1 from "../../../assets/images/business/img01.png";
-import client2 from "../../../assets/images/business/img02.png";
+import client1 from "../../../assets/images/business/img02.png";
+import client2 from "../../../assets/images/business/img01.png";
 
 import Image from 'next/image';
 import { Autoplay, Navigation } from 'swiper/modules';
@@ -62,34 +62,42 @@ export const Testimonial = () => {
     const testimonial = [
         {
             image: client1,
-            quote: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.",
+            quote: `<span style="color:#1B453C;font-weight:800;">Atulye Krishi Vanna</span> helped transform our barren land into a thriving farm. Their agroforestry solutions are
+life-changing!" `,
+            position: "Rajesh Patel, Farmer, Gujarat"
 
         },
         {
             image: client2,
-            quote: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.",
+            quote: `Thanks to their training programs, I’ve adopted sustainable farming practices and doubled my yields.`,
+            position: "Meena Kumari, Farmer, Rajasthan"
 
         },
         {
             image: client1,
-            quote: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.",
+            quote: `<span style="color:#1B453C;font-weight:800;">Atulye Krishi Vanna</span> helped transform our barren land into a thriving farm. Their agroforestry solutions are
+            life-changing!" `,
+            position: "Rajesh Patel, Farmer, Gujarat"
 
         },
         {
             image: client2,
-            quote: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.",
+            quote: `Thanks to their training programs, I’ve adopted sustainable farming practices and doubled my yields.`,
+            position: "Meena Kumari, Farmer, Rajasthan"
 
         },
         {
             image: client1,
-            quote: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.",
+            quote: ` <span style="color:#1B453C;font-weight:800;">Atulye Krishi Vanna</span> helped transform our barren land into a thriving farm. Their agroforestry solutions are
+            life-changing!"`,
+            position: "Rajesh Patel, Farmer, Gujarat"
 
         },
     ]
     return (
         <>
             <section
-                className=" py-14 lg:py-20 bg-[#F2F2F2] outer-arrow middle_upar arrow_black" >
+                className=" py-14 lg:py-20 bg-[#F2F2F2] outer-arrow arrow_black" >
 
                 <div className='mx-auto max-w-7xl px-4 md:px-8 lg:px-2 max-ful'>
                     <h2 className="text-black text-center  md:text-left text-3xl md:text-4xl mb-4 lg:mb-8 lg:leading-tight  redhat  font-medium  w-full">
@@ -125,11 +133,11 @@ export const Testimonial = () => {
                                 },
                                 768: {
                                     slidesPerView: 2,
-                                    spaceBetween: 40,
+                                    spaceBetween: 60,
                                 },
                                 1024: {
-                                    slidesPerView: 3,
-                                    spaceBetween: 50,
+                                    slidesPerView: 2,
+                                    spaceBetween: 80,
                                 },
                             }}
 
@@ -146,8 +154,14 @@ export const Testimonial = () => {
                                     >
                                         <div className='lg:w-12/ 12 mx-auto'>
                                             <div className='gap-6 flex items-center h-full '>
-                                                <Image src={item.image} alt='client' className='w-w-3/6 h-full lg:w-3/6 lg:h-full' />
-                                                <p className=' pl-0 p-4 text-sm lg:text-[16]  font-normal'>{item.quote}</p>
+                                                <div className='w-w-3/6 lg:w-3/6 min-w-[40%]'>
+                                                    <Image src={item.image} alt='client' className='w-full h-full ' />
+                                                </div>
+                                                <div className='w-full'>
+                                                    <p className=' pl-0 p-4 text-sm lg:text-[16] font-normal' dangerouslySetInnerHTML={{ __html: item.quote }}></p>
+
+                                                    <p className='text-black font-semibold text-sm lg:text-[16] '>– {item.position}</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

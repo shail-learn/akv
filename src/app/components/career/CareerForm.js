@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import { useState } from 'react';
 
 export const CareerForm = () => {
@@ -13,7 +14,11 @@ export const CareerForm = () => {
 
             <div className='bg-[#FAFAFA] py-10'>
                 <h2 className='text-3xl text-center md:leading-[1.3] md:text-4xl font-semibold redhat text-[#1B453C] md:mb-6'>Application Form </h2>
-                <p className='text-black text-center border-b border-gray-500 pb-6 mb-6 md:pb-10'>Please fill out the form below for job application </p>
+                <p className='text-black text-center border-b border-gray-500 pb-6 mb-6 md:pb-10'>Please fill out the form below for job application
+                <br/>
+                or mail us at <Link href="mailto:hrteam@mkac.in" className='text-[#1B453C]'>hrteam@mkac.in</Link>
+                 </p>
+
                 <form className="max-w-4xl mx-auto p-6 space-y-6 ">
                     {/* Name */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">

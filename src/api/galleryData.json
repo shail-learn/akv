@@ -1,22 +1,536 @@
+[
+  {
+    "title": "Agroforestry",
+    "images": [
+      {
+        "id": 1,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/Agroforestri/1.webp",
+        "alt": "Office 1"
+      },
+      {
+        "id": 2,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/Agroforestri/2.webp",
+        "alt": "Office 2"
+      },
+      {
+        "id": 3,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/Agroforestri/3.webp",
+        "alt": "Office 3"
+      },
+      {
+        "id": 4,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/Agroforestri/4.webp",
+        "alt": "Office 4"
+      },
+      {
+        "id": 5,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/Agroforestri/5.webp",
+        "alt": "Office 5"
+      },
+      {
+        "id": 6,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/Agroforestri/6.webp",
+        "alt": "Office 6"
+      },
+      {
+        "id": 7,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/Agroforestri/7.webp",
+        "alt": "Office 7"
+      },
+      {
+        "id": 8,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/Agroforestri/8.webp",
+        "alt": "Office 8"
+      },
+      {
+        "id": 9,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/Agroforestri/9.webp",
+        "alt": "Office 9"
+      },
+      {
+        "id": 10,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/Agroforestri/10.webp",
+        "alt": "Office 10"
+      },
+      {
+        "id": 11,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/Agroforestri/11.webp",
+        "alt": "Office 11"
+      },
+      {
+        "id": 12,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/Agroforestri/12.webp",
+        "alt": "Office 12"
+      }
+    ]
+  },
+  {
+    "title": "Agro - tourism",
+    "images": [
+      {
+        "id": 1,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/Agro-tourism/1.webp",
+        "alt": "Office 1"
+      },
+      {
+        "id": 2,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/Agro-tourism/2.webp",
+        "alt": "Office 2"
+      },
+      {
+        "id": 3,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/Agro-tourism/3.webp",
+        "alt": "Office 3"
+      },
+      {
+        "id": 4,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/Agro-tourism/4.webp",
+        "alt": "Office 4"
+      },
+      {
+        "id": 5,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/Agro-tourism/5.webp",
+        "alt": "Office 5"
+      },
+      {
+        "id": 6,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/Agro-tourism/6.webp",
+        "alt": "Office 6"
+      },
+      {
+        "id": 7,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/Agro-tourism/7.webp",
+        "alt": "Office 7"
+      },
+      {
+        "id": 8,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/Agro-tourism/8.webp",
+        "alt": "Office 8"
+      },
+      {
+        "id": 9,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/Agro-tourism/9.webp",
+        "alt": "Office 9"
+      },
+      {
+        "id": 10,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/Agro-tourism/10.webp",
+        "alt": "Office 10"
+      },
+      {
+        "id": 11,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/Agro-tourism/11.webp",
+        "alt": "Office 11"
+      },
+      {
+        "id": 12,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/Agro-tourism/12.webp",
+        "alt": "Office 12"
+      }
+    ]
+  },
+  {
+    "title": "CSR Books Distribution",
+    "images": [
+      {
+        "id": 1,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/1.webp",
+        "alt": "Office 1"
+      },
+      {
+        "id": 2,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/2.webp",
+        "alt": "Office 2"
+      },
+      {
+        "id": 3,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/3.webp",
+        "alt": "Office 3"
+      },
+      {
+        "id": 4,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/4.webp",
+        "alt": "Office 4"
+      },
+      {
+        "id": 5,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/5.webp",
+        "alt": "Office 5"
+      },
+      {
+        "id": 6,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/6.webp",
+        "alt": "Office 6"
+      }
 
-  [
-    {
-      "title": "Our Office Moments",
-      "images": [
-        { "id": 1, "src": "https://cruxcreativedemo2.com/web-image/gallary/demo1.webp", "alt": "Office 1" },
-        { "id": 2, "src": "https://cruxcreativedemo2.com/web-image/gallary/demo2.webp", "alt": "Office 2" },
-        { "id": 3, "src": "https://cruxcreativedemo2.com/web-image/gallary/demo3.webp", "alt": "Office 3" },
-        { "id": 4, "src": "https://cruxcreativedemo2.com/web-image/gallary/demo4.webp", "alt": "Office 4" }
+    ]
+  },
+  {
+    "title": "CSR Clothes Distribution",
+    "images": [
+      {
+        "id": 1,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/7.webp",
+        "alt": "Office 1"
+      },
+      {
+        "id": 2,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/8.webp",
+        "alt": "Office 2"
+      },
+      {
+        "id": 3,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/9.webp",
+        "alt": "Office 3"
+      },
+      {
+        "id": 4,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/10.webp",
+        "alt": "Office 4"
+      },
+      {
+        "id": 5,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/11.webp",
+        "alt": "Office 5"
+      },
+      {
+        "id": 6,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/12.webp",
+        "alt": "Office 6"
+      }
 
-      ]
-    },
-    {
-      "title": "Field Visits",
-      "images": [
-        { "id": 5, "src": "https://cruxcreativedemo2.com/web-image/gallary/demo5.webp", "alt": "Visit 1" },
-        { "id": 6, "src": "https://cruxcreativedemo2.com/web-image/gallary/demo6.webp", "alt": "Visit 2" },
-        { "id": 7, "src": "https://cruxcreativedemo2.com/web-image/gallary/demo7.webp", "alt": "Visit 2" }
+    ]
+  },
+  {
+    "title": "CSR Cultural Activity",
+    "images": [
+      {
+        "id": 1,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/13.webp",
+        "alt": "Office 1"
+      },
+      {
+        "id": 2,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/14.webp",
+        "alt": "Office 2"
+      },
+      {
+        "id": 3,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/15.webp",
+        "alt": "Office 3"
+      },
+      {
+        "id": 4,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/16.webp",
+        "alt": "Office 4"
+      },
+      {
+        "id": 5,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/17.webp",
+        "alt": "Office 5"
+      }
 
-      ]
-    }
-  ]
+
+    ]
+  },
+  {
+    "title": "CSR Inaugral Ceramony",
+    "images": [
+      {
+        "id": 1,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/18.webp",
+        "alt": "Office 1"
+      },
+      {
+        "id": 2,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/19.webp",
+        "alt": "Office 2"
+      },
+      {
+        "id": 3,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/20.webp",
+        "alt": "Office 3"
+      }
+
+    ]
+  },
+  {
+    "title": "CSR Plantation",
+    "images": [
+      {
+        "id": 1,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/21.webp",
+        "alt": "Office 1"
+      },
+      {
+        "id": 2,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/22.webp",
+        "alt": "Office 2"
+      },
+      {
+        "id": 3,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/23.webp",
+        "alt": "Office 3"
+      },
+      {
+        "id": 4,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/24.webp",
+        "alt": "Office 4"
+      },
+      {
+        "id": 5,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/25.webp",
+        "alt": "Office 5"
+      },
+      {
+        "id": 6,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/26.webp",
+        "alt": "Office 6"
+      },
+      {
+        "id": 7,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/27.webp",
+        "alt": "Office 7"
+      },
+      {
+        "id": 8,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/28.webp",
+        "alt": "Office 8"
+      },
+      {
+        "id": 9,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/29.webp",
+        "alt": "Office 9"
+      },
+      {
+        "id": 10,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/30.webp",
+        "alt": "Office 10"
+      },
+      {
+        "id": 11,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/31.webp",
+        "alt": "Office 11"
+      },
+      {
+        "id": 12,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/32.webp",
+        "alt": "Office 12"
+      }
+
+    ]
+  },
+  {
+    "title": "CSR Specs Distribution",
+    "images": [
+      {
+        "id": 1,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/33.webp",
+        "alt": "Office 1"
+      },
+      {
+        "id": 2,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/34.webp",
+        "alt": "Office 1"
+      },
+      {
+        "id": 3,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/35.webp",
+        "alt": "Office 1"
+      },
+      {
+        "id": 4,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/36.webp",
+        "alt": "Office 1"
+      },
+      {
+        "id": 5,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/37.webp",
+        "alt": "Office 1"
+      },
+      {
+        "id": 6,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/38.webp",
+        "alt": "Office 1"
+      },
+      {
+        "id": 7,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/39.webp",
+        "alt": "Office 1"
+      }
+
+
+
+
+    ]
+  },
+  {
+    "title": "CSR Sports Activity",
+    "images": [
+      {
+        "id": 1,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/40.webp",
+        "alt": "Office 1"
+      } ,
+      {
+        "id": 2,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/41.webp",
+        "alt": "Office 2"
+      },
+      {
+        "id": 3,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/42.webp",
+        "alt": "Office 3"
+      },
+      {
+        "id": 4,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/43.webp",
+        "alt": "Office 4"
+      },
+      {
+        "id": 5,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/44.webp",
+        "alt": "Office 5"
+      },
+      {
+        "id": 6,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/45.webp",
+        "alt": "Office 6"
+      }
+    ]
+  },
+  {
+    "title": "CSR The Hall of Achievers",
+    "images": [
+      {
+        "id": 1,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/46.webp",
+        "alt": "Office 1"
+      },
+      {
+        "id": 2,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/47.webp",
+        "alt": "Office 2"
+      },
+      {
+        "id": 3,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/48.webp",
+        "alt": "Office 3"
+      },
+      {
+        "id": 4,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/49.webp",
+        "alt": "Office 4"
+      },
+      {
+        "id": 5,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/50.webp",
+        "alt": "Office 5"
+      },
+      {
+        "id": 6,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/51.webp",
+        "alt": "Office 6"
+      },
+      {
+        "id": 7,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/52.webp",
+        "alt": "Office 7"
+      },
+      {
+        "id": 8,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/53.webp",
+        "alt": "Office 8"
+      },
+      {
+        "id": 9,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/54.webp",
+        "alt": "Office 9"
+      },
+      {
+        "id": 10,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/55.webp",
+        "alt": "Office 10"
+      },
+      {
+        "id": 11,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/56.webp",
+        "alt": "Office 11"
+      },
+      {
+        "id": 12,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/57.webp",
+        "alt": "Office 12"
+      },
+      {
+        "id": 13,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/58.webp",
+        "alt": "Office 13"
+      },
+      {
+        "id": 14,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/59.webp",
+        "alt": "Office 14"
+      },
+      {
+        "id": 15,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/60.webp",
+        "alt": "Office 15"
+      }
+    ]
+  },
+  {
+    "title": "videos",
+    "images": [
+      {
+        "id": 1,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/videos/youtube1.webp",
+        "alt": "Farming 2",
+        "youtubeLink": "https://www.youtube.com/watch?v=DdRjv244y9I"
+      },
+      {
+        "id": 2,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/videos/youtube2.webp",
+        "alt": "Visit 2",
+        "youtubeLink": "https://www.youtube.com/watch?v=kgX71_qeG8E"
+
+      },
+      {
+        "id": 3,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/videos/youtube3.webp",
+        "alt": "Visit 2",
+        "youtubeLink": "https://www.youtube.com/watch?v=USg7SEte5nI"
+      },
+      {
+        "id": 4,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/videos/youtube4.webp",
+        "alt": "Visit 2",
+        "youtubeLink": "https://www.youtube.com/watch?v=-X_l-g_qIkk"
+      },
+      {
+        "id": 5,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/videos/youtube5.webp",
+        "alt": "Visit 2",
+        "youtubeLink": "https://www.youtube.com/watch?v=xuSWSrqIFbs"
+      },
+      {
+        "id": 6,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/videos/youtube6.webp",
+        "alt": "Visit 2",
+        "youtubeLink": "https://www.youtube.com/watch?v=QeTJc4cnjQQ"
+      },
+      {
+        "id": 7,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/videos/youtube7.webp",
+        "alt": "Visit 2",
+        "youtubeLink": "https://www.youtube.com/watch?v=yyXP53iM9Ag"
+      },
+      {
+        "id": 8,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/videos/youtube8.webp",
+        "alt": "Visit 2",
+        "youtubeLink": "https://www.youtube.com/watch?v=VcoKGUgXCZc"
+      }
+    ]
+  }
+]

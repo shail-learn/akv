@@ -16,32 +16,32 @@ export const SliderCard = () => {
     {
         title: "Seeds",
         image: img1,
-        link: "/agroForestry/mulethi",
+        link: "#",
     },
     {
         title: "Bamboo",
         image: img1,
-        link: "/agroForestry/bamboo",
+        link: "/agroforestry/bamboo",
     },
     {
         title: "Neem",
         image: img1,
-        link: "/agroForestry/neem",
+        link: "#",
     },
     {
       title: "Seeds",
       image: img1,
-      link: "/agroForestry/neem",
+      link: "#",
   },
   {
     title: "Neem",
     image: img1,
-    link: "/agroForestry/neem",
+    link: "#",
 },
 {
   title: "Neem",
   image: img1,
-  link: "/agroForestry/neem",
+  link: "#",
 },
 
 ]
@@ -109,7 +109,7 @@ export const SliderCard = () => {
                 ))}
             </Swiper>
             <div className='text-center mt-0 md:mt-4'>
-            <Link href="#" className='text-lg font-normal text-white inline-block transition delay-100 duration-100 ease-in-out  bg-[#1B453C] w-3/4 md:w-1/3 text-center rounded-full p-3 hover:bg-[#1f2937] hover:text-white '>Visit Our Plantations</Link>
+            <Link href="/gallery" className='text-lg font-normal text-white inline-block transition delay-100 duration-100 ease-in-out  bg-[#1B453C] w-3/4 md:w-1/3 text-center rounded-full p-3 hover:bg-[#1f2937] hover:text-white '>Visit Our Plantations</Link>
             </div>
         </div>
     </div>

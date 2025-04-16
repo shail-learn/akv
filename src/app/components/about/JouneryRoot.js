@@ -121,8 +121,8 @@ export const JouneryRoot = () => {
                                         <div className='w-16 h-16 mx-auto'>
                                             <Image src={item.icon} width="100" height="100" alt="icon" />
                                         </div>
-                                        <h3 className='  md:mb-6 md:mt-6 mb-4 mt-4 text-xl lg:text-[22px] font-light text-white'>{item.title}</h3>
-                                        <p className='text-base redhat text-justify font-normal text-[#859A9A]'>{item.description}</p>
+                                        <h3 className='  md:mb-6 md:mt-6 mb-4 mt-4 text-xl lg:text-[22px] font-normal text-white'>{item.title}</h3>
+                                        <p className='text-base redhat text-justify font-normal text-opacity-90 text-white'>{item.description}</p>
                                     </div>
                                 </div>
                             )
