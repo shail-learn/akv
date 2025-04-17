@@ -1,5 +1,5 @@
 'use client';
-import mouse from "./../../../public/leaf.svg";
+import mouse from "./../../../public/mouse.svg";
 
 import { useEffect } from 'react';
 

@@ -181,9 +181,7 @@ export const BlurSlider = () => {
                         </div>
 
                         <div className='w-full lg:w-8/12'>
-
                             <SliderBlur boxslider={boxslider} />
-
 
                         </div>
                     </div>
