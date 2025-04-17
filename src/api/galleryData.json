@@ -132,11 +132,7 @@
   {
     "title": "CSR Books Distribution",
     "images": [
-      {
-        "id": 1,
-        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/1.webp",
-        "alt": "Office 1"
-      },
+
       {
         "id": 2,
         "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/2.webp",
@@ -156,11 +152,6 @@
         "id": 5,
         "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/5.webp",
         "alt": "Office 5"
-      },
-      {
-        "id": 6,
-        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/6.webp",
-        "alt": "Office 6"
       }
 
     ]
@@ -198,7 +189,6 @@
         "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/12.webp",
         "alt": "Office 6"
       }
-
     ]
   },
   {
@@ -228,9 +218,17 @@
         "id": 5,
         "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/17.webp",
         "alt": "Office 5"
+      },
+      {
+        "id": 6,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/172.webp",
+        "alt": "Office 6"
+      },
+      {
+        "id": 7,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/173.webp",
+        "alt": "Office 7"
       }
-
-
     ]
   },
   {
@@ -238,7 +236,7 @@
     "images": [
       {
         "id": 1,
-        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/18.webp",
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/181.webp",
         "alt": "Office 1"
       },
       {
@@ -248,10 +246,19 @@
       },
       {
         "id": 3,
-        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/20.webp",
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/201.webp",
+        "alt": "Office 3"
+      },
+      {
+        "id": 4,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/202.webp",
+        "alt": "Office 3"
+      },
+      {
+        "id": 5,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/203.webp",
         "alt": "Office 3"
       }
-
     ]
   },
   {
@@ -317,7 +324,6 @@
         "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/32.webp",
         "alt": "Office 12"
       }
-
     ]
   },
   {
@@ -358,10 +364,6 @@
         "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/39.webp",
         "alt": "Office 1"
       }
-
-
-
-
     ]
   },
   {
@@ -371,7 +373,7 @@
         "id": 1,
         "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/40.webp",
         "alt": "Office 1"
-      } ,
+      },
       {
         "id": 2,
         "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/41.webp",
@@ -493,7 +495,6 @@
         "src": "https://cruxcreativedemo2.com/web-image/gallary/videos/youtube2.webp",
         "alt": "Visit 2",
         "youtubeLink": "https://www.youtube.com/watch?v=kgX71_qeG8E"
-
       },
       {
         "id": 3,

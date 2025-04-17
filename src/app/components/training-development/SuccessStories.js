@@ -36,13 +36,13 @@ export const SuccessStories = () => {
             description:
                 "I never imagined using drones in agriculture! The training helped me specialize in farm surveillance and irrigation planning.",
         },
-        {
-            image: story1,
-            title: "From Learner to Agripreneur",
-            name: "Rajesh Sharma",
-            description:
-                "Before joining, I struggled with low crop yields. Now, using precision agriculture, my farm’s output has increased by 40%!",
-        },
+        // {
+        //     image: story1,
+        //     title: "From Learner to Agripreneur",
+        //     name: "Rajesh Sharma",
+        //     description:
+        //         "Before joining, I struggled with low crop yields. Now, using precision agriculture, my farm’s output has increased by 40%!",
+        // },
     ];
     return (
         <>

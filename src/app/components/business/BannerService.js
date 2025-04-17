@@ -1,4 +1,5 @@
-import React from 'react'
+"use client"
+import { useState } from 'react';
 import banner from "../../../assets/images/business1/banner-business.webp";
 import image2 from "../../../assets/images/business1/imgge1.webp";
 import service from './../../../api/service.json'
@@ -55,6 +56,10 @@ export const WhoAre = () => {
 
 export const OurService = () => {
     const heading = "Our Services"
+    const [showAll, setShowAll] = useState(false);
+
+  // Show only 6 items initially
+  const visibleServices = showAll ? service : service.slice(0, 6);
     return (
         <>
             <section className='relative text-center md:text-left   pb-16  pt-20 lg:pb-12' >
@@ -63,17 +68,28 @@ export const OurService = () => {
                         <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-normal redhat text-black mb-6'>{heading}</h2>
                     </div>
                     <div className='lg:grid flex flex-wrap gap-4 lg:gap-4 grid-cols-1 lg:grid-cols-12'>
-                        {service.map((item, index) => (
-                            <div key={index} className='lg:col-span-4 md:col-span-3 sm:col-span-2'>
-                                <BusinessCard image={item.image} title={item.title} info={item.designation} link={item.link} />
-                            </div>
-                        ))}
+                    {visibleServices.map((item, index) => (
+            <div key={index} className="lg:col-span-4 md:col-span-3 sm:col-span-2">
+              <BusinessCard
+                image={item.image}
+                title={item.title}
+                info={item.designation}
+                link={item.link}
+              />
+            </div>
+          ))}
 
                     </div>
-                    <div className='text-center mt-6'>
-                    <Link href="#" className='inline-flex items-center mt-6 mb-8 justify-center gap-4 py-3 px-12 shadow-lg text-white bg-[#1B453C] redhat font-medium border-[#1B453C] border hover:bg-white hover:text-[#1B453C] transition-all duration-300'>See All Services</Link>
-
-                    </div>
+                    {!showAll && service.length > 6 && (
+          <div className="text-center mt-6">
+            <button
+              onClick={() => setShowAll(true)}
+              className="inline-flex items-center mt-6 mb-8 justify-center gap-4 py-3 px-12 shadow-lg text-white bg-[#1B453C] redhat font-medium border-[#1B453C] border hover:bg-white hover:text-[#1B453C] transition-all duration-300"
+            >
+              See All Services
+            </button>
+          </div>
+        )}
                 </div>
             </section>
         </>

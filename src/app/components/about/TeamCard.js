@@ -20,7 +20,7 @@ export const TeamCard = ({ data }) => {
                     height={200}
                   />
                 </div>
-                <h5 className="text-lg mb-0 mt-2 font-normal">{name}</h5>
+                <h5 className="text-lg mb-0 mt-2 font-normal" dangerouslySetInnerHTML={{__html:name}}/>
                 <h6 className="text-sm font-semibold">{designation}</h6>
                 {/* <Image
                     src={image}

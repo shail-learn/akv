@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../../../assets/images/logo-icon.svg";
+import logo from "../../../assets/images/logo-akv.webp";
 import Image from 'next/image';
 
 export const Contact = () => {
@@ -15,8 +15,10 @@ export const Contact = () => {
                 <div className='w-full col-span-5 p-6  rounded-3xl h-full grid   '
                     style={{ boxShadow: '8px 8px 8px 0px #0000001A' }}
                 >
-                    <div className='flex gap-4 items-center mb-6' >
-                        <Image src={logo} alt="Logo" width={70} height={70} /> <span className='text-lg'>ATULYE KRISHI <br /> VANA</span>
+                    <div className='flex gap-4 items-center justify-center mb-6' >
+                        <Image src={logo} alt="Logo" width={70} height={70} />
+                        {/* <span className='text-lg'>
+                            ATULYE KRISHI   VANA</span> */}
                     </div>
                     <form>
                         <div className='flex flex-wrap gap-4 mb-4'>

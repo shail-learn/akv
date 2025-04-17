@@ -32,7 +32,7 @@ function page() {
 
   const founders = [
     {
-      "name": "Late Shri M.K. Aggarwal",
+      "name": "Late and Emeritus MK Aggarwal",
       "title": "Founder",
       "linkedin": "",
       "quote": "\"A Legacy of Vision, Innovation, and Sustainable Growth\"",
@@ -40,7 +40,7 @@ function page() {
       "description": [
         "Late Shri <strong>M.K. Aggarwal</strong> was a visionary leader and financial expert who laid the foundation for sustainable agroforestry. His foresight and commitment to environmental and economic prosperity have created a lasting impact.",
         "With a deep understanding of <strong>finance, agriculture, and business</strong>, he played a crucial role in shaping <strong>Atulye Krishi Vana’s</strong> mission. His work emphasized <strong>eco-friendly and community-driven forestry models</strong>, promoting innovation in sustainable agriculture.",
-        "<strong>His Contributions:</strong>",
+        "<strong class='text-base md:text-xl'>His Contributions:</strong>",
         "Established <strong>Atulye Krishi Vana</strong>, integrating agroforestry with sustainability. Advocated for <strong>green forestry practices and rural empowerment</strong>. Inspired <strong>research and innovation in sustainable agriculture</strong>.",
         "Though he is no longer with us, his <strong>vision continues to guide our organization,</strong> leaving behind a legacy of <strong>growth, sustainability, and resilience.<strong>"
       ]
@@ -55,10 +55,10 @@ function page() {
         "Mr. Atul Aggarwal, an enthusiastic changemaker since childhood, is the founder of Atulye Krishi Vana (AKV)—a pioneering agroforestry initiative focused on transforming barren land into thriving, sustainable ecosystems. Deeply inspired by his father, the late Shri M.K. Aggarwal, Atul combines financial expertise with a deep-rooted commitment to ecological and social impact.",
         'With a belief that modern life demands more than just Roti, Kapda, Makaan, he champions what he calls the "Redefined Necessities": ',
 
-        "Health: Physical & mental well-being through nature.",
-        "Wealth: Sustainable income via regenerative farming. ",
-        "Nature: A thriving environment for future generations.",
-        "Under his leadership, AKV has:",
+        "<b>Health:</b> Physical & mental well-being through nature.",
+        "<b>Wealth:</b> Sustainable income via regenerative farming. ",
+        "<b>Nature:</b> A thriving environment for future generations.",
+        "<b class='text-base md:text-xl'>Under his leadership, AKV has:</b>",
         "Restored 5,000+ acres of degraded land",
         "Planted over 2 lakh trees",
         "Empowered rural communities, especially women and youth ",
@@ -75,7 +75,7 @@ function page() {
         "<strong>Mr. Sanjay Mittal</strong> is an <strong>innovative and performance-driven executive</strong> with <strong>28+ years of expertise</strong> in <strong>business development, project management, and AI-based technical solutions.</strong>",
         "His work includes the <strong>design and deployment of IoT-driven automation solutions</strong> for <strong>large infrastructure projects, metro rail, airports, and industrial facilities.</strong> As a <strong>leader in engineering and facility management,</strong> he ensures <strong>Atulye Krishi Vana remains at the forefront of sustainable technology integration.</strong>",
 
-        "**His Key Contributions:**",
+        "<b  class='text-base md:text-xl'>His Key Contributions:</b>",
         "Leads <strong>AI and IoT-based innovations</strong> in agroforestry.",
         "Manages <strong>large-scale technical projects and infrastructure development.</strong>",
         "Ensures <strong>sustainable engineering solutions</strong> for efficiency and growth.",
@@ -91,7 +91,7 @@ function page() {
       "description": [
         "Dr. S.K. Pande is a distinguished academician, researcher, and leader in agricultural sciences. With decades of experience in teaching, research, and administration, he has dedicated his career to advancing sustainable farming practices, plant pathology, and innovative agricultural technologies.",
         "His expertise spans <strong>integrated pest and disease management, mycotoxin research, hydroponics, medicinal plants, and bio-fertilizers,</strong> significantly contributing to the development of eco-friendly and technology-driven agricultural solutions.",
-        "**His Contributions:**",
+        "<strong class='text-base md:text-xl'>His Contributions:</strong>",
         "Driving research in <strong>sustainable agriculture, food grain storage, and plant disease management</strong>",
         "Mentoring future leaders, having <strong>guided Ph.D. and M.Sc. scholars</strong> in pioneering research",
         "Leading multiple <strong>government-funded projects</strong> on mushrooms, medicinal plants, and crop protection",

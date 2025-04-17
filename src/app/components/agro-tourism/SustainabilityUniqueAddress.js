@@ -6,6 +6,9 @@ import image2 from "../../../assets/images/AgroTourism/Sustainability2.webp";
 import image3 from "../../../assets/images/AgroTourism/Sustainability3.webp";
 import image4 from "../../../assets/images/AgroTourism/Sustainability4.webp";
 import slider1 from "../../../assets/images/AgroTourism/slider01.webp";
+import slider2 from "../../../assets/images/AgroTourism/slider02.webp";
+import slider3 from "../../../assets/images/AgroTourism/slider03.webp";
+import slider4 from "../../../assets/images/AgroTourism/slider04.webp";
 import bgcontact from "../../../assets/images/AgroTourism/contact.webp";
 import { FaMapMarkerAlt, FaRegCalendarAlt, FaBed, FaPhoneAlt } from "react-icons/fa";
 import { MdHomeWork } from "react-icons/md";
@@ -124,18 +127,18 @@ export const Unique = () => {
         {
             "title": "Shri Tridev Triveni Vatika",
             "description": "A spiritual agroforestry space where Pipal, Banyan, and Neem trees symbolize Lord Brahma, Vishnu, and Mahesh.",
-            "image": slider1
+            "image": slider2
         },
         {
             "title": "Medicinal & Ayurvedic Garden",
             "description": "Explore a collection of 108 medicinal plants used in Ayurveda for natural healing.",
-            "image": slider1
+            "image": slider3
         },
         {
-            "title": "Medicinal & Ayurvedic Garden",
-            "description": "Explore a collection of 108 medicinal plants used in Ayurveda for natural healing.",
-            "image": slider1
-        }
+          "title": "Mansarovar Boating Pond ",
+          "description": "Enjoy a peaceful boat ride in a scenic artificial pond designed for irrigation and eco-tourism.",
+          "image": slider4
+      },
     ]
     return (
         <>

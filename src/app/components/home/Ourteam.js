@@ -21,7 +21,7 @@ export const Ourteam = () => {
     {
       id: 1,
       img: Team1,
-      name: "Lt. Sh M.K Aggarwal",
+      name: "Late and Emeritus <br/> MK Aggarwal",
       designation: "Founder",
     },
     {
@@ -74,7 +74,7 @@ export const Ourteam = () => {
                     className="w-full h-full mx-auto"
                   />
                 </div>
-                <h5 className="text-lg mb-4 mt-4 font-normal">{item.name}</h5>
+                <h5 className="text-lg mb-4 mt-4 font-normal" dangerouslySetInnerHTML={{__html: item.name}}/>
                 <h6 className="text-sm font-semibold">{item.designation}</h6>
               </div>
             ))}

@@ -1,12 +1,16 @@
 'use client'
 import React, { useState } from 'react';
 import Image from "next/image";
-import story1 from "../../../assets/images/AgroTourism/story1.webp";
+import story1 from "../../../assets/images/AgroTourism/coconut.webp";
 import story2 from "../../../assets/images/AgroTourism/story2.webp";
 import story3 from "../../../assets/images/AgroTourism/story3.webp";
+import story4 from "../../../assets/images/AgroTourism/spary.webp";
 import image2 from "../../../assets/images/AgroTourism/hand.webp";
 import bgstay from "../../../assets/images/AgroTourism/stay-bg.webp";
-import impact1 from "../../../assets/images/AgroTourism/slider1.webp";
+import impact1 from "../../../assets/images/AgroTourism/Farm-Cottages.webp";
+import impact2 from "../../../assets/images/AgroTourism/Camping.webp";
+import impact3 from "../../../assets/images/AgroTourism/Farm.webp";
+import impact4 from "../../../assets/images/AgroTourism/Relax.webp";
 
 
 
@@ -42,7 +46,7 @@ export const Slider = () => {
                 "Explore Ayurveda in action with turmeric, ginger, and other healing plants cultivated organically.",
         },
         {
-            image: story1,
+            image: story4,
             title: "Agroforestry & Climate Action",
 
             description:
@@ -139,22 +143,22 @@ export const BlurSlider = () => {
         {
             image: impact1,
             heading: "Farm Cottages & Eco-Stays",
-            description: 'Traditional cottages built using local materials, offering a rustic yet comfortable experience.',
+            description: 'Traditional cottages built using local materials, offering a rustic yet comfortable experience. ',
         },
         {
-            image: impact1,
-            heading: "Market Linkages",
-            description: 'Establishing supply chains for domestic and export markets.',
+            image: impact2,
+            heading: "Camping & Bonfire Nights",
+            description: 'Sleep under the stars, surrounded by the soothing sounds of nature.',
         },
         {
-            image: impact1,
-            heading: "Agro-Processing Industries",
-            description: 'Value addition through fodder pellet production and silage making.',
+            image: impact3,
+            heading: "Farm-to-Table Dining",
+            description: 'Enjoy wholesome organic meals made from fresh farm produce, cooked with local flavors. ',
         },
         {
-            image: impact1,
-            heading: "Building <span style='color:#5CA9A9'>Ecosystems</span>",
-            description: 'Through Afforestation, Reforestation & Revegatation',
+            image: impact4,
+            heading: "Relax by the Water Ponds",
+            description: 'Unwind near our 6-crore-liter water storage ponds, supporting irrigation, wildlife, and agro-tourism activities.',
         },
 
     ]
