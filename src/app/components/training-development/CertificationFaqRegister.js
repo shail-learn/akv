@@ -173,7 +173,7 @@ export const Register = () => {
             <div className='md:w-5/12  w-12/12'>
               <div className="flex flex-col h-full">
                 <div className="">
-                  <h2 className="text-3xl md:leading-[1.3] md:text-4xl md:text-left font-normal redhat text-white">Join the Movement – <br /> Register Today!</h2>
+                  <h2 className="text-3xl md:leading-[1.3] md:text-4xl md:text-left font-medium redhat text-white">Join the Movement – <br /> Register Today!</h2>
                 </div>
                 <div className="md:mt-[50%] mt-14 h-full text-left">
                   <p className="mb-4 text-lg flex gap-4 items-center font-semibold"><FaCalendarDays className='text-[#F7C35F]' /> Upcoming Training Sessions:</p>
