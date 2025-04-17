@@ -1,0 +1,461 @@
+"use client"
+import Link from 'next/link'
+import React, { useEffect, useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import imageleft from "../../../assets/images/contract-farming/fodder.webp";
+import Image from 'next/image';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/grid';
+import 'swiper/css/pagination';
+import { Grid, Pagination, Navigation, Autoplay } from 'swiper/modules';
+
+
+import bgsupport from '../../../assets/images/contract-farming/bg-img.webp'
+import support1 from '../../../assets/images/contract-farming/support1.webp'
+import support2 from '../../../assets/images/contract-farming/support2.webp'
+import support3 from '../../../assets/images/contract-farming/support3.webp'
+import support4 from '../../../assets/images/contract-farming/support4.webp'
+import middleimg from '../../../assets/images/contract-farming/long.svg'
+import contactbg from "../../../assets/images/training/join-bg.webp";
+
+export const Animal = () => {
+    const heading = "Animal Sanctuaries"
+    const mission = [
+        {
+            title: "Shri. Malook Gaushala",
+            description: `Sheltered pastures for native cattle <br/>  A sanctuary promoting ethical cattle care and rural livelihoods.`,
+            link: "#"
+        },
+        {
+            title: "Shri. Bhairav Sadan (Dog Shelter)",
+            description: `Compassionate haven for canines <br/> A clean, safe space dedicated to stray and abandoned dogs.`,
+            link: "#"
+
+        },
+        {
+            title: "Shri. Pabuji Ushtralaya (Camel Shade)",
+            description: `Sandstone shelter honoring Rajasthan’s heritage animal A resting abode for camels, reflecting desert culture and care.`,
+            link: "#"
+
+        },
+
+    ]
+    return (
+        <>
+            <section className=' relative' >
+                <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2 relative z-10'>
+                    <div className='flex md:flex-col flex-col lg:flex-row justify-between   gap-8 md:gap-10'>
+                        <div className='md:w-4/12  w-full  w-12/12'>
+                            <div className='md:max-w-[80%]'>
+                                <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-medium text-center md:text-left redhat text-[#1B453C] mb-6'>{heading}</h2>
+
+                            </div>
+                        </div>
+                        <div className='md:w-8/12  w-full  w-12/12'>
+                            <div className='flex md:flex-col flex-col lg:flex-row justify-between gap-6 md:gap-6'>
+                                {mission.map((item, index) => (
+                                    <div className='md:w-4/12 w-full  w-12/12 ' key={index}>
+                                        <div className='p-8  bg-[#1A3232] rounded-md text-white h-full'>
+                                            <div className='h-[75%]'>
+                                                <h2 className='text-normal text-[18px]  font-medium'>{item.title}</h2>
+                                                <p className='text-normal text-sm lg:text-[15px] pt-4 redhat' dangerouslySetInnerHTML={{ __html: item.description }} />
+                                            </div>
+
+                                            <div className="my-3 pt-4 mt-full text-center">
+                                                <Link href={item.link}><span className="inline-block border border-white text-white text-sm px-6 py-2 hover:bg-white hover:text-[#1A3232] transition"  >Learn More</span></Link></div>
+                                        </div>
+                                    </div>
+                                ))}
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </>
+    )
+}
+
+
+export const Slidertwo = () => {
+    const heading1 = "Wellness & Living Gardens"
+    const heading2 = "Science & Sustainability"
+
+    const whychoose = [
+
+        {
+            image: imageleft,
+            title: 'Assured Buyback',
+            description: 'Herb layout shaped like a human anatomy Each organ-shaped patch features a corresponding medicinal plant'
+        },
+        {
+            image: imageleft,
+            title: `Napier Grass <br/> (CO-3 & CO-4)`,
+            description: 'Fast-growing and highly nutritious.'
+        },
+        {
+            image: imageleft,
+            title: `Napier Grass <br/> (CO-3 & CO-4)`,
+            description: 'Implementing eco-friendly farming techniques.'
+        },
+        {
+            image: imageleft,
+            title: `Napier Grass <br/> (CO-3 & CO-4)`,
+            description: 'Access to subsidies and micro-financing options.'
+        },
+        {
+            image: imageleft,
+            title: `Napier Grass <br/> (CO-3 & CO-4)`,
+            description: 'Enhancing rural livelihoods through job creation.'
+        },
+
+    ]
+
+    const whychoose2 = [
+
+        {
+            image: imageleft,
+            title: 'Shri. Rasayanshala (Vermicompost Unit)',
+            description: 'Compost beds and soil labA hub for organic waste conversion and farmer education.'
+        },
+        {
+            image: imageleft,
+            title: `Napier Grass <br/> (CO-3 & CO-4)`,
+            description: 'Fast-growing and highly nutritious.'
+        },
+        {
+            image: imageleft,
+            title: `Napier Grass <br/> (CO-3 & CO-4)`,
+            description: 'Implementing eco-friendly farming techniques.'
+        },
+        {
+            image: imageleft,
+            title: `Napier Grass <br/> (CO-3 & CO-4)`,
+            description: 'Access to subsidies and micro-financing options.'
+        },
+        {
+            image: imageleft,
+            title: `Napier Grass <br/> (CO-3 & CO-4)`,
+            description: 'Enhancing rural livelihoods through job creation.'
+        },
+
+    ]
+
+    const [swiperInstance, setSwiperInstance] = useState(null);
+    const [isBeginning, setIsBeginning] = useState(true);
+    const [isEnd, setIsEnd] = useState(false);
+
+    useEffect(() => {
+        if (swiperInstance) {
+            swiperInstance.on("slideChange", () => {
+                setIsBeginning(swiperInstance.isBeginning);
+                setIsEnd(swiperInstance.isEnd);
+            });
+        }
+    }, [swiperInstance]);
+
+    return (
+        <>
+            <section className='pt-10 pb-12 lg:py-16 lg:pt-20'>
+                <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2'>
+
+                    <div className='flex  md:flex-col lg:flex-row flex-col-reverse justify-between  gap-8 md:gap-10'>
+                        <div className='md:w-6/12  w-full  w-12/12'>
+                            <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-medium text-center md:text-left redhat text-[#1B453C] mb-6'>{heading1}</h2>
+                            <div className="relative w-full">
+                                <Swiper
+                                    onSwiper={setSwiperInstance}
+                                    spaceBetween={30}
+                                    navigation={{
+                                        nextEl: ".swiper-button-next",
+                                        prevEl: ".swiper-button-prev",
+                                    }}
+                                    pagination={{
+                                        el: ".custom-pagination3",
+                                        clickable: true,
+                                    }}
+                                    modules={[Grid, Pagination, Navigation]}
+                                    grid={{ rows: 1, fill: "row" }}
+                                    breakpoints={{
+                                        640: {
+                                            slidesPerView: 1,
+                                        },
+                                        1024: {
+                                            slidesPerView: 1,
+                                        },
+                                    }}
+                                    className="mySwiper style2_slider"
+                                >
+                                    {whychoose.map((item, index) => (
+                                        <SwiperSlide key={index}>
+                                            <div
+                                                className="flex gap-4 md:gap-6 flex-col h-[300px] rounded-2xl p-8 lg:p-12"
+                                                style={{
+                                                    background: `url(${item.image.src}) center center / cover no-repeat`,
+                                                }}
+                                            >
+                                                <h2
+                                                    className="text-3xl md:leading-[1.3] md:text-4xl h-full font-medium redhat text-white mb-10 md:mb-14"
+                                                    dangerouslySetInnerHTML={{ __html: item.title }}
+                                                ></h2>
+                                                <p className="text-base font-medium redhat text-white">
+                                                    {item.description}
+                                                </p>
+                                            </div>
+                                        </SwiperSlide>
+                                    ))}
+                                </Swiper>
+
+                                <div className="flex justify-between items-center style2_slider mt-16">
+                                    <div className="flex items-center  gap-10 lg:gap-14">
+                                        <button
+                                            className={`swiper-button-prev bg-white rounded-full !relative shadow border border-[#F0F0F0] px-4 py-2 ${isBeginning ? "opacity-50 cursor-not-allowed" : ""
+                                                }`}
+                                            disabled={isBeginning}
+                                        >
+
+                                        </button>
+                                        <button
+                                            className={`swiper-button-next bg-white rounded-full !relative shadow border border-[#F0F0F0] px-4 py-2 ${isEnd ? "opacity-50 cursor-not-allowed" : ""
+                                                }`}
+                                            disabled={isEnd}
+                                        >
+
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <div className="custom-pagination3 flex justify-start mb-3 space-x-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='md:w-6/12  w-full  w-12/12'>
+                            <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-medium text-center md:text-left redhat text-[#1B453C] mb-6'>{heading2}</h2>
+                            <div className="relative w-full">
+                                <Swiper
+                                    onSwiper={setSwiperInstance}
+                                    spaceBetween={30}
+                                    navigation={{
+                                        nextEl: ".swiper-button-next",
+                                        prevEl: ".swiper-button-prev",
+                                    }}
+                                    pagination={{
+                                        el: ".custom-pagination4",
+                                        clickable: true,
+                                    }}
+                                    modules={[Grid, Pagination, Navigation]}
+                                    grid={{ rows: 1, fill: "row" }}
+                                    breakpoints={{
+                                        640: {
+                                            slidesPerView: 1,
+                                        },
+                                        1024: {
+                                            slidesPerView: 1,
+                                        },
+                                    }}
+                                    className="mySwiper style2_slider"
+                                >
+                                    {whychoose2.map((item, index) => (
+                                        <SwiperSlide key={index}>
+                                            <div
+                                                className="flex gap-4 md:gap-6 flex-col h-[300px] rounded-2xl p-8 lg:p-12"
+                                                style={{
+                                                    background: `url(${item.image.src}) center center / cover no-repeat`,
+                                                }}
+                                            >
+                                                <h2
+                                                    className="text-3xl md:leading-[1.3] md:text-4xl h-full font-medium redhat text-white mb-10 md:mb-14"
+                                                    dangerouslySetInnerHTML={{ __html: item.title }}
+                                                ></h2>
+                                                <p className="text-base font-medium redhat text-white">
+                                                    {item.description}
+                                                </p>
+                                            </div>
+                                        </SwiperSlide>
+                                    ))}
+                                </Swiper>
+
+                                <div className="flex justify-between items-center style2_slider mt-16">
+                                    <div className="flex items-center  gap-10 lg:gap-14">
+                                        <button
+                                            className={`swiper-button-prev bg-white rounded-full !relative shadow border border-[#F0F0F0] px-4 py-2 ${isBeginning ? "opacity-50 cursor-not-allowed" : ""
+                                                }`}
+                                            disabled={isBeginning}
+                                        >
+
+                                        </button>
+                                        <button
+                                            className={`swiper-button-next bg-white rounded-full !relative shadow border border-[#F0F0F0] px-4 py-2 ${isEnd ? "opacity-50 cursor-not-allowed" : ""
+                                                }`}
+                                            disabled={isEnd}
+                                        >
+
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <div className="custom-pagination4 flex justify-start mb-3 space-x-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </section>
+        </>
+    )
+}
+
+
+export const Impact = () => {
+    const star = middleimg
+
+    const text = " Impact & Legacy"
+    const heading = `“Rooted in Culture. Grown with Science.
+    Sustaining for Generations.”
+    `
+    const partnerships = [
+        {
+            title: " 21+ Eco-integrated zones",
+            image: support1,
+        },
+        {
+            title: "Climate-resilient land use",
+            image: support3,
+        },
+
+    ];
+
+    const partnerships1 = [
+        {
+            title: "Boosted livelihoods & agri-based employment",
+            image: support2,
+        },
+        {
+            title: "1000+ visitors every month",
+            image: support4,
+        },
+
+    ];
+
+    return (
+        <>
+
+            <section
+                className=" pt-16 pb-8 lg:pt-20 lg:pb-20" style={{ background: `url(${bgsupport.src})center bottom / contain no-repeat`, 'backgroundColor': '#1B453C' }}>
+                <div className='mx-auto max-w-7xl   px-4 md:px-8 lg:px-2 '>
+
+                    <p className='text-lg md:text-xl text-center text-[#F7C35F] mb-4'>{text}</p>
+                    <div className='lg:w-2/4 mx-auto'>
+                    <h2 className="lg:leading-snug  text-white redhat  text-center text-3xl md:text-4xl mb-8 md:mb-12  font-normal  w-full" dangerouslySetInnerHTML={{__html: heading}} />
+                    </div >
+                    <div className='flex flex-wrap lg:flex-nowrap items-center gap-6 px-0 md:px-6    lg:px-2'>
+                        <div className='w-full md:w-5/12'>
+                            <div className='flex gap-8 flex-col'>
+                                <div className='w-full  md:w-12/12'>
+                                    {partnerships.map((partner, index) => (
+                                        <div className='w-full w-12/12 mt-10' key={index}>
+                                            <div className="relative bg-white border border-[#F7C35F]  rounded-full overflow-hidden shadow-lg">
+                                                <Image src={partner.image} alt={partner.title} className="w-full h-44 md:h-56  rounded-full object-cover" />
+                                                <div className="absolute inset-0 flex items-center justify-start">
+                                                    <div className="bg-white p-8 text-center flex flex-col items-center justify-center h-44 w-44 md:h-56 md:w-56 rounded-full border-2 border-[#F7C35F]">
+                                                        <h3 className="text-base md:text-xl text-[#1B453C] font-semibold">{partner.title}</h3>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    ))}
+
+                                </div>
+                            </div>
+                        </div>
+                        <div className='w-full md:w-2/12 self-start'>
+                            <Image src={star} className='w-auto mx-auto h-auto  hidden md:block' alt="icon" />
+                        </div>
+                        <div className='w-full md:w-5/12'>
+                            {partnerships1.map((partner, index) => (
+                                <div className='w-full w-12/12 mt-10' key={index}>
+                                    <div className="relative bg-white border border-[#F7C35F]  rounded-full overflow-hidden shadow-lg">
+                                        <Image src={partner.image} alt={partner.title} className="w-full h-44 md:h-56  rounded-full object-cover" />
+                                        <div className="absolute inset-0 flex items-center justify-end">
+                                            <div className="bg-white p-8 text-center border-2 border-[#F7C35F] flex flex-col items-center justify-center h-44 w-44 md:h-56 md:w-56 rounded-full">
+
+                                                <h3 className="text-base md:text-xl text-[#1B453C] font-semibold ">{partner.title}</h3>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            ))}
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </section>
+
+
+
+        </>
+    )
+}
+
+
+export const Contact = () => {
+    return (
+        <>
+
+        <section className="pt-14 pb-14 lg:pt-20 lg:pb-20 relative " style={{ background: `url(${contactbg.src}) center center / cover no-repeat` }}>
+        <div className="absolute inset-0 bg-black bg-opacity-35"></div>
+        <div className="relative max-w-7xl mx-auto px-6 md:px-12 text-white text-center">
+          <div className='flex flex-col lg:flex-row justify-between items-center gap-4 lg:gap-12'>
+            <div className='md:w-5/12  w-12/12'>
+              <div className="flex flex-col h-full">
+                <div className="">
+                  <h2 className="text-4xl md:leading-[1.3] md:text-5xl md:text-left font-bold redhat text-white">
+                    Let’s Grow <br/> Together
+</h2>
+                </div>
+                <div className="md:mt-[50%] mt-14 h-full text-left">
+
+                  <ul className="mb-6 text-md">
+                    <li>Whether you’re a nature lover, corporate, policymaker, or <br/>changemaker—there’s a way for you to be part of our vision.</li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className='md:w-5/12  w-12/12'>
+
+              <div className="bg-white text-black p-6 rounded-3xl shadow-lg w-full max-w-md">
+                <h2 className="text-xl font-medium mb-4 text-center md:text-left">Book a Visit</h2>
+                <form>
+                  <div className='flex flex-wrap gap-4 mb-4'>
+                    <input type="text" className='outline-none font-normal px-4 p-3 poppins rounded-md w-full bg-[#F6F6F8]' placeholder='Location: ' />
+                    <input type="email" className='outline-none font-normal px-4 p-3 poppins rounded-md w-full bg-[#F6F6F8]' placeholder='Email:' />
+                    <input type="text" className='outline-none font-normal px-4 p-3 poppins rounded-md w-full bg-[#F6F6F8]' placeholder='Phone Number' />
+                  </div>
+
+                  <button className='poppins mt-10  font-normal text-white w-full py-3 rounded-[10px] bg-[#1B453C]'>Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </section>
+        </>
+    )
+}
