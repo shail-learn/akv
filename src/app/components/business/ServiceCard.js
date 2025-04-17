@@ -4,7 +4,7 @@ import React from 'react'
 
 import icon from "../../../assets/images/business1/arrow.svg";
 
-export const BusinessCard = ({ image, title, info ,link}) => {
+export const BusinessCard = ({ image, title, info, link }) => {
   return (
     <>
 
@@ -20,8 +20,15 @@ export const BusinessCard = ({ image, title, info ,link}) => {
             </li>
           ))}
         </ul>
-        <Link href={link} className='inline-flex items-center mt-6 mb-8 justify-center gap-4 py-3 px-4 text-[#1B453C] redhat font-medium border-[#1B453C] border hover:bg-[#f8f8f8] transition-all duration-300'>Read More  <Image src={icon} alt="service img" width="20" height="20" className='w-6 h-6' /> </Link>
-
+        {link && (
+          <Link
+            href={link}
+            className="inline-flex items-center mt-6 mb-8 justify-center gap-4 py-3 px-4 text-[#1B453C] redhat font-medium border-[#1B453C] border hover:bg-[#f8f8f8] transition-all duration-300"
+          >
+            Read More
+            <Image src={icon} alt="arrow icon" width={20} height={20} className="w-6 h-6" />
+          </Link>
+        )}
 
       </div>
 

@@ -28,7 +28,7 @@ import { Grid, Pagination, Navigation } from 'swiper/modules';
 export const Banner = () => {
     const text = {
         banner: banner,
-        heading: `Contract Farming for Fodder - Atulye Krishi Vana <br/>
+        heading: `Contract Farming for Fodder <br/>
          A Partnership Rooted in Sustainability! `,
         title: 'Welcome to Atulye Krishi Vana’s Contract Farming Program for Fodder. We are on a mission to create a sustainable and profitable agricultural ecosystem that supports farmers, enhances livestock nutrition, and contributes to environmental conservation. Our contract farming model ensures a steady supply of high-quality fodder while offering financial security and technical assistance to farmers.',
 

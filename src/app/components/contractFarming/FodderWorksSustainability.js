@@ -1,11 +1,28 @@
 "use client"
 import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import imageleft from "../../../assets/images/contract-farming/fodder.webp";
+import image1 from "../../../assets/images/contract-farming/fodder.webp";
+import image2 from "../../../assets/images/contract-farming/Maize-fodder.webp";
+import image3 from "../../../assets/images/contract-farming/berseem.webp";
+import image4 from "../../../assets/images/contract-farming/Lucerne.webp";
+import image5 from "../../../assets/images/contract-farming/Sorghum-Fodder.webp";
+import image6 from "../../../assets/images/contract-farming/Hybrid-Millet.webp";
+import image7 from "../../../assets/images/contract-farming/Hydroponic-Fodder.webp";
+
+
 import icon1 from "../../../assets/images/contract-farming/eco1.svg";
+import icon01 from "../../../assets/images/contract-farming/climate.svg";
+import icon02 from "../../../assets/images/contract-farming/soil.svg";
+import icon03 from "../../../assets/images/contract-farming/ecosystem.svg";
+
+
+
 import icon2 from "../../../assets/images/contract-farming/eco2.svg";
 import icon3 from "../../../assets/images/contract-farming/eco3.svg";
-import impact1 from "../../../assets/images/contract-farming/impact.webp";
+import impact1 from "../../../assets/images/contract-farming/Soil-health.webp";
+import impact2 from "../../../assets/images/contract-farming/water-conservation.webp";
+import impact3 from "../../../assets/images/contract-farming/Carbon-Sequestration.webp";
+import impact4 from "../../../assets/images/contract-farming/Livelihood-Generation.webp";
 
 
 import Image from 'next/image';
@@ -29,29 +46,39 @@ import indicateicon from "../../../assets/images/about/indicate.svg";
 export const Fodder = () => {
   const whychoose = [
     {
-      image: imageleft,
-      title: 'Assured Buyback',
-      description: 'Farmers get a guaranteed market for their fodder crops.'
-    },
-    {
-      image: imageleft,
-      title: `Napier Grass <br/> (CO-3 & CO-4)`,
+      image: image1,
+      title: 'Napier Grass (CO-3 & CO-4)',
       description: 'Fast-growing and highly nutritious.'
     },
     {
-      image: imageleft,
-      title: `Napier Grass <br/> (CO-3 & CO-4)`,
-      description: 'Implementing eco-friendly farming techniques.'
+      image: image2,
+      title: `Maize Fodder`,
+      description: 'Rich in energy and essential for dairy cattle. '
     },
     {
-      image: imageleft,
-      title: `Napier Grass <br/> (CO-3 & CO-4)`,
-      description: 'Access to subsidies and micro-financing options.'
+      image: image3,
+      title: `Berseem (Egyptian Clover)`,
+      description: 'A winter crop with high protein content.'
     },
     {
-      image: imageleft,
-      title: `Napier Grass <br/> (CO-3 & CO-4)`,
-      description: 'Enhancing rural livelihoods through job creation.'
+      image: image4,
+      title: `Lucerne (Alfalfa)`,
+      description: "The ‘King of Forages’ with excellent digestibility. "
+    },
+    {
+      image: image5,
+      title: `Sorghum Fodder`,
+      description: 'Drought-resistant and a good alternative to maize.'
+    },
+    {
+      image: image6,
+      title: `Hybrid Millet`,
+      description: 'High-yield crop with improved nutritional benefits.'
+    },
+    {
+      image: image7,
+      title: `Hydroponic Fodder`,
+      description: 'Grown using minimal water and space.'
     },
 
   ]
@@ -110,13 +137,16 @@ export const Fodder = () => {
                           background: `url(${item.image.src}) center center / cover no-repeat`,
                         }}
                       >
+                        <div className='absolute top-0 left-0 w-full h-full rounded-2xl bg-black bg-opacity-30'></div>
+                        <div className='z-10 relative'>
                         <h2
                           className="text-3xl md:leading-[1.3] md:text-4xl h-full font-medium redhat text-white mb-10 md:mb-14"
                           dangerouslySetInnerHTML={{ __html: item.title }}
                         ></h2>
-                        <p className="text-sm font-medium redhat text-white">
+                        <p className="text-base font-medium redhat text-white">
                           {item.description}
                         </p>
+                        </div>
                       </div>
                     </SwiperSlide>
                   ))}
@@ -208,7 +238,7 @@ export const Works = () => {
                 )}
                 <div className='w-4/5 '>
                   <h3 className="text-lg lg:text-xl redhat font-semibold text-gray-900 mt-6">{value.title}</h3>
-                  <p className="text-[#141414] opacity-75 redhat mt-2 max-w-xs">{value.description}</p>
+                  <p className="text-[#141414] opacity-75  redhat mt-2 max-w-xs">{value.description}</p>
                 </div>
               </div>
             ))}
@@ -227,23 +257,23 @@ export const Sustainability = () => {
   const boxslider = [
     {
       image: impact1,
-      heading: "Employment Opportunities",
-      description: 'Direct and indirect job creation through farming, processing, and transportation.',
+      heading: "Soil Health Improvement",
+      description: 'Organic farming techniques prevent erosion and enhance soil fertility.',
     },
     {
-      image: impact1,
-      heading: "Market Linkages",
-      description: 'Establishing supply chains for domestic and export markets.',
+      image: impact2,
+      heading: "Water Conservation",
+      description: 'Efficient irrigation methods such as drip irrigation and rainwater harvesting.',
     },
     {
-      image: impact1,
-      heading: "Agro-Processing Industries",
-      description: 'Value addition through fodder pellet production and silage making.',
+      image: impact3,
+      heading: "Carbon Sequestration",
+      description: 'Agroforestry methods help absorb CO₂ and combat climate change.',
     },
     {
-      image: impact1,
-      heading: "Building <span style='color:#5CA9A9'>Ecosystems</span>",
-      description: 'Through Afforestation, Reforestation & Revegatation',
+      image: impact4,
+      heading: "Livelihood Generation",
+      description: 'Empowering rural populations through skill development and employment opportunities.',
     },
 
   ]
@@ -397,17 +427,17 @@ export const Economic = () => {
       description: 'Value addition through fodder pellet production and silage making.',
     },
     {
-      image: icon1,
+      image: icon03,
       heading: "Building <span style='color:#5CA9A9'>Ecosystems</span>",
       description: 'Through Afforestation, Reforestation & Revegatation',
     },
     {
-      image: icon1,
+      image: icon01,
       heading: "Fight <span style='color:#5CA9A9'>Climate Change</span> ",
       description: 'Improving soil health, sequestering carbon, and promoting biodiversity.',
     },
     {
-      image: icon1,
+      image: icon02,
       heading: "Preserve the Soil for <span style='color:#5CA9A9'>Future Generations:</span> ",
       description: 'Protecting the soil from degradation, deterioration, and erosion.',
     },

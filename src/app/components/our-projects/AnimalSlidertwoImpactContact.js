@@ -3,6 +3,13 @@ import Link from 'next/link'
 import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import imageleft from "../../../assets/images/contract-farming/fodder.webp";
+import image02 from "../../../assets/images/projects/Bael.webp";
+import image03 from "../../../assets/images/projects/guest.webp";
+import image04 from "../../../assets/images/projects/Fruit.webp";
+import image05 from "../../../assets/images/projects/Swayambhu.webp";
+import image06 from "../../../assets/images/projects/Rasayanshala.webp";
+import image07 from "../../../assets/images/projects/Mukund.webp";
+import image08 from "../../../assets/images/projects/Nursery.webp";
 import Image from 'next/image';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -88,28 +95,28 @@ export const Slidertwo = () => {
 
         {
             image: imageleft,
-            title: 'Assured Buyback',
-            description: 'Herb layout shaped like a human anatomy Each organ-shaped patch features a corresponding medicinal plant'
+            title: 'Shri. Aushadh Manav (Human Body Garden)  ',
+            description: 'Herb layout shaped like a human anatomy <br/>  Each organ-shaped patch features a corresponding medicinal plant.   '
         },
         {
-            image: imageleft,
-            title: `Napier Grass <br/> (CO-3 & CO-4)`,
-            description: 'Fast-growing and highly nutritious.'
+            image: image02,
+            title: `Bael Van  `,
+            description: 'Grove of sacred Bael trees <br/>  A spiritually symbolic orchard known for its healing and cultural value.  '
         },
         {
-            image: imageleft,
-            title: `Napier Grass <br/> (CO-3 & CO-4)`,
-            description: 'Implementing eco-friendly farming techniques.'
+            image: image03,
+            title: `Guest Garden  `,
+            description: 'Welcome garden with curated plant displays <br/> A beautifully maintained space for guests and dignitaries to reflect and relax. '
         },
         {
-            image: imageleft,
-            title: `Napier Grass <br/> (CO-3 & CO-4)`,
-            description: 'Access to subsidies and micro-financing options.'
+            image: image04,
+            title: `Shri. Narayan Falodyan (Fruit Garden) `,
+            description: 'Mixed orchard featuring tropical fruits <br/> Encouraging nutrition, self-reliance, and biodiversity preservation.  '
         },
         {
-            image: imageleft,
-            title: `Napier Grass <br/> (CO-3 & CO-4)`,
-            description: 'Enhancing rural livelihoods through job creation.'
+            image: image05,
+            title: `Shri. Swayambhu Vatika `,
+            description: 'Self-sustaining native plant ecosystem <br/> A naturally balanced grove highlighting regenerative design.'
         },
 
     ]
@@ -117,30 +124,21 @@ export const Slidertwo = () => {
     const whychoose2 = [
 
         {
-            image: imageleft,
-            title: 'Shri. Rasayanshala (Vermicompost Unit)',
-            description: 'Compost beds and soil labA hub for organic waste conversion and farmer education.'
+            image: image06,
+            title: 'Shri. Rasayanshala (Vermicompost Unit)  ',
+            description: 'Compost beds and soil lab <br/> A hub for organic waste conversion and farmer education.'
         },
         {
-            image: imageleft,
-            title: `Napier Grass <br/> (CO-3 & CO-4)`,
-            description: 'Fast-growing and highly nutritious.'
+            image: image07,
+            title: `Shri. Mukund Mausam Vedhshala (AgroMet Station) `,
+            description: 'Climate monitoring tower with sensors <br/> Facilitates precision farming with real-time agro-weather insights.  '
         },
         {
-            image: imageleft,
-            title: `Napier Grass <br/> (CO-3 & CO-4)`,
-            description: 'Implementing eco-friendly farming techniques.'
+            image: image08,
+            title: `Shree Venu Nursery  `,
+            description: 'Rows of saplings and shaded greenhouses <br/>  A vital source for plant propagation and afforestation efforts.'
         },
-        {
-            image: imageleft,
-            title: `Napier Grass <br/> (CO-3 & CO-4)`,
-            description: 'Access to subsidies and micro-financing options.'
-        },
-        {
-            image: imageleft,
-            title: `Napier Grass <br/> (CO-3 & CO-4)`,
-            description: 'Enhancing rural livelihoods through job creation.'
-        },
+
 
     ]
 
@@ -197,13 +195,14 @@ export const Slidertwo = () => {
                                                     background: `url(${item.image.src}) center center / cover no-repeat`,
                                                 }}
                                             >
-                                                <h2
-                                                    className="text-3xl md:leading-[1.3] md:text-4xl h-full font-medium redhat text-white mb-10 md:mb-14"
-                                                    dangerouslySetInnerHTML={{ __html: item.title }}
-                                                ></h2>
-                                                <p className="text-base font-medium redhat text-white">
-                                                    {item.description}
-                                                </p>
+                                                <div className='absolute top-0 left-0 w-full rounded-2xl h-full bg-black opacity-30'></div>
+                                                <div className='relative z-10 grid gap-4 md:gap-6 flex-col h-[300px] flex-wrap'>
+                                                    <h2
+                                                        className="text-2xl md:leading-[1.3] md:text-3xl h-full font-medium redhat text-white mb-10 md:mb-14"
+                                                        dangerouslySetInnerHTML={{ __html: item.title }}
+                                                    ></h2>
+                                                    <p className="text-base font-medium redhat text-white" dangerouslySetInnerHTML={{ __html: item.description }} />
+                                                </div>
                                             </div>
                                         </SwiperSlide>
                                     ))}
@@ -260,19 +259,20 @@ export const Slidertwo = () => {
                                 >
                                     {whychoose2.map((item, index) => (
                                         <SwiperSlide key={index}>
-                                            <div
+                                              <div
                                                 className="flex gap-4 md:gap-6 flex-col h-[300px] rounded-2xl p-8 lg:p-12"
                                                 style={{
                                                     background: `url(${item.image.src}) center center / cover no-repeat`,
                                                 }}
                                             >
-                                                <h2
-                                                    className="text-3xl md:leading-[1.3] md:text-4xl h-full font-medium redhat text-white mb-10 md:mb-14"
-                                                    dangerouslySetInnerHTML={{ __html: item.title }}
-                                                ></h2>
-                                                <p className="text-base font-medium redhat text-white">
-                                                    {item.description}
-                                                </p>
+                                                <div className='absolute top-0 left-0 w-full rounded-2xl h-full bg-black opacity-30'></div>
+                                                <div className='relative z-10 grid gap-4 md:gap-6 flex-col h-[300px] flex-wrap'>
+                                                    <h2
+                                                        className="text-2xl md:leading-[1.3] md:text-3xl h-full font-medium redhat text-white mb-10 md:mb-14"
+                                                        dangerouslySetInnerHTML={{ __html: item.title }}
+                                                    ></h2>
+                                                    <p className="text-base font-medium redhat text-white" dangerouslySetInnerHTML={{ __html: item.description }} />
+                                                </div>
                                             </div>
                                         </SwiperSlide>
                                     ))}
@@ -353,7 +353,7 @@ export const Impact = () => {
 
                     <p className='text-lg md:text-xl text-center text-[#F7C35F] mb-4'>{text}</p>
                     <div className='lg:w-2/4 mx-auto'>
-                    <h2 className="lg:leading-snug  text-white redhat  text-center text-3xl md:text-4xl mb-8 md:mb-12  font-normal  w-full" dangerouslySetInnerHTML={{__html: heading}} />
+                        <h2 className="lg:leading-snug  text-white redhat  text-center text-3xl md:text-4xl mb-8 md:mb-12  font-normal  w-full" dangerouslySetInnerHTML={{ __html: heading }} />
                     </div >
                     <div className='flex flex-wrap lg:flex-nowrap items-center gap-6 px-0 md:px-6    lg:px-2'>
                         <div className='w-full md:w-5/12'>
@@ -415,47 +415,47 @@ export const Contact = () => {
     return (
         <>
 
-        <section className="pt-14 pb-14 lg:pt-20 lg:pb-20 relative " style={{ background: `url(${contactbg.src}) center center / cover no-repeat` }}>
-        <div className="absolute inset-0 bg-black bg-opacity-35"></div>
-        <div className="relative max-w-7xl mx-auto px-6 md:px-12 text-white text-center">
-          <div className='flex flex-col lg:flex-row justify-between items-center gap-4 lg:gap-12'>
-            <div className='md:w-5/12  w-12/12'>
-              <div className="flex flex-col h-full">
-                <div className="">
-                  <h2 className="text-4xl md:leading-[1.3] md:text-5xl md:text-left font-bold redhat text-white">
-                    Let’s Grow <br/> Together
-</h2>
+            <section className="pt-14 pb-14 lg:pt-20 lg:pb-20 relative " style={{ background: `url(${contactbg.src}) center center / cover no-repeat` }}>
+                <div className="absolute inset-0 bg-black bg-opacity-35"></div>
+                <div className="relative max-w-7xl mx-auto px-6 md:px-12 text-white text-center">
+                    <div className='flex flex-col lg:flex-row justify-between items-center gap-4 lg:gap-12'>
+                        <div className='md:w-5/12  w-12/12'>
+                            <div className="flex flex-col h-full">
+                                <div className="">
+                                    <h2 className="text-4xl md:leading-[1.3] md:text-5xl md:text-left font-bold redhat text-white">
+                                        Let’s Grow <br /> Together
+                                    </h2>
+                                </div>
+                                <div className="md:mt-[50%] mt-14 h-full text-left">
+
+                                    <ul className="mb-6 text-md">
+                                        <li>Whether you’re a nature lover, corporate, policymaker, or <br />changemaker—there’s a way for you to be part of our vision.</li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='md:w-5/12  w-12/12'>
+
+                            <div className="bg-white text-black p-6 rounded-3xl shadow-lg w-full max-w-md">
+                                <h2 className="text-xl font-medium mb-4 text-center md:text-left">Book a Visit</h2>
+                                <form>
+                                    <div className='flex flex-wrap gap-4 mb-4'>
+                                        <input type="text" className='outline-none font-normal px-4 p-3 poppins rounded-md w-full bg-[#F6F6F8]' placeholder='Location: ' />
+                                        <input type="email" className='outline-none font-normal px-4 p-3 poppins rounded-md w-full bg-[#F6F6F8]' placeholder='Email:' />
+                                        <input type="text" className='outline-none font-normal px-4 p-3 poppins rounded-md w-full bg-[#F6F6F8]' placeholder='Phone Number' />
+                                    </div>
+
+                                    <button className='poppins mt-10  font-normal text-white w-full py-3 rounded-[10px] bg-[#1B453C]'>Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+
+
                 </div>
-                <div className="md:mt-[50%] mt-14 h-full text-left">
-
-                  <ul className="mb-6 text-md">
-                    <li>Whether you’re a nature lover, corporate, policymaker, or <br/>changemaker—there’s a way for you to be part of our vision.</li>
-
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className='md:w-5/12  w-12/12'>
-
-              <div className="bg-white text-black p-6 rounded-3xl shadow-lg w-full max-w-md">
-                <h2 className="text-xl font-medium mb-4 text-center md:text-left">Book a Visit</h2>
-                <form>
-                  <div className='flex flex-wrap gap-4 mb-4'>
-                    <input type="text" className='outline-none font-normal px-4 p-3 poppins rounded-md w-full bg-[#F6F6F8]' placeholder='Location: ' />
-                    <input type="email" className='outline-none font-normal px-4 p-3 poppins rounded-md w-full bg-[#F6F6F8]' placeholder='Email:' />
-                    <input type="text" className='outline-none font-normal px-4 p-3 poppins rounded-md w-full bg-[#F6F6F8]' placeholder='Phone Number' />
-                  </div>
-
-                  <button className='poppins mt-10  font-normal text-white w-full py-3 rounded-[10px] bg-[#1B453C]'>Submit</button>
-                </form>
-              </div>
-            </div>
-          </div>
-
-
-
-        </div>
-      </section>
+            </section>
         </>
     )
 }

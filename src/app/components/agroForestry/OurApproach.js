@@ -6,7 +6,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import Image from 'next/image';
-import icon1 from "../../../assets/images/business/eco-friendly.svg";
+import icon1 from "../../../assets/images/business/icons/eco-friendly.svg";
+import icon2 from "../../../assets/images/business/icons/community.svg";
+import icon3 from "../../../assets/images/business/icons/renewable.svg";
+
 
 import banner from "../../../assets/images/business/Banner-Agroforestry.webp";
 
@@ -20,34 +23,25 @@ export const OurApproach = () => {
   const boxslider = [
     {
       image: icon1,
-      heading:"Integrated  Systems",
-      description: 'We combine high-value timber crops like sandalwood and teak with intercrops like turmeric and ginger for diversified income streams.',
+      heading:"Eco-Friendly Agroforestry      ",
+      description: 'We use innovative practices to restore ecosystems, boost biodiversity, and support local economies.',
+    },
+    {
+      image: icon2,
+      heading:"Empowering Communities ",
+      description: 'We focus on sustainable development that enhances livelihoods and drives socioeconomic progress.',
+    },
+    {
+      image: icon3,
+      heading:"Innovative Tech Solutions      ",
+      description: 'By integrating advanced technology, we improve resource management and productivity for scalable agroforestry initiatives.',
     },
     {
       image: icon1,
-      heading:"Sustainability Practices ",
-      description: 'We combine high-value timber crops like sandalwood and teak with intercrops like turmeric and ginger for diversified income streams.',
+      heading:"Eco-Friendly Agroforestry      ",
+      description: 'We use innovative practices to restore ecosystems, boost biodiversity, and support local economies.',
     },
-    {
-      image: icon1,
-      heading:"Sustainability Practices ",
-      description: 'We combine high-value timber crops like sandalwood and teak with intercrops like turmeric and ginger for diversified income streams.',
-    },
-    {
-      image: icon1,
-      heading:"Integrated  Systems",
-      description: 'We combine high-value timber crops like sandalwood and teak with intercrops like turmeric and ginger for diversified income streams.',
-    },
-    {
-      image: icon1,
-      heading:"Sustainability Practices ",
-      description: 'We combine high-value timber crops like sandalwood and teak with intercrops like turmeric and ginger for diversified income streams.',
-    },
-    {
-      image: icon1,
-      heading:"Sustainability Practices ",
-      description: 'We combine high-value timber crops like sandalwood and teak with intercrops like turmeric and ginger for diversified income streams.',
-    },
+
   ]
   return (
     <>

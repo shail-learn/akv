@@ -64,7 +64,7 @@ export const Support = () => {
                                            <div className="relative bg-white border border-[#F7C35F]  rounded-full overflow-hidden shadow-lg">
                                                 <Image src={partner.image} alt={partner.title} className="w-full h-56  rounded-full object-cover" />
                                                 <div className="absolute inset-0 flex items-center justify-start">
-                                                    <div className="bg-white p-8 text-right flex flex-col items-center justify-center h-56 w-56 rounded-full">
+                                                    <div className="bg-white p-8 text-center flex flex-col items-center justify-center h-56 w-56 rounded-full">
                                                         <h3 className="text-xl text-[#1B453C]">{partner.title}</h3>
                                                         <p className="text-sm text-[#1B453C] mt-2">{partner.description}</p>
 
@@ -87,7 +87,7 @@ export const Support = () => {
                                             <div className="relative bg-white border border-[#F7C35F]  rounded-full overflow-hidden shadow-lg">
                                                 <Image src={partner.image} alt={partner.title} className="w-full h-56  rounded-full object-cover" />
                                                 <div className="absolute inset-0 flex items-center justify-end">
-                                                    <div className="bg-white p-8 text-right flex flex-col items-center justify-center h-56 w-56 rounded-full">
+                                                    <div className="bg-white p-8 text-center flex flex-col items-center justify-center h-56 w-56 rounded-full">
 
                                                         <h3 className="text-xl text-[#1B453C]">{partner.title}</h3>
                                                         <p className="text-sm text-[#1B453C] mt-2">{partner.description}</p>

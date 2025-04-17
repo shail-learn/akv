@@ -2,6 +2,17 @@
 import Image from 'next/image'
 import React from 'react'
 import icon1 from "../../../assets/images/business/eco-friendly.svg";
+import icon2 from "../../../assets/images/business/icons/icon02.svg";
+import icon3 from "../../../assets/images/business/icons/icon03.svg";
+import icon4 from "../../../assets/images/business/icons/icon4.svg";
+import icon5 from "../../../assets/images/business/icons/icon5.svg";
+import icon6 from "../../../assets/images/business/icons/icon6.svg";
+
+
+
+
+
+
 import { Autoplay, Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -24,10 +35,13 @@ export const Guide = () => {
   const myStyle = {
     background: "linear-gradient(180deg, rgba(245,245,245,1) 0%, rgba(255,255,255,1) 70%)"
   };
+
   return (
     <>
       <section
         className="py-14 lg:py-16 bg-[#4B8B8B] overflow-hidden " >
+
+
         <div className='mx-auto max-full max-w-7xl px-4 md:px-6 lg:px-4'>
           <div className='w-full text-center'>
             <div className='mx-auto w-full lg:w-7/12'>
@@ -60,7 +74,7 @@ export const Guide = () => {
 
 export const Mission = () => {
   const heading = " Our Mission: Growing Sustainability, Together"
-  const shortdescription = "Our mission is built on three core pillars:"
+  const shortdescription = "Our mission is built on six core pillars:"
   const text = [" Our goal is to create a legacy of environmental preservation without taking from future generations. Our vision is to foster ‘billionaires’ of natural wealth by ensuring sustainable prosperity and environmental protection."]
   const boxslider = [
     {
@@ -69,29 +83,29 @@ export const Mission = () => {
       description: 'Through Afforestation, Reforestation & Revegatation',
     },
     {
-      image: icon1,
+      image: icon2,
       heading: "Fight <span style='color:#5CA9A9'>Climate Change</span> ",
       description: 'Improving soil health, sequestering carbon, and promoting biodiversity.',
     },
     {
-      image: icon1,
+      image: icon3,
       heading: "Preserve the Soil for <span style='color:#5CA9A9'>Future Generations:</span> ",
       description: 'Protecting the soil from degradation, deterioration, and erosion.',
     },
     {
-      image: icon1,
-      heading: "Building <span style='color:#5CA9A9'>Ecosystems</span>",
-      description: 'Through Afforestation, Reforestation & Revegatation',
+      image: icon4,
+      heading: "Empowering  <span style='color:#5CA9A9'>Rural Communities  </span>",
+      description: 'Through education, training, and sustainable livelihood opportunities, we uplift farmers and foster self-reliance.      ',
     },
     {
-      image: icon1,
-      heading: "Fight <span style='color:#5CA9A9'>Climate Change</span> ",
-      description: 'Improving soil health, sequestering carbon, and promoting biodiversity.',
+      image: icon5,
+      heading: "Promoting  <span style='color:#5CA9A9'>Regenerative Agriculture      </span> ",
+      description: 'We champion farming practices that restore natural cycles, enrich the land, and reduce chemical dependency.      ',
     },
     {
-      image: icon1,
-      heading: "Preserve the Soil for <span style='color:#5CA9A9'>Future Generations:</span> ",
-      description: 'Protecting the soil from degradation, deterioration, and erosion.',
+      image: icon6,
+      heading: "Conserving  <span style='color:#5CA9A9'>Water Resources      </span> ",
+      description: 'We prioritize efficient water use, rainwater harvesting, and watershed development to ensure long-term water security.',
     },
   ]
   return (
@@ -149,7 +163,7 @@ export const Mission = () => {
 
                 {boxslider.map((item, index) => (
                   <SwiperSlide key={index}>
-                    <div className='w-full  flex text-white bg-[#1A3232] rounded-xl   py-8  px-10 lg:px-8 md:py-12 mb-5 h-80 item_slider'>
+                    <div className='w-full  flex text-white bg-[#1A3232] rounded-xl   py-8  px-10 lg:px-8 md:py-12 mb-5 h-96 item_slider'>
                       <div className='lg:w-12/12 mx-auto'>
                         <div className='mb-4'>
                           <Image src={item.image} alt='icon' className='w-10 lg:w-[35px] lg:h-[35px]' />

@@ -3,8 +3,8 @@ import React from 'react'
 import icon1 from "../../../assets/images/business/plant.svg";
 import icon2 from "../../../assets/images/business/co2.svg";
 import icon3 from "../../../assets/images/business/job-offer.svg";
-import client1 from "../../../assets/images/business/img02.png";
-import client2 from "../../../assets/images/business/img01.png";
+import client1 from "../../../assets/images/business/image.webp";
+import client2 from "../../../assets/images/business/image2.webp";
 
 import Image from 'next/image';
 import { Autoplay, Navigation } from 'swiper/modules';
