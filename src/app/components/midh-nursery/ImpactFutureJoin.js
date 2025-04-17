@@ -4,6 +4,8 @@ import Image from "next/image";
 import { SliderBlur } from '../SliderBlur';
 import bgstay from "../../../assets/images/midhNursery/impact.webp";
 import impact1 from "../../../assets/images/midhNursery/slider1.webp";
+import impact2 from "../../../assets/images/midhNursery/Training.webp";
+import impact3 from "../../../assets/images/midhNursery/Partnering.webp";
 import icon1 from "../../../assets/images/midhNursery/icon1.svg";
 import icon2 from "../../../assets/images/midhNursery/icon2.svg";
 import icon3 from "../../../assets/images/midhNursery/icon3.svg";
@@ -26,20 +28,16 @@ export const Impact = () => {
             description: 'Providing employment opportunities for over 10,000 individuals annually.',
         },
         {
-            image: impact1,
+            image: impact2,
             // heading: "Market Linkages",
-            description: 'Establishing supply chains for domestic and export markets.',
+            description: 'Training programs on sustainable farming, agro-processing, and handicrafts.',
         },
         {
-            image: impact1,
+            image: impact3,
             // heading: "Agro-Processing Industries",
-            description: 'Value addition through fodder pellet production and silage making.',
+            description: 'Partnering with government bodies and environmental organizations for large-scale impact.',
         },
-        {
-            image: impact1,
-            // heading: "Building <span style='color:#5CA9A9'>Ecosystems</span>",
-            description: 'Through Afforestation, Reforestation & Revegatation',
-        },
+
 
     ]
     return (

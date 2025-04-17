@@ -18,7 +18,7 @@ body {
   font-family: var(--secondary-font);
   cursor: none !important;
 }
-body a,body button, .swiper-button-next,.swiper-button-prev, .cursor-pointer{
+body a,body button, .swiper-button-next,.swiper-button-prev, .cursor-pointer,.swiper-pagination-bullet{
   cursor: none !important;
 }
 

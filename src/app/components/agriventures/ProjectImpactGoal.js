@@ -11,6 +11,10 @@ import 'swiper/css/free-mode';
 import 'swiper/css/scrollbar';
 
 import image1 from "../../../assets/images/about/image3.webp";
+import image02 from "../../../assets/images/about/water.webp";
+import image03 from "../../../assets/images/about/Herbal.webp";
+
+
 import image2 from "../../../assets/images/about/image4.webp";
 import image3 from "../../../assets/images/about/image5.webp";
 import banner from "../../../assets/images/about/tractor.webp";
@@ -37,26 +41,35 @@ export const Project = () => {
         },
         {
             subtitle: 'Our Projects',
-            heading: 'Agroforestry Initiatives',
-            info: "Agroforestry is at the heart of A&M Agriventures. We integrate trees into farmland, creating a harmonious balance between agriculture and forestry.",
+            heading: 'Water Conservation ',
+            info: "Water sustainability is central to our land regeneration efforts. Through integrated watershed management, we revive ecosystems and ensure year-round water availability.            ",
             description: `
-            <h3>Key Achievements:</h3><ul><li>Planted over 200,000 trees across 400 acres in Sehore District, Madhya Pradesh.
-            </li><li>Species include sandalwood, teak, bamboo, rosewood, and medicinal plants.</li><li>Created dedicated spaces like the Shri Tridev Triveni Vatika and Shri Dhanvantri Vatika for spiritual, medicinal, and ecological benefits.</li>
-            </ul><h3>Technologies Used:</h3><ul><li>GPS-based mapping, drones for monitoring, and AI robotics for precision agriculture.</li><li>Soil testing labs and real-time monitoring systems for efficient land management.</li>   </ul>
+            <h3>Key Achievements:</h3><ul><li>Developed check dams, contour trenches, and recharge pits across 250+ acres.
+
+            </li><li>Restored traditional water bodies like Shri Mansarovar and Pampasar Kamal Sarovar.
+
+            </li><li>Improved groundwater levels and soil moisture retention in surrounding villages.
+            </li>
+            </ul><h3>Technologies Used:</h3><ul><li>GIS-based watershed mapping and hydrological planning tools.
+            </li><li>IoT-enabled water level sensors and automated data collection systems.</li>   </ul>
             `,
-            image1: image1,
+            image1: image02,
             image2: image2,
         },
         {
             subtitle: 'Our Projects',
-            heading: 'Agroforestry Initiatives',
-            info: "Agroforestry is at the heart of A&M Agriventures. We integrate trees into farmland, creating a harmonious balance between agriculture and forestry.",
+            heading: 'Herbal & Medicinal Plantation Zones',
+            info: "We cultivate holistic wellness gardens rooted in Ayurveda, offering healing through nature. ",
             description: `
-            <h3>Key Achievements:</h3><ul><li>Planted over 200,000 trees across 400 acres in Sehore District, Madhya Pradesh.
-            </li><li>Species include sandalwood, teak, bamboo, rosewood, and medicinal plants.</li><li>Created dedicated spaces like the Shri Tridev Triveni Vatika and Shri Dhanvantri Vatika for spiritual, medicinal, and ecological benefits.</li>
-            </ul><h3>Technologies Used:</h3><ul><li>GPS-based mapping, drones for monitoring, and AI robotics for precision agriculture.</li><li>Soil testing labs and real-time monitoring systems for efficient land management.</li>   </ul>
+            <h3>Key Achievements:</h3><ul><li>Established 10+ herbal zones including Shri Dhanvantari Vatika and Aushadh Manav Garden.
+
+            </li><li>Cultivated 100+ species like tulsi, ashwagandha, giloy, brahmi, and neem.
+            </li><li>Used for community health, knowledge sharing, and Ayurvedic awareness.
+            </li>
+            </ul><h3>Technologies Used:</h3><ul><li>QR-coded plant identification and mobile-based plant care guides.
+            </li><li>Organic farming techniques with vermicomposting and zero-chemical inputs.</li>   </ul>
             `,
-            image1: image1,
+            image1: image03,
             image2: image2,
         },
     ]
@@ -85,7 +98,7 @@ export const Project = () => {
                                     <div className='flex md:flex-col flex-col lg:flex-row justify-between items-center gap-4 lg:gap-12 pb-14 lg:pb-32'>
                                         <div className='lg:w-6/12  w-full  w-12/12 relative'>
                                             <Image className='w-full h-full rounded-xl' src={item.image1} alt='banner' />
-                                            <Image className='absolute -bottom-[100px] left-0 rounded-full border-[8px] border-white' width={200} height={200} src={item.image2} alt='banner' />
+                                            {/* <Image className='absolute -bottom-[100px] left-0 rounded-full border-[8px] border-white' width={200} height={200} src={item.image2} alt='banner' /> */}
                                         </div>
 
                                         <div className='lg:w-6/12 mt-32 md:mt-4 w-full  w-12/12'>

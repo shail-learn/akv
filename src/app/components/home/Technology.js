@@ -25,10 +25,10 @@ export const Technology = () => {
                 className="pt-14 pb-6 lg:pt-14 lg:pb-14 technology-sec" >
                 <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2 '>
                     <div className='mx-auto justify-between flex flex-wrap lg:flex-nowrap gap-5 lg:gap-12'>
-                        <div className='w-full lg:w-4/12'>
+                        <div className='w-full lg:w-4/12 mb-4'>
                             <h2 className="lg:leading-snug text-black redhat mb-4 lg:mb-7 text-center lg:text-left text-3xl md:text-4xl  font-medium  w-full">
                                 Technology-Driven  <span className='text-[#4C9E8C]'>Agriculture</span></h2>
-                            <p className='text-center lg:text-left text-black text-lg lg:text-xl'>Features:</p>
+                            {/* <p className='text-center lg:text-left text-black text-lg lg:text-xl'>Features:</p> */}
                         </div>
                         <div className='w-full lg:w-6/12 text-justify'>
                             <p className=' text-[#1B453C] text-normal text-sm md:text-[15px] mb-8 lg:mb-10'>

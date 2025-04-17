@@ -7,6 +7,12 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import Image from 'next/image';
 import icon1 from "../../../assets/images/home/logo2.png";
+import icon2 from "../../../assets/images/home/logo/brigu.svg";
+import icon3 from "../../../assets/images/home/logo/sushma-sang..svg";
+import icon4 from "../../../assets/images/home/logo/aushadh-manav.svg";
+import icon5 from "../../../assets/images/home/logo/yagyashala.svg";
+import icon6 from "../../../assets/images/home/logo/panchvatika.svg";
+
 
 export const WorkingOn = () => {
   const text = [" Our goal is to create a legacy of environmental preservation without taking from future generations. Our vision is to foster ‘billionaires’ of natural wealth by ensuring sustainable prosperity and environmental protection."]
@@ -14,32 +20,32 @@ export const WorkingOn = () => {
 
   const boxslider = [
     {
-      image: icon1,
-      description: `<b>Shri Bhrigu Vana ,Navagraha, Rashi, Nakshatra Vatika :</b> These trees are of high medicinal, social, aesthetic, and economic value.`,
+      image: icon2,
+      description: `<b>Shri Bhrigu Vana ,Navagraha, Rashi, Nakshatra Vatika :</b> <br/> These trees are of high medicinal, social, aesthetic, and economic value.`,
     },
     {
-      image: icon1,
-      description: `<b>Sushma Sangrahalaya :</b> This is an endangered species garden preserving several tree species in a natural way.`,
+      image: icon3,
+      description: `<b>Sushma Sangrahalaya :</b><br/> This is an endangered species garden preserving several tree species in a natural way.`,
     },
     {
-      image: icon1,
-      description: `<b>Aushadh Manav :</b> A human body organ garden, that has herbs used for the treatment of various diseases of different body organs.`,
+      image: icon4,
+      description: `<b>Aushadh Manav :</b><br/> A human body organ garden, that has herbs used for the treatment of various diseases of different body organs.`,
     },
     {
-      image: icon1,
+      image: icon5,
 
-      description: `<b>Shringi Yagyashala :</b> Yagyashala is a unique place for gathering around five plants. Yagyashala is located around these plants and can accommodate 30 persons.`,
+      description: `<b>Shringi Yagyashala :</b><br/> Yagyashala is a unique place for gathering around five plants. Yagyashala is located around these plants and can accommodate 30 persons.`,
     },
     {
-      image: icon1,
-      description: `<b>Shri Tulsidas Ji Panchvati Vatika :</b> A combination of 5 trees Pipal, Bargad, Bael, Aonla, Ashok. Brahma is at the root, Vishnu is in the bark and Sankara is in the branches.`,
+      image: icon6,
+      description: `<b>Shri Tulsidas Ji Panchvati Vatika :</b><br/> A combination of 5 trees Pipal, Bargad, Bael, Aonla, Ashok. Brahma is at the root, Vishnu is in the bark and Sankara is in the branches.`,
     },
 
   ]
   return (
     <>
       <section
-        className=" bg-[#ECF7F3]   pt-14 pb-14 lg:pt-28 lg:pb-24 working-sec" >
+        className=" bg-[#ECF7F3]   pt-12 pb-12 lg:pt-16 lg:pb-18 working-sec" >
         <div className='mx-auto max-w-7xl px-4 md:px-8 lg:px-2 '>
           <div className='flex flex-wrap lg:flex-nowrap items-center gap-6 px-0 md:px-6 lg:px-2'>
             <div className='w-full lg:w-3/12 '>
@@ -87,10 +93,12 @@ export const WorkingOn = () => {
 
                 {boxslider.map((item, index) => (
                   <SwiperSlide key={index}>
-                    <div className='w-full h-48 lg:h-48 item-center flex text-center items-center rounded-3xl px-8 lg:px-4 md:pt-5 mb-5 border-black border-[1px] item_slider relative'>
+                    <div className='w-full h-56 lg:h-56 item-center flex text-center items-center rounded-3xl px-8 lg:px-4 md:pt-5 mb-5 border-black border-[1px] item_slider relative'>
                       <div className='lg:w-12/12 mx-auto'>
                         <div className='absolute left-1/2 -translate-x-1/2 -top-8'>
-                          <Image src={item.image} alt='icon' className='w-16 lg:w-[70px] lg:h-[70px] mx-auto' />
+                          <div className='rounded-full bg-white p-3 shadow-md'>
+                          <Image src={item.image} alt='icon' className='w-16 lg:w-[40px] lg:h-[40px] mx-auto object-contain  ' />
+                          </div>
                         </div>
                         <p
                           className='text-sm lg:text-[16] text-black text-justify font-normal b-600'
