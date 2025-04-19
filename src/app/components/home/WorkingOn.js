@@ -93,11 +93,11 @@ export const WorkingOn = () => {
 
                 {boxslider.map((item, index) => (
                   <SwiperSlide key={index}>
-                    <div className='w-full h-56 lg:h-56 item-center flex text-center items-center rounded-3xl px-8 lg:px-4 md:pt-5 mb-5 border-black border-[1px] item_slider relative'>
+                    <div className='w-full h-64 lg:h-60 item-center flex text-center items-center rounded-3xl px-8 lg:px-4 md:pt-5 mb-5 border-black border-[1px] item_slider relative'>
                       <div className='lg:w-12/12 mx-auto'>
                         <div className='absolute left-1/2 -translate-x-1/2 -top-8'>
                           <div className='rounded-full bg-white p-3 shadow-md'>
-                          <Image src={item.image} alt='icon' className='w-16 lg:w-[40px] lg:h-[40px] mx-auto object-contain  ' />
+                          <Image src={item.image} alt='icon' className='w-12 lg:w-[40px] lg:h-[40px] mx-auto object-contain  ' />
                           </div>
                         </div>
                         <p
