@@ -27,7 +27,7 @@ export const Ourteam = () => {
     {
       id: 2,
       img: Team2,
-      name: "Sh Atul Aggarwal",
+      name: "Mr. Atul Aggarwal",
       designation: "Co-Founder & Chairman",
     },
     {
