@@ -60,6 +60,7 @@ function page() {
                 opacity={text.opacity}
             />
 
+
             <section className="py-12 lg:py-16">
                 <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-2">
                     {gallerySections.map((section, secIdx) => (
