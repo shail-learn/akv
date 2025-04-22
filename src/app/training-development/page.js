@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import { Certification, Faq, GreenRevolution, Register } from '../components/training-development/CertificationFaqRegister'
 import { SuccessStories } from '../components/training-development/SuccessStories'

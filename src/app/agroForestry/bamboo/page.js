@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 
 import { Cultivation, Harvesting, Market } from '@/app/components/bamboo/CultivationHarvestingMarket'

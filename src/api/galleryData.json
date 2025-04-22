@@ -130,6 +130,48 @@
     ]
   },
   {
+    "title": "Employee Engagement Activities",
+    "images": [
+
+      {
+        "id": 2,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/Activity1.webp",
+        "alt": "Office 2"
+      },
+      {
+        "id": 3,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/Activity2.webp",
+        "alt": "Office 3"
+      },
+      {
+        "id": 4,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/Activity3.webp",
+        "alt": "Office 4"
+      },
+      {
+        "id": 5,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/Activity4.webp",
+        "alt": "Office 5"
+      },
+      {
+        "id": 6,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/Activity5.webp",
+        "alt": "Office 6"
+      },
+      {
+        "id": 7,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/Activity6.webp",
+        "alt": "Office 7"
+      },
+      {
+        "id": 8,
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/Activity7.webp",
+        "alt": "Office 8"
+      }
+
+    ]
+  },
+  {
     "title": "CSR Books Distribution",
     "images": [
 
@@ -313,7 +355,7 @@
       },
       {
         "id": 10,
-        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/30.webp",
+        "src": "https://cruxcreativedemo2.com/web-image/gallary/csr/030.jpg",
         "alt": "Office 10"
       },
       {

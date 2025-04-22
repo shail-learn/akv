@@ -9,37 +9,49 @@ import Image from 'next/image';
 import icon1 from "../../../assets/images/business/icons/eco-friendly.svg";
 import icon2 from "../../../assets/images/business/icons/community.svg";
 import icon3 from "../../../assets/images/business/icons/renewable.svg";
-
+import icon4 from "../../../assets/images/business/icons/icon4.svg";
+import icon5 from "../../../assets/images/business/icons/icon5.svg";
+import icon6 from "../../../assets/images/business/icons/icon6.svg";
 
 import banner from "../../../assets/images/business/Banner-Agroforestry.webp";
 
 
 export const OurApproach = () => {
   const heading=" Our Approach to Agroforestry"
-  const shortdescription= "Our mission is built on three core pillars:"
+  const shortdescription= "Our mission is built on six core pillars:"
   const text = [" Our goal is to create a legacy of environmental preservation without taking from future generations. Our vision is to foster ‘billionaires’ of natural wealth by ensuring sustainable prosperity and environmental protection."]
 
 
   const boxslider = [
     {
       image: icon1,
-      heading:"Eco-Friendly Agroforestry      ",
-      description: 'We use innovative practices to restore ecosystems, boost biodiversity, and support local economies.',
+      heading: "Building  Ecosystem",
+      description: 'Through Afforestation, Reforestation & Revegatation',
     },
     {
       image: icon2,
-      heading:"Empowering Communities ",
-      description: 'We focus on sustainable development that enhances livelihoods and drives socioeconomic progress.',
+      heading: "Fight  Climate Change",
+      description: 'Improving soil health, sequestering carbon, and promoting biodiversity.',
     },
     {
       image: icon3,
-      heading:"Innovative Tech Solutions      ",
-      description: 'By integrating advanced technology, we improve resource management and productivity for scalable agroforestry initiatives.',
+      heading: "Preserve the Soil for  Future Generations:",
+      description: 'Protecting the soil from degradation, deterioration, and erosion.',
     },
     {
-      image: icon1,
-      heading:"Eco-Friendly Agroforestry      ",
-      description: 'We use innovative practices to restore ecosystems, boost biodiversity, and support local economies.',
+      image: icon4,
+      heading: "Empowering   Rural Communities ",
+      description: 'Through education, training, and sustainable livelihood opportunities, we uplift farmers and foster self-reliance.      ',
+    },
+    {
+      image: icon5,
+      heading: "Promoting   Regenerative Agriculture      ",
+      description: 'We champion farming practices that restore natural cycles, enrich the land, and reduce chemical dependency.      ',
+    },
+    {
+      image: icon6,
+      heading: "Conserving   Water Resources      ",
+      description: 'We prioritize efficient water use, rainwater harvesting, and watershed development to ensure long-term water security.',
     },
 
   ]

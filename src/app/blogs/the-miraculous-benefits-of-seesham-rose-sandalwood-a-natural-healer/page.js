@@ -1,3 +1,4 @@
+"use client"
 import BannerPage from '@/app/components/BannerPage'
 import banner from "../../../assets/images/blog/BLOG.webp";
 

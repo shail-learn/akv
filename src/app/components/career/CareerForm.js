@@ -12,7 +12,7 @@ export const CareerForm = () => {
     return (
         <>
 
-            <div className='bg-[#FAFAFA] py-10'>
+            <div className='bg-[#FAFAFA] py-10' id='career_form'>
                 <h2 className='text-3xl text-center md:leading-[1.3] md:text-4xl font-semibold redhat text-[#1B453C] md:mb-6'>Application Form </h2>
                 <p className='text-black text-center border-b border-gray-500 pb-6 mb-6 md:pb-10'>Please fill out the form below for job application
                 <br/>

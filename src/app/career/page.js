@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import { Banner, Card, Form } from '../components/career/BannerCardForm'
 
@@ -7,7 +8,7 @@ const page = () => {
     <>
     <Banner/>
     <Card/>
-    <Form/>
+    <Form />
 
 
     </>

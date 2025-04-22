@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "title": "Agronomist - Plant Health & Nutrition",
+      "positions": "2-3",
+      "experience": "5+ Years",
+      "location": "Sehore, Madhya Pradesh",
+      "eligibility": "B.Sc./M.Sc. in Agronomy or a related field",
+      "summary": "B.Sc./M.Sc. in Agronomy or a related field 2. Minimum 5 years of experience- in plant health management, soil nutrition, and crop management",
+      "responsibilities": [
+        "Develop and implement plant health and nutrition programs for optimal crop growth.",
+        "Conduct soil and plant analysis to identify and address nutrient deficiencies.",
+        "Optimize growth conditions through data-driven adjustments.",
+        "Collaborate with the team to enhance yield & quality.",
+        "Provide expert recommendations on fertilizers, pest control, and organic farming practices."
+
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Plant Irrigation Specialist",
+      "positions": "03",
+      "experience": "5+ Years",
+      "location": "Sehore, Madhya Pradesh",
+      "eligibility": "B.Sc./M.Sc. in Agricultural Engineering* or a related field",
+      "summary": "Minimum 5 years of experience- in irrigation system design, water management, and precision irrigation techniques",
+      "responsibilities": [
+        "Design and manage efficient irrigation systems for large-scale plantations",
+        "Monitor soil moisture levels and optimize water usage",
+        "Implement modern irrigation technologies such as drip and sprinkler systems",
+        "Collaborate with agronomists to ensure optimal plant hydration Regularly inspect and maintain irrigation systems to ensure they are functioning correctly.",
+        "Troubleshoot and repair any issues such as leaks, broken parts, or clogged emitters.",
+        "Test system pressure and efficiency to ensure consistent water distribution."
+
+      ]
+    }
+
+  ]
