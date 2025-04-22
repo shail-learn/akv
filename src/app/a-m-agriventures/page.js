@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import { AmBanner, AmWelcome, Whoam } from '../components/agriventures/bannerWelcome'
 import { FeatureGoal, Impact, Project } from '../components/agriventures/ProjectImpactGoal'

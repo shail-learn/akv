@@ -1,9 +1,14 @@
+"use client"
 import React from 'react'
 import banner from "../../assets/images/blog/pr-banner.webp";
 import BannerPage from '../components/BannerPage';
 import img1 from "../../assets/images/blog/news1.webp";
 import img2 from "../../assets/images/blog/news2.webp";
 import img3 from "../../assets/images/blog/news3.webp";
+import img4 from "../../assets/images/blog/news4.webp";
+import img5 from "../../assets/images/blog/news5.webp";
+import img6 from "../../assets/images/blog/news6.webp";
+
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -29,10 +34,21 @@ function page() {
         },
         {
           title: "UNDERSTANDING THE COSTS OF BUYING THE HOUSE",
-
           image: img3,
           link: "https://www.thehealthsite.com/fitness/diet/can-choosing-organic-transform-your-health-journey-the-truth-revealed-1142094/",
         },
+        {
+          title: "Atulye Krishi Vana: Pioneering Sustainable Agribusiness in India",
+          image: img4,
+          link: "https://businessnewsthisweek.com/business/atulye-krishi-vana-pioneering-sustainable-agribusiness-in-india/",
+        },
+        {
+          title: "Agroforestry इकोनॉमी का कमाल, बंजर जमीन से ऐसे खड़ा किया 1000 करोड़ का कारोबार",
+          image: img5,
+          link: "https://www.tv9hindi.com/business/how-agroforestry-industry-and-atulye-krishi-vana-help-to-boost-local-economy-2889030.html",
+        },
+
+
       ];
       const shadow = "0px 4px 4px 0px #00000052";
   return (

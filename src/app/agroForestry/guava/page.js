@@ -1,3 +1,4 @@
+"use client"
 import { Banner, Climate, Guava } from '@/app/components/guava/BannerGuavaClimate'
 import { Irrigation, Micronutrient, Nutrient } from '@/app/components/guava/IrrigationNutrientMicronutrient'
 import { PlantingMaterial, PlantingSeason, PlantingTechniques } from '@/app/components/guava/Planting'

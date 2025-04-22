@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import { Banner, Welcome, Why } from '../components/agro-tourism/BannerWelcomeWhy'
 import { BlurSlider, Slider } from '../components/agro-tourism/SliderBlurSlider'

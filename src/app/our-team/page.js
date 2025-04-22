@@ -32,13 +32,13 @@ function page() {
 
   const founders = [
     {
-      "name": "Late and Emeritus MK Aggarwal",
+      "name": "Late and Emeritus Shree M.K. Aggarwal",
       "title": "Founder",
       "linkedin": "",
       "quote": "\"A Legacy of Vision, Innovation, and Sustainable Growth\"",
       "image": member1,
       "description": [
-        "Late Shri <strong>M.K. Aggarwal</strong> was a visionary leader and financial expert who laid the foundation for sustainable agroforestry. His foresight and commitment to environmental and economic prosperity have created a lasting impact.",
+        "Late Shree <strong>M.K. Aggarwal</strong> was a visionary leader and financial expert who laid the foundation for sustainable agroforestry. His foresight and commitment to environmental and economic prosperity have created a lasting impact.",
         "With a deep understanding of <strong>finance, agriculture, and business</strong>, he played a crucial role in shaping <strong>Atulye Krishi Vana’s</strong> mission. His work emphasized <strong>eco-friendly and community-driven forestry models</strong>, promoting innovation in sustainable agriculture.",
         "<strong class='text-base md:text-xl'>His Contributions:</strong>",
         "Established <strong>Atulye Krishi Vana</strong>, integrating agroforestry with sustainability. Advocated for <strong>green forestry practices and rural empowerment</strong>. Inspired <strong>research and innovation in sustainable agriculture</strong>.",
@@ -87,6 +87,8 @@ function page() {
       "name": "Dr. S.K. Pande",
       "title": "Director, School of Agriculture Science",
       "quote": "\"A Legacy of Research, Innovation, and Agricultural Excellence\"",
+      "linkedin": "https://www.linkedin.com/in/dr-subodh-kumar-pande-604930295/",
+
       "image": member4,
       "description": [
         "Dr. S.K. Pande is a distinguished academician, researcher, and leader in agricultural sciences. With decades of experience in teaching, research, and administration, he has dedicated his career to advancing sustainable farming practices, plant pathology, and innovative agricultural technologies.",
@@ -120,7 +122,7 @@ function page() {
               <div
                 key={index}
                 className={`flex flex-col pt-32 md:flex-row ${!isEven ? 'md:flex-row-reverse ' : ''
-                  } items-center gap-8 md:gap-16 px-4 md:px-16`}
+                  }   gap-8 md:gap-16 px-4 md:px-16`}
               >
 
                 <div className="relative w-full md:w-1/2 md:mb-0 mb-12 ">
@@ -158,7 +160,7 @@ function page() {
                   {founder.description.map((htmlLine, i) => (
                     <p
                       key={i}
-                      className="text-sm redhat text-[#000000BF]"
+                      className="text-base font-medium redhat text-gray-800"
                       dangerouslySetInnerHTML={{ __html: htmlLine }}
                     />
                   ))}

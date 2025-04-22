@@ -1,6 +1,7 @@
 "use client";
 import { Button } from '@headlessui/react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { useRouter } from "next/navigation";
 import React from 'react'
@@ -11,17 +12,21 @@ export const TeamCard = ({ data }) => {
     return (
         <>
             <div className="text-center">
-            <div className="bg-[#A8A8A8] rounded-[20px] overflow-hidden">
-                  <Image
-                    src={image}
-                    alt={name}
-                    className="w-full h-full mx-auto"
-                    width={200}
-                    height={200}
-                  />
+                <div className="bg-[#A8A8A8] rounded-[20px] overflow-hidden">
+                    <Link href="/our-team" >
+                        <Image
+                            src={image}
+                            alt={name}
+                            className="w-full h-full mx-auto"
+                            width={200}
+                            height={200}
+                        />
+                    </Link>
                 </div>
-                <h5 className="text-lg mb-0 mt-2 font-normal" dangerouslySetInnerHTML={{__html:name}}/>
-                <h6 className="text-sm font-semibold">{designation}</h6>
+                <Link href="/our-team" >
+                    <h5 className="text-lg mb-0 mt-2 font-normal" dangerouslySetInnerHTML={{ __html: name }} />
+                    <h6 className="text-sm font-semibold">{designation}</h6>
+                </Link>
                 {/* <Image
                     src={image}
                     alt={name}

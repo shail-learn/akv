@@ -1,5 +1,7 @@
 import React from 'react'
 import logo from "../../../assets/images/logo-akv.webp";
+import bgimg from "../../../assets/images/home/contact-bg.webp";
+
 import Image from 'next/image';
 
 export const Contact = () => {
@@ -9,8 +11,11 @@ export const Contact = () => {
             <h2 className='text-black redhat text-center mb-0 font-semibold leading-relaxed text-3xl md:text-4xl  md:mb-8'>Get in Touch</h2>
             <div className='  gap-10  grid  grid-cols-1  lg:grid-cols-12 items-center justify-center'>
                 <div className='col-span-1'></div>
-                <div className='w-full  p-6 py-16 md:h-full border-[1px] poppins text-xl text-justify border-[#A1A1A1] md:p-6 rounded-3xl lg:p-10 col-span-5  h-full grid items-center justify-center '>
-                    <h3>"{text}</h3>
+                <div className='w-full relative p-6 py-16 md:h-full border-[1px] poppins text-xl text-justify border-[#A1A1A1] md:p-6 rounded-3xl lg:p-10 col-span-5  h-full grid items-center justify-center '
+                    style={{ backgroundImage: `url(${bgimg.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+                >
+                    <div className='absolute top-0 left-0 rounded-3xl  w-full bg-black/30 h-full'></div>
+                    <h3 className='relative z-10 text-white '>"{text}</h3>
                 </div>
                 <div className='w-full col-span-5 p-6  rounded-3xl h-full grid   '
                     style={{ boxShadow: '8px 8px 8px 0px #0000001A' }}
