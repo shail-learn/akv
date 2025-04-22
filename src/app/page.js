@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import {Banner,VedioHome} from "./components/home/Banner";
 import WhatWeDo from "./components/home/WhatWeDo";

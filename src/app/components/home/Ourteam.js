@@ -8,6 +8,7 @@ import Team5 from "../../../assets/images/home/team5.png";
 import Team6 from "../../../assets/images/home/team6.png";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export const Ourteam = () => {
 
@@ -21,7 +22,7 @@ export const Ourteam = () => {
     {
       id: 1,
       img: Team1,
-      name: "Late and Emeritus <br/> MK Aggarwal",
+      name: "Late and Emeritus <br/> Shree MK Aggarwal",
       designation: "Founder",
     },
     {
@@ -66,17 +67,23 @@ export const Ourteam = () => {
           </h4>
           <div className=" flex flex-wrap  justify-center gap-4 lg:gap-8">
             {ourTeamData.slice(0, visibleCount).map((item) => (
+
               <div key={item.id} className="text-center w-[47%] lg:w-[20%]">
                 <div className="bg-[#A8A8A8] rounded-[20px] overflow-hidden">
+                <Link href="/our-team" >
                   <Image
                     src={item.img}
                     alt={item.name}
                     className="w-full h-full mx-auto"
                   />
+                  </Link>
                 </div>
+                <Link href="/our-team" >
                 <h5 className="text-lg mb-4 mt-4 font-normal" dangerouslySetInnerHTML={{__html: item.name}}/>
                 <h6 className="text-sm font-semibold">{item.designation}</h6>
+                </Link>
               </div>
+
             ))}
           </div>
           {visibleCount < ourTeamData.length && (

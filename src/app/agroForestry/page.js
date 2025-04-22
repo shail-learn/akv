@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import { Banner } from '../components/agroForestry/Banner'
 import { About } from '../components/agroForestry/About'

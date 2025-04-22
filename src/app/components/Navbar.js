@@ -31,7 +31,7 @@ const navigation = [
     submenu: [
       { name: "Agroforestry", href: "/agroForestry" },
       { name: "Agro-Tourism", href: "/agro-tourism" },
-      { name: "Contract Farming MP Agroforestry", href: "/contract-farming-mp-agroforestry" },
+      { name: "Contract Farming", href: "/contract-farming" },
       // { name: "Contract Farming Fodder", href: "/contract-farming-fodder" },
       { name: "Training & Development", href: "/training-development" },
       { name: "MIDH Nursery", href: "/midh-nursery" },

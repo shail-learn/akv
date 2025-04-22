@@ -22,6 +22,9 @@ body a,body button, .swiper-button-next,.swiper-button-prev, .cursor-pointer,.sw
   cursor: none !important;
 }
 
+
+
+
 .poppins {
   font-family: var(--primary-font);
 }
