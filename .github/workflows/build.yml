@@ -1,0 +1,37 @@
+name: Build and Create Zip for Next.js
+
+#testing caching
+on:
+  push:
+    branches:
+      - main  # Trigger on push to main branch
+
+jobs:
+  build_and_zip:
+    runs-on: ubuntu-latest  # Use GitHub's Ubuntu runner
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2  # Checkout repo
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20.10.0'  # Specify Node.js version
+
+      - name: Install dependencies
+        run: npm install  # Install the required packages
+
+      - name: Build Next.js project
+        run: npm run build  # Run the Next.js build command
+
+      - name: Create zip of build
+        run: |
+          mkdir -p build
+          zip -r build/next-build.zip .next  # Zipping the .next folder (or change to whole build)
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v2  # Upload the zip file as an artifact
+        with:
+          name: next-build
+          path: build/next-build.zip
