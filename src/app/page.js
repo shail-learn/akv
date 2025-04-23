@@ -14,7 +14,7 @@ import { EmpoweringBanner,EmpoweringBox } from "./components/home/Empowering";
 import { PartOfChange } from "./components/home/PartOfChange";
 import { Contact, Map } from "./components/home/Contact";
 
-
+// test comment
 
 export default function Home() {
   return (
