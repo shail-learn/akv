@@ -42,7 +42,7 @@ jobs:
           zip -r build/next-build.zip .next  # Zipping the .next folder (or change to whole build)
 
       - name: Upload build artifact
-        uses: actions/upload-artifact@v2  # Upload the zip file as an artifact
+        uses: actions/upload-artifact@v3  # Upload the zip file as an artifact
         with:
           name: next-build
           path: build/next-build.zip
