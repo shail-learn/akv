@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 name: Build and Create Zip for Next.js
 
 #testing caching
+=======
+Build and Create Zip for Next.js
+
+>>>>>>> 288a27419d7c6c0fdb2777bb2f77ef8198dfa67b
 on:
   push:
     branches:
@@ -17,7 +22,11 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
+<<<<<<< HEAD
           node-version: '20.10.0'  # Specify Node.js version
+=======
+          node-version: '16'  # Specify Node.js version
+>>>>>>> 288a27419d7c6c0fdb2777bb2f77ef8198dfa67b
 
       - name: Install dependencies
         run: npm install  # Install the required packages
