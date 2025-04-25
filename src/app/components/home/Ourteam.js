@@ -22,26 +22,26 @@ export const Ourteam = () => {
     {
       id: 1,
       img: Team1,
-      name: "Late and Emeritus <br/> Shree MK Aggarwal",
+      name: "Late and Emeritus <br/> Shri MK Aggarwal",
       designation: "Founder",
     },
     {
       id: 2,
       img: Team2,
-      name: "Mr. Atul Aggarwal",
+      name: "Shri Atul Aggarwal",
       designation: "Co-Founder & Chairman",
     },
     {
       id: 3,
       img: Team3,
       name: "Dr. SK Pande",
-      designation: "Associate Director Training & Development",
+      designation: "Director, School of Agriculture Science-ex",
     },
     {
       id: 4,
       img: Team4,
-      name: "Mr. Sanjay Mittal",
-      designation: "Head of Engineering & Technical Solutions",
+      name: "Shri Sanjay Mittal",
+      designation: "Technology Consultant",
     },
     // {
     //   id: 5,
