@@ -11,7 +11,7 @@ import icon from "../../../assets/images/logo-icon.svg";
 import Image from 'next/image';
 import Link from 'next/link';
 export const Banner = () => {
-    const vedio = "https://cruxcreativedemo2.com/web-image/Akv-banner-video.mp4"
+    const vedio = "https://cruxcreativedemo2.com/web-image/akv-home.mp4"
     const text = {
         heading: 'Forests of Tomorrow, Prosperity  for Generations',
         title: 'Join us in building a greener, more sustainable world through agroforestry and innovation.'
@@ -83,7 +83,7 @@ export const Banner2 = () => {
 
 
 export const VedioHome = () => {
-    const vedio = "https://cruxcreativedemo2.com/web-image/Website-Banner-AKv.mp4"
+    const vedio = "https://cruxcreativedemo2.com/web-image/akvwebsite-banner.mp4"
 
     const videoRef = useRef(null);
     const pathname = usePathname();

@@ -30,18 +30,18 @@ export const Animal = () => {
     const heading = "Animal Sanctuaries"
     const mission = [
         {
-            title: "Shri. Malook Gaushala",
+            title: "Shri Malook Gaushala",
             description: `Sheltered pastures for native cattle <br/>  A sanctuary promoting ethical cattle care and rural livelihoods.`,
             link: "#"
         },
         {
-            title: "Shri. Bhairav Sadan (Dog Shelter)",
+            title: "Shri Bhairav Sadan (Dog Shelter)",
             description: `Compassionate haven for canines <br/> A clean, safe space dedicated to stray and abandoned dogs.`,
             link: "#"
 
         },
         {
-            title: "Shri. Pabuji Ushtralaya (Camel Shade)",
+            title: "Shri Pabuji Ushtralaya (Camel Shade)",
             description: `Sandstone shelter honoring Rajasthan’s heritage animal A resting abode for camels, reflecting desert culture and care.`,
             link: "#"
 
@@ -95,7 +95,7 @@ export const Slidertwo = () => {
 
         {
             image: imageleft,
-            title: 'Shri. Aushadh Manav (Human Body Garden)  ',
+            title: 'Shri Aushadh Manav (Human Body Garden)  ',
             description: 'Herb layout shaped like a human anatomy <br/>  Each organ-shaped patch features a corresponding medicinal plant.   '
         },
         {
@@ -110,12 +110,12 @@ export const Slidertwo = () => {
         },
         {
             image: image04,
-            title: `Shri. Narayan Falodyan (Fruit Garden) `,
+            title: `Shri Narayan Falodyan (Fruit Garden) `,
             description: 'Mixed orchard featuring tropical fruits <br/> Encouraging nutrition, self-reliance, and biodiversity preservation.  '
         },
         {
             image: image05,
-            title: `Shri. Swayambhu Vatika `,
+            title: `Shri Swayambhu Vatika `,
             description: 'Self-sustaining native plant ecosystem <br/> A naturally balanced grove highlighting regenerative design.'
         },
 
@@ -125,12 +125,12 @@ export const Slidertwo = () => {
 
         {
             image: image06,
-            title: 'Shri. Rasayanshala (Vermicompost Unit)  ',
+            title: 'Shri Rasayanshala (Vermicompost Unit)  ',
             description: 'Compost beds and soil lab <br/> A hub for organic waste conversion and farmer education.'
         },
         {
             image: image07,
-            title: `Shri. Mukund Mausam Vedhshala (AgroMet Station) `,
+            title: `Shri Mukund Mausam Vedhshala (AgroMet Station) `,
             description: 'Climate monitoring tower with sensors <br/> Facilitates precision farming with real-time agro-weather insights.  '
         },
         {

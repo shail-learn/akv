@@ -57,7 +57,7 @@ export const Explore = () => {
     const boxslider = [
         {
             image: impact1,
-            heading: "Shri. Tulsidasji Panchavati Vatika",
+            heading: "Shri Tulsidasji Panchavati Vatika",
             description: `Lush woodland inspired by Panchavati's sacred heritage <br/>  A spiritual grove echoing the Ramayan, fostering reverence and biodiversity.`
             ,
             link: "#"
@@ -131,12 +131,12 @@ export const Waterscapes = () => {
     const boxslider = [
         {
             image: image1,
-            description: 'Shri. Mansarovar',
+            description: 'Shri Mansarovar',
             link : "#"
         },
         {
             image: image2,
-            description: 'Shri. Ram Setu',
+            description: 'Shri Ram Setu',
             link : "#"
 
         },
@@ -148,7 +148,7 @@ export const Waterscapes = () => {
         },
         {
             image: image1,
-            description: 'Shri. Mansarovar',
+            description: 'Shri Mansarovar',
             link : "#"
         },
 

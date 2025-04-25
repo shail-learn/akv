@@ -89,7 +89,7 @@ export const Support = () => {
 
     const heading2 = `Support Our Cause:`;
     const info2 = "Contribute to a greener tomorrow through donations, partnerships, and shared resources."
-    const pageUrl = "/contact-us";
+    const pageUrl = "https://atulye-foundation.org";
     return (
         <>
             <section
@@ -103,14 +103,14 @@ export const Support = () => {
                             <div className='w-full lg:w-4/6'>
                             <h2 className="text-3xl text-center lg:text-start md:leading-[1.3] md:text-4xl font-normal redhat text-[#1B453C] mb-6" dangerouslySetInnerHTML={{ __html: heading1 }}></h2>
                             <p className="text-black mb-10 lg:mb-16" dangerouslySetInnerHTML={{ __html: info1 }}></p>
-                            <Link href={pageUrl} className='rounded border border-black py-2 px-10 w-4/5 inline-block text-center text-base hover:bg-white transition-all  duration-500 ' >Connect with us</Link>
+                            <Link href={pageUrl} target='_blank' className='rounded border border-black py-2 px-10 w-4/5 inline-block text-center text-base hover:bg-white transition-all  duration-500 ' >Connect with us</Link>
                         </div>
                         </div>
                         <div className='lg:w-6/12 bg-cover bg-center p-8 lg:p-10 py-16 lg:py-24 w-full' style={{ backgroundImage: `url(${banner2.src})` }}>
                         <div className='w-full lg:w-4/6 text-white'>
                             <h2 className="text-3xl text-center lg:text-start md:leading-[1.3] md:text-4xl font-normal redhat mb-6" dangerouslySetInnerHTML={{ __html: heading2 }}></h2>
                             <p className=" mb-10 lg:mb-16" dangerouslySetInnerHTML={{ __html: info2 }}></p>
-                            <Link href={pageUrl} className='rounded border border-white py-2 px-10 w-4/5 inline-block text-center text-base hover:bg-[#1b453c] transition-all  duration-500 ' >Connect with us</Link>
+                            <Link href={pageUrl} target='_blank' className='rounded border border-white py-2 px-10 w-4/5 inline-block text-center text-base hover:bg-[#1b453c] transition-all  duration-500 ' >Connect with us</Link>
                         </div>
                         </div>
                         </div>
