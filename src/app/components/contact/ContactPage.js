@@ -116,14 +116,20 @@ const ContactPage = () => {
 
                 <div className="mt-4 md:mt-8">
                   <h5 className="font-semibold text-lg mb-2">Website</h5>
-                  <a href={`https://${right.website}`} className="text-[#3771C8] text-sm underline">
+                  <Link href={`https://${right.website}`} className="text-[#3771C8] text-sm underline">
                     {right.website}
-                  </a>
+                  </Link>
                 </div>
 
                 <div className="mt-4 md:mt-8">
                   <h5 className="font-semibold text-lg mb-2">Email Us</h5>
                   <p className="text-sm">{right.email}</p>
+                </div>
+                 <div className="mt-4 md:mt-8">
+                  <h5 className="font-semibold text-lg mb-2">Be a Part of Change</h5>
+                  <Link href="https://atulye-foundation.org" target='_blank' className="text-[#3771C8] text-sm underline">
+                    Atulye Foundation
+                  </Link>
                 </div>
               </div>
             </div>

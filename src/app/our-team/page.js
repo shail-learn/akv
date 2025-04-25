@@ -32,13 +32,13 @@ function page() {
 
   const founders = [
     {
-      "name": "Late and Emeritus Shree M.K. Aggarwal",
+      "name": "Late and Emeritus Shri M.K. Aggarwal",
       "title": "Founder",
       "linkedin": "",
       "quote": "\"A Legacy of Vision, Innovation, and Sustainable Growth\"",
       "image": member1,
       "description": [
-        "Late Shree <strong>M.K. Aggarwal</strong> was a visionary leader and financial expert who laid the foundation for sustainable agroforestry. His foresight and commitment to environmental and economic prosperity have created a lasting impact.",
+        "Late Shri <strong>M.K. Aggarwal</strong> was a visionary leader and financial expert who laid the foundation for sustainable agroforestry. His foresight and commitment to environmental and economic prosperity have created a lasting impact.",
         "With a deep understanding of <strong>finance, agriculture, and business</strong>, he played a crucial role in shaping <strong>Atulye Krishi Vana’s</strong> mission. His work emphasized <strong>eco-friendly and community-driven forestry models</strong>, promoting innovation in sustainable agriculture.",
         "<strong class='text-base md:text-xl'>His Contributions:</strong>",
         "Established <strong>Atulye Krishi Vana</strong>, integrating agroforestry with sustainability. Advocated for <strong>green forestry practices and rural empowerment</strong>. Inspired <strong>research and innovation in sustainable agriculture</strong>.",
@@ -46,13 +46,13 @@ function page() {
       ]
     },
     {
-      "name": "Mr. Atul Aggarwal",
-      "title": "Founder & MD, Atulye Krishi Vana | Agroforestry Visionary      ",
+      "name": "Shri Atul Aggarwal",
+      "title": "Founder & MD, Atulye Krishi Vana",
       "quote": "\"Leading Agroforestry into a Sustainable Future\"",
       "linkedin": "https://www.linkedin.com/in/atul-aggarwal-a1851646/",
       "image": member2,
       "description": [
-        "Mr. Atul Aggarwal, an enthusiastic changemaker since childhood, is the founder of Atulye Krishi Vana (AKV)—a pioneering agroforestry initiative focused on transforming barren land into thriving, sustainable ecosystems. Deeply inspired by his father, the late Shri M.K. Aggarwal, Atul combines financial expertise with a deep-rooted commitment to ecological and social impact.",
+        "Shri Atul Aggarwal, an enthusiastic changemaker since childhood, is the founder of Atulye Krishi Vana (AKV)—a pioneering agroforestry initiative focused on transforming barren land into thriving, sustainable ecosystems. Deeply inspired by his father, the late Shri M.K. Aggarwal, Atul combines financial expertise with a deep-rooted commitment to ecological and social impact.",
         'With a belief that modern life demands more than just Roti, Kapda, Makaan, he champions what he calls the "Redefined Necessities": ',
 
         "<b>Health:</b> Physical & mental well-being through nature.",
@@ -63,16 +63,35 @@ function page() {
         "Planted over 2 lakh trees",
         "Empowered rural communities, especially women and youth ",
         "Integrated cutting-edge tech like AI, drones, and solar power",
+        "<b>Agroforestry Visionary</b>",
         "His vision is to develop the world’s most sustainable private forestry system and position agroforestry as a global solution to climate change, food security, and economic resilience."
       ]
     },
     {
-      "name": "Mr. Sanjay Mittal",
-      "title": "Head of Engineering & Technical Solutions",
+      "name": "Dr. S.K. Pande",
+      "title": "Director, School of Agriculture Science-ex",
+      "quote": "\"A Legacy of Research, Innovation, and Agricultural Excellence\"",
+      "linkedin": "https://www.linkedin.com/in/dr-subodh-kumar-pande-604930295/",
+
+      "image": member4,
+      "description": [
+        "Dr. S.K. Pande is a distinguished academician, researcher, and leader in agricultural sciences. Having decades of experience in teaching, research, and administration, he has dedicated his career in innovative agriculture technologies, advancing sustainable farming practices and plant pathology.",
+        "His expertise spans <strong>integrated pest and disease management, mycotoxin research, hydroponics, medicinal plants, and bio-fertilizers,</strong> significantly contributing to the development of eco-friendly and technology-driven agricultural solutions.",
+        "<strong class='text-base md:text-xl'>His Contributions:</strong>",
+        "Driving research in <strong>sustainable modern agriculture, food grain storage, and plant disease management etc.</strong>",
+        "Mentoring future leaders, having <strong>guided Ph.D. and M.Sc. scholars</strong> in pioneering research.",
+        "Leading multiple <strong>government-funded projects</strong> on mushrooms, medicinal plants, and crop protection.",
+        "Published  <strong>60+ research papers, authoring books, and holding patents </strong> in plant science / agriculture science.",
+        "Served as <strong>Director, School of Agriculture Science at LNCT University, Bhopal,</strong> Dr. Pande continues to <strong>shape the future of agriculture through education, research, and innovation,</strong> ensuring a greener and more resilient tomorrow."
+      ]
+    },
+    {
+      "name": "Shri Sanjay Mittal",
+      "title": "Technology Consultant",
       "quote": "\"Innovating Agroforestry with Technology & Sustainability\"",
       "image": member3,
       "description": [
-        "<strong>Mr. Sanjay Mittal</strong> is an <strong>innovative and performance-driven executive</strong> with <strong>28+ years of expertise</strong> in <strong>business development, project management, and AI-based technical solutions.</strong>",
+        "<strong>Shri Sanjay Mittal</strong> is an <strong>innovative and performance-driven executive</strong> with <strong>28+ years of expertise</strong> in <strong>business development, project management, and AI-based technical solutions.</strong>",
         "His work includes the <strong>design and deployment of IoT-driven automation solutions</strong> for <strong>large infrastructure projects, metro rail, airports, and industrial facilities.</strong> As a <strong>leader in engineering and facility management,</strong> he ensures <strong>Atulye Krishi Vana remains at the forefront of sustainable technology integration.</strong>",
 
         "<b  class='text-base md:text-xl'>His Key Contributions:</b>",
@@ -82,25 +101,8 @@ function page() {
         "Develops <strong>strategic collaborations with government and corporate partners.</strong>",
         "With a <strong>strong technical background and business acumen,</strong> he is committed to <strong>enhancing efficiency and sustainability</strong> through <strong>cutting-edge technology.</strong>",
       ]
-    },
-    {
-      "name": "Dr. S.K. Pande",
-      "title": "Director, School of Agriculture Science",
-      "quote": "\"A Legacy of Research, Innovation, and Agricultural Excellence\"",
-      "linkedin": "https://www.linkedin.com/in/dr-subodh-kumar-pande-604930295/",
-
-      "image": member4,
-      "description": [
-        "Dr. S.K. Pande is a distinguished academician, researcher, and leader in agricultural sciences. With decades of experience in teaching, research, and administration, he has dedicated his career to advancing sustainable farming practices, plant pathology, and innovative agricultural technologies.",
-        "His expertise spans <strong>integrated pest and disease management, mycotoxin research, hydroponics, medicinal plants, and bio-fertilizers,</strong> significantly contributing to the development of eco-friendly and technology-driven agricultural solutions.",
-        "<strong class='text-base md:text-xl'>His Contributions:</strong>",
-        "Driving research in <strong>sustainable agriculture, food grain storage, and plant disease management</strong>",
-        "Mentoring future leaders, having <strong>guided Ph.D. and M.Sc. scholars</strong> in pioneering research",
-        "Leading multiple <strong>government-funded projects</strong> on mushrooms, medicinal plants, and crop protection",
-        "Publishing  <strong>60+ research papers, authoring books, and holding patents </strong> in plant science",
-        "Currently serving as <strong>Director, School of Agriculture Science at LNCT University, Bhopal,</strong> Dr. Pande continues to <strong>shape the future of agriculture through education, research, and innovation,</strong> ensuring a greener and more resilient tomorrow."
-      ]
     }
+
   ]
 
 
@@ -134,10 +136,11 @@ function page() {
                       height={600}
                       className="rounded-[16px] w-full object-cover bg-[#A8A8A8]"
                     />
+                     <div className={`absolute w-20  h-20 bg-[#D2AE6D] -top-8 ${isEven ? '-left-8' : '-left-8'} -z-10 rounded-lg`}></div>
+                  <div className={`absolute w-20 h-20 bg-[#6D8C54] -bottom-10 ${isEven ? '-right-0 md:-right-8' : 'md:-right-8 right-0'} -z-10 rounded-lg`}></div>
                   </div>
 
-                  <div className={`absolute w-20 h-20 bg-[#D2AE6D] -top-8 ${isEven ? '-left-8' : '-left-8'} z-0 rounded-lg`}></div>
-                  <div className={`absolute w-48 h-48 md:w-64 md:h-64 bg-[#6D8C54] -bottom-10 ${isEven ? 'md:right-0 -right-6' : 'right-0'} z-0 rounded-lg`}></div>
+
 
                 </div>
 

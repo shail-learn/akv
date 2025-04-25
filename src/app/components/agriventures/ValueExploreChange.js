@@ -171,7 +171,7 @@ export const Change = () => {
                     <div className='mx-auto max-full flex flex-wrap md:flex-nowrap gap-0 md:gap-12 '>
                         <div className='w-full md:w-6/12 text-center md:text-left'>
                             <h2 className="lg:leading-snug text-[#344C31] redhat text-center mb-6 md:text-left text-3xl md:text-4xl  font-medium  w-full"> {heading}</h2>
-                            <Link href="/contact-us" className="poppins mx-auto text-center  font-normal text-white w-[200px] py-3 rounded-[4px] bg-[#344C31] inline-block transition-all duration-500  hover:bg-white hover:text-[#344C31]">JOIN US</Link>
+                            <Link href="https://atulye-foundation.org" target='_blank' className="poppins mx-auto text-center  font-normal text-white w-[200px] py-3 rounded-[4px] bg-[#344C31] inline-block transition-all duration-500  hover:bg-white hover:text-[#344C31]">JOIN US</Link>
                             <p className='mt-6 text-black text-justify opacity-80'>{description}</p>
 
                         </div>
