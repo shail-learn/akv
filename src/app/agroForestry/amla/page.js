@@ -3,6 +3,8 @@ import { Cultivation, Harvesting, Market, Sustainable, Uses } from '@/app/compon
 import { Faqs, Invest, Looking } from '@/app/components/amla/InvestLookingFaqs'
 import React from 'react'
 
+
+
 function page() {
   return (
     <>
