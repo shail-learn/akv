@@ -9,11 +9,16 @@ import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 import objectbg from "../../../assets/images/eco/WhyChoose.webp";
 
 import img1 from "../../../assets/images/eco/img1.png";
-import img2 from "../../../assets/images/eco/img2.png";
+import img2 from "../../../assets/images/mango/img2.png";
 import img3 from "../../../assets/images/eco/img3.png";
 import img4 from "../../../assets/images/eco/img4.png";
-import img5 from "../../../assets/images/eco/img5.png";
-import slider1 from "../../../assets/images/fruit/environmental.webp";
+import img5 from "../../../assets/images/mango/img5.png";
+import img6 from "../../../assets/images/mango/img6.png";
+
+import slider1 from "../../../assets/images/mango/climate.webp";
+import slider2 from "../../../assets/images/mango/soil.webp";
+import slider3 from "../../../assets/images/mango/Biodiversity.webp";
+
 import economicbg from "../../../assets/images/fruit/economicbg.webp";
 
 
@@ -58,7 +63,7 @@ export const Points = () => {
             id: "06",
             title: "Harvest and Yield of Mango",
             description: "A well-maintained orchard rewards growers with substantial yields",
-            image: img5,
+            image: img6,
         },
     ];
     return (
@@ -120,38 +125,38 @@ export const Approach = () => {
     const sliderData = [
         {
             image: slider1,
-            title: 'Sustainable Practices',
+            title: 'Climate Requirements ',
             points: [
-                'Use of organic fertilizers and bio-pesticides',
-                'Integration with other crops for better land use',
-                'Water conservation through modern irrigation systems',
+                'Grows well upto 1000m above sea level.',
+                'Requires moderate temp. with proper irrigation.',
+                'Tolerates drought but performs best under well managed irrigation.',
+            ],
+        },
+        {
+            image: slider2,
+            title: 'Soil Health',
+            points: [
+                'Focus on building soil organic matter',
+                'Encourage beneficial microorganisms',
+                'Practice minimal tillage',
+            ],
+        },
+        {
+            image: slider3,
+            title: 'Biodiversity',
+            points: [
+                'Plant multiple varieties of mangoes',
+                'Integrate other fruit trees and crops',
+                'Create habitats for beneficial insects and birds',
             ],
         },
         {
             image: slider1,
-            title: 'Eco-Friendly Solutions',
+            title: 'Climate Requirements ',
             points: [
-                'Utilizing renewable energy in farming',
-                'Adopting no-till practices to reduce soil erosion',
-                'Implementing drip irrigation systems for water efficiency',
-            ],
-        },
-        {
-            image: slider1,
-            title: 'Green Farming Techniques',
-            points: [
-                'Crop rotation for enhanced soil fertility',
-                'Composting organic waste for better soil quality',
-                'Minimizing chemical usage for cleaner ecosystems',
-            ],
-        },
-        {
-            image: slider1,
-            title: 'Sustainable Practices',
-            points: [
-                'Use of organic fertilizers and bio-pesticides',
-                'Integration with other crops for better land use',
-                'Water conservation through modern irrigation systems',
+                'Grows well upto 1000m above sea level.',
+                'Requires moderate temp. with proper irrigation.',
+                'Tolerates drought but performs best under well managed irrigation.',
             ],
         },
     ];
@@ -161,7 +166,7 @@ export const Approach = () => {
             <section
                 className="py-14 lg:py-16 pt-12 lg:pb-24 bg-[#F4F4F4] expant_slider ">
                 <div className='mx-auto max-full max-w-7xl px-4 md:px-6 lg:px-2 relative'>
-                    <h2 className="lg:leading-snug text-[#1B453C] font-semibold redhat text-center md:text-left text-3xl md:text-4xl w-full mb-8">
+                    <h2 className="lg:leading-snug text-[#1B453C] font-semibold redhat text-center text-3xl md:text-4xl w-full mb-8">
                         {heading}
                     </h2>
                     <Swiper
@@ -205,18 +210,18 @@ export const Approach = () => {
                             <SwiperSlide
                                 key={index}
                             >
-                                <div className="bg-[#6D8C54] text-white w-full">
+                                <div className="  text-black w-full bg-[#FFFFFF26] rounded-2xl overflow-hidden border border-[#B0B0B080]">
                                     <div className='relative'>
-                                        <div className='absolute top-0 left-0 w-full h-full opacity-80' style={{ background: gradient }}></div>
+                                        {/* <div className='absolute top-0 left-0 w-full h-full opacity-80' style={{ background: gradient }}></div> */}
                                         <Image
                                             src={item.image}
                                             alt={item.title}
                                             className="w-full  object-cover"
                                         />
-                                        <h3 className="font-bold absolute bottom-6 w-[90%] mx-auto left-2/4 -translate-x-2/4 text-white opacity-70">{item.title}:</h3>
-                                    </div>
-                                    <div className='p-4 h-32'>
 
+                                    </div>
+                                    <div className='p-4 h-44'>
+                                    <h3 className="font-medium mb-4  text-black ">{item.title}:</h3>
                                         <ul className="text-xs list-disc font-light px-6">
                                             {item.points.map((point, i) => (
                                                 <li className='mb-2' key={i}>{point}</li>
@@ -246,9 +251,9 @@ export const Economic = () => {
             <section className='pt-24 pb-24 lg:pt-64 lg:pb-64' style={{ background: `url(${economicbg.src})center center / cover no-repeat` }}>
                 <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2'>
                     <div className='flex md:flex-col flex-col lg:flex-row justify-between items-center gap-8 md:gap-10'>
-                        <div className='md:w-5/12 bg-[#D9D9D9] bg-opacity-85 p-8  w-full  w-12/12'>
+                        <div className='md:w-5/12 bg-[#D9D9D9] rounded-2xl bg-opacity-85 p-8  w-full  w-12/12'>
 
-                            <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-semibold text-center md:text-left redhat text-[#1B453C] mb-6'>{heading}</h2>
+                            <h2 className='text-2xl md:leading-[1.3] md:text-3xl font-semibold text-center md:text-left redhat text-[#1B453C] mb-6'>{heading}</h2>
                             <p className='text-[#1B453C] text-normal font-normal text-[15px] lg:text-base mb-8 lg:mb-10 text-justify'>{description}</p>
                             <div className='text-center md:text-left'>
                             <Link href="#" className='bg-transparent border border-[#1B453C] text-[#1B453C] shadow-lg py-2 px-8 inline-block text-center text-base hover:bg-[#1B453C] hover:text-white transition-all duration-500 '>Read more</Link>

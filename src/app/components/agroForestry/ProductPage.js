@@ -46,12 +46,12 @@ export const ProductPage = () => {
         },
         {
             img: img8,
-            link:"/"
+            link:"/agroForestry/papaya"
 
         },
         {
             img: img9,
-            link:"/"
+            link:"/agroForestry/amla"
 
         },
         {
@@ -131,7 +131,7 @@ export const ProductPage = () => {
                                 alt="product"
                                 className="w-full h-auto rounded-tl-3xl rounded-tr-3xl"
                             />
-                            <Link href="#" className="bg-[#719A8E] text-center md:text-left text-2xl text-white px-6 block w-full lg:px-8 p-4 lg:p-5">
+                            <Link href="agroForestry/fruits-and-vegetables" className="bg-[#719A8E] text-center md:text-left text-2xl text-white px-6 block w-full lg:px-8 p-4 lg:p-5">
                                 {category2}
                             </Link>
 
