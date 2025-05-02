@@ -163,6 +163,8 @@ export const Faqs = () => {
 
                                     >
 
+
+
                                         <span className={`font-medium w-[90%]
                       ${openIndex === index ? 'text-lg md:text-lg' : 'text-lg'}`}>
                                             {faq.question}
