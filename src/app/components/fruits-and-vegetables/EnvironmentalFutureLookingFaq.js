@@ -47,7 +47,7 @@ export const Future = () => {
                             </p>
                         </div>
                         <div className='lg:w-5/12  w-full w-12/12'>
-                            <Image src={futureimg} className='w-full h-auto' alt='image' />
+                            <Image src={futureimg} className='w-full h-auto rounded-2xl' alt='image' />
                         </div>
                     </div>
 
@@ -74,16 +74,16 @@ export const Looking = () => {
                     <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-semibold text-center redhat text-white mb-12 md:mb-16'>{heading}</h2>
                     <div className='flex flex-col md:flex-row items-center gap-0'>
 
-                        <div className='w-full md:w-1/2 bg-[#D9D9D9] p-8 md:py-20 shadow-md'>
+                        <div className='w-full md:w-1/2 bg-[#D9D9D9] p-8 md:py-20 rounded-2xl shadow-md'>
                             <p className='text-[#1B453C] text-[15px] text-justify md:text-base leading-7 my-4' dangerouslySetInnerHTML={{ __html: description }}>
                             </p>
 
                         </div>
 
 
-                        <div className='w-full md:w-1/2 border border-[#D9D9D9] md:border-l-0 p-6 py-16 text-white'>
+                        <div className='w-full md:w-1/2 border border-[#D9D9D9] rounded-tr-2xl rounded-br-2xl md:border-l-0 p-6 py-16 text-white'>
                             <div className='md:w-[80%] w-[90%] mx-auto text-center'>
-                                <h3 className='text-xl md:text-2xl font-medium redhat mb-4'>FOR MORE <br /> INFORMATION</h3>
+                                <h3 className='text-xl md:text-2xl font-semibold redhat mb-4'>FOR MORE <br /> INFORMATION</h3>
                                 <p className='text-sm mb-6'>
                                     About our mango cultivation programs or to explore partnership opportunities
                                 </p>
@@ -168,14 +168,14 @@ export const Faq = () => {
 
                                     <button
                                         onClick={() => toggleFAQ(index)}
-                                        className={`w-full text-left flex items-center justify-between p-4
+                                        className={`w-full text-left flex items-center rounded-2xl justify-between p-4
                       transition-all duration-300
-                      ${openIndex === index ? 'bg-[#345951] text-[#fff] text-2xl' : 'bg-[#D9D9D9] text-[#000]'}`}
+                      ${openIndex === index ? 'bg-[#345951] text-[#fff] rounded-bl-[0px] rounded-br-[0px] ' : 'bg-[#D9D9D9] text-[#000]'}`}
 
                                     >
 
                                         <span className={`font-medium w-[90%]
-                      ${openIndex === index ? 'text-xl md:text-2xl' : 'text-lg'}`}>
+                      ${openIndex === index ? 'text-lg' : 'text-lg'}`}>
                                             {faq.question}
                                         </span>
                                         {openIndex === index ? (
@@ -187,7 +187,7 @@ export const Faq = () => {
 
 
                                     <div
-                                        className={`overflow-hidden bg-[#345951] px-4 text-white transition-[max-height] duration-300 ease-in-out
+                                        className={`overflow-hidden bg-[#345951] rounded-bl-2xl rounded-br-2xl px-4 text-white transition-[max-height] duration-300 ease-in-out
                                 ${openIndex === index ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}
                                     >
                                         <p className=' pt-0  mb-6 py-4 text-[15px] md:text-base font-light text-[#00] text-opacity-75'>

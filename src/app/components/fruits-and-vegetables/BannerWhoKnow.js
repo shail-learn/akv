@@ -6,6 +6,13 @@ import whoimg from "../../../assets/images/fruit/who.webp";
 import mangos from "../../../assets/images/fruit/mango.webp";
 import image3 from "../../../assets/images/fruit/mango-still.webp";
 
+import Banganapalli from "../../../assets/images/fruit/banganapalli.webp";
+import Mulgo from "../../../assets/images/fruit/mulgo.webp";
+import PKM from "../../../assets/images/fruit/pkm.webp";
+import Totapuri from "../../../assets/images/fruit/totapuri.webp";
+import Rumani from "../../../assets/images/fruit/Rrumani.webp";
+
+
 
 import Link from 'next/link';
 
@@ -41,7 +48,7 @@ export const Who = () => {
       <section className='relative text-center md:text-left pt-10 pb-12 lg:pt-12 lg:pb-12 bg-[#F4F4F4]'>
         <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2 relative z-1 '>
           <div className='flex flex-col lg:flex-row justify-between items-center gap-4 lg:gap-12'>
-            <div className='lg:w-6/12  w-full w-12/12'>
+            <div className='lg:w-7/12  w-full w-12/12'>
 
               <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-medium redhat text-[#488540] mt-4  mb-6'>{heading}</h2>
               <p className='text-[#7b7b7b] text-justify text-base md:text-[17px] redhat mt-6 mb-10 md:my-12' dangerouslySetInnerHTML={{ __html: description }}>
@@ -50,7 +57,7 @@ export const Who = () => {
 
 
             </div>
-            <div className='lg:w-6/12  w-full w-12/12'>
+            <div className='lg:w-5/12 text-center  w-full w-12/12'>
               <Image className='w-full h-full rounded-xl' src={whoimg} alt='banner' />
             </div>
 
@@ -68,25 +75,27 @@ export const Know = () => {
   const description = `India's rich mango diversity offers something for every taste and purpose. The Alphonso stands as royalty among mangoes, cherished for its rich flavor and golden hue. Its flesh carries a distinct aroma and sweetness that makes it perfect for both fresh consumption and processing.`
   const mangoes = [
     {
-      icon: mangos,
+      icon: Banganapalli,
       title: "Banganapalli",
     },
     {
-      icon: mangos,
+      icon: Mulgo,
       title: "Mulgo",
     },
     {
-      icon: mangos,
-      title: "PKM series",
+      icon: Rumani,
+      title: "Rumani",
     },
+
     {
-      icon: mangos,
+      icon: Totapuri,
       title: "Totapuri",
     },
     {
-      icon: mangos,
-      title: "Rumani",
+      icon: PKM,
+      title: "PKM series",
     },
+
   ];
   return (
     <>
@@ -103,7 +112,7 @@ export const Know = () => {
             <div className='py-6 mb-12 text-center md:text-left'>
               <Link href="#" className='bg-transparent border border-[#1B453C] text-[#1B453C] shadow-lg py-2 px-8 inline-block text-center text-base hover:bg-[#1B453C] hover:text-white transition-all duration-500 '>Know more</Link>
             </div>
-            <div className="flex flex-wrap justify-center px-4 md:mt-24 lg:px-0">
+            <div className="flex flex-wrap   px-4 md:mt-24 lg:px-0">
               {mangoes.map((item, index) => (
                 <div
                   key={index}
