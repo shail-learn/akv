@@ -168,7 +168,6 @@ export const Join = () => {
                         </p>
                     </div>
 
-                    {/* Image */}
                     <div className="w-full md:w-1/2 flex justify-center">
                         <div className="overflow-hidden  w-[250px] h-[350px] relative ml-auto">
                             <Image
