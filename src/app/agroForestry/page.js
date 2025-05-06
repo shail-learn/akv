@@ -9,6 +9,7 @@ import { ProductPage } from '../components/agroForestry/ProductPage'
 import { OrnamentalPlants, CategoryCard } from '../components/agroForestry/OrnamentalPlants'
 import { SliderCard, SliderVarieties } from '../components/agroForestry/SliderCard'
 import { PartnerUs } from '../components/agroForestry/PartnerUs'
+import { RealVoice } from '../components/business/RealVoice'
 
 function page() {
   return (
@@ -20,7 +21,8 @@ function page() {
      <OurApproach/>
      <Plantbanner/>
      <Story/>
-     <Testimonial/>
+     <RealVoice/>
+     {/* <Testimonial/> */}
      <ProductPage/>
      <OrnamentalPlants/>
      <CategoryCard/>
