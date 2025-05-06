@@ -6,13 +6,16 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import Image from "next/image";
 import slider1 from "../../../assets/images/guava/man-hands.webp";
+import slider2 from "../../../assets/images/guava/man-hands1.webp";
+import slider3 from "../../../assets/images/guava/man-hands2.webp";
+
 import ImageCard from '../ImageCard';
 import Pest1 from "../../../assets/images/guava/Pest1.webp";
 import Pest2 from "../../../assets/images/guava/Pest2.webp";
 import Pest3 from "../../../assets/images/guava/Pest3.webp";
 import Pest4 from "../../../assets/images/guava/Pest4.webp";
 import tree from "../../../assets/images/guava/tree.svg";
-import business from "../../../assets/images/guava/business.webp";
+import business from "../../../assets/images/guava/business-new.webp";
 import { FaqSlider } from '../FaqSlider';
 
 
@@ -23,7 +26,7 @@ export const Pruning = () => {
     const data = [
         {
             id: 1,
-            img: slider1,
+            img: slider2,
             text: "Prune past season’s terminal growth to 10-15cm during Sept- Oct and Feb- March"
         },
         {
@@ -33,19 +36,19 @@ export const Pruning = () => {
         },
         {
             id: 3,
-            img: slider1,
+            img: slider3,
             text: "Rejuvenation of old trees by cutting back to 75 cm from ground level improves productivity."
         },
         {
             id: 4,
-            img: slider1,
-            text: "Bend erect branches by tying them to pegs for better growth."
+            img: slider2,
+            text: "Prune past season’s terminal growth to 10-15cm during Sept- Oct and Feb- March"
         },
         {
             id: 5,
             img: slider1,
-            text: "Rejuvenation of old trees by cutting back to 75 cm from ground level improves productivity."
-        }
+            text: "Bend erect branches by tying them to pegs for better growth."
+        },
     ];
 
     return (
@@ -140,10 +143,10 @@ export const Why = () => {
             <div className="px-4 md:px-6 bg-[#D9D9D999]">
                 <h2 className="lg:leading-snug text-[#1B453C] redhat p-6 text-center text-3xl md:text-4xl font-medium w-full" > {heading}</h2>
             </div>
-            <section className='py-14 lg:py-52 relative' style={{ background: `url(${business.src}) center center/ cover no-repeat` }}>
-                <div className='absolute top-0 left-0 w-full h-full opacity-65 bg-black'></div>
+            <section className='py-14 lg:py-40 relative' style={{ background: `url(${business.src}) center center/ cover no-repeat` }}>
+                <div className='absolute top-0 left-0 w-full h-full opacity-50 bg-black'></div>
                 <div className="mx-auto max-w-7xl px-4 md:px-6">
-                    <p className='relative text-white text-xl md:text-3xl font-normal leading-8 md:leading-10 redhat z-10'>{text}</p>
+                    <p className='relative text-white text-center text-xl md:text-3xl font-normal leading-8 md:leading-10 redhat z-10'>{text}</p>
                 </div>
             </section>
             <div className="px-4 md:px-6 bg-[#D9D9D999]">
