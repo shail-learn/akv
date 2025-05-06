@@ -1,8 +1,14 @@
 "use client"
 import React from 'react'
 
-import client1 from "../../../assets/images/business1/image.webp";
-import client2 from "../../../assets/images/business1/image2.webp";
+import client1 from "../../../assets/images/business1/rajesh-patel.webp";
+import client2 from "../../../assets/images/business1/meena-kumari.webp";
+import client3 from "../../../assets/images/business1/Ramprashad-yadav.webp";
+import client4 from "../../../assets/images/business1/Kamla-bai.webp";
+import client5 from "../../../assets/images/business1/Kusum.webp";
+
+
+
 import banner from "../../../assets/images/business1/join-us.webp";
 import Image from 'next/image';
 import { Autoplay, Navigation } from 'swiper/modules';
@@ -24,33 +30,31 @@ export const RealVoice = () => {
             image: client1,
             quote: `<span style="color:#1B453C;font-weight:800;">Atulye Krishi Vanna</span> helped transform our barren land into a thriving farm. Their agroforestry solutions are
 life-changing!" `,
-            position: "Rajesh Patel, Farmer, Gujarat"
+            position: "Rajesh Patel, Farmer, Bhopal"
 
         },
         {
             image: client2,
             quote: `Thanks to their training programs, I’ve adopted sustainable farming practices and doubled my yields.`,
-            position: "Meena Kumari, Farmer, Rajasthan"
+            position: "Meena Kumari, Farmer, Bhopal"
 
         },
         {
-            image: client1,
-            quote: `<span style="color:#1B453C;font-weight:800;">Atulye Krishi Vanna</span> helped transform our barren land into a thriving farm. Their agroforestry solutions are
-            life-changing!" `,
-            position: "Rajesh Patel, Farmer, Gujarat"
+            image: client3,
+            quote: `<span style="color:#1B453C;font-weight:800;">Farming on Atulye’s</span>  land feels like working on our own soil. It brings peace to the heart." `,
+            position: "Bhola Prasad, Bhopal"
 
         },
         {
-            image: client2,
-            quote: `Thanks to their training programs, I’ve adopted sustainable farming practices and doubled my yields.`,
-            position: "Meena Kumari, Farmer, Rajasthan"
+            image: client4,
+            quote: `Here, we don’t just work—we grow, learn, and stand on our own feet.`,
+            position: "Kamla Bai, Bhopal"
 
         },
         {
-            image: client1,
-            quote: ` <span style="color:#1B453C;font-weight:800;">Atulye Krishi Vanna</span> helped transform our barren land into a thriving farm. Their agroforestry solutions are
-            life-changing!"`,
-            position: "Rajesh Patel, Farmer, Gujarat"
+            image: client5,
+            quote: ` Farming at AKV gave me purpose. I now earn with pride.`,
+            position: "Kusum Bai, Bhopal"
 
         },
     ]

@@ -74,9 +74,9 @@ export const CareerForm = () => {
                     <div className='mb-2 md:mb-4'>
                             <label className="block mb-1">Applied For</label>
                             <select className="w-full border border-[#A8A8A8] bg-transparent  px-3 py-2 rounded">
-                                <option>Product Designer</option>
-                                <option>Frontend Developer</option>
-                                <option>Backend Developer</option>
+                                <option>Agronomist - Plant Health & Nutrition</option>
+                                <option>Plant Irrigation Specialist</option>
+
                             </select>
                         </div>
                         <div className='mb-2 md:mb-4'>
