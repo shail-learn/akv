@@ -61,7 +61,7 @@ export const CategoryCard = () => {
         {
             title: "Bamboo",
             image: img4,
-            link: "/agroforestry/bamboo",
+            link: "/agroForestry/bamboo",
         },
         {
             title: "Neem",
