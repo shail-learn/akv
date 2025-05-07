@@ -7,10 +7,15 @@ import fruit3 from "../../../assets/images/fruits-vegetables/fruit3.png";
 import fruit4 from "../../../assets/images/fruits-vegetables/fruit4.png";
 import Image from 'next/image';
 import fruit5 from "../../../assets/images/fruits-vegetables/fruit5.webp";
+import fruit6 from "../../../assets/images/fruits-vegetables/fruit6.webp";
+import fruit7 from "../../../assets/images/fruits-vegetables/fruit7.webp";
+import fruit8 from "../../../assets/images/fruits-vegetables/fruit8.webp";
+import fruit9 from "../../../assets/images/fruits-vegetables/fruit9.webp";
 import Plant from "../../../assets/images/eco/future.webp";
 import grow from "../../../assets/images/fruits-vegetables/grow.png";
 
 import { MdCheckCircle } from "react-icons/md";
+import Link from 'next/link';
 
 
 
@@ -20,22 +25,52 @@ export const Find = () => {
         {
             title: "Citrus & Juicy Fruits",
             image: fruit1,
+            link : "#"
         },
         {
             title: "Berry, Vine & Nut Plants",
             image: fruit2,
+            link : "#"
+
         },
         {
             title: "Large, Medicinal & Multipurpose Trees",
             image: fruit3,
+            link : "#"
+
         },
         {
             title: "Exotic & Imported Fruits",
             image: fruit4,
+            link : "#"
+
         },
         {
             title: "Indian & Tropical Fruits",
             image: fruit5,
+            link : "#"
+
+        },
+        {
+            title: "Guava",
+            image: fruit6,
+            link : "/agroForestry/guava"
+
+        },
+        {
+            title: "Papaya",
+            image: fruit7,
+            link : "/agroForestry/papaya"
+        },
+        {
+            title: "Amla",
+            image: fruit8,
+            link : "/agroForestry/amla"
+        },
+        {
+            title: "Orange",
+            image: fruit9,
+            link : "/agroForestry/orange"
         },
     ];
     return (
@@ -51,7 +86,7 @@ export const Find = () => {
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                         {fruitData.map((item, index) => (
-                            <div
+                            <Link href={item.link}
                                 key={index}
                                 className=" overflow-hidden"
                             >
@@ -67,7 +102,7 @@ export const Find = () => {
                                 <div className="p-4 -mt-14 relative z-10 text-base font-semibold text-white">
                                     {item.title}
                                 </div>
-                            </div>
+                            </Link>
                         ))}
                     </div>
                 </div>
