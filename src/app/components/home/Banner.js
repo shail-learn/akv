@@ -83,58 +83,68 @@ export const Banner2 = () => {
 
 
 export const VedioHome = () => {
-    const vedio = "https://cruxcreativedemo2.com/web-image/akvwebsite-banner.mp4"
-
     const videoRef = useRef(null);
+    const audioRef = useRef(null);
     const pathname = usePathname();
 
+    const videoSrc = "https://cruxcreativedemo2.com/web-image/akvwebsite-banner.mp4";
+    const audioSrc = "https://cruxcreativedemo2.com/web-image/akvwebsite-banner.mp3";
+
     useEffect(() => {
-        const video = videoRef.current;
+      const video = videoRef.current;
+      const audio = audioRef.current;
 
-        if (video) {
-            const playVideo = async () => {
-                try {
+      const playMedia = async () => {
+        try {
+          if (video) {
+            video.muted = pathname !== '/';
+            await video.play();
+          }
 
-                    video.muted = pathname !== '/';
-                    await video.play();
-                } catch (err) {
-                    console.warn('Autoplay with audio failed:', err);
-
-                    video.muted = true;
-                    try {
-                        await video.play();
-                    } catch (e) {
-                        console.warn('Retry (muted) failed too:', e);
-                    }
-                }
-            };
-
-            if (video.readyState >= 2) {
-                playVideo();
+          if (audio) {
+            if (pathname === '/') {
+              audio.currentTime = 0;
+              await audio.play();
             } else {
-                video.addEventListener('loadedmetadata', playVideo, { once: true });
+              audio.pause();
             }
+          }
+        } catch (err) {
+          console.warn('Autoplay failed:', err);
         }
+      };
+
+      if (video && video.readyState >= 2) {
+        playMedia();
+      } else if (video) {
+        video.addEventListener('loadedmetadata', playMedia, { once: true });
+      }
+
+      return () => {
+        if (audio) {
+          audio.pause();
+        }
+      };
     }, [pathname]);
 
     return (
-        <>
-            <div
-                className="bg-cover bg-center relative " >
-                <div className="iframe-container">
-                    <video
-                        ref={videoRef}
-                        className="w-full h-full object-cover"
-                        src={vedio}
-                        autoPlay
-                        loop={false}
-                        playsInline
-                        muted={false}
-                    />
-
-                </div>
-            </div>
-
-        </>
-    )
-}
+      <div className="bg-cover bg-center relative">
+        <div className="relative w-full h-full overflow-hidden">
+          <video
+            ref={videoRef}
+            src={videoSrc}
+            autoPlay
+            loop={false}
+            muted
+            playsInline
+            className="w-full h-full object-cover"
+          />
+          <audio
+            ref={audioRef}
+            src={audioSrc}
+            preload="auto"
+          />
+        </div>
+      </div>
+    );
+  };
