@@ -6,7 +6,7 @@ import banner2 from "../../../assets/images/home/bg-img.webp";
 import shape from "../../../assets/images/home/shape.png";
 import icon from "../../../assets/images/logo-icon.svg";
 const videoSrc = "/akvwebsite-banner.mp4";
-
+const audioSrc = "/akvwebsite-banner.mp3";
 
 
 
@@ -137,15 +137,15 @@ export const VedioHome = () => {
             src={videoSrc}
             autoPlay
             loop={false}
-            muted={true}
+            muted
             playsInline
             className="w-full h-full object-cover"
           />
-          {/* <audio
+          <audio
             ref={audioRef}
             src={audioSrc}
             preload="auto"
-          /> */}
+          />
         </div>
       </div>
     );
