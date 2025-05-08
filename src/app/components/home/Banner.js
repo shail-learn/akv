@@ -129,6 +129,7 @@ export const VedioHome = () => {
                         autoPlay
                         loop={false}
                         playsInline
+                        muted={false}
                     />
 
                 </div>
