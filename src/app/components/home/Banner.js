@@ -127,7 +127,7 @@ export const VedioHome = () => {
                         className="w-full h-full object-cover"
                         src={vedio}
                         autoPlay
-                        loop
+                        loop={false}
                         playsInline
                     />
 
