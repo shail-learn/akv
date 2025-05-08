@@ -5,6 +5,8 @@ import banner from "../../../assets/images/home/banner.webp";
 import banner2 from "../../../assets/images/home/bg-img.webp";
 import shape from "../../../assets/images/home/shape.png";
 import icon from "../../../assets/images/logo-icon.svg";
+const videoSrc = "/akvwebsite-banner.mp4";
+
 
 
 
@@ -87,8 +89,8 @@ export const VedioHome = () => {
     const audioRef = useRef(null);
     const pathname = usePathname();
 
-    const videoSrc = "https://cruxcreativedemo2.com/web-image/akvwebsite-banner.mp4";
-    const audioSrc = "https://cruxcreativedemo2.com/web-image/akvwebsite-banner.mp3";
+    // const videoSrc = https://cruxcreativedemo2.com/web-image/akvwebsite-banner.mp4;
+    // const audioSrc = "https://cruxcreativedemo2.com/web-image/akvwebsite-banner.mp3";
 
     useEffect(() => {
       const video = videoRef.current;
@@ -135,15 +137,15 @@ export const VedioHome = () => {
             src={videoSrc}
             autoPlay
             loop={false}
-            muted
+            muted={true}
             playsInline
             className="w-full h-full object-cover"
           />
-          <audio
+          {/* <audio
             ref={audioRef}
             src={audioSrc}
             preload="auto"
-          />
+          /> */}
         </div>
       </div>
     );
