@@ -1,4 +1,6 @@
+'use client'
 import React from 'react'
+import { useState, useEffect } from 'react';
 import contactbg from "../../../assets/images/contact/contact-banner.webp";
 import contactFooter from "../../../assets/images/contact/contactFooter.svg";
 import instagram from "../../../assets/images/contact/instagram.svg";
@@ -12,11 +14,74 @@ import { Map } from '../home/Contact';
 import Link from 'next/link';
 
 
+
+
+
 const ContactPage = () => {
   const banner = contactbg;
+  //zc
+  const [successMsg, setSuccessMsg] = useState('');
+  useEffect(() => {
+    if (successMsg) {
+      const timer = setTimeout(() => setSuccessMsg(''), 3000);
+      return () => clearTimeout(timer);
+    }
+  }, [successMsg]);
+
+  function contactfrm(e) {
+    e.preventDefault();
+  
+    
+  
+    const form = e.target;
+    const data = {
+      name: form.name.value.trim(),
+      phone: form.phone.value.trim(),
+      email: form.email.value.trim(),
+      city: form.city.value.trim(),
+      message: form.message.value.trim(),
+    };
+  
+    for (const [key, value] of Object.entries(data)) {
+      if (!value) {
+        alert(`${key} is required`);
+        return;
+      }
+    }
+  
+    const emailPattern = /\S+@\S+\.\S+/;
+    if (!emailPattern.test(data.email)) {
+      alert("Invalid email format");
+      return;
+    }
+  
+    fetch('/data/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    })
+      .then(res => res.json())
+      .then(result => {
+        console.log('api reponse',result);
+        if (result.success) {
+          setSuccessMsg('Form submitted successfully!');
+          form.reset();
+        } else {
+          alert('Error: ' + result.message);
+        }
+      })
+      .catch(err => {
+        console.error(err);
+        alert('Something went wrong.');
+      });
+  }
+  
+  //zc var
   const headingbanner = `Contact Us <br/> Atulye Krishi Vana`
   const subtitle = `Sustaining Ecosystems, Empowering Communities`;
   const { heading, left, right } = contactData;
+
+
 
   const socialLink=[
     { name: 'linkedin', icon: linkedin, link: 'https://www.linkedin.com/company/atulyekrishivana/' },
@@ -71,19 +136,29 @@ const ContactPage = () => {
             <div className="flex flex-col md:flex-row gap-8">
               {/* Left Section */}
               <div className="md:w-[55%]">
+    
+                <form onSubmit={contactfrm}>
                 <h3 className="text-xl font-semibold mb-2">{left.title}</h3>
                 <p className="text-sm text-black mb-6 md:mb-8">{left.description}</p>
 
+  
                 <div className="bg-[#D9D9D9E0] rounded-tr-[50px] rounded-tl-[50px]  p-10 md:p-14">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    {left.formFields.slice(0, 4).map((field, i) => (
-                      <input
-                        key={i}
-                        name={field.name}
-                        placeholder={field.placeholder}
-                        className="px-4 py-3 rounded-md border border-none focus:outline-none"
-                      />
-                    ))}
+                   {left.formFields.slice(0, 4).map((field, i) => (
+  <input
+    key={i}
+    name={field.name}
+    placeholder={field.placeholder}
+    className="px-4 py-3 rounded-md border border-none focus:outline-none"
+    required
+    maxLength={field.name === 'phone' ? 10 : undefined} // Set maxLength for phone field only
+    onInput={(e) => {
+      if (field.name === 'phone') {
+        e.target.value = e.target.value.replace(/[^0-9]/g, '').slice(0, 10); // Enforce 10 digits
+      }
+    }}
+  />
+))}
                   </div>
                   <div className="mt-4">
                     <textarea
@@ -91,14 +166,22 @@ const ContactPage = () => {
                       placeholder={left.formFields[4].placeholder}
                       rows={2}
                       className="w-full px-4 py-3 rounded-md border border-none focus:outline-none"
-                    ></textarea>
+                      required></textarea>
                   </div>
                   <div className='text-center'>
                     <button className="mt-4 bg-[#234134] text-white px-8 py-2 rounded-[4px] hover:opacity-90 transition">
                       {left.button}
                     </button>
                   </div>
+                  <br/>
+                  <br/>
+                  {successMsg && (
+  <div className="mb-4 bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded shadow text-sm transition-all duration-300">
+    <strong className="font-semibold">Success!</strong> {successMsg}
+  </div>
+)}
                 </div>
+                </form>
               </div>
 
 
