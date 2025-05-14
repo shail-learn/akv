@@ -39,16 +39,7 @@ export const Pruning = () => {
             img: slider3,
             text: "Rejuvenation of old trees by cutting back to 75 cm from ground level improves productivity."
         },
-        {
-            id: 4,
-            img: slider2,
-            text: "Prune past season’s terminal growth to 10-15cm during Sept- Oct and Feb- March"
-        },
-        {
-            id: 5,
-            img: slider1,
-            text: "Bend erect branches by tying them to pegs for better growth."
-        },
+
     ];
 
     return (
@@ -59,18 +50,9 @@ export const Pruning = () => {
                         className='lg:leading-snug text-[#1B453C] redhat mb-6 md:ml-10 md:mb-10 text-center md:text-left text-3xl md:text-4xl font-medium w-full'
                         dangerouslySetInnerHTML={{ __html: heading }}
                     ></h2>
-                    <Swiper
-                        spaceBetween={45}
-                        breakpoints={{
-                            768: { slidesPerView: 2 },
-                            1024: { slidesPerView: 3 }
-                        }}
-                        navigation
-                        modules={[Navigation]}
-                        className="w-full !pl-8 !pr-8 md:!pl-10 black_arrow md:!pr-10 arrow_lr0 img-height-slider"
-                    >
+                    <div className='grid md:grid-cols-3 grid-cols-1 gap-4 md:gap-6'>
                         {data.map((item, index) => (
-                            <SwiperSlide key={item.id}>
+                            <div key={index} className=''>
                                 <div
                                     className={`transition-all duration-500 ease-in-out overflow-hidden rounded-lg`}
                                 >
@@ -79,13 +61,14 @@ export const Pruning = () => {
                                         alt={item.text}
                                         width={500}
                                         height={300}
-                                        className="object-cover w-full h-full  transition-all duration-100 rounded-tl-3xl"
+                                        className="object-cover w-full h-full  transition-all duration-100 rounded-tl-[50px]"
                                     />
                                     <p className="mt-6 text-[15px] text-justify text-black">{item.text}</p>
                                 </div>
-                            </SwiperSlide>
-                        ))}
-                    </Swiper>
+                            </div>
+                        ))
+                        }
+                    </div>
                 </div>
             </section>
 
@@ -191,9 +174,9 @@ export const Faqs = () => {
 
         },
     ]
-  return (
-    <>
-       <FaqSlider card={card} heading={heading} />
-    </>
-  )
+    return (
+        <>
+            <FaqSlider card={card} heading={heading} />
+        </>
+    )
 }
