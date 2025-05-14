@@ -56,7 +56,7 @@ export const ProductPage = () => {
         },
         {
             img: img10,
-            link:"/"
+            link:"/agroForestry/orange"
 
         }
     ]
