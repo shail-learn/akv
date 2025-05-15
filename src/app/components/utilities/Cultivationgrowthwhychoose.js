@@ -50,8 +50,8 @@ export const GrowthSlider = ({ GrowthHeading, GrowthDescription, slides }) => {
                   <Image
                     src={item.image}
                     alt={item.title}
-                    width={256}
-                    height={256}
+                    width={150}
+                    height={150}
                     className="object-cover w-full h-full"
                   />
                 </div>
