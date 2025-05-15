@@ -3,6 +3,7 @@ import React from "react";
 import {
   InvestLayout,
   LookingLayout,
+  WhyChoose,
 } from "@/app/components/utilities/LookingInvestLayout";
 import {
   Banner,
@@ -13,15 +14,18 @@ import {
   Sustainable,
   Uses,
 } from "@/app/components/mahagony/HeroHarvesting";
-import { Faqs, Growth } from "@/app/components/mahagony/WhychooseGrowth";
-import { FaqsLayout } from "@/app/components/utilities/Cultivationgrowthwhychoose";
+import {
+  Faqs,
+  Growth,
+  WhyChooseSec,
+} from "@/app/components/mahagony/WhychooseGrowth";
 const Page = () => {
   // /Cultivation
 
   return (
     <>
       <Banner />
-      {/* <WhyChose /> */}
+      <WhyChooseSec />
       <Growth />
       <Harvest />
       <Market />
