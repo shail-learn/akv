@@ -9,6 +9,8 @@ import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 import bgimpact from "../../../assets/images/bamboo/Cultivation-bg.webp";
 import impact1 from "../../../assets/images/bamboo/Cultivation1.webp";
 import impact2 from "../../../assets/images/bamboo/Cultivation2.webp";
+import impact3 from "../../../assets/images/bamboo/Cultivation3.webp";
+
 import harvestimg from "../../../assets/images/bamboo/harvest.webp";
 import market1 from "../../../assets/images/bamboo/Market1.webp";
 import market2 from "../../../assets/images/bamboo/Market2.webp";
@@ -44,26 +46,17 @@ export const Cultivation = () => {
       ]
     },
     {
-      image: impact1,
-      heading: "Nursery Practices",
-      description: 'Efficient nursery management ensures healthy bamboo saplings.',
+      image: impact3,
+      heading: "Planting & Spacing",
       list: [
-        "Seed Collection: Best harvested between April – June.",
-        "Seed Characteristics: Small black seeds with high germination viability.",
-        "Germination Process: Seeds are sown in polybags .",
+        "Pit Size: 60 cm x 60 cm x 60 cm for robust root establishment.",
+        "Ideal Spacing: 5 feet x 5 feet for high-density plantations.",
+        "Intercropping Compatibility: Can be grown alongside coffee, spices, and medicinal plants in early growth stages.",
 
       ]
 
     },
-    {
-      image: impact2,
-      heading: "Silvicultural Characteristics",
-      description: 'Bamboo exhibits unique growth traits that make it ideal for commercial plantations:Rapid Growth Rate – Can grow up to 3 feet per day under ideal conditions',
-      list: [
-        "Moderate Water Requirement – Requires minimal irrigation once established.",
-        "Pest & Disease Resistance – Naturally resistant to major pests and diseases."
-      ]
-    },
+
 
   ]
   return (

@@ -106,8 +106,8 @@ export const Harvesting = () => {
                         src={harvestHandlingData.image}
                         alt="Farmer Family"
                         width={800}
-                        height={600}
-                        className="w-full h-full object-cover"
+                        height={500}
+                        className="w-full h-full md:h-[630px] object-cover"
                     />
                 </div>
 
