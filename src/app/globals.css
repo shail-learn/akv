@@ -708,7 +708,8 @@ align-items: center;
     padding: 3rem;
 
   }
-  .dark_active .swiper-slide-next .bg-white h3, .dark_active .swiper-slide-next .bg-white p{
+  .dark_active .swiper-slide-next .bg-white h3, .dark_active .swiper-slide-next .bg-white p,
+  .dark_active .swiper-slide-next .bg-white ul li{
     color: #fff;
   }
 

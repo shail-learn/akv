@@ -160,7 +160,7 @@ export const Pest = () => {
                                 key={index}
                                 className="flex flex-row items-start p-2 lg:p-6"
                             >
-                                <div className='w-14 h-14 rounded-lg shrink-0 bg-[#FAE084]' >
+                                <div className='w-4 h-4 rounded mt-1 shrink-0 bg-[#FAE084]' >
 
                                 </div>
                                 <div className='pl-4 text-white text-left'>

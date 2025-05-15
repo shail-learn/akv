@@ -4,6 +4,12 @@ import Image from "next/image";
 import BannerPage from '../BannerPage';
 import banner from "../../../assets/images/bamboo/banner.webp";
 import bamboo1 from "../../../assets/images/bamboo/bamboo.webp";
+import bamboo2 from "../../../assets/images/bamboo/bamboo2.webp";
+import bamboo3 from "../../../assets/images/bamboo/bamboo3.webp";
+import bamboo4 from "../../../assets/images/bamboo/bamboo4.webp";
+import bamboo5 from "../../../assets/images/bamboo/bamboo5.webp";
+
+
 
 
 export const BannerBamboo = () => {
@@ -45,17 +51,22 @@ export const WhyBamboo = () => {
         {
             title: "Low Maintenance",
             description: "Requires minimal care and grows naturally in diverse conditions.",
-            img: bamboo1,
+            img: bamboo2,
+        },
+        {
+            title: "Maintenance",
+            description: "Requires minimal care and grows naturally in diverse conditions.",
+            img: bamboo3,
         },
         {
             title: "Eco-Friendly Cultivation",
             description: "Absorbs high amounts of CO₂ and prevents soil erosion.",
-            img: bamboo1,
+            img: bamboo4,
         },
         {
-            title: "Fast Growth Rate",
-            description: "Bamboo grows faster than most plants, making it highly renewable.",
-            img: bamboo1,
+            title: "High Economic Returns",
+            description: "Provides multiple revenue streams from timber, fiber, and biomass applications.",
+            img: bamboo5,
         },
     ];
     const [showMore, setShowMore] = useState(false);
@@ -70,7 +81,7 @@ export const WhyBamboo = () => {
                         <div key={index} className="grid grid-cols-3 gap-4 items-center border-t border-[#000000] py-6">
                             <div className="md:col-span-1 col-span-12">
                                 <h2 className="font-medium text-xl md:text-2xl text-black mb-3">{index + 1}. {item.title}</h2>
-                                <p className="text-black text-[14px] md:text-[15px]">{item.description}</p>
+                                <p className="ps-6 text-black text-[14px] md:text-[15px]">{item.description}</p>
                             </div>
                             <div className="md:col-span-1 col-span-12 md:order-none order-3">
                                 <div className="flex items-center justify-center gap-4">

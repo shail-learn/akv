@@ -3,7 +3,7 @@ import Image from 'next/image'
 import React from 'react'
 import img1 from "../../../assets/images/business/product-left.webp";
 import img2 from "../../../assets/images/business/product01.webp";
-import img3 from "../../../assets/images/business/product02.webp";
+import img3 from "../../../assets/images/business/product002.webp";
 import img4 from "../../../assets/images/business/product03.webp";
 import img5 from "../../../assets/images/business/product04.webp";
 import img6 from "../../../assets/images/business/product-right.webp";
@@ -27,36 +27,42 @@ export const ProductPage = () => {
 
         {
             img: img2,
+            link: "#"
         },
         {
             img: img3,
+            link: "agroForestry/gamhar"
         },
         {
             img: img4,
+            link: "#"
+
         },
         {
             img: img5,
+            link: "#"
+
         }
     ]
     const productlist2 = [
 
         {
             img: img7,
-            link:"agroForestry/guava"
+            link: "agroForestry/guava"
         },
         {
             img: img8,
-            link:"/agroForestry/papaya"
+            link: "/agroForestry/papaya"
 
         },
         {
             img: img9,
-            link:"/agroForestry/amla"
+            link: "/agroForestry/amla"
 
         },
         {
             img: img10,
-            link:"/agroForestry/orange"
+            link: "/agroForestry/orange"
 
         }
     ]
@@ -100,9 +106,9 @@ export const ProductPage = () => {
                                             <Image
                                                 src={item.img}
                                                 alt="product"
-                                                className="  h-full"
+                                                className=" rounded-[20px] h-full"
                                             />
-                                            <Link href="#" className="text-sm border-[1px] border-[#646464] w-full text-center rounded-full p-2 hover:bg-[#1B453C] hover:text-white ">
+                                            <Link href={item.link} className="text-sm border-[1px] border-[#646464] w-full text-center rounded-full p-2 hover:bg-[#1B453C] hover:text-white ">
 
                                                 Explore More
 
