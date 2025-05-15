@@ -1,13 +1,28 @@
-import Link from 'next/link'
-import React from 'react'
+import Link from "next/link";
+import React from "react";
 
-const BannerPage = ({ video, heading, title, banner, button, link, classname = "", subtitle, opacity }) => {
-
+const BannerPage = ({
+  video,
+  heading,
+  title,
+  banner,
+  button,
+  link,
+  classname = "",
+  subtitle,
+  opacity,
+}) => {
   return (
     <>
       <div
         className={`py-16 lg:h-[550px] flex items-center justify-center relative`}
-        style={!video ? { background: `url(${banner?.src}) center center / cover no-repeat` } : {}}
+        style={
+          !video
+            ? {
+                background: `url(${banner?.src}) center center / cover no-repeat`,
+              }
+            : {}
+        }
       >
         {/* Background Video (Replaces Image if Available) */}
         {video && (
@@ -23,12 +38,15 @@ const BannerPage = ({ video, heading, title, banner, button, link, classname = "
         )}
 
         {/* Overlay */}
-        <div className={`absolute h-full top-0 bottom-0 w-full bg-black ${opacity || 'opacity-20'}`} />
+        <div
+          className={`absolute h-full top-0 bottom-0 w-full bg-black ${
+            opacity || "opacity-20"
+          }`}
+        />
 
         {/* Content */}
         <div className="relative text-center z-10 flex flex-wrap w-full items-center justify-center">
           <div className="w-11/12 md:w-3/4 lg:w-7/12">
-
             {/* Heading */}
             {heading && (
               <h1
@@ -64,12 +82,8 @@ const BannerPage = ({ video, heading, title, banner, button, link, classname = "
           </div>
         </div>
       </div>
-
-
-
-
     </>
-  )
-}
+  );
+};
 
-export default BannerPage
+export default BannerPage;
