@@ -16,12 +16,6 @@ import img3 from "../../../assets/images/eco/img3.png";
 import img4 from "../../../assets/images/eco/img4.png";
 import img5 from "../../../assets/images/eco/img5.png";
 import image1 from "../../../assets/images/mahagony/InvestImg.webp";
-import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import whychooose from "../../../assets/images/mahagony/whychooose.svg";
 
 export const Banner = () => {
   const text = {
@@ -32,47 +26,7 @@ export const Banner = () => {
       "Mahogany is a preferred species in agroforestry systems, thriving in diverse climatic conditions with minimal maintenance. Its deep-rooted nature improves soil stability, while its canopy provides excellent shade, making it suitable for intercropping.",
     opacity: "opacity-20",
   };
-  const card = [
-    {
-      title: " Medicinal Properties",
-      description: "Used in traditional medicine for various health benefits.",
-    },
-    {
-      title: " Premium-Quality Timber",
-      description: "Highly valued for furniture, veneer, and construction.",
-    },
-    {
-      title: " Fast Growth",
-      description: "Matures within 10-15 years, providing substantial yields.",
-    },
-    {
-      title: "Medicinal Properties",
-      description: " Used in traditional medicine for various health benefits.",
-    },
-    {
-      title: "High Economic Returns",
-      description:
-        "Profitable due to its valuable timber and diverse applications.",
-    },
-  ];
-  const leftTitle = "Climate Requirements";
-  const leftContent = [
-    "Mahogany is highly adaptable and thrives in tropical and subtropical climates.",
-    "Maximum Temperature: 45°C",
-    "Minimum Temperature: 10°C",
-    "Annual Rainfall Requirement: 1000 mm – 2500 mm",
-    "Mahogany prefers regions with well-distributed rainfall but can also tolerate dry conditions once established.",
-  ];
 
-  const rightTitle = "Soil Preferences";
-  const rightContent = [
-    "Mahogany grows well in various soil types but thrives best in deep, well-drained soils.",
-    "Best Suited Soil: Loamy, alluvial, and lateritic soils",
-    "Soil Depth: Deep soils encourage strong root development",
-    "Soil Drainage: Well-drained soil is essential to prevent water logging",
-    "PH Range: 5.5 – 7.5 (slightly acidic to neutral)",
-    "Due to its adaptability, Mahogany is ideal for agroforestry systems.",
-  ];
   return (
     <>
       <section className="relative">
@@ -85,99 +39,6 @@ export const Banner = () => {
           classname={text.className}
         />
         {/* SVG Divider */}
-        <div className="relative w-full md:-mt-36 z-10">
-          <Image
-            src={whychooose}
-            alt="Divider"
-            width={1920}
-            height={700}
-            className="w-full object-cover h-full"
-          />
-        </div>
-
-        {/* Content */}
-        <div className="relative z-20 bg-[#1b453c] text-white pb-20 -mt-20">
-          <div className="max-w-6xl mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl font-semibold text-center pt-14 pb-10">
-              Why Choose Mahogany?
-            </h2>
-
-            <div className="w-full mx-auto relative whychose">
-              <div className="mx-auto w-[90%]">
-                <Swiper
-                  slidesPerView={1}
-                  spaceBetween={20}
-                  navigation={{
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                  }}
-                  loop={true}
-                  modules={[Autoplay, Navigation, Pagination]}
-                  autoplay={{
-                    delay: 6000,
-                    disableOnInteraction: false,
-                  }}
-                  breakpoints={{
-                    320: { slidesPerView: 1, spaceBetween: 30 },
-                    640: { slidesPerView: 2, spaceBetween: 30 },
-                    768: { slidesPerView: 3, spaceBetween: 30 },
-                    1024: { slidesPerView: 3, spaceBetween: 30 },
-                  }}
-                  className="mySwiper2 swiper_padd !p-4 light_active white_arrow"
-                >
-                  {card.map((item, index) => (
-                    <SwiperSlide key={index}>
-                      <div
-                        className="lg:col-span-4 bg-white transition-all rounded-3xl card1 duration-400 text-black p-8 w-full"
-                        style={{ boxShadow: "2px 2px 6px 0px #00000033" }}
-                      >
-                        <div className="grid items-center md:text-left justify-center gap-6">
-                          <h3 className="text-base md:text-[16] text-black font-bold">
-                            {item.title}
-                          </h3>
-                          <p className="text-[13px] font-light text-black">
-                            {item.description}
-                          </p>
-                        </div>
-                      </div>
-                    </SwiperSlide>
-                  ))}
-                </Swiper>
-
-                <div className="black-arrow">
-                  <button className="swiper-button-prev text-2xl !left-0 px-4 py-2"></button>
-                  <button className="swiper-button-next !right-0 px-4 py-2"></button>
-                </div>
-              </div>
-            </div>
-
-            {/* Next Section Heading */}
-            <h3 className="text-2xl md:text-3xl font-semibold text-center mt-20">
-              Growth Conditions of Mahogany
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 mt-[3rem] py-5 px-2 relative">
-              {/* Left Column */}
-              <div>
-                <h3 className="font-bold mb-2">{leftTitle}</h3>
-                <ul className="list-disc list-inside space-y-1 text-sm md:text-base">
-                  {leftContent.map((item, index) => (
-                    <li key={index}>{item}</li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Right Column */}
-              <div className="md:border-l border-white md:pl-10">
-                <h3 className="font-bold mb-2">{rightTitle}</h3>
-                <ul className="list-disc list-inside space-y-1 text-sm md:text-base">
-                  {rightContent.map((item, index) => (
-                    <li key={index}>{item}</li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
       </section>
     </>
   );
@@ -300,8 +161,8 @@ export const Looking = () => {
   return (
     <>
       <LookingLayout
-        LookingHeading={LookingHeading}
-        LookingSubheading={LookingSubheading}
+        heading={LookingHeading}
+        subheading={LookingSubheading}
         box={lookingBox}
       />
     </>
