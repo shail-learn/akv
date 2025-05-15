@@ -368,34 +368,32 @@ export const Harvest = () => {
     {
       id: "01",
       title: "Harvesting Age:",
-      description: "Begins at 4-5 years; peak yield from 10 years onwards.",
+      description:
+        "Begins at 12-15 years; optimal timber harvest at 20-25 years",
       image: img1,
     },
     {
       id: "02",
       title: "Annual Yield",
-      description:
-        "50-100 kg per tree, depending on variety and farm practices.",
+      description: "2.5-3.5 cm in diameter per year",
       image: img2,
     },
     {
       id: "03",
       title: "Harvesting Season",
-      description: "October to January in most Indian regions.",
+      description: "Clear felling with sustainable replanting",
       image: img3,
     },
     {
       id: "04",
       title: "Multiple Harvesting Cycles",
-      description:
-        "Fruits mature in multiple rounds, extending harvesting periods.",
+      description: "2-3 cubic meters per tree after 20 years",
       image: img4,
     },
     {
       id: "05",
       title: "Post-Harvest Processing",
-      description:
-        " Sun-drying or processing into powder, juice, or candy to enhance shelf life.",
+      description: " Timber is seasoned and treated for durability",
       image: img5,
     },
   ];
