@@ -31,7 +31,7 @@ export const Growth = () => {
     },
     {
       group: "Silvicultural Characteristics",
-      image: Silvicultural2,
+      image: Silvicultural4,
       title: "Moderate Water Requirement",
       desc: " Needs regular irrigation in early years",
     },
@@ -43,7 +43,7 @@ export const Growth = () => {
     },
     {
       group: "Silvicultural Characteristics",
-      image: Silvicultural4,
+      image: Silvicultural2,
       title: "Drought Tolerance",
       desc: " Can endure dry periods once established",
     },
@@ -67,13 +67,13 @@ export const Growth = () => {
     },
     {
       group: "Nursery Practices",
-      image: Nursery3,
+      image: Nursery4,
       title: "Germination Process",
       desc: " Seeds germinate within 3-4 weeks under optimal conditions",
     },
     {
       group: "Nursery Practices",
-      image: Nursery4,
+      image: Nursery3,
       title: "Shading & Watering",
       desc: "Requires partial shade and frequent watering during early growth",
     },
@@ -90,9 +90,9 @@ export const Growth = () => {
       desc: "60 cm x 60 cm x 60 cm for strong root establishment",
     },
     {
-      group: " Ideal Spacing",
+      group: "Planting & Spacing",
       image: Planting2,
-      title: "Pit Size",
+      title: "Ideal Spacing",
       desc: " 4m x 4m for optimal timber yield",
     },
     {
@@ -143,28 +143,6 @@ export const Faqs = () => {
       question: "What are the common challenges faced in Mahogany cultivation?",
       answer:
         "One challenge is initial slow growth, as Mahogany takes 2-3 years to establish before rapid development begins. Young saplings are vulnerable to livestock grazing, so fencing is necessary. In humid regions, Mahogany may face fungal infections like powdery mildew, which require preventive spraying with neem oil or organic fungicides. Weed competition can affect early growth, so periodic removal is needed. In regions with strong winds, Mahogany trees may develop weak branch attachments, making them susceptible to breakage. Proper staking in the early years helps ensure straight growth and wind resistance.",
-    },
-    {
-      question:
-        "What are the benefits of intercropping Mahogany with other crops?",
-      answer:
-        "Intercropping with short-duration crops like ginger, turmeric, black pepper, or medicinal plants provides farmers with additional income while the Mahogany trees mature. This practice enhances soil fertility, improves land utilization, and controls weeds naturally. Leguminous plants such as cowpea or pigeon pea can fix nitrogen in the soil, benefiting Mahogany growth. Farmers also use shade-tolerant crops like vanilla or cardamom in mature plantations. Proper spacing and light management are crucial to avoid competition between Mahogany and intercropped species. Successful intercropping maximizes land productivity without compromising tree health.",
-    },
-    {
-      question: "What post-harvest processing is required for Mahogany timber?",
-      answer:
-        "After felling, Mahogany logs need seasoning and drying to reduce moisture content and improve durability. Natural air drying takes 6-12 months, while kiln drying accelerates the process to 4-6 weeks. Proper drying prevents warping and enhances the wood’s strength. Post-drying, the timber is treated with boron or natural oils to increase resistance against termites and fungal decay. For premium furniture, Mahogany wood undergoes planing, sanding, and polishing before use. Processed Mahogany is widely used in luxury furniture, flooring, doors, and decorative veneers due to its smooth texture and rich grain patterns.",
-    },
-    {
-      question:
-        "How profitable is Mahogany farming compared to traditional crops?",
-      answer:
-        "Mahogany is highly profitable due to low maintenance and high timber value. Compared to traditional crops like wheat or rice, which provide annual income but require significant inputs, Mahogany requires less labor, fertilizers, and water over time. Additionally, timber prices increase with age, ensuring higher profits for farmers who delay harvesting. Many farmers also earn income through intercropping, selling Mahogany saplings, or leasing mature trees before harvest.",
-    },
-    {
-      question: "How does Mahogany contribute to environmental sustainability?",
-      answer:
-        "Mahogany plantations play a vital role in carbon sequestration, absorbing significant amounts of CO₂ over their lifetime. The trees prevent soil erosion by stabilizing the land with deep roots, making them ideal for reforestation and degraded land reclamation projects. Unlike some timber crops, Mahogany requires minimal chemical inputs, reducing environmental impact. Additionally, Mahogany plantations support biodiversity, providing habitat for birds and beneficial insects. Many agroforestry projects use Mahogany as a windbreak or shelterbelt to protect smaller crops from harsh weather conditions. Sustainable Mahogany farming benefits both farmers and the ecosystem.",
     },
   ];
 
