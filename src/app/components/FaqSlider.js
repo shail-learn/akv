@@ -77,7 +77,6 @@ export const FaqSlider = ({card,heading,classname,title1,title2}) => {
         </div>
       </div>
 
-      {/* Decorative images */}
       <div>
         <Image
           src={icon1}
@@ -90,8 +89,6 @@ export const FaqSlider = ({card,heading,classname,title1,title2}) => {
           className="lg:w-64 w-36 h-full object-contain lg:top-8 absolute left-auto lg:-right-28 -right-4 -top-32"
         />
       </div>
-
-      {/* Conditionally render title2 */}
       {title2 && <p className="mt-8 text-center">{title2}</p>}
     </div>
   </section>
