@@ -1,4 +1,5 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
 import backgroundImage from "../../../assets/images/fruits-vegetables/tree.webp";
 
 import fruit1 from "../../../assets/images/fruits-vegetables/fruit1.png";
@@ -11,6 +12,8 @@ import fruit6 from "../../../assets/images/fruits-vegetables/fruit6.webp";
 import fruit7 from "../../../assets/images/fruits-vegetables/fruit7.webp";
 import fruit8 from "../../../assets/images/fruits-vegetables/fruit8.webp";
 import fruit9 from "../../../assets/images/fruits-vegetables/fruit9.webp";
+import fruit10 from "../../../assets/images/fruits-vegetables/fruit10.webp";
+
 import Plant from "../../../assets/images/eco/future.webp";
 import grow from "../../../assets/images/fruits-vegetables/grow.png";
 
@@ -72,7 +75,18 @@ export const Find = () => {
             image: fruit9,
             link : "/agroForestry/orange"
         },
+        {
+            title: "Mango",
+            image: fruit10,
+            link : "/agroForestry/mango"
+        },
+
+
     ];
+
+    const [showAll, setShowAll] = useState(false);
+
+    const visibleItems = showAll ? fruitData : fruitData.slice(0, 6);
     return (
         <>
             <section
@@ -84,27 +98,38 @@ export const Find = () => {
                         {heading}
                     </h2>
 
+
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {fruitData.map((item, index) => (
-                            <Link href={item.link}
-                                key={index}
-                                className=" overflow-hidden"
-                            >
-                                <div className="w-full h-[270px]  relative">
-                                    <Image
-                                        src={item.image}
-                                        alt={item.title}
-                                        fill
-                                        className="w-full object-cover h-full"
-                                    />
-                                    <div className='absolute top-0 left-0 w-full h-full bg-black opacity-20'></div>
-                                </div>
-                                <div className="p-4 -mt-14 relative z-10 text-base font-semibold text-white">
-                                    {item.title}
-                                </div>
-                            </Link>
-                        ))}
-                    </div>
+        {visibleItems.map((item, index) => (
+          <Link href={item.link} key={index} className="overflow-hidden">
+            <div className="w-full h-[270px] relative">
+              <Image
+                src={item.image}
+                alt={item.title}
+                fill
+                className="w-full object-cover h-full"
+              />
+              <div className="absolute top-0 left-0 w-full h-full bg-black opacity-20"></div>
+            </div>
+            <div className="p-4 -mt-14 relative z-10 text-base font-semibold text-white">
+              {item.title}
+            </div>
+          </Link>
+        ))}
+      </div>
+
+      {/* Show More / Show Less Button */}
+      {fruitData.length > 6 && (
+        <div className="text-center mt-14 pb-10">
+          <button
+            onClick={() => setShowAll(!showAll)}
+            className="px-16 py-3 text-white bg-[#1B453C] hover:bg-[#13312b] rounded-md transition"
+          >
+            {showAll ? "Show Less" : "Show More"}
+          </button>
+        </div>
+      )}
+
                 </div>
             </section>
         </>
@@ -204,7 +229,7 @@ export const Join = () => {
                     </div>
 
                     <div className="w-full md:w-1/2 flex justify-center">
-                        <div className="overflow-hidden  w-[250px] h-[350px] relative ml-auto">
+                        <div className="overflow-hidden  w-[250px] h-[350px] relative mx-auto md:mx-0 md:ml-auto">
                             <Image
                                 src={growData.image}
                                 alt="Grow with us"
