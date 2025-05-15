@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 import img1 from "../../../assets/images/business/product-left.webp";
 import img2 from "../../../assets/images/business/product01.webp";
-import img3 from "../../../assets/images/business/product02.webp";
+import img3 from "../../../assets/images/business/product002.webp";
 import img4 from "../../../assets/images/business/product03.webp";
 import img5 from "../../../assets/images/business/product04.webp";
 import img6 from "../../../assets/images/business/product-right.webp";
@@ -28,7 +28,7 @@ export const ProductPage = () => {
     },
     {
       img: img3,
-      link: "#",
+      link: "agroForestry/gamhar",
     },
     {
       img: img4,
@@ -54,7 +54,7 @@ export const ProductPage = () => {
     },
     {
       img: img10,
-      link: "/",
+      link: "/agroForestry/orange",
     },
   ];
   return (

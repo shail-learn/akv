@@ -13,7 +13,8 @@ import {
   Sustainable,
   Uses,
 } from "@/app/components/mahagony/HeroHarvesting";
-import { Growth } from "@/app/components/mahagony/WhychooseGrowth";
+import { Faqs, Growth } from "@/app/components/mahagony/WhychooseGrowth";
+import { FaqsLayout } from "@/app/components/utilities/Cultivationgrowthwhychoose";
 const Page = () => {
   // /Cultivation
 
@@ -28,6 +29,7 @@ const Page = () => {
       <Sustainable />
       <Invest />
       <Looking />
+      <Faqs />
     </>
   );
 };

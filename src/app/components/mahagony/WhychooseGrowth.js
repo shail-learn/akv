@@ -1,6 +1,9 @@
 "use client";
 import React from "react";
-import { GrowthSlider } from "../utilities/Cultivationgrowthwhychoose";
+import {
+  FaqsLayout,
+  GrowthSlider,
+} from "../utilities/Cultivationgrowthwhychoose";
 import Silvicultural1 from "../../../assets/images/mahagony/Silvicultural1.webp";
 import Silvicultural2 from "../../../assets/images/mahagony/Silvicultural2.webp";
 import Silvicultural3 from "../../../assets/images/mahagony/Silvicultural3.webp";
@@ -105,6 +108,72 @@ export const Growth = () => {
         GrowthHeading={GrowthHeading}
         GrowthDescription={GrowthDescription}
         slides={slides}
+      />
+    </>
+  );
+};
+export const Faqs = () => {
+  const Faqheading =
+    "Can Mahogany trees survive in dry or drought-prone areas?";
+  const Faqdescription = `Yes, Mahogany trees are moderately drought-tolerant once established. While they require regular watering during the first few years, they can survive dry conditions due to their deep root system. However, prolonged drought may slow growth and reduce timber quality. In arid regions, mulching around the base helps retain soil moisture, and drip irrigation can be used to ensure consistent growth. Planting Mahogany near water sources, such as farm ponds or canals, further enhances its resilience. While it can tolerate dry spells, optimal growth occurs in areas with an annual rainfall of 1000-2000 mm.`;
+  const FaqsData = [
+    {
+      question: "What is the best time to plant Mahogany saplings?",
+      answer:
+        "The ideal planting season for Mahogany is before the onset of monsoon or in the early rainy season (June to August). This allows young saplings to establish strong roots with natural rainfall support. If irrigation facilities are available, planting can also be done in the post-monsoon period (September to November).",
+    },
+    {
+      question:
+        "How does Mahogany compare to Teak in terms of timber quality and market demand?",
+      answer:
+        "Mahogany and Teak are both premium hardwoods, but Mahogany has a faster growth rate, maturing in 12-15 years, whereas Teak takes 20-25 years. Mahogany timber is less oily than Teak, making it easier to polish and stain, which is preferred in luxury furniture and wood paneling. Though Teak has superior durability, Mahogany is more affordable and in high demand for indoor furniture, musical instruments, and decorative woodwork. Additionally, Mahogany plantations require lower maintenance and investment, making it a profitable alternative for farmers looking for high-value timber crops.",
+    },
+    {
+      question: " Does Mahogany grow well in high-altitude regions?",
+      answer:
+        "Mahogany grows best at altitudes below 1000 meters above sea level. It thrives in tropical and subtropical regions with warm temperatures and humidity. In high-altitude regions with cold winters, Mahogany may experience slower growth and a higher risk of frost damage. If planting in hilly areas, selecting south-facing slopes ensures better sun exposure and warmth. Some farmers in mid-altitude zones successfully grow Mahogany in terraced farms to improve soil retention and drainage. However, frost-prone areas are not ideal for commercial-scale Mahogany plantations.",
+    },
+    {
+      question:
+        "How does pruning affect Mahogany tree growth and timber quality?",
+      answer:
+        "Pruning is essential for Mahogany plantations to promote straight trunk formation and uniform wood grain, which enhances timber value. Early pruning, starting after the first year, removes unwanted side branches and encourages upward growth. This should be done annually until the trees reach 5-7 meters in height. Overcrowded branches should be thinned to improve air circulation and sunlight penetration. However, excessive pruning can stress the tree and slow growth. Farmers should use sharp tools and prune only during the dormant season (post-monsoon or early winter) to minimize sap loss and fungal infections.",
+    },
+    {
+      question: "What are the common challenges faced in Mahogany cultivation?",
+      answer:
+        "One challenge is initial slow growth, as Mahogany takes 2-3 years to establish before rapid development begins. Young saplings are vulnerable to livestock grazing, so fencing is necessary. In humid regions, Mahogany may face fungal infections like powdery mildew, which require preventive spraying with neem oil or organic fungicides. Weed competition can affect early growth, so periodic removal is needed. In regions with strong winds, Mahogany trees may develop weak branch attachments, making them susceptible to breakage. Proper staking in the early years helps ensure straight growth and wind resistance.",
+    },
+    {
+      question:
+        "What are the benefits of intercropping Mahogany with other crops?",
+      answer:
+        "Intercropping with short-duration crops like ginger, turmeric, black pepper, or medicinal plants provides farmers with additional income while the Mahogany trees mature. This practice enhances soil fertility, improves land utilization, and controls weeds naturally. Leguminous plants such as cowpea or pigeon pea can fix nitrogen in the soil, benefiting Mahogany growth. Farmers also use shade-tolerant crops like vanilla or cardamom in mature plantations. Proper spacing and light management are crucial to avoid competition between Mahogany and intercropped species. Successful intercropping maximizes land productivity without compromising tree health.",
+    },
+    {
+      question: "What post-harvest processing is required for Mahogany timber?",
+      answer:
+        "After felling, Mahogany logs need seasoning and drying to reduce moisture content and improve durability. Natural air drying takes 6-12 months, while kiln drying accelerates the process to 4-6 weeks. Proper drying prevents warping and enhances the wood’s strength. Post-drying, the timber is treated with boron or natural oils to increase resistance against termites and fungal decay. For premium furniture, Mahogany wood undergoes planing, sanding, and polishing before use. Processed Mahogany is widely used in luxury furniture, flooring, doors, and decorative veneers due to its smooth texture and rich grain patterns.",
+    },
+    {
+      question:
+        "How profitable is Mahogany farming compared to traditional crops?",
+      answer:
+        "Mahogany is highly profitable due to low maintenance and high timber value. Compared to traditional crops like wheat or rice, which provide annual income but require significant inputs, Mahogany requires less labor, fertilizers, and water over time. Additionally, timber prices increase with age, ensuring higher profits for farmers who delay harvesting. Many farmers also earn income through intercropping, selling Mahogany saplings, or leasing mature trees before harvest.",
+    },
+    {
+      question: "How does Mahogany contribute to environmental sustainability?",
+      answer:
+        "Mahogany plantations play a vital role in carbon sequestration, absorbing significant amounts of CO₂ over their lifetime. The trees prevent soil erosion by stabilizing the land with deep roots, making them ideal for reforestation and degraded land reclamation projects. Unlike some timber crops, Mahogany requires minimal chemical inputs, reducing environmental impact. Additionally, Mahogany plantations support biodiversity, providing habitat for birds and beneficial insects. Many agroforestry projects use Mahogany as a windbreak or shelterbelt to protect smaller crops from harsh weather conditions. Sustainable Mahogany farming benefits both farmers and the ecosystem.",
+    },
+  ];
+
+  return (
+    <>
+      <FaqsLayout
+        heading={Faqheading}
+        description={Faqdescription}
+        faqs={FaqsData}
       />
     </>
   );
