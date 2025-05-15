@@ -17,6 +17,7 @@ import Nursery5 from "../../../assets/images/mahagony/Nursery5.webp";
 import Planting1 from "../../../assets/images/mahagony/Planting1.webp";
 import Planting2 from "../../../assets/images/mahagony/Planting2.webp";
 import Planting3 from "../../../assets/images/mahagony/Planting3.webp";
+import { WhyChooseLayout } from "../utilities/LookingInvestLayout";
 
 export const Growth = () => {
   const GrowthHeading = " Cultivation & Growth Characteristics";
@@ -152,6 +153,64 @@ export const Faqs = () => {
         heading={Faqheading}
         description={Faqdescription}
         faqs={FaqsData}
+      />
+    </>
+  );
+};
+export const WhyChooseSec = () => {
+  const whychooseHeading = " Why Choose Mahogany?";
+  const GrowthHeading = "Growth Conditions of Mahogany";
+  const cardData = [
+    {
+      title: " Medicinal Properties",
+      description: "Used in traditional medicine for various health benefits.",
+    },
+    {
+      title: " Premium-Quality Timber",
+      description: "Highly valued for furniture, veneer, and construction.",
+    },
+    {
+      title: " Fast Growth",
+      description: "Matures within 10-15 years, providing substantial yields.",
+    },
+    {
+      title: "Medicinal Properties",
+      description: " Used in traditional medicine for various health benefits.",
+    },
+    {
+      title: "High Economic Returns",
+      description:
+        "Profitable due to its valuable timber and diverse applications.",
+    },
+  ];
+  const leftTitle = "Climate Requirements";
+  const leftContent = [
+    "Mahogany is highly adaptable and thrives in tropical and subtropical climates.",
+    "Maximum Temperature: 45°C",
+    "Minimum Temperature: 10°C",
+    "Annual Rainfall Requirement: 1000 mm – 2500 mm",
+    "Mahogany prefers regions with well-distributed rainfall but can also tolerate dry conditions once established.",
+  ];
+
+  const rightTitle = "Soil Preferences";
+  const rightContent = [
+    "Mahogany grows well in various soil types but thrives best in deep, well-drained soils.",
+    "Best Suited Soil: Loamy, alluvial, and lateritic soils",
+    "Soil Depth: Deep soils encourage strong root development",
+    "Soil Drainage: Well-drained soil is essential to prevent water logging",
+    "PH Range: 5.5 – 7.5 (slightly acidic to neutral)",
+    "Due to its adaptability, Mahogany is ideal for agroforestry systems.",
+  ];
+  return (
+    <>
+      <WhyChooseLayout
+        card={cardData}
+        heading={whychooseHeading}
+        GrowthHeading={GrowthHeading}
+        leftTitle={leftTitle}
+        rightTitle={rightTitle}
+        leftContent={leftContent}
+        rightContent={rightContent}
       />
     </>
   );
