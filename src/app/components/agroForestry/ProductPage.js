@@ -71,14 +71,17 @@ export const ProductPage = () => {
         <div className="mx-auto max-w-7xl px-4 md:px-8 lg:px-2 max-ful">
           <div className="grid  grid-col-1  md:grid-cols-12 justify-center gap-4">
             <div className="w-full md:col-span-6">
+
               <Image
                 src={bigimg}
                 alt="product"
                 className="w-full h-auto rounded-tl-3xl rounded-tr-3xl"
               />
-              <div className="bg-[#9A9771] text-center md:text-left text-2xl text-white px-6 lg:px-8 p-4 lg:p-5">
+
+              <Link
+                href="agroForestry/timber" className="bg-[#9A9771] text-center md:text-left text-2xl text-white px-6 block w-full lg:px-8 p-4 lg:p-5">
                 {category1}
-              </div>
+              </Link>
             </div>
             <div className="w-full md:col-span-6">
               <div className="grid items-center grid-col-1  md:grid-cols-12 justify-center gap-4">
