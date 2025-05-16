@@ -76,7 +76,7 @@ export const HarvestingLayout = ({
   );
 };
 
-export const MarketLayout = ({ marketData }) => {
+export const MarketLayout = ({ marketData, contentClass }) => {
   return (
     <>
       <section className="py-12 lg:py-16">
@@ -96,7 +96,7 @@ export const MarketLayout = ({ marketData }) => {
               </div>
             </div>
 
-            <div className="md:w-6/12 w-12/12">
+            <div className={`md:w-6/12 w-12/12 ${contentClass}`}>
               <h2 className="text-3xl md:leading-[1.3] md:text-4xl font-semibold redhat text-[#1B453C]">
                 {marketData.title}
               </h2>
