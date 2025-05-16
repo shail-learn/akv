@@ -89,6 +89,7 @@ export const WhyChooseLayout = ({
   rightTitle,
   leftContent,
   rightContent,
+  icon
 }) => {
   return (
     <>
@@ -143,6 +144,15 @@ export const WhyChooseLayout = ({
                           <h3 className="text-base md:text-[16] text-black font-bold">
                             {item.title}
                           </h3>
+                          {item.icon && (
+                            <Image
+                              src={item.icon}
+                              alt="Icon"
+                              width={40}
+                              height={40}
+                              className="object-contain"
+                            />
+                          )}
                           <p className="text-[13px] font-light text-black">
                             {item.description}
                           </p>
