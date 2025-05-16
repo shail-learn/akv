@@ -22,7 +22,7 @@ import { WhyChooseLayout } from "../utilities/LookingInvestLayout";
 export const Growth = () => {
   const GrowthHeading = " Cultivation & Growth Characteristics";
   const GrowthDescription =
-    "TMahogany has excellent growth traits that make it ideal for commercial plantations.";
+    "Mahogany has excellent growth traits that make it ideal for commercial plantations.";
   const slides = [
     {
       group: "Silvicultural Characteristics",
