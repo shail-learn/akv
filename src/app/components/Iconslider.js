@@ -6,7 +6,7 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
-export const Iconslider = ({ heading, card, titleClass }) => {
+export const Iconslider = ({ heading, card, titleClass,icon }) => {
   return (
     <>
       <div className="relative z-20 bg-[#1b453c] text-white pb-20 -mt-20">
@@ -33,18 +33,18 @@ export const Iconslider = ({ heading, card, titleClass }) => {
                 breakpoints={{
                   320: { slidesPerView: 1, spaceBetween: 30 },
                   640: { slidesPerView: 2, spaceBetween: 30 },
-                  768: { slidesPerView: 3, spaceBetween: 30 },
-                  1024: { slidesPerView: 3, spaceBetween: 30 },
+                  768: { slidesPerView: 3, spaceBetween: 20 },
+                  1024: { slidesPerView: 3, spaceBetween: 20 },
                 }}
-                className="mySwiper2 swiper_padd !p-4 light_active white_arrow"
+                className="mySwiper2 swiper_padd !p-4 icon_slider light_active white_arrow"
               >
                 {card.map((item, index) => (
                   <SwiperSlide key={index}>
                     <div
-                      className="lg:col-span-4 bg-white transition-all rounded-3xl card1 duration-400 text-black p-8 w-full"
+                      className="lg:col-span-4 bg-white transition-all rounded-[20px] card1 duration-400 text-black p-6 md:p-10 w-full"
                       style={{ boxShadow: "2px 2px 6px 0px #00000033" }}
                     >
-                      <div className="grid items-center md:text-left justify-center gap-6">
+                      <div className="grid items-center  text-center justify-center gap-6">
                         <h3
                           className={`text-base md:text-[16] text-black font-bold ${titleClass}`}
                         >
@@ -56,7 +56,7 @@ export const Iconslider = ({ heading, card, titleClass }) => {
                             alt="Icon"
                             width={40}
                             height={40}
-                            className="object-contain"
+                            className="object-contain mx-auto"
                           />
                         )}
                         <p className="text-[13px] font-light text-black">
