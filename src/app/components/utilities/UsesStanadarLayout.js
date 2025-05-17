@@ -79,7 +79,7 @@ export const HarvestingLayout = ({
 export const MarketLayout = ({ marketData, contentClass }) => {
   return (
     <>
-      <section className="py-12 lg:py-16">
+      <section className="py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-2">
           <div className="flex flex-col lg:flex-row justify-between items-center gap-12 lg:gap-16">
             <div className="md:w-1/2 w-full">
