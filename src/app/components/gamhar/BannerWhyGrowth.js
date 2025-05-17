@@ -74,9 +74,9 @@ export const Why = () => {
                                 className="rounded-xl w-full h-auto object-cover"
                             />
 
-                            <div className="absolute top-4 left-4 bg-black/60 text-white px-4 py-2 rounded-lg text-xl font-semibold">
+                            {/* <div className="absolute top-4 left-4 bg-black/60 text-white px-4 py-2 rounded-lg text-xl font-semibold">
                                 {gamharData.title}
-                            </div>
+                            </div> */}
                         </div>
 
                         <div className="w-full md:w-1/2 space-y-4 md:space-y-8">
