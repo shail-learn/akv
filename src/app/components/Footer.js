@@ -39,7 +39,7 @@ export const Footer = (htmlContent) => {
   ];
   return (
     <footer className='bg-[#1B453C]  px-4 md:px-8 lg:px-2  py-8  md:py-16' >
-      <Link className='fixed right-2 bottom-4 z-10' target="_blank" href="https://wa.me/919220152225?text=Hey!%0A%0AWelcome%20to%20Krishi%20Vana%20-%0A%0">
+      <Link className='fixed right-2 bottom-4 z-[99]' target="_blank" href="https://wa.me/919220152225?text=Hey!%0A%0AWelcome%20to%20Krishi%20Vana%20-%0A%0">
         <Image className='h-16 w-auto' src={whatsapp} alt='whatsapp' />
       </Link>
       <section className='mx-auto max-w-7xl'>
