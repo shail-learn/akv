@@ -2,15 +2,24 @@
 import React from "react";
 import BannerPage from "../BannerPage";
 import banner from "../../../assets/images/IndigenosFruits/indigenousfruitsBanner.webp";
-import { Iconslider } from "../Iconslider";
 import whychooose from "../../../assets/images/kulu/wavy.svg";
 import Image from "next/image";
-import SpeciesSlider from "../utilities/ContentSlider";
-import Silvicultural1 from "../../../assets/images/mahagony/Silvicultural1.webp";
+import Silvicultural1 from "../../../assets/images/IndigenosFruits/Plantation.webp";
 import { GrowthSlider } from "../utilities/Cultivationgrowthwhychoose";
 import img01 from "../../../assets/images/IndigenosFruits/IndigenousTech.webp";
-import { MarketLayout } from "../utilities/UsesStanadarLayout";
-
+import BelImg from "../../../assets/images/IndigenosFruits/Bel.webp";
+import JamunImg from "../../../assets/images/IndigenosFruits/jammun.webp";
+import TamarindImg from "../../../assets/images/IndigenosFruits/Tamarid.webp";
+import ShahtootImg from "../../../assets/images/IndigenosFruits/Shahtoot.webp";
+import BerImg from "../../../assets/images/IndigenosFruits/Ber.webp";
+import KarondaImg from "../../../assets/images/IndigenosFruits/Karonda.webp";
+import RamfalImg from "../../../assets/images/IndigenosFruits/Ramfal.webp";
+import GuavaImg from "../../../assets/images/IndigenosFruits/guava.webp";
+import CustardAppleImg from "../../../assets/images/IndigenosFruits/CusturdApple.webp";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
 export const IndigenousBanner = () => {
   const text = {
     banner: banner,
@@ -35,138 +44,278 @@ export const IndigenousBanner = () => {
 };
 export const WhychoooseIndigenous = () => {
   const heading = "Why Indigenous Fruits Matter?";
-  const cardData = [
-    {
-      title:
-        " Atulye integrates these species into its agroforestry model to promote environmental sustainability, community health, and long-term agricultural productivity.",
-    },
-    {
-      title:
-        " These fruits are uniquely adapted to Indian soil and climate, making them more resilient and sustainable to grow",
-    },
-    {
-      title:
-        " They require minimal inputs, are naturally pest-resistant, and hold deep roots in Ayurveda and traditional wellness practices. Indigenous fruits support biodiversity, improve soil fertility, and are loaded with nutrients.",
-    },
+  const items = [
+    "Atulye integrates these species into its agroforestry model to promote environmental sustainability, community health, and long-term agricultural productivity.",
+    "These fruits are uniquely adapted to Indian soil and climate, making them more resilient and sustainable to grow.",
+    "They require minimal inputs, are naturally pest-resistant, and hold deep roots in Ayurveda and traditional wellness practices. Indigenous fruits support biodiversity, improve soil fertility, and are loaded with nutrients.",
   ];
 
   return (
     <>
-      <div className="relative w-full md:-mt-28 z-10 devided-line">
-        <Image
-          src={whychooose}
-          alt="Divider"
-          width={1920}
-          height={700}
-          className="w-full object-cover h-full"
-        />
-      </div>
+      {/* Background Image Section */}
+      <section className="relative">
+        <div className="relative w-full md:-mt-28 z-10 devided-line">
+          <Image
+            src={whychooose}
+            alt="Divider"
+            width={1920}
+            height={700}
+            className="w-full object-cover h-full"
+          />
+        </div>
 
-      <Iconslider
-        card={cardData}
-        heading={heading}
-        titleClass="!font-medium text-sm"
-      />
+        {/* Content */}
+        <div className="relative z-20 bg-[#1b453c] text-white pb-20 -mt-20">
+          <div className="max-w-7xl mx-auto px-4">
+            <h2 className="text-3xl md:text-4xl font-semibold text-center pt-14 pb-10">
+              {heading}
+            </h2>
+
+            <div className="flex flex-col md:flex-row justify-center items-start gap-8 md:gap-12 text-center md:text-left mt-10">
+              {items.map((text, idx) => (
+                <div
+                  key={idx}
+                  className={`flex-1 relative px-4 md:px-6 ${
+                    idx !== 0 ? "md:border-l md:border-gray-400" : ""
+                  }`}
+                >
+                  <p className="text-sm leading-relaxed">{text}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
-export const KeySpcies = () => {
-  const speciesData = [
+export const KeySpecies = () => {
+  const heading = "Key Species We Grow at Atulye Krishi Vana";
+
+  const cardData = [
     {
-      name: "Bel (Aegle marmelos)",
-      benefits:
-        "Revered in Ayurveda, Bel is known for its digestive and detoxifying properties.",
-      conditions:
-        "Thrives in dry regions and well-drained loamy soils. Requires full sunlight.",
-      spacing: "8 x 8 meters",
-      uses: "Medicinal drinks, chutneys, religious rituals.",
+      title: "Bel (Aegle marmelos)",
+      Img: BelImg,
+      description: "Uses: Medicinal drinks, chutneys, religious rituals.",
+      pointors: [
+        {
+          title: "Benefits",
+          des: "Revered in Ayurveda, Bel is known for its digestive and detoxifying properties. It strengthens immunity and is often used in juices and herbal formulations.",
+        },
+        {
+          title: "Growth Conditions",
+          des: "Thrives in dry regions and well-drained loamy soils. Requires full sunlight.",
+        },
+        { title: "Spacing", des: "8 x 8 meters" },
+      ],
     },
     {
-      name: "Jamun (Syzygium cumini)",
-      benefits:
-        "Rich in iron and antioxidants, Jamun is excellent for managing diabetes.",
-      conditions:
-        "Prefers tropical to subtropical climates. Grows well in alluvial soils.",
-      spacing: "10 x 10 meters",
-      uses: "Fresh fruit, juices, vinegar, and medicinal powders.",
+      title: "Jamun (Syzygium cumini)",
+      Img: JamunImg,
+      description: "Uses: Fresh fruit, juices, vinegar, and medicinal powders.",
+      pointors: [
+        {
+          title: "Benefits",
+          des: "Rich in iron and antioxidants, Jamun is excellent for managing diabetes and improving digestion.",
+        },
+        {
+          title: "Growth Conditions",
+          des: "Prefers tropical to subtropical climates. Grows well in deep, loamy, and alluvial soils.",
+        },
+        { title: "Spacing", des: "10 x 10 meters" },
+      ],
     },
     {
-      name: "Tamarind (Tamarindus indica)",
-      benefits:
-        "A culinary staple, tamarind is rich in Vitamin C, aids digestion, and has antibacterial properties.",
-      conditions:
-        "Grows best in red loamy and alluvial soils. Highly drought-tolerant.",
-      spacing: "10 x 10 meters",
-      uses: "Pulp for food and beverages, traditional medicine.",
+      title: "Tamarind (Tamarindus indica)",
+      Img: TamarindImg,
+      description: "Uses: Pulp for food and beverages, traditional medicine.",
+      pointors: [
+        {
+          title: "Benefits",
+          des: "A culinary staple, tamarind is rich in Vitamin C, aids digestion, and has antibacterial properties.",
+        },
+        {
+          title: "Growth Conditions",
+          des: "Grows best in red loamy and alluvial soils. Highly drought-tolerant.",
+        },
+        { title: "Spacing", des: "10 x 10 meters" },
+      ],
     },
     {
-      name: "Shahtoot (Morus alba)",
-      benefits:
-        "High in antioxidants, supports heart health, and boosts immunity.",
-      conditions:
-        "Prefers well-drained soils and tolerates a wide range of climatic conditions.",
-      spacing: "6 x 6 meters",
-      uses: "Fresh consumption, jams, wines, and sericulture (silkworm farming).",
+      title: "Shahtoot (Morus alba)",
+      Img: ShahtootImg,
+      description:
+        "Uses: Fresh consumption, jams, wines, and sericulture (silkworm farming).",
+      pointors: [
+        {
+          title: "Benefits",
+          des: "High in antioxidants, supports heart health, and boosts immunity.",
+        },
+        {
+          title: "Growth Conditions",
+          des: "Prefers well-drained soils and tolerates a wide range of climatic conditions.",
+        },
+        { title: "Spacing", des: "6 x 6 meters" },
+      ],
     },
     {
-      name: "Ber (Ziziphus mauritiana)",
-      benefits:
-        "Known as Indian jujube, it is rich in Vitamin C and helps in skin care and immunity.",
-      conditions:
-        "Grows well in arid and semi-arid climates; drought-resistant.",
-      spacing: "6 x 6 meters",
-      uses: "Fresh consumption, pickles, and medicinal use.",
+      title: "Ber (Ziziphus mauritiana)",
+      Img: BerImg,
+      description: "Uses: Fresh consumption, pickles, and medicinal use.",
+      pointors: [
+        {
+          title: "Benefits",
+          des: "Known as Indian jujube, it is rich in Vitamin C and helps in skin care and immunity.",
+        },
+        {
+          title: "Growth Conditions",
+          des: "Grows well in arid and semi-arid climates; drought-resistant.",
+        },
+        { title: "Spacing", des: "6 x 6 meters" },
+      ],
     },
     {
-      name: "Karonda (Carissa carandas)",
-      benefits:
-        "High in iron and Vitamin C. Supports digestion and heart health.",
-      conditions:
-        "Grows in a variety of soils, including saline and rocky terrain.",
-      spacing: "4 x 4 meters",
-      uses: "Pickles, jams, chutneys, and traditional medicine.",
+      title: "Karonda (Carissa carandas)",
+      Img: KarondaImg,
+      description: "Uses: Pickles, jams, chutneys, and traditional medicine.",
+      pointors: [
+        {
+          title: "Benefits",
+          des: "High in iron and Vitamin C. Supports digestion and heart health.",
+        },
+        {
+          title: "Growth Conditions",
+          des: "Grows in a variety of soils, including saline and rocky terrain.",
+        },
+        { title: "Spacing", des: "4 x 4 meters" },
+      ],
     },
     {
-      name: "Ramfal (Annona reticulata)",
-      benefits:
-        "Known as Bullock's Heart, it aids digestion and is a good source of Vitamin C and B6.",
-      conditions: "Requires warm climate and well-drained loamy soils.",
-      spacing: "6 x 6 meters",
-      uses: "Fresh fruit consumption, smoothies, and desserts.",
+      title: "Ramfal (Annona reticulata)",
+      Img: RamfalImg,
+      description: "Uses: Fresh fruit consumption, smoothies, and desserts.",
+      pointors: [
+        {
+          title: "Benefits",
+          des: "Known as Bullock's Heart, it aids digestion and is a good source of Vitamin C and B6.",
+        },
+        {
+          title: "Growth Conditions",
+          des: "Requires warm climate and well-drained loamy soils.",
+        },
+        { title: "Spacing", des: "6 x 6 meters" },
+      ],
     },
     {
-      name: "Guava (Psidium guajava)",
-      benefits:
-        "Loaded with Vitamin C, fiber, and antioxidants. Supports weight loss and improves heart health.",
-      conditions:
-        "Thrives in both tropical and subtropical climates. Needs well-drained soils.",
-      spacing: "6 x 6 meters",
-      uses: "Juices, jams, and fresh eating.",
+      title: "Guava (Psidium guajava)",
+      Img: GuavaImg,
+      description: "Uses: Juices, jams, and fresh eating.",
+      pointors: [
+        {
+          title: "Benefits",
+          des: "Loaded with Vitamin C, fiber, and antioxidants. Supports weight loss and improves heart health.",
+        },
+        {
+          title: "Growth Conditions",
+          des: "Requires warm climate and well-drained loamy soils.",
+        },
+        { title: "Spacing", des: "6 x 6 meters" },
+      ],
     },
     {
-      name: "Custard Apple (Annona squamosa)",
-      benefits: "Excellent for brain health, digestion, and immunity.",
-      conditions:
-        "Prefers light soils, well-drained, and thrives in dry and hot climates.",
-      spacing: "5 x 5 meters",
-      uses: "Fresh fruit, desserts, milkshakes, and traditional medicine.",
-    },
-    {
-      name: "Tendu (Diospyros melanoxylon)",
-      benefits: "Known for its medicinal leaves and high antioxidant content.",
-      conditions: "Grows well in dry deciduous forests and poor rocky soils.",
-      spacing: "6 x 6 meters",
-      uses: "Traditional medicine, fruit, and tendu leaves for bidi rolling.",
+      title: "Custard Apple (Annona squamosa)",
+      Img: CustardAppleImg,
+      description: "Uses: Ice creams, shakes, and desserts.",
+      pointors: [
+        {
+          title: "Benefits",
+          des: "Excellent for brain health, digestion, and immunity.",
+        },
+        {
+          title: "Growth Conditions",
+          des: "Prefers light soils, well-drained, and thrives in dry and hot climates.",
+        },
+        { title: "Spacing", des: "5 x 5 meters" },
+      ],
     },
   ];
 
   return (
-    <>
-      <SpeciesSlider
-        title="Key Species We Grow at Atulye Krishi Vana"
-        speciesData={speciesData}
-      />
-    </>
+    <div className="relative z-20 bg-[#1b453c] text-white pb-20 -mt-20">
+      <div className="max-w-6xl mx-auto px-4">
+        <h2 className="text-3xl md:text-4xl font-medium text-center pt-14 pb-10">
+          {heading}
+        </h2>
+
+        <div className="w-full mx-auto relative whychose">
+          <div className="mx-auto w-[95%]">
+            <Swiper
+              slidesPerView={1}
+              spaceBetween={20}
+              navigation={{
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              }}
+              loop={true}
+              modules={[Autoplay, Navigation, Pagination]}
+              autoplay={{
+                delay: 6000,
+                disableOnInteraction: false,
+              }}
+              breakpoints={{
+                320: { slidesPerView: 1, spaceBetween: 30 },
+                640: { slidesPerView: 2, spaceBetween: 30 },
+                768: { slidesPerView: 3, spaceBetween: 20 },
+                1024: { slidesPerView: 3, spaceBetween: 20 },
+              }}
+              className="mySwiper2 swiper_padd !p-4  light_active white_arrow"
+            >
+              {cardData.map((item, index) => (
+                <SwiperSlide key={index}>
+                  <div
+                    className="bg-white text-black rounded-[20px] p-6 md:p-8 w-full h-full flex flex-col items-center text-center shadow-md"
+                    style={{ boxShadow: "2px 2px 6px 0px #00000033" }}
+                  >
+                    {/* Title */}
+                    <h3 className="text-md md:text-md font-bold mb-2">
+                      {item.title}
+                    </h3>
+
+                    {/* Description */}
+                    <p className="text-[10px] md:text-[13px] font-normal text-black mb-4">
+                      {item.description}
+                    </p>
+
+                    {/* Image */}
+                    <div className="w-[150px] h-[120px] md:w-[150px] md:h-[150px] overflow-hidden mb-4">
+                      <Image
+                        src={item.Img}
+                        alt={item.title}
+                        className="object-contain w-full h-full"
+                      />
+                    </div>
+
+                    {/* List of Pointors */}
+                    <ul className="text-[12px] text-left list-disc list-inside space-y-2 text-black max-w-[280px] mx-auto">
+                      {item.pointors.map((pointer, idx) => (
+                        <li key={idx}>
+                          <strong>{pointer.title}:</strong> {pointer.des}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+
+            <div className="black-arrow">
+              <button className="swiper-button-prev text-2xl !left-0 px-4 py-2"></button>
+              <button className="swiper-button-next !right-0 px-4 py-2"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
@@ -192,6 +341,7 @@ export const IndigenousPlantation = () => {
     </>
   );
 };
+
 export const IndigenousTechMeet = () => {
   const marketData = {
     imageSrc: img01,

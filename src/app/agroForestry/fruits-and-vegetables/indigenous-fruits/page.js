@@ -4,6 +4,7 @@ import {
   IndigenousPlantation,
   IndigenousTechMeet,
   KeySpcies,
+  KeySpecies,
   WhychoooseIndigenous,
 } from "@/app/components/indigenous-fruits/BannerWhyChooseSpecies";
 import {
@@ -18,7 +19,7 @@ const Page = () => {
     <>
       <IndigenousBanner />
       <WhychoooseIndigenous />
-      <KeySpcies />
+      <KeySpecies />
       <IndigenousPlantation />
       <IndigenousTechMeet />
       <MarketPotentialSection />
