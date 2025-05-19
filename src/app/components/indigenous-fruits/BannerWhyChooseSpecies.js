@@ -52,7 +52,7 @@ export const WhychoooseIndigenous = () => {
 
   return (
     <>
-      <div className="relative w-full md:-mt-28 z-10">
+      <div className="relative w-full md:-mt-28 z-10 devided-line">
         <Image
           src={whychooose}
           alt="Divider"

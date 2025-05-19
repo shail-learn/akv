@@ -15,7 +15,6 @@ import { MarketLayout } from '../utilities/UsesStanadarLayout';
 
 export const Characteristics = () => {
     const GrowthHeading = "Cultivation & Growth Characteristics";
-    const GrowthDescription = ""
     const slides = [
       {
         group: "Climate & Soil Conditions",
@@ -79,7 +78,6 @@ export const Characteristics = () => {
       <GrowthSlider
 
           GrowthHeading={GrowthHeading}
-          GrowthDescription={GrowthDescription}
           slides={slides}
         />
 

@@ -30,11 +30,14 @@ export const GrowthSlider = ({ GrowthHeading, GrowthDescription, slides }) => {
         <h2 className="redhat  text-3xl md:text-[40px] font-medium mb-3">
           {GrowthHeading}
         </h2>
+        {GrowthDescription && (
         <p className="text-sm md:text-base mb-10">{GrowthDescription}</p>
+      )}
 
         <h3 className="text-2xl font-medium mb-6 transition-all duration-300">
           {getCurrentHeading()}
         </h3>
+
 
         <Swiper
           modules={[Navigation]}
