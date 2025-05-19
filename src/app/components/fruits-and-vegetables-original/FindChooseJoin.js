@@ -16,7 +16,6 @@ import fruit10 from "../../../assets/images/fruits-vegetables/fruit10.webp";
 import fruit11 from "../../../assets/images/fruits-vegetables/Indigenous.webp";
 import fruit12 from "../../../assets/images/fruits-vegetables/lime.webp";
 
-
 import Plant from "../../../assets/images/eco/future.webp";
 import grow from "../../../assets/images/fruits-vegetables/grow.png";
 
@@ -29,7 +28,7 @@ export const Find = () => {
     {
       title: "Citrus & Juicy Fruits",
       image: fruit1,
-      link: "#",
+      link: "/agroForestry/fruits-and-vegetables/citrus-fruit",
     },
     {
       title: "Berry, Vine & Nut Plants",

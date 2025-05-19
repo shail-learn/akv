@@ -31,13 +31,12 @@ export const GrowthSlider = ({ GrowthHeading, GrowthDescription, slides }) => {
           {GrowthHeading}
         </h2>
         {GrowthDescription && (
-        <p className="text-sm md:text-base mb-10">{GrowthDescription}</p>
-      )}
+          <p className="text-sm md:text-base mb-10">{GrowthDescription}</p>
+        )}
 
         <h3 className="text-2xl font-medium mb-6 transition-all duration-300">
           {getCurrentHeading()}
         </h3>
-
 
         <Swiper
           modules={[Navigation]}
@@ -52,13 +51,15 @@ export const GrowthSlider = ({ GrowthHeading, GrowthDescription, slides }) => {
                 <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-white shadow-lg mb-6">
                   <Image
                     src={item.image}
-                    alt={item.title}
-                    width={150}
-                    height={150}
+                    alt="image"
+                    width={180}
+                    height={180}
                     className="object-cover w-full h-full"
                   />
                 </div>
-                <h4 className="text-lg font-medium py-2">{item.title}</h4>
+                {item.title && (
+                  <h4 className="text-lg font-medium py-2">{item.title}</h4>
+                )}
                 <p className="text-sm font-normal">{item.desc}</p>
               </div>
             </SwiperSlide>
@@ -98,9 +99,10 @@ export const FaqsLayout = ({ heading, description, faqs }) => {
                     onClick={() => toggleFAQ(index)}
                     className={`w-full text-left flex items-center rounded-2xl justify-between p-4
                       transition-all duration-300
-                      ${openIndex === index
-                        ? "bg-[#1B453CE3] text-white rounded-bl-[0px] rounded-br-[0px] "
-                        : "bg-[#D9D9D9] text-[#000]"
+                      ${
+                        openIndex === index
+                          ? "bg-[#1B453CE3] text-white rounded-bl-[0px] rounded-br-[0px] "
+                          : "bg-[#D9D9D9] text-[#000]"
                       }`}
                   >
                     <span
@@ -117,10 +119,11 @@ export const FaqsLayout = ({ heading, description, faqs }) => {
                   </button>
                   <div
                     className={`overflow-hidden bg-[#1B453CE3] rounded-bl-2xl rounded-br-2xl px-4 text-white transition-[max-height] duration-300 ease-in-out
-                                ${openIndex === index
-                        ? "max-h-[300px] opacity-100"
-                        : "max-h-0 opacity-0"
-                      }`}
+                                ${
+                                  openIndex === index
+                                    ? "max-h-[500px] opacity-100"
+                                    : "max-h-0 opacity-0"
+                                }`}
                   >
                     <p
                       className=" pt-0  mb-6 py-4 text-[15px] md:text-base font-light text-[#00] text-opacity-75"
