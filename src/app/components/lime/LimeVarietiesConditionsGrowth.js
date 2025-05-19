@@ -3,8 +3,10 @@ import Image from "next/image";
 import BannerPage from '../BannerPage';
 import banner from "../../../assets/images/lime/banner.webp";
 import bgslider from "../../../assets/images/guava/plant-growing.webp";
-import impact1 from "../../../assets/images/guava/fresh-green-leaf.webp";
-import impact2 from "../../../assets/images/guava/impact2.webp";
+import slider1 from "../../../assets/images/lime/image4.webp";
+import slider2 from "../../../assets/images/lime/image1.webp";
+import slider3 from "../../../assets/images/lime/image2.webp";
+import slider4 from "../../../assets/images/lime/image3.webp";
 import { Greenshalfslider, Greenslider, Singleslider } from '../Greenslider';
 
 export const Lime = () => {
@@ -73,7 +75,7 @@ export const Conditions = () => {
     {
       title: "Ideal Growing Conditions",
       info: "Lime cultivation requires well-drained loamy soil and thrives in both tropical and subtropical climates. Our plantations are located at an optimal altitude of up to 1000 meters above sea level, ensuring superior fruit quality.",
-      image: impact1,
+      image: slider1,
       heading: "Seasonal Planting",
       description: [
         "Best time for planting: December – February and June – September",
@@ -84,7 +86,7 @@ export const Conditions = () => {
     {
       title: "Precision Irrigation & Water Management ",
       info: "Water plays a crucial role in lime production. Our drip irrigation systems optimize water usage, preventing stagnation and ensuring deep-root nourishment.",
-      image: impact2,
+      image: slider2,
       heading: " ",
       description: [
         "Frequent irrigation: Every 7–10 days",
@@ -97,7 +99,7 @@ export const Conditions = () => {
     {
       title: "Organic Nutrition & Soil Enrichment",
       info: "We emphasize sustainable farming by using organic manure and balanced nutrient application. Our soil enrichment process ensures that every lime tree receives the essential nutrients for maximum yield.",
-      image: impact1,
+      image: slider3,
       heading: "Fertilizer and Manure Schedule",
       description: [
         "First Year: 10 kg FYM, 200 g N, 100 g P, 100 g K per plant",
@@ -108,7 +110,7 @@ export const Conditions = () => {
     {
       title: "Pruning and Aftercare",
       info: "Regular pruning helps in maintaining plant structure and increasing fruit yield.",
-      image: impact2,
+      image: slider4,
       heading: " ",
       description: [
         "Main stem maintenance: Lower branches (up to 45 cm) are pruned",
@@ -117,6 +119,7 @@ export const Conditions = () => {
 
       ],
     },
+
 
   ];
   return (
@@ -128,8 +131,10 @@ export const Conditions = () => {
 
 
 export const Growth = () => {
-  const heading1 = "Growth Regulators for Enhanced Yield"
-  const text = `We utilize plant growth regulators to boost fruit setting and retention.`
+  const heading1 = "Intercropping for Sustainable Growth"
+  const text = `To maximize land productivity, legumes and vegetable crops are grown as intercrops during the pre-bearing stage. This enhances soil fertility and provides additional income for farmers.`
+
+  const subheading =`Growth Regulators for Enhanced Yield We utilize plant growth regulators to boost fruit setting and retention. `
 
   const boxslider = [
     {
@@ -156,7 +161,7 @@ export const Growth = () => {
   ]
   return (
     <>
-    <Greenshalfslider title={heading1} info={text} data={boxslider} />
+    <Greenshalfslider title={heading1} info={text} data={boxslider} subheading={subheading} />
     </>
   )
 }
