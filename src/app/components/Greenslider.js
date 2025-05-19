@@ -205,79 +205,87 @@ export const Singleslider = ({ data, background }) => {
 
 
 
-export const Greenshalfslider = ({data,info,title}) => {
-  return (
-    <>
-    <section
-        className=" pt-14 pb-16 lg:pt-16 lg:pb-20 vision-sec bg-[#D9D9D9A6] relative hide_title_slider scale_slider  green-arrow " >
-        <div className="absolute bottom-0 left-0 h-1/3  bg-white w-full"> </div>
-        <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2 '>
-          <h2 className="lg:leading-snug text-[#1B453C] redhat mb-7 text-center text-3xl md:text-4xl  font-medium  w-full">
-            {title}</h2>
-          <div className='lg:w-7/12 mx-auto text-center'>
-            <p
-              className="text-[#1B453C] text-sm lg:text-base font-light"
-              dangerouslySetInnerHTML={{ __html: info }}
-            ></p>
-          </div>
+export const Greenshalfslider = ({ data, info, title, subheading }) => {
+    return (
+        <>
+            <section
+                className=" pt-14 pb-16 lg:pt-16 lg:pb-20 vision-sec bg-[#D9D9D9A6] relative hide_title_slider scale_slider  green-arrow " >
+                <div className="absolute bottom-0 left-0 h-1/3  bg-white w-full"> </div>
+                <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2 '>
+                    <h2 className="lg:leading-snug text-[#1B453C] redhat mb-7 text-center text-3xl md:text-4xl  font-medium  w-full">
+                        {title}</h2>
+                    <div className='lg:w-7/12 mx-auto text-center'>
+                        <p
+                            className="text-[#1B453C] text-sm lg:text-base font-light"
+                            dangerouslySetInnerHTML={{ __html: info }}
+                        ></p>
+                        {subheading &&
+                            <p
+                                className="text-[#1B453C] text-sm lg:text-base font-semibold py-6"
+                                dangerouslySetInnerHTML={{ __html: subheading }}
+                            ></p>
+                        }
 
-        </div>
-        <div className='mx-auto max-w-7xl px-4 md:px-8 lg:px-10 '>
-          <div className='  px-0 md:px-6 lg:px-2 relative z-1 '>
-            <div className='mx-auto  w-12/12'>
-              <Swiper
-                style={{
-                  '--swiper-navigation-color': '#fff',
-                  '--swiper-pagination-color': '#fff',
-                }}
 
-                slidesPerView={1}
-                spaceBetween={10}
-                navigation={true}
-                modules={[Autoplay, Navigation]}
-                autoplay={{
-                  delay: 4000,
-                  disableOnInteraction: false,
-                }}
-                breakpoints={{
-                  320: {
-                    slidesPerView: 1,
-                    spaceBetween: 80,
-                  },
-                  640: {
-                    slidesPerView: 2,
-                    spaceBetween: 60,
-                  },
-                  768: {
-                    slidesPerView: 2,
-                    spaceBetween: 70,
-                  },
-                  1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 90,
-                  },
-                }}
-
-                className="mySwiper2 outer-arrow"
-              >
-
-                {data.map((item, index) => (
-                  <SwiperSlide key={index}>
-                    <div className='w-full  item-center flex text-center items-center rounded-[20px] p-12 px-6 !bg-[#8EB558] item_slider' style={{ boxShadow: "4px 4px 4px 0px #0000004A" }}>
-                      <div className='lg:w-12/12 mx-auto'>
-                        <h3 className='text-md !text-[#1B453C] redhat text-2xl pb-2 font-semibold'>{item.title}</h3>
-                        <p className='text-md !text-[#1B453C] font-normal'>{item.description}</p>
-                      </div>
                     </div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
 
-            </div>
-          </div>
-        </div>
-      </section>
+                </div>
+                <div className='mx-auto max-w-7xl px-4 md:px-8 lg:px-10 '>
+                    <div className='  px-0 md:px-6 lg:px-2 relative z-1 '>
+                        <div className='mx-auto  w-12/12'>
+                            <Swiper
+                                style={{
+                                    '--swiper-navigation-color': '#fff',
+                                    '--swiper-pagination-color': '#fff',
+                                }}
 
-    </>
-  )
+                                slidesPerView={1}
+                                spaceBetween={10}
+                                navigation={true}
+                                modules={[Autoplay, Navigation]}
+                                autoplay={{
+                                    delay: 4000,
+                                    disableOnInteraction: false,
+                                }}
+                                breakpoints={{
+                                    320: {
+                                        slidesPerView: 1,
+                                        spaceBetween: 80,
+                                    },
+                                    640: {
+                                        slidesPerView: 2,
+                                        spaceBetween: 60,
+                                    },
+                                    768: {
+                                        slidesPerView: 2,
+                                        spaceBetween: 70,
+                                    },
+                                    1024: {
+                                        slidesPerView: 3,
+                                        spaceBetween: 90,
+                                    },
+                                }}
+
+                                className="mySwiper2 outer-arrow"
+                            >
+
+                                {data.map((item, index) => (
+                                    <SwiperSlide key={index}>
+                                        <div className='w-full  item-center flex text-center items-center rounded-[20px] p-12 px-6 !bg-[#8EB558] item_slider' style={{ boxShadow: "4px 4px 4px 0px #0000004A" }}>
+                                            <div className='lg:w-12/12 mx-auto'>
+                                                <h3 className='text-md !text-[#1B453C] redhat text-2xl pb-2 font-semibold'>{item.title}</h3>
+                                                <p className='text-md !text-[#1B453C] font-normal'>{item.description}</p>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+                                ))}
+                            </Swiper>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </>
+    )
 }

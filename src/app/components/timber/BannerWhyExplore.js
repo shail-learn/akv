@@ -104,7 +104,7 @@ export const Explore = () => {
     {
       title: "Softwood & Light Timber Trees",
       image: fruit3,
-      link: "#"
+      link: "timber/softwood-light-timber-trees"
 
     },
     {
@@ -134,7 +134,7 @@ export const Explore = () => {
     {
       title: "Red Sandalwood",
       image: fruit8,
-      link: "#"
+      link: "timber/red-sandalwood"
 
     },
     {

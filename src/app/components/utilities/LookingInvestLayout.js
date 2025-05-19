@@ -7,13 +7,13 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import whychooose from "../../../assets/images/mahagony/whychooose.svg";
-export const InvestLayout = ({ plantSearon, heading }) => {
+export const InvestLayout = ({ plantSearon, heading, bgimg }) => {
   return (
     <>
       <section
         className=" bg-white pt-16 pb-16 lg:pt-20 lg:pb-20 relative"
         style={{
-          background: `url(${bgimage1.src})center center / cover no-repeat`,
+          background: `url(${bgimg?.src || bgimage1.src}) center center / cover no-repeat`,
         }}
       >
         <div className="absolute left-0 top-0 w-full h-full bg-black opacity-50 z-10"></div>
@@ -94,7 +94,7 @@ export const WhyChooseLayout = ({
   return (
     <>
       <section className="relative">
-        <div className="relative w-full md:-mt-28 z-10">
+        <div className="relative w-full md:-mt-28 z-10 devided-line">
           <Image
             src={whychooose}
             alt="Divider"
