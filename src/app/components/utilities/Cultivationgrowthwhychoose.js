@@ -40,10 +40,10 @@ export const GrowthSlider = ({ GrowthHeading, GrowthDescription, slides }) => {
 
         <Swiper
           modules={[Navigation]}
-          navigation
+          navigation={slides.length > 1} // enable navigation only if more than one slide
           slidesPerView={1}
           onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
-          className="max-w-md mx-auto"
+          className={`max-w-md mx-auto ${slides.length === 1 ? 'hide-arrows' : ''}`}
         >
           {slides.map((item, index) => (
             <SwiperSlide key={index}>
@@ -99,10 +99,9 @@ export const FaqsLayout = ({ heading, description, faqs }) => {
                     onClick={() => toggleFAQ(index)}
                     className={`w-full text-left flex items-center rounded-2xl justify-between p-4
                       transition-all duration-300
-                      ${
-                        openIndex === index
-                          ? "bg-[#1B453CE3] text-white rounded-bl-[0px] rounded-br-[0px] "
-                          : "bg-[#D9D9D9] text-[#000]"
+                      ${openIndex === index
+                        ? "bg-[#1B453CE3] text-white rounded-bl-[0px] rounded-br-[0px] "
+                        : "bg-[#D9D9D9] text-[#000]"
                       }`}
                   >
                     <span
@@ -119,11 +118,10 @@ export const FaqsLayout = ({ heading, description, faqs }) => {
                   </button>
                   <div
                     className={`overflow-hidden bg-[#1B453CE3] rounded-bl-2xl rounded-br-2xl px-4 text-white transition-[max-height] duration-300 ease-in-out
-                                ${
-                                  openIndex === index
-                                    ? "max-h-[500px] opacity-100"
-                                    : "max-h-0 opacity-0"
-                                }`}
+                                ${openIndex === index
+                        ? "max-h-[500px] opacity-100"
+                        : "max-h-0 opacity-0"
+                      }`}
                   >
                     <p
                       className=" pt-0  mb-6 py-4 text-[15px] md:text-base font-light text-[#00] text-opacity-75"

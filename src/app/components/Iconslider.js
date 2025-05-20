@@ -6,10 +6,10 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
-export const Iconslider = ({ heading, card, titleClass,icon }) => {
+export const Iconslider = ({ heading, card, titleClass, icon, custom_class }) => {
   return (
     <>
-      <div className="relative z-20 bg-[#1b453c] text-white pb-20 -mt-20">
+      <div className={`relative z-20 bg-[#1b453c] text-white pb-20 -mt-20 ${custom_class ? custom_class : ""} `}>
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-medium text-center pt-14 pb-10">
             {heading}
@@ -54,12 +54,12 @@ export const Iconslider = ({ heading, card, titleClass,icon }) => {
                           <Image
                             src={item.icon}
                             alt="Icon"
-                            width={40}
-                            height={40}
-                            className="object-contain mx-auto"
+                            width={200}
+                            height={200}
+                            className="object-contain h-9 mx-auto"
                           />
                         )}
-                        <p className="text-[13px] font-light text-black">
+                        <p className="text-[13px] font-normal text-black">
                           {item.description}
                         </p>
                       </div>
