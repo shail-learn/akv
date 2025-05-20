@@ -37,9 +37,26 @@ export const Footer = (htmlContent) => {
         "A&M Agriventures Pvt Ltd, <br/> Village: Ramgarh, Tehsil: lchhawar, <br/> District: Sehore- 466115 Madhya Pradesh, India",
     },
   ];
+
+  const message = `Hello,
+
+Thanks for contacting Atulye Krishi Vana!
+To help us assist you better, please reply with:
+
+Your Name
+
+Location
+
+What you're looking for?`;
+
+  const encodedMessage = encodeURIComponent(message);
   return (
     <footer className='bg-[#1B453C]  px-4 md:px-8 lg:px-2  py-8  md:py-16' >
-      <Link className='fixed right-2 bottom-4 z-[99]' target="_blank" href="https://wa.me/919220152225?text=Hey!%0A%0AWelcome%20to%20Krishi%20Vana%20-%0A%0">
+      <Link
+        className='fixed right-2 bottom-4 z-[99]'
+        target="_blank"
+        href={`https://wa.me/919220152225?text=${encodedMessage}`}
+      >
         <Image className='h-16 w-auto' src={whatsapp} alt='whatsapp' />
       </Link>
       <section className='mx-auto max-w-7xl'>
@@ -54,11 +71,11 @@ export const Footer = (htmlContent) => {
           </div>
 
           <div className='w-full md:w-4/12 grid justify-center'>
-          {!isContactPage && (
-            <div className={`rounded-full bg-white p-4 w-28 h-28 flex justify-center items-center `}  >
-              <Image src={logo} className='w-auto h-full' alt="logo" height="30px" width="30px" />
-            </div>
-)}
+            {!isContactPage && (
+              <div className={`rounded-full bg-white p-4 w-28 h-28 flex justify-center items-center `}  >
+                <Image src={logo} className='w-auto h-full' alt="logo" height="30px" width="30px" />
+              </div>
+            )}
             <ul className="flex gap-2 justify-center mt-5 md:mt-8">
               <li><Link className='bg-[#D2AE6D] p-2 rounded-full grid hover:bg-white' href="https://www.facebook.com/profile.php?id=61552925864614" target='_blank'><FaFacebookF /></Link></li>
               <li><Link className='bg-[#D2AE6D] p-2 rounded-full grid hover:bg-white' href="https://www.instagram.com/atulyekrishivana/" target='_blank'><SiInstagram /></Link></li>
