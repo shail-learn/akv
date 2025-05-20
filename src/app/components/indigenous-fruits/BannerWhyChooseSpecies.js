@@ -268,7 +268,7 @@ export const KeySpecies = () => {
                 768: { slidesPerView: 3, spaceBetween: 20 },
                 1024: { slidesPerView: 3, spaceBetween: 20 },
               }}
-              className="mySwiper2 swiper_padd !p-4  light_active white_arrow"
+              className="mySwiper2 swiper_padd !p-4 middle-upar light_active white_arrow"
             >
               {cardData.map((item, index) => (
                 <SwiperSlide key={index}>
