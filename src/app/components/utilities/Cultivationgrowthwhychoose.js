@@ -27,7 +27,7 @@ export const GrowthSlider = ({ GrowthHeading, GrowthDescription, slides }) => {
       />
 
       <div className="relative my-2 z-10 text-white text-center px-4 max-w-4xl mx-auto GrowthNavigation">
-        <h2 className="redhat  text-3xl md:text-[40px] font-medium mb-3">
+        <h2 className="redhat  text-3xl md:text-[40px] font-medium mb-3 pb-4">
           {GrowthHeading}
         </h2>
         {GrowthDescription && (
@@ -48,7 +48,7 @@ export const GrowthSlider = ({ GrowthHeading, GrowthDescription, slides }) => {
           {slides.map((item, index) => (
             <SwiperSlide key={index}>
               <div className="flex flex-col items-center">
-                <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-white shadow-lg mb-6">
+                <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-white shadow-lg  mb-6">
                   <Image
                     src={item.image}
                     alt="image"
