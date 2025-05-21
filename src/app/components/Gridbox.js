@@ -10,7 +10,7 @@ export const Gridbox = ({ heading, data }) => {
           {heading}
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 2xl:grid-cols-5 gap-16 md:gap-8 img_arrow">
+        <div className="grid grid-cols-1 md:grid-cols-3 2xl:grid-cols-5 gap-16 md:gap-8 img_arrow pb-4">
           {data.map((item, index) => {
             const isEven = index % 2 === 1;
 
