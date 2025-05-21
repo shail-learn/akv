@@ -861,6 +861,10 @@ body button,
     background: linear-gradient(89deg, #e6e6e621 -25.84%, #e6e6e6ad 95.85%);
     width: 22%;
   }
+  .desktop-p-0{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
 }
 
 @media (min-width: 767px) {
@@ -1132,5 +1136,12 @@ body button,
 }
 .img_arrow .flex-col:nth-child(2n) .img_div:after{
   transform: translateX(-50%) rotate(0deg);
+}
+.padding_argust {
+  margin-top: -1rem;
+  padding: 0;
+}
+.padding_argust .pb-10{
+  padding-bottom: 0;
 }
 }
