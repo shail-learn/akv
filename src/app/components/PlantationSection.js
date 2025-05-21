@@ -22,7 +22,7 @@ const PlantationSection = ({ data }) => {
             return (
               <div
                 key={index}
-                className={`md:w-1/2 lg:w-[30%] p-4 pl-10 pr-10 pb-8 w-full border border-black ${borderRadiusClass}`}
+                className={`md:w-1/2 lg:w-[28%] p-4 pl-10 pr-10 pb-8 w-full border border-black ${borderRadiusClass}`}
               >
                 {section.heading && (
                   <h3 className="font-semibold text-base md:text-lg">
