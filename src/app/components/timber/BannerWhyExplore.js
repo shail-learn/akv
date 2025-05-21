@@ -116,13 +116,13 @@ export const Explore = () => {
     {
       title: "Teak",
       image: fruit5,
-      link: "#"
+      link: "timber/teak"
 
     },
     {
       title: "Melia Dubia",
       image: fruit6,
-      link: "#"
+      link: "timber/melia-dubia"
 
     },
     {
