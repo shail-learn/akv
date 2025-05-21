@@ -1,5 +1,7 @@
 "use client"
+
 import Image from "next/image";
+import axios from 'axios';
 import {Banner,VedioHome} from "./components/home/Banner";
 import WhatWeDo from "./components/home/WhatWeDo";
 import ImpactHighlights from "./components/home/impactHighlights";
@@ -13,10 +15,35 @@ import { PurposeAndValue } from "./components/home/PurposeAndValue";
 import { EmpoweringBanner,EmpoweringBox } from "./components/home/Empowering";
 import { PartOfChange } from "./components/home/PartOfChange";
 import { Contact, Map } from "./components/home/Contact";
+import {useEffect,useState} from 'react';
 
 // test comment
 
+
+
+
 export default function Home() {
+
+
+  const [apidata,setapidata]=useState();
+
+  useEffect(()=>{
+
+  async function test(){
+
+    const data=await axios.get('data/page/homepage');
+
+    console.log(data.data);
+    setapidata(data.data);
+
+  }
+
+  test();
+  
+
+},[]);
+
+
   return (
     <>
      <Banner/>
