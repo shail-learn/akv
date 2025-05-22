@@ -775,6 +775,9 @@ body button,
   padding-top: 4rem;
   padding-bottom: 2rem;
 }
+.desktop-p-0.pt-10{
+  padding-bottom: 5rem !important;
+}
 @media (min-width: 1024px) {
   .orange_div .dark_active .swiper-slide-next .bg-white {
     background: #e9a343;
@@ -1143,5 +1146,8 @@ body button,
 }
 .padding_argust .pb-10{
   padding-bottom: 0;
+}
+.desktop-p-0.pt-10{
+  padding-bottom: 2rem !important;
 }
 }
