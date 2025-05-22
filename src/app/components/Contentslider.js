@@ -50,7 +50,7 @@ export const Contentslider = ({ title, speciesData }) => {
                                     <p className="mt-2 font-light py-3 text-sm">{item.uses}</p>
                                 )}
                                  {item.info2 && (
-                                    <p className="mb-3 mt-3 font-light text-sm">{item.info}</p>
+                                    <p className="mb-3 mt-3 font-light text-sm">{item.info2}</p>
                                 )}
                             </div>
                         </SwiperSlide>

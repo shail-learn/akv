@@ -19,10 +19,12 @@ export const InvestLayout = ({ plantSearon, heading, bgimg }) => {
         <div className="absolute left-0 top-0 w-full h-full bg-black opacity-50 z-10"></div>
         <div className="mx-auto max-w-7xl  px-4 md:px-8 lg:px-2 relative z-10">
           <div className="flex flex-wrap  items-center gap-6 px-0 md:px-6  lg:px-2">
-            <div className="w-[95%] md:w-5/12 ">
-              <h2 className="text-3xl md:leading-[1.3] md:text-4xl mb-10 font-medium redhat text-white">
+          <div className="w-[95%] md:w-12/12 ">
+              <h2 className="text-3xl md:leading-[1.3] text-center md:text-4xl mb-10 font-medium redhat text-white">
                 {heading}
               </h2>
+              </div>
+              <div className="w-[95%] md:w-5/12 ">
               <div className="bg-white backdrop-blur bg-opacity-20 rounded-[20px]">
                 {plantSearon.map((section, sectionIndex) => (
                   <div key={sectionIndex} className="mb-6">
