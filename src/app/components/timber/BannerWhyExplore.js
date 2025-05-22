@@ -128,7 +128,7 @@ export const Explore = () => {
     {
       title: "Rosewood",
       image: fruit7,
-      link: "#"
+      link: "timber/rosewood"
 
     },
     {
@@ -140,7 +140,7 @@ export const Explore = () => {
     {
       title: "Sandalwood",
       image: fruit9,
-      link: "#"
+      link: "timber/sandalwood"
 
     },
 

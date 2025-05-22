@@ -215,7 +215,6 @@ export const Cultivation = () => {
     return (
         <>
             <GrowthSlider
-
                 GrowthHeading={GrowthHeading}
                 GrowthDescription={GrowthDescription}
                 slides={slides}
