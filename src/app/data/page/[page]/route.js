@@ -16,7 +16,7 @@ export async function GET(req, {params}) {
 
   // }
 
-  const page_exists=false;
+  let page_exists=false;
 
   switch(page){
     case 'homepage':
@@ -27,6 +27,8 @@ export async function GET(req, {params}) {
         break;
 
   }
+
+  
 
   if (page_exists) {
     
