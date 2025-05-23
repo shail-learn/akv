@@ -10,7 +10,7 @@ import {
   BerryAndVineFaqs,
   GettingStart,
   PartnerSec,
-} from "./GettingStartPartnerFaq";
+} from "../../../components/berry-vine-fruits/GettingStartPartnerFaq";
 
 const Page = () => {
   return (
