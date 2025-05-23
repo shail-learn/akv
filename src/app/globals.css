@@ -778,6 +778,7 @@ body button,
 .desktop-p-0.pt-10{
   padding-bottom: 5rem !important;
 }
+
 .white_grid{
   background: #fff;
 }
@@ -808,6 +809,7 @@ body .plant_p{
   color: #000;
   padding-top: 2rem;
 }
+
 @media (min-width: 1024px) {
   .orange_div .dark_active .swiper-slide-next .bg-white {
     background: #e9a343;
