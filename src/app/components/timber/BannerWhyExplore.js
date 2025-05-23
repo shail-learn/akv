@@ -93,12 +93,12 @@ export const Explore = () => {
     {
       title: "Hardwood Trees",
       image: fruit1,
-      link: "#"
+      link: "timber/hardwood-trees"
     },
     {
       title: "Fast-Growing Timber Trees",
       image: fruit2,
-      link: "#"
+      link: "timber/fast-growing-timber-trees"
 
     },
     {
