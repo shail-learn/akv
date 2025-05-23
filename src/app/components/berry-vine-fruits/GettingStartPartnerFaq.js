@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
-import choose1 from "../../../../assets/images/berryfruits/gettingStart1.webp";
-import choose2 from "../../../../assets/images/berryfruits/gettingStart2.webp";
-import choose3 from "../../../../assets/images/berryfruits/gettingStart3.webp";
-import choose4 from "../../../../assets/images/berryfruits/gettingStart4.webp";
-import choose5 from "../../../../assets/images/berryfruits/gettingStart5.webp";
-import PartnerBg from "../../../../assets/images/berryfruits/PartnerBg.webp";
+import choose1 from "../../../assets/images/berryfruits/gettingStart1.webp";
+import choose2 from "../../../assets/images/berryfruits/gettingStart2.webp";
+import choose3 from "../../../assets/images/berryfruits/gettingStart3.webp";
+import choose4 from "../../../assets/images/berryfruits/gettingStart4.webp";
+import choose5 from "../../../assets/images/berryfruits/gettingStart5.webp";
+import PartnerBg from "../../../assets/images/berryfruits/PartnerBg.webp";
 import { Productlist } from "@/app/components/Productlist";
 import { FaqsLayout } from "@/app/components/utilities/Cultivationgrowthwhychoose";
 
