@@ -33,7 +33,7 @@ export const Find = () => {
     {
       title: "Berry, Vine & Nut Plants",
       image: fruit2,
-      link: "#",
+      link: "/agroForestry/fruits-and-vegetables/berry-vine-fruits",
     },
     {
       title: "Large, Medicinal & Multipurpose Trees",
@@ -43,7 +43,7 @@ export const Find = () => {
     {
       title: "Exotic & Imported Fruits",
       image: fruit4,
-      link: "#",
+      link: "/agroForestry/fruits-and-vegetables/exotic-imported-fruits",
     },
     {
       title: "Indian & Tropical Fruits",

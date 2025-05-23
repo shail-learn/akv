@@ -1,5 +1,8 @@
-import React from 'react'
-import { FaqsLayout, GrowthSlider } from '../utilities/Cultivationgrowthwhychoose';
+import React from "react";
+import {
+  FaqsLayout,
+  GrowthSlider,
+} from "../utilities/Cultivationgrowthwhychoose";
 
 import image1 from "../../../assets/images/softwood/img1.webp";
 import image2 from "../../../assets/images/softwood/img2.webp";
@@ -18,10 +21,8 @@ import choose3 from "../../../assets/images/softwood/choose3.webp";
 import choose4 from "../../../assets/images/softwood/choose4.webp";
 import PartnerBg from "../../../assets/images/softwood/bg.webp";
 
-
-import Titleslider from '../Titleslider';
-import { Productlist } from '../Productlist';
-
+import Titleslider from "../Titleslider";
+import { Productlist } from "../Productlist";
 
 export const Commercial = () => {
   const GrowthHeading = "Cultivation & Growth Characteristics";
@@ -30,7 +31,6 @@ export const Commercial = () => {
       group: "Land Preparation & Plantation Design",
       image: image1,
       desc: "Clearing unwanted vegetation and improving soil fertility with organic compost",
-
     },
     {
       group: "Land Preparation & Plantation Design",
@@ -82,92 +82,68 @@ export const Commercial = () => {
       image: image11,
       desc: "Pipal: Primarily harvested for religious and medicinal use, with occasional timber applications",
     },
-
   ];
 
-
-  const heading = "Commercial & Industrial Applications"
+  const heading = "Commercial & Industrial Applications";
 
   const boxslider = [
     {
-
       heading: "Furniture & Handicrafts Industry",
-      description: 'Softwood is widely used for interior design, modular furniture, and lightweight decor. Haldu and Pakad’s workability makes them ideal for carving, turning, and staining.',
+      description:
+        "Softwood is widely used for interior design, modular furniture, and lightweight decor. Haldu and Pakad’s workability makes them ideal for carving, turning, and staining.",
     },
     {
-
       heading: "Construction & Packaging",
-      description: 'Pakad is commonly used for packing materials, crates, and scaffolding, ensuring cost-effective industrial use.',
+      description:
+        "Pakad is commonly used for packing materials, crates, and scaffolding, ensuring cost-effective industrial use.",
     },
     {
-
       heading: "Religious & Cultural Uses",
-      description: 'Pipal is revered in Hinduism and Buddhism, often planted around temples and used for making religious artifacts.',
+      description:
+        "Pipal is revered in Hinduism and Buddhism, often planted around temples and used for making religious artifacts.",
     },
     {
-
       heading: "Ecological & Environmental Benefits",
-      description: 'These trees contribute to reforestation, biodiversity conservation, and carbon sequestration, making them ideal for sustainable projects.',
+      description:
+        "These trees contribute to reforestation, biodiversity conservation, and carbon sequestration, making them ideal for sustainable projects.",
     },
-
-
-  ]
-
+  ];
 
   return (
     <>
-      <GrowthSlider
-
-        GrowthHeading={GrowthHeading}
-        slides={slides}
-      />
+      <GrowthSlider GrowthHeading={GrowthHeading} slides={slides} />
 
       <Titleslider heading={heading} boxslider={boxslider} />
-
     </>
   );
-}
-
-
+};
 
 export const Why = () => {
-  const heading = "Why Choose Atulye Krishi Vana?"
+  const heading = "Why Choose Atulye Krishi Vana?";
   const fruitData = [
     {
       title: "High-quality saplings & plantation guidance",
       image: choose1,
-
     },
     {
       title: "Scientific agroforestry techniques",
       image: choose2,
-
-
     },
     {
       title: "Eco-friendly & sustainable forestry solutions",
       image: choose3,
-
     },
     {
       title: "Market linkages & buyer connections",
       image: choose4,
-
-
     },
-
-
-
   ];
   return (
     <>
       <Productlist heading={heading} fruitData={fruitData} />
-
     </>
-  )
-}
-
-
+  );
+};
 
 export const Choose = () => {
   const heading = "Start Your Softwood Timber Plantation Today!";
@@ -198,8 +174,7 @@ export const Choose = () => {
       </div>
     </section>
   );
-}
-
+};
 
 export const Faqs = () => {
   const Faqheading =
@@ -218,7 +193,8 @@ export const Faqs = () => {
         "Softwood trees typically grow faster than hardwood species, often reaching maturity within 10-15 years, while hardwood trees can take 30-50 years. Haldu and Pakad can achieve substantial girth in a relatively short span, making them viable for commercial forestry. Pipal, though slower than the other two, offers multiple ecological benefits such as soil stabilization and air purification. Their rapid growth allows frequent harvesting cycles, ensuring a sustainable supply of timber and reducing the environmental impact compared to slower-growing hardwood species.",
     },
     {
-      question: "What are the ideal soil and climatic conditions for growing these trees?",
+      question:
+        "What are the ideal soil and climatic conditions for growing these trees?",
       answer:
         "Softwood and light timber trees thrive in well-drained, loamy to sandy soils with moderate moisture retention. Haldu prefers deep, alluvial soils, while Pakad and Pipal are highly adaptable and can grow in a variety of conditions, including rocky terrains. These species require a warm tropical to subtropical climate with moderate rainfall ranging from 800-1500 mm annually. While Haldu benefits from full sunlight, Pakad and Pipal can tolerate partial shade, making them ideal for agroforestry systems and intercropping with other crops.",
     },
@@ -236,7 +212,6 @@ export const Faqs = () => {
         description={Faqdescription}
         faqs={FaqsData}
       />
-
     </>
   );
-}
+};
