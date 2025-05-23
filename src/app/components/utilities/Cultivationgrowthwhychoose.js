@@ -8,7 +8,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { HiChevronUp, HiChevronDown } from "react-icons/hi2";
 import GrowthBg from "../../../assets/images/mahagony/growthbg.svg";
-export const GrowthSlider = ({ GrowthHeading, GrowthDescription, slides }) => {
+export const GrowthSlider = ({ GrowthHeading, GrowthDescription, slides,className }) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const getCurrentHeading = () => {
@@ -16,7 +16,7 @@ export const GrowthSlider = ({ GrowthHeading, GrowthDescription, slides }) => {
   };
 
   return (
-    <section className="relative py-16 overflow-hidden">
+    <section className={`relative py-16 overflow-hidden ${className? className : ""}`}>
       {/* Background layers */}
       <div className="absolute inset-0 bg-[#1B453C] z-0" />
       <Image

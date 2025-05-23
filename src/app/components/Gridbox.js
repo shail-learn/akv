@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import React from 'react'
 
-export const Gridbox = ({ heading, data }) => {
+export const Gridbox = ({ heading, data , className}) => {
     return (
         <>
-            <section className="bg-[#1B453C] py-12 md:py-16 px-4">
+            <section className={`bg-[#1B453C] py-12 md:py-16 px-4 ${className ? className : ""} `}>
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-white text-3xl md:text-4xl font-semibold mb-16">
+        <h2 className="text-white text-3xl md:text-4xl font-medium mb-16">
           {heading}
         </h2>
 
@@ -33,7 +33,7 @@ export const Gridbox = ({ heading, data }) => {
                 </div>
 
                 {/* Content */}
-                <div className="border-[#295F54] border text-white p-4 rounded-3xl h-full !mt-0 w-full">
+                <div className="border-[#295F54] border text-white p-6 py-8 md:p-4 md:py-6 rounded-3xl h-full !mt-0 w-full">
                   <h4 className="text-base font-semibold mb-2">{item.title}</h4>
                   <p className="text-sm font-light">{item.description}</p>
                 </div>
