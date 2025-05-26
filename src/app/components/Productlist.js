@@ -4,13 +4,21 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
-export const Productlist = ({ heading, fruitData }) => {
+export const Productlist = ({ heading, fruitData, bgimg }) => {
   const [showAll, setShowAll] = useState(false);
 
   const visibleItems = showAll ? fruitData : fruitData.slice(0, 6);
   return (
     <>
-      <section className="py-10 px-4 md:px-10 bg-cover">
+      <section
+        className="py-10 px-4 md:px-10"
+        style={{
+          backgroundImage: bgimg ? `url(${bgimg.src})` : 'none',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      >
         <div className="mx-auto max-w-7xl px-4 md:px-8 lg:px-2 ">
           <h2 className="text-3xl md:text-4xl redhat font-semibold text-center  text-[#1B453C]  mb-14">
             {heading}
