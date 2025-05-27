@@ -48,7 +48,7 @@ export const Find = () => {
     {
       title: "Indian & Tropical Fruits",
       image: fruit5,
-      link: "#",
+      link: "/agroForestry/fruits-and-vegetables/tropical-fruits",
     },
     {
       title: "Guava",
