@@ -212,7 +212,6 @@ export const Plantation = () => {
         <>
 
             <GrowthSlider
-
                 GrowthHeading={GrowthHeading}
                 slides={slides}
             />
