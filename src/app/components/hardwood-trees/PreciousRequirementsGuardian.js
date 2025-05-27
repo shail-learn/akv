@@ -26,8 +26,8 @@ import image8 from "../../../assets/images/hardwood/img11.webp";
 
 export const Precious = () => {
   const custom_class = "white_grid grid_padding"
-  const main_heading = "Bija (Vijaysar) - The Durable Healer"
-  const shortinfo = "Bija, also known as Vijaysar, is a highly durable hardwood prized for its strength and medicinal properties. Native to India, this tree has been an integral part of traditional medicine and woodworking for centuries. "
+  const main_heading = "Red Sanders - The Precious Timber"
+  const shortinfo = "Red Sanders, or Pterocarpus Santalinus, is an exotic hardwood species renowned for its rich red color and high commercial value. This tree is protected due to its scarcity and is widely used in luxury woodcraft and pharmaceuticals."
   const whyChooseData = [
     {
       image: why1,
