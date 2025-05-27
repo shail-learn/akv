@@ -809,6 +809,15 @@ body .plant_p{
   color: #000;
   padding-top: 2rem;
 }
+.custom_height .p-6{
+   padding: 3rem;
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+}
+.custom_height .p-6 h4{
+  margin-bottom: 0;
+}
 
 @media (min-width: 1024px) {
   .orange_div .dark_active .swiper-slide-next .bg-white {

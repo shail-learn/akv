@@ -60,7 +60,7 @@ export const GrowthSlider = ({ GrowthHeading, GrowthDescription, slides,classNam
                 {item.title && (
                   <h4 className="text-lg font-medium py-2">{item.title}</h4>
                 )}
-                <p className="text-sm font-normal">{item.desc}</p>
+                <p className="text-sm font-normal" dangerouslySetInnerHTML={{__html:item.desc}} ></p>
               </div>
             </SwiperSlide>
           ))}

@@ -76,27 +76,25 @@ export const Categories = () => {
     const bgimg = backgroundImage
     const fruitData = [
         {
-            title: "Encourage responsible teak cultivation",
+            title: "Stress Relief & Cognitive Wellness",
             image: product1,
-            link: "agroForestry/medicinal-herbal-plants/stress-relief-and-cognitive-wellness",
+            link: "/agroForestry/medicinal-herbal-plants/stress-relief-and-cognitive-wellness",
         },
         {
-            title: "Improve farmer income",
+            title: "Immunity & Infection Control",
             image: product2,
-            link: "agroForestry/medicinal-herbal-plants/immunity-and-infection-control",
+            link: "/agroForestry/medicinal-herbal-plants/immunity-and-infection-control",
         },
         {
-            title: "Enhance forest cover",
+            title: "Digestive liver & metabolism ",
             image: product3,
-            link: "agroForestry/medicinal-herbal-plants/digestive-liver-and-metabolism",
+            link: "/agroForestry/medicinal-herbal-plants/digestive-liver-and-metabolism",
         },
         {
-            title: "Reduce illegal logging",
+            title: "Exotic & Imported Fruits",
             image: product4,
-            link: "agroForestry/medicinal-herbal-plants/exotic-and-imported-fruits",
+            link: "/agroForestry/medicinal-herbal-plants/exotic-and-imported-fruits",
         },
-
-
 
     ];
     return (
