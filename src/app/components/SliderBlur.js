@@ -7,7 +7,7 @@ import 'swiper/css/grid';
 import 'swiper/css/pagination';
 import { Grid, Pagination, Navigation, Autoplay } from 'swiper/modules';
 
-export const SliderBlur = ({boxslider=[], font}) => {
+export const SliderBlur = ({boxslider=[], font, class2}) => {
     const [swiperInstance, setSwiperInstance] = useState(null);
     const [isBeginning, setIsBeginning] = useState(true);
     const [isEnd, setIsEnd] = useState(false);
@@ -25,7 +25,7 @@ export const SliderBlur = ({boxslider=[], font}) => {
     }, [swiperInstance]);
     return (
         <>
-            <div className='w-full relative'>
+            <div className={`w-full relative ${class2 ? class2 : " "}`}>
                 <Swiper
                     style={{
                         '--swiper-navigation-color': '#fff',
