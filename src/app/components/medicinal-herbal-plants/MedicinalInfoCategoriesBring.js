@@ -91,9 +91,9 @@ export const Categories = () => {
             link: "/agroForestry/medicinal-herbal-plants/digestive-liver-and-metabolism",
         },
         {
-            title: "Exotic & Imported Fruits",
+            title: "Respirtaory & Inflammatory Relief",
             image: product4,
-            link: "/agroForestry/medicinal-herbal-plants/exotic-and-imported-fruits",
+            link: "/agroForestry/medicinal-herbal-plants/respirtaory-inflammatory-relief",
         },
 
     ];

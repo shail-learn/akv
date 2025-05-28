@@ -82,7 +82,7 @@ export const ProductPage = () => {
     },
     {
       img: img05,
-      link: "agroForestry/medicinal-herbal-plants/exotic-and-imported-fruits",
+      link: "agroForestry/medicinal-herbal-plants/respirtaory-inflammatory-relief",
     },
   ];
   return (

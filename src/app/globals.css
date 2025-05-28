@@ -809,14 +809,23 @@ body .plant_p{
   color: #000;
   padding-top: 2rem;
 }
-.custom_height .p-6{
+.custom_height .p-6, .custom_height1  .p-6{
    padding: 3rem;
    display: flex;
    align-items: center;
    flex-wrap: wrap;
 }
+.custom_height1  .p-6 {
+  padding:  2rem;
+}
 .custom_height .p-6 h4{
   margin-bottom: 0;
+}
+.blurheight .h-96{
+  height: 28rem;
+}
+.height_300 .card1{
+  height: 300px;
 }
 
 @media (min-width: 1024px) {
