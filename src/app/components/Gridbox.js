@@ -40,10 +40,12 @@ export const Gridbox = ({ heading, data, className, gridBox }) => {
 
                   {/* Content */}
                   <div className="border-[#295F54] border text-white p-6 py-8 md:p-4 md:py-6 rounded-3xl h-full !mt-0 w-full">
-                    <h4 className="text-base font-semibold mb-2">
+                    <h4 className="text-base font-semibold mb-2 text-center">
                       {item.title}
                     </h4>
-                    <p className="text-sm font-light">{item.description}</p>
+                    <p className="text-sm font-light text-center">
+                      {item.description}
+                    </p>
                   </div>
                 </div>
               );
