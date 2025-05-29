@@ -213,6 +213,8 @@ export const ProductPage = () => {
           </div>
         </div>
       </section>
+
+
     </>
   );
 };

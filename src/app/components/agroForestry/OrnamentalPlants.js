@@ -25,9 +25,9 @@ export const OrnamentalPlants = () => {
                         {heading}
                     </h2>
                     <p className='text-white font-light mb-8'>{description}</p>
-                    {/* <Link
+                    <Link
                         className="text-sm relative bg-[#9A9771] text-white inline-block w-2/3 text-center rounded-full p-3 hover:bg-white hover:text-[#9A9771] group"
-                        href="#"
+                        href="agroForestry/flowering-ornamental-plants"
                     >
                         Explore More
                         <span className="text-[#D9D9D9]">
@@ -35,7 +35,7 @@ export const OrnamentalPlants = () => {
                                 className="text-5xl absolute top-2/4 right-0 -translate-y-1/2 transition-colors duration-300 group-hover:text-[#9A9771]"
                             />
                         </span>
-                    </Link> */}
+                    </Link>
 
                 </div>
                 <div className='w-full md:col-span-4'>
