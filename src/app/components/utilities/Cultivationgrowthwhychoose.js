@@ -70,7 +70,7 @@ export const GrowthSlider = ({
                   <h4 className="text-lg font-medium py-2">{item.title}</h4>
                 )}
                 <p
-                  className="text-sm font-normal"
+                  className="text-sm font-normal pb-10"
                   dangerouslySetInnerHTML={{ __html: item.desc }}
                 ></p>
               </div>
