@@ -13,7 +13,10 @@ import choose1 from "../../../assets/images/MedicinalHerbs/WhyImg1.webp";
 import choose2 from "../../../assets/images/MedicinalHerbs/WhyImg2.webp";
 import choose3 from "../../../assets/images/MedicinalHerbs/WhyImg3.webp";
 import choose4 from "../../../assets/images/MedicinalHerbs/WhyImg4.webp";
-import { GrowthSlider } from "../utilities/Cultivationgrowthwhychoose";
+import {
+  FaqsLayout,
+  GrowthSlider,
+} from "../utilities/Cultivationgrowthwhychoose";
 import { Productlist } from "../Productlist";
 import jammunhealtbenifit1 from "../../../assets/images/MedicinalHerbs/jammun1.webp";
 import jammunhealtbenifit2 from "../../../assets/images/MedicinalHerbs/jammun2.webp";
