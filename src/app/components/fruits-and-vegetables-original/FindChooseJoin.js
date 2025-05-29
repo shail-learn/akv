@@ -38,7 +38,7 @@ export const Find = () => {
     {
       title: "Large, Medicinal & Multipurpose Trees",
       image: fruit3,
-      link: "#",
+      link: "/agroForestry/fruits-and-vegetables/medicinalHerb",
     },
     {
       title: "Exotic & Imported Fruits",
