@@ -306,31 +306,33 @@ export const WhypartnerMedicinalHerb = () => {
     </>
   );
 };
-export const FAQs = () => {
+export const HerbalFAQs = () => {
   const Faqheading =
-    "What are the key medicinal benefits of Bel (Aegle marmelos)?";
+    " What are the key medicinal benefits of Bel (Aegle marmelos)?";
   const Faqdescription = `Bel, also known as Bael, is widely regarded in traditional medicine for its digestive benefits. It can help manage constipation, indigestion, and diarrhea. Rich in antioxidants, it helps detoxify the body and enhance immunity.Bel, also known as Bael, is widely regarded in traditional medicine for its digestive benefits. It can help manage constipation, indigestion, and diarrhea. Rich in antioxidants, it helps detoxify the body and enhance immunity.`;
   const FaqsData = [
     {
       question:
-        "How can these herbs be used in daily diets for digestive support?",
+        " How can Jamun (Syzygium cumini) help control blood sugar levels?",
       answer:
-        "Several of these herbs are easy to incorporate into daily diets. Aloe Vera gel can be consumed as a juice or added to smoothies for digestive health. Mulethi can be boiled to make a soothing tea for sore throats and stomach ulcers. Jimikand can be cooked as a vegetable, providing fiber for gut health. Nagarmotha can be added to herbal formulations or powdered for use in traditional dishes. Regular consumption of these herbs supports digestion, reduces bloating, and helps maintain a healthy gut microbiome.",
+        "Jamun is highly beneficial for people with diabetes as it helps regulate blood sugar levels. The fruit contains compounds that help improve insulin secretion and sensitivity. Jamun seeds, in particular, are used in powdered form for their anti-diabetic effects. This fruit helps prevent the rapid spikes in blood sugar levels, making it an ideal food for diabetic patients. Furthermore, Jamun’s rich antioxidants help combat oxidative stress, which can worsen diabetes-related complications. Regular consumption can significantly contribute to blood sugar control.",
     },
     {
-      question: "Are these herbs safe for long-term use?",
+      question:
+        "What makes Tamarind (Tamarindus indica) a versatile fruit in cooking?",
       answer:
-        "Most of these herbs are considered safe for long-term use when taken in appropriate doses. However, moderation is key. For instance, Mulethi should be used with caution by those with high blood pressure, as it can cause water retention. Aloe Vera should be consumed in its pure form, free from latex, to avoid digestive discomfort. Jimikand should always be cooked thoroughly to eliminate natural toxins. Consulting with an Ayurvedic practitioner or healthcare provider can help determine the right dosage and form for long-term use without side effects.",
+        "Tamarind is known for its unique sour and tangy flavor, making it a popular ingredient in various cuisines worldwide. It adds a complex, citrusy taste to dishes, making it a key component in sauces, chutneys, curries, and beverages. In addition to its flavor profile, tamarind is used as a natural preservative and thickening agent. It enhances the flavor of both savory and sweet dishes and is often used in making traditional drinks like tamarind juice and candies. Its versatility in the kitchen makes it an indispensable fruit.",
     },
     {
-      question: "Can these herbs be grown organically?",
+      question:
+        " Are there any specific environmental conditions needed to grow Bel trees?",
       answer:
-        "Yes, these herbs are highly suitable for organic cultivation. They generally require fewer pesticides and synthetic fertilizers, as many have natural pest-repellent properties. For example, Chitrak is naturally pest-resistant, and Aloe Vera has a robust immune system that keeps diseases at bay. Using compost, organic manure, and natural pest repellents like neem oil can further enhance yield without compromising soil health. Athulye Krishi Vana supports farmers with organic farming techniques, including vermicomposting, crop rotation, and intercropping, ensuring the production of high-quality, chemical-free herbal produce.",
+        "Bel trees thrive in tropical and subtropical climates. They are adaptable and can grow in various soil types but prefer well-drained, sandy or loamy soils. They are highly drought-tolerant and require minimal water once established, making them ideal for arid regions. The trees need plenty of sunlight and can tolerate high temperatures. To ensure optimal growth, farmers should avoid planting Bel trees in waterlogged or clayey soils, as these can hinder root development. Bel trees also require minimal care, making them an excellent choice for low-maintenance farming.",
     },
     {
-      question: "How do these herbs support metabolic health?",
+      question: "How long does it take for a Jamun tree to bear fruit?",
       answer:
-        "These herbs are known to enhance metabolic function by supporting digestive enzymes, improving nutrient absorption, and reducing inflammation. For example, Chitrak is known for stimulating digestive fire (Agni), which enhances metabolic rate. Nagarmotha helps regulate fat metabolism, while Punarnava aids in detoxification and reduces water retention, supporting overall weight management. Aloe Vera’s enzymes help break down fats and sugars efficiently. Regular use of these herbs can reduce metabolic stress, support energy production, and maintain a healthy body weight, making them essential for holistic health.",
+        "A Jamun tree typically begins to bear fruit 3 to 5 years after planting, depending on the variety and growing conditions. The tree thrives in tropical climates and prefers well-drained soil. Once established, the tree requires minimal maintenance. The fruit is usually harvested during the summer months, with the peak season varying depending on the region. Jamun trees are highly resistant to pests and diseases, ensuring consistent fruit production. The fruit itself is known for its deep purple hue, rich flavor, and numerous health benefits.",
     },
     {
       question: "What are the post-harvest processing options for these herbs?",

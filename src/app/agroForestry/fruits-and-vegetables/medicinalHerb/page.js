@@ -2,12 +2,12 @@
 import React from "react";
 import {
   Bel,
+  HerbalFAQs,
   Jamun,
   MedicinalHerbBanner,
   Tarmarid,
   WhypartnerMedicinalHerb,
 } from "@/app/components/medicinalherbs/Banneraboutfruits";
-import { FAQs } from "@/app/components/digestive-liver/WhypartnerJoinFAQs";
 
 function Page() {
   return (
@@ -17,7 +17,7 @@ function Page() {
       <Jamun />
       <Tarmarid />
       <WhypartnerMedicinalHerb />
-      <FAQs />
+      <HerbalFAQs />
     </>
   );
 }
