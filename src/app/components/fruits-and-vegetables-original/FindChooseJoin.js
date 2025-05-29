@@ -15,6 +15,7 @@ import fruit9 from "../../../assets/images/fruits-vegetables/fruit9.webp";
 import fruit10 from "../../../assets/images/fruits-vegetables/fruit10.webp";
 import fruit11 from "../../../assets/images/fruits-vegetables/Indigenous.webp";
 import fruit12 from "../../../assets/images/fruits-vegetables/lime.webp";
+import fruit12 from "../../../assets/images/fruits-vegetables/DryFruits.webp";
 
 import Plant from "../../../assets/images/eco/future.webp";
 import grow from "../../../assets/images/fruits-vegetables/grow.png";
@@ -83,6 +84,11 @@ export const Find = () => {
     {
       title: "Lime",
       image: fruit12,
+      link: "/agroForestry/fruits-and-vegetables/lime",
+    },
+    {
+      title: "Dry Fruits",
+      image: fruit13,
       link: "/agroForestry/fruits-and-vegetables/lime",
     },
   ];
