@@ -34,8 +34,14 @@ export default function RootLayout({ children }) {
       <body
         data-new-gr-c-s-check-loaded="14.1232.0"
         data-gr-ext-installed="">
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVCPBTDM"
-          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-KVCPBTDM"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          ></iframe>
+        </noscript>
         <Clientonly>
           <Navbar />
           {children}
