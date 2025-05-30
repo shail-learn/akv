@@ -89,7 +89,7 @@ export const Find = () => {
     {
       title: "Dry Fruits",
       image: fruit13,
-      link: "#",
+      link: "/agroForestry/fruits-and-vegetables/dry-fruits",
     },
   ];
 
