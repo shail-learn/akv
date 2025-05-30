@@ -1,7 +1,7 @@
 import React from 'react'
 import { Wave } from '../Wave'
 import BannerPage from '../BannerPage'
-import banner from "../../../assets/images/plants/banner.webp";
+import banner from "../../../assets/images/bloomers/banner.webp";
 import info from "../../../assets/images/digestive/info.webp";
 import Image from 'next/image';
 import { Gridbox } from '../Gridbox';
@@ -24,13 +24,13 @@ import key11 from "../../../assets/images/digestive/key11.webp";
 import key12 from "../../../assets/images/digestive/key12.webp";
 import circle3 from "../../../assets/images/digestive/circle3.webp";
 
-export const Flower = () => {
+export const Tropical = () => {
     const text = {
         banner: banner,
-        heading: `Ornamental Plants`,
-        subtitle:"Beautifying Landscapes, Supporting Biodiversity,  & Enriching Agroforestry",
-        title: 'Beyond food and medicine, flowering and ornamental plants play a critical role in agroforestry, ecological restoration, and aesthetic landscaping. They attract pollinators, improve soil stability, support microclimates, and elevate the visual and cultural appeal of a landscape',
-        opacity: 'opacity-50'
+        heading: `Tropical Bloomers`,
+        subtitle:"Bringing Resilience, Radiance, and Regenerative Power to Indian Landscapes",
+        title: 'Tropical bloomers are vibrant, resilient, and deeply rooted in India’s natural and cultural tapestry. From backyard gardens to temple courtyards, these plants are treasured not only for their ornamental beauty but also for their ecological and medicinal benefits',
+        opacity: 'opacity-40'
     }
     return (
         <>
@@ -41,33 +41,33 @@ export const Flower = () => {
 }
 
 
-export const Amaltas = () => {
+export const Gudhal = () => {
     const basketData = {
-        note: "India’s native flowering trees and ornamentals have long been valued not just for their beauty but also for their symbolism, environmental benefits, and economic potential. <br/> Under the Atulye Krishi Vana initiative, we promote the cultivation of flowering plants such as Amaltas (Cassia fistula), Kaner (Nerium oleander), Gulmohar (Delonix regia), and Red Rose (Rosa sp.). These species are well-suited to Indian agro-climatic zones, and their cultivation brings together environmental sustainability, cultural expression, and livelihood enhancement.",
+        note: "Atulye Krishi Vana promotes the large-scale cultivation of tropical bloomers that are suited to a variety of Indian agro-climatic zones. These plants support pollinators, thrive in high temperatures, and require low maintenance—making them ideal for sustainable landscaping, urban greening, and agroforestry.<br/> Under our initiative, we promote the cultivation of hardy tropical bloomers such as Gudhal / Jaswand (Hibiscus rosa-sinensis), Ashok (Saraca asoca), Bougainvillea (Bougainvillea glabra), and Heena (Lawsonia inermis). These flowering plants combine ornamental appeal with economic and ecological viability, supporting livelihoods while enriching the land.",
         image: info,
     };
 
-    const main_heading = "Amaltas (Cassia fistula)"
-    const shortinfo = "<b>The Golden Shower Tree</b> <br/> Amaltas, also known as the Indian Laburnum, is a medium-sized deciduous tree famed for its bright yellow, cascading flower clusters. Native to the Indian subcontinent, it is widely grown along roadsides, gardens, and parks for its ornamental value. Amaltas is also culturally significant, being the state flower of Kerala, and finds mention in classical Indian literature and festivals."
+    const main_heading = "Gudhal / Jaswand (Hibiscus rosa-sinensis)"
+    const shortinfo = "<b>The Ever-Blooming Healer</b> <br/> Gudhal, also known as Jaswand or Hibiscus, is a hardy evergreen shrub adorned with large, showy flowers in hues of red, pink, yellow, and white. Commonly seen in Indian homes, schools, and temples, the plant has sacred significance and is widely used in herbal remedies and organic fertilizers."
     const gridBox = "xl:!grid-cols-4 custom_height1"
     const whyChooseData = [
 
       {
         image: key1,
-        title: 'Aesthetic Appeal: Brilliant golden blooms make it a standout in public and private landscapes.',
+        title: 'Continuous Blooming: Produces large flowers almost year-round in tropical regions.',
 
       },
       {
         image: key2,
-        title: 'Pollinator Attractor: Supports bees and butterflies, enhancing local biodiversity.',
+        title: 'Pollinator-Friendly: Attracts bees and butterflies, enhancing ecosystem health',
       },
       {
         image: key3,
-        title: 'Drought-Tolerant: Requires minimal irrigation once established.',
+        title: 'Sacred Significance: Red hibiscus is offered to deities like Goddess Kali and Lord Ganesha.',
       },
       {
         image: key4,
-        title: 'Medicinal Properties: Known in Ayurveda for its laxative and detoxifying effects.',
+        title: 'Medicinal Use: Petals are used in Ayurvedic hair oils, teas, and skin treatments.',
       },
 
     ];
@@ -77,7 +77,7 @@ export const Amaltas = () => {
       {
 
         image: image1,
-        desc: `Amaltas thrives in tropical and subtropical climates with well-drained, sandy or loamy soils. It tolerates high temperatures and dry conditions, making it an excellent choice for water-scarce areas. <br/><br/> Amaltas wood is used in small furniture and crafts, while the bark and pods have demand in herbal medicine. Its flowers are also used in religious and ceremonial offerings. Landscaping contracts, nursery sales, and highway greening programs offer steady revenue channels.`,
+        desc: `Gudhal thrives in warm, humid climates with full sun to partial shade. It adapts well to loamy and sandy soils and requires regular but moderate watering. Withstand pruning and can be trained as a hedge or small tree. <br/><br/> The hibiscus flower industry is growing, especially in wellness and beauty sectors. Petals are dried for herbal teas, infused in oils, and processed into shampoos and creams. Jaswand is also sold as potted ornamental plants and saplings for institutional landscaping. With proper pruning and care, the plant can be harvested regularly for both flowers and leaves.`,
 
       },
 
@@ -128,27 +128,27 @@ export const Amaltas = () => {
 }
 
 
-export const Kaner = () => {
+export const Ashok = () => {
     const gridBox = "xl:!grid-cols-4 custom_height1"
     const custom_class = "white_grid grid_padding"
-    const main_heading = "Kaner (Nerium oleander)"
-    const shortinfo = `<b>The Hardy Beauty</b> <br/> Kaner is a tough and fast-growing evergreen shrub or small tree adorned with bright pink, white, or yellow flowers. It is ideal for ornamental hedges, boundary walls, and flowering screens. Despite its mild toxicity, it is widely used for its hardiness, long blooming period, and ease of maintenance.`
+    const main_heading = "Ashok (Saraca asoca)"
+    const shortinfo = `<b>The Tree of Joy and Healing</b> <br/> Ashok, a revered and endangered tree, is deeply intertwined with India’s cultural, spiritual, and botanical heritage. Known for its beautiful orange-red flowers and mythological significance, the Ashok tree is considered sacred and medicinal. It is a must-have in temple gardens, herbal parks, and biodiversity corridors.`
     const whyChooseData = [
       {
         image: key5,
-        title: 'Extended Blooming Season: Flowers almost year-round in favorable climates.',
+        title: 'Ornamental Charm: Bright clusters of orange and red blooms stand out in shaded gardens.',
       },
       {
         image: key6,
-        title: 'Pest Resistance: Naturally resistant to most common pests and diseases.',
+        title: 'Shade and Shelter: Dense foliage provides excellent shade and habitat for birds.',
       },
       {
         image: key7,
-        title: 'Windbreak and Screening: Dense foliage acts as a barrier in windy or exposed areas.',
+        title: 'Medicinal Properties: Bark extracts are used for gynecological treatments in Ayurveda.',
       },
       {
         image: key8,
-        title: 'Low Maintenance: Requires minimal care, pruning, and water.',
+        title: 'Spiritual Importance: Often planted in temple compounds and spiritual sites.',
       },
 
     ];
@@ -159,7 +159,7 @@ export const Kaner = () => {
       {
 
         image: circle2,
-        desc: `Kaner is highly adaptable to poor soils, saline conditions, and high heat. It can be cultivated in tropical, subtropical, and even arid zones, thriving in full sun and tolerating partial shade. <br> <br> Popular in landscaping, housing developments, and municipal beautification projects. Its high survival rate and low input cost make it attractive for mass plantation drives. Kaner saplings and cuttings are in consistent demand across urban and rural nurseries.`,
+        desc: `Ashok prefers partial shade, humid climates, and fertile, well-drained soils. It thrives in the Western Ghats, Northeastern India, and moist regions across the country. It is relatively slow-growing but highly rewarding in ecological terms. <br> <br> Ashok is increasingly being used in herbal formulations, especially for women’s health. Landscapers and institutions seek Ashok saplings for their spiritual and medicinal aura. Conservation projects and temple gardens present a strong demand for this species. Nurseries growing Ashok trees enjoy long-term demand from both the herbal and spiritual sectors.`,
       },
 
 
@@ -189,28 +189,29 @@ export const Kaner = () => {
 }
 
 
-export const Gulmohar = () => {
-    const main_heading = "Gulmohar (Delonix regia)"
-    const shortinfo = "<b>The Flame of the Forest</b> <br/> Gulmohar is one of the most admired flowering trees globally, known for its flamboyant red-orange flowers and wide-spreading canopy. Native to Madagascar and widely naturalized in India, it is ideal for avenue plantation, institutional campuses, and ornamental parks."
+
+export const Bougainvillea = () => {
+    const main_heading = "Bougainvillea (Bougainvillea glabra)"
+    const shortinfo = "<b>The Colorful Climber</b> <br/> Bougainvillea, with its papery, vibrant bracts in magenta, red, orange, and white, is one of the most drought-tolerant ornamental plants in India. This versatile climber can be used to cover walls, fences, or even shaped into decorative hedges and bonsais. Bougainvillea thrives with minimal care and adds vivid color to arid and semi-arid landscapes."
     const gridBox = "xl:!grid-cols-4 custom_height1"
     const whyChooseData = [
 
       {
         image: key9,
-        title: 'Spectacular Flowering: Striking red-orange blossoms cover the entire tree in late spring.',
+        title: 'Vibrant Appeal: Long-lasting colorful bracts bloom for most of the year.',
 
       },
       {
         image: key10,
-        title: 'Soil Enrichment: A nitrogen-fixing species that improves soil fertility.',
+        title: 'Drought-Resistant: Ideal for water-scarce regions and xeriscaping.',
       },
       {
         image: key11,
-        title: 'Shade Provider: Its umbrella-shaped canopy offers ample shade in summer.',
+        title: 'Natural Fencing: Its thorny nature makes it an effective barrier plant.',
       },
       {
         image: key12,
-        title: 'Bird Habitat: Supports nesting and roosting for many native bird species.',
+        title: 'Soil Stabilization: Roots prevent erosion on slopes and embankments.',
       },
 
     ];
@@ -220,7 +221,7 @@ export const Gulmohar = () => {
       {
 
         image: circle3,
-        desc: `Gulmohar grows best in warm, tropical climates with moderate rainfall. It requires full sunlight and prefers deep, well-drained soils. Sensitive to frost and waterlogging. <br/><br/> Gulmohar trees are often included in real estate landscaping, urban beautification projects, and rural greening schemes. Saplings are in high demand among landscape designers and horticulture departments.`,
+        desc: `Bougainvillea grows best in hot, dry climates with full sunlight. It adapts to poor, rocky, and sandy soils. Requires minimal irrigation and pruning to maintain shape and bloom frequency. Avoids heavy shade and waterlogged conditions. <br/><br/> Bougainvillea is widely used in municipal beautification, resort landscaping, and institutional fencing. Potted varieties are popular in urban balconies and rooftop gardens. The demand for shaped bonsai-style Bougainvillea is also increasing. Sapling production and garden installations offer consistent income for rural entrepreneurs and nursery owners.`,
 
       },
 
@@ -250,27 +251,27 @@ export const Gulmohar = () => {
 
 
 
-export const Rose = () => {
+export const Heena = () => {
     const gridBox = "xl:!grid-cols-4 custom_height1"
     const custom_class = "white_grid grid_padding"
-    const main_heading = "Red Rose (Rosa sp.)"
-    const shortinfo = `<b>The Icon of Beauty and Emotion</b> <br/> Roses are among the most cultivated and cherished ornamental plants worldwide. Red roses, in particular, symbolize love, passion, and celebration. Beyond their aesthetic value, they are cultivated for perfumes, cosmetics, garlands, and herbal products. Rose farming can be scaled from home gardens to commercial floriculture.`
+    const main_heading = "Heena (Lawsonia inermis)"
+    const shortinfo = `<b>The Traditional Beautifier</b> <br/> Heena or Mehendi is a small shrub with fragrant white flowers and naturally dye-rich leaves. Traditionally used in body art, rituals, and hair care, Heena holds a timeless place in Indian households. In addition to its cultural value, it is also a pollinator attractor and an effective boundary plant.`
     const whyChooseData = [
       {
         image: key5,
-        title: 'Aromatic Appeal: Red roses offer fragrance and elegance.',
+        title: 'Natural Dye: Leaves produce a reddish-orange dye used for skin and hair.',
       },
       {
         image: key6,
-        title: 'Cut Flower Industry: Major demand in floristry and gifting.',
+        title: 'Aromatic Flowers: Tiny white blooms attract bees and provide light fragrance.',
       },
       {
         image: key7,
-        title: 'Cultural Usage: Widely used in weddings, festivals, and devotional offerings.',
+        title: 'Medicinal Value: Known for antifungal, cooling, and healing properties.',
       },
       {
         image: key8,
-        title: 'Herbal & Cosmetic Value: Petals are processed into rose water, oil, and beauty products.',
+        title: 'Boundary Use: Forms dense hedges for natural fencing and windbreaks.',
       },
 
     ];
@@ -281,7 +282,7 @@ export const Rose = () => {
       {
 
         image: circle2,
-        desc: `Roses prefer temperate climates with cool nights and warm days but can be adapted to various conditions with proper irrigation and care. They thrive in loamy soils rich in organic matter and require full sun exposure. <br> <br> Red roses are a staple of the floriculture industry. Apart from cut flowers, value-added products like rose water, gulkand, essential oil, and dried petals ensure diverse revenue streams for farmers and entrepreneurs.`,
+        desc: `Heena is highly drought-resistant and can grow in arid and semi-arid zones. It tolerates high heat and poor soils. Thrives with full sun and minimal irrigation, making it ideal for Rajasthan, Gujarat, and Deccan Plateau regions. <br> <br> Heena farming is profitable due to steady demand in herbal cosmetics, hair care, and ritual markets. Dried leaves are powdered and exported or sold in domestic markets. Sapling sales, leaf harvest, and natural dye processing offer income streams for women-led SHGs, rural youth, and herbal clusters.`,
       },
 
 
@@ -309,3 +310,5 @@ export const Rose = () => {
       </>
     )
 }
+
+
