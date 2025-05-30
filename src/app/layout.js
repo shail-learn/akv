@@ -8,8 +8,8 @@ import Clientonly from "./components/Clientonly";
 
 
 export const metadata = {
-  title: "AKV",
-  description: "AKV",
+  title: "Atulye Krishi Vana - AKV",
+  description: "AKV - Atulye Krishi Vana pioneers sustainable agroforestry, restoring ecosystems, empowering communities, and promoting greener, resilient rural livelihoods.",
 };
 
 export default function RootLayout({ children }) {
