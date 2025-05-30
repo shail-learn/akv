@@ -824,6 +824,7 @@ body .plant_p {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .custom_height1 .p-6 {
   padding: 2rem;
