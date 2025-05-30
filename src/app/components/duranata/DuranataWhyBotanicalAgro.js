@@ -8,6 +8,14 @@ import product1 from "../../../assets/images/fast/product1.webp";
 import product2 from "../../../assets/images/fast/product2.webp";
 import product3 from "../../../assets/images/fast/product3.webp";
 
+import { Gridbox } from '../Gridbox';
+import key1 from "../../../assets/images/digestive/key1.webp";
+import key2 from "../../../assets/images/digestive/key2.webp";
+import key3 from "../../../assets/images/digestive/key3.webp";
+import key4 from "../../../assets/images/digestive/key4.webp";
+import { GrowthSlider } from '../utilities/Cultivationgrowthwhychoose';
+import image1 from "../../../assets/images/digestive/image1.webp";
+
 export const Duranata = () => {
     const text = {
         banner: banner,
@@ -121,7 +129,65 @@ export const Botanical = () => {
 
 
 export const Agro = () => {
+
+
+
+    const gridBox = "xl:!grid-cols-4 custom_height12"
+    const whyChooseData = [
+
+        {
+            image: key1,
+            title: 'Natural Fencing',
+            description: "Duranta’s dense and thorny structure forms a near-impenetrable hedge that is ideal for replacing barbed wire in rural farms. It marks property boundaries while deterring stray cattle and trespassers."
+
+        },
+        {
+            image: key2,
+            title: 'Ornamental Borders',
+            description: "Its attractive foliage and blooms are ideal for residential boundaries, institutional campuses, urban parks, and gardens. The plant creates a neat, manicured look with basic trimming.        "
+        },
+        {
+            image: key3,
+            title: 'Municipal Beautification',
+            description: "Duranta is used in avenue medians, public green belts, and housing societies due to its ability to create uniform, low-maintenance hedges"
+
+        },
+        {
+            image: key4,
+            title: 'Pollinator Corridors',
+            description: "When grown as part of mixed landscaping, Duranta contributes to habitat corridors for pollinators, especially in degraded urban ecosystems."
+
+        },
+
+    ];
+
+    const GrowthHeading = "Agro-climatic Suitability";
+    const GrowthDescription ="Duranta is extremely adaptable to various Indian agro-climatic zones. It thrives in:    "
+    const slides = [
+        {
+
+            image: image1,
+            title:"Tropical and Subtropical Climates:",
+            desc: `Performs best in warm to hot regions`,
+
+        },
+
+    ];
+
     return (
-        <div>Agro</div>
+        <>
+
+
+            <GrowthSlider
+                GrowthHeading={GrowthHeading}
+                slides={slides}
+                GrowthDescription={GrowthDescription}
+            />
+
+            <Gridbox heading="Landscaping & Functional Applications" data={whyChooseData} gridBox={gridBox} />
+
+
+
+        </>
     )
 }
