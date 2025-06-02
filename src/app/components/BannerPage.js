@@ -65,9 +65,7 @@ const BannerPage = ({
 
             {/* Title (Plain text) */}
             {title && (
-              <p className="w-full text-white text-[15px] mt-5 mb-7 lg:mt-7 lg:mb-10">
-                {title}
-              </p>
+              <p className="w-full text-white text-[15px] mt-5 mb-7 lg:mt-7 lg:mb-10" dangerouslySetInnerHTML={{ __html: title }}/>
             )}
 
             {/* Button */}
