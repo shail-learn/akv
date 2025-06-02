@@ -43,3 +43,8 @@ package-lock.json
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+
+#sitemap stuff
+sitemap*.xml
+robots.txt
