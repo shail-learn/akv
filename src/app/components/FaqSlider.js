@@ -10,7 +10,7 @@ import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import icon1 from "../../assets/images/about/icon01.webp";
 import icon2 from "../../assets/images/about/icon02.webp";
 
-export const FaqSlider = ({ card, heading, classname, title1, title2 }) => {
+export const FaqSlider = ({ card, heading, classname, title1, title2 ,subtitle}) => {
   return (
     <>
       <section className={`overflow-hidden ${classname || ""}`}>
@@ -25,6 +25,8 @@ export const FaqSlider = ({ card, heading, classname, title1, title2 }) => {
 
               {/* Conditionally render title1 */}
               {title1 && <h4 className="mb-10 -mt-8">{title1}</h4>}
+
+              {subtitle && <h4 className="mb-10 -mt-4 text-xl font-semibold">{subtitle}</h4>}
 
               <div className="w-full mx-auto relative">
                 <div className="mx-auto w-[90%]">
