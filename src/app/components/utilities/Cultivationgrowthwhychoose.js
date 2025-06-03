@@ -8,11 +8,13 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { HiChevronUp, HiChevronDown } from "react-icons/hi2";
 import GrowthBg from "../../../assets/images/mahagony/growthbg.svg";
+import ApplicationsSection from "../ApplicationsSection";
 export const GrowthSlider = ({
   GrowthHeading,
   GrowthDescription,
   slides,
   className,
+  applicationsData
 }) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -44,6 +46,9 @@ export const GrowthSlider = ({
         <h3 className="text-2xl font-medium mb-6 transition-all duration-300">
           {getCurrentHeading()}
         </h3>
+
+
+
 
         <Swiper
           modules={[Navigation]}
@@ -77,6 +82,10 @@ export const GrowthSlider = ({
             </SwiperSlide>
           ))}
         </Swiper>
+        <ApplicationsSection
+          heading={getCurrentHeading()}
+          items={applicationsData}
+        />
       </div>
     </section>
   );
