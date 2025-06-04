@@ -18,6 +18,7 @@ import 'swiper/css/navigation';
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { ExploreSlider } from '../ExploreSlider';
 
 export const Banner = () => {
     const text = {
@@ -57,24 +58,57 @@ export const Explore = () => {
     const boxslider = [
         {
             image: impact1,
-            heading: "Shri Tulsidasji Panchavati Vatika",
-            description: `Lush woodland inspired by Panchavati's sacred heritage <br/>  A spiritual grove echoing the Ramayan, fostering reverence and biodiversity.`
+            heading: "Sri Tulsi das ji Panchvati vatika",
+            description: `Lush woodland inspired by Panchavati's sacred heritage    A spiritual grove echoing the Ramayan, fostering reverence and biodiversity.`
             ,
-            link: "#"
+            link: "/our-projects/sri-tulsi-das-ji-panchvati-vatika"
         },
         {
             image: impact2,
-            heading: "Garden triad dedicated to Brahma, Vishnu, and Mahesh",
-            description: `Garden triad dedicated to Brahma, Vishnu, and Mahesh <br/>  A symbolic union of the divine trinity through sacred plantings.`,
-            link: "#"
+            heading: "Shri Ram Setu",
+            description: `Stone pathway bridging natural elements
+             A symbolic tribute to Lord Ram’s legendary bridge, blending mythology and ecology.`,
+            link: "/our-projects/shri-ram-setu"
 
         },
-
+        {
+            image: impact1,
+            heading: "Goshala",
+            description: `Sheltered pastures for native cattle
+             A sanctuary promoting ethical cattle care and rural livelihoods.`
+            ,
+            link: "/our-projects/goshala"
+        },
+        {
+            image: impact1,
+            heading: "Vermicompost Unit",
+            description: `Compost beds and soil lab
+              A hub for organic waste conversion and farmer education.`
+            ,
+            link: "/our-projects/vermicompost-unit"
+        },
+        {
+            image: impact1,
+            heading: "Guest Plantation",
+            description: `Welcome garden with curated plant displays
+              A beautifully maintained space for guests and dignitaries to reflect and relax.`
+            ,
+            link: "/our-projects/guest-plantation"
+        },
 
     ]
     return (
         <>
-            <section
+
+<ExploreSlider
+      heading="Explore Our Projects"
+      subheading="Spiritual & Heritage Gardens"
+      items={boxslider}
+      background={bgstay.src}
+    />
+
+
+            {/* <section
                 className="relative  py-12 lg:py-16" style={{ background: `url(${bgstay.src})center center / cover no-repeat` }}>
                 <div className='absolute top-0 left-0 w-full h-full bg-black opacity-60'></div>
                 <div className='mx-auto max-w-[1400px]  px-4 md:px-8 lg:px-2 '>
@@ -117,7 +151,7 @@ export const Explore = () => {
 
                 </div>
 
-            </section>
+            </section> */}
 
         </>
     )

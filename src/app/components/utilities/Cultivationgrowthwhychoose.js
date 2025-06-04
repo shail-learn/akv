@@ -12,6 +12,7 @@ import ApplicationsSection from "../ApplicationsSection";
 export const GrowthSlider = ({
   GrowthHeading,
   GrowthDescription,
+  GrowthDescription1,
   slides,
   className,
   applicationsData
@@ -36,7 +37,7 @@ export const GrowthSlider = ({
       />
 
       <div className="relative my-2 z-10 text-white text-center px-4 max-w-4xl mx-auto GrowthNavigation">
-        <h2 className="redhat  text-3xl md:text-[43px] font-medium mb-3 pb-4 px-4 leading-tight">
+        <h2 className="redhat  text-3xl md:text-4xl font-medium mb-3 pb-4 px-4 leading-tight">
           {GrowthHeading}
         </h2>
         {GrowthDescription && (
@@ -82,10 +83,14 @@ export const GrowthSlider = ({
             </SwiperSlide>
           ))}
         </Swiper>
+        {GrowthDescription1 && (
+          <p className="text-sm md:text-base mb-10">{GrowthDescription1}</p>
+        )}
         <ApplicationsSection
           heading={getCurrentHeading()}
           items={applicationsData}
         />
+
       </div>
     </section>
   );
