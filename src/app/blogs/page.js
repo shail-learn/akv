@@ -1,16 +1,10 @@
-"use client"
-import React from 'react'
-import { Banner, Bigcard, Blogitem } from '../components/blogs/BannerBigcardBlogitem'
+export const metadata = {
+  title: "Blogs",
+  description: "Stories of Impact Innovation & Infrastructure",
+};
 
-function page() {
-    return (
-        <>
+import ClientPage from './ClientPage';
 
-            <Banner />
-            <Bigcard />
-            <Blogitem />
-        </>
-    )
+export default function ServerPage() {
+  return <ClientPage />;
 }
-
-export default page

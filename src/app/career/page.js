@@ -1,18 +1,10 @@
-"use client"
-import React from 'react'
-import { Banner, Card, Form } from '../components/career/BannerCardForm'
+export const metadata = {
+  title: "Career",
+  description: "Explore exciting opportunities and become part of a dynamic, growing team.",
+};
 
+import ClientPage from './ClientPage';
 
-const page = () => {
-  return (
-    <>
-    <Banner/>
-    <Card/>
-    <Form />
-
-
-    </>
-  )
+export default function ServerPage() {
+  return <ClientPage />;
 }
-
-export default page

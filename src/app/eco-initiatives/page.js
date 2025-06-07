@@ -1,21 +1,10 @@
-"use client"
-import React from 'react'
-import { Banner, Objective, Reviving } from '../components/ecoInitiative/BannerRevivingObjective'
-import { Agroforestry, CsrProject } from '../components/ecoInitiative/CSRAgroforestry'
-import { Achievements, Future } from '../components/ecoInitiative/AchievementsFuture'
+export const metadata = {
+  title: "Eco Initiatives",
+  description: "A Journey Towards Prosperous Sustainability",
+};
 
-function page() {
-  return (
-    <>
-     <Banner/>
-     <Reviving/>
-     <Objective/>
-     <CsrProject/>
-     <Agroforestry/>
-     <Achievements/>
-     <Future/>
-    </>
-  )
+import ClientPage from './ClientPage';
+
+export default function ServerPage() {
+  return <ClientPage />;
 }
-
-export default page

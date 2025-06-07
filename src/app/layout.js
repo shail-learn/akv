@@ -7,9 +7,17 @@ import Clientonly from "./components/Clientonly";
 
 
 
+// export const metadata = {
+//   title: "Atulye Krishi Vana - AKV",
+//   description: "AKV - Atulye Krishi Vana pioneers sustainable agroforestry, restoring ecosystems, empowering communities, and promoting greener, resilient rural livelihoods.",
+// };
+
 export const metadata = {
-  title: "Atulye Krishi Vana - AKV",
-  description: "AKV - Atulye Krishi Vana pioneers sustainable agroforestry, restoring ecosystems, empowering communities, and promoting greener, resilient rural livelihoods.",
+  title: {
+    default: "Atulye Krishi Vana - AKV",
+    template: "%s | AKV",
+  },
+  description: "AKV - Atulye Krishi Vana pioneers sustainable agroforestry…",
 };
 
 export default function RootLayout({ children }) {

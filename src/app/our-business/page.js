@@ -1,24 +1,10 @@
-"use client"
-import React from 'react'
-import { Banner, OurService, WhoAre } from '../components/business/BannerService'
-import { Goal, Impact, Project } from '../components/business/ImpactProjectGoal'
-import { Making, RealVoice } from '../components/business/RealVoice'
+export const metadata = {
+  title: "Our Business",
+  description: "Harnessing innovation and tradition for a sustainable future"
+};
 
+import ClientPage from './ClientPage';
 
-function page() {
-  return (
-    <>
-     <Banner/>
-     <WhoAre/>
-     <OurService/>
-     <Impact/>
-     <Project/>
-     <Goal/>
-     <RealVoice/>
-     <Making/>
-
-    </>
-  )
+export default function ServerPage() {
+  return <ClientPage />;
 }
-
-export default page

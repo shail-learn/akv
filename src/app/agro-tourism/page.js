@@ -1,22 +1,10 @@
-"use client"
-import React from 'react'
-import { Banner, Welcome, Why } from '../components/agro-tourism/BannerWelcomeWhy'
-import { BlurSlider, Slider } from '../components/agro-tourism/SliderBlurSlider'
-import { Address, Sustainability, Unique } from '../components/agro-tourism/SustainabilityUniqueAddress'
+export const metadata = {
+  title: "Agro-Tourism",
+  description: "Where Nature Meets Sustainability – A Journey into Agroforestry & Rural Life",
+};
 
-function page() {
-  return (
-    <>
-     <Banner/>
-     <Welcome/>
-     <Why/>
-     <Slider/>
-     <BlurSlider/>
-     <Sustainability/>
-     <Unique/>
-     <Address/>
-    </>
-  )
+import ClientPage from './ClientPage';
+
+export default function ServerPage() {
+  return <ClientPage />;
 }
-
-export default page
