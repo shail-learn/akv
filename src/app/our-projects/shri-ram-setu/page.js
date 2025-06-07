@@ -1,8 +1,14 @@
+import { Bridge, Design, Ram, Why } from '@/app/components/shriRam/RamDesignWhyBridge'
 import React from 'react'
 
 function page() {
   return (
-    <div>page</div>
+    <>
+      <Ram />
+      <Design />
+      <Why />
+      <Bridge />
+    </>
   )
 }
 

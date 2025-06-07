@@ -1,5 +1,5 @@
 "use client"
-import React, {useEffect , useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from 'next/image';
 import 'swiper/css';
@@ -8,7 +8,7 @@ import 'swiper/css/grid';
 import 'swiper/css/pagination';
 import { Grid, Pagination, Navigation, Autoplay } from 'swiper/modules';
 
-export const SliderBlur = ({boxslider=[], font, class2}) => {
+export const SliderBlur = ({ boxslider = [], font, class2 }) => {
     const [swiperInstance, setSwiperInstance] = useState(null);
     const [isBeginning, setIsBeginning] = useState(true);
     const [isEnd, setIsEnd] = useState(false);
@@ -79,8 +79,22 @@ export const SliderBlur = ({boxslider=[], font, class2}) => {
                                     </div>
                                     <h2 className='text-2xl font-normal pb-4' dangerouslySetInnerHTML={{ __html: item.heading }}></h2>
 
-                                    <p className={`text-sm lg:text-[16px] font-light ${font}`} dangerouslySetInnerHTML={{ __html: item.description }}>
-                                    </p>
+                                    {item.description && (
+                                        <>
+                                            {Array.isArray(item.description) ? (
+                                                <ul className={`list-disc pl-5 space-y-2 text-sm lg:text-[16px] font-light ${font}`}>
+                                                    {item.description.map((point, i) => (
+                                                        <li key={i} dangerouslySetInnerHTML={{ __html: point }} />
+                                                    ))}
+                                                </ul>
+                                            ) : (
+                                                <p
+                                                    className={`text-sm lg:text-[16px] font-light ${font}`}
+                                                    dangerouslySetInnerHTML={{ __html: item.description }}
+                                                />
+                                            )}
+                                        </>
+                                    )}
                                 </div>
                             </div>
 
