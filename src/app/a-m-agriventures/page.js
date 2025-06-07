@@ -1,23 +1,11 @@
-"use client"
-import React from 'react'
-import { AmBanner, AmWelcome, Whoam } from '../components/agriventures/bannerWelcome'
-import { FeatureGoal, Impact, Project } from '../components/agriventures/ProjectImpactGoal'
-import { Change, Explore, Value } from '../components/agriventures/ValueExploreChange'
 
-function page() {
-  return (
-    <>
-    <AmBanner/>
-     <AmWelcome/>
-     <Whoam/>
-     <Project/>
-     <Impact/>
-     <FeatureGoal/>
-     <Value/>
-     <Explore/>
-     <Change/>
-    </>
-  )
+export const metadata = {
+  title: "About A&M Agriventure",
+  description: "At A&M Agriventures, we are redefining the future of sustainable agriculture by harmonizing innovation, traditional practices, and environmental stewardship.",
+};
+
+import ClientPage from './ClientPage';
+
+export default function ServerPage() {
+  return <ClientPage />;
 }
-
-export default page

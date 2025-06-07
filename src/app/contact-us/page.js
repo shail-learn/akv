@@ -1,14 +1,10 @@
-"use client"
-import React from 'react'
-import ContactPage from '../components/contact/ContactPage'
+export const metadata = {
+  title: "Contact Us",
+  description: "Sustaining Ecosystems, Empowering Communities",
+};
 
+import ClientPage from './ClientPage';
 
-function page() {
-  return (
-    <>
-     <ContactPage/>
-    </>
-  )
+export default function ServerPage() {
+  return <ClientPage />;
 }
-
-export default page

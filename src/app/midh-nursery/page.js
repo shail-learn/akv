@@ -1,20 +1,10 @@
-"use client"
-import React from 'react'
-import { About, Banner, Key } from '../components/midh-nursery/BannerAboutKey'
-import { Future, Impact, Join } from '../components/midh-nursery/ImpactFutureJoin'
+export const metadata = {
+  title: "MIDH Nursery",
+  description: "A hub for sustainable agroforestry and ecological preservation, MIDH Nursery under Atulye Krishi Vana is dedicated to fostering biodiversity, promoting afforestation, and empowering rural communities.",
+};
 
-function page() {
-    return (
-        <>
+import ClientPage from './ClientPage';
 
-            <Banner />
-            <About />
-            <Key />
-            <Impact/>
-            <Future/>
-            <Join/>
-        </>
-    )
+export default function ServerPage() {
+  return <ClientPage />;
 }
-
-export default page

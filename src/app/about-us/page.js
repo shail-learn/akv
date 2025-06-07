@@ -1,26 +1,10 @@
-"use client"
-import React from 'react'
-import { AboutSlider, Banner, UnderBanner } from '../components/about/Banner'
-import { Guide, Mission } from '../components/about/GuideMission'
-import { Jounery, JouneryRoot } from '../components/about/JouneryRoot'
-import { GreenSupport, Support, Team } from '../components/about/TeamSupport'
+export const metadata = {
+  title: "About",
+  description: "Atulye Krishi Vana is a pioneering initiative dedicated to reshaping the future of agroforestry.",
+};
 
-function page() {
-  return (
-    <>
-     <Banner/>
-     <AboutSlider/>
-     <UnderBanner/>
-     <Guide/>
-     <Mission/>
-     <Jounery/>
-     <JouneryRoot/>
-     <Team/>
-     <GreenSupport/>
-     <Support/>
+import ClientPage from './ClientPage';
 
-       </>
-  )
+export default function ServerPage() {
+  return <ClientPage />;
 }
-
-export default page

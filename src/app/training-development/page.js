@@ -1,25 +1,10 @@
-"use client"
-import React from 'react'
-import { Certification, Faq, GreenRevolution, Register } from '../components/training-development/CertificationFaqRegister'
-import { SuccessStories } from '../components/training-development/SuccessStories'
-import { BannerTraining, IntroSection } from '../components/training-development/BannerTraining'
-import TrainingProgram from '../components/training-development/TrainingProgram'
-import WhyChooseUs from '../components/training-development/WhyChooseUs'
+export const metadata = {
+  title: "Training & Development",
+  description: "Empowering individuals through expert training and sustainable practices.",
+};
 
-function page() {
-  return (
-    <>
-    <BannerTraining/>
-    <IntroSection/>
-    <TrainingProgram/>
-    <WhyChooseUs/>
-    <SuccessStories/>
-     <Certification/>
-     <Faq/>
-     <Register/>
-     <GreenRevolution/>
-     </>
-  )
+import ClientPage from './ClientPage';
+
+export default function ServerPage() {
+  return <ClientPage />;
 }
-
-export default page

@@ -1,21 +1,10 @@
-"use client"
-import React from 'react'
-import { Banner, Explore, Waterscapes } from '../components/our-projects/BannerExploreWaterscapes'
-import { Animal, Contact, Impact, Slidertwo } from '../components/our-projects/AnimalSlidertwoImpactContact'
+export const metadata = {
+  title: "Our Projects",
+  description: "Explore 21 iconic projects by Atulye Krishi Vana, designed to restore ecosystems, celebrate heritage, and nurture sustainable livelihoods."
+};
 
-function page() {
-    return (
-        <>
+import ClientPage from './ClientPage';
 
-            <Banner />
-            <Explore />
-            <Waterscapes />
-            <Animal />
-            <Slidertwo />
-            <Impact />
-            <Contact />
-        </>
-    )
+export default function ServerPage() {
+  return <ClientPage />;
 }
-
-export default page
