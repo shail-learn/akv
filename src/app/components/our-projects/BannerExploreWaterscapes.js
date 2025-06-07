@@ -95,6 +95,22 @@ export const Explore = () => {
             ,
             link: "/our-projects/guest-plantation"
         },
+        {
+            image: impact1,
+            heading: "Shri. Narayan Falodyan (Fruit Garden)",
+            description: `Mixed orchard featuring tropical fruits.
+              Encouraging nutrition, self-reliance, and biodiversity preservation.`
+            ,
+            link: "/our-projects/shri-narayan-falodyan"
+        },
+        {
+            image: impact1,
+            heading: "Shri. Mansarovar",
+            description: `Lotus-filled lake with serene walkways.
+              A peaceful pond inspired by the mythical lake of purity and reflection.`
+            ,
+            link: "/our-projects/shri-mansarovar"
+        },
 
     ]
     return (
