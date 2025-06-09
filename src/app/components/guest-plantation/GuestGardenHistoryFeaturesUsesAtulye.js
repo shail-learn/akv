@@ -257,7 +257,7 @@ export const Atulye = () => {
 
     return (
       <section
-        className="relative bg-no-repeat py-14 lg:py-32 bg-cover w-full my-8 md:my-12 !mt-0"
+        className="relative bg-no-repeat py-14 lg:py-32 !mb-0 bg-cover w-full my-8 md:my-12 !mt-0"
         style={{ backgroundImage: `url(${PartnerBg.src})` }}
       >
 
