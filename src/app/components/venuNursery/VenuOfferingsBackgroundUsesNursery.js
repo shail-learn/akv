@@ -9,15 +9,15 @@ import Image from 'next/image';
 import { SliderBlur } from '../SliderBlur';
 import impact1 from "../../../assets/images/stress/Benefit1.webp";
 import bgstay from "../../../assets/images/stress/bg.webp";
-import Titleslider from '../Titleslider';
+import { FaqSlider } from '../FaqSlider';
 import PartnerBg from "../../../assets/images/respirtaory/bgimg.webp";
 
-export const Mansarovar = () => {
+export const Venu = () => {
     const text = {
         banner: banner,
-        heading: `Shri. Mansarovar Pond – A Sacred Source of Life and Sustainability`,
+        heading: `Shri. Venu Nursery – Growing Roots for a Greener Future`,
 
-        title: 'Spread across 3 acres (12,825 sq m) in Kh-112, Shri. Mansarovar Pond is one of the most essential and symbolic features of Atulye Krishi Vana. Located just 510 meters from the Admin Block, it serves as both a rainwater harvesting reservoir and a recreational site. With its dual function—supporting irrigation and offering boating activities—Mansarovar Pond combines traditional water conservation wisdom with modern agroforestry needs.',
+        title: 'Located just 50 meters from the Admin Building, Shri. Venu Nursery is the dedicated nursery unit of Atulye Krishi Vana, developed to promote sustainable agriculture and plant cultivation. Spread across 1000 square meters, the nursery supports the production of fruit, timber, and ornamental plants for internal use and external distribution. Since its establishment in 2021, the nursery has produced over five lakh saplings. It continues to serve individuals, farmers, and institutions, providing high-quality plant material backed by responsible and eco-conscious practices.',
         opacity: 'opacity-50'
     }
     return (
@@ -29,46 +29,54 @@ export const Mansarovar = () => {
 }
 
 
-
-export const Pond = () => {
+export const Offerings = () => {
     const basketData = {
         note: `
-        Theme Index: Shri. Mansarovar Pond <br/>
-        Location Name: Shri. Mansarovar <br/>
-        Coordinates: 22°59'31.6"N 77°11'03.4"E <br/>
-        Area: 12,825 sq m (3 acres) <br/>
-        Distance from Admin Block: 510 meters
+        Theme Index: Nursery <br/>
+        Location Name: Shri. Venu Nursery <br/>
+        Coordinates: 22°59'41.7"N 77°11'06.5"E <br/>
+        Area: 1000 square meters <br/>
+        Distance from Admin Block: 50 meters
         `,
         image: info,
     };
 
-    const GrowthHeading = "A Pond with Purpose";
-    const GrowthDescription = "The Mansarovar Pond is more than just a water body—it’s the heart of the Atulye Krishi Vana agroforestry ecosystem. It:"
+    const GrowthHeading = "Our Offerings";
+
     const slides = [
         {
+            group: "Plant Categories",
             image: image1,
-            title: "Harvests rainwater during monsoons",
+            desc: "Fruit-bearing plants for home gardens and orchards",
         },
         {
+            group: "Plant Categories",
             image: image1,
-            title: "Stores and supplies irrigation water to sustain plantations",
+            desc: "Timber saplings for agroforestry and long-term cultivation",
         },
         {
+            group: "Plant Categories",
             image: image1,
-            title: "Provides boating space for visitors and guests",
+            desc: "Ornamental and flowering plants for beautification and landscaping",
         },
         {
+            group: "Propagation Methods",
             image: image1,
-            title: "Supports biodiversity, attracting birds and aquatic life",
+            desc: "Seedling production using selected seeds in controlled conditions",
         },
         {
+            group: "Propagation Methods",
             image: image1,
-            title: "Creates a calm, scenic environment that enriches the farm’s natural beauty",
+            desc: "Clonal propagation using a maintained mother block to ensure plant uniformity",
+        },
+        {
+            group: "Propagation Methods",
+            image: image1,
+            desc: "Grafting and budding techniques applied to enhance quality and plant resilience",
         },
 
     ];
 
-    const GrowthDescription1 = "Its construction is a model of eco-engineering, aimed at long-term water sustainability and farm self-sufficiency."
 
     return (
         <>
@@ -98,99 +106,97 @@ export const Pond = () => {
             <GrowthSlider
                 GrowthHeading={GrowthHeading}
                 slides={slides}
-                GrowthDescription={GrowthDescription}
-                GrowthDescription1={GrowthDescription1}
+
             />
 
+
         </>
     )
 }
 
 
-export const Spiritual = () => {
-    const heading = "Spiritual & Historical Inspiration"
-    const shortdescription = 'By naming the pond "Mansarovar," Atulye Krishi Vana honors these faiths and acknowledges the deep connection between water, life, and spirituality.'
 
-    const boxslider = [
+export const Background = () => {
+    const heading = "Background and Growth";
+    const title= "Shri. Venu Nursery was founded with the vision of supporting Atulye Krishi Vana’s agroforestry goals by producing reliable planting material in-house. From a focused beginning in 2021, it has grown into a professional nursery serving a wide range of stakeholders."
+    const subtitle = "It now supports:"
+    const className = "slider_height";
+
+    const card = [
       {
-        heading: "Hinduism",
-        description: "Considered a divine lake where Lord Shiva and Goddess Parvati reside. The Kailash Mansarovar Yatra is one of the most sacred pilgrimages in Hinduism."
+        title: "Agroforestry projects",
       },
       {
-        heading: "Buddhism",
-        description: "Revered as the site where the Wheel of Dharma first turned. Believed to be home to celestial beings."
-
+        title: "Horticultural developments",
       },
       {
-        heading: "Jainism",
-        description: "Linked with Lord Rishabhanatha, the first Tirthankara. A place for divine experience and reflection."
-
+        title: "Demonstration and training activities",
       },
       {
-        heading: "Bon Religion",
-        description: "Seen as the origin of the universe and sacred ground in Tibetan spiritual tradition."
-
+        title: "Regional biodiversity efforts",
       },
 
-    ]
+    ];
     return (
-        <>
+      <>
+        <FaqSlider
+          classname={className}
+          className="shailendra"
+          card={card}
+          heading={heading}
+          title1={title}
+          subtitle={subtitle}
+        />
 
-    <Titleslider heading={heading} boxslider={boxslider} shortdescription={shortdescription} />
 
-        </>
-    )
+      </>
+    );
 }
 
 
 
-export const Modern = () => {
-    const heading = "Modern Relevance & Environmental Value"
+export const Uses = () => {
+    const heading = "Uses and Benefits "
     const class2 = "blurheight"
 
     const boxslider = [
         {
           image: impact1,
-          heading: "Irrigation & Water Storage   ",
+          heading: "Propagation and Cultivation",
           description: [
-            "Collects rainwater, reducing dependency on groundwater",
-            "Vital for trees, crops, and medicinal plantations at the farm",
+            "Seedling Production: Reliable supply of young plants for various planting cycles",
+            "Clonal Multiplication: Produces uniform, disease-resistant plants",
+            "Mother Block Maintenance: Preserves elite varieties for continuous propagation",
 
           ]
         },
         {
           image: impact1,
-          heading: "Boating & Recreation",
+          heading: "Varietal Development and Plant Health",
           description: [
-            "Offers safe, serene boating experiences for guests",
-            "Blends leisure with learning in a natural environment"
+            "Selective breeding and hybridization through the mother block",
+            "Disease control and monitoring using nursery-level hygiene and isolation"
           ]
         },
         {
           image: impact1,
-          heading: "Wildlife Habitat",
+          heading: "Educational and Demonstration Role",
           description: [
-            "Attracts native birds, insects, and aquatic life",
-            "Supports biodiversity and acts as a mini-ecosystem"
+            "Serves as a live training site for budding and grafting methods",
+            "Supports staff training and visitor education through practical demonstrations",
+            "Introduces new varieties and improved cultivation practices"
+          ]
+        },
+        {
+          image: impact1,
+          heading: "Specialization and Sustainability",
+          description: [
+            "Preservation of rare varieties",
+            "Eco-friendly methods such as organic soil mixes, minimal chemical use, and efficient irrigation systems",
+            "Contributes to long-term sustainability by reducing external dependence on saplings",
 
           ]
         },
-        {
-          image: impact1,
-          heading: "Climate Moderation",
-          description: [
-            "Helps regulate microclimate by cooling the surroundings",
-            "Improves air moisture, supporting plant health"
-          ]
-        },
-        {
-            image: impact1,
-            heading: "Visual and Cultural Aesthetics",
-            description: [
-              "Adds beauty and depth to the landscape",
-              "Acts as a peaceful setting for visitors and meditation"
-            ]
-          },
 
       ]
     return (
@@ -224,16 +230,14 @@ export const Modern = () => {
 }
 
 
-
-
-export const Tradition = () => {
-    const heading = "From Tradition to Transformation";
+export const Nursery = () => {
+    const heading = "Shri. Venu Nursery";
     const description =
-      "The vision for this pond came from ancient Indian wisdom — community-based water bodies that not only supported agriculture but also nourished community bonds and local ecology. Atulye Krishi Vana carries this legacy into the future, using the pond as a living model for ecological farming, water wisdom, and spiritual grounding. <br/> Shri. Mansarovar Pond is more than a functional asset — it is a living symbol of balance, bridging our spiritual past with sustainable progress. It supports agriculture, enriches biodiversity, enhances beauty, and reminds every visitor of the sacredness of water. <br/> At Atulye Krishi Vana, we believe that every drop of water tells a story, and Mansarovar is where those stories flow — deeply, silently, and meaningfully.      ";
+      "Shri. Venu Nursery is a vital part of Atulye Krishi Vana's vision. It represents a commitment to sustainability, agricultural advancement, and environmental stewardship. With consistent production, plant diversity, and educational outreach, the nursery continues to grow both plants and purpose.<br/> <br/> This is where propagation meets preservation, and learning turns into legacy.      ";
 
     return (
       <section
-        className="relative bg-no-repeat py-14 mt-10 !mb-0 lg:py-32 bg-cover w-full my-8 md:my-12  "
+        className="relative bg-no-repeat py-14 !mb-0 mt-10 lg:py-32 bg-cover w-full my-8 md:my-12  "
         style={{ backgroundImage: `url(${PartnerBg.src})` }}
       >
 

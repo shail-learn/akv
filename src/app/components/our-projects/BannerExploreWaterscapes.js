@@ -58,10 +58,10 @@ export const Explore = () => {
     const boxslider = [
         {
             image: impact1,
-            heading: "Sri Tulsi das ji Panchvati vatika",
+            heading: "Shri Tulsi das ji Panchvati vatika",
             description: `Lush woodland inspired by Panchavati's sacred heritage    A spiritual grove echoing the Ramayan, fostering reverence and biodiversity.`
             ,
-            link: "/our-projects/sri-tulsi-das-ji-panchvati-vatika"
+            link: "/our-projects/shri-tulsi-das-ji-panchvati-vatika"
         },
         {
             image: impact2,
@@ -111,17 +111,57 @@ export const Explore = () => {
             ,
             link: "/our-projects/shri-mansarovar"
         },
+        {
+            image: impact1,
+            heading: "Shri. Venu Nursery",
+            description: `Rows of saplings and shaded greenhouses.
+            A vital source for plant propagation and afforestation efforts.
+            `
+            ,
+            link: "/our-projects/shri-venu-nursery"
+        },
+        {
+            image: impact1,
+            heading: "Shri. Bhrigu Van",
+            description: `Tranquil forest zone inspired by Sage Bhrigu.
+             A contemplative green space rooted in Vedic wisdom and ecological care.`
+            ,
+            link: "/our-projects/shri-bhrigu-van"
+        },
+        {
+            image: impact1,
+            heading: "Shri. Aushadh Manav (Human Body Garden)",
+            description: `Herb layout shaped like a human anatomy.
+              Each organ-shaped patch features a corresponding medicinal plant.`
+            ,
+            link: "/our-projects/shri-aushadh-manav"
+        },
+        {
+            image: impact1,
+            heading: "Shri. Dhanvantari Vatika",
+            description: `Medicinal garden with rare healing herbs.
+            Honoring Ayurveda's deity, this vatika preserves ancient healing flora.`,
+            link: "/our-projects/shri-dhanvantari-vatika"
+        },
+        {
+            image: impact1,
+            heading: "Shri. Pabuji Ushtralaya (Camel Shade)",
+            description: `Sandstone shelter honoring Rajasthan’s heritage animal.
+             A resting abode for camels, reflecting desert culture and care.`,
+            link: "/our-projects/shri-pabuji-ushtralaya"
+        },
+
 
     ]
     return (
         <>
 
-<ExploreSlider
-      heading="Explore Our Projects"
-      subheading="Spiritual & Heritage Gardens"
-      items={boxslider}
-      background={bgstay.src}
-    />
+            <ExploreSlider
+                heading="Explore Our Projects"
+                subheading="Spiritual & Heritage Gardens"
+                items={boxslider}
+                background={bgstay.src}
+            />
 
 
             {/* <section
@@ -182,24 +222,24 @@ export const Waterscapes = () => {
         {
             image: image1,
             description: 'Shri Mansarovar',
-            link : "#"
+            link: "#"
         },
         {
             image: image2,
             description: 'Shri Ram Setu',
-            link : "#"
+            link: "#"
 
         },
         {
             image: image3,
             description: 'Sangam Kund',
-            link : "#"
+            link: "#"
 
         },
         {
             image: image1,
             description: 'Shri Mansarovar',
-            link : "#"
+            link: "#"
         },
 
     ]
@@ -259,7 +299,7 @@ export const Waterscapes = () => {
                                                 <div className='grid gap-2 items-center justify-center mb-8 relative'>
                                                     <Image src={item.image} alt='icon' className='w-full h-full mx-auto' />
 
-                                                <Link href={item.link} className='text-md text-white font-normal flex justify-between gap-1 absolute bottom-3 w-[90%] left-[5%] right-[5%] '>{item.description}  <IoIosArrowRoundForward className='text-3xl' /></Link>
+                                                    <Link href={item.link} className='text-md text-white font-normal flex justify-between gap-1 absolute bottom-3 w-[90%] left-[5%] right-[5%] '>{item.description}  <IoIosArrowRoundForward className='text-3xl' /></Link>
                                                 </div>
                                             </div>
                                         </div>

@@ -79,7 +79,7 @@ export const Ourteam = () => {
                   </Link>
                 </div>
                 <Link href="/our-team" >
-                <h5 className="text-lg mb-4 mt-4 font-normal" dangerouslySetInnerHTML={{__html: item.name}}/>
+                <h5 className="text-lg mb-2 mt-4 font-normal" dangerouslySetInnerHTML={{__html: item.name}}/>
                 <h6 className="text-sm font-semibold">{item.designation}</h6>
                 </Link>
               </div>
