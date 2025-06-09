@@ -152,7 +152,7 @@ export const Uses = () => {
       <>
 
         <section
-          className="relative mt-10 pt-16 pb-16 lg:pt-20 lg:pb-20" style={{ background: `url(${bgstay.src})center center / cover no-repeat` }}>
+          className="relative mt-10 pt-16 pb-16 !mb-0 lg:pt-20 lg:pb-20" style={{ background: `url(${bgstay.src})center center / cover no-repeat` }}>
           <div className='absolute top-0 left-0 w-full h-full bg-black opacity-50'></div>
           <div className='mx-auto max-w-[1400px] md:mr-0 px-4 md:px-8 lg:px-2 '>
             <div className='flex flex-wrap lg:flex-nowrap justify-between  gap-6 px-0 md:px-6 z-10 relative lg:px-2'>
