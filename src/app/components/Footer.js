@@ -38,16 +38,7 @@ export const Footer = (htmlContent) => {
     },
   ];
 
-  const message = `Hello,
-
-Thanks for contacting Atulye Krishi Vana!
-To help us assist you better, please reply with:
-
-Your Name
-
-Location
-
-What you're looking for?`;
+  const message = ``;
 
   const encodedMessage = encodeURIComponent(message);
   return (
