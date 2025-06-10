@@ -14,29 +14,28 @@ import Link from 'next/link';
 import banner from "../../../assets/images/business/reforest-banner.webp";
 
 export const SliderCard = () => {
-  const heading1 = "High-yield Varieties"
+  const heading1 = "Shrubs & Hedges"
   const card = [
     {
-      title: "Seeds",
+      title: "Shrubs & Hedges",
       image: img1,
-      link: "#",
+      link: "/agroForestry/shrubs-and-hedges",
     },
     {
-      title: "Seeds",
+      title: "Shrubs",
       image: img2,
-      link: "#",
+      link: "/agroForestry/shrubs-and-hedges/shrubs",
     },
     {
-      title: "Seeds",
+      title: "Hedges",
       image: img3,
-      link: "#",
+      link: "/agroForestry/shrubs-and-hedges/hedges",
     },
     {
-      title: "Seeds",
-      image: img1,
-      link: "#",
+      title: "Shrubs",
+      image: img2,
+      link: "/agroForestry/shrubs-and-hedges/shrubs",
     },
-
 
   ]
   return (

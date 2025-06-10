@@ -838,6 +838,12 @@ body .plant_p {
 .height_300 .card1 {
   height: 300px;
 }
+.blurheight2 .h-96{
+  height: 22.5rem;
+}
+.blurheight2.black_text h2{
+  color: #000;
+}
 
 @media (min-width: 1024px) {
   .orange_div .dark_active .swiper-slide-next .bg-white {
