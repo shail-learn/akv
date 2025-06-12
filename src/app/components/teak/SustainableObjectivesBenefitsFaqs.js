@@ -9,9 +9,9 @@ import Titleslider from '../Titleslider';
 import { FaqsLayout } from '../utilities/Cultivationgrowthwhychoose';
 
 export const Sustainable = () => {
-    const heading = "Athulye Krishi Vana: A Step Towards Sustainable Teak Cultivation";
+    const heading = "Atulye Krishi Vana: A Step Towards Sustainable Teak Cultivation";
     const description =
-        "Athulye Krishi Vana is a agroforestry initiative aimed at promoting sustainable cultivation and economic empowerment of farmers. It integrates:";
+        "Atulye Krishi Vana is a agroforestry initiative aimed at promoting sustainable cultivation and economic empowerment of farmers. It integrates:";
 
     const points = [
         {
@@ -54,23 +54,30 @@ export const Sustainable = () => {
 
 
 export const Objectives = () => {
-    const heading = "Objectives of Athulye Krishi Vana"
+    const heading = "Objectives of Atulye Krishi Vana"
     const fruitData = [
         {
             title: "Encourage responsible teak cultivation",
             image: choose1,
+            flip:"Encourage responsible teak cultivation using modern agronomy techniques."
         },
         {
             title: "Improve farmer income",
             image: choose2,
+            flip:"Improve farmer income through long-term investment in teak plantations."
+
         },
         {
             title: "Enhance forest cover",
             image: choose3,
+            flip:"Enhance forest cover while maintaining biodiversity."
+
         },
         {
             title: "Reduce illegal logging",
             image: choose4,
+            flip:"Reduce illegal logging by providing sustainable alternatives."
+
         },
 
 
@@ -86,7 +93,7 @@ export const Objectives = () => {
 
 
 export const Benefits = () => {
-    const heading = "Benefits of Athulye Krishi Vana’s Approach"
+    const heading = "Benefits of Atulye Krishi Vana’s Approach"
     const boxslider = [
         {
 

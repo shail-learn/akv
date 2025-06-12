@@ -90,22 +90,28 @@ export const Applications = () => {
     {
       title: "Plywood & Veneer Production",
       image: choose1,
+      flip:"Used as a core material in plywood manufacturing. Lightweight yet durable, making it suitable for doors and panels."
     },
     {
       title: "Furniture & Handicrafts",
       image: choose2,
+      flip:"Ideal for making lightweight furniture, cabinets, and interior décor items. Easily machinable and suitable for polished finishes."
     },
     {
       title: "Paper & Pulp Industry",
       image: choose3,
+      flip:"Used in high-quality paper production due to its long fibers. A preferred raw material for packaging paper."
     },
     {
       title: "Biomass & Renewable Energy",
       image: choose4,
+      flip:"Used for biomass fuel and pellet production. Contributes to sustainable energy generation."
     },
     {
       title: "Construction & Packaging",
       image: choose5,
+      flip:"Used for making wooden crates, pallets, and scaffolding materials. Preferred for eco-friendly packaging solutions."
+
     },
 
   ];

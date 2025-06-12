@@ -20,6 +20,12 @@ import slider10 from "../../../assets/images/red/slider10.webp";
 import slider11 from "../../../assets/images/red/slider11.webp";
 import slider12 from "../../../assets/images/red/slider12.webp";
 
+import why1 from "../../../assets/images/red/why1.webp";
+import why2 from "../../../assets/images/red/why2.webp";
+import why3 from "../../../assets/images/red/why3.webp";
+import why4 from "../../../assets/images/red/why4.webp";
+import why5 from "../../../assets/images/red/why5.webp";
+
 
 
 export const Banner = () => {
@@ -42,27 +48,33 @@ export const Banner = () => {
 
 
 export const Choose = () => {
+    const custom_class = "original_img padding_argust desktop-p-0 pt-10"
     const heading = "Why Choose Red Sandalwood?";
     const cardData = [
         {
             title: "High-Value Timber",
             description: "Prized for its distinctive red wood, used in furniture, carvings, and luxury products.",
+            icon: why1
         },
         {
             title: "Medicinal & Cosmetic Uses",
             description: "Widely used in Ayurvedic treatments, skincare, and herbal formulations.",
+            icon: why2
         },
         {
             title: "Long-Term Investment",
             description: "Matures within 25-30 years, offering exceptional returns.",
+            icon: why3
         },
         {
             title: "Sustainable Agroforestry",
             description: "Aids in soil conservation and ecological balance.",
+            icon: why4
         },
         {
             title: "Legal Export Market",
             description: "High demand in India, China, Japan, and Middle Eastern countries.",
+            icon: why5
         },
 
     ];
@@ -84,6 +96,7 @@ export const Choose = () => {
             <Iconslider
                 card={cardData}
                 heading={heading}
+                custom_class={custom_class}
             />
 
 

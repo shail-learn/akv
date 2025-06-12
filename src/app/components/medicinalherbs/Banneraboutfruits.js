@@ -33,7 +33,7 @@ export const MedicinalHerbBanner = () => {
     banner: banner,
     heading: `Medicinal Herbs- Nature’s Own Doctor`,
     title:
-      "At Athulye Krishi Vana, we specialize in the cultivation and promotion of medicinal and special use fruits, offering farmers and entrepreneurs the opportunity to engage in sustainable farming practices that deliver both economic and health benefits",
+      "At Atulye Krishi Vana, we specialize in the cultivation and promotion of medicinal and special use fruits, offering farmers and entrepreneurs the opportunity to engage in sustainable farming practices that deliver both economic and health benefits",
     opacity: "opacity-30",
   };
   return (
@@ -285,7 +285,7 @@ export const WhypartnerMedicinalHerb = () => {
     {
       title: "Sustainability",
       image: choose1,
-      flip: "At Athulye Krishi Vana, we believe in promoting sustainable agricultural practices. Our medicinal and special-use fruits like Bel, Jamun, and Tamarind are integral to agroforestry systems that protect the environment while ensuring long-term profitability for farmers. These trees not only provide food but also enrich the soil and support biodiversity, making them a valuable part of a sustainable farming ecosystem.",
+      flip: "At Atulye Krishi Vana, we believe in promoting sustainable agricultural practices. Our medicinal and special-use fruits like Bel, Jamun, and Tamarind are integral to agroforestry systems that protect the environment while ensuring long-term profitability for farmers. These trees not only provide food but also enrich the soil and support biodiversity, making them a valuable part of a sustainable farming ecosystem.",
     },
     {
       title: "Economic Benefits",
@@ -295,7 +295,7 @@ export const WhypartnerMedicinalHerb = () => {
     {
       title: "Expert Support and Training",
       image: choose3,
-      flip: "Athulye Krishi Vana provides comprehensive support to farmers who wish to cultivate medicinal and special-use fruits. We offer expert advice, high-quality saplings, and continuous guidance on best practices for planting, nurturing, and harvesting these trees. We ensure that our farmers are equipped with the knowledge and tools they need to succeed in this growing and profitable sector.",
+      flip: "Atulye Krishi Vana provides comprehensive support to farmers who wish to cultivate medicinal and special-use fruits. We offer expert advice, high-quality saplings, and continuous guidance on best practices for planting, nurturing, and harvesting these trees. We ensure that our farmers are equipped with the knowledge and tools they need to succeed in this growing and profitable sector.",
     },
     {
       title: "Market Access",

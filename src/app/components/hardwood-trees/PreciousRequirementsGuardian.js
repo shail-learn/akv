@@ -1,7 +1,7 @@
 import React from 'react'
 import { Gridbox } from '../Gridbox';
 import why1 from "../../../assets/images/hardwood/why6.webp";
-import why2 from "../../../assets/images/hardwood/why4.webp";
+import why2 from "../../../assets/images/hardwood/why04.webp";
 import why3 from "../../../assets/images/hardwood/why7.webp";
 import why4 from "../../../assets/images/hardwood/why9.webp";
 import why5 from "../../../assets/images/hardwood/why8.webp";
@@ -10,6 +10,9 @@ import why6 from "../../../assets/images/hardwood/why10.webp";
 import why7 from "../../../assets/images/hardwood/why11.webp";
 import why8 from "../../../assets/images/hardwood/why12.webp";
 import why9 from "../../../assets/images/hardwood/why13.webp";
+import why10 from "../../../assets/images/hardwood/why14.webp";
+
+
 
 import { GrowthSlider } from '../utilities/Cultivationgrowthwhychoose';
 
@@ -143,7 +146,7 @@ export const Guardian = () => {
       description: 'Its deep roots help prevent soil erosion, making it ideal for afforestation projects.',
     },
     {
-      image: why2,
+      image: why10,
       title: 'Medicinal Use: ',
       description: 'Beneficial in treating asthma, fractures, and urinary disorders.',
     },

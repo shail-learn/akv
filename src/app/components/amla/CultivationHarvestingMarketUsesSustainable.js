@@ -376,7 +376,7 @@ export const Uses = () => {
 export const Sustainable = () => {
     const heading = "Sustainable Amla Cultivation with Atulye Krishi Vana"
    const className="slider_height"
-   const title1="Athulye Krishi Vana promotes sustainable Amla farming through:"
+   const title1="Atulye Krishi Vana promotes sustainable Amla farming through:"
    const title2="These initiatives ensure sustainable cultivation while increasing farmer profitability."
 
     const card = [

@@ -20,6 +20,11 @@ import image9 from "../../../assets/images/sandalwood/img9.webp";
 import image10 from "../../../assets/images/sandalwood/img10.webp";
 import image11 from "../../../assets/images/sandalwood/img11.webp";
 
+import why1 from "../../../assets/images/sandalwood/why1.webp";
+import why2 from "../../../assets/images/sandalwood/why2.webp";
+import why3 from "../../../assets/images/sandalwood/why3.webp";
+import why4 from "../../../assets/images/sandalwood/why4.webp";
+import why5 from "../../../assets/images/sandalwood/why5.webp";
 
 export const Sandal = () => {
     const text = {
@@ -47,22 +52,31 @@ export const Choose = () => {
         {
             title: "Long-Lasting Value",
             description: "Strengthens with age, increasing in value over time.",
+            icon:why1
         },
         {
             title: "High-Value Essential Oil",
             description: "Used in perfumes, cosmetics, and aromatherapy.",
+            icon:why2
+
         },
         {
             title: "Premium Aromatic Timber",
             description: "Prized for its fragrance and durability.",
+            icon:why3
+
         },
         {
             title: "Versatile Applications",
             description: "Used in medicine, religious rituals, and luxury products.",
+            icon:why4
+
         },
         {
             title: "Sustainable Growth Potential",
             description: "Can be cultivated with proper management for long-term supply.",
+            icon:why5
+
         },
 
     ];

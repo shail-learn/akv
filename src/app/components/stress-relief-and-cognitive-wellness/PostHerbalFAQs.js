@@ -105,7 +105,7 @@ export const Post = () => {
 export const Herbal = () => {
   const heading = "Join the Herbal Wellness Farming Revolution";
   const description =
-    "By cultivating stress-relief and cognitive-enhancing herbs under the Athulye Krishi Vana umbrella, farmers can become pioneers in India's herbal wellness ecosystem. These crops provide an eco-friendly, sustainable income source that supports public health, respects nature, and aligns with India’s rich heritage of plant-based healing. <br/> Whether you are a first-time grower or an established farmer seeking to diversify, this vertical offers the perfect blend of profitability, purpose, and sustainability.";
+    "By cultivating stress-relief and cognitive-enhancing herbs under the Atulye Krishi Vana umbrella, farmers can become pioneers in India's herbal wellness ecosystem. These crops provide an eco-friendly, sustainable income source that supports public health, respects nature, and aligns with India’s rich heritage of plant-based healing. <br/> Whether you are a first-time grower or an established farmer seeking to diversify, this vertical offers the perfect blend of profitability, purpose, and sustainability.";
 
   return (
     <section
@@ -140,13 +140,13 @@ export const FAQs = () => {
     {
       question: "Can these herbs be grown without synthetic pesticides or fertilizers?",
       answer:
-        "Yes, most of the medicinal herbs listed—Ashwagandha, Brahmi, Mandukparni, Shatavari, and Tulsi—are naturally hardy and pest-resistant, making them ideal candidates for organic cultivation. They thrive in diverse soil conditions and require minimal chemical intervention. Using compost, neem-based sprays, and crop rotation helps maintain soil fertility and pest control. Their resilience to disease further reduces dependency on synthetic inputs. Athulye Krishi Vana encourages natural farming practices by offering guidance on organic methods, natural pest management, and soil regeneration. Growing these herbs organically not only ensures healthier end products but also qualifies them for premium certification markets.",
+        "Yes, most of the medicinal herbs listed—Ashwagandha, Brahmi, Mandukparni, Shatavari, and Tulsi—are naturally hardy and pest-resistant, making them ideal candidates for organic cultivation. They thrive in diverse soil conditions and require minimal chemical intervention. Using compost, neem-based sprays, and crop rotation helps maintain soil fertility and pest control. Their resilience to disease further reduces dependency on synthetic inputs. Atulye Krishi Vana encourages natural farming practices by offering guidance on organic methods, natural pest management, and soil regeneration. Growing these herbs organically not only ensures healthier end products but also qualifies them for premium certification markets.",
     },
     {
       question:
         "What kind of farmers can benefit from cultivating these herbs?",
       answer:
-        "Small, marginal, and tribal farmers stand to gain significantly from cultivating these herbs. Since the plants require minimal land, water, and maintenance, they are ideal for those with limited resources. These herbs also grow well in degraded or fallow lands, making them suitable for areas with low fertility. For women-led and community farms, they offer a manageable yet high-value crop option. The steady demand from herbal medicine companies and wellness brands means consistent income potential. Athulye Krishi Vana provides end-to-end support, making it accessible even for first-time growers or those looking to transition from chemical-based farming.",
+        "Small, marginal, and tribal farmers stand to gain significantly from cultivating these herbs. Since the plants require minimal land, water, and maintenance, they are ideal for those with limited resources. These herbs also grow well in degraded or fallow lands, making them suitable for areas with low fertility. For women-led and community farms, they offer a manageable yet high-value crop option. The steady demand from herbal medicine companies and wellness brands means consistent income potential. Atulye Krishi Vana provides end-to-end support, making it accessible even for first-time growers or those looking to transition from chemical-based farming.",
     },
     {
       question: "Are these herbs safe for children and the elderly?",
@@ -161,7 +161,7 @@ export const FAQs = () => {
     {
       question: "What forms can these herbs be processed into post-harvest?",
       answer:
-        "After harvest, these herbs can be processed into a wide variety of forms to suit consumer needs. Roots like Ashwagandha and Shatavari are typically cleaned, dried, and ground into powder or extracted into tinctures. Leafy herbs like Tulsi and Brahmi are dried for teas, made into syrups, or infused into oils. Mandukparni leaves are popular in both capsules and external applications like skin balms. Processing options include drying, grinding, oil distillation, and water-based extraction. Athulye Krishi Vana guides farmers and cooperatives in adopting cost-effective post-harvest practices that ensure hygiene, potency, and compliance with quality standards.",
+        "After harvest, these herbs can be processed into a wide variety of forms to suit consumer needs. Roots like Ashwagandha and Shatavari are typically cleaned, dried, and ground into powder or extracted into tinctures. Leafy herbs like Tulsi and Brahmi are dried for teas, made into syrups, or infused into oils. Mandukparni leaves are popular in both capsules and external applications like skin balms. Processing options include drying, grinding, oil distillation, and water-based extraction. Atulye Krishi Vana guides farmers and cooperatives in adopting cost-effective post-harvest practices that ensure hygiene, potency, and compliance with quality standards.",
     },
   ];
 

@@ -14,7 +14,7 @@ import business from "../../../assets/images/guava/business-new.webp";
 import contactbg from "../../../assets/images/training/join-bg.webp";
 
 export const Acidlime = () => {
-  const heading = `Why Choose Athulye Krishi Vana’s Acid Lime?`
+  const heading = `Why Choose Atulye Krishi Vana’s Acid Lime?`
   const data = [
     {
       id: 1,
@@ -167,7 +167,7 @@ export const Partner = () => {
 
                                 <ul className="mb-6 text-md space-y-2">
                                     <li>
-                                    Athulye Krishi Vana invites retailers, wholesalers, and businesses to partner with us in delivering premium, organic, and sustainably grown acid lime.</li>
+                                    Atulye Krishi Vana invites retailers, wholesalers, and businesses to partner with us in delivering premium, organic, and sustainably grown acid lime.</li>
 
                                     <li>
                                     Together, we can build a healthier, greener, and more prosperous agricultural future!

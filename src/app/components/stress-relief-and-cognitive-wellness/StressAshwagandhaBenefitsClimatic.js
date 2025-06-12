@@ -18,7 +18,7 @@ export const Stress = () => {
   const text = {
     banner: banner,
     heading: `Stress Relief & Cognitive Wellness`,
-    title: 'The Athulye Krishi Vana initiative champions the cultivation of herbal and medicinal plants that provide profound benefits for mental clarity, emotional balance, and cognitive enhancement. In today’s world, stress and mental fatigue are common concerns.',
+    title: 'The Atulye Krishi Vana initiative champions the cultivation of herbal and medicinal plants that provide profound benefits for mental clarity, emotional balance, and cognitive enhancement. In today’s world, stress and mental fatigue are common concerns.',
     opacity: 'opacity-30'
   }
   return (

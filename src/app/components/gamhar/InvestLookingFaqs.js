@@ -78,7 +78,7 @@ export const Invest = () => {
 export const Looking = () => {
   const growData = {
     heading: "Looking to Grow or Source Gamhar?",
-    cta: "Contact Athulye Krishi Vana for:",
+    cta: "Contact Atulye Krishi Vana for:",
     paragraphs: [
       "Premium-quality Gamhar saplings",
       "Expert guidance on sustainable forestry",
