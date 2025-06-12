@@ -89,7 +89,7 @@ export const FAQs = () => {
     {
       question: "Can these herbs be grown organically?",
       answer:
-        "Yes, these herbs are highly suitable for organic cultivation. They generally require fewer pesticides and synthetic fertilizers, as many have natural pest-repellent properties. For example, Chitrak is naturally pest-resistant, and Aloe Vera has a robust immune system that keeps diseases at bay. Using compost, organic manure, and natural pest repellents like neem oil can further enhance yield without compromising soil health. Athulye Krishi Vana supports farmers with organic farming techniques, including vermicomposting, crop rotation, and intercropping, ensuring the production of high-quality, chemical-free herbal produce.",
+        "Yes, these herbs are highly suitable for organic cultivation. They generally require fewer pesticides and synthetic fertilizers, as many have natural pest-repellent properties. For example, Chitrak is naturally pest-resistant, and Aloe Vera has a robust immune system that keeps diseases at bay. Using compost, organic manure, and natural pest repellents like neem oil can further enhance yield without compromising soil health. Atulye Krishi Vana supports farmers with organic farming techniques, including vermicomposting, crop rotation, and intercropping, ensuring the production of high-quality, chemical-free herbal produce.",
     },
     {
       question: "How do these herbs support metabolic health?",

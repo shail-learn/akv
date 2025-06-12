@@ -122,7 +122,7 @@ export const Cultivation = () => {
 export const Joins = () => {
     const heading = "Join the Natural Immunity Revolution";
   const description =
-    "By partnering with Athulye Krishi Vana to cultivate these time-tested immunity enhancers, farmers become key contributors to India's healthcare sovereignty and natural wellness ecosystem. These crops not only provide sustainable livelihoods but also support public health, preserve traditional knowledge, and create resilient agricultural systems. <br/> Whether you're a progressive farmer looking to diversify, a forest-dwelling community seeking sustainable income opportunities, or an agricultural entrepreneur targeting the wellness market, our immunity herb vertical offers a perfect blend of ecological wisdom, economic viability, and societal benefit.";
+    "By partnering with Atulye Krishi Vana to cultivate these time-tested immunity enhancers, farmers become key contributors to India's healthcare sovereignty and natural wellness ecosystem. These crops not only provide sustainable livelihoods but also support public health, preserve traditional knowledge, and create resilient agricultural systems. <br/> Whether you're a progressive farmer looking to diversify, a forest-dwelling community seeking sustainable income opportunities, or an agricultural entrepreneur targeting the wellness market, our immunity herb vertical offers a perfect blend of ecological wisdom, economic viability, and societal benefit.";
 
   return (
     <section
@@ -163,7 +163,7 @@ export const Faqs = () => {
       question:
         "Can small-scale and marginal farmers benefit from growing these immunity herbs?",
       answer:
-        "Absolutely. These herbs are particularly well-suited for small-scale cultivation due to their high value-to-volume ratio and minimal land requirements. Kalmegh and Patha can be productively grown on plots as small as 0.1 hectare, while climbing species like Giloy maximize vertical space utilization. Many of these plants thrive in partial shade or marginal soils unsuitable for conventional crops. Cooperative models supported by Athulye Krishi Vana allow small farmers to aggregate production, access processing facilities, and negotiate better market prices collectively. The minimal chemical input requirements make these herbs ideal for resource-limited farmers seeking sustainable high-value alternatives.",
+        "Absolutely. These herbs are particularly well-suited for small-scale cultivation due to their high value-to-volume ratio and minimal land requirements. Kalmegh and Patha can be productively grown on plots as small as 0.1 hectare, while climbing species like Giloy maximize vertical space utilization. Many of these plants thrive in partial shade or marginal soils unsuitable for conventional crops. Cooperative models supported by Atulye Krishi Vana allow small farmers to aggregate production, access processing facilities, and negotiate better market prices collectively. The minimal chemical input requirements make these herbs ideal for resource-limited farmers seeking sustainable high-value alternatives.",
     },
     {
       question: "What specific market opportunities exist for these immunity-enhancing plants?",
@@ -171,7 +171,7 @@ export const Faqs = () => {
         "The market landscape for these herbs spans multiple sectors with varied price points. Pharmaceutical companies purchase raw materials for standardized extracts used in immunity formulations, while Ayurvedic manufacturers require these herbs for traditional preparations. The nutraceutical industry incorporates them into dietary supplements, protein powders, and wellness shots. Direct-to-consumer channels include dried herbs for teas, powders for home remedies, and ready-to-consume products. Export markets, particularly in Europe and North America, seek certified organic sources of these herbs as consumer demand for natural immunity solutions continues to grow globally.",
     },
     {
-      question: "How does Athulye Krishi Vana ensure quality standards for these medicinal plants?",
+      question: "How does Atulye Krishi Vana ensure quality standards for these medicinal plants?",
       answer:
         "Our quality assurance begins with authenticated planting material and extends through cultivation, harvest, and post-processing stages. We provide farmers with detailed protocols for optimal harvest timing based on bioactive compound accumulation cycles. Our post-harvest handling guidelines emphasize temperature control, minimal sun exposure, and proper drying techniques to preserve medicinal efficacy. We facilitate testing services for key parameters like moisture content, microbial load, and active ingredient concentration. Additionally, we help farmer groups implement Good Agricultural and Collection Practices (GACP) aligned with World Health Organization guidelines, ensuring their herbs meet international quality standards.",
     },

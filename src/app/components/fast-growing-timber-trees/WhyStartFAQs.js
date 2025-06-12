@@ -15,27 +15,33 @@ export const Why = () => {
       {
           title: "High-Yield Timber Varieties",
           image: choose1,
+          flip:"Carefully selected fast-growing species."
       },
       {
           title: "Scientific Agroforestry Practices",
           image: choose2,
-      },
-      {
-          title: "Expert Support and Training",
-          image: choose3,
+          flip:"Advanced spacing, pruning, and soil management techniques."
+
       },
       {
           title: "Sustainable Land Use",
-          image: choose4,
+          image: choose3,
+          flip:" Improving biodiversity while maximizing commercial output."
+
       },
       {
           title: "Market-Ready Wood",
-          image: choose5,
+          image: choose4,
+          flip:" Timber cultivated with premium quality standards."
+
       },
       {
           title: "Support for Farmers & Investors",
-          image: choose6,
+          image: choose5,
+          flip:" End-to-end guidance on plantation setup and management."
+
       },
+
 
   ];
   return (

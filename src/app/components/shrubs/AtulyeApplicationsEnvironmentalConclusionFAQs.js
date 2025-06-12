@@ -163,7 +163,7 @@ export const Environmental = () => {
 export const Conclusion = () => {
     const heading = "Conclusion: Small Shrubs, Big Impact";
     const description =
-      "Shrubs like Vasaka, Chirchita, Yavasa, and Kanghi are compact powerhouses of healing, resilience, and green potential. At Athulye Krishi Vana, we see these plants not just as herbal ingredients, but as tools to restore landscapes, strengthen livelihoods, and revive India’s traditional plant knowledge. <br/>Whether you're transforming a wasteland, starting a herbal garden, or looking for low-maintenance plants for agroecological farming—these shrubs offer reliable returns and lasting value. <br/><br/> <b>Grow health, heritage, and habitat with us. <br/> Partner with Athulye Krishi Vana and make every plant a purpose-driven choice.</b>";
+      "Shrubs like Vasaka, Chirchita, Yavasa, and Kanghi are compact powerhouses of healing, resilience, and green potential. At Atulye Krishi Vana, we see these plants not just as herbal ingredients, but as tools to restore landscapes, strengthen livelihoods, and revive India’s traditional plant knowledge. <br/>Whether you're transforming a wasteland, starting a herbal garden, or looking for low-maintenance plants for agroecological farming—these shrubs offer reliable returns and lasting value. <br/><br/> <b>Grow health, heritage, and habitat with us. <br/> Partner with Atulye Krishi Vana and make every plant a purpose-driven choice.</b>";
 
     return (
       <section
@@ -208,7 +208,7 @@ export const FAQs = () => {
     {
       question: "Are there risks of overharvesting or ecological disruption?",
       answer:
-        " Yes, if not managed properly, wild harvesting—especially of Chirchita or Yavasa—can lead to depletion of natural populations. Sustainable harvesting involves rotational cutting, leaving rootstocks intact, and collecting only mature parts of the plant. Cultivation, rather than extraction from forests, is encouraged under Athulye Krishi Vana to prevent biodiversity loss. Overharvesting also affects the habitat of insects and small fauna. Educating local communities on timing, tools, and sustainable limits helps ensure that ecological functions are not disrupted. Community-led monitoring and integration with biodiversity parks help balance income generation with conservation.        ",
+        " Yes, if not managed properly, wild harvesting—especially of Chirchita or Yavasa—can lead to depletion of natural populations. Sustainable harvesting involves rotational cutting, leaving rootstocks intact, and collecting only mature parts of the plant. Cultivation, rather than extraction from forests, is encouraged under Atulye Krishi Vana to prevent biodiversity loss. Overharvesting also affects the habitat of insects and small fauna. Educating local communities on timing, tools, and sustainable limits helps ensure that ecological functions are not disrupted. Community-led monitoring and integration with biodiversity parks help balance income generation with conservation.        ",
     },
     {
       question: "Can these shrubs be used to control weeds or invasive plants?",

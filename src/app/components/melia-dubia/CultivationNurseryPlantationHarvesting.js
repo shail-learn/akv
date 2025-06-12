@@ -3,8 +3,8 @@ import { FaqSlider } from '../FaqSlider';
 import img01 from "../../../assets/images/teak/small.webp";
 import { MarketLayout } from '../utilities/UsesStanadarLayout';
 import PlantationSection from '../PlantationSection';
-import market1 from "../../../assets/images/teak/right.webp";
-import market2 from "../../../assets/images/teak/left.webp";
+import market1 from "../../../assets/images/melia/right.webp";
+import market2 from "../../../assets/images/melia/left.webp";
 import Image from 'next/image';
 
 export const Cultivation = () => {

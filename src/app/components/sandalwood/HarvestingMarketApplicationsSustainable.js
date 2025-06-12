@@ -1,7 +1,7 @@
 import React from 'react'
-import img1 from "../../../assets/images/red/icon1.png";
-import img2 from "../../../assets/images/red/icon2.png";
-import img3 from "../../../assets/images/red/icon3.png";
+import img1 from "../../../assets/images/sandalwood/yield1.webp";
+import img2 from "../../../assets/images/sandalwood/yield2.webp";
+import img3 from "../../../assets/images/sandalwood/yield3.webp";
 import img4 from "../../../assets/images/red/icon4.png";
 import img5 from "../../../assets/images/red/icon5.png";
 import { HarvestingLayout, UseSecLayout } from '../utilities/UsesStanadarLayout';
@@ -169,9 +169,9 @@ export const Applications = () => {
 
 
 export const Sustainable = () => {
-    const heading = "Sustainable Sandalwood Cultivation with Athulye Krishi Vana"
+    const heading = "Sustainable Sandalwood Cultivation with Atulye Krishi Vana"
     const title1 =
-        "Athulye Krishi Vana promotes sustainable sandalwood plantations through:";
+        "Atulye Krishi Vana promotes sustainable sandalwood plantations through:";
 
     const className = "center_faq slider_height"
     const card = [

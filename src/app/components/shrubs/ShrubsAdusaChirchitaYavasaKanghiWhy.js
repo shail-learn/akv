@@ -37,7 +37,7 @@ export const Shrubs = () => {
         banner: banner,
         heading: `Medicinal & Ecological Shrubs`,
         subtitle:"Low-Maintenance Green Assets for Health, Heritage, and Habitat",
-        title: 'Shrubs are compact, woody or semi-woody plants that serve multiple functions in natural and cultivated ecosystems. Unlike trees, they remain shorter but grow densely, offering excellent coverage, resilience, and versatility. Whether used in hedgerows, herbal gardens, soil conservation zones, or biodiversity parks, shrubs are crucial in building climate-resilient landscapes. <br/> Under the Athulye Krishi Vana initiative, we promote the cultivation of native and adaptive shrubs that serve medicinal, ornamental, and ecological purposes. Among these, Adusa / Vasaka (Justicia adhatoda), Chirchita (Achyranthes aspera), Yavasa (Alhagi maurorum), and Kanghi (Abutilon indicum) stand out for their resilience, heritage value, and practical applications.',
+        title: 'Shrubs are compact, woody or semi-woody plants that serve multiple functions in natural and cultivated ecosystems. Unlike trees, they remain shorter but grow densely, offering excellent coverage, resilience, and versatility. Whether used in hedgerows, herbal gardens, soil conservation zones, or biodiversity parks, shrubs are crucial in building climate-resilient landscapes. <br/> Under the Atulye Krishi Vana initiative, we promote the cultivation of native and adaptive shrubs that serve medicinal, ornamental, and ecological purposes. Among these, Adusa / Vasaka (Justicia adhatoda), Chirchita (Achyranthes aspera), Yavasa (Alhagi maurorum), and Kanghi (Abutilon indicum) stand out for their resilience, heritage value, and practical applications.',
         opacity: 'opacity-40'
     }
     return (
@@ -298,7 +298,7 @@ export const Kanghi = () => {
 
 
 export const Why = () => {
-    const heading = "Why Cultivate Shrubs with Athulye Krishi Vana?"
+    const heading = "Why Cultivate Shrubs with Atulye Krishi Vana?"
     const fruitData = [
       {
         title: "Multifunctional Plants",

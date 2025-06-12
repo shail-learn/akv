@@ -171,7 +171,7 @@ export const Why = () => {
     {
       title: "Technical Support and Quality Assurance",
       image: choose3,
-      flip: "Athulye Krishi Vana provides comprehensive guidance on cultivation techniques, harvest timing, post-harvest handling, and primary processing to preserve bioactive compounds. We ensure farmers produce herbs that meet quality standards demanded by pharmaceutical companies."
+      flip: "Atulye Krishi Vana provides comprehensive guidance on cultivation techniques, harvest timing, post-harvest handling, and primary processing to preserve bioactive compounds. We ensure farmers produce herbs that meet quality standards demanded by pharmaceutical companies."
     },
     {
       title: "Market Integration and Value Addition",
