@@ -48,7 +48,7 @@ export const Sustainable = () => {
   const heading = "Sustainable  Mahogany Cultivation with Atulye Krishi Vana";
   const className = "slider_height";
   const title1 =
-    "Athulye Krishi Vana promotes sustainable Mahogany farming through: ";
+    "Atulye Krishi Vana promotes sustainable Mahogany farming through: ";
   const title2 =
     "These initiatives help balance economic viability with environmental sustainability.";
 

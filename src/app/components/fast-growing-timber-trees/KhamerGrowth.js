@@ -5,7 +5,7 @@ import why1 from "../../../assets/images/fast/growth11.webp";
 import why2 from "../../../assets/images/fast/growth12.webp";
 import why3 from "../../../assets/images/fast/growth13.webp";
 import why4 from "../../../assets/images/fast/growth14.webp";
-import why5 from "../../../assets/images/fast/growth14.webp";
+import why5 from "../../../assets/images/fast/growth15.webp";
 
 import image1 from "../../../assets/images/fast/img5.webp";
 import image2 from "../../../assets/images/fast/img6.webp";

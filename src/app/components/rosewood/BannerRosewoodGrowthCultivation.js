@@ -24,9 +24,8 @@ import image12 from "../../../assets/images/rosewood/img12.webp";
 export const Banner = () => {
     const text = {
         banner: banner,
-        heading: `Sandalwood (Santalum album)`,
-        subtitle: "The Gold Standard of Aromatic Timber",
-        title: 'Sandalwood, scientifically known as Santalum album, is a highly valued tree native to India, prized for its fragrant heartwood and essential oil. Known as "liquid gold" in the perfume and cosmetics industry, sandalwood has been an integral part of traditional medicine, spiritual rituals, and fine craftsmanship for centuries.',
+        heading: `Rosewood (Dalbergia latifolia) – A Premium Hardwood for Timeless Craftsmanship`,
+        title: 'Rosewood, scientifically known as Dalbergia latifolia, is a high-quality timber species indigenous to India. It is prized for its luxurious deep brown color, exceptional durability, and rich grain texture, making it one of the most sought-after woods in furniture, décor, and musical instrument manufacturing. Found across the sub-Himalayan tract from eastern Uttar Pradesh to Sikkim, as well as in central, western, and southern India, rosewood has been a cornerstone of fine woodworking for centuries.        ',
         opacity: 'opacity-20'
     }
     return (

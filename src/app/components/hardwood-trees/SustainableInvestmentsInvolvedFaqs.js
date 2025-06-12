@@ -87,28 +87,37 @@ export const Investments = () => {
     const heading = "Why Choose Atulye Krishi Vana for Hardwood Investments?"
     const fruitData = [
         {
-            title: "Sustainable & Ethical Practices",
+            title: "Global Quality Standards",
             image: choose1,
-        },
-        {
-            title: "State-of-the-Art Farming Techniques",
-            image: choose2,
-        },
-        {
-            title: "Expert Advisory & Support",
-            image: choose3,
+            flip:"Competing on an international scale of productivity & sustainability."
         },
         {
             title: "High-Value Hardwood Species",
-            image: choose4,
+            image: choose2,
+            flip:"Focus on long-term economic returns & environmental benefits."
         },
         {
-            title: "Global Quality Standards",
-            image: choose5,
+            title: "State-of-the-Art Farming Techniques",
+            image: choose3,
+            flip:"Implementing modern agroforestry methods for superior growth."
+
+        },
+        {
+            title: "Sustainable & Ethical Practices",
+            image: choose4,
+            flip:"Committed to eco-friendly forestry and social impact."
         },
         {
             title: "End-to-End Transparency",
+            image: choose5,
+            flip:"Real-time updates and full visibility from plantation to harvest."
+
+        },
+        {
+            title: "Expert Advisory & Support",
             image: choose6,
+            flip:"Backed by forestry experts ensuring informed, low-risk investments."
+
         },
 
     ];
