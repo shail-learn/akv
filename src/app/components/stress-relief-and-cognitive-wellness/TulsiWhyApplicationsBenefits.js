@@ -76,7 +76,7 @@ export const Tulsi = () => {
 
 
 export const Why = () => {
-  const heading = "Why Choose Athulye Krishi Vana for Medicinal Herbs?"
+  const heading = "Why Choose Atulye Krishi Vana for Medicinal Herbs?"
   const fruitData = [
     {
       title: "Agroecological Integration",
@@ -96,7 +96,7 @@ export const Why = () => {
     {
       title: "Direct Market Linkage",
       image: choose4,
-      flip: "Athulye Krishi Vana has strategic partnerships with herbal product manufacturers, Ayurvedic companies, and online wellness platforms. We help farmers access premium buyers who are seeking clean-label, naturally grown medicinal plant ingredients."
+      flip: "Atulye Krishi Vana has strategic partnerships with herbal product manufacturers, Ayurvedic companies, and online wellness platforms. We help farmers access premium buyers who are seeking clean-label, naturally grown medicinal plant ingredients."
     },
 
 

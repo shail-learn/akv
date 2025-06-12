@@ -13,7 +13,7 @@ import fruit6 from "../../../assets/images/timber/Melia-dubia.webp";
 import fruit7 from "../../../assets/images/timber/Rosewood.webp";
 import fruit8 from "../../../assets/images/timber/Red-Sandalwood.webp";
 import fruit9 from "../../../assets/images/timber/Sandalwood.webp";
-
+import { FaLongArrowAltRight } from "react-icons/fa";
 import Image from 'next/image';
 
 import Link from 'next/link';
@@ -164,7 +164,7 @@ export const Explore = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {visibleItems.map((item, index) => (
-              <Link href={item.link} key={index} className="overflow-hidden">
+              <Link href={item.link} key={index} className="overflow-hidden relative">
                 <div className="w-full h-[270px] relative">
                   <Image
                     src={item.image}
@@ -174,9 +174,10 @@ export const Explore = () => {
                   />
                   <div className="absolute top-0 left-0 w-full h-full bg-black opacity-20"></div>
                 </div>
-                <div className="p-4 -mt-14 relative z-10 text-base font-semibold text-white">
-                  {item.title}
-                </div>
+                <div className="absolute bottom-0 left-0 w-full p-4 text-white font-semibold text-base bg-opacity-80 flex justify-between items-center">
+                      <span>{item.title}</span>
+                       <FaLongArrowAltRight />
+                    </div>
               </Link>
             ))}
           </div>

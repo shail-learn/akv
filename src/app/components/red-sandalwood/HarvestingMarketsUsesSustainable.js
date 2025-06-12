@@ -1,9 +1,9 @@
 import React from 'react'
-import img1 from "../../../assets/images/red/icon1.png";
-import img2 from "../../../assets/images/red/icon2.png";
-import img3 from "../../../assets/images/red/icon3.png";
-import img4 from "../../../assets/images/red/icon4.png";
-import img5 from "../../../assets/images/red/icon5.png";
+import img1 from "../../../assets/images/red/yield1.webp";
+import img2 from "../../../assets/images/red/yield2.webp";
+import img3 from "../../../assets/images/red/yield3.webp";
+import img4 from "../../../assets/images/red/yield4.webp";
+import img5 from "../../../assets/images/red/Yield5.webp";
 import { HarvestingLayout, MarketLayout, UseSecLayout } from '../utilities/UsesStanadarLayout';
 import img01 from "../../../assets/images/red/market.webp";
 import Image from 'next/image';
@@ -203,7 +203,7 @@ export const Uses = () => {
 
 
 export const Sustainable = () => {
-    const heading = "Sustainable Red Sandalwood Cultivation with Athulye Krishi Vana"
+    const heading = "Sustainable Red Sandalwood Cultivation with Atulye Krishi Vana"
     const title1 =
     "Atulye Krishi Vana promotes eco-friendly Red Sandalwood farming through:";
     const className="center_faq slider_height"

@@ -54,9 +54,9 @@ export const Uses = () => {
 
 
 export const Sustainable = () => {
-  const heading = "Sustainable Rosewood Cultivation  Athulye Krishi Vana"
+  const heading = "Sustainable Rosewood Cultivation  Atulye Krishi Vana"
     const title1 =
-    "Athulye Krishi Vana promotes sustainable rosewood plantations through:";
+    "Atulye Krishi Vana promotes sustainable rosewood plantations through:";
     const className="center_faq slider_height"
     const card = [
         {

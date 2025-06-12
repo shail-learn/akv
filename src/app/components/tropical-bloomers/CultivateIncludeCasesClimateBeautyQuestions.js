@@ -14,7 +14,7 @@ import bgstay from "../../../assets/images/stress/bg.webp";
 import { FaqSlider } from '../FaqSlider';
 import { FaqsLayout } from '../utilities/Cultivationgrowthwhychoose';
 export const Cultivate = () => {
-    const heading = "Why Cultivate Tropical Bloomers with Athulye Krishi Vana?"
+    const heading = "Why Cultivate Tropical Bloomers with Atulye Krishi Vana?"
     const fruitData = [
       {
         title: "Beauty with Biodiversity",
@@ -213,7 +213,7 @@ export const Climate = () => {
 export const Beauty = () => {
     const heading = "Rooted in Culture, Rising with Climate Wisdom";
     const description =
-      "Tropical bloomers symbolize the harmonious blend of tradition, biodiversity, and sustainable development. At Athulye Krishi Vana, we encourage communities to plant not just for profit—but for resilience, regeneration, and reverence. <br/> From bright bougainvillea-lined walls to sacred Ashok groves, these plants can transform landscapes and lives. Whether you're a farmer, panchayat leader, urban planner, or wellness entrepreneur, we invite you to partner with us. <br/><br/> <b>Let's grow beauty, support biodiversity, and build an economy rooted in nature. Connect with Athulye Krishi Vana. Let's make every bloom count.</b>";
+      "Tropical bloomers symbolize the harmonious blend of tradition, biodiversity, and sustainable development. At Atulye Krishi Vana, we encourage communities to plant not just for profit—but for resilience, regeneration, and reverence. <br/> From bright bougainvillea-lined walls to sacred Ashok groves, these plants can transform landscapes and lives. Whether you're a farmer, panchayat leader, urban planner, or wellness entrepreneur, we invite you to partner with us. <br/><br/> <b>Let's grow beauty, support biodiversity, and build an economy rooted in nature. Connect with Atulye Krishi Vana. Let's make every bloom count.</b>";
 
     return (
       <section

@@ -138,7 +138,7 @@ export const Plantation = () => {
         },
         {
             image: why4,
-            title: 'Irrigation ',
+            title: 'Irrigation',
             description: 'Moderate water needs; drought-tolerant once established.',
         },
         {

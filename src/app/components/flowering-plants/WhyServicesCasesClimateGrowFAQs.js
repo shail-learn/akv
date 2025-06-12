@@ -16,7 +16,7 @@ import { FaqsLayout } from '../utilities/Cultivationgrowthwhychoose';
 
 
 export const Why = () => {
-  const heading = "Why Cultivate Flowering & Ornamental Plants with Athulye Krishi Vana?"
+  const heading = "Why Cultivate Flowering & Ornamental Plants with Atulye Krishi Vana?"
   const fruitData = [
     {
       title: "Enhances Landscape Value",
