@@ -3,22 +3,32 @@ import React from 'react'
 import Image from 'next/image';
 import { Gridbox } from '../Gridbox';
 import key1 from "../../../assets/images/Immunity/key1.webp";
-import key2 from "../../../assets/images/Immunity/key2.webp";
-import key3 from "../../../assets/images/Immunity/key3.webp";
-import key4 from "../../../assets/images/Immunity/key4.webp";
-import key5 from "../../../assets/images/Immunity/key5.webp";
+import key2 from "../../../assets/images/Immunity/key17.webp";
+import key3 from "../../../assets/images/Immunity/key18.webp";
+import key4 from "../../../assets/images/Immunity/key19.webp";
+import key5 from "../../../assets/images/Immunity/key20.webp";
+
+import key6 from "../../../assets/images/Immunity/key21.webp";
+import key7 from "../../../assets/images/Immunity/key2.webp";
+import key8 from "../../../assets/images/Immunity/key23.webp";
+import key9 from "../../../assets/images/Immunity/key24.webp";
+import key10 from "../../../assets/images/Immunity/key25.webp";
 
 import { GrowthSlider } from '../utilities/Cultivationgrowthwhychoose';
-import circle1 from "../../../assets/images/Immunity/circle1.webp";
-import circle2 from "../../../assets/images/Immunity/circle2.webp";
+import circle1 from "../../../assets/images/Immunity/circle01.webp";
+import circle02 from "../../../assets/images/Immunity/circle02.webp";
 import { Productlist } from '../Productlist';
-import choose1 from "../../../assets/images/Immunity/why1.webp";
-import choose2 from "../../../assets/images/Immunity/why2.webp";
+import choose1 from "../../../assets/images/Immunity/why01.webp";
+import choose2 from "../../../assets/images/Immunity/why02.webp";
 import choose3 from "../../../assets/images/Immunity/why3.webp";
-import choose4 from "../../../assets/images/respirtaory/why5.webp";
+import choose4 from "../../../assets/images/Immunity/why04.webp";
 import { SliderBlur } from '../SliderBlur';
 import impact1 from "../../../assets/images/stress/Benefit1.webp";
 import bgstay from "../../../assets/images/stress/bg.webp";
+import impact4 from "../../../assets/images/Immunity/impact4.webp";
+
+
+
 
 export const Chitvan = () => {
   const gridBox = "custom_height1"
@@ -96,24 +106,24 @@ export const Patha = () => {
   const whyChooseData = [
 
     {
-      image: key1,
+      image: key6,
       title: 'Reduces inflammation and supports fever management',
 
     },
     {
-      image: key2,
+      image: key7,
       title: 'Exhibits potent antiviral and antibacterial activities',
     },
     {
-      image: key3,
+      image: key8,
       title: 'Enhances macrophage activity and immune cell function',
     },
     {
-      image: key4,
+      image: key9,
       title: 'Provides relief from respiratory distress and cough',
     },
     {
-      image: key5,
+      image: key10,
       title: 'Demonstrates effectiveness against gastrointestinal infections',
     },
 
@@ -123,7 +133,7 @@ export const Patha = () => {
   const slides = [
     {
 
-      image: circle1,
+      image: circle02,
       desc: `Patha grows best in tropical and subtropical regions with moderate rainfall. It adapts to various soil types but prefers well-drained, loamy soils. As a climber, it can be cultivated alongside supporting crops or trees, maximizing land utilization in integrated farming systems.<br/><br/>  The roots and leaves of Patha have significant demand in traditional medicine preparations. With growing scientific validation of its immune-enhancing properties, pharmaceutical companies are increasingly incorporating Patha extracts into formulations for respiratory wellness and immune support, creating stable market opportunities for farmers.`,
 
     },
@@ -212,7 +222,7 @@ export const Applications = () => {
       description: 'Immunity-boosting food products incorporate these herbs in innovative forms—Amla in vitamin C-rich beverages, Giloy in immunity shots, and Kalmegh in bitter health tonics. The functional food sector represents a rapidly growing market opportunity.',
     },
     {
-      image: impact1,
+      image: impact4,
       heading: "Preventive Healthcare",
       description: "With increasing focus on disease prevention, these herbs are gaining prominence in daily wellness routines. Products like Giloy tablets, Amla supplements, and Kalmegh extracts are becoming household staples for maintaining immune health."
     },
