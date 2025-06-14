@@ -6,10 +6,34 @@ import info from "../../../assets/images/Immunity/info.webp";
 import Image from 'next/image';
 import { Gridbox } from '../Gridbox';
 import key1 from "../../../assets/images/Immunity/key1.webp";
+import key01 from "../../../assets/images/Immunity/key01.webp";
 import key2 from "../../../assets/images/Immunity/key2.webp";
+import key02 from "../../../assets/images/Immunity/key02.webp";
+
+
 import key3 from "../../../assets/images/Immunity/key3.webp";
+import key03 from "../../../assets/images/Immunity/key03.webp";
+import key04 from "../../../assets/images/Immunity/key04.webp";
+
+
 import key4 from "../../../assets/images/Immunity/key4.webp";
 import key5 from "../../../assets/images/Immunity/key5.webp";
+import key05 from "../../../assets/images/Immunity/key05.webp";
+
+import key6 from "../../../assets/images/Immunity/key6.webp";
+import key7 from "../../../assets/images/Immunity/key7.webp";
+import key8 from "../../../assets/images/Immunity/key8.webp";
+import key9 from "../../../assets/images/Immunity/key9.webp";
+import key10 from "../../../assets/images/Immunity/key10.webp";
+
+import key11 from "../../../assets/images/Immunity/key11.webp";
+import key12 from "../../../assets/images/Immunity/key12.webp";
+import key13 from "../../../assets/images/Immunity/key13.webp";
+import key14 from "../../../assets/images/Immunity/key14.webp";
+import key15 from "../../../assets/images/Immunity/key15.webp";
+
+
+
 
 import { GrowthSlider } from '../utilities/Cultivationgrowthwhychoose';
 import circle1 from "../../../assets/images/Immunity/circle1.webp";
@@ -45,24 +69,24 @@ export const Giloy = () => {
     const whyChooseData = [
 
       {
-        image: key1,
+        image: key01,
         title: 'Enhances both innate and adaptive immune responses',
 
       },
       {
-        image: key2,
+        image: key02,
         title: 'Possesses potent antiviral, antibacterial, and antifungal properties',
       },
       {
-        image: key3,
+        image: key03,
         title: 'Reduces inflammation and oxidative stress',
       },
       {
-        image: key4,
+        image: key04,
         title: 'Supports liver function and detoxification processes',
       },
       {
-        image: key5,
+        image: key05,
         title: 'Helps in recovery from fevers and infectious diseases',
       },
 
@@ -134,23 +158,23 @@ export const Amla = () => {
      `
     const whyChooseData = [
       {
-        image: key1,
+        image: key6,
         title: 'Provides exceptional antioxidant protection',
       },
       {
-        image: key2,
+        image: key7,
         title: 'Strengthens immune system against seasonal infections',
       },
       {
-        image: key3,
+        image: key8,
         title: 'Demonstrates antimicrobial effects against common pathogens',
       },
       {
-        image: key4,
+        image: key9,
         title: 'Supports respiratory health and mucous membrane integrity',
       },
       {
-        image: key5,
+        image: key10,
         title: 'Enhances iron absorption and combats anemia',
       },
 
@@ -199,24 +223,24 @@ export const Kalmegh = () => {
     const whyChooseData = [
 
       {
-        image: key1,
+        image: key11,
         title: 'Exhibits broad-spectrum antimicrobial activity',
 
       },
       {
-        image: key2,
+        image: key12,
         title: 'Stimulates antibody production and cellular immunity',
       },
       {
-        image: key3,
+        image: key13,
         title: 'Reduces fever and inflammation effectively',
       },
       {
-        image: key4,
+        image: key14,
         title: 'Supports liver function and detoxification',
       },
       {
-        image: key5,
+        image: key15,
         title: 'Provides relief from upper respiratory infections',
       },
 
@@ -227,7 +251,7 @@ export const Kalmegh = () => {
       {
 
         image: circle1,
-        desc: ` Kalmegh grows well in tropical and subtropical regions with moderate rainfall. It prefers well-drained soil and thrives in partial shade, making it suitable for intercropping in tree-based farming systems or as a stand-alone crop in rotation with cereals.<br/> The pharmaceutical demand for Kalmegh has grown exponentially, particularly for its active compound andrographolide, which is used in various antiviral and immunomodulatory formulations. The herb can be harvested multiple times during its growing season, offering farmers regular income cycles. Contract farming arrangements with herbal pharmaceutical companies offer stable pricing and assured markets.`,
+        desc: `Kalmegh grows well in tropical and subtropical regions with moderate rainfall. It prefers well-drained soil and thrives in partial shade, making it suitable for intercropping in tree-based farming systems or as a stand-alone crop in rotation with cereals.<br/> The pharmaceutical demand for Kalmegh has grown exponentially, particularly for its active compound andrographolide, which is used in various antiviral and immunomodulatory formulations. The herb can be harvested multiple times during its growing season, offering farmers regular income cycles. Contract farming arrangements with herbal pharmaceutical companies offer stable pricing and assured markets.`,
 
       },
 

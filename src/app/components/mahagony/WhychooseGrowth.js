@@ -19,6 +19,13 @@ import Planting2 from "../../../assets/images/mahagony/Planting2.webp";
 import Planting3 from "../../../assets/images/mahagony/Planting3.webp";
 import { WhyChooseLayout } from "../utilities/LookingInvestLayout";
 
+import why1 from "../../../assets/images/mahagony/why1.webp";
+import why2 from "../../../assets/images/mahagony/why2.webp";
+import why3 from "../../../assets/images/mahagony/why3.webp";
+import why4 from "../../../assets/images/mahagony/why4.webp";
+
+
+
 export const Growth = () => {
   const GrowthHeading = " Cultivation & Growth Characteristics";
   const GrowthDescription =
@@ -158,29 +165,31 @@ export const Faqs = () => {
   );
 };
 export const WhyChooseSec = () => {
+  const custom_class = "original_img1"
   const whychooseHeading = " Why Choose Mahogany?";
   const GrowthHeading = "Growth Conditions of Mahogany";
   const cardData = [
     {
-      title: " Medicinal Properties",
-      description: "Used in traditional medicine for various health benefits.",
-    },
-    {
-      title: " Premium-Quality Timber",
-      description: "Highly valued for furniture, veneer, and construction.",
-    },
-    {
-      title: " Fast Growth",
-      description: "Matures within 10-15 years, providing substantial yields.",
-    },
-    {
       title: "Medicinal Properties",
-      description: " Used in traditional medicine for various health benefits.",
+      description: "Used in traditional medicine for various health benefits.",
+      img:why1
     },
+    {
+      title: "Premium-Quality Timber",
+      description: "Highly valued for furniture, veneer, and construction.",
+      img:why2
+    },
+    {
+      title: "Fast Growth",
+      description: "Matures within 10-15 years, providing substantial yields.",
+      img:why3
+    },
+
     {
       title: "High Economic Returns",
       description:
         "Profitable due to its valuable timber and diverse applications.",
+      img:why4
     },
   ];
   const leftTitle = "Climate Requirements";
@@ -211,6 +220,7 @@ export const WhyChooseSec = () => {
         rightTitle={rightTitle}
         leftContent={leftContent}
         rightContent={rightContent}
+        custom_class={custom_class}
       />
     </>
   );

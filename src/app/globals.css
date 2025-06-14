@@ -771,7 +771,7 @@ body button,
   bottom: 0px;
   top: auto;
 }
-.original_img .icon_slider .swiper-slide img {
+.original_img .icon_slider .swiper-slide img, .original_img1 .swiper-slide img {
   filter: none !important;
   width: 100% !important;
   height: 100% !important;

@@ -13,18 +13,22 @@ export const WhyChoose = () => {
     {
       title: "End-to-End Support",
       image: choose1,
+      flip:"From planting to harvesting, including expert guidance and agronomic planning."
     },
     {
       title: "Market assurance",
       image: choose2,
+      flip:"Our commercial tie-ups reduce the risk of market glut or price crashes."
     },
     {
       title: "Climate-Compatible Selections",
       image: choose3,
+      flip:"We choose only those exotic fruits that can naturally adapt to Indian conditions."
     },
     {
       title: "Eco-Conscious Model",
       image: choose4,
+      flip:"Minimal environmental impact with a focus on regenerative farming."
     },
   ];
   return (
