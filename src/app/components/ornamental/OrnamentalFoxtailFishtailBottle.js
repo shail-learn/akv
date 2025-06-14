@@ -1,7 +1,7 @@
 import React from 'react'
 import { Wave } from '../Wave'
 import BannerPage from '../BannerPage'
-import banner from "../../../assets/images/plants/banner.webp";
+import banner from "../../../assets/images/palm/banner.webp";
 import { Gridbox } from '../Gridbox';
 import { GrowthSlider } from '../utilities/Cultivationgrowthwhychoose';
 import info from "../../../assets/images/digestive/info.webp";
