@@ -5,8 +5,8 @@ import banner from "../../../assets/images/flower/banner.webp";
 import basket from "../../../assets/images/flower/flower.webp";
 import Image from 'next/image';
 import { Productlist } from '../Productlist';
-import product1 from "../../../assets/images/flower/product1.webp";
-import product2 from "../../../assets/images/flower/product2.webp";
+import product1 from "../../../assets/images/palm/product01.webp";
+import product2 from "../../../assets/images/palm/product02.webp";
 import product3 from "../../../assets/images/flower/product3.webp";
 import harvestimg from "../../../assets/images/flower/Premium.webp";
 

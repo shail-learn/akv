@@ -95,9 +95,9 @@ export const Categories = () => {
     const bgimg = backgroundImage
     const fruitData = [
         {
-            title: "Flowering Plants",
+            title: "Ornamental Plants",
             image: product1,
-            link: "/agroForestry/flowering-ornamental-plants/flowering-plants",
+            link: "/agroForestry/flowering-ornamental-plants/ornamental-plants",
         },
         {
             title: "Tropical Bloomers",
