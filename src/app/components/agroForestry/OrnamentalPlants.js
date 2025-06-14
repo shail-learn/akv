@@ -8,6 +8,11 @@ import img5 from "../../../assets/images/business/Neem.webp";
 import leftgrass from "../../../assets/images/business/grass-left.webp";
 import rightgrass from "../../../assets/images/business/grass-right.webp";
 
+import img01 from "../../../assets/images/agroforestry/flowering-left.webp";
+import img02 from "../../../assets/images/agroforestry/flowering-right.webp";
+
+import palmleft from "../../../assets/images/agroforestry/palms-left.webp";
+import palmright from "../../../assets/images/agroforestry/palms-right.webp";
 
 
 import { FaCircleArrowRight } from "react-icons/fa6";
@@ -33,7 +38,7 @@ export const OrnamentalPlants = () => {
             <section className='mx-auto py-6 pt-0 md:pt-16'>
                 <div className='grid grid-col-1 bg-[#1B453C] items-center md:grid-cols-12 g-0'>
                     <div className='w-full md:col-span-4'>
-                        <Image src={img1} alt="banner" className='w-full h-full' />
+                        <Image src={img01} alt="banner" className='w-full h-full' />
                     </div>
                     <div className='w-full md:col-span-4 p-10 text-center md:text-left '>
                         <h2 className='text-white text-3xl md:text-4xl mb-4  lg:leading-tight  redhat  font-normal  w-full'>
@@ -54,7 +59,7 @@ export const OrnamentalPlants = () => {
 
                     </div>
                     <div className='w-full md:col-span-4'>
-                        <Image src={img2} alt="banner" className='w-full h-full' />
+                        <Image src={img02} alt="banner" className='w-full h-full' />
 
                     </div>
                 </div>
@@ -64,7 +69,7 @@ export const OrnamentalPlants = () => {
             <section className='mx-auto py-6 pt-0 md:pt-16'>
                 <div className='grid grid-col-1 bg-[#1B453C] items-center md:grid-cols-12 g-0'>
                     <div className='w-full md:col-span-4'>
-                        <Image src={img1} alt="banner" className='w-full h-full' />
+                        <Image src={palmleft} alt="banner" className='w-full h-full' />
                     </div>
                     <div className='w-full md:col-span-4 p-10 text-center md:text-left '>
                         <h2 className='text-white text-3xl md:text-4xl mb-4  lg:leading-tight  redhat  font-normal  w-full'>
@@ -85,7 +90,7 @@ export const OrnamentalPlants = () => {
 
                     </div>
                     <div className='w-full md:col-span-4'>
-                        <Image src={img2} alt="banner" className='w-full h-full' />
+                        <Image src={palmright} alt="banner" className='w-full h-full' />
 
                     </div>
                 </div>
