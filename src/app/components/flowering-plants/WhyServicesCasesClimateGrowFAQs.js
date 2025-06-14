@@ -2,14 +2,19 @@
 import React from 'react'
 import { Productlist } from '../Productlist';
 import choose1 from "../../../assets/images/digestive/choose1.webp";
-import choose2 from "../../../assets/images/digestive/choose2.webp";
-import choose3 from "../../../assets/images/digestive/choose3.webp";
+import choose2 from "../../../assets/images/plants/choose2.webp";
+import choose3 from "../../../assets/images/plants/choose3.webp";
 import choose4 from "../../../assets/images/digestive/choose4.webp";
+import choose5 from "../../../assets/images/plants/choose5.webp";
+
 import Titleslider from '../Titleslider';
 import { SliderBlur } from '../SliderBlur';
 import PartnerBg from "../../../assets/images/respirtaory/bgimg.webp";
 // import { FaqsLayout } from '../utilities/Cultivationgrowthwhychoose';
 import impact1 from "../../../assets/images/stress/Benefit1.webp";
+import impact4 from "../../../assets/images/plants/impact4.webp";
+import impact5 from "../../../assets/images/plants/impact5.webp";
+
 import bgstay from "../../../assets/images/stress/bg.webp";
 import { FaqSlider } from '../FaqSlider';
 import { FaqsLayout } from '../utilities/Cultivationgrowthwhychoose';
@@ -40,7 +45,7 @@ export const Why = () => {
     },
     {
       title: "Cultural & Therapeutic Relevance",
-      image: choose4,
+      image: choose5,
       flip: "These plants are deeply woven into Indian rituals, festivals, and wellness traditions, offering emotional and cultural value alongside ecological function.      "
     },
 
@@ -123,12 +128,12 @@ export const Cases = () => {
       description: 'Regular requirement of fresh flowers for offerings and decoration.',
     },
     {
-      image: impact1,
+      image: impact4,
       heading: "Event Decor & Floristry",
       description: "Roses and ornamental cut flowers for weddings, ceremonies, and gifting."
     },
     {
-      image: impact1,
+      image: impact5,
       heading: "Government Schemes",
       description: "Participation in National Mission on Horticulture, MGNREGA nursery schemes, and biodiversity parks."
     },

@@ -2,27 +2,34 @@ import React from 'react'
 import { Wave } from '../Wave'
 import BannerPage from '../BannerPage'
 import banner from "../../../assets/images/bloomers/banner.webp";
-import info from "../../../assets/images/digestive/info.webp";
+import info from "../../../assets/images/tropical/info.webp";
 import Image from 'next/image';
 import { Gridbox } from '../Gridbox';
-import key1 from "../../../assets/images/digestive/key1.webp";
-import key2 from "../../../assets/images/digestive/key2.webp";
-import key3 from "../../../assets/images/digestive/key3.webp";
-import key4 from "../../../assets/images/digestive/key4.webp";
+import key1 from "../../../assets/images/tropical/key1.webp";
+import key2 from "../../../assets/images/tropical/key2.webp";
+import key3 from "../../../assets/images/tropical/key3.webp";
+import key4 from "../../../assets/images/tropical/key4.webp";
 import { GrowthSlider } from '../utilities/Cultivationgrowthwhychoose';
-import image1 from "../../../assets/images/digestive/image1.webp";
+import image1 from "../../../assets/images/tropical/image1.webp";
 
 import circle2 from "../../../assets/images/digestive/circle2.webp";
-import key5 from "../../../assets/images/digestive/key5.webp";
-import key6 from "../../../assets/images/digestive/key6.webp";
-import key7 from "../../../assets/images/digestive/key7.webp";
-import key8 from "../../../assets/images/digestive/key8.webp";
+import key5 from "../../../assets/images/tropical/key5.webp";
+import key6 from "../../../assets/images/tropical/key6.webp";
+import key7 from "../../../assets/images/tropical/key7.webp";
+import key8 from "../../../assets/images/tropical/key8.webp";
 
-import key9 from "../../../assets/images/digestive/key9.webp";
-import key10 from "../../../assets/images/digestive/key10.webp";
-import key11 from "../../../assets/images/digestive/key11.webp";
-import key12 from "../../../assets/images/digestive/key12.webp";
+import key9 from "../../../assets/images/tropical/key9.webp";
+import key10 from "../../../assets/images/tropical/key10.webp";
+import key11 from "../../../assets/images/tropical/key11.webp";
+import key12 from "../../../assets/images/tropical/key12.webp";
+import key13 from "../../../assets/images/tropical/key13.webp";
+import key14 from "../../../assets/images/tropical/key14.webp";
+import key15 from "../../../assets/images/tropical/key15.webp";
+import key16 from "../../../assets/images/tropical/key16.webp";
 import circle3 from "../../../assets/images/digestive/circle3.webp";
+
+import circle03 from "../../../assets/images/tropical/circle03.webp";
+
 
 export const Tropical = () => {
     const text = {
@@ -258,19 +265,19 @@ export const Heena = () => {
     const shortinfo = `<b>The Traditional Beautifier</b> <br/> Heena or Mehendi is a small shrub with fragrant white flowers and naturally dye-rich leaves. Traditionally used in body art, rituals, and hair care, Heena holds a timeless place in Indian households. In addition to its cultural value, it is also a pollinator attractor and an effective boundary plant.`
     const whyChooseData = [
       {
-        image: key5,
+        image: key13,
         title: 'Natural Dye: Leaves produce a reddish-orange dye used for skin and hair.',
       },
       {
-        image: key6,
+        image: key14,
         title: 'Aromatic Flowers: Tiny white blooms attract bees and provide light fragrance.',
       },
       {
-        image: key7,
+        image: key15,
         title: 'Medicinal Value: Known for antifungal, cooling, and healing properties.',
       },
       {
-        image: key8,
+        image: key16,
         title: 'Boundary Use: Forms dense hedges for natural fencing and windbreaks.',
       },
 
@@ -281,7 +288,7 @@ export const Heena = () => {
     const slides = [
       {
 
-        image: circle2,
+        image: circle03,
         desc: `Heena is highly drought-resistant and can grow in arid and semi-arid zones. It tolerates high heat and poor soils. Thrives with full sun and minimal irrigation, making it ideal for Rajasthan, Gujarat, and Deccan Plateau regions. <br> <br> Heena farming is profitable due to steady demand in herbal cosmetics, hair care, and ritual markets. Dried leaves are powdered and exported or sold in domestic markets. Sapling sales, leaf harvest, and natural dye processing offer income streams for women-led SHGs, rural youth, and herbal clusters.`,
       },
 

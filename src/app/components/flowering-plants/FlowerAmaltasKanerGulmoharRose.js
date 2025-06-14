@@ -6,23 +6,29 @@ import info from "../../../assets/images/digestive/info.webp";
 import Image from 'next/image';
 import { Gridbox } from '../Gridbox';
 import key1 from "../../../assets/images/digestive/key1.webp";
-import key2 from "../../../assets/images/digestive/key2.webp";
-import key3 from "../../../assets/images/digestive/key3.webp";
-import key4 from "../../../assets/images/digestive/key4.webp";
+import key2 from "../../../assets/images/plants/key2.webp";
+import key3 from "../../../assets/images/plants/key3.webp";
+import key4 from "../../../assets/images/plants/key4.webp";
 import { GrowthSlider } from '../utilities/Cultivationgrowthwhychoose';
 import image1 from "../../../assets/images/digestive/image1.webp";
 
 import circle2 from "../../../assets/images/digestive/circle2.webp";
-import key5 from "../../../assets/images/digestive/key5.webp";
-import key6 from "../../../assets/images/digestive/key6.webp";
-import key7 from "../../../assets/images/digestive/key7.webp";
-import key8 from "../../../assets/images/digestive/key8.webp";
+import key5 from "../../../assets/images/plants/key5.webp";
+import key6 from "../../../assets/images/plants/key6.webp";
+import key7 from "../../../assets/images/plants/key7.webp";
+import key8 from "../../../assets/images/plants/key8.webp";
 
-import key9 from "../../../assets/images/digestive/key9.webp";
-import key10 from "../../../assets/images/digestive/key10.webp";
-import key11 from "../../../assets/images/digestive/key11.webp";
-import key12 from "../../../assets/images/digestive/key12.webp";
+import key9 from "../../../assets/images/plants/key9.webp";
+import key10 from "../../../assets/images/plants/key10.webp";
+import key11 from "../../../assets/images/plants/key11.webp";
+import key12 from "../../../assets/images/plants/key12.webp";
 import circle3 from "../../../assets/images/digestive/circle3.webp";
+
+import key13 from "../../../assets/images/plants/key13.webp";
+import key14 from "../../../assets/images/plants/key14.webp";
+import key15 from "../../../assets/images/plants/key15.webp";
+import key16 from "../../../assets/images/plants/key16.webp";
+
 
 export const Flower = () => {
     const text = {
@@ -257,19 +263,19 @@ export const Rose = () => {
     const shortinfo = `<b>The Icon of Beauty and Emotion</b> <br/> Roses are among the most cultivated and cherished ornamental plants worldwide. Red roses, in particular, symbolize love, passion, and celebration. Beyond their aesthetic value, they are cultivated for perfumes, cosmetics, garlands, and herbal products. Rose farming can be scaled from home gardens to commercial floriculture.`
     const whyChooseData = [
       {
-        image: key5,
+        image: key13,
         title: 'Aromatic Appeal: Red roses offer fragrance and elegance.',
       },
       {
-        image: key6,
+        image: key14,
         title: 'Cut Flower Industry: Major demand in floristry and gifting.',
       },
       {
-        image: key7,
+        image: key15,
         title: 'Cultural Usage: Widely used in weddings, festivals, and devotional offerings.',
       },
       {
-        image: key8,
+        image: key16,
         title: 'Herbal & Cosmetic Value: Petals are processed into rose water, oil, and beauty products.',
       },
 
