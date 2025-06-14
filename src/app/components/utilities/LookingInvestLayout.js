@@ -91,7 +91,9 @@ export const WhyChooseLayout = ({
   rightTitle,
   leftContent,
   rightContent,
-  icon
+  icon,
+  custom_class,
+  img
 }) => {
   return (
     <>
@@ -107,7 +109,7 @@ export const WhyChooseLayout = ({
         </div>
 
         {/* Content */}
-        <div className="relative z-20 bg-[#1b453c] text-white pb-20 -mt-20">
+        <div className={`relative z-20 bg-[#1b453c] text-white pb-20 -mt-20 ${custom_class ? custom_class : ""}`}>
           <div className="max-w-6xl mx-auto px-4">
             <h2 className="text-3xl md:text-4xl font-semibold text-center pt-14 pb-10">
               {heading}
@@ -155,6 +157,15 @@ export const WhyChooseLayout = ({
                               className="object-contain"
                             />
                           )}
+                           {item.img && (
+                          <Image
+                            src={item.img}
+                            alt="Icon"
+                            width={200}
+                            height={200}
+                            className="object-contain h-9 mx-auto"
+                          />
+                        )}
                           <p className="text-[13px] font-light text-black">
                             {item.description}
                           </p>

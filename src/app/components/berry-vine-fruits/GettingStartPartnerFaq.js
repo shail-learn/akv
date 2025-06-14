@@ -15,22 +15,27 @@ export const GettingStart = () => {
     {
       title: "Monitoring",
       image: choose1,
+      flip:"Regular follow-ups, pest management advice, and seasonal care schedules."
     },
     {
       title: "Design & Layout",
       image: choose2,
+      flip:"Custom layouts based on land topology and irrigation potential."
     },
     {
-      title: "Consultation",
+      title: "Planting & Support",
       image: choose3,
+      flip:"High-quality saplings, plantation tools, and field assistance provided."
     },
     {
       title: "Consultation",
       image: choose4,
+      flip:"Initial soil and climate assessment is done to select suitable species and planting techniques."
     },
     {
       title: "Harvesting & Marketing",
       image: choose5,
+      flip:"Support with processing, value addition, and market access."
     },
   ];
   return (

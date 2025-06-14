@@ -10,10 +10,10 @@ import {
 } from "../utilities/UsesStanadarLayout";
 import { InvestLayout, LookingLayout } from "../utilities/LookingInvestLayout";
 import img01 from "../../../assets/images/amla/market.webp";
-import img1 from "../../../assets/images/eco/img1.png";
-import img2 from "../../../assets/images/eco/img2.png";
-import img3 from "../../../assets/images/eco/img3.png";
-import img4 from "../../../assets/images/eco/img4.png";
+import img1 from "../../../assets/images/mahagony/yield1.webp";
+import img2 from "../../../assets/images/mahagony/yield2.webp";
+import img3 from "../../../assets/images/mahagony/yield3.webp";
+import img4 from "../../../assets/images/mahagony/yield4.webp";
 import img5 from "../../../assets/images/eco/img5.png";
 import image1 from "../../../assets/images/mahagony/InvestImg.webp";
 

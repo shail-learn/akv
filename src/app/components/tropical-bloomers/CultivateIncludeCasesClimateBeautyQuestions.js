@@ -1,15 +1,23 @@
 "use client"
 import React from 'react'
 import { Productlist } from '../Productlist';
-import choose1 from "../../../assets/images/digestive/choose1.webp";
-import choose2 from "../../../assets/images/digestive/choose2.webp";
-import choose3 from "../../../assets/images/digestive/choose3.webp";
+import choose1 from "../../../assets/images/tropical/choose1.webp";
+import choose2 from "../../../assets/images/tropical/choose2.webp";
+import choose3 from "../../../assets/images/tropical/choose3.webp";
 import choose4 from "../../../assets/images/digestive/choose4.webp";
+import choose5 from "../../../assets/images/tropical/choose5.webp";
+
 import Titleslider from '../Titleslider';
 import { SliderBlur } from '../SliderBlur';
 import PartnerBg from "../../../assets/images/respirtaory/bgimg.webp";
 // import { FaqsLayout } from '../utilities/Cultivationgrowthwhychoose';
-import impact1 from "../../../assets/images/stress/Benefit1.webp";
+import impact1 from "../../../assets/images/tropical/impact1.webp";
+import impact2 from "../../../assets/images/tropical/impact2.webp";
+import impact3 from "../../../assets/images/tropical/impact3.webp";
+import impact4 from "../../../assets/images/tropical/impact4.webp";
+import impact5 from "../../../assets/images/tropical/impact5.webp";
+import impact6 from "../../../assets/images/tropical/impact6.webp";
+
 import bgstay from "../../../assets/images/stress/bg.webp";
 import { FaqSlider } from '../FaqSlider';
 import { FaqsLayout } from '../utilities/Cultivationgrowthwhychoose';
@@ -38,7 +46,7 @@ export const Cultivate = () => {
       },
       {
         title: "Cultural & Therapeutic Importance",
-        image: choose4,
+        image: choose5,
         flip: "Plants like Heena and Ashok are vital to Indian traditions and Ayurvedic systems, promoting not just income but emotional and spiritual wellness."
       },
 
@@ -111,27 +119,27 @@ export const Cases = () => {
         description: 'Colorful hedges, roadside climbers, and roundabout gardens.',
       },
       {
-        image: impact1,
+        image: impact2,
         heading: "Temples & Cultural Sites",
         description: 'Continuous flower supply for rituals and spiritual ambiance.',
       },
       {
-        image: impact1,
+        image: impact3,
         heading: "Herbal Villages & Panchayat Initiatives",
         description: 'Community cultivation of Heena and Gudhal for income and tradition.',
       },
       {
-        image: impact1,
+        image: impact4,
         heading: "Tourism & Hospitality",
         description: "Resort gardens, eco-retreat landscapes, and decorative climbers."
       },
       {
-        image: impact1,
+        image: impact5,
         heading: "Women’s Livelihoods",
         description: "Leaf processing, dye preparation, and handcrafted herbal products from Heena and Hibiscus."
       },
       {
-        image: impact1,
+        image: impact6,
         heading: "MGNREGA & Horticulture Missions",
         description: "Plantation drives, herbal corridors, and biodiversity gardens."
       },
