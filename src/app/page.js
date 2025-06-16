@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import axios from 'axios';
+
 import {Banner,VedioHome} from "./components/home/Banner";
 import WhatWeDo from "./components/home/WhatWeDo";
 import ImpactHighlights from "./components/home/impactHighlights";
@@ -42,6 +43,8 @@ export default function Home() {
   
 
 },[]);
+
+
 
 
   return (
