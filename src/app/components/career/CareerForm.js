@@ -7,6 +7,7 @@ import Link from 'next/link';
 export const CareerForm = () => {
     const [resume, setResume] = useState(null);
 
+    const [sending, setsending] = useState(false);
     const handleResumeChange = (e) => {
         setResume(e.target.files[0]);
     };
@@ -21,6 +22,7 @@ export const CareerForm = () => {
 
     const careerfrm = async (e) => {
         e.preventDefault();
+        setsending(true);
       
         const form = e.target;
         const firstname = form.firstname.value.trim();
@@ -31,11 +33,37 @@ export const CareerForm = () => {
         const cover_letter = form.cover_letter.value.trim();
         const applied_for = form.querySelector("select").value;
       
-        // Basic validation
-        if (!firstname) return alert("Please enter your first name.");
-        if (!email || !/\S+@\S+\.\S+/.test(email)) return alert("Please enter a valid email.");
-        if (!phone || !/^[0-9]{10}$/.test(phone)) return alert("Please enter a valid 10-digit phone number.");
-        if (!resume) return alert("Please upload your resume.");
+        // // Basic validation
+        // if (!firstname) return alert("Please enter your first name.");
+        // if (!email || !/\S+@\S+\.\S+/.test(email)) return alert("Please enter a valid email.");
+        // if (!phone || !/^[0-9]{10}$/.test(phone)) return alert("Please enter a valid 10-digit phone number.");
+        // if (!resume) return alert("Please upload your resume.");
+
+
+        //basic validation**********
+        if (!firstname) {
+  alert("Please enter your first name.");
+  setLoading(false);
+  return;
+}
+
+if (!email || !/\S+@\S+\.\S+/.test(email)) {
+  alert("Please enter a valid email.");
+  setLoading(false);
+  return;
+}
+
+if (!phone || !/^[0-9]{10}$/.test(phone)) {
+  alert("Please enter a valid 10-digit phone number.");
+  setLoading(false);
+  return;
+}
+
+if (!resume) {
+  alert("Please upload your resume.");
+  setLoading(false);
+  return;
+}
       
         const formData = new FormData();
         formData.append("firstname", firstname);
@@ -65,7 +93,7 @@ export const CareerForm = () => {
     } catch (error) {
       console.error("Error submitting form:", error);
       alert("Unexpected error occurred. Please try again later.");
-    }
+    }finally{setsending(false);}
       };
 
     return (
@@ -188,8 +216,9 @@ export const CareerForm = () => {
                         <button
                             type="submit"
                             className="bg-[#3b4b4a] hover:bg-[#2e3c3b] text-white text-[18px] font-medium px-16 py-3 rounded-sm"
+                            disabled={sending}
                         >
-                            Apply
+                           {sending ? 'Sending...' : 'Apply'}
                         </button>
                     </div>
                     <br/>
