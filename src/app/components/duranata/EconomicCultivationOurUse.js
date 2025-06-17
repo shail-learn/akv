@@ -2,15 +2,18 @@
 import React, { useEffect, useState } from 'react';
 import bgstay from "../../../assets/images/stress/bg.webp";
 import impact1 from "../../../assets/images/stress/Benefit1.webp";
-import impact2 from "../../../assets/images/stress/Benefit2.jpg";
-import impact3 from "../../../assets/images/stress/Benefit3.webp";
+import impact2 from "../../../assets/images/hedge/Benefit2.webp";
+import impact3 from "../../../assets/images/hedge/Benefit3.webp";
 import impact4 from "../../../assets/images/stress/Benefit4.webp";
 import { SliderBlur } from '../SliderBlur';
 import { Productlist } from '../Productlist';
 import choose1 from "../../../assets/images/digestive/choose1.webp";
-import choose2 from "../../../assets/images/digestive/choose2.webp";
-import choose3 from "../../../assets/images/digestive/choose3.webp";
-import choose4 from "../../../assets/images/digestive/choose4.webp";
+import choose2 from "../../../assets/images/hedge/guide2.webp";
+import choose3 from "../../../assets/images/hedge/guide3.webp";
+import choose4 from "../../../assets/images/hedge/guide4.webp";
+import choose5 from "../../../assets/images/hedge/guide5.webp";
+import choose6 from "../../../assets/images/hedge/guide6.webp";
+
 import Titleslider from '../Titleslider';
 import { FaqSlider } from '../FaqSlider';
 
@@ -101,12 +104,12 @@ export const Cultivation = () => {
     },
     {
       title: "Pruning",
-      image: choose4,
+      image: choose5,
       flip: "Initial tip pruning promotes bushier growth. Regular trimming maintains shape and height. Twice-a-year pruning is generally sufficient, although it may be done more often in manicured settings."
     },
     {
       title: "Pest & Disease Resistance",
-      image: choose3,
+      image: choose6,
       flip: "Duranta is generally pest-resistant. Minor issues like aphids or caterpillars may appear, which can be managed using neem oil or soap sprays. Fungal root rot can occur if overwatered."
     },
 

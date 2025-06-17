@@ -1,6 +1,11 @@
 import React from 'react'
 import PartnerBg from "../../../assets/images/respirtaory/bgimg.webp";
-import circle2 from "../../../assets/images/digestive/circle2.webp";
+import circle1 from "../../../assets/images/hedge/circle1.webp";
+import circle2 from "../../../assets/images/hedge/circle2.webp";
+import circle3 from "../../../assets/images/hedge/circle3.webp";
+import circle4 from "../../../assets/images/hedge/circle4.webp";
+import circle5 from "../../../assets/images/hedge/circle5.webp";
+
 import { FaqsLayout, GrowthSlider } from '../utilities/Cultivationgrowthwhychoose';
 
 export const Sustainability = () => {
@@ -9,7 +14,7 @@ export const Sustainability = () => {
     const GrowthHeading = "Sustainability Impact";
     const slides = [
       {
-        image: circle2,
+        image: circle1,
         title:"Carbon Sequestration",
         desc: `As a perennial shrub, it captures and stores carbon over time.`,
       },
@@ -19,17 +24,17 @@ export const Sustainability = () => {
         desc: `Acts as a green filter in dusty or traffic-heavy zones.`,
       },
       {
-        image: circle2,
+        image: circle3,
         title:"Soil Conservation",
         desc: ` Prevents erosion when planted on slopes or embankments. `,
       },
       {
-        image: circle2,
+        image: circle4,
         title:"Water Efficiency",
         desc: `Once established, it requires minimal water—ideal for climate-resilient farming.`,
       },
       {
-        image: circle2,
+        image: circle5,
         title:"Biodiversity Booster",
         desc: `Offers forage and shelter to beneficial insects and small birds.`,
       },
