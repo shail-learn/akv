@@ -117,12 +117,12 @@ export const Botanical = () => {
         {
             title: "Growth Habit",
             subtitle: "Dense, fast-growing shrub or small tree",
-            image: product04,
+            image: product3,
         },
         {
             title: "Flowering",
             subtitle: "Small blue, violet, or lavender flowers, followed by golden berries",
-            image: product3,
+            image: product04,
         },
         {
             title: "Lifespan",
