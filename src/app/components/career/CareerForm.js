@@ -2,10 +2,15 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 // import { useState } from 'react';
 
 export const CareerForm = () => {
     const [resume, setResume] = useState(null);
+
+    const { executeRecaptcha } = useGoogleReCaptcha();
+
+    
 
     const [sending, setsending] = useState(false);
     const handleResumeChange = (e) => {
@@ -22,6 +27,12 @@ export const CareerForm = () => {
 
     const careerfrm = async (e) => {
         e.preventDefault();
+
+        if (!executeRecaptcha) {
+    alert("reCAPTCHA not ready. Please try again in a moment.");
+    return;
+  }
+  
         setsending(true);
       
         const form = e.target;
