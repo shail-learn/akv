@@ -10,6 +10,8 @@ export const CareerForm = () => {
 
     const { executeRecaptcha } = useGoogleReCaptcha();
 
+   
+
     
 
     const [sending, setsending] = useState(false);
@@ -28,11 +30,14 @@ export const CareerForm = () => {
     const careerfrm = async (e) => {
         e.preventDefault();
 
-        if (!executeRecaptcha) {
+         if (!executeRecaptcha) {
+            console.log('recaptcha missing');
     alert("reCAPTCHA not ready. Please try again in a moment.");
     return;
   }
-  
+
+        const token = await executeRecaptcha("careerFormSubmit");
+        
         setsending(true);
       
         const form = e.target;
@@ -85,6 +90,7 @@ if (!resume) {
         formData.append("cover_letter", cover_letter);
         formData.append("applied_for", applied_for);
         formData.append("resume", resume);
+        formData.append("recaptchaToken", token);
       
         try {
           const res = await fetch("/data/career", {
