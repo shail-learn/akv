@@ -23,9 +23,13 @@ import choose2 from "../../../assets/images/Immunity/why02.webp";
 import choose3 from "../../../assets/images/Immunity/why3.webp";
 import choose4 from "../../../assets/images/Immunity/why04.webp";
 import { SliderBlur } from '../SliderBlur';
-import impact1 from "../../../assets/images/stress/Benefit1.webp";
+import impact1 from "../../../assets/images/Immunity/Benefit1.webp";
 import bgstay from "../../../assets/images/stress/bg.webp";
 import impact4 from "../../../assets/images/Immunity/impact4.webp";
+import impact2 from "../../../assets/images/Immunity/Benefit2.webp";
+import impact3 from "../../../assets/images/Immunity/Benefit3.webp";
+import impact5 from "../../../assets/images/Immunity/Benefit5.webp";
+
 
 
 
@@ -212,12 +216,12 @@ export const Applications = () => {
       description: 'These herbs form essential ingredients in formulations targeting immune enhancement, respiratory wellness, and infection management.',
     },
     {
-      image: impact1,
+      image: impact2,
       heading: "Ayurveda and Traditional Medicine",
       description: 'All five plants have established roles in classical Ayurvedic formulations and continue to be vital components in traditional healthcare systems',
     },
     {
-      image: impact1,
+      image: impact3,
       heading: "Functional Foods and Beverages",
       description: 'Immunity-boosting food products incorporate these herbs in innovative forms—Amla in vitamin C-rich beverages, Giloy in immunity shots, and Kalmegh in bitter health tonics. The functional food sector represents a rapidly growing market opportunity.',
     },
@@ -227,7 +231,7 @@ export const Applications = () => {
       description: "With increasing focus on disease prevention, these herbs are gaining prominence in daily wellness routines. Products like Giloy tablets, Amla supplements, and Kalmegh extracts are becoming household staples for maintaining immune health."
     },
     {
-      image: impact1,
+      image: impact5,
       heading: "Natural Disinfectants and Sanitizers",
       description: "Extracts from these plants, particularly Kalmegh and Chitvan, are finding applications in natural sanitizers and disinfectants due to their antimicrobial properties, creating additional market channels for cultivators."
     },

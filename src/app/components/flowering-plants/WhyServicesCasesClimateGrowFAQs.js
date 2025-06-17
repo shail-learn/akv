@@ -11,7 +11,10 @@ import Titleslider from '../Titleslider';
 import { SliderBlur } from '../SliderBlur';
 import PartnerBg from "../../../assets/images/respirtaory/bgimg.webp";
 // import { FaqsLayout } from '../utilities/Cultivationgrowthwhychoose';
-import impact1 from "../../../assets/images/stress/Benefit1.webp";
+import impact1 from "../../../assets/images/plants/impact1.webp";
+import impact2 from "../../../assets/images/plants/impact2.webp";
+import impact3 from "../../../assets/images/plants/impact3.webp";
+
 import impact4 from "../../../assets/images/plants/impact4.webp";
 import impact5 from "../../../assets/images/plants/impact5.webp";
 
@@ -118,12 +121,12 @@ export const Cases = () => {
       description: 'Tree plantation drives, parks, traffic islands, and green corridors.',
     },
     {
-      image: impact1,
+      image: impact2,
       heading: "Hospitality & Resorts",
       description: 'Enhancing ambiance through curated ornamental plant landscapes.',
     },
     {
-      image: impact1,
+      image: impact3,
       heading: "Religious Sites",
       description: 'Regular requirement of fresh flowers for offerings and decoration.',
     },

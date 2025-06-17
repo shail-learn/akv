@@ -38,6 +38,8 @@ import key15 from "../../../assets/images/Immunity/key15.webp";
 import { GrowthSlider } from '../utilities/Cultivationgrowthwhychoose';
 import circle1 from "../../../assets/images/Immunity/circle1.webp";
 import circle2 from "../../../assets/images/Immunity/circle2.webp";
+import circle04 from "../../../assets/images/Immunity/circle04.webp";
+
 
 
 export const Immunity = () => {
@@ -250,7 +252,7 @@ export const Kalmegh = () => {
     const slides = [
       {
 
-        image: circle1,
+        image: circle04,
         desc: `Kalmegh grows well in tropical and subtropical regions with moderate rainfall. It prefers well-drained soil and thrives in partial shade, making it suitable for intercropping in tree-based farming systems or as a stand-alone crop in rotation with cereals.<br/> The pharmaceutical demand for Kalmegh has grown exponentially, particularly for its active compound andrographolide, which is used in various antiviral and immunomodulatory formulations. The herb can be harvested multiple times during its growing season, offering farmers regular income cycles. Contract farming arrangements with herbal pharmaceutical companies offer stable pricing and assured markets.`,
 
       },

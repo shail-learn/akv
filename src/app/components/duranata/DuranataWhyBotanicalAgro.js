@@ -7,14 +7,25 @@ import { BlurSliderTitleImage } from '../BlurSliderTitleImage';
 import product1 from "../../../assets/images/fast/product1.webp";
 import product2 from "../../../assets/images/fast/product2.webp";
 import product3 from "../../../assets/images/fast/product3.webp";
+import product03 from "../../../assets/images/hedge/image4.webp";
+import product04 from "../../../assets/images/hedge/product4.webp";
+
+
 
 import { Gridbox } from '../Gridbox';
-import key1 from "../../../assets/images/digestive/key1.webp";
-import key2 from "../../../assets/images/digestive/key2.webp";
-import key3 from "../../../assets/images/digestive/key3.webp";
-import key4 from "../../../assets/images/digestive/key4.webp";
+import key1 from "../../../assets/images/hedge/key1.webp";
+import key2 from "../../../assets/images/hedge/key2.webp";
+import key3 from "../../../assets/images/hedge/key3.webp";
+import key4 from "../../../assets/images/hedge/key4.webp";
 import { GrowthSlider } from '../utilities/Cultivationgrowthwhychoose';
-import image1 from "../../../assets/images/digestive/image1.webp";
+import image1 from "../../../assets/images/hedge/circle01.webp";
+
+import why1 from "../../../assets/images/hedge/why1.webp";
+import why2 from "../../../assets/images/hedge/why2.webp";
+import why3 from "../../../assets/images/hedge/why3.webp";
+import why4 from "../../../assets/images/hedge/why4.webp";
+
+
 
 export const Duranata = () => {
     const text = {
@@ -42,23 +53,28 @@ export const Why = () => {
             title: "Low Maintenance and Fast Growth",
             description:
                 "Duranta is a fast-growing shrub that can reach up to 2–3 meters in a short time under proper care.",
+                icon: why1
         },
         {
             title: "Natural Boundary with Beauty",
 
             description:
                 "Duranta forms thick, dense hedges that serve as both a natural barrier and an ornamental feature",
+                icon: why2
         },
         {
             title: "Security with Sustainability",
 
             description:
                 "The plant’s thorny stems and compact growth habit make it an effective deterrent against trespassing animals and unauthorized entry",
+                icon: why3
         },
         {
             title: "Support for Pollinators and Birds",
             description:
                 "Its lavender-blue flowers attract bees and butterflies, while its berries are consumed by birds. This makes Duranta a valuable part of pollinator corridors and bird-friendly green spaces.",
+                icon: why4
+
         },
 
     ];
@@ -95,13 +111,13 @@ export const Botanical = () => {
         {
             title: "Family",
             subtitle: "Verbenaceae",
-            image: product3,
+            image: product03,
 
         },
         {
             title: "Growth Habit",
             subtitle: "Dense, fast-growing shrub or small tree",
-            image: product3,
+            image: product04,
         },
         {
             title: "Flowering",
