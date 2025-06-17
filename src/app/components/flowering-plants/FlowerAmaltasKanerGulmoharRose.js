@@ -28,6 +28,10 @@ import key13 from "../../../assets/images/plants/key13.webp";
 import key14 from "../../../assets/images/plants/key14.webp";
 import key15 from "../../../assets/images/plants/key15.webp";
 import key16 from "../../../assets/images/plants/key16.webp";
+import circle4 from "../../../assets/images/plants/circle4.webp";
+import circle02 from "../../../assets/images/plants/circle2.webp";
+
+
 
 
 export const Flower = () => {
@@ -164,7 +168,7 @@ export const Kaner = () => {
     const slides = [
       {
 
-        image: circle2,
+        image: circle02,
         desc: `Kaner is highly adaptable to poor soils, saline conditions, and high heat. It can be cultivated in tropical, subtropical, and even arid zones, thriving in full sun and tolerating partial shade. <br> <br> Popular in landscaping, housing developments, and municipal beautification projects. Its high survival rate and low input cost make it attractive for mass plantation drives. Kaner saplings and cuttings are in consistent demand across urban and rural nurseries.`,
       },
 
@@ -286,7 +290,7 @@ export const Rose = () => {
     const slides = [
       {
 
-        image: circle2,
+        image: circle4,
         desc: `Roses prefer temperate climates with cool nights and warm days but can be adapted to various conditions with proper irrigation and care. They thrive in loamy soils rich in organic matter and require full sun exposure. <br> <br> Red roses are a staple of the floriculture industry. Apart from cut flowers, value-added products like rose water, gulkand, essential oil, and dried petals ensure diverse revenue streams for farmers and entrepreneurs.`,
       },
 
