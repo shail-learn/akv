@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import { Footer } from "./components/Footer";
 import CustomCursor from "./components/CustomCursor";
 import Clientonly from "./components/Clientonly";
-
+import ReCaptchaProviderWrapper from "./components/ReCaptchaProviderWrapper";
 
 
 // export const metadata = {
@@ -50,12 +50,15 @@ export default function RootLayout({ children }) {
             style={{ display: 'none', visibility: 'hidden' }}
           ></iframe>
         </noscript>
+
+        <ReCaptchaProviderWrapper>
         <Clientonly>
           <Navbar />
           {children}
           <CustomCursor />
         </Clientonly>
         <Footer />
+        </ReCaptchaProviderWrapper>
       </body>
     </html>
   );
