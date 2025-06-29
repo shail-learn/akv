@@ -7,6 +7,8 @@ import Clientonly from "./components/Clientonly";
 import ReCaptchaProviderWrapper from "./components/ReCaptchaProviderWrapper";
 
 
+
+
 // export const metadata = {
 //   title: "Atulye Krishi Vana - AKV",
 //   description: "AKV - Atulye Krishi Vana pioneers sustainable agroforestry, restoring ecosystems, empowering communities, and promoting greener, resilient rural livelihoods.",
@@ -53,6 +55,8 @@ export default function RootLayout({ children }) {
 
         <ReCaptchaProviderWrapper>
         <Clientonly>
+       
+          
           <Navbar />
           {children}
           <CustomCursor />
