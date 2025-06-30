@@ -12,9 +12,19 @@
   --ternary-font: "Red Hat Display", serif;
 }
 
+
+/* Prevent layout shift and double bars */
+.goog-te-banner-frame.skiptranslate,
+.goog-te-gadget-simple img,
+.goog-te-combo,
+.goog-te-gadget-icon {
+  display: none !important;
+}
+
 body {
   font-family: var(--secondary-font);
   cursor: none !important;
+  top: 0px !important;
 }
 
 body a,
@@ -1215,4 +1225,30 @@ body .plant_p {
   .desktop-p-0.pt-10 {
     padding-bottom: 2rem !important;
   }
+}
+
+
+/* Fully hide Google Translate UI */
+
+
+
+
+
+/* Optional: make sure no leftover badge text is visible */
+.goog-te-gadget {
+  font-size: inherit !important;
+  color: inherit !important;
+}
+
+
+/* Safe: hide the banner */
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* Safe: hide branding/logo if needed */
+.goog-logo-link,
+.goog-te-gadget-icon {
+  display: none !important;
 }

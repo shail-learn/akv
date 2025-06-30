@@ -12,6 +12,8 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "../../assets/images/logo-akv.webp";
+import { GoogleTranslate } from "./GoogleTranslate";
+import { FaGlobe } from "react-icons/fa";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -143,6 +145,9 @@ function Navbar() {
                     </div>
                   );
                 })}
+
+                {/* ✅ Language Selector for Desktop */}
+                <GoogleTranslate showHiddenDiv={true} />
               </div>
 
               {/* Mobile Menu Button */}
@@ -207,6 +212,9 @@ function Navbar() {
               </li>
             );
           })}
+          <div className="flex items-center space-x-1 text-[#A8A8A8] pl-3">
+          <GoogleTranslate showHiddenDiv={false} />
+  </div>
         </ul>
           </div>
         </Disclosure>

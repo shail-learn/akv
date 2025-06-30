@@ -3,6 +3,36 @@ import nodemailer from 'nodemailer';
 export async function POST(req) {
   const formData = await req.formData();
 
+  const recaptchaToken = formData.get('recaptchaToken');
+
+  if (!recaptchaToken) {
+    return new Response(JSON.stringify({ error: 'Missing reCAPTCHA token' }), {
+      status: 400,
+    });
+  }
+
+
+  // ✅ Step 2: Verify reCAPTCHA token with Google
+  const secretKey = process.env.SECRET_KEY;
+
+  const verificationRes = await fetch('https://www.google.com/recaptcha/api/siteverify', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    body: `secret=${secretKey}&response=${recaptchaToken}`,
+  });
+
+  const verificationData = await verificationRes.json();
+
+  if (!verificationData.success || verificationData.score < 0.5) {
+    return new Response(JSON.stringify({ error: 'reCAPTCHA verification failed' }), {
+      status: 403,
+    });
+  }
+
+  //recaptcha part done
+
   const firstname = formData.get('firstname');
   const lastname = formData.get('lastname');
   const email = formData.get('email');
