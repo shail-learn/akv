@@ -2,10 +2,17 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 // import { useState } from 'react';
 
 export const CareerForm = () => {
     const [resume, setResume] = useState(null);
+
+    const { executeRecaptcha } = useGoogleReCaptcha();
+
+   
+
+    
 
     const [sending, setsending] = useState(false);
     const handleResumeChange = (e) => {
@@ -22,6 +29,15 @@ export const CareerForm = () => {
 
     const careerfrm = async (e) => {
         e.preventDefault();
+
+         if (!executeRecaptcha) {
+            console.log('recaptcha missing');
+    alert("reCAPTCHA not ready. Please try again in a moment.");
+    return;
+  }
+
+        const token = await executeRecaptcha("careerFormSubmit");
+        
         setsending(true);
       
         const form = e.target;
@@ -74,6 +90,7 @@ if (!resume) {
         formData.append("cover_letter", cover_letter);
         formData.append("applied_for", applied_for);
         formData.append("resume", resume);
+        formData.append("recaptchaToken", token);
       
         try {
           const res = await fetch("/data/career", {
