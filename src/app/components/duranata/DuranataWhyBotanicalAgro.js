@@ -9,6 +9,9 @@ import product2 from "../../../assets/images/fast/product2.webp";
 import product3 from "../../../assets/images/fast/product3.webp";
 import product03 from "../../../assets/images/hedge/image4.webp";
 import product04 from "../../../assets/images/hedge/product4.webp";
+import product5 from "../../../assets/images/hedge/product5.webp";
+import product6 from "../../../assets/images/hedge/product6.webp";
+
 
 
 
@@ -127,12 +130,12 @@ export const Botanical = () => {
         {
             title: "Lifespan",
             subtitle: "Perennial",
-            image: product3,
+            image: product5,
         },
         {
             title: "Thorns",
             subtitle: "Present on some cultivars (especially older woody stems)",
-            image: product3,
+            image: product6,
         },
     ];
     return (
