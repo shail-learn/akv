@@ -8,6 +8,9 @@ import impact2 from "../../../assets/images/projects/project2.webp";
 import image1 from "../../../assets/images/projects/image1.webp";
 import image2 from "../../../assets/images/projects/image2.webp";
 import image3 from "../../../assets/images/projects/image3.webp";
+import project20 from "../../../assets/images/projects/project-20.webp";
+
+
 import { IoIosArrowRoundForward } from "react-icons/io";
 
 
@@ -150,6 +153,18 @@ export const Explore = () => {
              A resting abode for camels, reflecting desert culture and care.`,
             link: "/our-projects/shri-pabuji-ushtralaya"
         },
+        {
+            image: project20,
+            heading: "Naimish Kund",
+            description: `Historically inspired holy pond. A site of spiritual significance, rooted in ancient forest traditions.`,
+            link: "/our-projects/naimish-kund"
+        },
+        {
+            image: project20,
+            heading: "Shri. Shringi Yagyashala",
+            description: `Ritual altar in open pavilion style. A spiritual zone for yajnas and Vedic fire ceremonies in community setting.`,
+            link: "/our-projects/shri-shringi-yagyashala"
+        },
 
 
     ]
@@ -233,7 +248,7 @@ export const Waterscapes = () => {
         {
             image: image3,
             description: 'Sangam Kund',
-            link: "#"
+            link: "/our-projects/sangam-kund"
 
         },
         {
