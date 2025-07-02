@@ -62,7 +62,7 @@ export const Key = () => {
             <section className='py-12 px-4 md:px-8 lg:px-16 bg-white'>
                 <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-8'>
                     <div className='md:w-[90%] mx-auto'>
-                        <p className='mt-0 md:mt-4 text-black font-medium text-center'
+                        <p className='mt-0 md:mt-4 text-black font-normal text-center'
                             dangerouslySetInnerHTML={{ __html: description }} />
                     </div>
                 </div>
@@ -87,7 +87,7 @@ export const Key = () => {
                                         <RiCheckboxCircleFill className="h-5 w-5 text-green-800 mt-1" />
                                         <div>
                                             <h3 className="font-semibold redhat text-left text-lg">{item.title}</h3>
-                                            <p className="text-black redhat">{item.description}</p>
+                                            <p className="text-black redhat text-left">{item.description}</p>
                                         </div>
                                     </div>
                                 ))}
