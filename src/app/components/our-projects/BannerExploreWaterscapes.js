@@ -155,6 +155,12 @@ export const Explore = () => {
         },
         {
             image: project20,
+            heading: "Shri. Mukund Mausam Vedhshala (AgroMet Station)",
+            description: `Climate monitoring tower with sensors. Facilitates precision farming with real-time agro-weather insights.`,
+            link: "/our-projects/shri-mukund-mausam-vedhshala"
+        },
+        {
+            image: project20,
             heading: "Naimish Kund",
             description: `Historically inspired holy pond. A site of spiritual significance, rooted in ancient forest traditions.`,
             link: "/our-projects/naimish-kund"

@@ -1,11 +1,11 @@
 "use client"
 import React, { useState } from 'react'
 import BannerPage from '../BannerPage';
-import banner from "../../../assets/images/grasshome/banner.webp";
-import basket from "../../../assets/images/grasshome/info.webp";
+import banner from "../../../assets/images/wind/banner.webp";
+import basket from "../../../assets/images/wind/info1.webp";
 import Image from 'next/image';
 import { Productlist } from '../Productlist';
-import product1 from "../../../assets/images/grasshome/product1.webp";
+import product1 from "../../../assets/images/wind/product01.webp";
 import product2 from "../../../assets/images/grasshome/product2.webp";
 import Plant from "../../../assets/images/grasshome/why.webp";
 import { MdCheckCircle } from "react-icons/md";

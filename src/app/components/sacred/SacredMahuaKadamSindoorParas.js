@@ -1,21 +1,34 @@
 import React from 'react'
 import { Wave } from '../Wave'
 import BannerPage from '../BannerPage'
-import banner from "../../../assets/images/agriculture/banner.webp";
+import banner from "../../../assets/images/sacred/banner.webp";
 import { Gridbox } from '../Gridbox';
 import { GrowthSlider } from '../utilities/Cultivationgrowthwhychoose';
 import info from "../../../assets/images/digestive/info.webp";
 import Image from 'next/image';
-import key1 from "../../../assets/images/digestive/key1.webp";
-import key2 from "../../../assets/images/digestive/key2.webp";
-import key3 from "../../../assets/images/digestive/key3.webp";
-import key4 from "../../../assets/images/digestive/key4.webp";
-import image1 from "../../../assets/images/digestive/image1.webp";
-import circle2 from "../../../assets/images/digestive/circle2.webp";
-import key5 from "../../../assets/images/digestive/key5.webp";
-import key6 from "../../../assets/images/digestive/key6.webp";
-import key7 from "../../../assets/images/digestive/key7.webp";
-import key8 from "../../../assets/images/digestive/key8.webp";
+import key1 from "../../../assets/images/sacred/key1.webp";
+import key2 from "../../../assets/images/sacred/key2.webp";
+import key3 from "../../../assets/images/sacred/key3.webp";
+import key4 from "../../../assets/images/sacred/key4.webp";
+import image1 from "../../../assets/images/sacred/circle1.webp";
+import circle2 from "../../../assets/images/sacred/circle2.webp";
+import key5 from "../../../assets/images/sacred/key5.webp";
+import key6 from "../../../assets/images/sacred/key6.webp";
+import key7 from "../../../assets/images/sacred/key7.webp";
+import key8 from "../../../assets/images/sacred/key8.webp";
+
+import circle3 from "../../../assets/images/sacred/circle3.webp";
+import circle4 from "../../../assets/images/sacred/circle4.webp";
+
+import key9 from "../../../assets/images/sacred/key9.webp";
+import key10 from "../../../assets/images/sacred/key10.webp";
+import key11 from "../../../assets/images/sacred/key11.webp";
+import key12 from "../../../assets/images/sacred/key12.webp";
+
+import key13 from "../../../assets/images/sacred/key13.webp";
+import key14 from "../../../assets/images/sacred/key14.webp";
+import key15 from "../../../assets/images/sacred/key15.webp";
+import key16 from "../../../assets/images/sacred/key16.webp";
 
 export const Sacred = () => {
     const text = {
@@ -218,25 +231,25 @@ export const Sindoor = () => {
     const whyChooseData = [
 
         {
-            image: key1,
+            image: key9,
             title: 'Natural Dye',
             description: "Seeds yield annatto, used in food and cosmetics"
 
         },
         {
-            image: key2,
+            image: key10,
             title: 'Cultural Importance',
             description: "Kumkum for tilak and sindoor traditions"
 
         },
         {
-            image: key3,
+            image: key11,
             title: 'Antioxidant-rich',
             description: "Seeds used in herbal formulations"
 
         },
         {
-            image: key4,
+            image: key12,
             title: 'Ornamental Shrub',
             description: "Bright foliage and distinctive seed pods"
 
@@ -248,7 +261,7 @@ export const Sindoor = () => {
     const slides = [
         {
 
-            image: image1,
+            image: circle3,
             desc: `Sindoor prefers warm, humid climates and well-drained soils. It grows well in sub-tropical and tropical regions with partial shade or full sun.
         `,
 
@@ -292,24 +305,24 @@ export const Paras = () => {
     const shortinfo = `<b>Sacred Shade of Temples and Coasts</b> <br/> This medium-sized evergreen tree is native to coastal and riverine areas and is known for its spiritual presence and environmental strength.`
     const whyChooseData = [
       {
-        image: key5,
+        image: key13,
         title: 'Temple Tree',
         description:"Planted in coastal shrines across South India"
       },
       {
-        image: key6,
+        image: key14,
         title: 'Environmental Resilience',
         description:"Salt-tolerant and wind-resistant"
 
       },
       {
-        image: key7,
+        image: key15,
         title: 'Traditional Uses',
         description:"Bark and flowers used in Ayurveda and folk medicine"
 
       },
       {
-        image: key8,
+        image: key16,
         title: 'Coastal Protector',
         description:"Prevents soil erosion and supports marine biodiversity"
 
@@ -322,7 +335,7 @@ export const Paras = () => {
     const slides = [
       {
 
-        image: circle2,
+        image: circle4,
         desc: `Paras Peepal flourishes in saline, sandy soils and high-humidity coastal belts. It also grows inland under warm, tropical climates.`,
       },
 
