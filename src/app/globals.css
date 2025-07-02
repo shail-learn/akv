@@ -858,6 +858,7 @@ body .plant_p {
   list-style: disc;
   padding-left: 1rem;
   margin-top: 1rem;
+  text-align: left;
 }
 @media (min-width: 1024px) {
   .orange_div .dark_active .swiper-slide-next .bg-white {
