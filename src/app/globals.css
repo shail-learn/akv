@@ -854,7 +854,11 @@ body .plant_p {
 .blurheight2.black_text h2{
   color: #000;
 }
-
+.ul_list ul {
+  list-style: disc;
+  padding-left: 1rem;
+  margin-top: 1rem;
+}
 @media (min-width: 1024px) {
   .orange_div .dark_active .swiper-slide-next .bg-white {
     background: #e9a343;
