@@ -8,6 +8,9 @@ import img5 from "../../../assets/images/business/Neem.webp";
 import leftgrass from "../../../assets/images/business/grass-left.webp";
 import rightgrass from "../../../assets/images/business/grass-right.webp";
 
+import leftgrass1 from "../../../assets/images/business/grass-left1.webp";
+import rightgrass1 from "../../../assets/images/business/grass-right1.webp";
+
 import img01 from "../../../assets/images/agroforestry/flowering-left.webp";
 import img02 from "../../../assets/images/agroforestry/flowering-right.webp";
 
@@ -100,7 +103,7 @@ export const OrnamentalPlants = () => {
             <section className='mx-auto py-6 pt-0 md:pt-16'>
                 <div className='grid grid-col-1 bg-[#1B453C] items-center md:grid-cols-12 g-0'>
                     <div className='w-full md:col-span-4'>
-                        <Image src={leftgrass} alt="banner" className='w-full h-full' />
+                        <Image src={leftgrass1} alt="banner" className='w-full h-full' />
                     </div>
                     <div className='w-full md:col-span-4 p-10 text-center md:text-left '>
                         <h2 className='text-white text-3xl md:text-4xl mb-4  lg:leading-tight  redhat  font-normal  w-full'>
@@ -121,7 +124,7 @@ export const OrnamentalPlants = () => {
 
                     </div>
                     <div className='w-full md:col-span-4'>
-                        <Image src={rightgrass} alt="banner" className='w-full h-full' />
+                        <Image src={rightgrass1} alt="banner" className='w-full h-full' />
 
                     </div>
                 </div>

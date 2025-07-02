@@ -1,27 +1,36 @@
 import React from 'react'
 import { Wave } from '../Wave'
 import BannerPage from '../BannerPage'
-import banner from "../../../assets/images/agriculture/banner.webp";
+import banner from "../../../assets/images/agriculture/banner-new.webp";
 import { Gridbox } from '../Gridbox';
 import { GrowthSlider } from '../utilities/Cultivationgrowthwhychoose';
 import info from "../../../assets/images/digestive/info.webp";
 import Image from 'next/image';
-import key1 from "../../../assets/images/digestive/key1.webp";
-import key2 from "../../../assets/images/digestive/key2.webp";
-import key3 from "../../../assets/images/digestive/key3.webp";
-import key4 from "../../../assets/images/digestive/key4.webp";
-import image1 from "../../../assets/images/digestive/image1.webp";
-import circle2 from "../../../assets/images/digestive/circle2.webp";
-import key5 from "../../../assets/images/digestive/key5.webp";
-import key6 from "../../../assets/images/digestive/key6.webp";
-import key7 from "../../../assets/images/digestive/key7.webp";
-import key8 from "../../../assets/images/digestive/key8.webp";
+import key1 from "../../../assets/images/agriculture/key1.webp";
+import key2 from "../../../assets/images/agriculture/key2.webp";
+import key3 from "../../../assets/images/agriculture/key3.webp";
+import key4 from "../../../assets/images/agriculture/key4.webp";
+import image1 from "../../../assets/images/agriculture/circle1.webp";
+import circle2 from "../../../assets/images/agriculture/circle2.webp";
+import key5 from "../../../assets/images/agriculture/key5.webp";
+import key6 from "../../../assets/images/agriculture/key6.webp";
+import key7 from "../../../assets/images/agriculture/key7.webp";
+import key8 from "../../../assets/images/agriculture/key8.webp";
+
+import key9 from "../../../assets/images/agriculture/key9.webp";
+import key10 from "../../../assets/images/agriculture/key10.webp";
+import key11 from "../../../assets/images/agriculture/key11.webp";
+import key12 from "../../../assets/images/agriculture/key12.webp";
+import circle3 from "../../../assets/images/agriculture/circle3.webp";
+
 
 import { Productlist } from '../Productlist';
 import choose1 from "../../../assets/images/digestive/choose1.webp";
 import choose2 from "../../../assets/images/digestive/choose2.webp";
-import choose3 from "../../../assets/images/digestive/choose3.webp";
+import choose3 from "../../../assets/images/agriculture/why3.webp";
 import choose4 from "../../../assets/images/digestive/choose4.webp";
+import choose5 from "../../../assets/images/agriculture/why5.webp";
+
 import { FaqSlider } from '../FaqSlider';
 
 export const Agricultural = () => {
@@ -226,25 +235,25 @@ export const Lashun = () => {
     const whyChooseData = [
 
         {
-            image: key1,
+            image: key9,
             title: 'Medicinal Use',
             description: "Known for anti-inflammatory, digestive, and immunity-boosting properties."
 
         },
         {
-            image: key2,
+            image: key10,
             title: 'Market Value',
             description: "Higher price per kg compared to many vegetables."
 
         },
         {
-            image: key3,
+            image: key11,
             title: 'Easy Storage',
             description: "Can be sun-dried and stored for months."
 
         },
         {
-            image: key4,
+            image: key12,
             title: 'Pest-Repellent',
             description: "Natural pest deterrent in crop rotations."
 
@@ -256,7 +265,7 @@ export const Lashun = () => {
     const slides = [
         {
 
-            image: image1,
+            image: circle3,
             desc: `Garlic grows best in cool, dry conditions with plenty of sunshine. Prefers sandy loam soils rich in organic matter. Cultivated in Madhya Pradesh, Rajasthan, Gujarat, Punjab, and Uttar Pradesh.
         `,
 
@@ -319,7 +328,7 @@ export const Why = () => {
       },
       {
         title: "Women-Led Cultivation",
-        image: choose4,
+        image: choose5,
         flip: "Easy to manage and quick to grow, kitchen crops are ideal for women-led home farming and backyard enterprises."
       },
 
