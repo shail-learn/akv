@@ -7,6 +7,11 @@ import Image from 'next/image';
 import { Productlist } from '../Productlist';
 import product1 from "../../../assets/images/wind/product01.webp";
 import product2 from "../../../assets/images/grasshome/product2.webp";
+import product02 from "../../../assets/images/medicinal/medicine-main.webp";
+import product03 from "../../../assets/images/forest/main.webp";
+
+
+
 import Plant from "../../../assets/images/grasshome/why.webp";
 import { MdCheckCircle } from "react-icons/md";
 import grow from "../../../assets/images/grasshome/grow.webp";
@@ -101,12 +106,12 @@ export const Categories = () => {
         },
         {
             title: "Medicinal & Multi Purpose Trees",
-            image: product2,
+            image: product02,
             link: "/agroForestry/wild-and-forest-trees/medicinal-and-multi-purpose-trees",
         },
         {
             title: "Wild forest giants & Natives",
-            image: product2,
+            image: product03,
             link: "/agroForestry/wild-and-forest-trees/wild-forest-giants-and-natives",
         },
 

@@ -1,19 +1,21 @@
 import React from 'react'
 import { Wave } from '../Wave'
 import BannerPage from '../BannerPage'
-import banner from "../../../assets/images/agriculture/banner.webp";
+import banner from "../../../assets/images/forest/banner.webp";
 import { Gridbox } from '../Gridbox';
 import { GrowthSlider } from '../utilities/Cultivationgrowthwhychoose';
-import info from "../../../assets/images/digestive/info.webp";
+import info from "../../../assets/images/forest/info.webp";
 import Image from 'next/image';
-import key1 from "../../../assets/images/digestive/key1.webp";
-import key2 from "../../../assets/images/digestive/key2.webp";
-import key3 from "../../../assets/images/digestive/key3.webp";
-import key4 from "../../../assets/images/digestive/key4.webp";
+import key1 from "../../../assets/images/forest/key1.webp";
+import key2 from "../../../assets/images/forest/key2.webp";
+import key3 from "../../../assets/images/forest/key3.webp";
+import key4 from "../../../assets/images/forest/key4.webp";
+import circle1 from "../../../assets/images/forest/circle1.webp";
+
 import image1 from "../../../assets/images/digestive/image1.webp";
 import { Iconslider } from '../Iconslider';
-import image2 from "../../../assets/images/fast/img2.webp";
-import image3 from "../../../assets/images/fast/img3.webp";
+import image2 from "../../../assets/images/forest/circle02.webp";
+import image3 from "../../../assets/images/forest/circle03.webp";
 import image4 from "../../../assets/images/fast/img4.webp";
 
 export const Wild = () => {
@@ -161,7 +163,7 @@ export const Agro = () => {
     const slides = [
         {
 
-            image: image1,
+            image: circle1,
             desc: "Samel thrives in tropical to subtropical regions and adapts well to both dry and moist deciduous zones. It prefers well-drained loamy soils and full sunlight. It is highly drought-tolerant once established, making it a viable option for afforestation in water-scarce areas.",
 
         },

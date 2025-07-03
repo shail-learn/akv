@@ -16,6 +16,10 @@ import img02 from "../../../assets/images/agroforestry/flowering-right.webp";
 
 import palmleft from "../../../assets/images/agroforestry/palms-left.webp";
 import palmright from "../../../assets/images/agroforestry/palms-right.webp";
+import leftmedicine from "../../../assets/images/agroforestry/left-medicine.webp";
+import rightmedicine from "../../../assets/images/agroforestry/right-medicine.webp";
+
+
 
 
 import { FaCircleArrowRight } from "react-icons/fa6";
@@ -34,7 +38,7 @@ export const OrnamentalPlants = () => {
     const description2 = "At Atulye Krishi Vana, we grow more than just plants — we grow possibilities. Our collection of grass, fodder, and agricultural plants is tailored to support India’s farmers "
 
     const heading3 = "Wild & Forest Trees"
-    const description3 = "ndia’s forests are more than green covers — they’re living legacies of biodiversity, culture, and healing. At Atulye Krishi Vana, our collection of Wild & Forest Trees honour "
+    const description3 = "India’s forests are more than green covers — they’re living legacies of biodiversity, culture, and healing. At Atulye Krishi Vana, our collection of Wild & Forest Trees honour "
 
     return (
         <>
@@ -134,7 +138,7 @@ export const OrnamentalPlants = () => {
             <section className='mx-auto py-6 pt-0 md:pt-16'>
                 <div className='grid grid-col-1 bg-[#1B453C] items-center md:grid-cols-12 g-0'>
                     <div className='w-full md:col-span-4'>
-                        <Image src={leftgrass} alt="banner" className='w-full h-full' />
+                        <Image src={leftmedicine} alt="banner" className='w-full h-full' />
                     </div>
                     <div className='w-full md:col-span-4 p-10 text-center md:text-left '>
                         <h2 className='text-white text-3xl md:text-4xl mb-4  lg:leading-tight  redhat  font-normal  w-full'>
@@ -155,7 +159,7 @@ export const OrnamentalPlants = () => {
 
                     </div>
                     <div className='w-full md:col-span-4'>
-                        <Image src={rightgrass} alt="banner" className='w-full h-full' />
+                        <Image src={rightmedicine} alt="banner" className='w-full h-full' />
 
                     </div>
                 </div>
