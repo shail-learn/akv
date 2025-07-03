@@ -101,7 +101,7 @@ export const Unique = () => {
 
     const futurePlans = [
         `<b>Vijaysar  –</b> Revered in Ayurveda and modern herbal medicine for diabetes`,
-        `<b>Lakshmitaru –</b> Symbol of green energy and climate adaptation`,
+        `<b>Lakshmi Taru –</b> Symbol of green energy and climate adaptation`,
         `<b>Kachnar –</b> Icon of culinary culture and springtime beauty in India`,
 
     ];
@@ -158,7 +158,7 @@ export const Unique = () => {
 export const Heal = () => {
     const heading = "Heal Soil, People, and Economy";
     const description =
-        "Medicinal and multi-purpose trees offer more than health—they offer harmony. They reduce ecological degradation, improve farmer incomes, support community wellness, and bring ancient plant wisdom into contemporary practice. <br/><br/> With Atulye Krishi Vana, growing Vijaysar, Lakshmitaru, or Kachnar isn’t just planting a tree—it’s planting a solution. <br/><br/> <b>Nurture well-being. Grow wealth. Heal landscapes.</b>";
+        "Medicinal and multi-purpose trees offer more than health—they offer harmony. They reduce ecological degradation, improve farmer incomes, support community wellness, and bring ancient plant wisdom into contemporary practice. <br/><br/> With Atulye Krishi Vana, growing Vijaysar, Lakshmi Taru, or Kachnar isn’t just planting a tree—it’s planting a solution. <br/><br/> <b>Nurture well-being. Grow wealth. Heal landscapes.</b>";
     return (
         <section
             className="relative bg-no-repeat py-14 lg:py-32 bg-cover w-full my-8 md:my-12 !mt-0"
@@ -191,9 +191,9 @@ export const MedicineFaqs = () => {
     const Faqdescription = `Vijaysar is a powerful tree in Ayurveda, mainly known for its role in managing diabetes. Its heartwood is used to make herbal cups, where soaking water overnight helps regulate blood sugar levels. The bark and gum also treat skin disorders, ulcers, and dysentery. Traditionally, Vijaysar infusions are part of daily regimens in many Indian households. Beyond human use, it contributes to forest regeneration and soil stabilization, making it a valuable asset for sustainable farming and community health.`;
     const FaqsData = [
         {
-            question: "How can farmers earn from cultivating Lakshmitaru trees?",
+            question: "How can farmers earn from cultivating Lakshmi Taru trees?",
             answer:
-                "Lakshmitaru, or Simarouba glauca, offers multiple revenue streams. Its seeds are processed into oil suitable for biodiesel, soap, and lubricants. Leaves and bark have medicinal applications, while the fast-growing nature makes it suitable for timber and reforestation. Farmers can sell raw seeds to biofuel units or extract oil for value-added products. With proper training, even smallholders can develop sustainable businesses from this one tree—earning through biofuel, organic remedies, and eco-products. Atulye Krishi Vana also connects growers to markets that prioritize green energy and herbal wellness.",
+                "Lakshmi Taru, or Simarouba glauca, offers multiple revenue streams. Its seeds are processed into oil suitable for biodiesel, soap, and lubricants. Leaves and bark have medicinal applications, while the fast-growing nature makes it suitable for timber and reforestation. Farmers can sell raw seeds to biofuel units or extract oil for value-added products. With proper training, even smallholders can develop sustainable businesses from this one tree—earning through biofuel, organic remedies, and eco-products. Atulye Krishi Vana also connects growers to markets that prioritize green energy and herbal wellness.",
         },
         {
             question:
@@ -207,14 +207,14 @@ export const MedicineFaqs = () => {
                 "Yes, Vijaysar trees are ideal for agroforestry systems. They can be intercropped with pulses, millets, or medicinal herbs due to their deep-rooted structure, which does not aggressively compete for surface nutrients. Their canopy also allows filtered sunlight, benefiting partial-shade crops. Farmers practicing intercropping benefit from dual yields—timber or medicinal wood from Vijaysar, and seasonal crops for regular income. This approach improves soil health, enhances biodiversity, and diversifies farmer revenue while reducing dependency on monoculture practices.",
         },
         {
-            question: "What climate and soil are suitable for Lakshmitaru plantations?",
+            question: "What climate and soil are suitable for Lakshmi Taru plantations?",
             answer:
-                "Lakshmitaru thrives in arid, semi-arid, and marginal lands with poor soil fertility. It is tolerant of saline, lateritic, and degraded soils, making it ideal for reclamation and reforestation programs. The tree prefers warm tropical to subtropical climates and requires minimal irrigation once established. It can withstand high temperatures and occasional droughts, which makes it particularly useful in areas facing desertification or low agricultural productivity. This adaptability makes Lakshmitaru a prime candidate for climate-resilient farming under Atulye Krishi Vana.",
+                "Lakshmi Taru thrives in arid, semi-arid, and marginal lands with poor soil fertility. It is tolerant of saline, lateritic, and degraded soils, making it ideal for reclamation and reforestation programs. The tree prefers warm tropical to subtropical climates and requires minimal irrigation once established. It can withstand high temperatures and occasional droughts, which makes it particularly useful in areas facing desertification or low agricultural productivity. This adaptability makes Lakshmi Taru a prime candidate for climate-resilient farming under Atulye Krishi Vana.",
         },
         {
-            question: "How long does it take for Vijaysar and Lakshmitaru to mature?",
+            question: "How long does it take for Vijaysar and Lakshmi Taru to mature?",
             answer:
-                " Vijaysar generally takes 6–8 years to produce harvestable heartwood, while its bark and leaves can be sustainably pruned earlier for medicinal use. Lakshmitaru matures quickly—within 3–4 years—and begins seed production by year five, ideal for biofuel extraction. Both trees offer medium-to-long-term economic returns. With appropriate care and organic inputs, farmers can begin earning from Lakshmitaru oil or Vijaysar wood products early in the planting cycle. Training in pruning and processing can accelerate productivity and ensure ecological sustainability.",
+                " Vijaysar generally takes 6–8 years to produce harvestable heartwood, while its bark and leaves can be sustainably pruned earlier for medicinal use. Lakshmi Taru matures quickly—within 3–4 years—and begins seed production by year five, ideal for biofuel extraction. Both trees offer medium-to-long-term economic returns. With appropriate care and organic inputs, farmers can begin earning from Lakshmi Taru oil or Vijaysar wood products early in the planting cycle. Training in pruning and processing can accelerate productivity and ensure ecological sustainability.",
         },
 
     ];

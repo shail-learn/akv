@@ -1,9 +1,9 @@
 import React from 'react'
 import { Productlist } from '../Productlist';
-import choose1 from "../../../assets/images/digestive/choose1.webp";
-import choose2 from "../../../assets/images/digestive/choose2.webp";
-import choose3 from "../../../assets/images/digestive/choose3.webp";
-import choose4 from "../../../assets/images/digestive/choose4.webp";
+import choose1 from "../../../assets/images/forest/choose1.webp";
+import choose2 from "../../../assets/images/forest/choose2.webp";
+import choose3 from "../../../assets/images/forest/choose3.webp";
+import choose4 from "../../../assets/images/forest/choose4.webp";
 
 
 import { FaqSlider } from '../FaqSlider';

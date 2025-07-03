@@ -1,26 +1,34 @@
 import React from 'react'
 import { Wave } from '../Wave'
 import BannerPage from '../BannerPage'
-import banner from "../../../assets/images/agriculture/banner.webp";
+import banner from "../../../assets/images/medicinal/banner.webp";
 import { Gridbox } from '../Gridbox';
 import { GrowthSlider } from '../utilities/Cultivationgrowthwhychoose';
-import info from "../../../assets/images/digestive/info.webp";
+import info from "../../../assets/images/medicinal/info.webp";
 import Image from 'next/image';
-import key1 from "../../../assets/images/digestive/key1.webp";
-import key2 from "../../../assets/images/digestive/key2.webp";
-import key3 from "../../../assets/images/digestive/key3.webp";
+import key1 from "../../../assets/images/medicinal/key1.webp";
+import key2 from "../../../assets/images/medicinal/key2.webp";
+import key3 from "../../../assets/images/medicinal/key3.webp";
 import key4 from "../../../assets/images/digestive/key4.webp";
-import image1 from "../../../assets/images/digestive/image1.webp";
-import circle2 from "../../../assets/images/digestive/circle2.webp";
-import key5 from "../../../assets/images/digestive/key5.webp";
-import key6 from "../../../assets/images/digestive/key6.webp";
-import key7 from "../../../assets/images/digestive/key7.webp";
-import key8 from "../../../assets/images/digestive/key8.webp";
+import image1 from "../../../assets/images/medicinal/circle1.webp";
+import circle2 from "../../../assets/images/medicinal/circle2.webp";
+import circle3 from "../../../assets/images/medicinal/circle3.webp";
+
+import key5 from "../../../assets/images/medicinal/key5.webp";
+import key6 from "../../../assets/images/medicinal/key6.webp";
+import key7 from "../../../assets/images/medicinal/key7.webp";
+import key8 from "../../../assets/images/medicinal/key8.webp";
+
+import key9 from "../../../assets/images/medicinal/key9.webp";
+import key10 from "../../../assets/images/medicinal/key10.webp";
+import key11 from "../../../assets/images/medicinal/key11.webp";
+import key12 from "../../../assets/images/medicinal/key12.webp";
+
 import { Productlist } from '../Productlist';
-import choose1 from "../../../assets/images/digestive/choose1.webp";
-import choose2 from "../../../assets/images/digestive/choose2.webp";
-import choose3 from "../../../assets/images/digestive/choose3.webp";
-import choose4 from "../../../assets/images/digestive/choose4.webp";
+import choose1 from "../../../assets/images/medicinal/choose1.webp";
+import choose2 from "../../../assets/images/medicinal/choose2.webp";
+import choose3 from "../../../assets/images/medicinal/choose3.webp";
+import choose4 from "../../../assets/images/medicinal/choose4.webp";
 
 
 export const Medicinal = () => {
@@ -42,7 +50,7 @@ export const Medicinal = () => {
 
 export const Vijaysar = () => {
     const basketData = {
-        note: "Under the Atulye Krishi Vana initiative, we promote the cultivation of medicinal and multi-functional trees such as Vijaysar (Pterocarpus marsupium), Lakshmitaru (Simarouba glauca), and Kachnar (Bauhinia variegata). These trees are ideal for both farmers and communities looking to harmonize health, biodiversity, and income.",
+        note: "Under the Atulye Krishi Vana initiative, we promote the cultivation of medicinal and multi-functional trees such as Vijaysar (Pterocarpus marsupium), Lakshmi Taru (Simarouba glauca), and Kachnar (Bauhinia variegata). These trees are ideal for both farmers and communities looking to harmonize health, biodiversity, and income.",
         image: info,
     };
 
@@ -146,8 +154,8 @@ export const Vijaysar = () => {
 export const Lakshmitaru = () => {
     const gridBox = "xl:!grid-cols-4 custom_height1"
     const custom_class = "white_grid grid_padding"
-    const main_heading = "Lakshmitaru (Simarouba glauca)"
-    const shortinfo = `<b>The Miracle Tree for Biofuel and Health</b> <br/> Originally native to Central America, Lakshmitaru is gaining prominence in India due to its adaptability and multi-use potential. Every part of the tree—leaves, seeds, bark, and oil—has commercial and medicinal value.`
+    const main_heading = "Lakshmi Taru (Simarouba glauca)"
+    const shortinfo = `<b>The Miracle Tree for Biofuel and Health</b> <br/> Originally native to Central America, Lakshmi Taru is gaining prominence in India due to its adaptability and multi-use potential. Every part of the tree—leaves, seeds, bark, and oil—has commercial and medicinal value.`
     const whyChooseData = [
       {
         image: key5,
@@ -181,7 +189,7 @@ export const Lakshmitaru = () => {
       {
 
         image: circle2,
-        desc: `Lakshmitaru thrives in dry, marginal soils and saline environments. It is suitable for the Deccan Plateau, Rajasthan, and arid coastal regions. Requires minimal irrigation after establishment.`,
+        desc: `Lakshmi Taru thrives in dry, marginal soils and saline environments. It is suitable for the Deccan Plateau, Rajasthan, and arid coastal regions. Requires minimal irrigation after establishment.`,
       },
 
 
@@ -224,25 +232,25 @@ export const Kachnar = () => {
     const whyChooseData = [
 
         {
-            image: key1,
+            image: key9,
             title: 'Edible Flowers',
             description: "Used in Indian cuisine and herbal preparations"
 
         },
         {
-            image: key2,
+            image: key10,
             title: 'Medicinal Value',
             description: "Bark treats goiter, digestive issues, and wounds"
 
         },
         {
-            image: key3,
+            image: key11,
             title: 'Aesthetic Appeal',
             description: "Orchid-like flowers in pink, purple, or white"
 
         },
         {
-            image: key4,
+            image: key12,
             title: 'Soil Enricher',
             description: "Helps in nitrogen fixation"
 
@@ -254,7 +262,7 @@ export const Kachnar = () => {
     const slides = [
         {
 
-            image: image1,
+            image: circle3,
             desc: `Kachnar thrives in loamy to sandy soils across tropical and subtropical India. It tolerates mild drought and urban pollution, making it ideal for both rural and urban greening.  `,
 
         },
@@ -307,7 +315,7 @@ export const Benefits = () => {
       {
         title: "Climate Resilience and Land Reclamation",
         image: choose3,
-        flip: "Species like Lakshmitaru can thrive in harsh conditions, regenerating degraded land. Vijaysar and Kachnar contribute to carbon capture, water retention, and erosion control."
+        flip: "Species like Lakshmi Taru can thrive in harsh conditions, regenerating degraded land. Vijaysar and Kachnar contribute to carbon capture, water retention, and erosion control."
       },
       {
         title: "Low Maintenance, High Returns",
