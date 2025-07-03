@@ -183,19 +183,20 @@ export const CategoryCard = () => {
             image: img4,
             link: "/agroForestry/bamboo",
         },
-        {
-            title: "Neem",
-            image: img5,
-            link: "#",
-        },
+        // {
+        //     title: "Neem",
+        //     image: img5,
+        //     link: "#",
+        // },
 
     ]
     return (
         <section className='mx-auto max-w-7xl py-6 pt-12 md:pt-16'>
             <div className='grid grid-col-1  px-4 md:px-0 items-center md:grid-cols-12 gap-6'>
+            <div className='w-full md:col-span-1'></div>
                 {card.map((item, index) => {
                     return (
-                        <div key={index} className='w-full md:col-span-4'>
+                        <div key={index} className='w-full md:col-span-5'>
                             <Image src={item.image} alt="banner" className='w-full h-full rounded-tl-3xl rounded-tr-3xl' />
                             <div className='flex gap-4 items-center justify-between my-4'>
                                 <p className='text-black text-xl'>{item.title}</p>
@@ -204,6 +205,8 @@ export const CategoryCard = () => {
                         </div>
                     )
                 })}
+
+                 <div className='w-full md:col-span-1'></div>
 
 
             </div>
