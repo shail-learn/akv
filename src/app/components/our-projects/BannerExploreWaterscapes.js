@@ -155,6 +155,18 @@ export const Explore = () => {
         },
         {
             image: project20,
+            heading: "Shri. Bhairav Sadan – Dog House",
+            description: `Compassionate haven for canines. A clean, safe space dedicated to stray and abandoned dogs.`,
+            link: "/our-projects/shri-bhairav-sadan"
+        },
+        {
+            image: project20,
+            heading: "Shri. Tridev Triveni Vatika",
+            description: `Garden triad dedicated to Brahma, Vishnu, and Mahesh. A symbolic union of the divine trinity through sacred plantings.`,
+            link: "/our-projects/shri-tridev-triveni-vatika"
+        },
+        {
+            image: project20,
             heading: "Shri. Mukund Mausam Vedhshala (AgroMet Station)",
             description: `Climate monitoring tower with sensors. Facilitates precision farming with real-time agro-weather insights.`,
             link: "/our-projects/shri-mukund-mausam-vedhshala"
