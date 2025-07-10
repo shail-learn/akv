@@ -155,6 +155,19 @@ export const Explore = () => {
         },
         {
             image: project20,
+            heading: "Shri. Pampasar Kamal Sarovar",
+            description: `Self-sustaining native plant ecosystem. A naturally balanced grove highlighting regenerative design.
+            `,
+            link: "/our-projects/shri-swayambhu-vatika"
+        },
+        {
+            image: project20,
+            heading: "Shri. Pampasar Kamal Sarovar",
+            description: `Blooming lotus pond with vibrant biodiversity. This sarovar nurtures aquatic ecosystems and spiritual calm.`,
+            link: "/our-projects/shri-pampasar-kamal-sarovar"
+        },
+        {
+            image: project20,
             heading: "Shri. Bhairav Sadan – Dog House",
             description: `Compassionate haven for canines. A clean, safe space dedicated to stray and abandoned dogs.`,
             link: "/our-projects/shri-bhairav-sadan"
