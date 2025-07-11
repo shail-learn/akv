@@ -76,27 +76,27 @@ export const Explore = () => {
         },
         {
             image: impact1,
-            heading: "Goshala",
+            heading: "Shri. Malook Gaushala",
             description: `Sheltered pastures for native cattle
              A sanctuary promoting ethical cattle care and rural livelihoods.`
             ,
-            link: "/our-projects/goshala"
+            link: "/our-projects/shri-malook-gaushala"
         },
         {
             image: impact1,
-            heading: "Vermicompost Unit",
-            description: `Compost beds and soil lab
+            heading: "Shri. Rasayanshala (Vermicompost Unit)",
+            description: `Compost beds and soil lab.
               A hub for organic waste conversion and farmer education.`
             ,
-            link: "/our-projects/vermicompost-unit"
+            link: "/our-projects/shri-rasayanshala"
         },
         {
             image: impact1,
-            heading: "Guest Plantation",
-            description: `Welcome garden with curated plant displays
+            heading: "Guest Garden",
+            description: `Welcome garden with curated plant displays.
               A beautifully maintained space for guests and dignitaries to reflect and relax.`
             ,
-            link: "/our-projects/guest-plantation"
+            link: "/our-projects/guest-garden"
         },
         {
             image: impact1,
