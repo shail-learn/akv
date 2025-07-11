@@ -15,6 +15,9 @@ import img01 from "../../../assets/images/teak/small.webp";
 import PartnerBg from "../../../assets/images/respirtaory/bgimg.webp";
 import image2 from "../../../assets/images/projects/project20/key.webp";
 import { RiCheckboxCircleFill } from "react-icons/ri";
+import image3 from "../../../assets/images/projects/project20/histroy.webp";
+import Titleslider from '../Titleslider';
+
 
 
 export const Bhrigu = () => {
@@ -65,29 +68,41 @@ export const Concept = () => {
     ];
 
 
-    const shortinfo = "In Hindu philosophy and astrology, Navagrahas—the nine celestial influencers—have deep effects on human life. Shri. Bhrigu Van is inspired by this tradition, using plants that are believed to resonate with each Graha (planet), Nakshatra (star), and Rashi (zodiac sign)."
+    const shortinfo = `In Hindu philosophy and astrology, Navagrahas—the nine celestial influencers—have deep effects on human life. Shri. Bhrigu Van is inspired by this tradition, using plants that are believed to resonate with each Graha (planet), Nakshatra (star), and Rashi (zodiac sign). <br> Each celestial body and star is symbolically represented by a plant, selected for:
+    <ul class="list-disc list-inside py-3">
+     <li>Its spiritual alignment</li>
+     <li>Its Ayurvedic medicinal properties</li>
+     <li>Its directional placement in Vastu-based landscaping</li>
+    </ul>
+    This garden unites the ancient sciences of Jyotish Shastra, Vrikshayurveda, and Ayurveda, creating a space of harmony between the cosmos and nature.
 
-    const main_heading = "It's History";
-    const GrowthDescription = "Each celestial body and star is symbolically represented by a plant, selected for:"
+    `
+
+    const main_heading = "Concept and Significance";
+    // const GrowthDescription = "Each celestial body and star is symbolically represented by a plant, selected for:"
 
 
-    const slides = [
-        {
-            image: image1,
-            desc: "Its spiritual alignment",
-        },
-        {
-            image: image1,
-            desc: "Its Ayurvedic medicinal properties",
-        },
-        {
-            image: image1,
-            desc: "Its directional placement in Vastu-based landscaping",
-        },
+    // const slides = [
+    //     {
+    //         heading: "Pabuji’s Camel:",
+    //         description: " Folk legends often depict Pabuji riding a camel, symbolizing his nomadic lifestyle and deep connection with the desert ecosystem. Camels hold immense cultural and practical importance among desert communities like the Rabari and Bishnoi.  ",
+    //     },
+    //     {
+    //         heading: "Ushtralaya:",
+    //         description: ' Meaning "Camel Shelter" in Hindi, the term reflects the cultural tradition of providing care and protection for camels, aligning with the significance of camels in both spiritual and everyday life in desert regions',
+    //     },
+    //     {
+    //         heading: "Cultural Significance:",
+    //         description: " In Rajasthan, camels are associated with trade, travel, and resilience—values embodied by Pabuji in local folklore. Their role in survival and livelihood across desert terrains highlights their importance in the stories and traditions of the region.",
+    //     },
+    //     {
+    //         heading: "Folk Narratives and Art:",
+    //         description: " Folk tales and artwork often celebrate the camel as a loyal companion to Pabuji. These depictions reinforce the connection between the legendary protector and his trusted animal, a symbol of endurance and service.",
+    //     },
 
-    ];
-    const GrowthDescription1 = "This garden unites the ancient sciences of Jyotish Shastra, Vrikshayurveda, and Ayurveda, creating a space of harmony between the cosmos and nature."
-
+    // ];
+    // const GrowthDescription1 = "This garden unites the ancient sciences of Jyotish Shastra, Vrikshayurveda, and Ayurveda, creating a space of harmony between the cosmos and nature."
+    // const GrowthHeading = "History";
     return (
         <>
 
@@ -120,7 +135,32 @@ export const Concept = () => {
                 </div>
             </section>
 
-            <section className="py-12  px-4 md:px-8 lg:px-16 bg-[#1B453C] text-center">
+
+            <section className='text-center md:text-left pb-16 pt-16 lg:pb-20 lg:pt-20'>
+                <div className='mx-auto max-w-7xl  px-6'>
+                    <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-medium redhat text-[#1B453C] mb-8'>{main_heading}</h2>
+                </div>
+                <div className='mx-auto max-w-7xl  px-6 flex flex-col-reverse md:flex-row items-center gap-10'>
+                    <div className='w-full md:w-2/3 text-center md:text-left'>
+
+                        <div className='w-full p-4 md:p-8 bg-[#1B453C] rounded-2xl'>
+                            <p className='text-white text-base redhat' dangerouslySetInnerHTML={{ __html: shortinfo }}>
+                            </p>
+                        </div>
+                    </div>
+                    <div className='w-full md:w-1/3 text-center'>
+                        <Image className='w-full h-full rounded-xl' src={image3} alt='banner' />
+                    </div>
+
+                </div>
+            </section>
+
+            {/* <Titleslider heading={GrowthHeading} boxslider={slides} shortdescription={GrowthDescription} /> */}
+
+
+
+
+            {/* <section className="py-12  px-4 md:px-8 lg:px-16 bg-[#1B453C] text-center">
                 <div className='mx-auto max-w-3xl px-4 md:px-6 lg:px-8'>
                     <h2 className="text-3xl md:text-4xl redhat font-semibold text-center text-[#D7DD87] mb-10  md:mb-6">
                         {main_heading}
@@ -133,7 +173,7 @@ export const Concept = () => {
                 slides={slides}
                 GrowthDescription={GrowthDescription}
                 GrowthDescription1={GrowthDescription1}
-            />
+            /> */}
 
 
         </>
@@ -392,7 +432,7 @@ export const Van = () => {
 
     return (
         <section
-            className="relative bg-no-repeat py-14 !mt-0 lg:py-32 bg-cover w-full my-8 md:my-12  "
+            className="relative bg-no-repeat py-14 !mb-0 !mt-0 lg:py-32 bg-cover w-full my-8 md:my-12  "
             style={{ backgroundImage: `url(${PartnerBg.src})` }}
         >
 
