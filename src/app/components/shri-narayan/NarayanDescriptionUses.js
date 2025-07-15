@@ -1,22 +1,15 @@
 import React from 'react'
-import { Wave } from '../Wave'
 import BannerPage from '../BannerPage'
-import banner from "../../../assets/images/agriculture/banner.webp";
-import info from "../../../assets/images/digestive/info.webp";
-import image1 from "../../../assets/images/digestive/image1.webp";
-import { GrowthSlider } from '../utilities/Cultivationgrowthwhychoose';
+import banner from "../../../assets/images/projects/project6/banner.webp";
 import Image from 'next/image';
-import { SliderBlur } from '../SliderBlur';
-import impact1 from "../../../assets/images/stress/Benefit1.webp";
-import bgstay from "../../../assets/images/stress/bg.webp";
-import image2 from "../../../assets/images/projects/project20/key.webp";
+import image2 from "../../../assets/images/projects/project6/key.webp";
 import { RiCheckboxCircleFill } from "react-icons/ri";
-import image3 from "../../../assets/images/projects/project20/histroy.webp";
+import image3 from "../../../assets/images/projects/project6/des.webp";
 import { Gridbox } from '../Gridbox';
-import use1 from "../../../assets/images/projects/project20/use1.webp";
-import use2 from "../../../assets/images/projects/project20/use2.webp";
-import use3 from "../../../assets/images/projects/project20/use3.webp";
-import use4 from "../../../assets/images/projects/project20/use4.webp";
+import use1 from "../../../assets/images/projects/project6/key1.webp";
+import use2 from "../../../assets/images/projects/project6/key2.webp";
+import use3 from "../../../assets/images/projects/project6/key3.webp";
+import use4 from "../../../assets/images/projects/project6/key4.webp";
 
 export const Narayan = () => {
   const text = {
@@ -159,7 +152,7 @@ export const Uses = () => {
         "Visitor Enjoyment: The garden enhances the ambiance of the farm, creating a scenic environment that promotes relaxation and leisure.",
     },
     {
-      image: use3,
+      image: use4,
       title: "Research and Learning",
       description:
         "Cultivation Trials: Serves as a testing ground for new fruit varieties and experimental farming methods.",

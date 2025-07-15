@@ -1,31 +1,22 @@
 import React from 'react'
 import { Wave } from '../Wave'
 import BannerPage from '../BannerPage'
-import banner from "../../../assets/images/agriculture/banner.webp";
-import info from "../../../assets/images/digestive/info.webp";
+import banner from "../../../assets/images/projects/project3/banner.webp";
+import info from "../../../assets/images/projects/project3/founder.webp";
 import Image from 'next/image';
-import key1 from "../../../assets/images/digestive/key1.webp";
-import key2 from "../../../assets/images/digestive/key2.webp";
-import key3 from "../../../assets/images/digestive/key3.webp";
-import key4 from "../../../assets/images/digestive/key4.webp";
-import image1 from "../../../assets/images/digestive/image1.webp";
-import PartnerBg from "../../../assets/images/respirtaory/bgimg.webp";
+import PartnerBg from "../../../assets/images/projects/project3/bgimg.webp";
 import { Gridbox } from '../Gridbox';
-import { GrowthSlider } from '../utilities/Cultivationgrowthwhychoose';
+import image2 from "../../../assets/images/projects/project3/culture.webp";
 
-import image2 from "../../../assets/images/about/image2.webp";
-import bgstay from "../../../assets/images/stress/bg.webp";
-import { SliderBlur } from '../SliderBlur';
-import impact1 from "../../../assets/images/stress/Benefit1.webp";
 import Titleslider from '../Titleslider';
 import { RiCheckboxCircleFill } from "react-icons/ri";
-import image01 from "../../../assets/images/projects/project20/key.webp";
-import use1 from "../../../assets/images/projects/project20/use1.webp";
-import use2 from "../../../assets/images/projects/project20/use2.webp";
-import use3 from "../../../assets/images/projects/project20/use3.webp";
-import use4 from "../../../assets/images/projects/project20/use4.webp";
-import use5 from "../../../assets/images/projects/project20/use5.webp";
-import use6 from "../../../assets/images/projects/project20/use6.webp";
+import image01 from "../../../assets/images/projects/project3/key-detail.webp";
+import use1 from "../../../assets/images/projects/project3/key1.webp";
+import use2 from "../../../assets/images/projects/project3/key2.webp";
+import use3 from "../../../assets/images/projects/project3/key3.webp";
+import use4 from "../../../assets/images/projects/project3/key4.webp";
+import use5 from "../../../assets/images/projects/project3/key5.webp";
+import use6 from "../../../assets/images/projects/project3/key6.webp";
 
 export const Goshala = () => {
   const text = {
@@ -222,19 +213,19 @@ export const Functions = () => {
 
   const whyChooseData1 = [
     {
-      image: use1,
+      image: use4,
       title: "Sustainability and Resource Recycling:",
       description:
         "Integrates livestock into farming cycles for nutrient cycling and reduced waste",
     },
     {
-      image: use2,
+      image: use5,
       title: "Educational and Cultural Value: ",
       description:
         "Educates the community and visiting groups about ethical animal husbandry, desi breed conservation, and the role of cows in agroecology",
     },
     {
-      image: use3,
+      image: use6,
       title: "Economic Contributions:",
       description:
         "Milk sales and composted dung can provide additional income to sustain Gaushala operations and benefit local farmers",
@@ -307,6 +298,8 @@ export const Malook = () => {
       className="relative bg-no-repeat py-14 lg:py-32 !mb-0 bg-cover w-full my-8 md:my-12 !mt-0"
       style={{ backgroundImage: `url(${PartnerBg.src})` }}
     >
+            <div className='absolute top-0 left-0 w-full h-full bg-black opacity-60'></div>
+
 
       <div className="relative z-10 h-full flex mx-auto px-4   max-w-7xl">
         <div className="max-w-2xl text-white text-center md:text-left pl-3   mt-5">

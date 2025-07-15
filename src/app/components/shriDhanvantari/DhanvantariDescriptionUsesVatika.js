@@ -1,25 +1,21 @@
 import React from 'react'
-import { Wave } from '../Wave'
 import BannerPage from '../BannerPage'
-import banner from "../../../assets/images/agriculture/banner.webp";
-import info from "../../../assets/images/digestive/info.webp";
-import image1 from "../../../assets/images/digestive/image1.webp";
-import { GrowthSlider } from '../utilities/Cultivationgrowthwhychoose';
+import banner from "../../../assets/images/projects/project11/banner.webp";
 import Image from 'next/image';
 import { SliderBlur } from '../SliderBlur';
-import PartnerBg from "../../../assets/images/respirtaory/bgimg.webp";
-import image2 from "../../../assets/images/projects/project20/key.webp";
+import PartnerBg from "../../../assets/images/projects/project11/bgimg.webp";
+import image2 from "../../../assets/images/projects/project11/key.webp";
 
 import { RiCheckboxCircleFill } from "react-icons/ri";
 import Titleslider from '../Titleslider';
-import image3 from "../../../assets/images/projects/project20/histroy.webp";
+import image3 from "../../../assets/images/projects/project11/desc.webp";
 import { Gridbox } from '../Gridbox';
-import use1 from "../../../assets/images/projects/project20/use1.webp";
-import use2 from "../../../assets/images/projects/project20/use2.webp";
-import use3 from "../../../assets/images/projects/project20/use3.webp";
-import use4 from "../../../assets/images/projects/project20/use4.webp";
-import use5 from "../../../assets/images/projects/project20/use5.webp";
-import use6 from "../../../assets/images/projects/project20/use6.webp";
+import use1 from "../../../assets/images/projects/project11/key1.webp";
+import use2 from "../../../assets/images/projects/project11/key2.webp";
+import use3 from "../../../assets/images/projects/project11/key3.webp";
+import use4 from "../../../assets/images/projects/project11/key4.webp";
+import use5 from "../../../assets/images/projects/project11/key5.webp";
+import use6 from "../../../assets/images/projects/project11/key6.webp";
 
 export const Dhanvantari = () => {
     const text = {
@@ -189,19 +185,19 @@ export const Uses = () => {
 
     const whyChooseData1 = [
         {
-            image: use1,
+            image: use4,
             title: "Product Development:",
             description:
                 "Supports the creation of herbal teas, tinctures, skincare items, and other plant-based wellness products.",
         },
         {
-            image: use2,
+            image: use5,
             title: "Research Opportunities: ",
             description:
                 "Offers collaboration potential with researchers and institutions for studying plant properties and discovering new uses.",
         },
         {
-            image: use3,
+            image: use6,
             title: "Sustainable Farming Practices:",
             description:
                 "Utilizes medicinal plants for organic pest control, soil enrichment, and as companion crops to promote ecological farming.",
@@ -244,6 +240,7 @@ export const Vatika = () => {
             className="relative bg-no-repeat py-14   lg:py-32 !mb-0 bg-cover w-full my-8 md:my-12  "
             style={{ backgroundImage: `url(${PartnerBg.src})` }}
         >
+            <div className='absolute top-0 left-0 w-full h-full bg-black opacity-60'></div>
 
             <div className="relative z-10 h-full flex mx-auto px-4   max-w-7xl">
                 <div className="max-w-2xl text-white text-center md:text-left pl-3   mt-5">

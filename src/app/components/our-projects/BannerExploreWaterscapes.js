@@ -4,15 +4,33 @@ import BannerPage from '../BannerPage'
 import banner from "../../../assets/images/projects/banner.webp";
 import bgstay from "../../../assets/images/projects/bg-project.webp";
 import impact1 from "../../../assets/images/projects/project1.webp";
-import impact2 from "../../../assets/images/projects/project2.webp";
 import image1 from "../../../assets/images/projects/image1.webp";
 import image2 from "../../../assets/images/projects/image2.webp";
 import image3 from "../../../assets/images/projects/image3.webp";
 
 import project1 from "../../../assets/images/projects/tulsi.webp";
 import project2 from "../../../assets/images/projects/ramsetu.webp";
+import project3 from "../../../assets/images/projects/gaushala.webp";
+import project4 from "../../../assets/images/projects/rasayanshala-project.webp";
+import project5 from "../../../assets/images/projects/guest-garden.webp";
+import project6 from "../../../assets/images/projects/narayan-falodyan.webp";
+import project7 from "../../../assets/images/projects/mansarovar.webp";
+import project8 from "../../../assets/images/projects/venu-nursery.webp";
+import project9 from "../../../assets/images/projects/bhrigu-van.webp";
+import project10 from "../../../assets/images/projects/aushadh-manav.webp";
+import project11 from "../../../assets/images/projects/dhanvantari.webp";
+import project12 from "../../../assets/images/projects/pabuji-ushtralaya.webp";
+import project13 from "../../../assets/images/projects/swayambhu-vatika.webp";
+import project15 from "../../../assets/images/projects/bhairav-sadan.webp";
+import project16 from "../../../assets/images/projects/tridev-triveni-vatika.webp";
+import project17 from "../../../assets/images/projects/mukund-mausam-vedhshala.webp";
+import project18 from "../../../assets/images/projects/naimish-kund.webp";
 
 import project20 from "../../../assets/images/projects/project-20.webp";
+import project07 from "../../../assets/images/projects/mansarovar1.webp";
+import project02 from "../../../assets/images/projects/ram-setu1.webp";
+
+
 
 
 import { IoIosArrowRoundForward } from "react-icons/io";
@@ -79,7 +97,7 @@ export const Explore = () => {
 
         },
         {
-            image: impact1,
+            image: project3,
             heading: "Shri. Malook Gaushala",
             description: `Sheltered pastures for native cattle
              A sanctuary promoting ethical cattle care and rural livelihoods.`
@@ -87,7 +105,7 @@ export const Explore = () => {
             link: "/our-projects/shri-malook-gaushala"
         },
         {
-            image: impact1,
+            image: project4,
             heading: "Shri. Rasayanshala (Vermicompost Unit)",
             description: `Compost beds and soil lab.
               A hub for organic waste conversion and farmer education.`
@@ -95,7 +113,7 @@ export const Explore = () => {
             link: "/our-projects/shri-rasayanshala"
         },
         {
-            image: impact1,
+            image: project5,
             heading: "Guest Garden",
             description: `Welcome garden with curated plant displays.
               A beautifully maintained space for guests and dignitaries to reflect and relax.`
@@ -103,7 +121,7 @@ export const Explore = () => {
             link: "/our-projects/guest-garden"
         },
         {
-            image: impact1,
+            image: project6,
             heading: "Shri. Narayan Falodyan (Fruit Garden)",
             description: `Mixed orchard featuring tropical fruits.
               Encouraging nutrition, self-reliance, and biodiversity preservation.`
@@ -111,7 +129,7 @@ export const Explore = () => {
             link: "/our-projects/shri-narayan-falodyan"
         },
         {
-            image: impact1,
+            image: project7,
             heading: "Shri. Mansarovar",
             description: `Lotus-filled lake with serene walkways.
               A peaceful pond inspired by the mythical lake of purity and reflection.`
@@ -119,7 +137,7 @@ export const Explore = () => {
             link: "/our-projects/shri-mansarovar"
         },
         {
-            image: impact1,
+            image: project8,
             heading: "Shri. Venu Nursery",
             description: `Rows of saplings and shaded greenhouses.
             A vital source for plant propagation and afforestation efforts.
@@ -128,7 +146,7 @@ export const Explore = () => {
             link: "/our-projects/shri-venu-nursery"
         },
         {
-            image: impact1,
+            image: project9,
             heading: "Shri. Bhrigu Van",
             description: `Tranquil forest zone inspired by Sage Bhrigu.
              A contemplative green space rooted in Vedic wisdom and ecological care.`
@@ -136,7 +154,7 @@ export const Explore = () => {
             link: "/our-projects/shri-bhrigu-van"
         },
         {
-            image: impact1,
+            image: project10,
             heading: "Shri. Aushadh Manav (Human Body Garden)",
             description: `Herb layout shaped like a human anatomy.
               Each organ-shaped patch features a corresponding medicinal plant.`
@@ -144,22 +162,22 @@ export const Explore = () => {
             link: "/our-projects/shri-aushadh-manav"
         },
         {
-            image: impact1,
+            image: project11,
             heading: "Shri. Dhanvantari Vatika",
             description: `Medicinal garden with rare healing herbs.
             Honoring Ayurveda's deity, this vatika preserves ancient healing flora.`,
             link: "/our-projects/shri-dhanvantari-vatika"
         },
         {
-            image: impact1,
+            image: project12,
             heading: "Shri. Pabuji Ushtralaya (Camel Shade)",
             description: `Sandstone shelter honoring Rajasthan’s heritage animal.
              A resting abode for camels, reflecting desert culture and care.`,
             link: "/our-projects/shri-pabuji-ushtralaya"
         },
         {
-            image: project20,
-            heading: "Shri. Pampasar Kamal Sarovar",
+            image: project13,
+            heading: "Shri. Swayambhu Vatika",
             description: `Self-sustaining native plant ecosystem. A naturally balanced grove highlighting regenerative design.
             `,
             link: "/our-projects/shri-swayambhu-vatika"
@@ -171,25 +189,25 @@ export const Explore = () => {
             link: "/our-projects/shri-pampasar-kamal-sarovar"
         },
         {
-            image: project20,
+            image: project15,
             heading: "Shri. Bhairav Sadan – Dog House",
             description: `Compassionate haven for canines. A clean, safe space dedicated to stray and abandoned dogs.`,
             link: "/our-projects/shri-bhairav-sadan"
         },
         {
-            image: project20,
+            image: project16,
             heading: "Shri. Tridev Triveni Vatika",
             description: `Garden triad dedicated to Brahma, Vishnu, and Mahesh. A symbolic union of the divine trinity through sacred plantings.`,
             link: "/our-projects/shri-tridev-triveni-vatika"
         },
         {
-            image: project20,
+            image: project17,
             heading: "Shri. Mukund Mausam Vedhshala (AgroMet Station)",
             description: `Climate monitoring tower with sensors. Facilitates precision farming with real-time agro-weather insights.`,
             link: "/our-projects/shri-mukund-mausam-vedhshala"
         },
         {
-            image: project20,
+            image: project18,
             heading: "Naimish Kund",
             description: `Historically inspired holy pond. A site of spiritual significance, rooted in ancient forest traditions.`,
             link: "/our-projects/naimish-kund"
@@ -270,14 +288,14 @@ export const Waterscapes = () => {
 
     const boxslider = [
         {
-            image: image1,
+            image: project07,
             description: 'Shri Mansarovar',
-            link: "#"
+            link: "/our-projects/shri-mansarovar"
         },
         {
-            image: image2,
+            image: project02,
             description: 'Shri Ram Setu',
-            link: "#"
+            link: "/our-projects/shri-ram-setu"
 
         },
         {
@@ -287,9 +305,9 @@ export const Waterscapes = () => {
 
         },
         {
-            image: image1,
+            image: project07,
             description: 'Shri Mansarovar',
-            link: "#"
+            link: "/our-projects/shri-mansarovar"
         },
 
     ]
