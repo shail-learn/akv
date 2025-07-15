@@ -33,7 +33,7 @@ export const Footer = (htmlContent) => {
     { name: 'Privacy Policy', href: '/privacy-policy', current: true },
     { name: 'Terms & Conditions', href: '/terms-and-conditions', current: true },
     { name: 'Cancellation & Refund Policy', href: '/cancellation-and-refund-policy', current: true },
-    { name: 'Shipping & Delivery Policy', href: '/shipping-and-delivery-policy', current: true },
+    { name: 'Shipping & Delivery Policy', href: '/shipping-policy', current: true },
 
 
 
