@@ -9,7 +9,7 @@ export const Shipping = () => {
       <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-2">
         <div className="flex items-center gap-3 mb-6 justify-center">
 
-          <h1 className="text-3xl font-semibold redhat ">Shipping & Delivery Policy</h1>
+          <h1 className="text-3xl font-semibold redhat ">Shipping Policy for Atulye Krishi Vana</h1>
         </div>
 
         <p className="mb-6">
