@@ -1,5 +1,5 @@
 'use client';
-import { React, useEffect, useRef } from 'react'
+import { React, useEffect, useRef,useState } from 'react'
 import { usePathname } from 'next/navigation';
 import banner from "../../../assets/images/home/banner.webp";
 import banner2 from "../../../assets/images/home/bg-img.webp";
@@ -83,61 +83,83 @@ export const Banner2 = () => {
 
 
 
+
 export const VedioHome = () => {
   const videoRef = useRef(null);
   const pathname = usePathname();
   const isHomepage = pathname === "/";
+  const [showUnmuteBtn, setShowUnmuteBtn] = useState(false);
+  const [isUnmuted, setIsUnmuted] = useState(false);
 
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
 
-    const playWithSound = async () => {
+    const startVideo = async () => {
       try {
-        // Always start muted so autoplay works
         video.muted = true;
         await video.play();
-
-        // If on homepage, unmute AFTER video is playing
-        if (isHomepage) {
-          setTimeout(() => {
-            try {
-              // Try unmuting after 500ms
-              video.muted = false;
-
-              // Mute again after 10 seconds
-              setTimeout(() => {
-                video.muted = true;
-              }, 10000);
-            } catch (unmuteErr) {
-              console.warn("Unmuting failed:", unmuteErr);
-            }
-          }, 500);
-        }
+        setShowUnmuteBtn(true); // show unmute after autoplay success
       } catch (err) {
-        console.warn("Autoplay with audio failed:", err);
+        console.warn('Autoplay failed:', err);
       }
     };
 
-    // Wait for metadata to be loaded
     if (video.readyState >= 2) {
-      playWithSound();
+      startVideo();
     } else {
-      video.addEventListener("loadedmetadata", playWithSound, { once: true });
+      video.addEventListener('loadedmetadata', startVideo, { once: true });
     }
   }, [isHomepage]);
 
+  const handleUnmute = () => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    try {
+      video.muted = false;
+      setIsUnmuted(true);
+
+      // Re-mute after 10 seconds
+      setTimeout(() => {
+        video.muted = true;
+        setIsUnmuted(false);
+      }, 10000);
+    } catch (err) {
+      console.warn('Unmuting failed:', err);
+    }
+  };
+
   return (
     <div className="bg-cover bg-center relative">
-      <div className="iframe-container">
+      <div className="iframe-container relative">
         <video
           ref={videoRef}
-          className="w-full h-full object-cover"
+          className="w-full h-auto"
           src="https://www.akv.org.in/admin/homepage/LAZqhOZ5kC9qslifM9FT22ZTsgVWN8Yu3MSQuaQm.mp4"
           autoPlay
+          muted
           loop
           playsInline
+          preload="auto"
         />
+
+        {/* 🔊 Floating Unmute Button */}
+        {showUnmuteBtn && !isUnmuted && (
+          <button
+            onClick={handleUnmute}
+            className="absolute bottom-4 right-4 bg-white bg-opacity-80 text-black px-4 py-2 rounded-lg shadow-md text-sm hover:bg-opacity-100 transition"
+          >
+            🔊 Unmute
+          </button>
+        )}
+
+        {/* ✅ Show "Playing with Sound" */}
+        {isUnmuted && (
+          <div className="absolute bottom-4 right-4 bg-green-600 text-white px-4 py-2 rounded-lg shadow-md text-sm">
+            🔊 Playing with sound
+          </div>
+        )}
       </div>
     </div>
   );
