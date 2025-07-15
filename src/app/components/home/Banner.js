@@ -82,46 +82,46 @@ export const Banner2 = () => {
 }
 
 
+
 export const VedioHome = () => {
-  const vedio = "https://www.akv.org.in/admin/homepage/LAZqhOZ5kC9qslifM9FT22ZTsgVWN8Yu3MSQuaQm.mp4";
+  const vedio =
+    "https://www.akv.org.in/admin/homepage/LAZqhOZ5kC9qslifM9FT22ZTsgVWN8Yu3MSQuaQm.mp4";
 
   const videoRef = useRef(null);
-  const pathname = usePathname();//lala
+  const pathname = usePathname();
 
   useEffect(() => {
     const video = videoRef.current;
+    if (!video) return;
 
-    if (video) {
-      const playVideo = async () => {
-        try {
-          video.muted = pathname !== "/"; // only unmute on homepage
-          await video.play();
+    const playVideo = async () => {
+      try {
+        // Start muted so autoplay always works
+        video.muted = true;
+        await video.play();
 
-          // 🔇 Mute the audio after 10 seconds
-          if (pathname === "/") {
+        // If on homepage, unmute AFTER video starts playing
+        if (pathname === "/") {
+          // Wait a moment before unmuting to ensure playback started
+          setTimeout(() => {
+            video.muted = false;
+
+            // Mute again after 10s
             setTimeout(() => {
-              if (video) {
-                video.muted = true;
-              }
-            }, 10000); // 10 seconds
-          }
-
-        } catch (err) {
-          console.warn("Autoplay with audio failed:", err);
-          video.muted = true;
-          try {
-            await video.play();
-          } catch (e) {
-            console.warn("Retry (muted) failed too:", e);
-          }
+              video.muted = true;
+            }, 10000);
+          }, 300); // delay unmuting slightly to avoid autoplay block
         }
-      };
-
-      if (video.readyState >= 2) {
-        playVideo();
-      } else {
-        video.addEventListener("loadedmetadata", playVideo, { once: true });
+      } catch (err) {
+        console.warn("Autoplay failed:", err);
       }
+    };
+
+    // Run when video is loaded
+    if (video.readyState >= 2) {
+      playVideo();
+    } else {
+      video.addEventListener("loadedmetadata", playVideo, { once: true });
     }
   }, [pathname]);
 
