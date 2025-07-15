@@ -84,46 +84,48 @@ export const Banner2 = () => {
 
 
 export const VedioHome = () => {
-  const vedio =
-    "https://www.akv.org.in/admin/homepage/LAZqhOZ5kC9qslifM9FT22ZTsgVWN8Yu3MSQuaQm.mp4";
-
   const videoRef = useRef(null);
   const pathname = usePathname();
+  const isHomepage = pathname === "/";
 
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
 
-    const playVideo = async () => {
+    const playWithSound = async () => {
       try {
-        // Start muted so autoplay always works
+        // Always start muted so autoplay works
         video.muted = true;
         await video.play();
 
-        // If on homepage, unmute AFTER video starts playing
-        if (pathname === "/") {
-          // Wait a moment before unmuting to ensure playback started
+        // If on homepage, unmute AFTER video is playing
+        if (isHomepage) {
           setTimeout(() => {
-            video.muted = false;
+            try {
+              // Try unmuting after 500ms
+              video.muted = false;
 
-            // Mute again after 10s
-            setTimeout(() => {
-              video.muted = true;
-            }, 10000);
-          }, 300); // delay unmuting slightly to avoid autoplay block
+              // Mute again after 10 seconds
+              setTimeout(() => {
+                video.muted = true;
+              }, 10000);
+            } catch (unmuteErr) {
+              console.warn("Unmuting failed:", unmuteErr);
+            }
+          }, 500);
         }
       } catch (err) {
-        console.warn("Autoplay failed:", err);
+        console.warn("Autoplay with audio failed:", err);
       }
     };
 
-    // Run when video is loaded
+    // Wait for metadata to be loaded
     if (video.readyState >= 2) {
-      playVideo();
+      playWithSound();
     } else {
-      video.addEventListener("loadedmetadata", playVideo, { once: true });
+      video.addEventListener("loadedmetadata", playWithSound, { once: true });
     }
-  }, [pathname]);
+  }, [isHomepage]);
 
   return (
     <div className="bg-cover bg-center relative">
@@ -131,7 +133,7 @@ export const VedioHome = () => {
         <video
           ref={videoRef}
           className="w-full h-full object-cover"
-          src={vedio}
+          src="https://www.akv.org.in/admin/homepage/LAZqhOZ5kC9qslifM9FT22ZTsgVWN8Yu3MSQuaQm.mp4"
           autoPlay
           loop
           playsInline
