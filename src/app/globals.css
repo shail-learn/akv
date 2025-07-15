@@ -860,6 +860,12 @@ body .plant_p {
   margin-top: 1rem;
   text-align: left;
 }
+.big_height .h-96{
+ height: 32rem;
+}
+.footer_last li:last-child span {
+  display:none
+}
 @media (min-width: 1024px) {
   .orange_div .dark_active .swiper-slide-next .bg-white {
     background: #e9a343;
@@ -1236,6 +1242,15 @@ body .plant_p {
   }
   .desktop-p-0.pt-10 {
     padding-bottom: 2rem !important;
+  }
+  .alter-bg .flex-col:nth-child(1),  .alter-bg .flex-col:nth-child(4),  .alter-bg .flex-col:nth-child(5){
+    background: #295F54;
+  }
+  .alter-bg .flex-col:nth-child(2),  .alter-bg .flex-col:nth-child(3),  .alter-bg .flex-col:nth-child(6){
+    background: #549999;
+  }
+  .content_page p, .content_page ul li {
+    font-size: 15px;
   }
 }
 
