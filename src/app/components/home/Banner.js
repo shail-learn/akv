@@ -83,57 +83,60 @@ export const Banner2 = () => {
 
 
 export const VedioHome = () => {
-    const vedio = "https://www.akv.org.in/admin/homepage/LAZqhOZ5kC9qslifM9FT22ZTsgVWN8Yu3MSQuaQm.mp4"
+  const vedio = "https://www.akv.org.in/admin/homepage/LAZqhOZ5kC9qslifM9FT22ZTsgVWN8Yu3MSQuaQm.mp4";
 
-    const videoRef = useRef(null);
-    const pathname = usePathname();
+  const videoRef = useRef(null);
+  const pathname = usePathname();
 
-    useEffect(() => {
-        const video = videoRef.current;
+  useEffect(() => {
+    const video = videoRef.current;
 
-        if (video) {
-            const playVideo = async () => {
-                try {
+    if (video) {
+      const playVideo = async () => {
+        try {
+          video.muted = pathname !== "/"; // only unmute on homepage
+          await video.play();
 
-                    video.muted = pathname !== '/';
-                    await video.play();
-                } catch (err) {
-                    console.warn('Autoplay with audio failed:', err);
+          // 🔇 Mute the audio after 10 seconds
+          if (pathname === "/") {
+            setTimeout(() => {
+              if (video) {
+                video.muted = true;
+              }
+            }, 10000); // 10 seconds
+          }
 
-                    video.muted = true;
-                    try {
-                        await video.play();
-                    } catch (e) {
-                        console.warn('Retry (muted) failed too:', e);
-                    }
-                }
-            };
-
-            if (video.readyState >= 2) {
-                playVideo();
-            } else {
-                video.addEventListener('loadedmetadata', playVideo, { once: true });
-            }
+        } catch (err) {
+          console.warn("Autoplay with audio failed:", err);
+          video.muted = true;
+          try {
+            await video.play();
+          } catch (e) {
+            console.warn("Retry (muted) failed too:", e);
+          }
         }
-    }, [pathname]);
+      };
 
-    return (
-        <>
-            <div
-                className="bg-cover bg-center relative " >
-                <div className="iframe-container">
-                    <video
-                        ref={videoRef}
-                        className="w-full h-full object-cover"
-                        src={vedio}
-                        autoPlay
-                        loop
-                        playsInline
-                    />
+      if (video.readyState >= 2) {
+        playVideo();
+      } else {
+        video.addEventListener("loadedmetadata", playVideo, { once: true });
+      }
+    }
+  }, [pathname]);
 
-                </div>
-            </div>
-
-        </>
-    )
-}
+  return (
+    <div className="bg-cover bg-center relative">
+      <div className="iframe-container">
+        <video
+          ref={videoRef}
+          className="w-full h-full object-cover"
+          src={vedio}
+          autoPlay
+          loop
+          playsInline
+        />
+      </div>
+    </div>
+  );
+};
