@@ -27,6 +27,14 @@ export const Footer = (htmlContent) => {
     { name: 'Gallery', href: '/gallery', current: false },
     { name: 'Contact Us', href: '/contact-us', current: false },
     { name: 'Career', href: '/career', current: false },
+  ]
+
+  const footernav = [
+    { name: 'Privacy Policy', href: '/privacy-policy', current: true },
+    { name: 'Terms & Conditions', href: '/term-and-condition', current: true },
+    { name: 'Refund Policy', href: '/refund-policy', current: true },
+    { name: 'Delivery Policy', href: '/shipping-policy', current: true },
+
 
 
   ]
@@ -42,7 +50,7 @@ export const Footer = (htmlContent) => {
 
   const encodedMessage = encodeURIComponent(message);
   return (
-    <footer className='bg-[#1B453C]  px-4 md:px-8 lg:px-2  py-8  md:py-16' >
+    <footer className='bg-[#1B453C]  px-4 md:px-8 lg:px-2  py-8  md:py-16 !pb-8' >
       <Link
         className='fixed right-2 bottom-4 z-[99]'
         target="_blank"
@@ -96,6 +104,17 @@ export const Footer = (htmlContent) => {
             </div>
           </div>
 
+        </div>
+
+        <div className='flex gap-4 md:gap-0 flex-wrap border-t mt-10 md:mt-16  pt-8  border-white'>
+        <div className='w-full md:w-12/12'>
+        <ul className='footer_menu footer_last flex gap-4 flex-wrap justify-center'>
+              {footernav.map((item, key) => (
+                <li className='text-[#D2AE6D] font-light text-sm hover:text-white' key={item.name}><Link href={item.href}>{item.name}</Link> <span className='ms-4'>|</span></li>
+
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
     </footer>

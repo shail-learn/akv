@@ -36,7 +36,7 @@ const navigation = [
       { name: "Contract Farming", href: "/contract-farming" },
       // { name: "Contract Farming Fodder", href: "/contract-farming-fodder" },
       { name: "Training & Development", href: "/training-development" },
-      { name: "MIDH Nursery", href: "/midh-nursery" },
+      { name: "Nursery", href: "/nursery" },
     ],
   },
   { name: "Eco Initiatives", href: "/eco-initiatives" },
