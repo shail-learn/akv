@@ -4,14 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
-export const Productlist = ({ heading, fruitData, bgimg }) => {
+export const Productlist = ({ heading, fruitData, bgimg,custom_space }) => {
   const [showAll, setShowAll] = useState(false);
 
   const visibleItems = showAll ? fruitData : fruitData.slice(0, 6);
   return (
     <>
       <section
-        className="py-10 px-4 md:px-10"
+        className={`py-10 px-4 md:px-10 ${custom_space ? custom_space : ''}`}
         style={{
           backgroundImage: bgimg ? `url(${bgimg.src})` : "none",
           backgroundSize: "cover",
@@ -42,7 +42,7 @@ export const Productlist = ({ heading, fruitData, bgimg }) => {
                     />
                     <div className="absolute inset-0 bg-black opacity-20"></div>
                     <div className="absolute bottom-0 left-0 w-full p-4 text-white font-semibold text-base bg-opacity-80 flex justify-between items-center">
-                      <span>{item.title}</span>
+                      <span className="min-w-[80%] max-w-[80%]">{item.title}</span>
                       {showIcon && <FaLongArrowAltRight />}
                     </div>
                   </div>

@@ -8,6 +8,10 @@ import impact2 from "../../../assets/images/projects/project2.webp";
 import image1 from "../../../assets/images/projects/image1.webp";
 import image2 from "../../../assets/images/projects/image2.webp";
 import image3 from "../../../assets/images/projects/image3.webp";
+
+import project1 from "../../../assets/images/projects/tulsi.webp";
+import project2 from "../../../assets/images/projects/ramsetu.webp";
+
 import project20 from "../../../assets/images/projects/project-20.webp";
 
 
@@ -60,14 +64,14 @@ export const Explore = () => {
     const text1 = "Spiritual & Heritage Gardens"
     const boxslider = [
         {
-            image: impact1,
+            image: project1,
             heading: "Shri Tulsi das ji Panchvati vatika",
             description: `Lush woodland inspired by Panchavati's sacred heritage    A spiritual grove echoing the Ramayan, fostering reverence and biodiversity.`
             ,
             link: "/our-projects/shri-tulsi-das-ji-panchvati-vatika"
         },
         {
-            image: impact2,
+            image: project2,
             heading: "Shri Ram Setu",
             description: `Stone pathway bridging natural elements
              A symbolic tribute to Lord Ram’s legendary bridge, blending mythology and ecology.`,
