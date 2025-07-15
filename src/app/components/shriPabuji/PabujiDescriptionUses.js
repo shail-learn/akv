@@ -94,7 +94,7 @@ export const Description = () => {
 
     return (
         <>
-  <section className='relative text-center md:text-left   pb-16  pt-20 lg:pb-16 bg-[#f5f5f5]'  >
+            <section className='relative text-center md:text-left   pb-16  pt-20 lg:pb-16 bg-[#f5f5f5]'  >
                 <div className='mx-auto max-w-7xl px-4 md:px-6 mx:px-2 relative z-1 '>
                     <div className='flex flex-col lg:flex-row justify-between items-center gap-12'>
                         <div className='md:w-[40%] w-full  w-12/12'>
@@ -124,25 +124,25 @@ export const Description = () => {
             </section>
 
             <section className='text-center md:text-left pb-16 pt-16 lg:pb-20 lg:pt-20'>
-            <div className='mx-auto max-w-7xl  px-6'>
-                <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-medium redhat text-[#1B453C] mb-8'>{main_heading}</h2>
-            </div>
-            <div className='mx-auto max-w-7xl  px-6 flex flex-col-reverse md:flex-row items-center gap-10'>
-                <div className='w-full md:w-2/3 text-center md:text-left'>
+                <div className='mx-auto max-w-7xl  px-6'>
+                    <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-medium redhat text-[#1B453C] mb-8'>{main_heading}</h2>
+                </div>
+                <div className='mx-auto max-w-7xl  px-6 flex flex-col-reverse md:flex-row items-center gap-10'>
+                    <div className='w-full md:w-2/3 text-center md:text-left'>
 
-                    <div className='w-full p-4 md:p-8 bg-[#1B453C] rounded-2xl'>
-                        <p className='text-white text-base redhat' dangerouslySetInnerHTML={{ __html: shortinfo }}>
-                        </p>
+                        <div className='w-full p-4 md:p-8 bg-[#1B453C] rounded-2xl'>
+                            <p className='text-white text-base redhat' dangerouslySetInnerHTML={{ __html: shortinfo }}>
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div className='w-full md:w-1/3 text-center'>
-                    <Image className='w-full h-full rounded-xl' src={image3} alt='banner' />
-                </div>
+                    <div className='w-full md:w-1/3 text-center'>
+                        <Image className='w-full h-full rounded-xl' src={image3} alt='banner' />
+                    </div>
 
-            </div>
-        </section>
+                </div>
+            </section>
 
-        <Titleslider heading={GrowthHeading} boxslider={slides} shortdescription={GrowthDescription} />
+            <Titleslider heading={GrowthHeading} boxslider={slides} shortdescription={GrowthDescription} />
 
 
 
@@ -156,69 +156,69 @@ export const Uses = () => {
     const gridBox = "xl:!grid-cols-3 grid3";
     const custom_class = "white_grid grid_padding";
     const whyChooseData = [
-      {
-        image: use1,
-        title: "Farm Security:",
-        description:
-          "Provides trained camels for active roles in securing farm premises.",
-      },
-      {
-        image: use2,
-        title: "Transportation, Milk Production, and Land Management: ",
-        description:
-          "Offers practical benefits in daily agricultural routines.",
-      },
-      {
-        image: use3,
-        title: "Camel-Assisted Therapy:",
-        description:
-          "Allows guests to interact with camels to support mental well-being, utilizing their calm nature in therapeutic settings.",
-      },
+        {
+            image: use1,
+            title: "Farm Security:",
+            description:
+                "Provides trained camels for active roles in securing farm premises.",
+        },
+        {
+            image: use2,
+            title: "Transportation, Milk Production, and Land Management: ",
+            description:
+                "Offers practical benefits in daily agricultural routines.",
+        },
+        {
+            image: use3,
+            title: "Camel-Assisted Therapy:",
+            description:
+                "Allows guests to interact with camels to support mental well-being, utilizing their calm nature in therapeutic settings.",
+        },
 
 
     ];
 
     const whyChooseData1 = [
         {
-          image: use1,
-          title: "Farm Tours and Demonstrations:",
-          description:
-            "Includes camels as part of farm experiences to highlight their role in sustainable farming systems and historical significance.",
+            image: use1,
+            title: "Farm Tours and Demonstrations:",
+            description:
+                "Includes camels as part of farm experiences to highlight their role in sustainable farming systems and historical significance.",
         },
         {
-          image: use2,
-          title: "Camel-Assisted Meditation or Yoga: ",
-          description:
-            "Facilitates calming and immersive wellness activities supported by the presence of camels.",
+            image: use2,
+            title: "Camel-Assisted Meditation or Yoga: ",
+            description:
+                "Facilitates calming and immersive wellness activities supported by the presence of camels.",
         },
         {
-          image: use3,
-          title: "Camel Meet-and-Greet:",
-          description:
-            "Offers interactive areas where guests can meet camels, take photographs, and learn more about their background and use on the farm.",
+            image: use3,
+            title: "Camel Meet-and-Greet:",
+            description:
+                "Offers interactive areas where guests can meet camels, take photographs, and learn more about their background and use on the farm.",
         },
 
 
-      ];
+    ];
 
 
     return (
-      <>
+        <>
 
-        <Gridbox
-          heading="Uses"
-          data={whyChooseData}
-          className={custom_class}
-          gridBox={gridBox}
-        />
-        <div className='-mt-8'>
-        <Gridbox
-          data={whyChooseData1}
-          className={custom_class}
-          gridBox={gridBox}
-        />
-</div>
+            <Gridbox
+                heading="Uses"
+                data={whyChooseData}
+                className={custom_class}
+                gridBox={gridBox}
+            />
+            <div className='-mt-8'>
+                <Gridbox
+                    data={whyChooseData1}
+                    className={custom_class}
+                    gridBox={gridBox}
+                />
+            </div>
 
-      </>
+        </>
     );
 }
