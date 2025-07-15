@@ -1,23 +1,18 @@
 import React from 'react'
-import { Wave } from '../Wave'
 import BannerPage from '../BannerPage'
-import banner from "../../../assets/images/agriculture/banner.webp";
-import info from "../../../assets/images/digestive/info.webp";
-import image1 from "../../../assets/images/digestive/image1.webp";
-import { GrowthSlider } from '../utilities/Cultivationgrowthwhychoose';
+import banner from "../../../assets/images/projects/project10/banner.webp";
 import Image from 'next/image';
-import { SliderBlur } from '../SliderBlur';
 import Titleslider from '../Titleslider';
 import { RiCheckboxCircleFill } from "react-icons/ri";
-import image3 from "../../../assets/images/projects/project20/histroy.webp";
+import image3 from "../../../assets/images/projects/project10/des.webp";
 import { Gridbox } from '../Gridbox';
-import use1 from "../../../assets/images/projects/project20/use1.webp";
-import use2 from "../../../assets/images/projects/project20/use2.webp";
-import use3 from "../../../assets/images/projects/project20/use3.webp";
-import use4 from "../../../assets/images/projects/project20/use4.webp";
+import use1 from "../../../assets/images/projects/project10/key1.webp";
+import use2 from "../../../assets/images/projects/project10/key2.webp";
+import use3 from "../../../assets/images/projects/project10/key3.webp";
+import use4 from "../../../assets/images/projects/project10/key4.webp";
 import use5 from "../../../assets/images/projects/project20/use5.webp";
 import use6 from "../../../assets/images/projects/project20/use6.webp";
-import image2 from "../../../assets/images/projects/project20/key.webp";
+import image2 from "../../../assets/images/projects/project10/key.webp";
 
 export const Aushadh = () => {
     const text = {
@@ -108,7 +103,7 @@ export const Description = () => {
     return (
         <>
 
-<section className='relative text-center md:text-left   pb-16  pt-20 lg:pb-16 bg-[#f5f5f5]'  >
+            <section className='relative text-center md:text-left   pb-16  pt-20 lg:pb-16 bg-[#f5f5f5]'  >
                 <div className='mx-auto max-w-7xl px-4 md:px-6 mx:px-2 relative z-1 '>
                     <div className='flex flex-col lg:flex-row justify-between items-center gap-12'>
                         <div className='md:w-[40%] w-full  w-12/12'>
@@ -187,7 +182,7 @@ export const Uses = () => {
                 "Encourages natural remedies for maintaining the health of specific organs or systems.",
         },
         {
-            image: use3,
+            image: use4,
             title: "Holistic Wellness:",
             description:
                 "Promotes a holistic approach to health by integrating traditional medicinal knowledge with the body's needs.",

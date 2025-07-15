@@ -1,19 +1,25 @@
 import React from 'react'
 import BannerPage from '../BannerPage'
-import banner from "../../../assets/images/projects/project20/banner.webp";
-import image2 from "../../../assets/images/projects/project20/key.webp";
+import banner from "../../../assets/images/projects/project13/banner.webp";
+import image2 from "../../../assets/images/projects/project13/key.webp";
 import Image from 'next/image';
 import { RiCheckboxCircleFill } from "react-icons/ri";
-import image3 from "../../../assets/images/projects/project20/histroy.webp";
+import image3 from "../../../assets/images/projects/project13/desc.webp";
 import Titleslider from '../Titleslider';
 
 import { Gridbox } from '../Gridbox';
-import use1 from "../../../assets/images/projects/project20/use1.webp";
-import use2 from "../../../assets/images/projects/project20/use2.webp";
-import use3 from "../../../assets/images/projects/project20/use3.webp";
-import use4 from "../../../assets/images/projects/project20/use4.webp";
-import use5 from "../../../assets/images/projects/project20/use5.webp";
-import use6 from "../../../assets/images/projects/project20/use6.webp";
+import use1 from "../../../assets/images/projects/project13/key1.webp";
+import use2 from "../../../assets/images/projects/project13/key2.webp";
+import use3 from "../../../assets/images/projects/project13/key3.webp";
+import use4 from "../../../assets/images/projects/project13/key4.webp";
+import use5 from "../../../assets/images/projects/project13/key5.webp";
+import use6 from "../../../assets/images/projects/project13/key6.webp";
+import use7 from "../../../assets/images/projects/project13/key7.webp";
+import use8 from "../../../assets/images/projects/project13/key8.webp";
+import use9 from "../../../assets/images/projects/project13/key9.webp";
+import use10 from "../../../assets/images/projects/project13/key10.webp";
+import use11 from "../../../assets/images/projects/project13/key11.webp";
+import use12 from "../../../assets/images/projects/project13/key12.webp";
 import PartnerBg from "../../../assets/images/projects/project20/bg.webp";
 
 export const Swayambhu = () => {
@@ -183,7 +189,7 @@ export const Uses = () => {
                 "Supports blood sugar regulation",
         },
         {
-            image: use3,
+            image: use4,
             title: "Wound Healing:",
             description:
                 "Used for skin infections and treating wounds",
@@ -193,25 +199,25 @@ export const Uses = () => {
     ];
     const whyChooseData1 = [
         {
-            image: use1,
+            image: use5,
             title: "Dental Care:",
             description:
                 "Strengthens gums; bark used as a natural toothbrush",
         },
         {
-            image: use2,
+            image: use6,
             title: "Diabetes: ",
             description:
                 "Aids in reducing blood sugar levels",
         },
         {
-            image: use3,
+            image: use7,
             title: "Anti-inflammatory:",
             description:
                 "Helps with skin inflammations",
         },
         {
-            image: use3,
+            image: use8,
             title: "Reproductive Health:",
             description:
                 "Traditionally used to support fertility",
@@ -221,25 +227,25 @@ export const Uses = () => {
     ];
     const whyChooseData2 = [
         {
-            image: use1,
+            image: use9,
             title: "Digestive Health:",
             description:
                 "Treats diarrhea and dysentery",
         },
         {
-            image: use2,
+            image: use10,
             title: "Wound Healing: ",
             description:
                 "Accelerates healing of wounds and ulcers",
         },
         {
-            image: use3,
+            image: use11,
             title: "Anti-inflammatory:",
             description:
                 "Relieves joint and muscle inflammation",
         },
         {
-            image: use3,
+            image: use12,
             title: "Respiratory Health:",
             description:
                 "Assists in managing asthma and bronchitis",

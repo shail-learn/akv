@@ -1,22 +1,22 @@
 import React from 'react'
 import { Wave } from '../Wave'
 import BannerPage from '../BannerPage'
-import banner from "../../../assets/images/agriculture/banner.webp";
+import banner from "../../../assets/images/projects/project12/banner.webp";
 import info from "../../../assets/images/digestive/info.webp";
 import image1 from "../../../assets/images/digestive/image1.webp";
 import { GrowthSlider } from '../utilities/Cultivationgrowthwhychoose';
-import image2 from "../../../assets/images/projects/project20/key.webp";
+import image2 from "../../../assets/images/projects/project12/key.webp";
 import Image from 'next/image';
 import { RiCheckboxCircleFill } from "react-icons/ri";
 import Titleslider from '../Titleslider';
-import image3 from "../../../assets/images/projects/project20/histroy.webp";
+import image3 from "../../../assets/images/projects/project12/desc.webp";
 import { Gridbox } from '../Gridbox';
-import use1 from "../../../assets/images/projects/project20/use1.webp";
-import use2 from "../../../assets/images/projects/project20/use2.webp";
-import use3 from "../../../assets/images/projects/project20/use3.webp";
-import use4 from "../../../assets/images/projects/project20/use4.webp";
-import use5 from "../../../assets/images/projects/project20/use5.webp";
-import use6 from "../../../assets/images/projects/project20/use6.webp";
+import use1 from "../../../assets/images/projects/project12/key1.webp";
+import use2 from "../../../assets/images/projects/project12/key2.webp";
+import use3 from "../../../assets/images/projects/project12/key3.webp";
+import use4 from "../../../assets/images/projects/project12/key4.webp";
+import use5 from "../../../assets/images/projects/project12/key5.webp";
+import use6 from "../../../assets/images/projects/project12/key6.webp";
 
 
 export const Pabuji = () => {
@@ -180,19 +180,19 @@ export const Uses = () => {
 
     const whyChooseData1 = [
         {
-            image: use1,
+            image: use4,
             title: "Farm Tours and Demonstrations:",
             description:
                 "Includes camels as part of farm experiences to highlight their role in sustainable farming systems and historical significance.",
         },
         {
-            image: use2,
+            image: use5,
             title: "Camel-Assisted Meditation or Yoga: ",
             description:
                 "Facilitates calming and immersive wellness activities supported by the presence of camels.",
         },
         {
-            image: use3,
+            image: use6,
             title: "Camel Meet-and-Greet:",
             description:
                 "Offers interactive areas where guests can meet camels, take photographs, and learn more about their background and use on the farm.",

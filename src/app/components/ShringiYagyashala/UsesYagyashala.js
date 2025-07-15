@@ -1,11 +1,11 @@
 import React from 'react'
 import { Gridbox } from '../Gridbox';
-import use1 from "../../../assets/images/projects/project20/use1.webp";
-import use2 from "../../../assets/images/projects/project20/use2.webp";
-import use3 from "../../../assets/images/projects/project20/use3.webp";
-import use4 from "../../../assets/images/projects/project20/use4.webp";
-import use5 from "../../../assets/images/projects/project20/use5.webp";
-import use6 from "../../../assets/images/projects/project20/use6.webp";
+import use1 from "../../../assets/images/projects/project19/key1.webp";
+import use2 from "../../../assets/images/projects/project19/key2.webp";
+import use3 from "../../../assets/images/projects/project19/key3.webp";
+import use4 from "../../../assets/images/projects/project19/key4.webp";
+import use5 from "../../../assets/images/projects/project19/key5.webp";
+import use6 from "../../../assets/images/projects/project19/key6.webp";
 import PartnerBg from "../../../assets/images/projects/project20/bg.webp";
 
 
