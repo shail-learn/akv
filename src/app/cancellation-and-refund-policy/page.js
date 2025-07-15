@@ -1,11 +1,11 @@
 import React from 'react'
-import { PrivacyPolicy } from '../components/PrivacyPolicy/PrivacyPolicy'
+import { RefundPolicy } from '../components/RefundPolicy/RefundPolicy'
 
 
 function page() {
     return (
         <>
-          <PrivacyPolicy/>
+              <RefundPolicy/>
         </>
     )
 }

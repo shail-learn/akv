@@ -2,7 +2,7 @@ import React from 'react'
 import { MdLocalShipping } from 'react-icons/md';
 import { FiMail, FiPhone } from 'react-icons/fi';
 
-function page() {
+export const Shipping = () => {
   return (
     <>
      <section className="bg-white text-[#1F1E17] py-16 px-4 md:px-8 lg:px-24 content_page">
@@ -55,5 +55,3 @@ function page() {
     </>
   )
 }
-
-export default page

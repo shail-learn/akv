@@ -2,10 +2,10 @@ import React from 'react'
 import { MdReplayCircleFilled } from 'react-icons/md';
 import { FiMail, FiPhone } from 'react-icons/fi';
 
-function page() {
-    return (
-        <>
-            <section className="bg-white text-[#1F1E17] py-16 px-4 md:px-8 lg:px-24 content_page">
+export const RefundPolicy = () => {
+  return (
+    <>
+    <section className="bg-white text-[#1F1E17] py-16 px-4 md:px-8 lg:px-24 content_page">
                 <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-2">
                     <div className="flex items-center gap-3 mb-6 justify-center">
 
@@ -72,8 +72,6 @@ function page() {
                     </div>
                 </div>
             </section>
-        </>
-    )
+    </>
+  )
 }
-
-export default page
