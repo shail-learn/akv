@@ -86,7 +86,7 @@ export const VedioHome = () => {
   const vedio = "https://www.akv.org.in/admin/homepage/LAZqhOZ5kC9qslifM9FT22ZTsgVWN8Yu3MSQuaQm.mp4";
 
   const videoRef = useRef(null);
-  const pathname = usePathname();
+  const pathname = usePathname();//lala
 
   useEffect(() => {
     const video = videoRef.current;
