@@ -27,7 +27,7 @@ import impact1 from "../../../assets/images/stress/Benefit1.webp";
 import Titleslider from '../Titleslider';
 import PartnerBg from "../../../assets/images/projects/project1/footer.webp";
 import { RiCheckboxCircleFill } from "react-icons/ri";
-import image2 from "../../../assets/images/projects/project1/key-details.webp";
+import image2 from "../../../assets/images/projects/project1/key-detail.webp";
 import image3 from "../../../assets/images/projects/project1/history.webp";
 
 

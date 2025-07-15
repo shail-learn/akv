@@ -1,19 +1,19 @@
 import React from 'react'
 import BannerPage from '../BannerPage'
-import banner from "../../../assets/images/projects/project20/banner.webp";
-import image2 from "../../../assets/images/projects/project20/key.webp";
+import banner from "../../../assets/images/projects/project15/banner.webp";
+import image2 from "../../../assets/images/projects/project15/key.webp";
 import Image from 'next/image';
 import { RiCheckboxCircleFill } from "react-icons/ri";
-import image3 from "../../../assets/images/projects/project20/histroy.webp";
+import image3 from "../../../assets/images/projects/project15/desc.webp";
 import Titleslider from '../Titleslider';
 
 import { Gridbox } from '../Gridbox';
-import use1 from "../../../assets/images/projects/project20/use1.webp";
-import use2 from "../../../assets/images/projects/project20/use2.webp";
-import use3 from "../../../assets/images/projects/project20/use3.webp";
-import use4 from "../../../assets/images/projects/project20/use4.webp";
-import use5 from "../../../assets/images/projects/project20/use5.webp";
-import use6 from "../../../assets/images/projects/project20/use6.webp";
+import use1 from "../../../assets/images/projects/project15/key1.webp";
+import use2 from "../../../assets/images/projects/project15/key2.webp";
+import use3 from "../../../assets/images/projects/project15/key3.webp";
+import use4 from "../../../assets/images/projects/project15/key4.webp";
+import use5 from "../../../assets/images/projects/project15/key5.webp";
+import use6 from "../../../assets/images/projects/project15/key6.webp";
 import PartnerBg from "../../../assets/images/projects/project20/bg.webp";
 
 
@@ -204,19 +204,19 @@ export const Uses = () => {
 
   const whyChooseData1 = [
     {
-      image: use3,
+      image: use4,
       title: "Companionship :",
       description:
         "Offer emotional support and build positive human-animal bonds on the farm.",
     },
     {
-      image: use4,
+      image: use5,
       title: "Training and Work : ",
       description:
         "Participate in activities such as obedience training, agility exercises, and specialized tasks.",
     },
     {
-      image: use5,
+      image: use6,
       title: "Security Enhancement :",
       description:
         "Serve as a visual and practical deterrent against theft or other security breaches.",

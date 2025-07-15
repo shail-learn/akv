@@ -4,19 +4,19 @@ import BannerPage from '../BannerPage'
 import banner from "../../../assets/images/projects/project2/banner.webp";
 import { Gridbox } from '../Gridbox';
 import Image from 'next/image';
-import key1 from "../../../assets/images/digestive/key1.webp";
-import key2 from "../../../assets/images/digestive/key2.webp";
-import key3 from "../../../assets/images/digestive/key3.webp";
-import key4 from "../../../assets/images/digestive/key4.webp";
-import PartnerBg from "../../../assets/images/respirtaory/bgimg.webp";
+import key1 from "../../../assets/images/projects/project2/key1.webp";
+import key2 from "../../../assets/images/projects/project2/key2.webp";
+import key3 from "../../../assets/images/projects/project2/key3.webp";
+import key4 from "../../../assets/images/projects/project2/key4.webp";
+import PartnerBg from "../../../assets/images/projects/project2/bgimg.webp";
 import { Productlist } from '../Productlist';
 import choose1 from "../../../assets/images/digestive/choose1.webp";
-import choose2 from "../../../assets/images/digestive/choose2.webp";
-import choose3 from "../../../assets/images/digestive/choose3.webp";
-import choose4 from "../../../assets/images/digestive/choose4.webp";
+import choose2 from "../../../assets/images/projects/project2/why2.webp";
+import choose3 from "../../../assets/images/projects/project2/why3.webp";
+import choose4 from "../../../assets/images/projects/project2/why4.webp";
 import { RiCheckboxCircleFill } from "react-icons/ri";
-import image2 from "../../../assets/images/projects/project20/key.webp";
-import image3 from "../../../assets/images/projects/project20/histroy.webp";
+import image2 from "../../../assets/images/projects/project2/key.webp";
+import image3 from "../../../assets/images/projects/project2/hist.webp";
 import { Info } from '../Info';
 
 
@@ -157,9 +157,9 @@ export const Design = () => {
                 </div>
             </section> */}
             <Info
-        title="Design and Purpose"
-        description="This beautiful bridge blends traditional design elements with functional landscaping, creating a peaceful path between Panchavati and Triveni."
-      />
+                title="Design and Purpose"
+                description="This beautiful bridge blends traditional design elements with functional landscaping, creating a peaceful path between Panchavati and Triveni."
+            />
 
             <Gridbox heading="Key Features" data={whyChooseData} gridBox={gridBox} className={custom_class} />
 
@@ -173,14 +173,14 @@ export const Design = () => {
                     <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-medium redhat text-[#1B453C] mb-8'>{GrowthHeading}</h2>
                 </div>
                 <div className='mx-auto max-w-7xl  px-6 flex flex-col-reverse md:flex-row items-center gap-10'>
-                    <div className='w-full md:w-2/3 text-center md:text-left'>
+                    <div className='w-full md:w-[60%] text-center md:text-left'>
 
                         <div className='w-full p-4 md:p-8 bg-[#1B453C] rounded-2xl'>
                             <p className='text-white text-base redhat' dangerouslySetInnerHTML={{ __html: GrowthDescription }}>
                             </p>
                         </div>
                     </div>
-                    <div className='w-full md:w-1/3 text-center'>
+                    <div className='w-full md:w-[40%] text-center'>
                         <Image className='w-full h-full rounded-xl' src={image3} alt='banner' />
                     </div>
 
@@ -236,6 +236,7 @@ export const Bridge = () => {
             className="relative bg-no-repeat !mb-0 py-14 lg:py-32 bg-cover w-full my-8 md:my-12 !mt-0"
             style={{ backgroundImage: `url(${PartnerBg.src})` }}
         >
+            <div className='absolute top-0 left-0 w-full h-full bg-black opacity-50'></div>
 
             <div className="relative z-10 h-full flex mx-auto px-4   max-w-7xl">
                 <div className="max-w-2xl text-white text-center md:text-left pl-3   mt-5">
