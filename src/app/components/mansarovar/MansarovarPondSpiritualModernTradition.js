@@ -1,23 +1,17 @@
 import React from 'react'
-import { Wave } from '../Wave'
 import BannerPage from '../BannerPage'
-import banner from "../../../assets/images/agriculture/banner.webp";
-import info from "../../../assets/images/digestive/info.webp";
-import image1 from "../../../assets/images/digestive/image1.webp";
-import { GrowthSlider } from '../utilities/Cultivationgrowthwhychoose';
+import banner from "../../../assets/images/projects/project7/banner.webp";
+
 import Image from 'next/image';
-import { SliderBlur } from '../SliderBlur';
-import impact1 from "../../../assets/images/stress/Benefit1.webp";
-import bgstay from "../../../assets/images/stress/bg.webp";
 import Titleslider from '../Titleslider';
-import PartnerBg from "../../../assets/images/respirtaory/bgimg.webp";
-import image2 from "../../../assets/images/projects/project20/key.webp";
+import PartnerBg from "../../../assets/images/projects/project7/bgimg.webp";
+import image2 from "../../../assets/images/projects/project7/key.webp";
 import { RiCheckboxCircleFill } from "react-icons/ri";
-import image3 from "../../../assets/images/projects/project20/histroy.webp";
-import first from "../../../assets/images/training/program-1.webp";
-import second from "../../../assets/images/training/program-2.webp";
-import third from "../../../assets/images/training/program-3.webp";
-import fourth from "../../../assets/images/training/program-4.webp";
+import image3 from "../../../assets/images/projects/project7/purpose.webp";
+import first from "../../../assets/images/projects/project7/program-1.webp";
+import second from "../../../assets/images/projects/project7/program-3.webp";
+import third from "../../../assets/images/projects/project7/program-2.webp";
+import fourth from "../../../assets/images/projects/project7/program-4.webp";
 
 
 export const Mansarovar = () => {
@@ -188,9 +182,9 @@ export const Modern = () => {
   };
 
   const texttwoData = {
-    title: "Boating & Recreation",
-    listData: `<li>Offers safe, serene boating experiences for guests.</li>
-    <li>Blends leisure with learning in a natural environment.</li>`,
+    title: "Visual and Cultural Aesthetics",
+    listData: `<li>Adds beauty and depth to the landscape.</li>
+    <li>Acts as a peaceful setting for visitors and meditation.</li>`,
   };
 
   const textthirdData = {
@@ -209,7 +203,7 @@ export const Modern = () => {
   return (
     <>
 
-<section className="py-0   md:py-0 technology-sec">
+      <section className="py-0   md:py-0 technology-sec">
         <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-2 ">
           <h2 className="text-3xl md:leading-[1.3] md:text-4xl font-medium redhat text-black mt-4 text-center">
             {heading1}
@@ -222,6 +216,7 @@ export const Modern = () => {
                 src={first}
                 alt="icon"
                 className="w-full mx-auto  h-full"
+                quality={90}
               />
             </div>
             <div className="md:col-span-3 col-span-12  h-72 lg:h-full text-white bg-[#6D8C54] grid transition-all duration-400  hover:bg-[#EFEFEF]  hover:text-[#000]">
@@ -310,6 +305,7 @@ export const Tradition = () => {
       className="relative bg-no-repeat py-14   !mb-0 lg:py-32 bg-cover w-full my-8 md:my-16  "
       style={{ backgroundImage: `url(${PartnerBg.src})` }}
     >
+      <div className='absolute top-0 left-0 w-full h-full bg-black opacity-60'></div>
 
       <div className="relative z-10 h-full flex mx-auto px-4   max-w-7xl">
         <div className="max-w-2xl text-white text-center md:text-left pl-3   mt-5">

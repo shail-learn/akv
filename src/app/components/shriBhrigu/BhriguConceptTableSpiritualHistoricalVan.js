@@ -1,22 +1,20 @@
 import React from 'react'
-import { Wave } from '../Wave'
 import BannerPage from '../BannerPage'
-import banner from "../../../assets/images/agriculture/banner.webp";
-import info from "../../../assets/images/digestive/info.webp";
-import image1 from "../../../assets/images/digestive/image1.webp";
-import { GrowthSlider } from '../utilities/Cultivationgrowthwhychoose';
+import banner from "../../../assets/images/projects/project9/banner.webp";
 import Image from 'next/image';
 import { TableSection } from "../TableSection";
 import { SliderBlur } from '../SliderBlur';
-import impact1 from "../../../assets/images/stress/Benefit1.webp";
-import bgstay from "../../../assets/images/stress/bg.webp";
+import impact1 from "../../../assets/images/projects/project9/Benefit1.webp";
+import impact2 from "../../../assets/images/projects/project9/Benefit2.webp";
+
+import bgstay from "../../../assets/images/projects/project9/bgimg.webp";
 import { MarketLayout } from '../utilities/UsesStanadarLayout';
-import img01 from "../../../assets/images/teak/small.webp";
-import PartnerBg from "../../../assets/images/respirtaory/bgimg.webp";
-import image2 from "../../../assets/images/projects/project20/key.webp";
+import img01 from "../../../assets/images/projects/project9/historical.webp";
+import PartnerBg from "../../../assets/images/projects/project9/bgimg.webp";
+import image2 from "../../../assets/images/projects/project9/key.webp";
 import { RiCheckboxCircleFill } from "react-icons/ri";
-import image3 from "../../../assets/images/projects/project20/histroy.webp";
-import Titleslider from '../Titleslider';
+import image3 from "../../../assets/images/projects/project9/concept.webp";
+
 
 
 
@@ -361,7 +359,7 @@ export const Spiritual = () => {
             ]
         },
         {
-            image: impact1,
+            image: impact2,
             heading: "Medicinal Uses",
             description: [
                 "Ayurvedic Healing: Each plant has known therapeutic properties",
@@ -435,6 +433,7 @@ export const Van = () => {
             className="relative bg-no-repeat py-14 !mb-0 !mt-0 lg:py-32 bg-cover w-full my-8 md:my-12  "
             style={{ backgroundImage: `url(${PartnerBg.src})` }}
         >
+            <div className='absolute top-0 left-0 w-full h-full bg-black opacity-50'></div>
 
             <div className="relative z-10 h-full flex mx-auto px-4   max-w-7xl">
                 <div className="max-w-2xl text-white text-center md:text-left pl-3   mt-5">

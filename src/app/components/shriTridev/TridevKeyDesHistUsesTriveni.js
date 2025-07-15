@@ -1,19 +1,27 @@
 import React from 'react'
 import BannerPage from '../BannerPage'
-import banner from "../../../assets/images/projects/project20/banner.webp";
-import image2 from "../../../assets/images/projects/project20/key.webp";
+import banner from "../../../assets/images/projects/project16/banner.webp";
+import image2 from "../../../assets/images/projects/project16/key.webp";
 import Image from 'next/image';
 import { RiCheckboxCircleFill } from "react-icons/ri";
-import image3 from "../../../assets/images/projects/project20/histroy.webp";
+import image3 from "../../../assets/images/projects/project16/desc.webp";
 import Titleslider from '../Titleslider';
 
 import { Gridbox } from '../Gridbox';
-import use1 from "../../../assets/images/projects/project20/use1.webp";
-import use2 from "../../../assets/images/projects/project20/use2.webp";
-import use3 from "../../../assets/images/projects/project20/use3.webp";
-import use4 from "../../../assets/images/projects/project20/use4.webp";
-import use5 from "../../../assets/images/projects/project20/use5.webp";
-import use6 from "../../../assets/images/projects/project20/use6.webp";
+import use1 from "../../../assets/images/projects/project16/key1.webp";
+import use2 from "../../../assets/images/projects/project16/key2.webp";
+import use3 from "../../../assets/images/projects/project16/key3.webp";
+import use4 from "../../../assets/images/projects/project16/key4.webp";
+import use5 from "../../../assets/images/projects/project16/key5.webp";
+import use6 from "../../../assets/images/projects/project16/key6.webp";
+import use7 from "../../../assets/images/projects/project16/key7.webp";
+import use8 from "../../../assets/images/projects/project16/key8.webp";
+import use9 from "../../../assets/images/projects/project16/key9.webp";
+import use10 from "../../../assets/images/projects/project16/key10.webp";
+import use11 from "../../../assets/images/projects/project16/key11.webp";
+import use12 from "../../../assets/images/projects/project16/key12.webp";
+
+
 import PartnerBg from "../../../assets/images/projects/project20/bg.webp";
 
 export const Tridev = () => {
@@ -183,7 +191,7 @@ export const Uses = () => {
           "Helps manage blood sugar levels",
       },
       {
-        image: use3,
+        image: use4,
         title: "Wound Healing :",
         description:
           "Used for skin infections and wounds",
@@ -194,25 +202,25 @@ export const Uses = () => {
     const whyChooseData1 = [
 
       {
-        image: use4,
+        image: use5,
         title: "Dental Care : ",
         description:
           "Strengthens gums; used as a natural toothbrush",
       },
       {
-        image: use5,
+        image: use6,
         title: "Diabetes Management :",
         description:
           "Lowers blood sugar",
       },
       {
-        image: use6,
+        image: use7,
         title: "Anti-inflammatory : ",
         description:
           "Treats skin inflammations",
       },
       {
-        image: use6,
+        image: use8,
         title: "Reproductive Health : ",
         description:
           "Supports fertility",
@@ -222,25 +230,25 @@ export const Uses = () => {
     const whyChooseData2 = [
 
         {
-          image: use4,
+          image: use9,
           title: "Skin Care : ",
           description:
             "Treats acne and eczema",
         },
         {
-          image: use5,
+          image: use10,
           title: "Oral Health :",
           description:
             "Prevents gum disease",
         },
         {
-          image: use6,
+          image: use11,
           title: "Blood Purification : ",
           description:
             "Clears skin and improves health",
         },
         {
-          image: use6,
+          image: use12,
           title: "Antimalarial Properties : ",
           description:
             "Fights malaria and viral infections",

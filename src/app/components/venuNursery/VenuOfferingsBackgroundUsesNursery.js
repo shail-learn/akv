@@ -1,31 +1,24 @@
 import React from 'react'
-import { Wave } from '../Wave'
 import BannerPage from '../BannerPage'
-import banner from "../../../assets/images/agriculture/banner.webp";
-import info from "../../../assets/images/digestive/info.webp";
-import image1 from "../../../assets/images/digestive/image1.webp";
-import { GrowthSlider } from '../utilities/Cultivationgrowthwhychoose';
-import Image from 'next/image';
-import { SliderBlur } from '../SliderBlur';
-import impact1 from "../../../assets/images/stress/Benefit1.webp";
-import bgstay from "../../../assets/images/stress/bg.webp";
-import { FaqSlider } from '../FaqSlider';
-import PartnerBg from "../../../assets/images/respirtaory/bgimg.webp";
-import { RiCheckboxCircleFill } from "react-icons/ri";
-import image2 from "../../../assets/images/projects/project20/key.webp";
-import CardAlternate from '../CardAlternate';
+import banner from "../../../assets/images/projects/project8/banner.webp";
 
-import first from "../../../assets/images/training/program-1.webp";
-import second from "../../../assets/images/training/program-2.webp";
-import third from "../../../assets/images/training/program-3.webp";
-import fourth from "../../../assets/images/training/program-4.webp";
+import Image from 'next/image';
+
+import PartnerBg from "../../../assets/images/projects/project8/bgimg.webp";
+import { RiCheckboxCircleFill } from "react-icons/ri";
+import image2 from "../../../assets/images/projects/project8/key.webp";
+
+import first from "../../../assets/images/projects/project8/program-1.webp";
+import second from "../../../assets/images/projects/project8/program-3.webp";
+import third from "../../../assets/images/projects/project8/program-2.webp";
+import fourth from "../../../assets/images/projects/project8/program-4.webp";
 import fifth from "../../../assets/images/training/program-5.webp";
 import Titleslider from '../Titleslider';
 import { Gridbox } from '../Gridbox';
-import use1 from "../../../assets/images/projects/project20/use1.webp";
-import use2 from "../../../assets/images/projects/project20/use2.webp";
-import use3 from "../../../assets/images/projects/project20/use3.webp";
-import use4 from "../../../assets/images/projects/project20/use4.webp";
+import use1 from "../../../assets/images/projects/project8/key1.webp";
+import use2 from "../../../assets/images/projects/project8/key2.webp";
+import use3 from "../../../assets/images/projects/project8/key3.webp";
+import use4 from "../../../assets/images/projects/project8/key4.webp";
 
 
 export const Venu = () => {
@@ -152,6 +145,7 @@ export const Offerings = () => {
                 src={first}
                 alt="icon"
                 className="w-full mx-auto  h-full"
+                quality={90}
               />
             </div>
             <div className="md:col-span-3 col-span-12  h-72 lg:h-full text-white bg-[#6D8C54] grid transition-all duration-400  hover:bg-[#EFEFEF]  hover:text-[#000]">
@@ -171,6 +165,8 @@ export const Offerings = () => {
                 src={second}
                 alt="icon"
                 className="w-full mx-auto h-full"
+                quality={90}
+
               />
             </div>
             <div className="md:col-span-3 col-span-12  h-72 lg:h-full text-white bg-[#6D8C54] grid transition-all duration-400  hover:bg-[#EFEFEF]  hover:text-[#000]">
@@ -197,7 +193,8 @@ export const Offerings = () => {
               </div>
             </div>
             <div className="md:col-span-3 col-span-12  order-5 lg:order-none    h-full">
-              <Image src={third} alt="icon" className="w-full mx-auto h-full" />
+
+              <Image src={third} alt="icon" className="w-full mx-auto h-full"  quality={90}/>
             </div>
             <div className="md:col-span-3 col-span-12 order-8 lg:order-none  h-72 lg:h-full text-white bg-[#6D8C54] grid transition-all duration-400  hover:bg-[#EFEFEF]  hover:text-[#000]">
               <div className="p-5">
@@ -215,6 +212,7 @@ export const Offerings = () => {
                 src={fourth}
                 alt="icon"
                 className="w-full mx-auto h-full"
+                quality={90}
               />
             </div>
 
@@ -292,7 +290,7 @@ export const Uses = () => {
         "Serves as a live training site for budding and grafting methods",
     },
     {
-      image: use3,
+      image: use4,
       title: "Specialization and Sustainability",
       description:
         "Contributes to long-term sustainability by reducing external dependence on saplings",
@@ -325,6 +323,7 @@ export const Nursery = () => {
       className="relative bg-no-repeat py-14 !mb-0 mt-10 lg:py-32 bg-cover w-full my-8 md:my-12  "
       style={{ backgroundImage: `url(${PartnerBg.src})` }}
     >
+            <div className='absolute top-0 left-0 w-full h-full bg-black opacity-60'></div>
 
       <div className="relative z-10 h-full flex mx-auto px-4   max-w-7xl">
         <div className="max-w-2xl text-white text-center md:text-left pl-3   mt-5">

@@ -32,18 +32,18 @@ export const Animal = () => {
         {
             title: "Shri Malook Gaushala",
             description: `Sheltered pastures for native cattle <br/>  A sanctuary promoting ethical cattle care and rural livelihoods.`,
-            link: "#"
+            link: "/our-projects/shri-malook-gaushala"
         },
         {
             title: "Shri Bhairav Sadan (Dog Shelter)",
             description: `Compassionate haven for canines <br/> A clean, safe space dedicated to stray and abandoned dogs.`,
-            link: "#"
+            link: "/our-projects/shri-bhairav-sadan"
 
         },
         {
             title: "Shri Pabuji Ushtralaya (Camel Shade)",
             description: `Sandstone shelter honoring Rajasthan’s heritage animal A resting abode for camels, reflecting desert culture and care.`,
-            link: "#"
+            link: "/our-projects/shri-pabuji-ushtralaya"
 
         },
 
