@@ -31,9 +31,9 @@ export const Footer = (htmlContent) => {
 
   const footernav = [
     { name: 'Privacy Policy', href: '/privacy-policy', current: true },
-    { name: 'Terms & Conditions', href: '/term-and-condition', current: true },
-    { name: 'Refund Policy', href: '/refund-policy', current: true },
-    { name: 'Delivery Policy', href: '/shipping-policy', current: true },
+    { name: 'Terms & Conditions', href: '/terms-and-conditions', current: true },
+    { name: 'Cancellation & Refund Policy', href: '/cancellation-and-refund-policy', current: true },
+    { name: 'Shipping & Delivery Policy', href: '/shipping-and-delivery-policy', current: true },
 
 
 
