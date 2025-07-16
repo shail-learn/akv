@@ -16,17 +16,17 @@ export const PartOfChange = () => {
     {
       number: '01',
       title: 'Become a Volunteer',
-      bgimg: 'https://cruxcreativedemo2.com/web-image/hand-group.png',
+      bgimg: 'https://www.akv.org.in/admin/rmimages/hand-group.webp',
     },
     {
       number: '02',
       title: 'Sponsor a Tree or Project',
-      bgimg: 'https://cruxcreativedemo2.com/web-image/tree.png',
+      bgimg: 'https://www.akv.org.in/admin/rmimages/tree.webp',
     },
     {
       number: '03',
       title: 'Corporate Partnerships',
-      bgimg: 'https://cruxcreativedemo2.com/web-image/business.png',
+      bgimg: 'https://www.akv.org.in/admin/rmimages/business.webp',
     },
   ];
 

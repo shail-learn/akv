@@ -180,7 +180,7 @@ export const Project = () => {
 
 
 export const Goal = () => {
-    const vedio = "https://cruxcreativedemo2.com/web-image/making.mp4"
+    const vedio = "https://www.akv.org.in/admin/rmimages/makingadiffimage.mp4"
     const heading = 'Making a Difference on the Ground'
     const heading1 = "Carbon Sequestration in INDIA"
     const info1 = `Plantation of <b>100,000</b> trees, reducing carbon emissions by <b>10,000</b> tons over five years.`
