@@ -141,7 +141,16 @@ export const PartOfChange = () => {
             <div className="z-10 relative text-black transition-all duration-400 group-hover:text-white">
               <h3 className="poppins text-5xl mb-6">{item.number}</h3>
               <p className="poppins text-lg mb-4">{item.title}</p>
-              {/* No donate input/button here anymore */}
+               <Link
+  className="bg-white text-black rounded-3xl py-3 px-12"
+  style={{
+    boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)',
+  }}
+  href="/contact-us"
+  target="_blank"
+>
+  Contact Us
+</Link>
             </div>
           </div>
         ))}
