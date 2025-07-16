@@ -1,12 +1,6 @@
 import React from 'react'
-import img1 from "../../../assets/images/business/left-img.webp";
-import img2 from "../../../assets/images/business/right-img.webp";
-import img3 from "../../../assets/images/business/Mulethi.webp";
+import img3 from "../../../assets/images/timber/melia-dubia1.webp";
 import img4 from "../../../assets/images/business/Babool.webp";
-import img5 from "../../../assets/images/business/Neem.webp";
-
-import leftgrass from "../../../assets/images/business/grass-left.webp";
-import rightgrass from "../../../assets/images/business/grass-right.webp";
 
 import leftgrass1 from "../../../assets/images/business/grass-left1.webp";
 import rightgrass1 from "../../../assets/images/business/grass-right1.webp";
@@ -18,9 +12,6 @@ import palmleft from "../../../assets/images/agroforestry/palms-left.webp";
 import palmright from "../../../assets/images/agroforestry/palms-right.webp";
 import leftmedicine from "../../../assets/images/agroforestry/left-medicine.webp";
 import rightmedicine from "../../../assets/images/agroforestry/right-medicine.webp";
-
-
-
 
 import { FaCircleArrowRight } from "react-icons/fa6";
 
@@ -174,9 +165,9 @@ export const OrnamentalPlants = () => {
 export const CategoryCard = () => {
     const card = [
         {
-            title: "Mulethi",
+            title: "Melia Dubia",
             image: img3,
-            link: "#",
+            link: "/agroForestry/timber/melia-dubia",
         },
         {
             title: "Bamboo",
@@ -207,7 +198,6 @@ export const CategoryCard = () => {
                 })}
 
                  <div className='w-full md:col-span-1'></div>
-
 
             </div>
 
