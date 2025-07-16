@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from "react";
 import Team1 from "../../../assets/images/home/team1.png";
-import Team2 from "../../../assets/images/home/team2.png";
+import Team2 from "../../../assets/images/home/team2.webp";
 import Team3 from "../../../assets/images/home/team3.png";
 import Team4 from "../../../assets/images/home/team4.png";
 import Team5 from "../../../assets/images/home/team5.png";
@@ -75,6 +75,7 @@ export const Ourteam = () => {
                     src={item.img}
                     alt={item.name}
                     className="w-full h-full mx-auto"
+                    quality={90}
                   />
                   </Link>
                 </div>

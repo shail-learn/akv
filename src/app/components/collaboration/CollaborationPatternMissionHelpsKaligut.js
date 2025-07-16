@@ -12,7 +12,7 @@ export const Collaboration = () => {
         banner: banner,
         heading: `Upcoming Collaborations`,
         title: ` Atulye Krishi Vana is proud to collaborate with national missions and government agencies to drive innovation in agroforestry, medicinal plant cultivation, and sustainable horticulture.`,
-        // opacity: "opacity-55"
+        opacity: "opacity-55"
     };
     return (
         <>

@@ -1,7 +1,7 @@
 import React from 'react'
 import img1 from "../../../assets/images/business/left-img.webp";
 import img2 from "../../../assets/images/business/right-img.webp";
-import img3 from "../../../assets/images/business/Mulethi.webp";
+import img3 from "../../../assets/images/timber/melia-dubia1.webp";
 import img4 from "../../../assets/images/business/Babool.webp";
 import img5 from "../../../assets/images/business/Neem.webp";
 
@@ -174,9 +174,9 @@ export const OrnamentalPlants = () => {
 export const CategoryCard = () => {
     const card = [
         {
-            title: "Mulethi",
+            title: "Melia Dubia",
             image: img3,
-            link: "#",
+            link: "/agroForestry/timber/melia-dubia",
         },
         {
             title: "Bamboo",

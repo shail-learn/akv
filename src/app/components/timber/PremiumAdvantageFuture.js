@@ -3,7 +3,7 @@ import harvestimg from "../../../assets/images/timber/Premium.webp";
 import image1 from "../../../assets/images/timber/image1.webp";
 import image2 from "../../../assets/images/timber/image2.webp";
 import image3 from "../../../assets/images/timber/image3.webp";
-import Plant from "../../../assets/images/eco/future.webp";
+import Plant from "../../../assets/images/timber/future.webp";
 import { MdCheckCircle } from "react-icons/md";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import grow from "../../../assets/images/fruits-vegetables/grow.png";
@@ -94,7 +94,7 @@ export const Advantage = () => {
 
 
 export const PremiumAdvantage2 = () => {
-  const heading = `Our Timber <br> Advantage`
+  const heading = `Advantages <br> of Timber`
 
   const futurePlans = [
     `<b>Sustainable Forestry Model –</b> Grown under organic, eco-regenerative practices.`,
@@ -136,9 +136,10 @@ export const PremiumAdvantage2 = () => {
             <Image
               src={Plant}
               alt="Planting"
-              width={200}
-              height={200}
+              width={600}
+              height={600}
               className="w-full h-full"
+              quality={90}
             />
 
           </div>

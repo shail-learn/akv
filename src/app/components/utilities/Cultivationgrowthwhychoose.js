@@ -70,6 +70,7 @@ export const GrowthSlider = ({
                     width={180}
                     height={180}
                     className="object-cover w-full h-full"
+                    quality={90}
                   />
                 </div>
                 {item.title && (

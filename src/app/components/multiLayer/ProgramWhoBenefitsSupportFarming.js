@@ -1,14 +1,17 @@
 import React from 'react'
 import { GrowthSlider } from '../utilities/Cultivationgrowthwhychoose';
-import image1 from "../../../assets/images/digestive/image1.webp";
-import image2 from "../../../assets/images/forest/circle02.webp";
-import image3 from "../../../assets/images/forest/circle03.webp";
+import image1 from "../../../assets/images/training-development/multi/circle1.webp";
+import image2 from "../../../assets/images/training-development/multi/circle2.webp";
+import image3 from "../../../assets/images/training-development/multi/circle3.webp";
+import image4 from "../../../assets/images/training-development/multi/circle4.webp";
 
-import why1 from "../../../assets/images/sandalwood/why1.webp";
-import why2 from "../../../assets/images/sandalwood/why2.webp";
-import why3 from "../../../assets/images/sandalwood/why3.webp";
-import why4 from "../../../assets/images/sandalwood/why4.webp";
-import why5 from "../../../assets/images/sandalwood/why5.webp";
+
+
+import why1 from "../../../assets/images/training-development/multi/why1.webp";
+import why2 from "../../../assets/images/training-development/multi/why2.webp";
+import why3 from "../../../assets/images/training-development/multi/why3.webp";
+import why4 from "../../../assets/images/training-development/multi/why4.webp";
+import why5 from "../../../assets/images/training-development/multi/why5.webp";
 import { Iconslider } from '../Iconslider';
 import { Gridbox } from '../Gridbox';
 import use1 from "../../../assets/images/training-development/multi/key1.webp";
@@ -48,7 +51,7 @@ export const Program = () => {
         },
         {
 
-            image: image3,
+            image: image4,
             title: "Long-Term Sustainability",
             desc: "The training emphasizes the creation of a self-sustaining system. Farmers are taught how to prepare their own seeds, inputs, and natural solutions, reducing dependence on the market.",
         },

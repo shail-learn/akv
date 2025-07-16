@@ -34,7 +34,7 @@ export const ProductPage = () => {
   const productlist = [
     {
       img: img2,
-      link: "#",
+      link: "agroForestry/timber/rosewood",
     },
     {
       img: img3,
@@ -42,7 +42,7 @@ export const ProductPage = () => {
     },
     {
       img: img4,
-      link: "#",
+      link: "agroForestry/timber/teak",
     },
     {
       img: img5,

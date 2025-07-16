@@ -46,7 +46,7 @@ const ModuleSlider = ({ heading = "Success Stories", stories = [] }) => {
                     className="w-full h-full object-cover rounded-2xl"
                     quality={90}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/25 to-black/35 flex flex-col justify-end p-6 text-white">
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/30 to-black/60 flex flex-col justify-end p-6 text-white">
                     <h3 className="text-xl md:text-2xl font-medium my-4">{story.title}</h3>
                     <p className="text-[15px] my-4 redhat font-normal" dangerouslySetInnerHTML={{__html: story.description}} />
                   </div>

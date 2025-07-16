@@ -94,7 +94,7 @@ export const Reviving = () => {
                                     </div>
                                 ))}
                             </div>
-                            <Link href="#" className='bg-[#1B453C] text-white   py-3 px-12 inline-block text-center text-base hover:bg-black hover:text-[#fff] transition-all  duration-500 '>Learn More About Us</Link>
+                            <Link href="/agroForestry" className='bg-[#1B453C] text-white   py-3 px-12 inline-block text-center text-base hover:bg-black hover:text-[#fff] transition-all  duration-500 '>Learn More About Us</Link>
 
                         </div>
                     </div>

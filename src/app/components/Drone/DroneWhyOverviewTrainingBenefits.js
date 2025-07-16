@@ -1,21 +1,26 @@
 import React from 'react'
 import BannerPage from '../BannerPage';
-import banner from "../../../assets/images/training-development/multi/banner.webp";
-import IntroImg from "../../../assets/images/training-development/multi/info.webp";
+import banner from "../../../assets/images/training-development/drone/banner.webp";
+import IntroImg from "../../../assets/images/training-development/drone/info.webp";
 import Image from 'next/image';
-import Img1 from "../../../assets/images/training-development/multi/choose1.webp";
-import Img2 from "../../../assets/images/training-development/multi/choose2.webp";
-import Img3 from "../../../assets/images/training-development/multi/choose3.webp";
-import Img4 from "../../../assets/images/training-development/multi/choose4.webp";
+import Img1 from "../../../assets/images/training-development/drone/choose1.webp";
+import Img2 from "../../../assets/images/training-development/drone/choose2.webp";
+import Img3 from "../../../assets/images/training-development/drone/choose3.webp";
+import Img4 from "../../../assets/images/training-development/drone/choose4.webp";
 import ModuleSlider from '../ModuleSlider';
-import story1 from "../../../assets/images/training-development/multi/module1.webp";
-import story2 from "../../../assets/images/training-development/multi/module2.webp";
-import story3 from "../../../assets/images/training-development/multi/module3.webp";
+import story1 from "../../../assets/images/training-development/drone/module1.webp";
+import story2 from "../../../assets/images/training-development/drone/module2.webp";
+import story3 from "../../../assets/images/training-development/drone/module3.webp";
+import story4 from "../../../assets/images/training-development/drone/module4.webp";
+import story5 from "../../../assets/images/training-development/drone/module5.webp";
+import story6 from "../../../assets/images/training-development/drone/module6.webp";
+import story7 from "../../../assets/images/training-development/drone/module7.webp";
+
 import { Gridbox } from '../Gridbox';
-import use1 from "../../../assets/images/training-development/multi/key1.webp";
-import use2 from "../../../assets/images/training-development/multi/key2.webp";
-import use3 from "../../../assets/images/training-development/multi/key3.webp";
-import use4 from "../../../assets/images/training-development/multi/key4.webp";
+import use1 from "../../../assets/images/training-development/drone/key1.webp";
+import use2 from "../../../assets/images/training-development/drone/key2.webp";
+import use3 from "../../../assets/images/training-development/drone/key3.webp";
+import use4 from "../../../assets/images/training-development/drone/key4.webp";
 
 export const Drone = () => {
     const text = {
@@ -202,7 +207,7 @@ export const Training = () => {
             `,
         },
         {
-            image: story3,
+            image: story4,
             title: "Data Collection and Analysis",
             description: `
             <ul>
@@ -213,7 +218,7 @@ export const Training = () => {
             `,
         },
         {
-            image: story3,
+            image: story5,
             title: "Aerial Spraying: Techniques and Calibration",
             description: `
             <ul>
@@ -225,7 +230,7 @@ export const Training = () => {
             `,
         },
         {
-            image: story3,
+            image: story6,
             title: "Maintenance and Troubleshooting",
             description: `
             <ul>
@@ -237,7 +242,7 @@ export const Training = () => {
             `,
         },
         {
-            image: story3,
+            image: story7,
             title: "Business Opportunities and Licensing",
             description: `
             <ul>
