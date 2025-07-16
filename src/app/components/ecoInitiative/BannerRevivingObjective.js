@@ -162,7 +162,7 @@ export const Objective = () => {
                                     <div key={index} className="flex  gap-4 md:gap-6 items-center mb-10 relative">
 
 
-                                        <div className="md:w-28 md:h-28 w-28 rounded-lg overflow-hidden">
+                                        <div className="md:min-w-28 md:h-28 w-28 rounded-lg overflow-hidden">
                                             <Image src={obj.image} alt={obj.title} width={100} height={100} className="object-cover" />
                                         </div>
                                         <div className=' '>
