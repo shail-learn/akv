@@ -1,4 +1,6 @@
+'use client';
 import React from 'react'
+import { useState, useEffect } from 'react';
 import value1 from "../../../assets/images/about/value1.svg";
 import value2 from "../../../assets/images/about/value2.svg";
 import value3 from "../../../assets/images/about/value3.svg";
@@ -146,54 +148,145 @@ export const Explore = () => {
 
 
 export const Change = () => {
-    const heading = "Be A Part Of Change",
-        description = "In creating a sustainable future. Whether you are a farmer, investor, or nature enthusiast, A&M Agriventures welcomes you to contribute to our journey."
-    const info = [
-        {
-            icon: change1,
-            title: "Village: Atulye Krishi Vana Mithlesh Nagar, Village, Ramgarh, Sehore, Madhya Pradesh, India."
-        },
-        {
-            icon: change2,
-            title: "info@akv.org.in"
-        },
-        {
-            icon: change3,
-            title: "www.akv.org.in"
-        },
-    ]
-    return (
-        <>
+  const heading = "Be A Part Of Change";
+  const description =
+    "In creating a sustainable future. Whether you are a farmer, investor, or nature enthusiast, A&M Agriventures welcomes you to contribute to our journey.";
 
-            <section
-                className=" bg-[#9A9771] px-4 pt-14 pb-14 lg:pt-16 lg:pb-16" style={{ background: "linear-gradient(131deg, rgba(248, 204, 119, 1) 0%, rgb(248 204 119 / 52%) 70%)" }}>
-                <div className='mx-auto max-w-7xl w-full'>
-                    <div className='mx-auto max-full flex flex-wrap md:flex-nowrap gap-0 md:gap-12 '>
-                        <div className='w-full md:w-6/12 text-center md:text-left'>
-                            <h2 className="lg:leading-snug text-[#344C31] redhat text-center mb-6 md:text-left text-3xl md:text-4xl  font-medium  w-full"> {heading}</h2>
-                            <Link href="https://atulye-foundation.org" target='_blank' className="poppins mx-auto text-center  font-normal text-white w-[200px] py-3 rounded-[4px] bg-[#344C31] inline-block transition-all duration-500  hover:bg-white hover:text-[#344C31]">JOIN US</Link>
-                            <p className='mt-6 text-black text-justify opacity-80'>{description}</p>
+  const info = [
+    {
+      icon: change1,
+      title:
+        "Village: Atulye Krishi Vana Mithlesh Nagar, Village, Ramgarh, Sehore, Madhya Pradesh, India.",
+    },
+    {
+      icon: change2,
+      title: "info@akv.org.in",
+    },
+    {
+      icon: change3,
+      title: "www.akv.org.in",
+    },
+  ];
 
-                        </div>
-                        <div className='w-full md:w-6/12 '>
-                            <div className='h-[4px] w-[150px] mt-8 mb-6 rounded-[8px] bg-[#1B453C]'></div>
-                            <ul>
-                                {info.map((item, index) => (
-                                    <li key={index} className="flex items-center gap-4 mb-6">
-                                        <div className="flex-shrink-0">
-                                            <Image src={item.icon} alt={item.title} width={40} height={40} className="w-6" />
-                                        </div>
-                                        <p className="text-black redhat text-lg whitespace-pre-line">{item.title}</p>
-                                    </li>
-                                ))}
-                            </ul>
+  const [amount, setAmount] = useState('');
+  const [loading, setLoading] = useState(false);
 
-                        </div>
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://checkout.razorpay.com/v1/checkout.js';
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
+
+  const handleDonate = async () => {
+    if (!amount || amount <= 0) {
+      alert('Please enter a valid amount');
+      return;
+    }
+
+    setLoading(true);
+
+    try {
+      const res = await fetch('/data/razorpay', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ amount }),
+      });
+
+      const order = await res.json();
+
+      const options = {
+        key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID,
+        amount: order.amount,
+        currency: 'INR',
+        name: 'Atulye Foundation',
+        description: 'Donation',
+        order_id: order.id,
+        handler: function (response) {
+          alert('Thank you for your donation!\nPayment ID: ' + response.razorpay_payment_id);
+        },
+        theme: {
+          color: '#1B453C',
+        },
+        modal: {
+          ondismiss: () => setLoading(false),
+        },
+      };
+
+      const rzp = new window.Razorpay(options);
+      rzp.open();
+    } catch (err) {
+      console.error('Payment Error:', err);
+      alert('Something went wrong!');
+      setLoading(false);
+    }
+  };
+
+  return (
+    <>
+      <section
+        className="bg-[#9A9771] px-4 pt-14 pb-14 lg:pt-16 lg:pb-16"
+        style={{
+          background:
+            'linear-gradient(131deg, rgba(248, 204, 119, 1) 0%, rgb(248 204 119 / 52%) 70%)',
+        }}
+      >
+        <div className="mx-auto max-w-7xl w-full">
+          <div className="mx-auto max-full flex flex-wrap md:flex-nowrap gap-0 md:gap-12">
+            <div className="w-full md:w-6/12 text-center md:text-left">
+              <h2 className="lg:leading-snug text-[#344C31] redhat text-center mb-6 md:text-left text-3xl md:text-4xl font-medium w-full">
+                {heading}
+              </h2>
+
+              <div className="flex gap-2 items-center justify-center md:justify-start">
+                <input
+                  type="number"
+                  placeholder="Enter amount"
+                  className="rounded px-4 py-2 w-[140px] text-black"
+                  value={amount}
+                  onChange={(e) => {
+                    const value = parseInt(e.target.value, 10);
+                    setAmount(isNaN(value) ? '' : value);
+                  }}
+                />
+                <button
+                  onClick={handleDonate}
+                  disabled={loading}
+                  className={`poppins font-normal w-[120px] py-3 rounded-[4px] transition-all duration-500 ${
+                    loading
+                      ? 'bg-gray-400 cursor-not-allowed text-white'
+                      : 'bg-[#344C31] text-white hover:bg-white hover:text-[#344C31]'
+                  }`}
+                >
+                  {loading ? 'Processing...' : 'Donate'}
+                </button>
+              </div>
+
+              <p className="mt-6 text-black text-justify opacity-80">{description}</p>
+            </div>
+
+            <div className="w-full md:w-6/12">
+              <div className="h-[4px] w-[150px] mt-8 mb-6 rounded-[8px] bg-[#1B453C]"></div>
+              <ul>
+                {info.map((item, index) => (
+                  <li key={index} className="flex items-center gap-4 mb-6">
+                    <div className="flex-shrink-0">
+                      <Image
+                        src={item.icon}
+                        alt={item.title}
+                        width={40}
+                        height={40}
+                        className="w-6"
+                      />
                     </div>
-
-                </div>
-            </section>
-
-        </>
-    )
-}
+                    <p className="text-black redhat text-lg whitespace-pre-line">{item.title}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};

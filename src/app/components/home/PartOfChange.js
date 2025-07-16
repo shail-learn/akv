@@ -30,8 +30,8 @@ export const PartOfChange = () => {
     },
   ];
 
-  const [amounts, setAmounts] = useState({});
-  const [loadingIndex, setLoadingIndex] = useState(null);
+  const [amount, setAmount] = useState('');
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const script = document.createElement('script');
@@ -40,13 +40,13 @@ export const PartOfChange = () => {
     document.body.appendChild(script);
   }, []);
 
-  const handleDonate = async (amount, index) => {
+  const handleDonate = async () => {
     if (!amount || amount <= 0) {
       alert('Please enter a valid amount');
       return;
     }
 
-    setLoadingIndex(index);
+    setLoading(true);
 
     try {
       const res = await fetch('/data/razorpay', {
@@ -67,18 +67,15 @@ export const PartOfChange = () => {
         handler: function (response) {
           alert('Thank you for your donation!\nPayment ID: ' + response.razorpay_payment_id);
         },
-        prefill: {
-          // name: 'Donor',
-          // email: 'donor@example.com',
-          // contact: '9999999999',
-          //test
+         prefill: {
+      
         },
         theme: {
           color: '#1B453C',
         },
         modal: {
           ondismiss: () => {
-            setLoadingIndex(null);
+            setLoading(false);
           },
         },
       };
@@ -88,7 +85,7 @@ export const PartOfChange = () => {
     } catch (err) {
       console.error('Payment Error:', err);
       alert('Something went wrong!');
-      setLoadingIndex(null);
+      setLoading(false);
     }
   };
 
@@ -100,9 +97,32 @@ export const PartOfChange = () => {
             <h2 className="text-white poppins text-center md:text-left leading-relaxed text-3xl md:text-4xl mb-5">
               {box1[0].title}
             </h2>
-            <p className="poppins text-justify font-normal text-[15px] text-white">
+            <p className="poppins text-justify font-normal text-[15px] text-white mb-6">
               {box1[0].description}
             </p>
+
+            <input
+              type="number"
+              placeholder="Enter amount"
+              className="w-full rounded-xl px-4 py-2 text-black"
+              value={amount}
+              onChange={(e) => {
+                const value = parseInt(e.target.value, 10);
+                setAmount(isNaN(value) ? '' : value);
+              }}
+            />
+
+            <button
+              onClick={handleDonate}
+              disabled={loading}
+              className={`mt-4 rounded-3xl py-2 px-6 w-full transition ${
+                loading
+                  ? 'bg-gray-400 cursor-not-allowed text-white'
+                  : 'bg-white text-[#1B453C]'
+              }`}
+            >
+              {loading ? 'Processing...' : 'Donate'}
+            </button>
           </div>
         </div>
 
@@ -121,30 +141,16 @@ export const PartOfChange = () => {
             <div className="z-10 relative text-black transition-all duration-400 group-hover:text-white">
               <h3 className="poppins text-5xl mb-6">{item.number}</h3>
               <p className="poppins text-lg mb-4">{item.title}</p>
-
-              <input
-                type="number"
-                placeholder="Enter amount"
-                className="w-full rounded-xl px-4 py-2 mt-2 text-black"
-                value={amounts[index] || ''}
-                onChange={(e) => {
-                  const updated = { ...amounts };
-                  updated[index] = parseInt(e.target.value);
-                  setAmounts(updated);
-                }}
-              />
-
-              <button
-                onClick={() => handleDonate(amounts[index], index)}
-                disabled={loadingIndex === index}
-                className={`mt-4 rounded-3xl py-2 px-6 w-full transition ${
-                  loadingIndex === index
-                    ? 'bg-gray-400 cursor-not-allowed text-white'
-                    : 'bg-[#1B453C] text-white'
-                }`}
-              >
-                {loadingIndex === index ? 'Processing...' : 'Donate'}
-              </button>
+               <Link
+  className="bg-white text-black rounded-3xl py-3 px-12"
+  style={{
+    boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)',
+  }}
+  href="/contact-us"
+  target="_blank"
+>
+  Contact Us
+</Link>
             </div>
           </div>
         ))}

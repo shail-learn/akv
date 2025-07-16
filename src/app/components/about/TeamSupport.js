@@ -1,8 +1,11 @@
+'use client';
+
 import React from 'react'
 import { TeamCard } from './TeamCard'
 import teamMember from './../../../api/teamMembers.json'
 import banner from "../../../assets/images/about/greenBanner.webp";
 import banner2 from "../../../assets/images/about/contact.webp";
+import { useState, useEffect } from 'react';
 
 import Link from 'next/link';
 export const Team = () => {
@@ -83,41 +86,117 @@ export const GreenSupport = () => {
 }
 
 
+
 export const Support = () => {
-    const heading1 = `Collaborate with Us:`;
-    const info1 = "Let’s work together to create lasting, positive change."
+  const heading1 = `Collaborate with Us:`;
+  const info1 = "Let’s work together to create lasting, positive change.";
 
-    const heading2 = `Support Our Cause:`;
-    const info2 = "Contribute to a greener tomorrow through donations, partnerships, and shared resources."
-    const pageUrl = "https://atulye-foundation.org";
-    return (
-        <>
-            <section
-                className=" relative text-center md:text-left  flex items-center justify-center pt-16 pb-16"
+  const heading2 = `Support Our Cause:`;
+  const info2 = "Contribute to a greener tomorrow through donations, partnerships, and shared resources.";
 
-            >
-                <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2'>
-                    <div className='lg:w-10/12 mx-auto w-full'>
-                             <div className='grid gap-4 md:flex'>
-                        <div className='lg:w-6/12 w-full bg-[#F2F2F2] p-8 lg:p-10 py-16 lg:py-24'>
-                            <div className='w-full lg:w-4/6'>
-                            <h2 className="text-3xl text-center lg:text-start md:leading-[1.3] md:text-4xl font-normal redhat text-[#1B453C] mb-6" dangerouslySetInnerHTML={{ __html: heading1 }}></h2>
-                            <p className="text-black mb-10 lg:mb-16" dangerouslySetInnerHTML={{ __html: info1 }}></p>
-                            <Link href={pageUrl} target='_blank' className='rounded border border-black py-2 px-10 w-4/5 inline-block text-center text-base hover:bg-white transition-all  duration-500 ' >Connect with us</Link>
-                        </div>
-                        </div>
-                        <div className='lg:w-6/12 bg-cover bg-center p-8 lg:p-10 py-16 lg:py-24 w-full' style={{ backgroundImage: `url(${banner2.src})` }}>
-                        <div className='w-full lg:w-4/6 text-white'>
-                            <h2 className="text-3xl text-center lg:text-start md:leading-[1.3] md:text-4xl font-normal redhat mb-6" dangerouslySetInnerHTML={{ __html: heading2 }}></h2>
-                            <p className=" mb-10 lg:mb-16" dangerouslySetInnerHTML={{ __html: info2 }}></p>
-                            <Link href={pageUrl} target='_blank' className='rounded border border-white py-2 px-10 w-4/5 inline-block text-center text-base hover:bg-[#1b453c] transition-all  duration-500 ' >Connect with us</Link>
-                        </div>
-                        </div>
-                        </div>
-                    </div>
+  const [amount, setAmount] = useState('');
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://checkout.razorpay.com/v1/checkout.js';
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
+
+  const handleDonate = async () => {
+    if (!amount || amount <= 0) {
+      alert('Please enter a valid amount');
+      return;
+    }
+
+    setLoading(true);
+
+    try {
+      const res = await fetch('/data/razorpay', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ amount }),
+      });
+
+      const order = await res.json();
+
+      const options = {
+        key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID,
+        amount: order.amount,
+        currency: 'INR',
+        name: 'Atulye Foundation',
+        description: 'Donation',
+        order_id: order.id,
+        handler: function (response) {
+          alert('Thank you for your donation!\nPayment ID: ' + response.razorpay_payment_id);
+        },
+        theme: {
+          color: '#1B453C',
+        },
+        modal: {
+          ondismiss: () => setLoading(false),
+        },
+      };
+
+      const rzp = new window.Razorpay(options);
+      rzp.open();
+    } catch (err) {
+      console.error('Payment Error:', err);
+      alert('Something went wrong!');
+      setLoading(false);
+    }
+  };
+
+  return (
+    <>
+      <section className="relative text-center md:text-left flex items-center justify-center pt-16 pb-16">
+        <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-2">
+          <div className="lg:w-10/12 mx-auto w-full">
+            <div className="grid gap-4 md:flex">
+              {/* Collaborate with us */}
+              <div className="lg:w-6/12 w-full bg-[#F2F2F2] p-8 lg:p-10 py-16 lg:py-24">
+                <div className="w-full lg:w-4/6">
+                  <h2 className="text-3xl text-center lg:text-start md:leading-[1.3] md:text-4xl font-normal redhat text-[#1B453C] mb-6" dangerouslySetInnerHTML={{ __html: heading1 }}></h2>
+                  <p className="text-black mb-10 lg:mb-16" dangerouslySetInnerHTML={{ __html: info1 }}></p>
+                  <Link href="https://atulye-foundation.org" target='_blank' className='rounded border border-black py-2 px-10 w-4/5 inline-block text-center text-base hover:bg-white transition-all duration-500'>Connect with us</Link>
                 </div>
-            </section>
+              </div>
 
-        </>
-    )
-}
+              {/* Support our cause */}
+              <div className="lg:w-6/12 bg-cover bg-center p-8 lg:p-10 py-16 lg:py-24 w-full" style={{ backgroundImage: `url(${banner2.src})` }}>
+                <div className="w-full lg:w-4/6 text-white">
+                  <h2 className="text-3xl text-center lg:text-start md:leading-[1.3] md:text-4xl font-normal redhat mb-6" dangerouslySetInnerHTML={{ __html: heading2 }}></h2>
+                  <p className="mb-10 lg:mb-6" dangerouslySetInnerHTML={{ __html: info2 }}></p>
+
+                  <input
+                    type="number"
+                    placeholder="Enter amount"
+                    className="w-full rounded-xl px-4 py-2 mb-4 text-black"
+                    value={amount}
+                    onChange={(e) => {
+                      const value = parseInt(e.target.value, 10);
+                      setAmount(isNaN(value) ? '' : value);
+                    }}
+                  />
+
+                  <button
+                    onClick={handleDonate}
+                    disabled={loading}
+                    className={`rounded-3xl py-2 px-6 w-full transition ${
+                      loading
+                        ? 'bg-gray-400 cursor-not-allowed text-white'
+                        : 'bg-white text-[#1B453C]'
+                    }`}
+                  >
+                    {loading ? 'Processing...' : 'Donate'}
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
