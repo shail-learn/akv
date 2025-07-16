@@ -1,12 +1,18 @@
 
 import React from 'react'
 import Image from 'next/image'
-import Plant from "../../../assets/images/flower/future.webp";
+import Plant from "../../../assets/images/palm/future.webp";
 import { MdCheckCircle } from "react-icons/md";
-import grow from "../../../assets/images/flower/grow.webp";
+import grow from "../../../assets/images/palm/majesty.webp";
 import Link from 'next/link';
 import { SliderBlur } from '../SliderBlur';
-import impact1 from "../../../assets/images/stress/Benefit1.webp";
+import impact1 from "../../../assets/images/palm/module1.webp";
+import impact2 from "../../../assets/images/palm/module2.webp";
+import impact3 from "../../../assets/images/palm/module3.webp";
+import impact4 from "../../../assets/images/palm/module4.webp";
+import impact5 from "../../../assets/images/palm/module5.webp";
+
+
 import bgstay from "../../../assets/images/stress/bg.webp";
 import { FaqSlider } from '../FaqSlider';
 
@@ -22,22 +28,22 @@ export const Functional = () => {
         description: 'Fruit-bearing, highly drought-tolerant',
       },
       {
-        image: impact1,
+        image: impact2,
         heading: "Coconut Palm (Cocos nucifera)",
         description: 'Coastal utility palm for food, fiber, and fuel',
       },
       {
-        image: impact1,
+        image: impact3,
         heading: "Bajarbattu (Corypha umbraculifera)",
         description: 'Native fan palm with thatching and weaving uses',
       },
       {
-        image: impact1,
+        image: impact4,
         heading: "Wild Date (Phoenix sylvestris)",
         description: "Hardy and adaptable, used in indigenous landscaping"
       },
       {
-        image: impact1,
+        image: impact5,
         heading: "Palmyra (Borassus flabellifer)",
         description: "Traditional multipurpose tree across rural India"
       },
@@ -156,9 +162,10 @@ export const Choose = () => {
                         <Image
                             src={Plant}
                             alt="Planting"
-                            width={200}
-                            height={200}
-                            className="w-full h-full"
+                            width={600}
+                            height={600}
+                            className="w-full h-full mx-auto"
+                            quality={90}
                         />
 
                     </div>

@@ -1,14 +1,14 @@
 "use client"
 import React, { useState } from 'react'
 import BannerPage from '../BannerPage';
-import banner from "../../../assets/images/flower/banner.webp";
-import basket from "../../../assets/images/flower/flower.webp";
+import banner from "../../../assets/images/palm-main/banner.webp";
+import basket from "../../../assets/images/palm-main/Why.webp";
 import Image from 'next/image';
 import { Productlist } from '../Productlist';
 import product1 from "../../../assets/images/palm/product01.webp";
 import product2 from "../../../assets/images/palm/product02.webp";
 import product3 from "../../../assets/images/flower/product3.webp";
-import harvestimg from "../../../assets/images/flower/Premium.webp";
+import harvestimg from "../../../assets/images/palm-main/Premium.webp";
 
 import backgroundImage from "../../../assets/images/timber/category-bg.webp";
 
@@ -74,6 +74,7 @@ export const Why = () => {
                                     width={600}
                                     height={400}
                                     className="object-cover w-full h-auto"
+                                    quality={90}
                                 />
 
                             </div>
@@ -133,13 +134,13 @@ export const Best = () => {
                                 className="w-full md:h-full object-cover h-60 rounded-2xl"
                             />
 
-                            <div className="absolute redhat w-3/5 md:w-1/3 h-28 flex items-center top-8 -left-3 md:-left-8 bg-[#EDA809] text-white py-3 px-6 rounded-md  ">
-                                <h2 className='lg:leading-snug  text-black redhat text-left border-l border-white border-opacity-20 ps-3 text-2xl md:text-4xl  font-normal'>
+                            <div className="absolute redhat w-3/5 md:w-1/3 h-28 flex items-center top-8 -left-3 md:-left-8 bg-[#1B453C] text-white py-3 px-6 rounded-md  ">
+                                <h2 className='lg:leading-snug  text-white redhat text-left border-l border-white border-opacity-20 ps-3 text-2xl md:text-4xl  font-normal'>
                                     {heading}
                                 </h2>
 
                             </div>
-                            <div className="absolute top-8 md:-right-8 -right-3  bg-[#EDA809] md:w-16 w-10 h-28 rounded-md"></div>
+                            <div className="absolute top-8 md:-right-8 -right-3  bg-[#1B453C] md:w-16 w-10 h-28 rounded-md"></div>
                         </div>
                         <div className='grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-1 mt-4'>
                             {points.map((item, index) => (
