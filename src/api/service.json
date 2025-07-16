@@ -1,7 +1,7 @@
 [
     {
         "id": "1",
-        "image": "https://cruxcreativedemo2.com/web-image/service/service1.webp",
+        "image": "https://www.akv.org.in/admin/rmimages/service1.webp",
         "title": "Agroforestry",
         "designation": [
             "Combining trees with agriculture for sustainable growth.",
@@ -12,7 +12,7 @@
     },
     {
         "id": "02",
-        "image": "https://cruxcreativedemo2.com/web-image/service/service02.webp",
+        "image": "https://www.akv.org.in/admin/rmimages/service02.webp",
         "title": "Agro - tourism",
         "designation": [
             "Experiencing sustainable farming and rural culture.",
@@ -24,7 +24,7 @@
     },
     {
         "id": "04",
-        "image": "https://cruxcreativedemo2.com/web-image/service/service04.webp",
+        "image": "https://www.akv.org.in/admin/rmimages/service04.webp",
         "title": "Contract Farming",
         "designation": [
             "Exploring collaborative cultivation and rural empowerment.",
@@ -36,7 +36,7 @@
     },
     {
         "id": "4",
-        "image": "https://cruxcreativedemo2.com/web-image/service/service4.webp",
+        "image": "https://www.akv.org.in/admin/rmimages/service4.webp",
         "title": "Training & Development",
         "designation": [
             "Empowering farmers and communities through knowledge.",
@@ -48,7 +48,7 @@
     },
     {
         "id": "03",
-        "image": "https://cruxcreativedemo2.com/web-image/service/service03.webp",
+        "image": "https://www.akv.org.in/admin/rmimages/service03.webp",
         "title": "MIDH Nursery Development ",
         "designation": [
             "Developing certified nurseries under MIDH to supply quality horticultural planting material.  "
@@ -60,7 +60,7 @@
 
     {
         "id": "2",
-        "image": "https://cruxcreativedemo2.com/web-image/service/service2.webp",
+        "image": "https://www.akv.org.in/admin/rmimages/service2.webp",
         "title": "Carbon Sequestration",
         "designation": [
             "Capturing carbon for a cleaner, greener planet.",
@@ -71,7 +71,7 @@
     },
     {
         "id": "3",
-        "image": "https://cruxcreativedemo2.com/web-image/service/service3.webp",
+        "image": "https://www.akv.org.in/admin/rmimages/service3.webp",
         "title": "Soil Conservation",
         "designation": [
             "Protecting and enriching soil for future generations.",
@@ -84,7 +84,7 @@
 
     {
         "id": "5",
-        "image": "https://cruxcreativedemo2.com/web-image/service/service5.webp",
+        "image": "https://www.akv.org.in/admin/rmimages/service5.webp",
         "title": "Water Conservation & Harvesting",
         "designation": [
             "Preserving water for agricultural resilience.",
@@ -95,7 +95,7 @@
     },
     {
         "id": "6",
-        "image": "https://cruxcreativedemo2.com/web-image/service/service6.webp",
+        "image": "https://www.akv.org.in/admin/rmimages/service6.webp",
         "title": "Animal Husbandry",
         "designation": [
             "Sustainable livestock management for rural prosperity.",
