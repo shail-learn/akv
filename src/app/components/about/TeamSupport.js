@@ -2,10 +2,14 @@
 
 import React from 'react'
 import { TeamCard } from './TeamCard'
-import teamMember from './../../../api/teamMembers.json'
+// import teamMember from './../../../api/teamMembers.json'
 import banner from "../../../assets/images/about/greenBanner.webp";
 import banner2 from "../../../assets/images/about/contact.webp";
 import { useState, useEffect } from 'react';
+import Team1 from "../../../assets/images/home/mk.webp";
+import Team2 from "../../../assets/images/home/atul.webp";
+import Team3 from "../../../assets/images/home/sk-pande.webp";
+import Team4 from "../../../assets/images/home/sanjay.webp";
 
 import Link from 'next/link';
 export const Team = () => {
@@ -16,6 +20,34 @@ export const Team = () => {
    <span style="color: #D2AE6D;">agroforestry, ensuring sustainable practices</span>
    that benefit both people and the planet.`;
    const pageUrl = "/our-team";
+   const teamMember = [
+    {
+      id: 1,
+      image: Team1,
+      name: "Late and Emeritus <br/> Shri MK Aggarwal",
+      designation: "Founder",
+    },
+    {
+      id: 2,
+      image: Team2,
+      name: "Shri Atul Aggarwal",
+      designation: "Co-Founder & Chairman",
+    },
+    {
+      id: 3,
+      image: Team3,
+      name: "Dr. SK Pande",
+      designation: "Director, School of Agriculture Science-ex",
+    },
+    {
+      id: 4,
+      image: Team4,
+      name: "Shri Sanjay Mittal",
+      designation: "Technology Consultant",
+    },
+
+
+  ];
     return (
         <>
             <section
