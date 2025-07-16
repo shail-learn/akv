@@ -12,7 +12,7 @@ import Image from 'next/image';
 import BannerPage from '../BannerPage';
 export const Banner = () => {
     const text = {
-        vedio : "https://cruxcreativedemo2.com/web-image/about-vedio.mp4",
+        vedio : "https://www.akv.org.in/admin/rmimages/aboutpagevideo.mp4",
         heading: `Our Essence: <span style="color:#48A490">Who We Are</span>`,
         title: `<a href="/">Atulye Krishi Vana</a> is a pioneering initiative dedicated to reshaping the future of agroforestry. By combining innovative, sustainable practices with a strong focus on community empowerment, we aim to restore ecosystems, uplift rural livelihoods, and foster long-term prosperity. Our work goes beyond agriculture – it’s a movement to create a greener, more resilient world.`,
 

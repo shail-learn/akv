@@ -21,10 +21,14 @@ import project10 from "../../../assets/images/projects/aushadh-manav.webp";
 import project11 from "../../../assets/images/projects/dhanvantari.webp";
 import project12 from "../../../assets/images/projects/pabuji-ushtralaya.webp";
 import project13 from "../../../assets/images/projects/swayambhu-vatika.webp";
+import project14 from "../../../assets/images/projects/pampasar-kamal.webp";
 import project15 from "../../../assets/images/projects/bhairav-sadan.webp";
 import project16 from "../../../assets/images/projects/tridev-triveni-vatika.webp";
 import project17 from "../../../assets/images/projects/mukund-mausam-vedhshala.webp";
 import project18 from "../../../assets/images/projects/naimish-kund.webp";
+import project19 from "../../../assets/images/projects/shringi-yagyashala.webp";
+
+
 
 import project20 from "../../../assets/images/projects/project-20.webp";
 import project07 from "../../../assets/images/projects/mansarovar1.webp";
@@ -183,7 +187,7 @@ export const Explore = () => {
             link: "/our-projects/shri-swayambhu-vatika"
         },
         {
-            image: project20,
+            image: project14,
             heading: "Shri. Pampasar Kamal Sarovar",
             description: `Blooming lotus pond with vibrant biodiversity. This sarovar nurtures aquatic ecosystems and spiritual calm.`,
             link: "/our-projects/shri-pampasar-kamal-sarovar"
@@ -213,7 +217,7 @@ export const Explore = () => {
             link: "/our-projects/naimish-kund"
         },
         {
-            image: project20,
+            image: project19,
             heading: "Shri. Shringi Yagyashala",
             description: `Ritual altar in open pavilion style. A spiritual zone for yajnas and Vedic fire ceremonies in community setting.`,
             link: "/our-projects/shri-shringi-yagyashala"
