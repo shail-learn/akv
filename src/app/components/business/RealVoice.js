@@ -1,5 +1,6 @@
 "use client"
-import React from 'react'
+import React from 'react';
+import { useState, useEffect } from 'react';
 
 import client1 from "../../../assets/images/business1/rajesh-patel.webp";
 import client2 from "../../../assets/images/business1/meena-kumari.webp";
@@ -144,37 +145,110 @@ life-changing!" `,
 
 
 export const Making = () => {
-    const heading = `Join Us <br/>
-    in Making a  Difference!`;
-    const info = "Be a part of the movement to create a greener and more sustainable future. Whether you're a farmer, a partner, or someone passionate about the environment, there’s a place for you in our journey."
-    const pageurl = "/contact-us";
-    return (
-        <>
-         <section
-                className="bg-cover bg-center relative text-center md:text-left  flex items-center justify-center pt-16 pb-16 lg:pt-48 lg:pb-48"
-                style={{ backgroundImage: `url(${banner.src})` }}
-            >
-                <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2'>
-                    <h2 className="text-3xl text-center lg:text-start md:leading-[1.3] md:text-4xl font-normal redhat text-white mb-10" dangerouslySetInnerHTML={{ __html: heading }}></h2>
+  const heading = `Join Us <br/> in Making a Difference!`;
+  const info =
+    "Be a part of the movement to create a greener and more sustainable future. Whether you're a farmer, a partner, or someone passionate about the environment, there’s a place for you in our journey.";
 
-                    <div className='lg:w-6/12   w-full'>
-                        <div className='text-white'>
-                            <p className="font-light mb-4" dangerouslySetInnerHTML={{ __html: info }}></p>
+  const [amount, setAmount] = useState('');
+  const [loading, setLoading] = useState(false);
 
-                        </div>
-                        <Link href={pageurl} className='inline-flex items-center mt-6 mb-8 justify-center gap-4 py-3 px-8 lg:px-12 text-black redhat font-medium bg-white border hover:bg-[#f8f8f8] transition-all duration-300'>Join us</Link>
-                    </div>
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://checkout.razorpay.com/v1/checkout.js';
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
 
+  const handleDonate = async () => {
+    if (!amount || amount <= 0) {
+      alert('Please enter a valid amount');
+      return;
+    }
 
-                </div>
+    setLoading(true);
 
-            </section>
+    try {
+      const res = await fetch('/data/razorpay', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ amount }),
+      });
 
-        </>
-    )
-}
+      const order = await res.json();
 
+      const options = {
+        key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID,
+        amount: order.amount,
+        currency: 'INR',
+        name: 'Atulye Foundation',
+        description: 'Donation',
+        order_id: order.id,
+        handler: function (response) {
+          alert('Thank you for your donation!\nPayment ID: ' + response.razorpay_payment_id);
+        },
+        theme: {
+          color: '#1B453C',
+        },
+        modal: {
+          ondismiss: () => setLoading(false),
+        },
+      };
 
+      const rzp = new window.Razorpay(options);
+      rzp.open();
+    } catch (err) {
+      console.error('Payment Error:', err);
+      alert('Something went wrong!');
+      setLoading(false);
+    }
+  };
 
+  return (
+    <>
+      <section
+        className="bg-cover bg-center relative text-center md:text-left flex items-center justify-center pt-16 pb-16 lg:pt-48 lg:pb-48"
+        style={{ backgroundImage: `url(${banner.src})` }}
+      >
+        <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-2">
+          <h2
+            className="text-3xl text-center lg:text-start md:leading-[1.3] md:text-4xl font-normal redhat text-white mb-10"
+            dangerouslySetInnerHTML={{ __html: heading }}
+          ></h2>
 
+          <div className="lg:w-6/12 w-full">
+            <div className="text-white">
+              <p
+                className="font-light mb-4"
+                dangerouslySetInnerHTML={{ __html: info }}
+              ></p>
+            </div>
 
+            <div className="flex gap-3 flex-wrap sm:flex-nowrap">
+              <input
+                type="number"
+                placeholder="Enter amount"
+                className="rounded px-4 py-2 text-black w-[140px]"
+                value={amount}
+                onChange={(e) => {
+                  const value = parseInt(e.target.value, 10);
+                  setAmount(isNaN(value) ? '' : value);
+                }}
+              />
+              <button
+                onClick={handleDonate}
+                disabled={loading}
+                className={`inline-flex items-center justify-center gap-4 py-3 px-8 lg:px-12 text-black redhat font-medium bg-white border transition-all duration-300 ${
+                  loading
+                    ? 'cursor-not-allowed bg-gray-400 text-white'
+                    : 'hover:bg-[#f8f8f8]'
+                }`}
+              >
+                {loading ? 'Processing...' : 'Donate'}
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
