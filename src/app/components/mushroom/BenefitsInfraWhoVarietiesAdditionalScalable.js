@@ -1,18 +1,20 @@
 import React from 'react'
-import impact1 from "../../../assets/images/stress/Benefit1.webp";
+import impact1 from "../../../assets/images/training-development/mushroom/module1.webp";
+import impact2 from "../../../assets/images/training-development/mushroom/module2.webp";
+
 import bgstay from "../../../assets/images/stress/bg.webp";
 
 import { SliderBlur } from '../SliderBlur';
 import { Gridbox } from '../Gridbox';
-import use1 from "../../../assets/images/training-development/multi/key1.webp";
+import use1 from "../../../assets/images/training-development/mushroom/key1.webp";
 import use2 from "../../../assets/images/training-development/multi/key2.webp";
-import use3 from "../../../assets/images/training-development/multi/key3.webp";
-import use4 from "../../../assets/images/training-development/multi/key4.webp";
+import use3 from "../../../assets/images/training-development/mushroom/key3.webp";
+import use4 from "../../../assets/images/training-development/mushroom/key4.webp";
 import { Iconslider } from '../Iconslider';
-import why1 from "../../../assets/images/sandalwood/why1.webp";
-import why2 from "../../../assets/images/sandalwood/why2.webp";
-import why3 from "../../../assets/images/sandalwood/why3.webp";
-import why4 from "../../../assets/images/sandalwood/why4.webp";
+import why1 from "../../../assets/images/training-development/mushroom/why1.webp";
+import why2 from "../../../assets/images/training-development/mushroom/why2.webp";
+import why3 from "../../../assets/images/training-development/mushroom/why3.webp";
+import why4 from "../../../assets/images/training-development/mushroom/why4.webp";
 import why5 from "../../../assets/images/sandalwood/why5.webp";
 import Titleslider from '../Titleslider';
 import { MdCheckCircle } from "react-icons/md";
@@ -24,7 +26,7 @@ import PartnerBg from "../../../assets/images/training-development/multi/bgimg.w
 
 export const Benefits = () => {
     const heading = "Training Modules Overview"
-    const class2 = "blurheight big_height"
+    const class2 = "blurheight big_height desktop_hide"
 
     const boxslider = [
         {
@@ -37,7 +39,7 @@ export const Benefits = () => {
             ]
         },
         {
-            image: impact1,
+            image: impact2,
             heading: "Mushroom Cultivation (5–7 Days)",
             description: [
                 "Mushroom species suitable for different regions (Oyster, Milky, Button)",
@@ -47,6 +49,7 @@ export const Benefits = () => {
 
             ]
         },
+
 
     ]
     return (

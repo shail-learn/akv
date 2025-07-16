@@ -11,6 +11,14 @@ import Img4 from "../../../assets/images/training-development/multi/choose4.webp
 import story1 from "../../../assets/images/training-development/multi/module1.webp";
 import story2 from "../../../assets/images/training-development/multi/module2.webp";
 import story3 from "../../../assets/images/training-development/multi/module3.webp";
+import story4 from "../../../assets/images/training-development/multi/module4.webp";
+import story5 from "../../../assets/images/training-development/multi/module5.webp";
+import story6 from "../../../assets/images/training-development/multi/module6.webp";
+import story7 from "../../../assets/images/training-development/multi/module7.webp";
+import story8 from "../../../assets/images/training-development/multi/module8.webp";
+
+
+
 
 
 import Image from 'next/image';
@@ -211,7 +219,7 @@ export const Modules = () => {
             `,
         },
         {
-            image: story3,
+            image: story4,
             title: "Integrated Crop Selection",
             description: `
             <ul>
@@ -222,7 +230,7 @@ export const Modules = () => {
             `,
         },
         {
-            image: story3,
+            image: story5,
             title: "Water Management",
             description: `
             <ul>
@@ -233,7 +241,7 @@ export const Modules = () => {
             `,
         },
         {
-            image: story3,
+            image: story6,
             title: "Pest and Disease Control Without Chemicals",
             description: `
             <ul>
@@ -244,7 +252,7 @@ export const Modules = () => {
             `,
         },
         {
-            image: story3,
+            image: story7,
             title: "Harvest Planning and Storage",
             description: `
             <ul>
@@ -255,7 +263,7 @@ export const Modules = () => {
             `,
         },
         {
-            image: story3,
+            image: story8,
             title: "Market Linkages and Income Planning",
             description: `
             <ul>

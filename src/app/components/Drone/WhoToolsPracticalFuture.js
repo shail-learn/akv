@@ -1,14 +1,18 @@
 import React from 'react'
 import { Iconslider } from '../Iconslider';
-import why1 from "../../../assets/images/sandalwood/why1.webp";
-import why2 from "../../../assets/images/sandalwood/why2.webp";
-import why3 from "../../../assets/images/sandalwood/why3.webp";
-import why4 from "../../../assets/images/sandalwood/why4.webp";
-import why5 from "../../../assets/images/sandalwood/why5.webp";
+import why1 from "../../../assets/images/training-development/drone/why1.webp";
+import why2 from "../../../assets/images/training-development/drone/why2.webp";
+import why3 from "../../../assets/images/training-development/drone/why3.webp";
+import why4 from "../../../assets/images/training-development/drone/why4.webp";
+import why5 from "../../../assets/images/training-development/drone/why5.webp";
+import why6 from "../../../assets/images/training-development/drone/why6.webp";
+
 import { GrowthSlider } from '../utilities/Cultivationgrowthwhychoose';
-import image1 from "../../../assets/images/digestive/image1.webp";
-import image2 from "../../../assets/images/forest/circle02.webp";
-import image3 from "../../../assets/images/forest/circle03.webp";
+import image1 from "../../../assets/images/training-development/drone/circle1.webp";
+import image2 from "../../../assets/images/training-development/drone/circle2.webp";
+import image3 from "../../../assets/images/training-development/drone/circle3.webp";
+import image4 from "../../../assets/images/training-development/drone/circle4.webp";
+import image5 from "../../../assets/images/training-development/drone/circle5.webp";
 import Plant from "../../../assets/images/training-development/multi/future.svg";
 import PartnerBg from "../../../assets/images/training-development/multi/bgimg.webp";
 
@@ -44,7 +48,7 @@ export const Who = () => {
 
         },
         {
-            icon: why5,
+            icon: why6,
             description: "Rural entrepreneurs who want to provide spraying and mapping services",
 
         },
@@ -89,12 +93,12 @@ export const Tools = () => {
         },
         {
 
-            image: image3,
+            image: image4,
             title: "Seek mentorship for starting drone service units",
         },
         {
 
-            image: image3,
+            image: image5,
             title: "Get connected with leasing partners and cooperatives",
         },
 
