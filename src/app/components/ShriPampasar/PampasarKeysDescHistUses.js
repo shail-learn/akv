@@ -1,17 +1,17 @@
 import React from 'react'
 import BannerPage from '../BannerPage'
-import banner from "../../../assets/images/projects/project20/banner.webp";
-import image2 from "../../../assets/images/projects/project20/key.webp";
+import banner from "../../../assets/images/projects/project14/banner.webp";
+import image2 from "../../../assets/images/projects/project14/key.webp";
 import Image from 'next/image';
 import { RiCheckboxCircleFill } from "react-icons/ri";
-import image3 from "../../../assets/images/projects/project20/histroy.webp";
+import image3 from "../../../assets/images/projects/project14/desc.webp";
 import Titleslider from '../Titleslider';
 
 import { Gridbox } from '../Gridbox';
-import use1 from "../../../assets/images/projects/project20/use1.webp";
-import use2 from "../../../assets/images/projects/project20/use2.webp";
-import use3 from "../../../assets/images/projects/project20/use3.webp";
-import use4 from "../../../assets/images/projects/project20/use4.webp";
+import use1 from "../../../assets/images/projects/project14/key1.webp";
+import use2 from "../../../assets/images/projects/project14/key2.webp";
+import use3 from "../../../assets/images/projects/project14/key3.webp";
+import use4 from "../../../assets/images/projects/project14/key4.webp";
 import use5 from "../../../assets/images/projects/project20/use5.webp";
 import use6 from "../../../assets/images/projects/project20/use6.webp";
 import PartnerBg from "../../../assets/images/projects/project20/bg.webp";
@@ -206,7 +206,7 @@ export const Uses = () => {
           "Supports aquatic birds, insects, and amphibians.",
       },
       {
-        image: use3,
+        image: use4,
         title: "Water Purification:",
         description:
           "Naturally improves water quality through filtration and oxygenation.",

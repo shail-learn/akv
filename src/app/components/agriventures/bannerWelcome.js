@@ -12,7 +12,7 @@ import Link from 'next/link';
 export const AmBanner = () => {
 
     const text = {
-        vedio : "https://cruxcreativedemo2.com/web-image/about-vedio.mp4",
+        vedio : "https://www.akv.org.in/admin/rmimages/aboutpagevideo.mp4",
         heading: `Welcome to <br/> <span style="color:#48A490">A&M Agriventures Pvt. Ltd.</span>`,
         title: 'At A&M Agriventures, we are redefining the future of sustainable agriculture by harmonizing innovation, traditional practices, and environmental stewardship. Through our agroforestry, contract farming, eco-tourism, and more, we aim to combat climate change, restore ecosystems, and empower communities.',
         // buttonText: "Read More",
