@@ -4,7 +4,7 @@ import csr1 from "../../../assets/images/eco/csr1.webp";
 import csr2 from "../../../assets/images/eco/csr2.webp";
 import csr3 from "../../../assets/images/eco/csr3.webp";
 import csr4 from "../../../assets/images/eco/csr4.webp";
-import aboutSlider from '../../../api/aboutSlider.json'
+import aboutSlider from '../../../api/ecoSlider.json'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
@@ -25,22 +25,22 @@ export const CsrProject = () => {
     const initiatives = [
         {
             title: "Free Eye Check-Up Camps",
-            description: "Reviving and celebrating local traditions.",
+            description: "Accessible healthcare is a right, not a privilege. We regularly organize eye camps to provide early diagnosis and treatment to rural residents.            ",
             image: csr1,
         },
         {
             title: "Clothing and Stationery Distribution",
-            description: "Promoting a greener future.",
+            description: "Every child deserves the tools to learn. Our distribution drives ensure children in nearby villages receive essential school supplies and warm clothing.",
             image: csr2,
         },
         {
             title: "Plantation Drives",
-            description: "Supporting education in rural schools.",
+            description: "Alongside our agroforestry mission, we involve schools and local groups in plantation activities—nurturing both trees and environmental awareness.",
             image: csr3,
         },
         {
             title: "Cultural Activities",
-            description: "Enhancing community health.",
+            description: "Celebrating tradition and togetherness, we host events that preserve local culture, empower women, and encourage creative expression.",
             image: csr4,
         },
     ];
@@ -114,7 +114,8 @@ export const CsrProject = () => {
                             {aboutSlider.map((item, index) => (
                                 <SwiperSlide key={index}>
                                     <div className='w-full  relative'>
-                                        <Image src={item.image} alt="banner" width="600" height="600" className='rounded-2xl w-full h-full border-1 border-[#1B453C]' />
+                                        <Image src={item.image} alt="banner" width="600" height="600"
+                                        className='rounded-2xl h-96 object-cover w-full object-center border-1 border-[#1B453C]' />
                                     </div>
                                 </SwiperSlide>
                             ))}
@@ -187,7 +188,7 @@ export const Agroforestry = () => {
                                 </div>
                             ))}
                             <div className='mt-6'>
-                            <Link href="/agroforestry" className='bg-[#1B453C] text-white   py-3 px-12 inline-block text-center text-base hover:bg-black hover:text-[#fff] transition-all  duration-500 '>Explore Our Agroforestry Projects</Link>
+                            <Link href="/our-projects" className='bg-[#1B453C] text-white   py-3 px-12 inline-block text-center text-base hover:bg-black hover:text-[#fff] transition-all  duration-500 '>Explore Our Agroforestry Projects</Link>
                             </div>
                         </div>
 

@@ -80,7 +80,7 @@ export const Future = () => {
     const growthData = {
         heading: "Future Growth\n& Expansion",
         description:
-            "MIDH Nursery is set to expand into more regions, integrating advanced agroforestry models that balance economic viability with environmental conservation. Upcoming projects include:",
+            "Nursery is set to expand into more regions, integrating advanced agroforestry models that balance economic viability with environmental conservation. Upcoming projects include:",
         items: [
             {
                 icon: icon1,

@@ -1,5 +1,58 @@
 [
   {
+    "title": "Videos",
+    "images": [
+      {
+        "id": 1,
+        "src": "https://www.akv.org.in/admin/rmimages/youtube1.webp",
+        "alt": "Farming 2",
+        "youtubeLink": "https://www.youtube.com/watch?v=DdRjv244y9I"
+      },
+      {
+        "id": 2,
+        "src": "https://www.akv.org.in/admin/rmimages/youtube2.webp",
+        "alt": "Visit 2",
+        "youtubeLink": "https://www.youtube.com/watch?v=kgX71_qeG8E"
+      },
+      {
+        "id": 3,
+        "src": "https://www.akv.org.in/admin/rmimages/youtube3.webp",
+        "alt": "Visit 2",
+        "youtubeLink": "https://www.youtube.com/watch?v=USg7SEte5nI"
+      },
+      {
+        "id": 4,
+        "src": "https://www.akv.org.in/admin/rmimages/youtube4.webp",
+        "alt": "Visit 2",
+        "youtubeLink": "https://www.youtube.com/watch?v=-X_l-g_qIkk"
+      },
+      {
+        "id": 5,
+        "src": "https://www.akv.org.in/admin/rmimages/youtube5.webp",
+        "alt": "Visit 2",
+        "youtubeLink": "https://www.youtube.com/watch?v=xuSWSrqIFbs"
+      },
+      {
+        "id": 6,
+        "src": "https://www.akv.org.in/admin/rmimages/youtube6.webp",
+        "alt": "Visit 2",
+        "youtubeLink": "https://www.youtube.com/watch?v=QeTJc4cnjQQ"
+      },
+      {
+        "id": 7,
+        "src": "https://www.akv.org.in/admin/rmimages/youtube7.webp",
+        "alt": "Visit 2",
+        "youtubeLink": "https://www.youtube.com/watch?v=yyXP53iM9Ag"
+      },
+      {
+        "id": 8,
+        "src": "https://www.akv.org.in/admin/rmimages/youtube8.webp",
+        "alt": "Visit 2",
+        "youtubeLink": "https://www.youtube.com/watch?v=VcoKGUgXCZc"
+      }
+    ]
+  },
+  {
     "title": "Agroforestry",
     "images": [
       {
@@ -524,58 +577,6 @@
         "alt": "Office 15"
       }
     ]
-  },
-  {
-    "title": "videos",
-    "images": [
-      {
-        "id": 1,
-        "src": "https://www.akv.org.in/admin/rmimages/youtube1.webp",
-        "alt": "Farming 2",
-        "youtubeLink": "https://www.youtube.com/watch?v=DdRjv244y9I"
-      },
-      {
-        "id": 2,
-        "src": "https://www.akv.org.in/admin/rmimages/youtube2.webp",
-        "alt": "Visit 2",
-        "youtubeLink": "https://www.youtube.com/watch?v=kgX71_qeG8E"
-      },
-      {
-        "id": 3,
-        "src": "https://www.akv.org.in/admin/rmimages/youtube3.webp",
-        "alt": "Visit 2",
-        "youtubeLink": "https://www.youtube.com/watch?v=USg7SEte5nI"
-      },
-      {
-        "id": 4,
-        "src": "https://www.akv.org.in/admin/rmimages/youtube4.webp",
-        "alt": "Visit 2",
-        "youtubeLink": "https://www.youtube.com/watch?v=-X_l-g_qIkk"
-      },
-      {
-        "id": 5,
-        "src": "https://www.akv.org.in/admin/rmimages/youtube5.webp",
-        "alt": "Visit 2",
-        "youtubeLink": "https://www.youtube.com/watch?v=xuSWSrqIFbs"
-      },
-      {
-        "id": 6,
-        "src": "https://www.akv.org.in/admin/rmimages/youtube6.webp",
-        "alt": "Visit 2",
-        "youtubeLink": "https://www.youtube.com/watch?v=QeTJc4cnjQQ"
-      },
-      {
-        "id": 7,
-        "src": "https://www.akv.org.in/admin/rmimages/youtube7.webp",
-        "alt": "Visit 2",
-        "youtubeLink": "https://www.youtube.com/watch?v=yyXP53iM9Ag"
-      },
-      {
-        "id": 8,
-        "src": "https://www.akv.org.in/admin/rmimages/youtube8.webp",
-        "alt": "Visit 2",
-        "youtubeLink": "https://www.youtube.com/watch?v=VcoKGUgXCZc"
-      }
-    ]
   }
+
 ]
