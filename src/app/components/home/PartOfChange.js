@@ -71,6 +71,7 @@ export const PartOfChange = () => {
           // name: 'Donor',
           // email: 'donor@example.com',
           // contact: '9999999999',
+          //test
         },
         theme: {
           color: '#1B453C',
