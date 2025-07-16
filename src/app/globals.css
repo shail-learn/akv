@@ -1003,6 +1003,9 @@ body .plant_p {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
   }
+  .desktop_hide .style2_slider {
+   display: none;
+  }
 }
 
 @media (max-width: 1023px) {

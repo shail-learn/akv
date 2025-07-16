@@ -95,7 +95,6 @@ export const Future = () => {
 
       <section className="text-center md:text-left  pb-16 pt-16 lg:pb-20 lg:pt-20">
         <div className="mx-auto max-w-7xl  px-6 flex flex-col-reverse md:flex-row items-center gap-10">
-
           <div className="w-full md:w-1/2 text-center md:text-left">
             <h2 className="text-3xl md:leading-[1.3] md:text-4xl font-normal redhat text-black mb-2">
               {heading}
@@ -104,7 +103,6 @@ export const Future = () => {
               {subtitle}
             </p>
             <p className="text-black mt-4 text-xl">{title}</p>
-
             {/* List using map() */}
             <ul className="mt-6 space-y-4">
               {futurePlans.map((plan, index) => (
@@ -131,9 +129,10 @@ export const Future = () => {
             <Image
               src={Plant}
               alt="Planting"
-              width={200}
-              height={200}
+              width={600}
+              height={600}
               className="w-full h-full"
+              quality={100}
             />
 
           </div>

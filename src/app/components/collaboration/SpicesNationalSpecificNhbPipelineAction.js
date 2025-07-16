@@ -1,7 +1,7 @@
 import React from 'react'
 import { MarketLayout } from '../utilities/UsesStanadarLayout';
 import img01 from "../../../assets/images/collab/farmer.webp";
-import bgbanner from "../../../assets/images/about/bgbanner.webp";
+import bgbanner from "../../../assets/images/collab/nmpb-bg.webp";
 import PartnerBg from "../../../assets/images/training-development/multi/bgimg.webp";
 import Plant from "../../../assets/images/training-development/multi/future.svg";
 import { MdCheckCircle } from "react-icons/md";
@@ -9,6 +9,7 @@ import Image from 'next/image';
 import value1 from "../../../assets/images/collab/icon1.svg";
 import value2 from "../../../assets/images/collab/icon2.svg";
 import value3 from "../../../assets/images/collab/icon3.svg";
+import Link from 'next/link';
 
 
 
@@ -238,11 +239,10 @@ export const Pipeline = () => {
 
 
 export const Action = () => {
-  const heading = " Call to Action";
+  const heading = "Interested in partnering with us?";
   const description =
-      `<b>Interested in partnering with us?</b> <br>
+      `
       We welcome research institutions, government departments, and private organizations to collaborate in building a self-reliant, sustainable agri-ecosystem.
-       <br><br> <b>📩 Connect with us at [email/contact form]</b>
       `
 
 
@@ -261,6 +261,10 @@ export const Action = () => {
                       className="mb-6 text-sm  md:text-base   w-full"
                       dangerouslySetInnerHTML={{ __html: description }}
                   ></p>
+
+                  <div className='mt-10'>
+                    <Link href="/contact-us" className='poppins mx-auto text-center  font-normal hover:text-white w-[200px] py-3 rounded-[4px] hover:bg-[#344C31] inline-block transition-all duration-500  bg-white  text-[#344C31]'>Connect with us</Link>
+                  </div>
 
 
 
