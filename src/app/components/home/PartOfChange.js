@@ -68,9 +68,9 @@ export const PartOfChange = () => {
           alert('Thank you for your donation!\nPayment ID: ' + response.razorpay_payment_id);
         },
         prefill: {
-          name: 'Donor',
-          email: 'donor@example.com',
-          contact: '9999999999',
+          // name: 'Donor',
+          // email: 'donor@example.com',
+          // contact: '9999999999',
         },
         theme: {
           color: '#1B453C',
