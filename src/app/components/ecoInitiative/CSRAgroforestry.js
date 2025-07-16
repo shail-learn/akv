@@ -115,7 +115,7 @@ export const CsrProject = () => {
                                 <SwiperSlide key={index}>
                                     <div className='w-full  relative'>
                                         <Image src={item.image} alt="banner" width="600" height="600"
-                                        className='rounded-2xl h-96 object-cover w-full object-center border-1 border-[#1B453C]' />
+                                        className='rounded-2xl h-80 object-cover w-full object-center border-1 border-[#1B453C]' />
                                     </div>
                                 </SwiperSlide>
                             ))}
