@@ -1,9 +1,9 @@
 "use client"
 import React, { useState } from "react";
-import Team1 from "../../../assets/images/home/team1.png";
-import Team2 from "../../../assets/images/home/team2.webp";
-import Team3 from "../../../assets/images/home/team3.png";
-import Team4 from "../../../assets/images/home/team4.png";
+import Team1 from "../../../assets/images/home/mk.webp";
+import Team2 from "../../../assets/images/home/atul.webp";
+import Team3 from "../../../assets/images/home/sk-pande.webp";
+import Team4 from "../../../assets/images/home/sanjay.webp";
 import Team5 from "../../../assets/images/home/team5.png";
 import Team6 from "../../../assets/images/home/team6.png";
 
@@ -21,25 +21,25 @@ export const Ourteam = () => {
   const ourTeamData = [
     {
       id: 1,
-      img: Team1,
+      image: Team1,
       name: "Late and Emeritus <br/> Shri MK Aggarwal",
       designation: "Founder",
     },
     {
       id: 2,
-      img: Team2,
+      image: Team2,
       name: "Shri Atul Aggarwal",
       designation: "Co-Founder & Chairman",
     },
     {
       id: 3,
-      img: Team3,
+      image: Team3,
       name: "Dr. SK Pande",
       designation: "Director, School of Agriculture Science-ex",
     },
     {
       id: 4,
-      img: Team4,
+      image: Team4,
       name: "Shri Sanjay Mittal",
       designation: "Technology Consultant",
     },
@@ -72,7 +72,7 @@ export const Ourteam = () => {
                 <div className="bg-[#A8A8A8] rounded-[20px] overflow-hidden">
                 <Link href="/our-team" >
                   <Image
-                    src={item.img}
+                    src={item.image}
                     alt={item.name}
                     className="w-full h-full mx-auto"
                     quality={90}
