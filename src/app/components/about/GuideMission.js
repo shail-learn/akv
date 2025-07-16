@@ -23,13 +23,13 @@ export const Guide = () => {
   const description = "Our vision is to bring forth a thriving ecosystem that safeguards crucial resources for the coming generations. On leading the charge in eco-friendly farming and forestry techniques, we aim to stimulate massive economic influence by growing a lucrative venture worth multiple billion—a venture intertwining environmental care with wealth creation for communities scattered across India."
   const imgroup = [
     {
-      img: 'https://cruxcreativedemo2.com/web-image/about/imagess1.webp',
+      img: 'https://www.akv.org.in/admin/rmimages/imagess1.webp',
     },
     {
-      img: 'https://cruxcreativedemo2.com/web-image/about/imagess2.webp',
+      img: 'https://www.akv.org.in/admin/rmimages/imagess2.webp',
     },
     {
-      img: 'https://cruxcreativedemo2.com/web-image/about/imagess3.webp',
+      img: 'https://www.akv.org.in/admin/rmimages/imagess3.webp',
     }
   ]
   const myStyle = {
