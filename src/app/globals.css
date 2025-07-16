@@ -1255,6 +1255,11 @@ body .plant_p {
   .content_page p, .content_page ul li {
     font-size: 15px;
   }
+  .eco_dotted::after{
+    left: 144px;
+    top: 7%;
+    height: 80%;
+  }
 }
 
 

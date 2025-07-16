@@ -67,8 +67,8 @@ export const PartOfChange = () => {
         handler: function (response) {
           alert('Thank you for your donation!\nPayment ID: ' + response.razorpay_payment_id);
         },
-         prefill: {
-      
+        prefill: {
+
         },
         theme: {
           color: '#1B453C',
@@ -115,11 +115,10 @@ export const PartOfChange = () => {
             <button
               onClick={handleDonate}
               disabled={loading}
-              className={`mt-4 rounded-3xl py-2 px-6 w-full transition ${
-                loading
+              className={`mt-4 rounded-3xl py-2 px-6 w-full transition ${loading
                   ? 'bg-gray-400 cursor-not-allowed text-white'
                   : 'bg-white text-[#1B453C]'
-              }`}
+                }`}
             >
               {loading ? 'Processing...' : 'Donate'}
             </button>
@@ -129,7 +128,7 @@ export const PartOfChange = () => {
         {card.map((item, index) => (
           <div
             key={index}
-            className="group w-full rounded-[20px] overflow-hidden p-10 lg:w-3/12 h-auto text-black relative transition-all duration-400"
+            className="group w-full rounded-[20px] overflow-hidden p-10 lg:w-3/12 h-auto md:h-[480px] flex items-center justify-center text-black relative transition-all duration-400"
             style={{
               backgroundImage: `url(${item.bgimg})`,
               backgroundSize: 'cover',
@@ -140,17 +139,17 @@ export const PartOfChange = () => {
 
             <div className="z-10 relative text-black transition-all duration-400 group-hover:text-white">
               <h3 className="poppins text-5xl mb-6">{item.number}</h3>
-              <p className="poppins text-lg mb-4">{item.title}</p>
-               <Link
-  className="bg-white text-black rounded-3xl py-3 px-12"
-  style={{
-    boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)',
-  }}
-  href="/contact-us"
-  target="_blank"
->
-  Contact Us
-</Link>
+              <p className="poppins text-xl mb-10 md:text-2xl md:mb-12">{item.title}</p>
+              <Link
+                className="bg-white text-black rounded-3xl py-3 px-12"
+                style={{
+                  boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)',
+                }}
+                href="/contact-us"
+                target="_blank"
+              >
+                Contact Us
+              </Link>
             </div>
           </div>
         ))}
