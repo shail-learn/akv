@@ -1,7 +1,7 @@
 import React from 'react'
 import BannerPage from '../BannerPage';
-import banner from "../../../assets/images/training-development/multi/banner.webp";
-import IntroImg from "../../../assets/images/training-development/multi/info.webp";
+import banner from "../../../assets/images/training-development/mushroom/banner.webp";
+import IntroImg from "../../../assets/images/training-development/mushroom/info.webp";
 
 import Img1 from "../../../assets/images/training-development/multi/choose1.webp";
 import Img2 from "../../../assets/images/training-development/multi/choose2.webp";

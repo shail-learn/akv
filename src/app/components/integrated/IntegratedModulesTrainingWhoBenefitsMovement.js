@@ -1,17 +1,24 @@
 import React from 'react'
 import BannerPage from '../BannerPage';
-import banner from "../../../assets/images/training-development/multi/banner.webp";
-import IntroImg from "../../../assets/images/training-development/multi/info.webp";
+import banner from "../../../assets/images/training-development/integrated/banner.webp";
+import IntroImg from "../../../assets/images/training-development/integrated/info.webp";
 import Image from 'next/image';
-import story1 from "../../../assets/images/training-development/multi/module1.webp";
-import story2 from "../../../assets/images/training-development/multi/module2.webp";
-import story3 from "../../../assets/images/training-development/multi/module3.webp";
+import story1 from "../../../assets/images/training-development/integrated/module1.webp";
+import story2 from "../../../assets/images/training-development/integrated/module2.webp";
+import story3 from "../../../assets/images/training-development/integrated/module3.webp";
+import story4 from "../../../assets/images/training-development/integrated/module4.webp";
+import story5 from "../../../assets/images/training-development/integrated/module5.webp";
+import story6 from "../../../assets/images/training-development/integrated/module6.webp";
+import story7 from "../../../assets/images/training-development/integrated/module7.webp";
+import story8 from "../../../assets/images/training-development/integrated/module8.webp";
+
+
 import ModuleSlider from '../ModuleSlider';
 import Titleslider from '../Titleslider';
 import { Gridbox } from '../Gridbox';
-import use1 from "../../../assets/images/training-development/multi/key1.webp";
-import use2 from "../../../assets/images/training-development/multi/key2.webp";
-import use3 from "../../../assets/images/training-development/multi/key3.webp";
+import use1 from "../../../assets/images/training-development/integrated/key1.webp";
+import use2 from "../../../assets/images/training-development/integrated/key2.webp";
+import use3 from "../../../assets/images/training-development/integrated/key3.webp";
 import use4 from "../../../assets/images/training-development/multi/key4.webp";
 
 import { MdCheckCircle } from "react-icons/md";
@@ -130,7 +137,7 @@ export const Modules = () => {
             `,
         },
         {
-            image: story3,
+            image: story4,
             title: "Soil Health Improvement: Rebuilding the Foundation of Farming",
             description: `
             <ul>
@@ -142,7 +149,7 @@ export const Modules = () => {
             `,
         },
         {
-            image: story3,
+            image: story5,
             title: "Soil Conservation: Safeguarding Productive Land",
             description: `
             <ul>
@@ -154,7 +161,7 @@ export const Modules = () => {
             `,
         },
         {
-            image: story3,
+            image: story6,
             title: "Water Conservation: Using Every Drop Wisely",
             description: `
             <ul>
@@ -166,7 +173,7 @@ export const Modules = () => {
             `,
         },
         {
-            image: story3,
+            image: story7,
             title: "Organic Farming: Farming Without Chemicals",
             description: `
             <ul>
@@ -178,7 +185,7 @@ export const Modules = () => {
             `,
         },
         {
-            image: story3,
+            image: story8,
             title: "Integrated Pest Management (IPM): Smart Pest Control",
             description: `
             <ul>

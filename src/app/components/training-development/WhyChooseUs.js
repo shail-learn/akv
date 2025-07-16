@@ -7,7 +7,12 @@ import Img4 from "../../../assets/images/training/choose-4.webp";
 import Img5 from "../../../assets/images/training/choose-5.webp";
 
 import product1 from "../../../assets/images/training-development/multi-layer.webp";
-import product02 from "../../../assets/images/medicinal/medicine-main.webp";
+import product2 from "../../../assets/images/training-development/mushroom.webp";
+import product3 from "../../../assets/images/training-development/integrated-sustainable.webp";
+import product4 from "../../../assets/images/training-development/drone.webp";
+
+
+
 import product03 from "../../../assets/images/forest/main.webp";
 import Image from "next/image";
 import backgroundImage from "../../../assets/images/timber/category-bg.webp";
@@ -55,17 +60,17 @@ const WhyChooseUs = () => {
       },
       {
           title: "Mushroom Spawn Preparation and Cultivation Training",
-          image: product02,
+          image: product2,
           link: "/training-development/mushroom-spawn-preparation-and-cultivation-training",
       },
       {
           title: "Integrated Sustainable Agriculture Training by Atulye Krishi Vana",
-          image: product03,
+          image: product3,
           link: "/training-development/integrated-sustainable-agriculture-training-by-atulye-krishi-vana",
       },
       {
         title: "Drone Application in Agriculture Training",
-        image: product03,
+        image: product4,
         link: "/training-development/drone-application-in-agriculture-training",
     },
   ];
