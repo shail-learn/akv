@@ -6,7 +6,7 @@ import Img3 from "../../../assets/images/training/choose-3.webp";
 import Img4 from "../../../assets/images/training/choose-4.webp";
 import Img5 from "../../../assets/images/training/choose-5.webp";
 
-import product1 from "../../../assets/images/wind/product01.webp";
+import product1 from "../../../assets/images/training-development/multi-layer.webp";
 import product02 from "../../../assets/images/medicinal/medicine-main.webp";
 import product03 from "../../../assets/images/forest/main.webp";
 import Image from "next/image";
