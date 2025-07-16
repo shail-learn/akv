@@ -30,6 +30,7 @@ export const Animal = () => {
     const heading = "Animal Sanctuaries"
     const mission = [
         {
+
             title: "Shri Malook Gaushala",
             description: `Sheltered pastures for native cattle <br/>  A sanctuary promoting ethical cattle care and rural livelihoods.`,
             link: "/our-projects/shri-malook-gaushala"
