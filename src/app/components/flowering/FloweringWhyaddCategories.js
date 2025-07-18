@@ -97,17 +97,17 @@ export const Categories = () => {
         {
             title: "Ornamental Plants",
             image: product1,
-            link: "/agroForestry/flowering-ornamental-plants/ornamental-plants",
+            link: "/agroforestry/flowering-ornamental-plants/ornamental-plants",
         },
         {
             title: "Tropical Bloomers",
             image: product2,
-            link: "/agroForestry/flowering-ornamental-plants/tropical-bloomers",
+            link: "/agroforestry/flowering-ornamental-plants/tropical-bloomers",
         },
         {
             title: "Duranata Hedge",
             image: product3,
-            link: "/agroForestry/flowering-ornamental-plants/duranata-hedge",
+            link: "/agroforestry/flowering-ornamental-plants/duranata-hedge",
         },
 
     ];

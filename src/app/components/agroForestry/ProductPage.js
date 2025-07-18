@@ -34,55 +34,55 @@ export const ProductPage = () => {
   const productlist = [
     {
       img: img2,
-      link: "agroForestry/timber/rosewood",
+      link: "agroforestry/timber/rosewood",
     },
     {
       img: img3,
-      link: "agroForestry/gamhar",
+      link: "agroforestry/gamhar",
     },
     {
       img: img4,
-      link: "agroForestry/timber/teak",
+      link: "agroforestry/timber/teak",
     },
     {
       img: img5,
-      link: "agroForestry/mahagony",
+      link: "agroforestry/mahagony",
     },
   ];
   const productlist2 = [
     {
       img: img7,
-      link: "agroForestry/guava",
+      link: "agroforestry/guava",
     },
     {
       img: img8,
-      link: "/agroForestry/papaya",
+      link: "/agroforestry/papaya",
     },
     {
       img: img9,
-      link: "/agroForestry/amla",
+      link: "/agroforestry/amla",
     },
     {
       img: img10,
-      link: "/agroForestry/orange",
+      link: "/agroforestry/orange",
     },
   ];
   const productlist3 = [
     {
       img: img02,
-      link: "agroForestry/medicinal-herbal-plants/stress-relief-and-cognitive-wellness",
+      link: "agroforestry/medicinal-herbal-plants/stress-relief-and-cognitive-wellness",
     },
     {
       img: img03,
-      link: "agroForestry/medicinal-herbal-plants/immunity-and-infection-control",
+      link: "agroforestry/medicinal-herbal-plants/immunity-and-infection-control",
     },
     {
       img: img04,
-      link: "agroForestry/medicinal-herbal-plants/digestive-liver-and-metabolism",
+      link: "agroforestry/medicinal-herbal-plants/digestive-liver-and-metabolism",
     },
     {
       img: img05,
-      link: "agroForestry/medicinal-herbal-plants/respirtaory-inflammatory-relief",
+      link: "agroforestry/medicinal-herbal-plants/respirtaory-inflammatory-relief",
     },
   ];
   return (
@@ -107,7 +107,7 @@ export const ProductPage = () => {
               />
 
               <Link
-                href="agroForestry/timber" className="bg-[#9A9771] text-center md:text-left text-2xl text-white px-6 block w-full lg:px-8 p-4 lg:p-5">
+                href="agroforestry/timber" className="bg-[#9A9771] text-center md:text-left text-2xl text-white px-6 block w-full lg:px-8 p-4 lg:p-5">
                 {category1}
               </Link>
             </div>
@@ -146,7 +146,7 @@ export const ProductPage = () => {
                 className="w-full h-auto rounded-tl-3xl rounded-tr-3xl"
               />
               <Link
-                href="agroForestry/fruits-and-vegetables"
+                href="agroforestry/fruits-and-vegetables"
                 className="bg-[#719A8E] text-center md:text-left text-2xl text-white px-6 block w-full lg:px-8 p-4 lg:p-5"
               >
                 {category2}
@@ -185,7 +185,7 @@ export const ProductPage = () => {
               />
 
               <Link
-                href="agroForestry/medicinal-herbal-plants" className="bg-[#337049] text-center md:text-left text-2xl text-white px-6 block w-full lg:px-8 p-4 lg:p-5">
+                href="agroforestry/medicinal-herbal-plants" className="bg-[#337049] text-center md:text-left text-2xl text-white px-6 block w-full lg:px-8 p-4 lg:p-5">
                 {category3}
               </Link>
             </div>

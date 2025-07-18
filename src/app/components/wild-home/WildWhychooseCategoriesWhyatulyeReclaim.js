@@ -102,17 +102,17 @@ export const Categories = () => {
         {
             title: "Sacred & Culturally Trees",
             image: product1,
-            link: "/agroForestry/wild-and-forest-trees/sacred-and-culturally-trees",
+            link: "/agroforestry/wild-and-forest-trees/sacred-and-culturally-trees",
         },
         {
             title: "Medicinal & Multi Purpose Trees",
             image: product02,
-            link: "/agroForestry/wild-and-forest-trees/medicinal-and-multi-purpose-trees",
+            link: "/agroforestry/wild-and-forest-trees/medicinal-and-multi-purpose-trees",
         },
         {
             title: "Wild forest giants & Natives",
             image: product03,
-            link: "/agroForestry/wild-and-forest-trees/wild-forest-giants-and-natives",
+            link: "/agroforestry/wild-and-forest-trees/wild-forest-giants-and-natives",
         },
 
 

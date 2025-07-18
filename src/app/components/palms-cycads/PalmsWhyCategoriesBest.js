@@ -94,12 +94,12 @@ export const Categories = () => {
         {
             title: "Ornamental Palms",
             image: product1,
-            link: "/agroForestry/palms-cycads/ornamental-palms",
+            link: "/agroforestry/palms-cycads/ornamental-palms",
         },
         {
             title: "Functional & Native Palms",
             image: product2,
-            link: "/agroForestry/palms-cycads/functional-native-palms",
+            link: "/agroforestry/palms-cycads/functional-native-palms",
         },
 
 
