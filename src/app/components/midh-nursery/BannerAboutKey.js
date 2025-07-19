@@ -190,7 +190,9 @@ export const Key = () => {
 
               {/* Green Card   */}
               <div className="w-full lg:w-1/2">
-                <Link href="/agroForestry">
+
+                <Link href="/agroforestry">
+
                   <div className={`bg-[#1B453C] text-white p-6 md:p-8 w-[90%] mx-auto md:w-full ${index % 2 === 0 ? "md:rounded-br-[12px] md:rounded-bl-[0px] md:rounded-tr-[12px] rounded-tr-0 rounded-br-[12px] rounded-bl-[12px]" : "md:rounded-bl-[12px] md:rounded-tl-[12px] md:rounded-br-[0]  rounded-tr-0 rounded-br-[12px] rounded-bl-[12px] "}`}>
                     <h2 className="text-xl md:text-2xl font-semibold mb-1">
                       {item.title}

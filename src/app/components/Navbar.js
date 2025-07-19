@@ -31,7 +31,7 @@ const navigation = [
     name: "Our Business",
     href: "/our-business",
     submenu: [
-      { name: "Agroforestry", href: "/agroForestry" },
+      { name: "Agroforestry", href: "/agroforestry" },
       { name: "Agro-Tourism", href: "/agro-tourism" },
       { name: "Contract Farming", href: "/contract-farming" },
       // { name: "Contract Farming Fodder", href: "/contract-farming-fodder" },
