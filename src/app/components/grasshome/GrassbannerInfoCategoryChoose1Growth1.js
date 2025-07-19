@@ -97,12 +97,16 @@ export const Category = () => {
         {
             title: "Grass & Fodder Crops",
             image: product1,
+
             link: "/agroforestry/grass-fodder-and-agricultural-plants/grass-and-fodder-crops",
+
         },
         {
             title: "Agricultural & Kitchen Crops",
             image: product2,
+
             link: "/agroforestry/grass-fodder-and-agricultural-plants/agricultural-and-kitchen-crops",
+
         },
 
 

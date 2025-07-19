@@ -34,6 +34,7 @@ export const ProductPage = () => {
   const productlist = [
     {
       img: img2,
+
       link: "agroforestry/timber/rosewood",
     },
     {
@@ -47,11 +48,13 @@ export const ProductPage = () => {
     {
       img: img5,
       link: "agroforestry/mahagony",
+
     },
   ];
   const productlist2 = [
     {
       img: img7,
+
       link: "agroforestry/guava",
     },
     {
@@ -65,11 +68,13 @@ export const ProductPage = () => {
     {
       img: img10,
       link: "/agroforestry/orange",
+
     },
   ];
   const productlist3 = [
     {
       img: img02,
+
       link: "agroforestry/medicinal-herbal-plants/stress-relief-and-cognitive-wellness",
     },
     {
@@ -83,6 +88,7 @@ export const ProductPage = () => {
     {
       img: img05,
       link: "agroforestry/medicinal-herbal-plants/respirtaory-inflammatory-relief",
+
     },
   ];
   return (
@@ -107,7 +113,9 @@ export const ProductPage = () => {
               />
 
               <Link
+
                 href="agroforestry/timber" className="bg-[#9A9771] text-center md:text-left text-2xl text-white px-6 block w-full lg:px-8 p-4 lg:p-5">
+
                 {category1}
               </Link>
             </div>
@@ -146,7 +154,9 @@ export const ProductPage = () => {
                 className="w-full h-auto rounded-tl-3xl rounded-tr-3xl"
               />
               <Link
+
                 href="agroforestry/fruits-and-vegetables"
+
                 className="bg-[#719A8E] text-center md:text-left text-2xl text-white px-6 block w-full lg:px-8 p-4 lg:p-5"
               >
                 {category2}
@@ -185,7 +195,9 @@ export const ProductPage = () => {
               />
 
               <Link
+
                 href="agroforestry/medicinal-herbal-plants" className="bg-[#337049] text-center md:text-left text-2xl text-white px-6 block w-full lg:px-8 p-4 lg:p-5">
+
                 {category3}
               </Link>
             </div>

@@ -45,7 +45,9 @@ export const OrnamentalPlants = () => {
                         <p className='text-white font-light mb-8'>{description}</p>
                         <Link
                             className="text-sm relative bg-[#9A9771] text-white inline-block w-2/3 text-center rounded-full p-3 hover:bg-white hover:text-[#9A9771] group"
+
                             href="agroforestry/flowering-ornamental-plants"
+
                         >
                             Explore More
                             <span className="text-[#D9D9D9]">
@@ -76,7 +78,9 @@ export const OrnamentalPlants = () => {
                         <p className='text-white font-light mb-8'>{description1}</p>
                         <Link
                             className="text-sm relative bg-[#9A9771] text-white inline-block w-2/3 text-center rounded-full p-3 hover:bg-white hover:text-[#9A9771] group"
+
                             href="agroforestry/palms-cycads"
+
                         >
                             Explore More
                             <span className="text-[#D9D9D9]">
@@ -107,7 +111,9 @@ export const OrnamentalPlants = () => {
                         <p className='text-white font-light mb-8'>{description2}</p>
                         <Link
                             className="text-sm relative bg-[#9A9771] text-white inline-block w-2/3 text-center rounded-full p-3 hover:bg-white hover:text-[#9A9771] group"
+
                             href="agroforestry/grass-fodder-and-agricultural-plants"
+
                         >
                             Explore More
                             <span className="text-[#D9D9D9]">
@@ -138,7 +144,9 @@ export const OrnamentalPlants = () => {
                         <p className='text-white font-light mb-8'>{description3}</p>
                         <Link
                             className="text-sm relative bg-[#9A9771] text-white inline-block w-2/3 text-center rounded-full p-3 hover:bg-white hover:text-[#9A9771] group"
+
                             href="agroforestry/wild-and-forest-trees"
+
                         >
                             Explore More
                             <span className="text-[#D9D9D9]">
@@ -167,12 +175,16 @@ export const CategoryCard = () => {
         {
             title: "Melia Dubia",
             image: img3,
+
             link: "/agroforestry/timber/melia-dubia",
+
         },
         {
             title: "Bamboo",
             image: img4,
+
             link: "/agroforestry/bamboo",
+
         },
         // {
         //     title: "Neem",

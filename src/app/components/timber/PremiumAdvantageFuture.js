@@ -55,17 +55,23 @@ export const Advantage = () => {
     {
       "image": image1,
       "name": "Mahogony",
+
       "link": "/agroforestry/mahagony"
+
     },
     {
       "image": image2,
       "name": "Red Sandal",
+
       "link": "/agroforestry/timber/red-sandalwood"
+
     },
     {
       "image": image3,
       "name": "Gamhar",
+
       "link": "/agroforestry/gamhar"
+
     },
   ]
   return (

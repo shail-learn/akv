@@ -78,22 +78,30 @@ export const Categories = () => {
         {
             title: "Stress Relief & Cognitive Wellness",
             image: product1,
+
             link: "/agroforestry/medicinal-herbal-plants/stress-relief-and-cognitive-wellness",
+
         },
         {
             title: "Immunity & Infection Control",
             image: product2,
+
             link: "/agroforestry/medicinal-herbal-plants/immunity-and-infection-control",
+
         },
         {
             title: "Digestive liver & metabolism ",
             image: product3,
+
             link: "/agroforestry/medicinal-herbal-plants/digestive-liver-and-metabolism",
+
         },
         {
             title: "Respirtaory & Inflammatory Relief",
             image: product4,
+
             link: "/agroforestry/medicinal-herbal-plants/respirtaory-inflammatory-relief",
+
         },
 
     ];

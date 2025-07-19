@@ -19,22 +19,30 @@ export const SliderCard = () => {
     {
       title: "Shrubs & Hedges",
       image: img1,
+
       link: "/agroforestry/shrubs-and-hedges",
+
     },
     {
       title: "Shrubs",
       image: img2,
+
       link: "/agroforestry/shrubs-and-hedges/shrubs",
+
     },
     {
       title: "Hedges",
       image: img3,
+
       link: "/agroforestry/shrubs-and-hedges/hedges",
+
     },
     {
       title: "Shrubs",
       image: img2,
+
       link: "/agroforestry/shrubs-and-hedges/shrubs",
+
     },
 
   ]

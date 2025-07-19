@@ -29,67 +29,93 @@ export const Find = () => {
     {
       title: "Citrus & Juicy Fruits",
       image: fruit1,
+
       link: "/agroforestry/fruits-and-vegetables/citrus-fruit",
+
     },
     {
       title: "Berry, Vine & Nut Plants",
       image: fruit2,
+
       link: "/agroforestry/fruits-and-vegetables/berry-vine-fruits",
+
     },
     {
       title: "Large, Medicinal & Multipurpose Trees",
       image: fruit3,
+
       link: "/agroforestry/fruits-and-vegetables/medicinalHerb",
+
     },
     {
       title: "Exotic & Imported Fruits",
       image: fruit4,
+
       link: "/agroforestry/fruits-and-vegetables/exotic-imported-fruits",
+
     },
     {
       title: "Indian & Tropical Fruits",
       image: fruit5,
+
       link: "/agroforestry/fruits-and-vegetables/tropical-fruits",
+
     },
     {
       title: "Guava",
       image: fruit6,
+
       link: "/agroforestry/guava",
+
     },
     {
       title: "Papaya",
       image: fruit7,
+
       link: "/agroforestry/papaya",
+
     },
     {
       title: "Amla",
       image: fruit8,
+
       link: "/agroforestry/amla",
+
     },
     {
       title: "Orange",
       image: fruit9,
+
       link: "/agroforestry/orange",
+
     },
     {
       title: "Mango",
       image: fruit10,
+
       link: "/agroforestry/mango",
+
     },
     {
       title: "Indigenous Fruits",
       image: fruit11,
+
       link: "/agroforestry/fruits-and-vegetables/indigenous-fruits",
+
     },
     {
       title: "Lime",
       image: fruit12,
+
       link: "/agroforestry/fruits-and-vegetables/lime",
+
     },
     {
       title: "Dry Fruits",
       image: fruit13,
+
       link: "/agroforestry/fruits-and-vegetables/dry-fruits",
+
     },
   ];
 
