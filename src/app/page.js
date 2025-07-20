@@ -47,24 +47,24 @@ export default function Home() {
 
 
 
-  return (
-    <>
-     <Banner/>
-     <VedioHome/>
-     <WhatWeDo/>
-     <ImpactHighlights/>
-     <OurBusiness/>
-     <OurJourney/>
-     <PurposeVision/>
-     <WorkingOn/>
-     <Technology/>
-     <Ourteam/>
-     <PurposeAndValue/>
-     <EmpoweringBanner/>
-     <EmpoweringBox/>
-     <PartOfChange/>
-     <Contact/>
-     <Map/>
-    </>
+  return ( apidata?(<>Loading...</>):(<>
+  <Banner props={apidata}/>
+  <VedioHome props={apidata}/>
+  <WhatWeDo props={apidata}/>
+  <ImpactHighlights props={apidata}/>
+  <OurBusiness props={apidata}/>
+  <OurJourney props={apidata}/>
+  <PurposeVision props={apidata}/>
+  <WorkingOn props={apidata}/>
+  <Technology props={apidata}/>
+  <Ourteam props={apidata}/>
+  <PurposeAndValue props={apidata}/>
+  <EmpoweringBanner props={apidata}/>
+  <EmpoweringBox props={apidata}/>
+  <PartOfChange props={apidata}/>
+  <Contact props={apidata}/>
+  <Map props={apidata}/>
+ </>)
+    
   );
 }
