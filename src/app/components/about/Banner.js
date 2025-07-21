@@ -82,7 +82,8 @@ export const UnderBanner = () => {
     const pageUrl = "/";
     return (
         <>
-            <section className='bg-cover bg-bottom md:bg-center relative text-center md:text-left -mt-10 pt-16 pb-16 lg:pt-36 lg:pb-36' style={{ background: `url(${bgbanner.src})center / cover no-repeat` }}>
+            <section className='bg-cover bg-bottom md:bg-center relative text-center md:text-left   py-16 lg:py-24' style={{ background: `url(${bgbanner.src})center / cover no-repeat` }}>
+                <div className='absolute left-0 top-0 w-full h-full bg-black opacity-30'></div>
                 <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2 relative z-1 '>
                     <div className='flex flex-col lg:flex-row justify-between items-center gap-4 lg:gap-12'>
                         <div className='lg:w-5/12  w-12/12'>
