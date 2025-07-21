@@ -111,7 +111,7 @@ export const Mission = () => {
   return (
     <>
       <section
-        className=" bg-white pt-0 pb-8 lg:pt-20 lg:pb-20 outer-arrow left-outer green_icon_slider outer_hide_slider" >
+        className=" bg-white  py-16 lg:py-20 outer-arrow left-outer green_icon_slider outer_hide_slider" >
         <div className='mx-auto max-w-[1400px] md:mr-0 px-4 md:px-8 lg:px-2 '>
           <div className='flex flex-wrap lg:flex-nowrap items-center gap-6 px-0 md:px-6    lg:px-2'>
             <div className='w-full lg:w-3/12 '>

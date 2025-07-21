@@ -98,8 +98,9 @@ export const GreenSupport = () => {
                 className="bg-cover bg-center relative text-center md:text-left  flex items-center justify-center pt-16 pb-16 lg:pt-32 lg:pb-32"
                 style={{ backgroundImage: `url(${banner.src})` }}
             >
-                <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2'>
-                    <h2 className="text-3xl lg:text-[40px]  text-center lg:text-start md:leading-[1.3] md:text-4xl font-semibold redhat text-white mb-10" dangerouslySetInnerHTML={{ __html: heading }}></h2>
+                <div className='absolute top-0 left-0 w-full h-full bg-black opacity-30'></div>
+                <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2 relative'>
+                    <h2 className="text-4xl lg:text-[40px]  text-center lg:text-start md:leading-[1.3] md:text-4xl font-semibold redhat text-white mb-10" dangerouslySetInnerHTML={{ __html: heading }}></h2>
 
                     <div className='lg:w-6/12   w-full'>
                         <div className='text-white'>
@@ -183,6 +184,7 @@ export const Support = () => {
   return (
     <>
       <section className="relative text-center md:text-left flex items-center justify-center pt-16 pb-16">
+
         <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-2">
           <div className="lg:w-10/12 mx-auto w-full">
             <div className="grid gap-4 md:flex">
