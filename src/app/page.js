@@ -32,7 +32,8 @@ export default function Home() {
 
   async function test(){
 
-    const data=await axios.get('data/page/homepage');
+    // const data=await axios.get('data/page/homepage');
+    const data=await axios.get('data/pages',{headers:{'x-page':'homepage',}},);
 
     console.log(data.data);
     setapidata(data.data);
@@ -48,23 +49,25 @@ export default function Home() {
 
 
   return (
-    <>
-     <Banner/>
-     <VedioHome/>
-     <WhatWeDo/>
-     <ImpactHighlights/>
-     <OurBusiness/>
-     <OurJourney/>
-     <PurposeVision/>
-     <WorkingOn/>
-     <Technology/>
-     <Ourteam/>
-     <PurposeAndValue/>
-     <EmpoweringBanner/>
-     <EmpoweringBox/>
-     <PartOfChange/>
-     <Contact/>
-     <Map/>
-    </>
+    apidata?(<>
+     <Banner props={apidata}/>
+     <VedioHome props={apidata}/>
+     <WhatWeDo props={apidata}/>
+     <ImpactHighlights props={apidata}/>
+     <OurBusiness props={apidata}/>
+     <OurJourney props={apidata}/>
+     <PurposeVision props={apidata}/>
+     <WorkingOn props={apidata}/>
+     <Technology props={apidata}/>
+     <Ourteam props={apidata}/>
+     <PurposeAndValue props={apidata}/>
+     <EmpoweringBanner props={apidata}/>
+     <EmpoweringBox props={apidata}/>
+     <PartOfChange props={apidata}/>
+     <Contact props={apidata}/>
+     <Map props={apidata}/>
+    </>):
+    (<>Loading..</>)
+    
   );
 }

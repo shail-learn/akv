@@ -10,8 +10,9 @@ import icon from "../../../assets/images/logo-icon.svg";
 
 import Image from 'next/image';
 import Link from 'next/link';
-export const Banner = () => {
-    const vedio = "https://www.akv.org.in/admin/homepage/EGQV6iKpO62xGVeJlfgV4hAr8uGTSNrMdiZ9A4xq.mp4"
+export const Banner = ({props}) => {
+  console.log(props.data.data.sec1_vid);
+    const vedio = props.data.data.data.sec1_vid;
     const text = {
         heading: 'Forests of Tomorrow, Prosperity  for Generations',
         title: 'Join us in building a greener, more sustainable world through agroforestry and innovation.'
