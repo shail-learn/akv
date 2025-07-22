@@ -11,8 +11,8 @@ import icon from "../../../assets/images/logo-icon.svg";
 import Image from 'next/image';
 import Link from 'next/link';
 export const Banner = ({props}) => {
-  console.log('screwup',props.data.data);
-    const vedio = `${process.env.NEXT_PUBLIC_SITEASSET}/homepage/${props.data.data.sec1_vid}`;
+  console.log('data',props.data.data);
+    const vedio = `${process.env.NEXT_PUBLIC_SITEASSET}/homepage/${props?.data?.data?.sec1_vid}`;
     console.log('vide ka linkkk',vedio);
     const text = {
         heading: 'Forests of Tomorrow, Prosperity  for Generations',
@@ -86,7 +86,7 @@ export const Banner2 = () => {
 
 
 
-export const VedioHome = () => {
+export const VedioHome = ({props}) => {
   const videoRef = useRef(null);
   const pathname = usePathname();
   const isHomepage = pathname === "/";
@@ -138,7 +138,7 @@ export const VedioHome = () => {
         <video
           ref={videoRef}
           className="w-full h-auto"
-          src="https://www.akv.org.in/admin/homepage/LAZqhOZ5kC9qslifM9FT22ZTsgVWN8Yu3MSQuaQm.mp4"
+          src={process.env.NEXT_PUBLIC_SITEASSET+'/homepage/'+props.data.data.sec2gif}
           autoPlay
           muted
           loop

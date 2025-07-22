@@ -17,13 +17,13 @@ import images3 from "../../../assets/images/home/what/3.webp";
 import images4 from "../../../assets/images/home/what/4.webp";
 
 
-function WhatWeDo() {
+function WhatWeDo({props}) {
 
-    const heading = ["What We Do"]
+    const heading = [props?.data?.data?.sec3title??"What We Do"]
     const text = [
 
         {
-            description: "<b>Established in 2018, Atulye Krishi Vana</b>, stands at the forefront of agroforestry innovation, driving sustainable solutions for a better planet. Dedicated to transforming degraded landscapes into thriving, biodiverse ecosystems, we are committed to addressing climate change while fostering economic growth. As a leader in sustainable agriculture, our mission is to redefine land restoration and create long-lasting value for communities and the environment alike."
+            description: `${props?.data?.data?.sec3text??"<b>Established in 2018, Atulye Krishi Vana</b>, stands at the forefront of agroforestry innovation, driving sustainable solutions for a better planet. Dedicated to transforming degraded landscapes into thriving, biodiverse ecosystems, we are committed to addressing climate change while fostering economic growth. As a leader in sustainable agriculture, our mission is to redefine land restoration and create long-lasting value for communities and the environment alike."}`
 
         },
 

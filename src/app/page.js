@@ -67,7 +67,9 @@ export default function Home() {
      <Contact props={apidata}/>
      <Map props={apidata}/>
     </>):
-    (<>Loading..</>)
+    (<div style={{ minHeight: "80vh", display: "flex", justifyContent: "center", alignItems: "center" }}>
+  <p>Loading...</p>
+</div>)
     
   );
 }

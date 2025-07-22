@@ -4,11 +4,11 @@ import bgimg from "../../../assets/images/home/contact-bg.webp";
 
 import Image from 'next/image';
 
-export const Contact = () => {
-    const text = "Whether you have questions, want to collaborate, or simply want to learn more, we’re here to help!"
+export const Contact = ({props}) => {
+    const text = `${props?.data?.data?.sec14_content??"Whether you have questions, want to collaborate, or simply want to learn more, we’re here to help!"}`
     return (
         <section className='mx-auto max-w-7xl px-4 pt-0 md:px-8 lg:px-2 lg:pt-4  py-16'>
-            <h2 className='text-black redhat text-center mb-0 font-semibold leading-relaxed text-3xl md:text-4xl  md:mb-8'>Get in Touch</h2>
+            <h2 className='text-black redhat text-center mb-0 font-semibold leading-relaxed text-3xl md:text-4xl  md:mb-8'>{props?.data?.data?.sec14_title??"Get in Touch"}</h2>
             <div className='  gap-10  grid  grid-cols-1  lg:grid-cols-12 items-center justify-center'>
                 <div className='col-span-1'></div>
                 <div className='w-full relative p-6 py-16 md:h-full border-[1px] poppins text-xl text-justify border-[#A1A1A1] md:p-6 rounded-3xl lg:p-10 col-span-5  h-full grid items-center justify-center '
@@ -42,12 +42,13 @@ export const Contact = () => {
 }
 
 
-export const Map = () => {
+export const Map = ({props}) => {
     const text = "Whether you have questions, want to collaborate, or simply want to learn more, we’re here to help!"
     return (
         <div className="map-container pt-10" style={{ width: "100%", height: "400px" }}>
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3529.312464908885!2d77.1826692!3d22.9950995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397cf92475629591%3A0xa1c838400aff4884!2sAtulye%20Krishi%20Vana!5e1!3m2!1sen!2sin!4v1744010227346!5m2!1sen!2sin"
+                // src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3529.312464908885!2d77.1826692!3d22.9950995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397cf92475629591%3A0xa1c838400aff4884!2sAtulye%20Krishi%20Vana!5e1!3m2!1sen!2sin!4v1744010227346!5m2!1sen!2sin"
+                src={props.data.data.map_code??"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3529.312464908885!2d77.1826692!3d22.9950995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397cf92475629591%3A0xa1c838400aff4884!2sAtulye%20Krishi%20Vana!5e1!3m2!1sen!2sin!4v1744010227346!5m2!1sen!2sin"}
                 width="100%"
                 height="100%"
                 style={{ border: "0" }}
