@@ -11,8 +11,9 @@ import icon from "../../../assets/images/logo-icon.svg";
 import Image from 'next/image';
 import Link from 'next/link';
 export const Banner = ({props}) => {
-  console.log(props.data.data.sec1_vid);
-    const vedio = props.data.data.data.sec1_vid;
+  console.log('screwup',props.data.data);
+    const vedio = `${process.env.NEXT_PUBLIC_SITEASSET}/homepage/${props.data.data.sec1_vid}`;
+    console.log('vide ka linkkk',vedio);
     const text = {
         heading: 'Forests of Tomorrow, Prosperity  for Generations',
         title: 'Join us in building a greener, more sustainable world through agroforestry and innovation.'
