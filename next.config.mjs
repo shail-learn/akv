@@ -2,7 +2,7 @@
 const nextConfig = {
 
     images: {
-      domains: ["images.unsplash.com", "cruxcreativedemo2.com", "www.akv.org.in"]
+      domains: ["images.unsplash.com", "cruxcreativedemo2.com", "www.akv.org.in","127.0.0.1"]
       },
 
 };

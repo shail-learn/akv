@@ -1,10 +1,10 @@
 import React from 'react'
 import banner from "../../../assets/images/home/communication.webp";
-export const EmpoweringBanner = () => {
-    const heading = 'Building Natural Resources for the Generations to Come';
-    const text = "Our agroforestry initiatives have already made a significant positive impact on the environment and the local community."
+export const EmpoweringBanner = ({props}) => {
+    const heading = props?.data?.data?.sec11_title??'Building Natural Resources for the Generations to Come';
+    const text = props?.data?.data?.sec11_content??"Our agroforestry initiatives have already made a significant positive impact on the environment and the local community."
     return (
-        <section className="bg-cover bg-center relative h-[500px]  flex items-center justify-center" style={{ backgroundImage: `url(${banner.src})` }}>
+        <section className="bg-cover bg-center relative h-[500px]  flex items-center justify-center" style={{ backgroundImage: `url(${process.env.NEXT_PUBLIC_SITEASSET+'/homepage/'+props?.data?.data?.sec11_image??banner.src})` }}>
             <div className='bg-black bg-opacity-30 w-4/5 lg:w-3/5 text-white text-center p-6 py-10'>
                 <h2 className='redhat mb-4 text lg:mb-7 text-center text-3xl lg:text-4xl  font-normal'>{heading}</h2>
                 <p className='font-light poppins text-sm md:text-base'>{text}</p>

@@ -36,6 +36,10 @@ function WhatWeDo({props}) {
         { img: images4 },
     ];
 
+//        const sliderImages = props?.data?.section3.map((item) => ({
+//   img: `${process.env.NEXT_PUBLIC_SITEASSET}/homepage/${item.whatwe_doimg}`
+// }));
+
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
     return (
         <section className=' pt-24 pb-20 lg:pt-32 lg:pb-24 bg-darkg'>
@@ -46,6 +50,7 @@ function WhatWeDo({props}) {
                             <Image
                                 src={icon}
                                 alt="shape"
+                                
                                 className='h-auto w-auto'
                             />
                         </div>
@@ -88,6 +93,8 @@ function WhatWeDo({props}) {
                                     <Image
                                         src={item.img}
                                         alt={`Slide ${index + 1}`}
+                                        width={1200}  // realistic width
+  height={500}
                                         className="w-full h-[500px] object-contain rounded-2xl"
 
                                     />
