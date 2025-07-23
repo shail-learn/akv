@@ -152,8 +152,7 @@ body button,
   top: 101%;
   left: 50%;
   transform: translateX(-50%);
-  background: url(../assets/images/home/plant-pot.png) center center/ contain
-    no-repeat;
+  background: url(../assets/images/home/plant-pot.png) center center/ contain no-repeat;
   width: 3.5rem;
   height: 3.5rem;
 }
@@ -233,8 +232,7 @@ body button,
 
 .arrow_black .swiper-button-next::after,
 .arrow_black .swiper-button-prev::after {
-  background: url(../assets/images/business/right-arrow.svg) center center /
-    contain no-repeat;
+  background: url(../assets/images/business/right-arrow.svg) center center / contain no-repeat;
   color: transparent;
 }
 
@@ -316,7 +314,7 @@ body button,
 }
 
 .description_project h3 {
-  font-size: 20px;
+  font-size: 22px;
   color: #1f1e17;
   font-weight: 600;
 }
@@ -326,7 +324,7 @@ body button,
 }
 
 .description_project ul li {
-  font-size: 14px;
+  font-size: 17px;
   margin-bottom: 10px;
   position: relative;
   padding-left: 25px;
@@ -336,7 +334,7 @@ body button,
   content: "";
   position: absolute;
   left: 0;
-  top: 3px;
+  top: 6px;
   background: url(../assets/images/about/check.svg) center center / contain;
   width: 15px;
   height: 15px;
@@ -449,11 +447,9 @@ body button,
 }
 
 .bg-earth {
-  background: radial-gradient(
-    circle,
-    rgba(51, 112, 73, 0.11) 0%,
-    rgba(255, 255, 255, 0.86) 100%
-  );
+  background: radial-gradient(circle,
+      rgba(51, 112, 73, 0.11) 0%,
+      rgba(255, 255, 255, 0.86) 100%);
   mix-blend-mode: multiply;
 }
 
@@ -612,11 +608,9 @@ body button,
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    179.87deg,
-    rgba(0, 0, 0, 0) 31.23%,
-    rgba(0, 0, 0, 0.79) 95.23%
-  );
+  background: linear-gradient(179.87deg,
+      rgba(0, 0, 0, 0) 31.23%,
+      rgba(0, 0, 0, 0.79) 95.23%);
 }
 
 .items-end-slider.expant_slider .swiper-wrapper {
@@ -781,16 +775,20 @@ body button,
   bottom: 0px;
   top: auto;
 }
-.original_img .icon_slider .swiper-slide img, .original_img1 .swiper-slide img {
+
+.original_img .icon_slider .swiper-slide img,
+.original_img1 .swiper-slide img {
   filter: none !important;
   width: 100% !important;
   height: 100% !important;
   border-radius: 16px;
 }
+
 .padding_argust {
   padding-top: 4rem;
   padding-bottom: 2rem;
 }
+
 .desktop-p-0.pt-10 {
   padding-bottom: 5rem !important;
 }
@@ -798,36 +796,45 @@ body button,
 .white_grid {
   background: #fff;
 }
+
 .white_grid h2,
 .growth_white h2 {
   color: #1b453c !important;
 }
+
 .white_grid .text-white,
 .growth_white .text-white {
   color: #000;
 }
+
 body .grid_padding {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+
 .growth_white .absolute {
   background: #fff;
 }
+
 .growth_white .GrowthNavigation .swiper-button-prev,
 .growth_white .GrowthNavigation .swiper-button-next {
   color: #000;
 }
+
 .growth_white .GrowthNavigation .swiper-button-prev::after,
 .growth_white .GrowthNavigation .swiper-button-next::after {
   font-weight: 600;
 }
+
 body .plant_p {
   padding: 0rem 0;
 }
+
 .h2_green h2 {
   color: #000;
   padding-top: 2rem;
 }
+
 .custom_height .p-6,
 .custom_height1 .p-6 {
   padding: 3rem;
@@ -836,36 +843,46 @@ body .plant_p {
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .custom_height1 .p-6 {
   padding: 2rem;
 }
+
 .custom_height .p-6 h4 {
   margin-bottom: 0;
 }
+
 .blurheight .h-96 {
   height: 28rem;
 }
+
 .height_300 .card1 {
   height: 300px;
 }
-.blurheight2 .h-96{
+
+.blurheight2 .h-96 {
   height: 22.5rem;
 }
-.blurheight2.black_text h2{
+
+.blurheight2.black_text h2 {
   color: #000;
 }
+
 .ul_list ul {
   list-style: disc;
   padding-left: 1rem;
   margin-top: 1rem;
   text-align: left;
 }
-.big_height .h-96{
- height: 32rem;
+
+.big_height .h-96 {
+  height: 32rem;
 }
+
 .footer_last li:last-child span {
-  display:none
+  display: none
 }
+
 @media (min-width: 1024px) {
   .orange_div .dark_active .swiper-slide-next .bg-white {
     background: #e9a343;
@@ -952,6 +969,7 @@ body .plant_p {
     background: linear-gradient(89deg, #e6e6e621 -25.84%, #e6e6e6ad 95.85%);
     width: 22%;
   }
+
   .desktop-p-0 {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
@@ -996,16 +1014,27 @@ body .plant_p {
     height: 100%;
     background: #fff;
   }
-  .grid3 .img_div .rounded-3xl{
+
+  .grid3 .img_div .rounded-3xl {
     height: 15rem;
   }
-  .grid3  .border {
+
+  .grid3 .border {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
   }
+
   .desktop_hide .style2_slider {
-   display: none;
+    display: none;
   }
+
+  .custom_left_scroll p {
+    font-size: 17px;
+  }
+}
+
+.custom_left_scroll .impact_d h3 {
+  font-size: 18px;
 }
 
 @media (max-width: 1023px) {
@@ -1150,6 +1179,10 @@ body .plant_p {
     padding: 3rem;
   }
 
+  .custom_left_scroll p {
+    font-size: 16px;
+  }
+
   .dark_active .swiper-slide-active h3 {
     color: #000 !important;
   }
@@ -1214,51 +1247,77 @@ body .plant_p {
   .center_faq .-top-32 {
     top: 0rem;
   }
+
   .devided-line {
     margin-top: -42px;
   }
+
   .devided-line:after {
     top: 50px;
     height: 10px;
   }
+
   .img_arrow .flex-col:nth-child(odd) .img_div:after,
   .img_arrow .flex-col:nth-child(even) .img_div:after {
     bottom: 20px;
     top: auto;
   }
+
   .img_arrow .img_div:after {
     height: 90px;
   }
+
   .img_arrow .flex-col:nth-child(2n) .img_div {
     padding-top: 0;
     padding-bottom: 90px;
   }
+
   .img_arrow .flex-col:nth-child(2n) .img_div:after {
     transform: translateX(-50%) rotate(0deg);
   }
+
   .padding_argust {
     margin-top: -1rem;
     padding: 0;
   }
+
   .padding_argust .pb-10 {
     padding-bottom: 0;
   }
+
   .desktop-p-0.pt-10 {
     padding-bottom: 2rem !important;
   }
-  .alter-bg .flex-col:nth-child(1),  .alter-bg .flex-col:nth-child(4),  .alter-bg .flex-col:nth-child(5){
+
+  .alter-bg .flex-col:nth-child(1),
+  .alter-bg .flex-col:nth-child(4),
+  .alter-bg .flex-col:nth-child(5) {
     background: #295F54;
   }
-  .alter-bg .flex-col:nth-child(2),  .alter-bg .flex-col:nth-child(3),  .alter-bg .flex-col:nth-child(6){
+
+  .alter-bg .flex-col:nth-child(2),
+  .alter-bg .flex-col:nth-child(3),
+  .alter-bg .flex-col:nth-child(6) {
     background: #549999;
   }
-  .content_page p, .content_page ul li {
+
+  .content_page p,
+  .content_page ul li {
     font-size: 15px;
   }
-  .eco_dotted::after{
+
+  .eco_dotted::after {
     left: 144px;
     top: 7%;
     height: 80%;
+  }
+
+  .description_project ul li {
+    font-size: 16px;
+  }
+
+  .description_project h3 {
+    font-size: 20px;
   }
 }
 

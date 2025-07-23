@@ -53,25 +53,25 @@ const WhyChooseUs = () => {
   const heading1 = "Our Training"
   const bgimg = backgroundImage
   const fruitData = [
-      {
-          title: "Multi-Layer Farming Training by Atulye Krishi Vana",
-          image: product1,
-          link: "/training-development/multi-layer-farming-training-by-atulye-krishi-vana",
-      },
-      {
-          title: "Mushroom Spawn Preparation and Cultivation Training",
-          image: product2,
-          link: "/training-development/mushroom-spawn-preparation-and-cultivation-training",
-      },
-      {
-          title: "Integrated Sustainable Agriculture Training by Atulye Krishi Vana",
-          image: product3,
-          link: "/training-development/integrated-sustainable-agriculture-training-by-atulye-krishi-vana",
-      },
-      {
-        title: "Drone Application in Agriculture Training",
-        image: product4,
-        link: "/training-development/drone-application-in-agriculture-training",
+    {
+      title: "Multi-Layer Farming Training by Atulye Krishi Vana",
+      image: product1,
+      link: "/training-development/multi-layer-farming-training-by-atulye-krishi-vana",
+    },
+    {
+      title: "Mushroom Spawn Preparation and Cultivation Training",
+      image: product2,
+      link: "/training-development/mushroom-spawn-preparation-and-cultivation-training",
+    },
+    {
+      title: "Integrated Sustainable Agriculture Training by Atulye Krishi Vana",
+      image: product3,
+      link: "/training-development/integrated-sustainable-agriculture-training-by-atulye-krishi-vana",
+    },
+    {
+      title: "Drone Application in Agriculture Training",
+      image: product4,
+      link: "/training-development/drone-application-in-agriculture-training",
     },
   ];
 
@@ -90,7 +90,7 @@ const WhyChooseUs = () => {
       >
         <div className="absolute inset-0 bg-[#1B453C] opacity-80"></div>
         <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-2 relative z-1 ">
-          <h2 className="text-3xl md:leading-[1.3] md:text-4xl font-medium text-center redhat text-white mb-12">
+          <h2 className="text-3xl md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold text-center redhat text-white mb-12">
             {heading}
           </h2>
         </div>
@@ -103,11 +103,12 @@ const WhyChooseUs = () => {
                   alt={feature.title}
                   layout="fill"
                   objectFit="cover rounded-full"
+                  quality={95}
                 />
               </div>
               <div>
-                <h3 className="text-white text-xl text-left redhat relative font-medium">{feature.title}</h3>
-                <p className="text-white mt-2 text-left  relative redhat text-sm">{feature.description}</p>
+                <h3 className="text-white text-xl md:text-[22px] text-left redhat relative font-medium">{feature.title}</h3>
+                <p className="text-white mt-2 text-left  relative redhat text-base md:text-[17px]">{feature.description}</p>
               </div>
             </div>
           ))}

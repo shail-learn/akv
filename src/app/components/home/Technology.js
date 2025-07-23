@@ -24,17 +24,17 @@ export const Technology = () => {
             <section
                 className="pt-14 pb-6 lg:pt-14 lg:pb-14 technology-sec" >
                 <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2 '>
-                    <div className='mx-auto justify-between flex flex-wrap lg:flex-nowrap gap-5 lg:gap-12'>
+                    <div className='mx-auto justify-between flex flex-wrap lg:flex-nowrap gap-2 lg:gap-12'>
                         <div className='w-full lg:w-4/12 mb-4'>
-                            <h2 className="lg:leading-snug text-black redhat mb-4 lg:mb-7 text-center lg:text-left text-3xl md:text-4xl  font-medium  w-full">
+                            <h2 className="lg:leading-snug text-black redhat mb-0 lg:mb-7 text-center lg:text-left text-3xl md:text-4xl lg:text-[40px] font-semibold w-full">
                                 Technology-Driven  <span className='text-[#4C9E8C]'>Agriculture</span></h2>
                             {/* <p className='text-center lg:text-left text-black text-lg lg:text-xl'>Features:</p> */}
                         </div>
-                        <div className='w-full lg:w-6/12 text-justify'>
-                            <p className=' text-[#1B453C] text-normal text-sm md:text-[15px] mb-8 lg:mb-10'>
+                        <div className='w-full lg:w-6/12 text-justify mb-6 md:mb-0'>
+                            <p className=' text-[#1B453C] text-normal text-base md:text-[17px] mb-8 lg:mb-10'>
                                 {text}
                             </p>
-                            <Link className='text-[#1B453C] bg-white border-[1px] font-normal p-2 px-12 lg:px-12 border-[#1B453C] hover:bg-teal-900 hover:text-white transition delay-100 duration-100 ease-in-out' href="/training-development">Learn About Our Technology</Link>
+                            <Link className='text-[#1B453C] bg-white border-[1px] font-medium p-3 px-12 lg:px-12 border-[#1B453C] hover:bg-teal-900 hover:text-white transition delay-100 duration-100 ease-in-out' href="/training-development">Learn About Our Technology</Link>
                         </div>
                     </div>
 
@@ -47,26 +47,26 @@ export const Technology = () => {
                             <Image src={img1} alt='icon' className='w-full mx-auto  h-full' />
                         </div>
                         <div className='col-span-3 h-72 lg:h-full text-white bg-[#1B453C] grid items-center transition-all duration-400 justify-center hover:bg-[#EFEFEF]  hover:text-[#1B453C]'>
-                            <p className='text-base md:text-[18px] w-1/2 m-auto text-center '>{text1}
+                            <p className='text-lg md:text-[20px] w-1/2 m-auto text-center '>{text1}
                             </p>
                         </div>
                         <div className='col-span-3 h-full'>
                             <Image src={img2} alt='icon' className='w-full mx-auto h-full' />
                         </div>
                         <div className='col-span-3 h-72 lg:h-full text-white bg-[#1B453C] grid items-center justify-center transition-all duration-400  hover:bg-[#EFEFEF]  hover:text-[#1B453C]'>
-                            <p className='text-base md:text-[18px] w-1/2 m-auto text-center '>{text2}
+                            <p className='text-lg md:text-[20px] w-1/2 m-auto text-center '>{text2}
                             </p>
                         </div>
 
                         <div className='col-span-3 order-6 lg:order-none  h-72 lg:h-full text-white bg-[#1B453C] grid items-center justify-center transition-all duration-400  hover:bg-[#EFEFEF]  hover:text-[#1B453C]'>
-                            <p className='text-base md:text-[18px] w-1/2 m-auto text-center '>{text3}
+                            <p className='text-lg md:text-[20px] w-1/2 m-auto text-center '>{text3}
                             </p>
                         </div>
                         <div className='col-span-3 order-5 lg:order-none  h-full'>
                             <Image src={img3} alt='icon' className='w-full mx-auto h-full' />
                         </div>
                         <div className='col-span-3 order-8 lg:order-none h-72 lg:h-full text-white bg-[#1B453C] grid items-center justify-center transition-all duration-400  hover:bg-[#EFEFEF]  hover:text-[#1B453C]'>
-                            <p className='text-base md:text-[18px] w-1/2 m-auto text-center '>{text4}
+                            <p className='text-lg md:text-[20px] w-1/2 m-auto text-center '>{text4}
                             </p>
                         </div>
                         <div className='col-span-3 order-7 lg:order-none  h-full'>

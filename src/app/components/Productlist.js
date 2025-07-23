@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
-export const Productlist = ({ heading, fruitData, bgimg,custom_space }) => {
+export const Productlist = ({ heading, fruitData, bgimg, custom_space }) => {
   const [showAll, setShowAll] = useState(false);
 
   const visibleItems = showAll ? fruitData : fruitData.slice(0, 6);
@@ -20,7 +20,7 @@ export const Productlist = ({ heading, fruitData, bgimg,custom_space }) => {
         }}
       >
         <div className="mx-auto max-w-7xl px-4 md:px-8 lg:px-2">
-          <h2 className="text-3xl md:text-4xl redhat font-semibold text-center text-[#1B453C] mb-14">
+          <h2 className="text-3xl md:text-4xl redhat lg:text-[40px] font-semibold text-center text-[#1B453C] mb-14">
             {heading}
           </h2>
 
@@ -42,14 +42,14 @@ export const Productlist = ({ heading, fruitData, bgimg,custom_space }) => {
                     />
                     <div className="absolute inset-0 bg-black opacity-20"></div>
                     <div className="absolute bottom-0 left-0 w-full p-4 text-white font-semibold text-base bg-opacity-80 flex justify-between items-center">
-                      <span className="min-w-[80%] max-w-[80%]">{item.title}</span>
+                      <span className="min-w-[80%] max-w-[80%] md:text-[17px]">{item.title}</span>
                       {showIcon && <FaLongArrowAltRight />}
                     </div>
                   </div>
 
                   {/* Back side for flip */}
                   {hasFlip && (
-                    <div className="absolute inset-0 bg-[#1b453c] font-light text-[15px] text-white flex items-center justify-center px-6 py-4 text-center opacity-0 group-hover:opacity-100 transition duration-500 z-20">
+                    <div className="absolute inset-0 bg-[#1b453c] font-light text-base md:text-[17px] text-white flex items-center justify-center px-6 py-4 text-center opacity-0 group-hover:opacity-100 transition duration-500 z-20">
                       <p>{item.flip}</p>
                     </div>
                   )}

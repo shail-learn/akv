@@ -77,7 +77,7 @@ export const SliderBlur = ({ boxslider = [], font, class2 }) => {
                                     <div className='mb-4'>
                                         <Image src={item.image} alt='icon' className='w-full h-full rounded-xl' />
                                     </div>
-                                    <h2 className='text-2xl font-normal pb-4' dangerouslySetInnerHTML={{ __html: item.heading }}></h2>
+                                    <h2 className='text-2xl font-semibold pb-4' dangerouslySetInnerHTML={{ __html: item.heading }}></h2>
 
                                     {item.description && (
                                         <>
@@ -89,7 +89,7 @@ export const SliderBlur = ({ boxslider = [], font, class2 }) => {
                                                 </ul>
                                             ) : (
                                                 <p
-                                                    className={`text-sm lg:text-[16px] font-light ${font}`}
+                                                    className={`text-base lg:text-[17px] font-normal ${font}`}
                                                     dangerouslySetInnerHTML={{ __html: item.description }}
                                                 />
                                             )}

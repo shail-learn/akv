@@ -136,8 +136,8 @@ function ClientPage() {
                       height={600}
                       className="rounded-[16px] w-full object-cover bg-[#A8A8A8]"
                     />
-                     <div className={`absolute w-20  h-20 bg-[#D2AE6D] -top-8 ${isEven ? '-left-8' : '-left-8'} -z-10 rounded-lg`}></div>
-                  <div className={`absolute w-20 h-20 bg-[#6D8C54] -bottom-10 ${isEven ? '-right-0 md:-right-8' : 'md:-right-8 right-0'} -z-10 rounded-lg`}></div>
+                    <div className={`absolute w-20  h-20 bg-[#D2AE6D] -top-8 ${isEven ? '-left-8' : '-left-8'} -z-10 rounded-lg`}></div>
+                    <div className={`absolute w-20 h-20 bg-[#6D8C54] -bottom-10 ${isEven ? '-right-0 md:-right-8' : 'md:-right-8 right-0'} -z-10 rounded-lg`}></div>
                   </div>
 
 
@@ -146,7 +146,7 @@ function ClientPage() {
 
 
                 <div className="w-full md:w-1/2 space-y-4">
-                  <h2 className="text-xl  font-bold">{founder.name}</h2>
+                  <h2 className="text-xl md:text-2xl  font-bold">{founder.name}</h2>
                   <p className="text-lg text-gray-700 redhat !mt-0">{founder.title}</p>
                   {founder.linkedin && (
                     <a
@@ -159,11 +159,11 @@ function ClientPage() {
                       <span color='text-[#FFFFFF33]'>|</span> Connect on LinkedIn
                     </a>
                   )}
-                  <p className="text-[#6C8A54] md:text-lg redhat pt-2">{founder.quote}</p>
+                  <p className="text-[#6C8A54] md:text-lg lg:text-[20px] redhat pt-2">{founder.quote}</p>
                   {founder.description.map((htmlLine, i) => (
                     <p
                       key={i}
-                      className="text-base font-medium redhat text-gray-800"
+                      className="text-base md:text-[17px] text-justify font-medium redhat text-gray-800"
                       dangerouslySetInnerHTML={{ __html: htmlLine }}
                     />
                   ))}

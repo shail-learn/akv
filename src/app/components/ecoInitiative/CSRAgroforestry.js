@@ -52,9 +52,9 @@ export const CsrProject = () => {
             <section className='relative text-center md:text-left   pb-12 pt-16  lg:pt-20 lg:pb-16'  >
                 <div className='mx-auto max-w-7xl px-4 md:px-6 mx:px-2 relative z-1 '>
                     <div className='lg:w-12/12  w-full  w-12/12'>
-                        <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-normal redhat text-center text-[#1B453C] mb-4'>{heading}</h2>
-                        <h5 className='text-xl md:leading-[1.3] md:text-2xl font-medium redhat text-center text-[#F7C35F] mb-3'>{heading2}</h5>
-                        <p className='text-base md:leading-[1.3] font-normal redhat text-center text-black mb-16'>{text}</p>
+                        <h2 className='text-3xl md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold redhat text-center text-[#1B453C] mb-4'>{heading}</h2>
+                        <h5 className='text-[22px] md:leading-[1.3] md:text-[26px] font-medium redhat text-center text-[#F7C35F] mb-3'>{heading2}</h5>
+                        <p className='text-base md:text-[17px] md:leading-[1.3] font-normal redhat text-center text-black mb-16'>{text}</p>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 lg:gap-6">
                         {initiatives.map((item, index) => (
@@ -68,14 +68,14 @@ export const CsrProject = () => {
                                         className="w-full h-60 object-cover rounded-2xl"
                                     />
                                 </div>
-                                <h3 className="text-lg font-semibold redhat mt-4 lg:h-[4rem] line-clamp-2 overflow-hidden">{item.title}</h3>
-                                <p className="text-black redhat text-base">{item.description}</p>
+                                <h3 className="text-xl font-semibold redhat mt-6 lg:h-[4rem] line-clamp-2 overflow-hidden mb-4 md:mb-1">{item.title}</h3>
+                                <p className="text-black redhat text-base md:text-[17px]">{item.description}</p>
                             </div>
                         ))}
                     </div>
 
                     <div className='pt-16 md:pt-20'>
-                        <h2 className='text-2xl md:leading-[1.3] md:text-3xl font-semibold redhat text-center text-[#1B453C] mb-10'>{heading01}</h2>
+                        <h2 className='text-3xl md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold redhat text-center text-[#1B453C] mb-10'>{heading01}</h2>
 
 
                         <Swiper
@@ -115,7 +115,7 @@ export const CsrProject = () => {
                                 <SwiperSlide key={index}>
                                     <div className='w-full  relative'>
                                         <Image src={item.image} alt="banner" width="600" height="600"
-                                        className='rounded-2xl h-80 object-cover w-full object-center border-1 border-[#1B453C]' />
+                                            className='rounded-2xl h-80 object-cover w-full object-center border-1 border-[#1B453C]' />
                                     </div>
                                 </SwiperSlide>
                             ))}
@@ -167,9 +167,9 @@ export const Agroforestry = () => {
 
                     </div>
                     <div className='w-full md:w-6/12'>
-                        <h2 className="lg:leading-snug text-[#1F1E17] redhat mb-2   pt-10 text-center md:text-left text-3xl md:text-4xl  font-normal  w-full"> {heading}</h2>
-                        <h5 className='text-xl md:leading-[1.3] md:text-2xl font-medium redhat text-center md:text-left text-[#F7C35F] mb-3'>{heading2}</h5>
-                        <p className='text-base md:leading-[1.3] font-normal redhat text-center md:text-left text-black mb-16'>{text}</p>
+                        <h2 className="lg:leading-snug text-[#1F1E17] redhat mb-2   pt-10 text-center md:text-left text-3xl md:text-4xl  lg:text-[40px] font-semibold  w-full"> {heading}</h2>
+                        <h5 className='text-[22px] md:leading-[1.3] md:text-[26px] font-medium redhat text-center md:text-left text-[#F7C35F] mb-3'>{heading2}</h5>
+                        <p className='text-base md:text-[17px] md:leading-[1.3] font-normal redhat text-center md:text-left text-black mb-16'>{text}</p>
 
                         <div className="grid grid-cols-1 md:grid-cols-1 gap-2 px-4 lg:px-0">
                             {agroforestry.map((item, index) => (
@@ -182,13 +182,13 @@ export const Agroforestry = () => {
                                     </div>
 
                                     <div>
-                                        <h3 className="text-xl mb-1 redhat font-medium text-[#1F1E17]">{item.title}</h3>
-                                        <p className="text-[#878680] redhat text-base whitespace-pre-line">{item.description}</p>
+                                        <h3 className="text-xl md:text-2xl mb-1 redhat font-semibold text-[#1F1E17]">{item.title}</h3>
+                                        <p className="text-[#878680] redhat text-base md:text-[17px] whitespace-pre-line">{item.description}</p>
                                     </div>
                                 </div>
                             ))}
                             <div className='mt-6'>
-                            <Link href="/our-projects" className='bg-[#1B453C] text-white   py-3 px-12 inline-block text-center text-base hover:bg-black hover:text-[#fff] transition-all  duration-500 '>Explore Our Agroforestry Projects</Link>
+                                <Link href="/our-projects" className='bg-[#1B453C] text-white   py-3 px-12 inline-block text-center text-base hover:bg-black hover:text-[#fff] transition-all  duration-500 '>Explore Our Agroforestry Projects</Link>
                             </div>
                         </div>
 

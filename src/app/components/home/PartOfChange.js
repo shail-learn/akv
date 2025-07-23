@@ -94,10 +94,10 @@ export const PartOfChange = () => {
       <div className="flex gap-4 flex-wrap lg:flex-nowrap items-center justify-center">
         <div className="w-full lg:w-5/12 bg-[#1B453C] rounded-[20px] grid items-center justify-center lg:h-[504px] p-12">
           <div>
-            <h2 className="text-white poppins text-center md:text-left leading-relaxed text-3xl md:text-4xl mb-5">
+            <h2 className="text-white poppins text-center md:text-left leading-relaxed text-3xl md:text-4xl lg:text-[40px] font-semibold mb-5">
               {box1[0].title}
             </h2>
-            <p className="poppins text-justify font-normal text-[15px] text-white mb-6">
+            <p className="poppins text-justify font-normal text-base text-[17px] text-white mb-6">
               {box1[0].description}
             </p>
 
@@ -115,9 +115,9 @@ export const PartOfChange = () => {
             <button
               onClick={handleDonate}
               disabled={loading}
-              className={`mt-4 rounded-3xl py-2 px-6 w-full transition ${loading
-                  ? 'bg-gray-400 cursor-not-allowed text-white'
-                  : 'bg-white text-[#1B453C]'
+              className={`mt-4 rounded-3xl font-medium text-[17px] py-2 px-6 w-full transition ${loading
+                ? 'bg-gray-400 cursor-not-allowed text-white'
+                : 'bg-white text-[#1B453C]'
                 }`}
             >
               {loading ? 'Processing...' : 'Donate'}
@@ -139,9 +139,9 @@ export const PartOfChange = () => {
 
             <div className="z-10 relative text-black transition-all duration-400 group-hover:text-white">
               <h3 className="poppins text-5xl mb-6">{item.number}</h3>
-              <p className="poppins text-xl mb-10 md:text-2xl md:mb-12">{item.title}</p>
+              <p className="poppins text-[22px] mb-10 md:text-2xl md:mb-12">{item.title}</p>
               <Link
-                className="bg-white text-black rounded-3xl py-3 px-12"
+                className="bg-white text-black rounded-3xl py-3 px-4 w-52 max-w-full inline-block text-center font-medium"
                 style={{
                   boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)',
                 }}

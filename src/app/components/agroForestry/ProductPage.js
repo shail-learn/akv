@@ -95,7 +95,7 @@ export const ProductPage = () => {
     <>
       <section className="py-6 pt-16">
         <div className="mx-auto max-w-7xl px-4 md:px-8 lg:px-2 max-full bg-white">
-          <h2 className="text-black text-center md:text-left text-3xl md:text-4xl mb-4 lg:mb-8 lg:leading-tight  redhat  font-medium  w-full">
+          <h2 className="text-black text-center md:text-left text-3xl md:text-4xl mb-4 lg:mb-8 lg:leading-tight  redhat  lg:text-[40px] font-semibold  w-full">
             {heading}
           </h2>
         </div>
@@ -114,7 +114,7 @@ export const ProductPage = () => {
 
               <Link
 
-                href="agroforestry/timber" className="bg-[#9A9771] text-center md:text-left text-2xl text-white px-6 block w-full lg:px-8 p-4 lg:p-5">
+                href="agroforestry/timber" className="bg-[#9A9771] text-center md:text-left font-medium text-2xl text-white px-6 block w-full lg:px-8 p-4 lg:p-5">
 
                 {category1}
               </Link>
@@ -131,7 +131,7 @@ export const ProductPage = () => {
                       />
                       <Link
                         href={item.link}
-                        className="text-sm border-[1px] border-[#646464] w-full text-center rounded-full p-2 hover:bg-[#1B453C] hover:text-white "
+                        className="text-[15px] font-medium border-[1px] border-[#646464] w-full text-center rounded-full p-2 hover:bg-[#1B453C] hover:text-white "
                       >
                         Explore More
                       </Link>
@@ -157,7 +157,7 @@ export const ProductPage = () => {
 
                 href="agroforestry/fruits-and-vegetables"
 
-                className="bg-[#719A8E] text-center md:text-left text-2xl text-white px-6 block w-full lg:px-8 p-4 lg:p-5"
+                className="bg-[#719A8E] font-medium text-center md:text-left text-2xl text-white px-6 block w-full lg:px-8 p-4 lg:p-5"
               >
                 {category2}
               </Link>
@@ -170,7 +170,7 @@ export const ProductPage = () => {
                       <Image src={item.img} alt="product" className="rounded-3xl h-full" />
                       <Link
                         href={item.link}
-                        className="text-sm border-[1px] border-[#646464] w-full text-center rounded-full p-2 hover:bg-[#1B453C] hover:text-white "
+                        className="text-[15px] font-medium border-[1px] border-[#646464] w-full text-center rounded-full p-2 hover:bg-[#1B453C] hover:text-white "
                       >
                         Explore More
                       </Link>
@@ -196,7 +196,7 @@ export const ProductPage = () => {
 
               <Link
 
-                href="agroforestry/medicinal-herbal-plants" className="bg-[#337049] text-center md:text-left text-2xl text-white px-6 block w-full lg:px-8 p-4 lg:p-5">
+                href="agroforestry/medicinal-herbal-plants" className="bg-[#337049] font-medium text-center md:text-left text-2xl text-white px-6 block w-full lg:px-8 p-4 lg:p-5">
 
                 {category3}
               </Link>
@@ -213,7 +213,7 @@ export const ProductPage = () => {
                       />
                       <Link
                         href={item.link}
-                        className="text-sm border-[1px] border-[#646464] w-full text-center rounded-full p-2 hover:bg-[#1B453C] hover:text-white "
+                        className="text-[15px] font-medium border-[1px] border-[#646464] w-full text-center rounded-full p-2 hover:bg-[#1B453C] hover:text-white "
                       >
                         Explore More
                       </Link>

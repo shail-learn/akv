@@ -38,7 +38,7 @@ export const PurposeAndValue = () => {
                 <div className="flex flex-col md:flex-row gap-10 md:gap-20 p-10 bg-white">
                     <div>
                         <div className="text-center">
-                            <h3 className="text-3xl md:text-4xl  pb-10 redhat">
+                            <h3 className="text-3xl md:text-4xl lg:text-[40px] font-semibold pb-10 redhat">
                                 Our Purpose <span className="text-[#498A8A]">& Values</span>
                             </h3>
                         </div>
@@ -48,7 +48,7 @@ export const PurposeAndValue = () => {
                                     <Tab
                                         key={name}
                                         className={({ selected }) =>
-                                            ` text-[18px] md:text-[20px]  w-[250px] rounded-[18px] font-light h-[49px] text-center leading-[49px] focus:outline-none ${selected
+                                            ` text-[20px] md:text-[22px]  w-[250px] rounded-[18px] font-normal h-[49px] text-center leading-[49px] focus:outline-none ${selected
                                                 ? "border-[1px] border-[#000] font-normal shadow-md text-[#A6A6A6] bg-white	focus:outline-none"
                                                 : "text-[#000000] focus:outline-none"
                                             }`

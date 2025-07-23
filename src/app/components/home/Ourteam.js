@@ -62,7 +62,7 @@ export const Ourteam = () => {
     <>
       <section className="container mx-auto pb-0 lg:pb-20  lg:py-0 ">
         <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2 '>
-          <h4 className="text-3xl md:text-4xl redhat text-center font-medium mb-8">
+          <h4 className="text-3xl md:text-4xl redhat text-center  lg:text-[40px] font-semibold mb-8">
             Our  <span className="text-[#498A8A]">Visionary Team</span>
           </h4>
           <div className=" flex flex-wrap  justify-center gap-4 lg:gap-8">
@@ -70,18 +70,18 @@ export const Ourteam = () => {
 
               <div key={item.id} className="text-center w-[47%] lg:w-[20%]">
                 <div className="bg-[#A8A8A8] rounded-[20px] overflow-hidden">
-                <Link href="/our-team" >
-                  <Image
-                    src={item.image}
-                    alt={item.name}
-                    className="w-full h-full mx-auto"
-                    quality={90}
-                  />
+                  <Link href="/our-team" >
+                    <Image
+                      src={item.image}
+                      alt={item.name}
+                      className="w-full h-full mx-auto"
+                      quality={90}
+                    />
                   </Link>
                 </div>
                 <Link href="/our-team" >
-                <h5 className="text-lg mb-2 mt-4 font-normal" dangerouslySetInnerHTML={{__html: item.name}}/>
-                <h6 className="text-sm font-semibold">{item.designation}</h6>
+                  <h5 className="text-xl mb-2 mt-4 font-normal" dangerouslySetInnerHTML={{ __html: item.name }} />
+                  <h6 className="text-[15px] font-semibold">{item.designation}</h6>
                 </Link>
               </div>
 

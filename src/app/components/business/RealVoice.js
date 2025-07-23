@@ -24,122 +24,122 @@ import Link from 'next/link';
 
 
 export const RealVoice = () => {
-    const heading1 = "Real voices, real impact: "
-    const heading = "Stories from farmers, employees, and partners."
-    const testimonial = [
-        {
-            image: client1,
-            quote: `<span style="color:#1B453C;font-weight:800;">Atulye Krishi Vanna</span> helped transform our barren land into a thriving farm. Their agroforestry solutions are
+  const heading1 = "Real voices, real impact: "
+  const heading = "Stories from farmers, employees, and partners."
+  const testimonial = [
+    {
+      image: client1,
+      quote: `<span style="color:#1B453C;font-weight:800;">Atulye Krishi Vanna</span> helped transform our barren land into a thriving farm. Their agroforestry solutions are
 life-changing!" `,
-            position: "Rajesh Patel, Farmer, Bhopal"
+      position: "Rajesh Patel, Farmer, Bhopal"
 
-        },
-        {
-            image: client2,
-            quote: `Thanks to their training programs, I’ve adopted sustainable farming practices and doubled my yields.`,
-            position: "Meena Kumari, Farmer, Bhopal"
+    },
+    {
+      image: client2,
+      quote: `Thanks to their training programs, I’ve adopted sustainable farming practices and doubled my yields.`,
+      position: "Meena Kumari, Farmer, Bhopal"
 
-        },
-        {
-            image: client3,
-            quote: `<span style="color:#1B453C;font-weight:800;">Farming on Atulye’s</span>  land feels like working on our own soil. It brings peace to the heart." `,
-            position: "Bhola Prasad, Bhopal"
+    },
+    {
+      image: client3,
+      quote: `<span style="color:#1B453C;font-weight:800;">Farming on Atulye’s</span>  land feels like working on our own soil. It brings peace to the heart." `,
+      position: "Bhola Prasad, Bhopal"
 
-        },
-        {
-            image: client4,
-            quote: `Here, we don’t just work—we grow, learn, and stand on our own feet.`,
-            position: "Kamla Bai, Bhopal"
+    },
+    {
+      image: client4,
+      quote: `Here, we don’t just work—we grow, learn, and stand on our own feet.`,
+      position: "Kamla Bai, Bhopal"
 
-        },
-        {
-            image: client5,
-            quote: ` Farming at AKV gave me purpose. I now earn with pride.`,
-            position: "Kusum Bai, Bhopal"
+    },
+    {
+      image: client5,
+      quote: ` Farming at AKV gave me purpose. I now earn with pride.`,
+      position: "Kusum Bai, Bhopal"
 
-        },
-    ]
-    return (
-        <>
-            <section
-                className=" py-14 lg:py-20 bg-[#F2F2F2] outer-arrow arrow_black" >
+    },
+  ]
+  return (
+    <>
+      <section
+        className="pb-8 py-14 lg:py-20 bg-[#F2F2F2] outer-arrow arrow_black" >
 
-                <div className='mx-auto max-w-7xl px-4 md:px-8 lg:px-2 max-ful'>
-                    <h2 className="text-black text-center  md:text-left text-3xl md:text-4xl mb-4 lg:mb-8 lg:leading-tight  redhat  font-medium  w-full">
-                        {heading1} <br /> <span className='text-[#1B453C]'>{heading}</span>
-                    </h2>
+        <div className='mx-auto max-w-7xl px-4 md:px-8 lg:px-2 max-ful'>
+          <h2 className="text-black text-center  md:text-left text-3xl md:text-4xl mb-4 lg:mb-8 lg:leading-tight  redhat  lg:text-[40px] font-semibold  w-full">
+            {heading1} <br /> <span className='text-[#1B453C]'>{heading}</span>
+          </h2>
 
 
-                    <div className='w-full lg:w-12/12'>
+          <div className='w-full lg:w-12/12'>
 
-                        <Swiper
-                            style={{
-                                '--swiper-navigation-color': '#fff',
-                                '--swiper-pagination-color': '#fff',
-                            }}
+            <Swiper
+              style={{
+                '--swiper-navigation-color': '#fff',
+                '--swiper-pagination-color': '#fff',
+              }}
 
-                            slidesPerView={1}
-                            spaceBetween={10}
-                            navigation={true}
-                            loop={true}
-                            modules={[Autoplay, Navigation]}
-                            autoplay={{
-                                delay: 6000,
-                                disableOnInteraction: false,
-                            }}
-                            breakpoints={{
-                                320: {
-                                    slidesPerView: 1,
-                                    spaceBetween: 50,
-                                },
-                                640: {
-                                    slidesPerView: 2,
-                                    spaceBetween: 50,
-                                },
-                                768: {
-                                    slidesPerView: 2,
-                                    spaceBetween: 60,
-                                },
-                                1024: {
-                                    slidesPerView: 2,
-                                    spaceBetween: 80,
-                                },
-                            }}
+              slidesPerView={1}
+              spaceBetween={10}
+              navigation={true}
+              loop={true}
+              modules={[Autoplay, Navigation]}
+              autoplay={{
+                delay: 6000,
+                disableOnInteraction: false,
+              }}
+              breakpoints={{
+                320: {
+                  slidesPerView: 1,
+                  spaceBetween: 50,
+                },
+                640: {
+                  slidesPerView: 2,
+                  spaceBetween: 50,
+                },
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 60,
+                },
+                1024: {
+                  slidesPerView: 2,
+                  spaceBetween: 80,
+                },
+              }}
 
-                            className="mySwiper2"
-                        >
+              className="mySwiper2"
+            >
 
-                            {testimonial.map((item, index) => (
-                                <SwiperSlide key={index}>
-                                    <div className='w-full grid h-full  text-black bg-[#E9E9E9] rounded-3xl overflow-hidden  item_slider'
-                                        style={{
-                                            boxShadow: "5px 5px 4px 0px #00000033",
+              {testimonial.map((item, index) => (
+                <SwiperSlide key={index}>
+                  <div className='w-full grid h-full  text-black bg-[#E9E9E9] rounded-3xl overflow-hidden  item_slider'
+                    style={{
+                      boxShadow: "5px 5px 4px 0px #00000033",
 
-                                        }}
-                                    >
-                                        <div className='lg:w-12/ 12 mx-auto'>
-                                            <div className='gap-6 flex items-center h-full '>
-                                                <div className='w-w-3/6 lg:w-3/6 min-w-[40%]'>
-                                                    <Image src={item.image} alt='client' className='w-full h-full ' />
-                                                </div>
-                                                <div className='w-full'>
-                                                <p className=' pl-0 p-4 text-sm lg:text-[16] font-normal' dangerouslySetInnerHTML={{ __html: item.quote }}></p>
+                    }}
+                  >
+                    <div className='lg:w-12/ 12 mx-auto'>
+                      <div className='mad:gap-6 gap-2 flex items-center h-full md:flex-nowrap flex-wrap '>
+                        <div className='w-w-3/6 lg:w-3/6 md:min-w-[40%] min-w-[100%]'>
+                          <Image src={item.image} alt='client' className='w-full h-full object-cover' />
+                        </div>
+                        <div className='w-full pt-0 p-4'>
+                          <p className=' pl-0 p-4 text-[15px] lg:text-[17] font-normal' dangerouslySetInnerHTML={{ __html: item.quote }}></p>
 
-                                                    <p className='text-black font-semibold text-sm lg:text-[16] '>– {item.position}</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </SwiperSlide>
-                            ))}
-                        </Swiper>
+                          <p className='text-black font-semibold text-[15px] lg:text-[17] '>– {item.position}</p>
+                        </div>
+                      </div>
                     </div>
-                </div>
-            </section>
+                  </div>
 
-        </>
-    )
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </div>
+      </section>
+
+    </>
+  )
 }
 
 
@@ -209,16 +209,17 @@ export const Making = () => {
         className="bg-cover bg-center relative text-center md:text-left flex items-center justify-center pt-16 pb-16 lg:pt-48 lg:pb-48"
         style={{ backgroundImage: `url(${banner.src})` }}
       >
-        <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-2">
+        <div className='absolute top-0 left-0 w-full h-full bg-black opacity-40'></div>
+        <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-2 relative">
           <h2
-            className="text-3xl text-center lg:text-start md:leading-[1.3] md:text-4xl font-normal redhat text-white mb-10"
+            className="text-3xl text-center lg:text-start md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold redhat text-white mb-10"
             dangerouslySetInnerHTML={{ __html: heading }}
           ></h2>
 
           <div className="lg:w-6/12 w-full">
             <div className="text-white">
               <p
-                className="font-light mb-4"
+                className="font-light mb-10 md:text-[17px]"
                 dangerouslySetInnerHTML={{ __html: info }}
               ></p>
             </div>
@@ -237,11 +238,10 @@ export const Making = () => {
               <button
                 onClick={handleDonate}
                 disabled={loading}
-                className={`inline-flex items-center justify-center gap-4 py-3 px-8 lg:px-12 text-black redhat font-medium bg-white border transition-all duration-300 ${
-                  loading
-                    ? 'cursor-not-allowed bg-gray-400 text-white'
-                    : 'hover:bg-[#f8f8f8]'
-                }`}
+                className={`inline-flex items-center justify-center gap-4 py-3 px-8 lg:px-12 text-black redhat font-medium bg-white border transition-all duration-300 ${loading
+                  ? 'cursor-not-allowed bg-gray-400 text-white'
+                  : 'hover:bg-[#f8f8f8]'
+                  }`}
               >
                 {loading ? 'Processing...' : 'Donate'}
               </button>
