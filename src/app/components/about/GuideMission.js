@@ -46,7 +46,7 @@ export const Guide = () => {
           <div className='w-full text-center'>
             <div className='mx-auto w-full lg:w-7/12'>
               <h2 className="text-white text-3xl md:text-4xl lg:text-[40px] mb-6 lg:leading-tight  redhat  font-semibold  w-full">{heading}</h2>
-              <p className='text-[15px] md:text-base text-white text-center font-light mb-10 md:mb-16'>{description}</p>
+              <p className='text-[15px] md:text-base lg:text-[17px]  text-white text-center font-light mb-10 md:mb-16'>{description}</p>
             </div>
           </div>
         </div>

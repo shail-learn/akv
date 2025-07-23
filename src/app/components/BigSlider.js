@@ -1,5 +1,5 @@
 'use client'
-import React, {useEffect , useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination } from 'swiper/modules'
 import 'swiper/css'
@@ -16,15 +16,15 @@ const BigSlider = ({ items }) => {
   const [isEnd, setIsEnd] = useState(false);
 
   useEffect(() => {
-      if (swiperInstance) {
-          setIsBeginning(swiperInstance.isBeginning);
-          setIsEnd(swiperInstance.isEnd);
+    if (swiperInstance) {
+      setIsBeginning(swiperInstance.isBeginning);
+      setIsEnd(swiperInstance.isEnd);
 
-          swiperInstance.on("slideChange", () => {
-              setIsBeginning(swiperInstance.isBeginning);
-              setIsEnd(swiperInstance.isEnd);
-          });
-      }
+      swiperInstance.on("slideChange", () => {
+        setIsBeginning(swiperInstance.isBeginning);
+        setIsEnd(swiperInstance.isEnd);
+      });
+    }
   }, [swiperInstance]);
 
   return (
@@ -46,8 +46,8 @@ const BigSlider = ({ items }) => {
           prevEl: ".prev-btn",
         }}
         pagination={{
-            el: ".custom-pagination3",
-            clickable: true,
+          el: ".custom-pagination3",
+          clickable: true,
         }}
         className="pb-16"
       >
@@ -55,10 +55,9 @@ const BigSlider = ({ items }) => {
           <SwiperSlide key={index}>
             <div
               className={`rounded-xl shadow-md overflow-hidden bg-white flex flex-col h-full transition-all duration-300
-                ${
-                  index === activeIndex
-                    ? 'lg:scale-100 md:scale-100'
-                    : 'scale-100'
+                ${index === activeIndex
+                  ? 'lg:scale-100 md:scale-100'
+                  : 'scale-100'
                 }`}
             >
               <div className="relative h-[180px] md:h-[200px] lg:h-[230px] w-full black_fade">
@@ -70,10 +69,10 @@ const BigSlider = ({ items }) => {
                 />
               </div>
               <div className="p-5 py-8">
-                <h3 className="text-lg absolute -mt-20 font-medium text-white">
+                <h3 className="text-xl md:text-2xl absolute -mt-20 font-medium text-white">
                   {item.title}
                 </h3>
-                <p className="text-sm md:text-base redhat text-black mt-2">
+                <p className="text-base md:text-[17px] redhat text-black mt-2">
                   {item.description}
                 </p>
               </div>

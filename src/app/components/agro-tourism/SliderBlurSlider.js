@@ -81,12 +81,12 @@ export const Slider = () => {
                 <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2'>
                     <div className='flex flex-col lg:flex-row justify-between  gap-4 lg:gap-12'>
                         <div className='lg:w-6/12  w-full w-12/12'>
-                            <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-medium redhat text-[#1B453C] mb-6'>{heading}</h2>
+                            <h2 className='text-3xl md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold redhat text-[#1B453C] mb-6 text-center md:text-left'>{heading}</h2>
 
                         </div>
                         <div className='lg:w-6/12  w-full w-12/12'>
-                            <h3 className='text-[#2D6B5E] md:text-2xl text-xl font-medium mb-4 text-justify redhat' dangerouslySetInnerHTML={{ __html: subheading }}></h3>
-                            <p className='text-black text-base text-justify redhat' dangerouslySetInnerHTML={{ __html: content }}></p>
+                            <h3 className='text-[#2D6B5E] md:text-[28px] text-[22px] font-semibold mb-4 text-justify redhat' dangerouslySetInnerHTML={{ __html: subheading }}></h3>
+                            <p className='text-black text-base md:text-[17px] text-justify redhat' dangerouslySetInnerHTML={{ __html: content }}></p>
                         </div>
                     </div>
                     <div className='mt-10 md:mt-16'>
@@ -96,7 +96,7 @@ export const Slider = () => {
 
                     <div className='pt-10'>
                         <div className='w-full md:w-2/4'>
-                            <p className='text-black text-base text-justify redhat' dangerouslySetInnerHTML={{ __html: title2 }} />
+                            <p className='text-black text-base md:text-[17px] text-justify redhat' dangerouslySetInnerHTML={{ __html: title2 }} />
                         </div>
                         <hr className='my-6 md:my-8' />
                         <div className='flex flex-col lg:flex-row justify-between  gap-4 lg:gap-12'>
@@ -105,19 +105,19 @@ export const Slider = () => {
 
                             </div>
                             <div className='lg:w-6/12  w-full w-12/12'>
-                                <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-medium redhat text-black mb-4'>{heading2}</h2>
-                                <p className='text-black text-base text-justify redhat' dangerouslySetInnerHTML={{ __html: content }}></p>
+                                <h2 className='text-3xl md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold redhat text-black mb-4 text-center'>{heading2}</h2>
+                                <p className='text-black text-base md:text-[17px] text-justify redhat' dangerouslySetInnerHTML={{ __html: content }}></p>
 
                                 <ul className='mt-6 md:mt-8'>
                                     {points.map((point, index) => (
-                                        <li key={index} className="text-black text-base text-justify redhat mb-3 list-none flex items-start gap-2">
+                                        <li key={index} className="text-black text-base md:text-[17px] text-justify redhat mb-3 list-none flex items-start gap-2">
                                             <IoMdCheckmarkCircle className="mt-1 text-xl min-w-6 text-[#2D6B5E]" />
                                             <span dangerouslySetInnerHTML={{ __html: point.title }} />
                                         </li>
                                     ))}
 
                                 </ul>
-                                <p className='text-black text-base text-justify mt-8 redhat'>Our farm activities are perfect for families, school trips, and corporate teams looking for an eco-friendly retreat.</p>
+                                <p className='text-black text-base md:text-[17px] text-justify mt-8 redhat'>Our farm activities are perfect for families, school trips, and corporate teams looking for an eco-friendly retreat.</p>
 
                             </div>
                         </div>
@@ -169,17 +169,17 @@ export const BlurSlider = () => {
                 className="relative  pt-16 pb-16 lg:pt-20 lg:pb-20" style={{ background: `url(${bgstay.src})center center / cover no-repeat` }}>
                 <div className='absolute top-0 left-0 w-full h-full bg-black opacity-50'></div>
                 <div className='mx-auto max-w-[1400px] md:mr-0 px-4 md:px-8 lg:px-2 '>
-                    <div className='flex flex-wrap lg:flex-nowrap justify-between  gap-6 px-0 md:px-6 z-10 relative lg:px-2'>
+                    <div className='flex flex-wrap lg:flex-nowrap justify-between  gap-8 px-0 md:px-6 z-10 relative lg:px-2'>
                         <div className='w-full lg:w-3/12 '>
                             <div className='flex justify-between h-full flex-wrap'>
 
-                                <h2 className="lg:leading-snug  text-white redhat mb-4 lg:mb-7 text-center lg:text-left text-3xl md:text-4xl  font-medium  w-full">
+                                <h2 className="lg:leading-snug  text-white redhat mb-4 lg:mb-7 text-center lg:text-left text-3xl md:text-4xl lg:text-[40px] font-semibold w-full">
                                     {heading}
                                 </h2>
-                                <p className='text-sm md:text-[15px] text-center md:text-left text-white '>{text1}</p>
+                                <p className='text-base md:text-[17px] text-center md:text-left text-white '>{text1}</p>
 
 
-                                <p className='text-sm md:text-[15px] h-full   text-center md:text-left text-white mt-6 md:mt-20 lg:mt-32'>{text2}</p>
+                                <p className='text-base md:text-[17px] h-full   text-center md:text-left text-white mt-6 md:mt-20 lg:mt-32'>{text2}</p>
 
                             </div>
                         </div>

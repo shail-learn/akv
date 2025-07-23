@@ -43,9 +43,9 @@ const TrainingProgram = () => {
 
   return (
     <>
-      <section className="pt-14 pb-0 lg:pt-0 lg:pb-0 technology-sec">
+      <section className="pt-14 pb-0 lg:pt-0 lg:pb-0 technology-sec -mt-8 md:mt-0">
         <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-2 ">
-          <h2 className="text-3xl md:leading-[1.3] md:text-4xl font-medium redhat text-black mt-4 text-center">
+          <h2 className="text-3xl md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold redhat text-black mt-4 text-center">
             {heading}
           </h2>
         </div>
@@ -55,16 +55,17 @@ const TrainingProgram = () => {
               <Image
                 src={first}
                 alt="icon"
-                className="w-full mx-auto  h-full"
+                className="w-full mx-auto h-full"
+                quality={100}
               />
             </div>
-            <div className="md:col-span-3 col-span-12  h-72 lg:h-full text-white bg-[#6D8C54] grid transition-all duration-400  hover:bg-[#EFEFEF]  hover:text-[#000]">
+            <div className="md:col-span-3 col-span-12 h-full md:h-72 lg:h-full text-white bg-[#6D8C54] grid transition-all duration-400  hover:bg-[#EFEFEF]  hover:text-[#000]">
               <div className="p-5">
-                <p className="w-3/4 pl-5 py-3 text-md font-medium">
+                <p className="w-[90%] pl-0 py-3 text-xl font-medium">
                   {textoneData.title}
                 </p>
                 <ul
-                  className="w-2/2 text-[14px] !list-disc pl-5 py-4"
+                  className="w-2/2 text-base font-light md:text-[17px] !list-disc pl-5 py-4"
                   dangerouslySetInnerHTML={{ __html: textoneData.listData }}
                 ></ul>
               </div>
@@ -75,41 +76,43 @@ const TrainingProgram = () => {
                 src={second}
                 alt="icon"
                 className="w-full mx-auto h-full"
+                quality={100}
               />
             </div>
-            <div className="md:col-span-3 col-span-12  h-72 lg:h-full text-white bg-[#6D8C54] grid transition-all duration-400  hover:bg-[#EFEFEF]  hover:text-[#000]">
+            <div className="md:col-span-3 col-span-12 h-full md:h-72 lg:h-full text-white bg-[#6D8C54] grid transition-all duration-400  hover:bg-[#EFEFEF]  hover:text-[#000]">
               <div className="p-5">
-                <p className="w-3/4 pl-5 py-3 text-md font-medium">
+                <p className="w-[90%] pl-0 py-3 text-xl font-medium">
                   {texttwoData.title}
                 </p>
                 <ul
-                  className="w-2/2 text-[14px] !list-disc pl-5 py-4"
+                  className="w-2/2 text-base font-light md:text-[17px] !list-disc pl-5 py-4"
                   dangerouslySetInnerHTML={{ __html: texttwoData.listData }}
                 ></ul>
               </div>
             </div>
 
-            <div className="md:col-span-3 col-span-12 order-6 lg:order-none  h-72 lg:h-full text-white bg-[#6D8C54] grid transition-all duration-400  hover:bg-[#EFEFEF]  hover:text-[#000]">
+            <div className="md:col-span-3 col-span-12 order-6 lg:order-none h-full md:h-72 lg:h-full text-white bg-[#6D8C54] grid transition-all duration-400  hover:bg-[#EFEFEF]  hover:text-[#000]">
               <div className="p-5">
-                <p className="w-3/4 pl-5 py-3 text-md font-medium">
+                <p className="w-[90%] pl-0 py-3 text-xl font-medium">
                   {textthirdData.title}
                 </p>
                 <ul
-                  className="w-2/2 text-[14px] !list-disc pl-5 py-4"
+                  className="w-2/2 text-base font-light md:text-[17px] !list-disc pl-5 py-4"
                   dangerouslySetInnerHTML={{ __html: textthirdData.listData }}
                 ></ul>
               </div>
             </div>
             <div className="md:col-span-3 col-span-12  order-5 lg:order-none    h-full">
-              <Image src={third} alt="icon" className="w-full mx-auto h-full" />
+              <Image src={third} alt="icon" className="w-full mx-auto h-full"
+                quality={100} />
             </div>
-            <div className="md:col-span-3 col-span-12 order-8 lg:order-none  h-72 lg:h-full text-white bg-[#6D8C54] grid transition-all duration-400  hover:bg-[#EFEFEF]  hover:text-[#000]">
+            <div className="md:col-span-3 col-span-12 order-8 lg:order-none h-full md:h-72 lg:h-full text-white bg-[#6D8C54] grid transition-all duration-400  hover:bg-[#EFEFEF]  hover:text-[#000]">
               <div className="p-5">
-                <p className="w-3/4 pl-5 py-3 text-md font-medium">
+                <p className="w-[90%] pl-0 py-3 text-xl font-medium">
                   {textfourthData.title}
                 </p>
                 <ul
-                  className="w-2/2 text-[14px] !list-disc pl-5 py-4"
+                  className="w-2/2 text-base font-light md:text-[17px] !list-disc pl-5 py-4"
                   dangerouslySetInnerHTML={{ __html: textfourthData.listData }}
                 ></ul>
               </div>
@@ -119,22 +122,24 @@ const TrainingProgram = () => {
                 src={fourth}
                 alt="icon"
                 className="w-full mx-auto h-full"
+                quality={100}
               />
             </div>
             <div className="md:col-span-3 col-span-12 order-8 lg:order-none   h-full">
               <Image
                 src={fifth}
                 alt="icon"
-                className="w-full mx-auto  h-full"
+                className="w-full mx-auto h-full"
+                quality={100}
               />
             </div>
-            <div className="md:col-span-3 col-span-12 order-9 lg:order-none h-72 lg:h-full text-white bg-[#6D8C54] grid transition-all duration-400  hover:bg-[#EFEFEF]  hover:text-[#000]">
+            <div className="md:col-span-3 col-span-12 order-9 lg:order-none h-full md:h-72 lg:h-full text-white bg-[#6D8C54] grid transition-all duration-400  hover:bg-[#EFEFEF]  hover:text-[#000]">
               <div className="p-5">
-                <p className="w-3/4 pl-5 py-3 text-md font-medium">
+                <p className="w-[90%] pl-0 py-3 text-xl font-medium">
                   {textsixData.title}
                 </p>
                 <ul
-                  className="w-2/2 text-[14px] !list-disc pl-5 py-4"
+                  className="w-2/2 text-base font-light md:text-[17px] !list-disc pl-5 py-4"
                   dangerouslySetInnerHTML={{ __html: textsixData.listData }}
                 ></ul>
               </div>

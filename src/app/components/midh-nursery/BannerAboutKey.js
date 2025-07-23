@@ -69,8 +69,8 @@ export const About = () => {
         <div className="mx-auto max-w-7xl px-4 md:px-8 lg:px-2 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
             <div className='md:pr-8'>
-              <h2 className="text-3xl md:text-4xl lg:text-left text-center lg:leading-tight redhat font-medium text-[#1B453C] mb-4">{aboutData.heading}</h2>
-              <p className="text-black opacity-75 text-justify text-[15px] md:text-base redhat leading-relaxed">{aboutData.description}</p>
+              <h2 className="text-3xl md:text-4xl lg:text-left lg:text-[40px] font-semibold text-center lg:leading-tight redhat text-[#1B453C] mb-4">{aboutData.heading}</h2>
+              <p className="text-black opacity-75 text-justify md:text-[17px] text-base redhat leading-relaxed">{aboutData.description}</p>
             </div>
             {aboutData.cards.map((item, index) => (
               <div key={index} className="flex items-start self-center gap-4">
@@ -80,7 +80,7 @@ export const About = () => {
                 </div>
                 <div>
                   <h3 className="text-2xl mb-2 redhat font-semibold text-black">{item.title}</h3>
-                  <p className="text-[15px] redhat text-[#141414BF]">{item.description}</p>
+                  <p className="text-base md:text-[17px] redhat text-[#141414BF]">{item.description}</p>
                 </div>
               </div>
             ))}
@@ -93,13 +93,13 @@ export const About = () => {
         <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2 relative z-1 '>
           <div className='flex flex-col lg:flex-row justify-between items-center gap-4 lg:gap-12'>
             <div className='lg:w-12/12 md:w-6/12 w-12/12 mx-auto text-center'>
-              <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-medium redhat text-white mb-6'>{heading}</h2>
-              <p className='text-white text-base ' dangerouslySetInnerHTML={{ __html: description }}>
+              <h2 className='text-3xl md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold redhat text-white mb-6'>{heading}</h2>
+              <p className='text-white text-base md:text-[17px]' dangerouslySetInnerHTML={{ __html: description }}>
 
               </p>
               <div className='mt-10 text-center'>
                 <Link href="/nursery/collaboration"
-                  className='poppins mx-auto text-center font-normal text-[#344C31] w-[200px] py-3 rounded-[4px] bg-[#fff] inline-block transition-all duration-500  hover:bg-[#344C31] hover:text-[#fff]'>
+                  className='poppins mx-auto text-center text-[17px] font-medium text-[#344C31] w-[200px] py-3 rounded-[4px] bg-[#fff] inline-block transition-all duration-500  hover:bg-[#344C31] hover:text-[#fff]'>
                   Read More
                 </Link>
               </div>
@@ -169,7 +169,7 @@ export const Key = () => {
     <section className="py-12 md:py-20 !pb-0 relative">
       <div className='bg-[#F5F5F5] absolute top-0 -z-10 left-0 w-full h-52 md:h-[394px]'></div>
       <div className="mx-auto max-w-7xl px-4 md:px-8 lg:px-2">
-        <h2 className='text-3xl md:leading-[1.3] md:text-4xl text-center font-medium redhat text-[#1B453C] mb-14 md:mb-20'>{heading}</h2>
+        <h2 className='text-3xl md:leading-[1.3] md:text-4xl text-center lg:text-[40px] font-semibold redhat text-[#1B453C] mb-14 md:mb-20'>{heading}</h2>
         {plantationData.map((item, index) => (
           <div key={item.id} className="mb-12 md:mb-20">
             {/* Top Section: Image + Green Card */}
@@ -197,14 +197,14 @@ export const Key = () => {
                     <h2 className="text-xl md:text-2xl font-semibold mb-1">
                       {item.title}
                     </h2>
-                    <p className="text-sm md:text-base text-[#D9F2EC]">{item.subtitle}</p>
+                    <p className="text-base md:text-[17px] text-[#D9F2EC]">{item.subtitle}</p>
                   </div>
                 </Link>
               </div>
             </div>
 
             {/* Bullet Points */}
-            <ul className="mt-6 list-disc redhat text-sm md:text-base text-[#141414BF] pl-5 space-y-2">
+            <ul className="mt-6 list-disc redhat text-base md:text-[17px] text-[#141414BF] pl-5 space-y-2">
               {item.points.map((point, idx) => (
                 <li key={idx}>{point}</li>
               ))}

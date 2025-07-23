@@ -3,14 +3,14 @@ import { FaMapMarkerAlt } from 'react-icons/fa';
 import { FaDesktop } from 'react-icons/fa';
 import icon from "../../../assets/images/career/cloud-management.svg";
 import Image from 'next/image';
-import { useState , useRef } from "react";
+import { useState, useRef } from "react";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 
 import jobsData from '../../../api/jobsData.json';
 import Link from 'next/link';
 
 
-export default function JobCard( ) {
+export default function JobCard() {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const toggle = (i) => {
@@ -29,7 +29,7 @@ export default function JobCard( ) {
               className="flex items-center justify-between cursor-pointer"
               onClick={() => toggle(index)}
             >
-              <h2 className="text-xl md:text-2xl text-[#1B453C] font-bold redhat mb-2">
+              <h2 className="text-[22px] md:text-[24px] text-[#1B453C] font-bold redhat mb-2">
                 Profile: {job.title}
               </h2>
               {activeIndex === index ? (
@@ -39,32 +39,32 @@ export default function JobCard( ) {
               )}
             </div>
 
-            <div className="text-sm md:text-base mt-2 redhat">
+            <div className="text-base md:text-[17px] mt-2 redhat">
               <p className='mb-1'><strong>Positions:</strong> {job.positions}</p>
-              <p  className='mb-1'><strong>Experience:</strong> {job.experience}</p>
+              <p className='mb-1'><strong>Experience:</strong> {job.experience}</p>
               <p className='mb-1'><strong>Location:</strong> {job.location}</p>
               <p className='mb-1'><strong>Eligibility Criteria (Educational):</strong> {job.eligibility}</p>
             </div>
 
             {activeIndex === index && job.summary && (
               <>
-              <div className="mt-4 space-y-4">
-                <h3 className="font-bold text-lg redhat">Summary:</h3>
-                <p className='redhat'>{job.summary}</p>
+                <div className="mt-4 space-y-4">
+                  <h3 className="font-bold text-lg redhat">Summary:</h3>
+                  <p className='redhat'>{job.summary}</p>
 
-                <h3 className="font-bold text-lg redhat">Requirements:</h3>
-                <ul className="list-disc ml-6 space-y-1 text-sm md:text-base redhat">
-                  {job.responsibilities?.map((item, i) => (
-                    <li key={i}>{item}</li> // ✅ Use i here, not index
-                  ))}
-                </ul>
-              </div>
-                  <div className='my-6 mt-10'>
-                  <Link href="#career_form"     className='poppins mx-auto text-center border border-[#344C31] font-normal text-white w-[200px] py-3 rounded-[4px] bg-[#344C31] inline-block transition-all duration-500 hover:border hover:bg-white hover:text-[#344C31]'>
-                   Apply Now
-                    </Link>
-                  </div>
-                  </>
+                  <h3 className="font-bold text-lg redhat">Requirements:</h3>
+                  <ul className="list-disc ml-6 space-y-1 text-base md:text-[17px] redhat">
+                    {job.responsibilities?.map((item, i) => (
+                      <li key={i}>{item}</li> // ✅ Use i here, not index
+                    ))}
+                  </ul>
+                </div>
+                <div className='my-6 mt-10'>
+                  <Link href="#career_form" className='poppins mx-auto text-center border border-[#344C31] font-medium text-white w-[200px] py-3 rounded-[4px] bg-[#344C31] inline-block transition-all duration-500 hover:border hover:bg-white hover:text-[#344C31]'>
+                    Apply Now
+                  </Link>
+                </div>
+              </>
             )}
 
           </div>

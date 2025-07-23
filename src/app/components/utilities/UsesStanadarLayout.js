@@ -97,21 +97,21 @@ export const MarketLayout = ({ marketData, contentClass }) => {
             </div>
 
             <div className={`md:w-6/12 w-12/12 ${contentClass}`}>
-              <h2 className="text-3xl md:leading-[1.3] md:text-4xl font-semibold redhat text-[#1B453C]">
+              <h2 className="text-3xl md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold redhat text-[#1B453C]">
                 {marketData.title}
               </h2>
-              <p className="my-6 text-[15px]  font-normal md:text-base text-black"
-              dangerouslySetInnerHTML={{__html: marketData.description}} />
+              <p className="my-6 text-base md:text-[17px]  font-normal md:text-base text-black"
+                dangerouslySetInnerHTML={{ __html: marketData.description }} />
 
 
-              <p className="text-[15px] mb-2  font-semibold md:text-base text-black">
+              <p className="text-base md:text-[17px] mb-2  font-semibold md:text-base text-black">
                 {marketData.steptitle}
               </p>
               <ul className="list-disc pl-5 text-black mb-4">
                 {marketData.steps.map((step, index) => (
                   <li
                     key={index}
-                    className="text-[14px] md:text-[15px] font-normal text-black"
+                    className="text-[16px] md:text-[17px] font-normal text-black"
                   >
                     {step}
                   </li>

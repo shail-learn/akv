@@ -39,12 +39,12 @@ export const OrnamentalPlants = () => {
                         <Image src={img01} alt="banner" className='w-full h-full' />
                     </div>
                     <div className='w-full md:col-span-4 p-10 text-center md:text-left '>
-                        <h2 className='text-white text-3xl md:text-4xl mb-4  lg:leading-tight  redhat  font-normal  w-full'>
+                        <h2 className='text-white text-3xl md:text-4xl mb-4  lg:leading-tight  redhat  font-semibold  w-full'>
                             {heading}
                         </h2>
-                        <p className='text-white font-light mb-8'>{description}</p>
+                        <p className='text-white font-light md:text-[17px] mb-8'>{description}</p>
                         <Link
-                            className="text-sm relative bg-[#9A9771] text-white inline-block w-2/3 text-center rounded-full p-3 hover:bg-white hover:text-[#9A9771] group"
+                            className="text-[15px] md:text-base relative bg-[#9A9771] text-white inline-block w-2/3 text-center rounded-full p-3 hover:bg-white hover:text-[#9A9771] group"
 
                             href="agroforestry/flowering-ornamental-plants"
 
@@ -72,12 +72,12 @@ export const OrnamentalPlants = () => {
                         <Image src={palmleft} alt="banner" className='w-full h-full' />
                     </div>
                     <div className='w-full md:col-span-4 p-10 text-center md:text-left '>
-                        <h2 className='text-white text-3xl md:text-4xl mb-4  lg:leading-tight  redhat  font-normal  w-full'>
+                        <h2 className='text-white text-3xl md:text-4xl mb-4  lg:leading-tight  redhat  font-semibold  w-full'>
                             {heading1}
                         </h2>
-                        <p className='text-white font-light mb-8'>{description1}</p>
+                        <p className='text-white font-light md:text-[17px] mb-8'>{description1}</p>
                         <Link
-                            className="text-sm relative bg-[#9A9771] text-white inline-block w-2/3 text-center rounded-full p-3 hover:bg-white hover:text-[#9A9771] group"
+                            className="text-[15px] md:text-base relative bg-[#9A9771] text-white inline-block w-2/3 text-center rounded-full p-3 hover:bg-white hover:text-[#9A9771] group"
 
                             href="agroforestry/palms-cycads"
 
@@ -104,13 +104,13 @@ export const OrnamentalPlants = () => {
                     <div className='w-full md:col-span-4'>
                         <Image src={leftgrass1} alt="banner" className='w-full h-full' />
                     </div>
-                    <div className='w-full md:col-span-4 p-10 text-center md:text-left '>
+                    <div className='w-full md:col-span-4 px-10 py-10 md:py-8 text-center md:text-left '>
                         <h2 className='text-white text-3xl md:text-4xl mb-4  lg:leading-tight  redhat  font-normal  w-full'>
                             {heading2}
                         </h2>
-                        <p className='text-white font-light mb-8'>{description2}</p>
+                        <p className='text-white font-light md:text-[17px] mb-8'>{description2}</p>
                         <Link
-                            className="text-sm relative bg-[#9A9771] text-white inline-block w-2/3 text-center rounded-full p-3 hover:bg-white hover:text-[#9A9771] group"
+                            className="text-[15px] md:text-base relative bg-[#9A9771] text-white inline-block w-2/3 text-center rounded-full p-3 hover:bg-white hover:text-[#9A9771] group"
 
                             href="agroforestry/grass-fodder-and-agricultural-plants"
 
@@ -141,9 +141,9 @@ export const OrnamentalPlants = () => {
                         <h2 className='text-white text-3xl md:text-4xl mb-4  lg:leading-tight  redhat  font-normal  w-full'>
                             {heading3}
                         </h2>
-                        <p className='text-white font-light mb-8'>{description3}</p>
+                        <p className='text-white font-light md:text-[17px] mb-8'>{description3}</p>
                         <Link
-                            className="text-sm relative bg-[#9A9771] text-white inline-block w-2/3 text-center rounded-full p-3 hover:bg-white hover:text-[#9A9771] group"
+                            className="text-[15px] md:text-base relative bg-[#9A9771] text-white inline-block w-2/3 text-center rounded-full p-3 hover:bg-white hover:text-[#9A9771] group"
 
                             href="agroforestry/wild-and-forest-trees"
 
@@ -196,20 +196,20 @@ export const CategoryCard = () => {
     return (
         <section className='mx-auto max-w-7xl py-6 pt-12 md:pt-16'>
             <div className='grid grid-col-1  px-4 md:px-0 items-center md:grid-cols-12 gap-6'>
-            <div className='w-full md:col-span-1'></div>
+                <div className='w-full md:col-span-1'></div>
                 {card.map((item, index) => {
                     return (
                         <div key={index} className='w-full md:col-span-5'>
                             <Image src={item.image} alt="banner" className='w-full h-full rounded-tl-3xl rounded-tr-3xl' />
                             <div className='flex gap-4 items-center justify-between my-4'>
-                                <p className='text-black text-xl'>{item.title}</p>
-                                <Link href={item.link} className='text-sm border-[1px] border-[#646464] w-[150px] text-center rounded-xl p-2 hover:bg-[#1B453C] hover:text-white '>Explore More</Link>
+                                <p className='text-black text-xl md:text-[22px]'>{item.title}</p>
+                                <Link href={item.link} className=' border-[1px] border-[#646464] w-[150px] text-center rounded-xl p-2 hover:bg-[#1B453C] hover:text-white '>Explore More</Link>
                             </div>
                         </div>
                     )
                 })}
 
-                 <div className='w-full md:col-span-1'></div>
+                <div className='w-full md:col-span-1'></div>
 
             </div>
 

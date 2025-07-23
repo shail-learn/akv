@@ -40,8 +40,8 @@ export const SliderThree = ({ stories = [] }) => {
                 className="w-full h-full object-cover rounded-2xl"
               />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/25 to-black/35 flex flex-col justify-end p-6 text-white">
-                <h3 className="text-xl md:text-2xl font-light my-4">{story.title}</h3>
-                <p className="text-[15px] my-4 font-normal">{story.description}</p>
+                <h3 className="text-2xl md:text-2xl font-semibold my-4">{story.title}</h3>
+                <p className="text-base md:text-[17px] my-4 font-normal">{story.description}</p>
               </div>
             </div>
           </SwiperSlide>

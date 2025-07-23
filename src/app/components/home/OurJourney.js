@@ -171,10 +171,10 @@ export const OurJourney = () => {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-            <h2 className="lg:leading-snug text-black redhat mb-2 pt-10 text-center text-3xl md:text-4xl  font-normal  w-full">
+            <h2 className="lg:leading-snug text-black redhat mb-2 pt-10 text-center text-3xl md:text-4xl lg:text-[40px] font-semibold w-full">
               Our <span className="text-[#498A8A]">Journey</span>
             </h2>
-            <p className="text-center mb-8">
+            <p className="text-center mb-8 text-lg">
               Steps Towards a Thriving Tomorrow
             </p>
             <div className="flex gap-4 px-4 lg:px-0">
@@ -197,11 +197,10 @@ export const OurJourney = () => {
                             e.preventDefault();
                             handleLeafClick(index);
                           }}
-                          className={`text-base font-medium ${
-                            activeIndex === index
-                              ? "text-[#1B453C] underline opacity-100"
-                              : "text-[#C6C6C6] opacity-20"
-                          } hover:text-[#1B453C]`}
+                          className={`text-base font-medium ${activeIndex === index
+                            ? "text-[#1B453C] underline opacity-100"
+                            : "text-[#C6C6C6] opacity-20"
+                            } hover:text-[#1B453C]`}
                         >
                           <Image
                             src={branch}
@@ -221,11 +220,10 @@ export const OurJourney = () => {
                       marginTop: `${3 * (index + 1)}%`,
                     }}
                     key={index}
-                    className={`div-${index + 1}  ${
-                      activeIndex === index
-                        ? "block fade-in transition delay-150 duration-300 ease-in-out"
-                        : "hidden"
-                    }`}
+                    className={`div-${index + 1}  ${activeIndex === index
+                      ? "block fade-in transition delay-150 duration-300 ease-in-out"
+                      : "hidden"
+                      }`}
                   >
                     <div className="flex items-center gap-4">
                       <h3 className="text-[#1B453C] text-xl md:text-3xl font-bold">

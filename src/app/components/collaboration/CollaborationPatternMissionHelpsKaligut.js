@@ -99,12 +99,12 @@ export const Mission = () => {
 
     return (
         <>
-            <section className='bg-cover bg-bottom md:bg-center relative text-center md:text-left -mt-10 pt-16 pb-16 lg:pt-36 lg:pb-36' style={{ background: `url(${bgbanner.src})center / cover no-repeat` }}>
+            <section className='bg-cover bg-bottom md:bg-center relative text-center md:text-left  pt-16 pb-16 lg:pt-36 lg:pb-36' style={{ background: `url(${bgbanner.src})center / cover no-repeat` }}>
                 <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2 relative z-1 '>
                     <div className='flex flex-col lg:flex-row justify-between items-center gap-4 lg:gap-12'>
                         <div className='lg:w-4/12 md:w-6/12 w-12/12'>
-                            <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-medium redhat text-white mb-6'>{heading}</h2>
-                            <p className='text-white text-base  text-justify' dangerouslySetInnerHTML={{ __html: description }}>
+                            <h2 className='text-3xl md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold redhat text-white mb-6'>{heading}</h2>
+                            <p className='text-white text-base md:text-[17px] text-justify' dangerouslySetInnerHTML={{ __html: description }}>
 
                             </p>
 
@@ -141,7 +141,7 @@ export const Helps = () => {
                 <div className='mx-auto max-full max-w-7xl px-4 md:px-6 lg:px-4'>
                     <div className='w-full text-center'>
                         <div className='mx-auto w-full lg:w-7/12'>
-                            <h2 className="text-white text-3xl md:text-4xl mb-10 md:mb-16 lg:leading-tight  redhat  font-medium  w-full">{heading}</h2>
+                            <h2 className="text-white text-3xl md:text-4xl mb-10 md:mb-16 lg:leading-tight  redhat lg:text-[40px] font-semibold  w-full">{heading}</h2>
 
                         </div>
                     </div>
@@ -198,10 +198,10 @@ export const Kaligut = () => {
                     className="py-14 lg:py-16 lg:pb-40" style={myStyle} >
                     <div className='mx-auto max-full max-w-7xl px-4 md:px-6 lg:px-2 relative'>
                         <div className='w-full text-center'>
-                            <h2 className="text-[#1B453C] text-3xl md:text-4xl mb-4 lg:leading-tight  redhat  font-medium  w-full">{heading}</h2>
+                            <h2 className="text-[#1B453C] text-3xl md:text-4xl mb-4 lg:leading-tight  redhat lg:text-[40px] font-semibold w-full">{heading}</h2>
                             <div className='mx-auto max-full w-full lg:w-5/12'>
-                                <h5 className='text-black font-normal text-base' dangerouslySetInnerHTML={{__html:info}}/>
-                                <h6 className='text-black italic text-[20px] mt-8 mb-10 md:mt-16 md:mb-16'>{smallHeading}</h6>
+                                <h5 className='text-black font-normal text-base' dangerouslySetInnerHTML={{ __html: info }} />
+                                <h6 className='text-black italic text-2xl  mt-8 mb-10 md:mt-16 md:mb-16'>{smallHeading}</h6>
                             </div>
                             <div className='lg:grid flex flex-wrap gap-4 grid-cols-1 lg:grid-cols-12'>
                                 {card.map((item, index) => {
@@ -214,7 +214,7 @@ export const Kaligut = () => {
                                         >
                                             <div className='grid items-center justify-center gap-6 '>
                                                 <h3 className='text-2xl text-[#4B8B8B]'>{item.title}</h3>
-                                                <p className='text-base'>{item.description}</p>
+                                                <p className='text-xl'>{item.description}</p>
                                             </div>
                                         </div>
                                     )

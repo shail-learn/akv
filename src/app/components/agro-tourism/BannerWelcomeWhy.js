@@ -53,11 +53,11 @@ export const Welcome = () => {
                 <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2 relative z-1 '>
                     <div className='flex flex-col lg:flex-row justify-between  gap-4 lg:gap-12'>
                         <div className='lg:w-6/12  w-full w-12/12'>
-                            <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-medium redhat text-[#1B453C] mb-6'>{heading}</h2>
+                            <h2 className='text-3xl md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold redhat text-[#1B453C] mb-6'>{heading}</h2>
 
                         </div>
                         <div className='lg:w-6/12  w-full w-12/12'>
-                            <p className='text-black text-base text-justify redhat' dangerouslySetInnerHTML={{ __html: content }}></p>
+                            <p className='text-black text-base md:text-[17px] text-justify redhat' dangerouslySetInnerHTML={{ __html: content }}></p>
                         </div>
 
                     </div>
@@ -113,7 +113,7 @@ export const Why = () => {
         >
             {/* <div className="absolute inset-0 bg-[#1B453C] opacity-80"></div> */}
             <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-2 relative z-1 ">
-                <h2 className="text-3xl md:leading-[1.3] md:text-4xl font-medium text-center redhat text-white mb-12" dangerouslySetInnerHTML={{ __html: heading }}>
+                <h2 className="text-3xl md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold text-center redhat text-white mb-12" dangerouslySetInnerHTML={{ __html: heading }}>
 
                 </h2>
             </div>
@@ -128,8 +128,8 @@ export const Why = () => {
                             />
                         </div>
                         <div className='text-center'>
-                            <h3 className="text-[#D2AE6D] py-2 text-xl redhat relative font-medium">{feature.title}</h3>
-                            <p className="text-white mt-2 font-light w-11/12 md:w-3/4 mx-auto  relative redhat text-sm">{feature.description}</p>
+                            <h3 className="text-[#D2AE6D] py-2 text-xl md:text-2xl redhat relative font-medium">{feature.title}</h3>
+                            <p className="text-white mt-2 font-light w-11/12 md:w-3/4 mx-auto  relative redhat md:text-[17px]">{feature.description}</p>
                         </div>
                     </div>
                 ))}

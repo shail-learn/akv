@@ -49,88 +49,88 @@ function WhatWeDo() {
                                 className='h-auto w-auto'
                             />
                         </div>
-                        <h3 className='mb-4 text-[28px] md:text-3xl mt-2 font-medium poppins'>{heading}</h3>
+                        <h3 className='mb-4 text-[28px] md:text-3xl lg:text-4xl font-medium mt-2   poppins'>{heading}</h3>
                         {text.map((item, index) => {
                             return (
                                 <p
                                     key={index}
-                                    className="text-black-400 leading-6 text-justify letter tracking-[0.5] text-sm lg:text-[15px]"
+                                    className="text-black-400 leading-6 md:leading-7 text-justify letter tracking-[0.5] text-base lg:text-[17px]"
                                     dangerouslySetInnerHTML={{ __html: item.description }}
                                 ></p>
                             )
 
                         })}
                         <div className='mt-14'>
-                         <Link href="/about-us" className='text-[#1B453C] bg-white border border-[#1B453C] p-3 px-12 lg:px-20 hover:bg-[#1B453C] hover:text-white transition delay-100 duration-100 ease-in-out'>Read More</Link>
-                         </div>
+                            <Link href="/about-us" className='text-[#1B453C] font-medium bg-white border border-[#1B453C] p-3 px-12 lg:px-20 hover:bg-[#1B453C] hover:text-white transition delay-100 duration-100 ease-in-out'>Read More</Link>
+                        </div>
                     </div>
                     <div className='md:min-h-28 rounded md:col-span-7'>
-                         <div className='grid gap-8 lg:gap-10 grid-cols-1 lg:grid-cols-12'>
+                        <div className='grid gap-8 lg:gap-10 grid-cols-1 lg:grid-cols-12'>
                             <div className='md:col-span-8'>
-                            <Swiper
-                            style={{
-                                "--swiper-navigation-color": "#fff",
-                                "--swiper-pagination-color": "#fff",
-                            }}
-                            spaceBetween={10}
-                            navigation={true}
-                            thumbs={{ swiper: thumbsSwiper }}
-                            autoplay={{
-                                delay: 2000,
-                                disableOnInteraction: false,
-                              }}
-                            modules={[FreeMode, Navigation, Thumbs,Autoplay]}
-                            className="mySwiperMain w-full outer_arrow"
-                        >
-                            {sliderImages.map((item, index) => (
-                                <SwiperSlide key={index} className='text-center'>
-                                    <div className='rounded-2xl overflow-hidden w-auto inline-block mx-auto'>
-                                    <Image
-                                        src={item.img}
-                                        alt={`Slide ${index + 1}`}
-                                        className="w-full h-[500px] object-contain rounded-2xl"
+                                <Swiper
+                                    style={{
+                                        "--swiper-navigation-color": "#fff",
+                                        "--swiper-pagination-color": "#fff",
+                                    }}
+                                    spaceBetween={10}
+                                    navigation={true}
+                                    thumbs={{ swiper: thumbsSwiper }}
+                                    autoplay={{
+                                        delay: 2000,
+                                        disableOnInteraction: false,
+                                    }}
+                                    modules={[FreeMode, Navigation, Thumbs, Autoplay]}
+                                    className="mySwiperMain w-full outer_arrow"
+                                >
+                                    {sliderImages.map((item, index) => (
+                                        <SwiperSlide key={index} className='text-center'>
+                                            <div className='rounded-2xl overflow-hidden w-auto inline-block mx-auto'>
+                                                <Image
+                                                    src={item.img}
+                                                    alt={`Slide ${index + 1}`}
+                                                    className="w-full h-[500px] object-contain rounded-2xl"
 
-                                    />
-                                    </div>
-                                </SwiperSlide>
-                            ))}
-                        </Swiper>
+                                                />
+                                            </div>
+                                        </SwiperSlide>
+                                    ))}
+                                </Swiper>
                             </div>
                             <div className='md:col-span-4'>
-                            <Swiper
-                            onSwiper={setThumbsSwiper}
-                            spaceBetween={20}
-                            slidesPerView={3}
-                            freeMode={true}
-                            watchSlidesProgress={true}
+                                <Swiper
+                                    onSwiper={setThumbsSwiper}
+                                    spaceBetween={20}
+                                    slidesPerView={3}
+                                    freeMode={true}
+                                    watchSlidesProgress={true}
 
-                            modules={[FreeMode, Navigation, Thumbs ]}
-                            className="mySwiperThumbs w-full  h-auto lg:h-[500px]"
-                            breakpoints={{
+                                    modules={[FreeMode, Navigation, Thumbs]}
+                                    className="mySwiperThumbs w-full  h-auto lg:h-[500px]"
+                                    breakpoints={{
 
-                                640: {
-                                    direction:"vertical",
-                                    slidesPerView: 3.2,
-                                },
-                                320: {
-                                    slidesPerView: 3,
+                                        640: {
+                                            direction: "vertical",
+                                            slidesPerView: 3.2,
+                                        },
+                                        320: {
+                                            slidesPerView: 3,
 
-                                },
-                            }}
-                        >
-                            {sliderImages.map((item, index) => (
-                                <SwiperSlide key={index}>
-                                    <Image
-                                        src={item.img}
-                                        width={500}
-                                        height={500}
-                                        alt={`Slide ${index + 1}`}
-                                        className="w-full h-20 md:h-32 object-cover object-top rounded-2xl"
+                                        },
+                                    }}
+                                >
+                                    {sliderImages.map((item, index) => (
+                                        <SwiperSlide key={index}>
+                                            <Image
+                                                src={item.img}
+                                                width={500}
+                                                height={500}
+                                                alt={`Slide ${index + 1}`}
+                                                className="w-full h-20 md:h-32 object-cover object-top rounded-2xl"
 
-                                    />
-                                </SwiperSlide>
-                            ))}
-                        </Swiper>
+                                            />
+                                        </SwiperSlide>
+                                    ))}
+                                </Swiper>
                             </div>
                         </div>
                     </div>

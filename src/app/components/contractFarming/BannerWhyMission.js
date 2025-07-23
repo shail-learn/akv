@@ -108,13 +108,13 @@ export const Why = () => {
         <>
             <section className='pt-12 pb-12 lg:pt-14 lg:pb-14'>
                 <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2'>
-                    <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-medium text-center redhat text-[#1B453C] mb-10 md:mb-14'>{heading}</h2>
+                    <h2 className='text-3xl md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold  text-center redhat text-[#1B453C] mb-10 md:mb-14'>{heading}</h2>
                     <div className='flex md:flex-col flex-col lg:flex-row justify-between gap-8 md:gap-10'>
                         <div className='md:w-7/12  w-full  w-12/12'>
                             <Image src={leftimg} alt='banner' className='w-full rounded-2xl mt-2' />
                         </div>
                         <div className='md:w-5/12  w-full  w-12/12'>
-                            <h3 className='text-xl md:leading-[1.3] md:text-2xl font-medium redhat text-black mb-6'>{heading2}</h3>
+                            <h3 className='text-2xl md:leading-[1.3] md:text-[26px] font-medium redhat text-black mb-6'>{heading2}</h3>
                             <div className="relative w-full">
                                 <Swiper
                                     spaceBetween={30}
@@ -145,14 +145,14 @@ export const Why = () => {
                                             <div className="flex flex-row gap-4 md:gap-6">
                                                 <div className="flex items-center">
                                                     <div className="bg-[#6D8C54] p-2 rounded-full">
-                                                        <Image src={item.image} alt="icon" className="w-8 h-8" />
+                                                        <Image src={item.image} alt="icon" className="min-w-8 min-h-8" />
                                                     </div>
                                                 </div>
                                                 <div>
-                                                    <h4 className="text-[15px] font-bold redhat text-[#1F1E17] mb-2">
+                                                    <h4 className="text-lg md:text-xl font-bold redhat text-[#1F1E17] mb-2">
                                                         {item.title}
                                                     </h4>
-                                                    <p className="text-sm  font-medium redhat text-[#1F1E17]">
+                                                    <p className="text-base md:text-[17px]  font-medium redhat text-[#1F1E17]">
                                                         {item.description}
                                                     </p>
                                                 </div>
@@ -214,8 +214,8 @@ export const Mission = () => {
                     <div className='flex md:flex-col flex-col lg:flex-row justify-between items-center gap-8 md:gap-10'>
                         <div className='md:w-4/12  w-full  w-12/12'>
                             <div className='md:max-w-[80%]'>
-                                <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-medium text-center md:text-left redhat text-white mb-6'>{heading}</h2>
-                                <p className='text-white text-normal font-normal text-justify text-sm lg:text-base mb-8 lg:mb-10'>{subtitle}</p>
+                                <h2 className='text-3xl md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold text-center md:text-left redhat text-white mb-6'>{heading}</h2>
+                                <p className='text-white text-normal font-normal text-justify text-base lg:text-[17px] mb-8 lg:mb-10'>{subtitle}</p>
                             </div>
                         </div>
                         <div className='md:w-8/12  w-full  w-12/12'>
@@ -224,7 +224,7 @@ export const Mission = () => {
                                     <div className='md:w-4/12 w-full  w-12/12' key={index}>
                                         <div className='text-center md:p-10 py-14 p-8  bg-white rounded-xl h-full'>
                                             <Image src={item.image} className='w-20 h-20 md:w-24 md:h-24 object-contain mx-auto' alt='icon' />
-                                            <p className='text-normal text-sm lg:text-[15px] pt-8 font-medium'>{item.description}</p>
+                                            <p className='text-normal text-base text-[17px] pt-8 font-medium'>{item.description}</p>
                                         </div>
                                     </div>
                                 ))}
