@@ -56,7 +56,7 @@ export const Integrated = () => {
                 classname={text.className}
                 opacity={text.opacity}
             />
-            <section className="relative text-center md:text-left  my-20 md:my-[4rem] mb-0">
+            <section className="relative text-center md:text-left  my-20 md:my-[4rem] mb-10">
                 <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-2 relative z-1 ">
                     <div className="flex md:flex-col flex-col lg:flex-row justify-between gap-4 lg:gap-12  ">
                         <div className="lg:w-6/12  w-full  w-12/12 ">
@@ -67,12 +67,12 @@ export const Integrated = () => {
                             />
                         </div>
                         <div className="lg:w-6/12 mt-2 md:mt-4 w-full  w-12/12">
-                            <h2 className="text-3xl md:leading-[1.3] md:text-4xl font-medium redhat text-black mt-4 mb-8 ">
+                            <h2 className="text-3xl md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold redhat text-black mt-4 mb-8 ">
                                 {IntroData.heading}
                             </h2>
 
                             <p
-                                className="text-black text-base md:text-lg   redhat mb-10"
+                                className="text-black text-base md:text-[17px]   redhat mb-10"
                                 dangerouslySetInnerHTML={{ __html: IntroData.info }}
                             ></p>
 
@@ -85,10 +85,10 @@ export const Integrated = () => {
 
                 <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-2 relative z-1 ">
                     <div className='md:max-w-[70%] mx-auto'>
-                        <h2 className="text-3xl md:leading-[1.3] md:text-4xl font-medium text-center redhat text-white mb-12">
+                        <h2 className="text-3xl md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold text-center redhat text-white mb-12">
                             {heading}
                         </h2>
-                        <p className='text-base text-white '>{info}</p>
+                        <p className='text-base md:text-[17px] text-white '>{info}</p>
 
                     </div>
                 </div>
@@ -265,7 +265,7 @@ export const Who = () => {
                 <div className="mx-auto max-w-7xl  px-6 flex flex-col-reverse justify-between md:flex-row items-center gap-10">
 
                     <div className="w-full md:w-[45%] text-center md:text-left">
-                        <h2 className="text-3xl md:leading-[1.3] md:text-4xl font-normal redhat text-black mb-2">
+                        <h2 className="text-3xl md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold redhat text-black mb-2">
                             {heading}
                         </h2>
 
@@ -278,7 +278,7 @@ export const Who = () => {
                                     <span className="w-6 h-6 text-[#1B453C] flex items-center justify-center rounded-full">
                                         <MdCheckCircle className='w-6 h-6' />
                                     </span>
-                                    <p className="text-[#141414] text-left opacity-80">{plan}</p>
+                                    <p className="text-[#141414] md:text-[17px] text-left opacity-80">{plan}</p>
                                 </li>
                             ))}
                         </ul>
@@ -361,11 +361,11 @@ export const Movement = () => {
 
             <div className="relative z-10 h-full flex mx-auto px-4   max-w-7xl">
                 <div className="max-w-2xl text-white text-center md:text-left pl-3   mt-5">
-                    <h2 className=" w-full  text-3xl md:text-4xl leading-snug font-bold mb-8 md:mb-10 redhat">
+                    <h2 className=" w-full  text-3xl md:text-4xl leading-snug lg:text-[40px] font-semibold mb-8 md:mb-10 redhat">
                         {heading}
                     </h2>
                     <p
-                        className="mb-6 text-sm  md:text-base   w-full"
+                        className="mb-6 text-base  md:text-[17px]   w-full"
                         dangerouslySetInnerHTML={{ __html: description }}
                     ></p>
 

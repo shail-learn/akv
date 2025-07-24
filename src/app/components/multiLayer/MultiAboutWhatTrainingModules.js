@@ -62,7 +62,7 @@ export const About = () => {
 
     return (
         <>
-            <section className="relative text-center md:text-left  my-20 md:my-[4rem] mb-0">
+            <section className="relative text-center md:text-left  my-20 md:my-[4rem] mb-10">
                 <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-2 relative z-1 ">
                     <div className="flex md:flex-col flex-col lg:flex-row justify-between gap-4 lg:gap-12  ">
                         <div className="lg:w-6/12  w-full  w-12/12 ">
@@ -73,12 +73,12 @@ export const About = () => {
                             />
                         </div>
                         <div className="lg:w-6/12 mt-2 md:mt-4 w-full  w-12/12">
-                            <h2 className="text-3xl md:leading-[1.3] md:text-4xl font-medium redhat text-black mt-4 mb-8 ">
+                            <h2 className="text-3xl md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold redhat text-black mt-4 mb-8 ">
                                 {IntroData.heading}
                             </h2>
 
                             <p
-                                className="text-black text-base md:text-lg   redhat mb-10"
+                                className="text-black text-base md:text-[17px]   redhat mb-10"
                                 dangerouslySetInnerHTML={{ __html: IntroData.info }}
                             ></p>
 
@@ -119,10 +119,10 @@ export const What = () => {
 
                 <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-2 relative z-1 ">
                     <div className='md:max-w-[70%] mx-auto'>
-                        <h2 className="text-3xl md:leading-[1.3] md:text-4xl font-medium text-center redhat text-white mb-12">
+                        <h2 className="text-3xl md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold text-center redhat text-white mb-8 md:mb-12">
                             {heading}
                         </h2>
-                        <p className='text-base text-white mb-12 md:mb-16'>{info}</p>
+                        <p className='text-base text-white mb-12 md:mb-16 md:text-[17px]'>{info}</p>
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 md:gap-16">
                             {features.map((feature, index) => (
@@ -199,7 +199,7 @@ export const Modules = () => {
         {
             image: story2,
             title: "Plot Design and Crop Layering",
-            description:  `
+            description: `
             <ul>
                 <li>How to map and divide a small plot</li>
                 <li>Selection of crops based on height, light needs, and harvest time</li>
@@ -210,7 +210,7 @@ export const Modules = () => {
         {
             image: story3,
             title: "Organic Soil Enrichment",
-            description:`
+            description: `
             <ul>
                 <li>Making compost, Jeevamrut, and vermiwash</li>
                 <li>Techniques to improve soil fertility using natural inputs</li>
@@ -277,8 +277,8 @@ export const Modules = () => {
 
     return (
         <>
-        <div className='-mt-8'>
-            <ModuleSlider heading="Training Modules" stories={stories} />
+            <div className='-mt-8'>
+                <ModuleSlider heading="Training Modules" stories={stories} />
             </div>
         </>
     )
