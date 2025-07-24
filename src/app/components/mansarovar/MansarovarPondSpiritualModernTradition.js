@@ -12,6 +12,7 @@ import first from "../../../assets/images/projects/project7/program-1.webp";
 import second from "../../../assets/images/projects/project7/program-3.webp";
 import third from "../../../assets/images/projects/project7/program-2.webp";
 import fourth from "../../../assets/images/projects/project7/program-4.webp";
+import InfoSection from '../InfoSection';
 
 
 export const Mansarovar = () => {
@@ -75,34 +76,8 @@ export const Pond = () => {
   return (
     <>
 
-      <section className='relative text-center md:text-left   pb-16  pt-20 lg:pb-16 bg-[#f5f5f5]'  >
-        <div className='mx-auto max-w-7xl px-4 md:px-6 mx:px-2 relative z-1 '>
-          <div className='flex flex-col lg:flex-row justify-between items-center gap-12'>
-            <div className='md:w-[40%] w-full  w-12/12'>
-              <div className='relative'>
-                <Image className='w-full h-full rounded-xl' src={image2} alt='banner' />
+      <InfoSection heading={heading} image={image2} infoData={infoData} />
 
-              </div>
-            </div>
-            <div className='md:w-[60%]  w-full  w-12/12'>
-              <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-medium redhat text-[#1B453C] mb-8'>{heading}</h2>
-
-              <div className='my-6 mb-14'>
-                {infoData.map((item, index) => (
-                  <div key={index} className="flex items-start space-x-3 mb-4 py-1">
-                    <RiCheckboxCircleFill className="h-5 w-5 text-green-800 mt-1" />
-                    <div>
-                      <h3 className="font-semibold redhat text-left text-lg">{item.title}</h3>
-                      <p className="text-black redhat">{item.description}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </section>
       {/* <GrowthSlider
         GrowthHeading={GrowthHeading}
         slides={slides}
@@ -112,13 +87,13 @@ export const Pond = () => {
 
       <section className='text-center md:text-left pb-16 pt-16 lg:pb-20 lg:pt-20'>
         <div className='mx-auto max-w-7xl  px-6'>
-          <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-medium redhat text-[#1B453C] mb-8'>{GrowthHeading}</h2>
+          <h2 className='text-3xl md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold redhat text-[#1B453C] mb-8'>{GrowthHeading}</h2>
         </div>
         <div className='mx-auto max-w-7xl  px-6 flex flex-col-reverse md:flex-row items-center gap-10'>
           <div className='w-full md:w-2/3 text-center md:text-left'>
 
             <div className='w-full p-4 md:p-8 bg-[#1B453C] rounded-2xl'>
-              <p className='text-white text-base redhat' dangerouslySetInnerHTML={{ __html: GrowthDescription }}>
+              <p className='text-white text-base md:text-[17px] text-left redhat' dangerouslySetInnerHTML={{ __html: GrowthDescription }}>
               </p>
             </div>
           </div>
@@ -205,7 +180,7 @@ export const Modern = () => {
 
       <section className="py-0   md:py-0 technology-sec">
         <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-2 ">
-          <h2 className="text-3xl md:leading-[1.3] md:text-4xl font-medium redhat text-black mt-4 text-center">
+          <h2 className="text-3xl md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold redhat text-black mt-4 text-center">
             {heading1}
           </h2>
         </div>
@@ -221,11 +196,11 @@ export const Modern = () => {
             </div>
             <div className="md:col-span-3 col-span-12  h-72 lg:h-full text-white bg-[#6D8C54] grid transition-all duration-400  hover:bg-[#EFEFEF]  hover:text-[#000]">
               <div className="p-5">
-                <p className="w-3/4 pl-5 py-3 text-md font-medium">
+                <p className="w-3/4 pl-5 py-3 md:text-xl text-lg font-medium">
                   {textoneData.title}
                 </p>
                 <ul
-                  className="w-2/2 text-[14px] !list-disc pl-5 py-4"
+                  className="w-2/2 text-base md:text-[17px] !list-disc pl-5 py-4 text-left"
                   dangerouslySetInnerHTML={{ __html: textoneData.listData }}
                 ></ul>
               </div>
@@ -240,11 +215,11 @@ export const Modern = () => {
             </div>
             <div className="md:col-span-3 col-span-12  h-72 lg:h-full text-white bg-[#6D8C54] grid transition-all duration-400  hover:bg-[#EFEFEF]  hover:text-[#000]">
               <div className="p-5">
-                <p className="w-3/4 pl-5 py-3 text-md font-medium">
+                <p className="w-3/4 pl-5 py-3 md:text-xl text-lg font-medium">
                   {texttwoData.title}
                 </p>
                 <ul
-                  className="w-2/2 text-[14px] !list-disc pl-5 py-4"
+                  className="w-2/2 text-base md:text-[17px] !list-disc pl-5 py-4"
                   dangerouslySetInnerHTML={{ __html: texttwoData.listData }}
                 ></ul>
               </div>
@@ -252,11 +227,11 @@ export const Modern = () => {
 
             <div className="md:col-span-3 col-span-12 order-6 lg:order-none  h-72 lg:h-full text-white bg-[#6D8C54] grid transition-all duration-400  hover:bg-[#EFEFEF]  hover:text-[#000]">
               <div className="p-5">
-                <p className="w-3/4 pl-5 py-3 text-md font-medium">
+                <p className="w-3/4 pl-5 py-3 md:text-xl text-lg font-medium">
                   {textthirdData.title}
                 </p>
                 <ul
-                  className="w-2/2 text-[14px] !list-disc pl-5 py-4"
+                  className="w-2/2 text-base md:text-[17px] !list-disc pl-5 py-4"
                   dangerouslySetInnerHTML={{ __html: textthirdData.listData }}
                 ></ul>
               </div>
@@ -266,11 +241,11 @@ export const Modern = () => {
             </div>
             <div className="md:col-span-3 col-span-12 order-8 lg:order-none  h-72 lg:h-full text-white bg-[#6D8C54] grid transition-all duration-400  hover:bg-[#EFEFEF]  hover:text-[#000]">
               <div className="p-5">
-                <p className="w-3/4 pl-5 py-3 text-md font-medium">
+                <p className="w-3/4 pl-5 py-3 md:text-xl text-lg font-medium">
                   {textfourthData.title}
                 </p>
                 <ul
-                  className="w-2/2 text-[14px] !list-disc pl-5 py-4"
+                  className="w-2/2 text-base md:text-[17px] !list-disc pl-5 py-4"
                   dangerouslySetInnerHTML={{ __html: textfourthData.listData }}
                 ></ul>
               </div>
@@ -309,11 +284,11 @@ export const Tradition = () => {
 
       <div className="relative z-10 h-full flex mx-auto px-4   max-w-7xl">
         <div className="max-w-2xl text-white text-center md:text-left pl-3   mt-5">
-          <h2 className=" w-full  text-3xl md:text-4xl leading-snug font-bold mb-8 md:mb-10 redhat">
+          <h2 className=" w-full  text-3xl md:text-4xl leading-snug lg:text-[40px] font-semibold  mb-8 md:mb-10 redhat">
             {heading}
           </h2>
           <p
-            className="mb-4 text-sm  md:text-base   w-full"
+            className="mb-4 text-base  md:text-[17px]   w-full"
             dangerouslySetInnerHTML={{ __html: description }}
           ></p>
         </div>

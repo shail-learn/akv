@@ -4,13 +4,13 @@ export const Info = ({ title, description }) => {
   return (
     <section className="py-10 md:pt-16 px-4 md:px-6 text-center max-w-7xl mx-auto">
       {title && (
-        <h2 className="text-3xl md:text-4xl font-semibold text-[#1B453C] mb-10">
+        <h2 className="text-3xl md:text-4xl lg:text-[40px] font-semibold text-[#1B453C] mb-10">
           {title}
         </h2>
       )}
 
       {description && (
-        <div className="max-w-5xl mx-auto bg-[#1B453C] text-white rounded-2xl px-6 py-6 text-base  font-light">
+        <div className="max-w-5xl mx-auto bg-[#1B453C] text-white rounded-2xl px-6 py-6 text-base md:text-[17px]  font-light">
           {description}
         </div>
       )}

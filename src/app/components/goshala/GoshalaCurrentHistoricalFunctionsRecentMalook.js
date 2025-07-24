@@ -17,6 +17,7 @@ import use3 from "../../../assets/images/projects/project3/key3.webp";
 import use4 from "../../../assets/images/projects/project3/key4.webp";
 import use5 from "../../../assets/images/projects/project3/key5.webp";
 import use6 from "../../../assets/images/projects/project3/key6.webp";
+import InfoSection from '../InfoSection';
 
 export const Goshala = () => {
   const text = {
@@ -95,35 +96,7 @@ export const Current = () => {
   return (
     <>
 
-      <section className='relative text-center md:text-left   pb-16  pt-20 lg:pb-16 bg-[#f5f5f5]'  >
-        <div className='mx-auto max-w-7xl px-4 md:px-6 mx:px-2 relative z-1 '>
-          <div className='flex flex-col lg:flex-row justify-between items-center gap-12'>
-            <div className='md:w-[40%] w-full  w-12/12'>
-              <div className='relative'>
-                <Image className='w-full h-full rounded-xl' src={image01} alt='banner' />
-
-              </div>
-            </div>
-            <div className='md:w-[60%]  w-full  w-12/12'>
-              <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-medium redhat text-[#1B453C] mb-8'>{heading}</h2>
-
-              <div className='my-6 mb-14'>
-                {infoData.map((item, index) => (
-                  <div key={index} className="flex items-start space-x-3 mb-4 py-1">
-                    <RiCheckboxCircleFill className="h-5 w-5 text-green-800 mt-1" />
-                    <div>
-                      <h3 className="font-semibold redhat text-left text-lg">{item.title}</h3>
-                      <p className="text-black redhat">{item.description}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <InfoSection heading={heading} image={image01} infoData={infoData} />
 
       <Titleslider heading={GrowthHeading} boxslider={slides} shortdescription={GrowthDescription} />
 
@@ -145,15 +118,15 @@ export const Historical = () => {
     <>
       <section className='relative text-center md:text-left py-10  md:py-16'>
         <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2 relative z-1 '>
-          <h2 className='text-3xl text-center md:leading-[1.3] md:text-4xl font-medium redhat text-black mb-10'>{heading}</h2>
+          <h2 className='text-3xl text-center md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold redhat text-black mb-10'>{heading}</h2>
           <div className='flex flex-col lg:flex-row justify-between items-center gap-4 lg:gap-12'>
             <div className='lg:w-6/12  w-full w-12/12'>
               <Image className='w-full h-full rounded-xl' src={info} alt='banner' />
             </div>
             <div className='lg:w-6/12  w-full w-12/12'>
 
-              <h3 className='text-xl md:leading-[1.3] md:text-2xl font-semibold redhat text-[#2D6B5E] mb-6'>{subtitle}</h3>
-              <p className='text-black text-base text-justify redhat' dangerouslySetInnerHTML={{ __html: description }}>
+              <h3 className='text-3xl md:leading-[1.3] md:text-4xl font-medium  redhat text-[#2D6B5E] mb-6'>{subtitle}</h3>
+              <p className='text-black text-base md:text-[17px] text-justify redhat' dangerouslySetInnerHTML={{ __html: description }}>
               </p>
 
 
@@ -167,7 +140,7 @@ export const Historical = () => {
           <div className='flex md:flex-col lg:flex-row justify-between items-center gap-4 lg:gap-12 flex-col-reverse'>
             <div className='lg:w-6/12  w-full  w-12/12'>
               <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-medium redhat text-black mt-4 mb-6'>{heading1}</h2>
-              <p className='text-black text-base redhat text-justify mb-10' dangerouslySetInnerHTML={{ __html: description1 }}>
+              <p className='text-black text-base redhat md:text-[17px]  text-justify mb-10' dangerouslySetInnerHTML={{ __html: description1 }}>
               </p>
 
             </div>
@@ -298,7 +271,7 @@ export const Malook = () => {
       className="relative bg-no-repeat py-14 lg:py-32 !mb-0 bg-cover w-full my-8 md:my-12 !mt-0"
       style={{ backgroundImage: `url(${PartnerBg.src})` }}
     >
-            <div className='absolute top-0 left-0 w-full h-full bg-black opacity-60'></div>
+      <div className='absolute top-0 left-0 w-full h-full bg-black opacity-60'></div>
 
 
       <div className="relative z-10 h-full flex mx-auto px-4   max-w-7xl">
@@ -307,7 +280,7 @@ export const Malook = () => {
             {heading}
           </h2>
           <p
-            className="mb-4 text-sm  md:text-base   w-full"
+            className="mb-4 text-base  md:text-[17px]   w-full"
             dangerouslySetInnerHTML={{ __html: description }}
           ></p>
 

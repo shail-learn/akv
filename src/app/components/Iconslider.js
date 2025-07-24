@@ -11,7 +11,7 @@ export const Iconslider = ({ heading, card, titleClass, icon, custom_class }) =>
     <>
       <div className={`relative z-20 bg-[#1b453c] text-white pb-20 -mt-20 ${custom_class ? custom_class : ""} `}>
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-medium text-center pt-14 pb-10">
+          <h2 className="text-3xl md:text-4xl lg:text-[40px]  font-semibold text-center pt-14 pb-10">
             {heading}
           </h2>
 
@@ -46,7 +46,7 @@ export const Iconslider = ({ heading, card, titleClass, icon, custom_class }) =>
                     >
                       <div className="grid items-center  text-center justify-center gap-6">
                         <h3
-                          className={`text-base md:text-[16] text-black font-bold ${titleClass}`}
+                          className={`text-lg md:text-xl text-black font-bold ${titleClass}`}
                         >
                           {item.title}
                         </h3>
@@ -59,7 +59,7 @@ export const Iconslider = ({ heading, card, titleClass, icon, custom_class }) =>
                             className="object-contain h-9 mx-auto"
                           />
                         )}
-                        <p className="text-[13px] font-normal text-black">
+                        <p className="text-base  font-normal text-black">
                           {item.description}
                         </p>
                       </div>

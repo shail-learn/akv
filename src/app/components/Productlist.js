@@ -41,8 +41,8 @@ export const Productlist = ({ heading, fruitData, bgimg, custom_space }) => {
                       className="object-cover w-full h-full"
                     />
                     <div className="absolute inset-0 bg-black opacity-20"></div>
-                    <div className="absolute bottom-0 left-0 w-full p-4 text-white font-semibold text-base bg-opacity-80 flex justify-between items-center">
-                      <span className="min-w-[80%] max-w-[80%] md:text-[17px]">{item.title}</span>
+                    <div className="absolute bottom-0 left-0 w-full p-4 text-white font-medium text-base bg-opacity-80 flex justify-between items-center">
+                      <span className="min-w-[80%] max-w-[80%] text-lg md:text-xl">{item.title}</span>
                       {showIcon && <FaLongArrowAltRight />}
                     </div>
                   </div>
