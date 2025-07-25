@@ -55,7 +55,7 @@ const TrainingProgram = () => {
               <Image
                 src={first}
                 alt="icon"
-                className="w-full mx-auto h-full"
+                className="w-full mx-auto h-full xl:h-[410px] object-cover"
                 quality={100}
               />
             </div>
@@ -65,7 +65,7 @@ const TrainingProgram = () => {
                   {textoneData.title}
                 </p>
                 <ul
-                  className="w-2/2 text-base font-light md:text-[17px] !list-disc pl-5 py-4"
+                  className="w-2/2  text-base font-light md:text-[17px] !list-disc pl-5 py-4 "
                   dangerouslySetInnerHTML={{ __html: textoneData.listData }}
                 ></ul>
               </div>

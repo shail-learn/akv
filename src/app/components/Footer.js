@@ -23,7 +23,7 @@ export const Footer = (htmlContent) => {
     { name: 'About Us', href: '/about-us', current: false },
     { name: 'Our Business', href: '/our-business', current: false },
     { name: 'Eco Initiatives', href: '/eco-initiatives', current: false },
-    { name: 'Blogs', href: '/blogs', current: false },
+    // { name: 'Blogs', href: '/blogs', current: false },
     { name: 'Gallery', href: '/gallery', current: false },
     { name: 'Contact Us', href: '/contact-us', current: false },
     { name: 'Career', href: '/career', current: false },
@@ -107,8 +107,8 @@ export const Footer = (htmlContent) => {
         </div>
 
         <div className='flex gap-4 md:gap-0 flex-wrap border-t mt-10 md:mt-16  pt-8  border-white'>
-        <div className='w-full md:w-12/12'>
-        <ul className='footer_menu footer_last flex gap-4 flex-wrap justify-center'>
+          <div className='w-full md:w-12/12'>
+            <ul className='footer_menu footer_last flex gap-4 flex-wrap justify-center'>
               {footernav.map((item, key) => (
                 <li className='text-[#D2AE6D] font-light text-sm hover:text-white' key={item.name}><Link href={item.href}>{item.name}</Link> <span className='ms-4'>|</span></li>
 

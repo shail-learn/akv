@@ -11,13 +11,36 @@ import jounery3 from "../../../assets/images/home/jounery3.webp";
 import jounery4 from "../../../assets/images/home/jounery4.webp";
 import jounery5 from "../../../assets/images/home/jounery5.webp";
 import jounery6 from "../../../assets/images/home/jounery6.webp";
+import jounery7 from "../../../assets/images/home/jounery7.webp";
+
 
 import Image from "next/image";
 import Link from "next/link";
 export const OurJourney = () => {
   const journey = [
     {
-      image: jounery6,
+      image: jounery7,
+      year: "2025",
+      title: "Growth & Green Innovation",
+      description: [
+        {
+          item: 1,
+          content:
+            "Expanded green footprint from 250 acres to over 5,000 acres; 10,000-acre target underway.",
+        },
+        {
+          item: 2,
+          content: "Deployed innovative, scalable revenue models to support long-term sustainability.",
+        },
+        {
+          item: 3,
+          content:
+            "Advanced agro-eco-tourism with eco-conscious practices and deeper local partnerships.",
+        },
+      ],
+    },
+    {
+      image: jounery5,
       year: "2024",
       title: "Expansion and Revenue Models",
       description: [
@@ -38,7 +61,7 @@ export const OurJourney = () => {
       ],
     },
     {
-      image: jounery5,
+      image: jounery6,
       year: "2023",
       title: "Growth and Innovation",
       description: [
@@ -161,9 +184,10 @@ export const OurJourney = () => {
         <div className="mx-auto max-full flex flex-wrap md:flex-nowrap gap-0 md:gap-12">
           <div className="w-full md:w-6/12">
             <Image
-              className="h-full w-full"
+              className="h-full w-full md:h-[890px] object-cover"
               src={journey[activeIndex].image}
               alt="banner"
+
             />
           </div>
           <div
@@ -178,7 +202,7 @@ export const OurJourney = () => {
               Steps Towards a Thriving Tomorrow
             </p>
             <div className="flex gap-4 px-4 lg:px-0">
-              <div className="flex gap-4 md:gap-12">
+              <div className="flex gap-4 md:gap-12 md:h-[700px]">
                 {/* <Image src={banner1} alt="banner" /> */}
                 <div>
                   <Image
@@ -204,10 +228,11 @@ export const OurJourney = () => {
                         >
                           <Image
                             src={branch}
-                            className="relative z-0"
+                            className="relative z-0 h-16"
                             alt="banner"
                             width="40px"
                             height="40px"
+
                           />
                         </a>
                       </li>

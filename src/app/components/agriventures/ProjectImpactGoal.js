@@ -1,7 +1,7 @@
 "use client"
 import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Navigation, Grid } from 'swiper/modules';
+import { Pagination, Navigation, Grid, Autoplay } from 'swiper/modules';
 
 import 'swiper/css/grid';
 import 'swiper/css';
@@ -188,8 +188,8 @@ export const Impact = () => {
                     <div className='w-full md:w-6/12'>
                         <h2 className="lg:leading-snug text-white redhat mb-4 pt-10 text-center md:text-left text-3xl md:text-4xl  font-semibold lg:text-[40px]  w-full"> {heading}</h2>
 
-                        <div ref={containerRef} className='custom_left_scroll mr-6
-          overflow-y-scroll   h-[800px]' >
+                        <div ref={containerRef} className='custom_left_scroll mr-6 md:pb-8
+           ' >
                             {impactData.map((impact, index) => (
                                 <div key={index} className="p-4">
                                     <div className=" flex gap-4 lg:gap-8">
@@ -249,10 +249,12 @@ export const FeatureGoal = () => {
                         <Swiper
                             slidesPerView={1}
                             spaceBetween={10}
+
                             autoplay={{
                                 delay: 4000,
                                 disableOnInteraction: false,
                             }}
+                            modules={[Autoplay]}
                             breakpoints={{
                                 320: {
                                     slidesPerView: 1,

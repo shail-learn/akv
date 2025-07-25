@@ -146,7 +146,7 @@ export const Project = () => {
                 className=" bg-[#9A9771] pt-0 pb-14 lg:pt-0 lg:pb-0 mt-0">
                 <div className='mx-auto max-full justify-between flex flex-wrap md:flex-nowrap gap-0 md:gap-12'>
                     <div className='w-full md:w-5/12'>
-                        <Image className='h-auto w-full' src={image3} alt="banner" />
+                        <Image className='h-auto w-full xl:h-[900px] object-cover' src={image3} alt="banner" />
 
                     </div>
                     <div className='w-full md:w-6/12'>

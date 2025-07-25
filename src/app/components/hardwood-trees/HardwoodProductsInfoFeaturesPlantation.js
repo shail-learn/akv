@@ -49,7 +49,7 @@ export const Products = () => {
             title: "Arjun",
             subtitle: "The Guardian of Health & Timber",
             image: product1,
-            scientific: "Terminalia arjuna",
+            scientific: "Terminalia Arjuna",
         },
         {
             title: "Bija",
@@ -104,7 +104,7 @@ export const Info = () => {
                 <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-8'>
                     <div className="flex flex-col-reverse justify-between lg:flex-row   gap-8">
                         <div className="w-full md:w-1/2">
-                            <p className="mt-0 md:mt-4 text-white">{basketData.note}</p>
+                            <p className="mt-0 md:mt-4 text-white text-justify">{basketData.note}</p>
                         </div>
 
                         <div className="w-full md:w-[40%]">

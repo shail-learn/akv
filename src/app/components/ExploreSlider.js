@@ -59,6 +59,12 @@ export const ExploreSlider = ({ heading, subheading, items, background }) => {
               slidesPerView={1}
               spaceBetween={24}
               breakpoints={{
+                1400: {
+                  slidesPerView: 3,
+                },
+                1024: {
+                  slidesPerView: 2,
+                },
                 768: {
                   slidesPerView: 2,
                 },
@@ -76,12 +82,12 @@ export const ExploreSlider = ({ heading, subheading, items, background }) => {
             >
               {items.map((item, index) => (
                 <SwiperSlide key={index}>
-                  <div className="bg-white w-[90%] mx-auto bg-opacity-20 backdrop-blur text-white rounded-xl overflow-hidden h-full">
+                  <div className="bg-white w-[90%] mx-auto bg-opacity-20 backdrop-blur text-white rounded-xl overflow-hidden h-full xl:h-[550px]">
                     {item.image && (
                       <Image
                         src={item.image}
                         alt={item.heading || "project"}
-                        className="w-full h-[250px] object-cover"
+                        className="w-full h-[240px] object-cover"
                       />
                     )}
 
@@ -103,9 +109,9 @@ export const ExploreSlider = ({ heading, subheading, items, background }) => {
                       )}
 
                       {item.link && (
-                        <div className="my-6 pt-4 text-center">
-                          <Link href={item.link}>
-                            <span className="inline-block border text-base md:text-[17px] border-white text-white  px-8 py-3 hover:bg-gray-800 transition">
+                        <div className="my-6 pt-4 text-center  w-full">
+                          <Link href={item.link} className="md:absolute bottom-8 top-auto left-2/4 -translate-x-2/4" >
+                            <span className="inline-block border text-base md:text-[17px] border-white text-white  px-8 py-3 hover:bg-gray-800 transition ">
                               Learn More
                             </span>
                           </Link>

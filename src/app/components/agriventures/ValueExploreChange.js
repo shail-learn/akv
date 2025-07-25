@@ -112,7 +112,7 @@ export const Explore = () => {
         className=" bg-[#9A9771] pt-0 pb-14 lg:pt-0 lg:pb-0">
         <div className='mx-auto max-full flex flex-wrap md:flex-nowrap gap-0 md:gap-12'>
           <div className='w-full md:w-6/12'>
-            <Image className='h-full w-full' src={image3} alt="banner" />
+            <Image className='h-full w-full xl:h-[800px] object-cover' src={image3} alt="banner" />
 
           </div>
           <div className='w-full md:w-6/12'>
