@@ -32,8 +32,8 @@ function ClientPage() {
 
   const founders = [
     {
-      "name": "Late and Emeritus Shri M.K. Aggarwal",
-      "title": "Founder",
+      "name": "Emeritus Lt. M.K. Aggarwal",
+      "title": "Chairman",
       "linkedin": "",
       "quote": "\"A Legacy of Vision, Innovation, and Sustainable Growth\"",
       "image": member1,
@@ -69,7 +69,7 @@ function ClientPage() {
     },
     {
       "name": "Dr. S.K. Pande",
-      "title": "Director, School of Agriculture Science-ex",
+      "title": "Associate Director",
       "quote": "\"A Legacy of Research, Innovation, and Agricultural Excellence\"",
       "linkedin": "https://www.linkedin.com/in/dr-subodh-kumar-pande-604930295/",
 

@@ -68,7 +68,10 @@ function ClientPage() {
                             <h2 className="text-2xl md:text-3xl font-normal py-3 mb-10 bg-[#1B453C] text-white text-center">
                                 {section.title}
                             </h2>
-                            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mb-14 gap-6">
+                            <div className={`mb-14 gap-6 ${section.title === "Videos"
+                                ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+                                : "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+                                }`}>
                                 {section.images.map((img, imgIdx) => (
                                     <div
                                         key={`img-${secIdx}-${img.id}`}

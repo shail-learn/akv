@@ -22,8 +22,8 @@ export const Ourteam = () => {
     {
       id: 1,
       image: Team1,
-      name: "Late and Emeritus <br/> Shri MK Aggarwal",
-      designation: "Founder",
+      name: "Emeritus <br> Lt. M.K. Aggarwal",
+      designation: "Chairman",
     },
     {
       id: 2,
@@ -35,7 +35,7 @@ export const Ourteam = () => {
       id: 3,
       image: Team3,
       name: "Dr. SK Pande",
-      designation: "Director, School of Agriculture Science-ex",
+      designation: "Associate Director",
     },
     {
       id: 4,

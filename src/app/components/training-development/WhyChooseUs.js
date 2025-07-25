@@ -50,6 +50,7 @@ const WhyChooseUs = () => {
   ];
 
   const custom_space = "pt-0 py-20 md:py-24 lg:py-32"
+  const custom_grid = "lg:grid-cols-4"
   const heading1 = "Our Training"
   const bgimg = backgroundImage
   const fruitData = [
@@ -78,7 +79,7 @@ const WhyChooseUs = () => {
   return (
     <>
 
-      <Productlist heading={heading1} fruitData={fruitData} bgimg={bgimg} custom_space={custom_space} />
+      <Productlist heading={heading1} fruitData={fruitData} bgimg={bgimg} custom_space={custom_space} custom_grid={custom_grid} />
 
 
 

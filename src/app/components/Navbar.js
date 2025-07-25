@@ -47,7 +47,7 @@ const navigation = [
       // { name: "CSR Activity", href: "/csr-activity" },
       { name: "Our Projects", href: "/our-projects" },
       { name: "Events", href: "/events" },
-      { name: "Blogs", href: "/blogs" },
+      // { name: "Blogs", href: "/blogs" },
 
     ],
   },
@@ -113,8 +113,8 @@ function Navbar() {
                       <Link
                         href={item.href}
                         className={`flex items-center px-3 py-2 text-base font-normal transition-colors duration-200 ${isActive
-                            ? "text-[#469E8E]"
-                            : "text-[#A8A8A8] hover:text-[#469E8E]"
+                          ? "text-[#469E8E]"
+                          : "text-[#A8A8A8] hover:text-[#469E8E]"
                           }`}
                       >
                         {item.name}
@@ -134,8 +134,8 @@ function Navbar() {
                                 key={subIndex}
                                 href={subItem.href}
                                 className={`block px-4 py-2 text-sm ${isSubActive
-                                    ? "text-[#469E8E]  hover:bg-teal-50"
-                                    : "text-gray-600 hover:bg-teal-50"
+                                  ? "text-[#469E8E]  hover:bg-teal-50"
+                                  : "text-gray-600 hover:bg-teal-50"
                                   }`}
                               >
                                 {subItem.name}
@@ -167,57 +167,55 @@ function Navbar() {
             className={`fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform ${menuOpen ? "translate-x-0" : "-translate-x-full"
               } transition-transform duration-300 ease-in-out md:hidden`}
           >
-          <ul className="mt-12 px-4 space-y-4">
-          {navigation.map((item, index) => {
-            const isActive =
-              pathname === item.href ||
-              (item.submenu && item.submenu.some((sub) => pathname === sub.href));
+            <ul className="mt-12 px-4 space-y-4">
+              {navigation.map((item, index) => {
+                const isActive =
+                  pathname === item.href ||
+                  (item.submenu && item.submenu.some((sub) => pathname === sub.href));
 
-            return (
-              <li key={index}>
-                <div
-                  onClick={() =>
-                    item.submenu
-                      ? setOpenDropdown(openDropdown === index ? null : index)
-                      : setMenuOpen(false) // close on non-submenu item click
-                  }
-                  className={`flex justify-between items-center cursor-pointer ${
-                    isActive ? "text-[#469E8E]" : "text-gray-600"
-                  }`}
-                >
-                  <Link href={item.href} onClick={() => setMenuOpen(false)}>
-                    {item.name}
-                  </Link>
-                  {item.submenu && <MdKeyboardArrowDown />}
-                </div>
+                return (
+                  <li key={index}>
+                    <div
+                      onClick={() =>
+                        item.submenu
+                          ? setOpenDropdown(openDropdown === index ? null : index)
+                          : setMenuOpen(false) // close on non-submenu item click
+                      }
+                      className={`flex justify-between items-center cursor-pointer ${isActive ? "text-[#469E8E]" : "text-gray-600"
+                        }`}
+                    >
+                      <Link href={item.href} onClick={() => setMenuOpen(false)}>
+                        {item.name}
+                      </Link>
+                      {item.submenu && <MdKeyboardArrowDown />}
+                    </div>
 
-                {item.submenu && openDropdown === index && (
-                  <ul className="ml-2 mt-2 space-y-2">
-                    {item.submenu.map((subItem, subIndex) => {
-                      const isSubActive = pathname === subItem.href;
-                      return (
-                        <li key={subIndex}>
-                          <Link
-                            href={subItem.href}
-                            onClick={() => setMenuOpen(false)}
-                            className={`block py-1 ${
-                              isSubActive ? "text-[#469E8E]" : "text-gray-500"
-                            }`}
-                          >
-                            {subItem.name}
-                          </Link>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                )}
-              </li>
-            );
-          })}
-          <div className="flex items-center space-x-1 text-[#A8A8A8] pl-3">
-          <GoogleTranslate showHiddenDiv={false} />
-  </div>
-        </ul>
+                    {item.submenu && openDropdown === index && (
+                      <ul className="ml-2 mt-2 space-y-2">
+                        {item.submenu.map((subItem, subIndex) => {
+                          const isSubActive = pathname === subItem.href;
+                          return (
+                            <li key={subIndex}>
+                              <Link
+                                href={subItem.href}
+                                onClick={() => setMenuOpen(false)}
+                                className={`block py-1 ${isSubActive ? "text-[#469E8E]" : "text-gray-500"
+                                  }`}
+                              >
+                                {subItem.name}
+                              </Link>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    )}
+                  </li>
+                );
+              })}
+              <div className="flex items-center space-x-1 text-[#A8A8A8] pl-3">
+                <GoogleTranslate showHiddenDiv={false} />
+              </div>
+            </ul>
           </div>
         </Disclosure>
       </header>

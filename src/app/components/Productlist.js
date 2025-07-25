@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
-export const Productlist = ({ heading, fruitData, bgimg, custom_space }) => {
+export const Productlist = ({ heading, fruitData, bgimg, custom_space, custom_grid }) => {
   const [showAll, setShowAll] = useState(false);
 
   const visibleItems = showAll ? fruitData : fruitData.slice(0, 6);
@@ -24,7 +24,7 @@ export const Productlist = ({ heading, fruitData, bgimg, custom_space }) => {
             {heading}
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ${custom_grid ? custom_grid : ""}`} >
             {visibleItems.map((item, index) => {
               const hasFlip = !!item.flip;
               const hasLink = !!item.link;
@@ -41,7 +41,7 @@ export const Productlist = ({ heading, fruitData, bgimg, custom_space }) => {
                       className="object-cover w-full h-full"
                     />
                     <div className="absolute inset-0 bg-black opacity-20"></div>
-                    <div className="absolute bottom-0 left-0 w-full p-4 text-white font-medium text-base bg-opacity-80 flex justify-between items-center">
+                    <div className="absolute bottom-0 left-0 w-full p-4 text-white font-medium text-base bg-opacity-80 flex justify-between items-end">
                       <span className="min-w-[80%] max-w-[80%] text-lg md:text-xl">{item.title}</span>
                       {showIcon && <FaLongArrowAltRight />}
                     </div>

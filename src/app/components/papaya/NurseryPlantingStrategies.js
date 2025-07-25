@@ -159,14 +159,13 @@ export const Strategies = () => {
         className=" bg-[#1B453C] pt-0 pb-14 lg:pt-0 lg:pb-0">
         <div className='mx-auto max-full flex flex-wrap md:flex-nowrap gap-0 md:gap-12'>
           <div className='w-full md:w-6/12'>
-            <Image className='h-full w-full' src={image3} alt="banner" />
+            <Image className='h-full w-full md:h-[640px] object-cover' src={image3} alt="banner" />
 
           </div>
           <div className='w-full md:w-6/12'>
             <h2 className="lg:leading-snug text-white redhat mb-4 pt-10 text-center md:text-left text-3xl md:text-4xl  font-medium md:w-[80%] "> {heading}</h2>
 
-            <div ref={containerRef} className='custom_left_scroll mr-6
-          overflow-y-scroll   h-[700px]' >
+            <div ref={containerRef} className='custom_left_scroll mr-6' >
               {impactData.map((impact, index) => (
                 <div key={index} className="p-4">
                   <div className=" flex gap-4 lg:gap-8">

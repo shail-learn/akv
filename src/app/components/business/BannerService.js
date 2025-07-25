@@ -67,9 +67,9 @@ export const OurService = () => {
                     <div className='lg:w-12/12  w-full  w-12/12'>
                         <h2 className='text-3xl md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold redhat text-black mb-6'>{heading}</h2>
                     </div>
-                    <div className='lg:grid flex flex-wrap gap-6 space-y-7 lg:gap-4 grid-cols-1 lg:grid-cols-12'>
+                    <div className='lg:grid flex flex-wrap gap-8 lg:gap-4 grid-cols-1  !gap-x-6 lg:grid-cols-12 items-start'>
                         {visibleServices.map((item, index) => (
-                            <div key={index} className="lg:col-span-4 md:col-span-3 sm:col-span-2">
+                            <div key={index} className="lg:col-span-4 md:col-span-3 sm:col-span-2 h-full pt-10">
                                 <BusinessCard
                                     image={item.image}
                                     title={item.title}
