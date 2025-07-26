@@ -413,50 +413,144 @@ export const Impact = () => {
 
 
 export const Contact = () => {
-    return (
-        <>
+  const [formData, setFormData] = useState({
+    location: "",
+    email: "",
+    phone: ""
+  });
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState("");
 
-            <section className="pt-14 pb-14 lg:pt-20 lg:pb-20 relative " style={{ background: `url(${contactbg.src}) center center / cover no-repeat` }}>
-                <div className="absolute inset-0 bg-black bg-opacity-35"></div>
-                <div className="relative max-w-7xl mx-auto px-6 md:px-12 text-white text-center">
-                    <div className='flex flex-col lg:flex-row justify-between items-center gap-4 lg:gap-12'>
-                        <div className='md:w-5/12  w-12/12'>
-                            <div className="flex flex-col h-full">
-                                <div className="">
-                                    <h2 className="text-4xl md:leading-[1.3] md:text-5xl md:text-left lg:text-[40px] font-semibold redhat text-white">
-                                        Let’s Grow <br /> Together
-                                    </h2>
-                                </div>
-                                <div className="md:mt-[50%] mt-14 h-full text-left">
+  const handleChange = (e) => {
+    setFormData(prev => ({
+      ...prev,
+      [e.target.name]: e.target.value
+    }));
+  };
 
-                                    <ul className="mb-6 text-base md:text-[17px]">
-                                        <li>Whether you’re a nature lover, corporate, policymaker, or <br />changemaker—there’s a way for you to be part of our vision.</li>
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+  setError("");
+  setSuccess(false);
 
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='md:w-5/12  w-12/12'>
+  const { location, email, phone } = formData;
 
-                            <div className="bg-white text-black p-6 rounded-3xl shadow-lg w-full max-w-md">
-                                <h2 className="text-xl md:text-2xl font-medium mb-6 text-center md:text-left">Book a Visit</h2>
-                                <form>
-                                    <div className='flex flex-wrap gap-4 mb-4'>
-                                        <input type="text" className='outline-none font-normal px-4 p-3 poppins rounded-md w-full bg-[#F6F6F8]' placeholder='Location: ' />
-                                        <input type="email" className='outline-none font-normal px-4 p-3 poppins rounded-md w-full bg-[#F6F6F8]' placeholder='Email:' />
-                                        <input type="text" className='outline-none font-normal px-4 p-3 poppins rounded-md w-full bg-[#F6F6F8]' placeholder='Phone Number' />
-                                    </div>
+  // Simple validation
+  if (!location || !email || !phone) {
+    setError("All fields are required.");
+    return;
+  }
 
-                                    <button className='poppins mt-10 md:text-[17px] font-medium text-white w-full py-3 rounded-[10px] bg-[#1B453C]'>Submit</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    setError("Please enter a valid email.");
+    return;
+  }
 
+  if (phone.length < 6 || !/^\+?\d+$/.test(phone)) {
+    setError("Enter a valid phone number.");
+    return;
+  }
 
+  try {
+    const res = await fetch("/data/project", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData)
+    });
 
+    if (res.ok) {
+      setSuccess(true);
+      setFormData({ location: "", email: "", phone: "" });
+    } else {
+      const data = await res.json();
+      setError(data.error || "Something went wrong.");
+    }
+  } catch (err) {
+    setError("Failed to send. Please try again.");
+  }
+};
+
+  return (
+    <section
+      className="pt-14 pb-14 lg:pt-20 lg:pb-20 relative"
+      style={{
+        background: `url(${contactbg.src}) center center / cover no-repeat`
+      }}
+    >
+      <div className="absolute inset-0 bg-black bg-opacity-35"></div>
+      <div className="relative max-w-7xl mx-auto px-6 md:px-12 text-white text-center">
+        <div className="flex flex-col lg:flex-row justify-between items-center gap-4 lg:gap-12">
+          <div className="md:w-5/12 w-12/12">
+            <div className="flex flex-col h-full">
+              <div>
+                <h2 className="text-4xl md:leading-[1.3] md:text-5xl md:text-left lg:text-[40px] font-semibold redhat text-white">
+                  Let’s Grow <br /> Together
+                </h2>
+              </div>
+              <div className="md:mt-[50%] mt-14 h-full text-left">
+                <ul className="mb-6 text-base md:text-[17px]">
+                  <li>
+                    Whether you’re a nature lover, corporate, policymaker, or <br />
+                    changemaker—there’s a way for you to be part of our vision.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="md:w-5/12 w-12/12">
+            <div className="bg-white text-black p-6 rounded-3xl shadow-lg w-full max-w-md">
+              <h2 className="text-xl md:text-2xl font-medium mb-6 text-center md:text-left">
+                Book a Visit
+              </h2>
+
+              <form onSubmit={handleSubmit}>
+                <div className="flex flex-wrap gap-4 mb-4">
+                  <input
+                    type="text"
+                    name="location"
+                    value={formData.location}
+                    onChange={handleChange}
+                    className="outline-none font-normal px-4 p-3 poppins rounded-md w-full bg-[#F6F6F8]"
+                    placeholder="Location:"
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    className="outline-none font-normal px-4 p-3 poppins rounded-md w-full bg-[#F6F6F8]"
+                    placeholder="Email:"
+                  />
+                  <input
+                    type="text"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    className="outline-none font-normal px-4 p-3 poppins rounded-md w-full bg-[#F6F6F8]"
+                    placeholder="Phone Number"
+                  />
                 </div>
-            </section>
-        </>
-    )
-}
+
+                <button
+                  type="submit"
+                  className="poppins mt-6 md:text-[17px] font-medium text-white w-full py-3 rounded-[10px] bg-[#1B453C]"
+                >
+                  Submit
+                </button>
+
+                {success && (
+                  <p className="text-green-600 mt-4 text-sm">Successfully submitted!</p>
+                )}
+                {error && (
+                  <p className="text-red-600 mt-4 text-sm">{error}</p>
+                )}
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
