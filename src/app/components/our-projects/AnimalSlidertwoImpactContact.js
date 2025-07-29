@@ -19,10 +19,10 @@ import { Grid, Pagination, Navigation, Autoplay } from 'swiper/modules';
 
 
 import bgsupport from '../../../assets/images/contract-farming/bg-img.webp'
-import support1 from '../../../assets/images/contract-farming/support1.webp'
-import support2 from '../../../assets/images/contract-farming/support2.webp'
+import support1 from '../../../assets/images/ourproject/support1.webp'
+import support2 from '../../../assets/images/ourproject/support2.webp'
 import support3 from '../../../assets/images/contract-farming/support3.webp'
-import support4 from '../../../assets/images/contract-farming/support4.webp'
+import support4 from '../../../assets/images/ourproject/support4.webp'
 import middleimg from '../../../assets/images/contract-farming/long.svg'
 import contactbg from "../../../assets/images/training/join-bg.webp";
 
@@ -318,9 +318,7 @@ export const Impact = () => {
     const star = middleimg
 
     const text = "Impact & Legacy"
-    const heading = `“Rooted in Culture. Grown with Science.
-    Sustaining for Generations.”
-    `
+    const heading = `“Rooted in Culture. Grown with Science. Sustaining for Generations.” `
     const partnerships = [
         {
             title: " 21+ Eco-integrated zones",
@@ -349,7 +347,7 @@ export const Impact = () => {
         <>
 
             <section
-                className=" pt-16 pb-8 lg:pt-20 lg:pb-20" style={{ background: `url(${bgsupport.src})center bottom / contain no-repeat`, 'backgroundColor': '#1B453C' }}>
+                className=" pt-16 pb-8 lg:pt-20 lg:pb-20" style={{ background: `url(${bgsupport.src}) center bottom / cover no-repeat`, 'backgroundColor': '#1B453C' }}>
                 <div className='mx-auto max-w-7xl   px-4 md:px-8 lg:px-2 '>
 
                     <p className='text-[22px] md:text-[24px] text-center text-[#F7C35F] mb-4'>{text}</p>
@@ -363,7 +361,7 @@ export const Impact = () => {
                                     {partnerships.map((partner, index) => (
                                         <div className='w-full w-12/12 mt-10' key={index}>
                                             <div className="relative bg-white border border-[#F7C35F]  rounded-full overflow-hidden shadow-lg">
-                                                <Image src={partner.image} alt={partner.title} className="w-full h-44 md:h-56  rounded-full object-cover" />
+                                                <Image src={partner.image} alt={partner.title} className="w-full h-44 md:h-56  rounded-full " />
                                                 <div className="absolute inset-0 flex items-center justify-start">
                                                     <div className="bg-white p-8 text-center flex flex-col items-center justify-center h-44 w-44 md:h-56 md:w-56 rounded-full border-2 border-[#F7C35F]">
                                                         <h3 className="text-base md:text-xl text-[#1B453C] font-semibold">{partner.title}</h3>
@@ -385,7 +383,7 @@ export const Impact = () => {
                             {partnerships1.map((partner, index) => (
                                 <div className='w-full w-12/12 mt-10' key={index}>
                                     <div className="relative bg-white border border-[#F7C35F]  rounded-full overflow-hidden shadow-lg">
-                                        <Image src={partner.image} alt={partner.title} className="w-full h-44 md:h-56  rounded-full object-cover" />
+                                        <Image src={partner.image} alt={partner.title} className="w-full h-44 md:h-56  rounded-full  object-cover object-top" />
                                         <div className="absolute inset-0 flex items-center justify-end">
                                             <div className="bg-white p-8 text-center border-2 border-[#F7C35F] flex flex-col items-center justify-center h-44 w-44 md:h-56 md:w-56 rounded-full">
 
@@ -413,144 +411,144 @@ export const Impact = () => {
 
 
 export const Contact = () => {
-  const [formData, setFormData] = useState({
-    location: "",
-    email: "",
-    phone: ""
-  });
-  const [success, setSuccess] = useState(false);
-  const [error, setError] = useState("");
-
-  const handleChange = (e) => {
-    setFormData(prev => ({
-      ...prev,
-      [e.target.name]: e.target.value
-    }));
-  };
-
-  const handleSubmit = async (e) => {
-  e.preventDefault();
-  setError("");
-  setSuccess(false);
-
-  const { location, email, phone } = formData;
-
-  // Simple validation
-  if (!location || !email || !phone) {
-    setError("All fields are required.");
-    return;
-  }
-
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailRegex.test(email)) {
-    setError("Please enter a valid email.");
-    return;
-  }
-
-  if (phone.length < 6 || !/^\+?\d+$/.test(phone)) {
-    setError("Enter a valid phone number.");
-    return;
-  }
-
-  try {
-    const res = await fetch("/data/project", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData)
+    const [formData, setFormData] = useState({
+        location: "",
+        email: "",
+        phone: ""
     });
+    const [success, setSuccess] = useState(false);
+    const [error, setError] = useState("");
 
-    if (res.ok) {
-      setSuccess(true);
-      setFormData({ location: "", email: "", phone: "" });
-    } else {
-      const data = await res.json();
-      setError(data.error || "Something went wrong.");
-    }
-  } catch (err) {
-    setError("Failed to send. Please try again.");
-  }
-};
+    const handleChange = (e) => {
+        setFormData(prev => ({
+            ...prev,
+            [e.target.name]: e.target.value
+        }));
+    };
 
-  return (
-    <section
-      className="pt-14 pb-14 lg:pt-20 lg:pb-20 relative"
-      style={{
-        background: `url(${contactbg.src}) center center / cover no-repeat`
-      }}
-    >
-      <div className="absolute inset-0 bg-black bg-opacity-35"></div>
-      <div className="relative max-w-7xl mx-auto px-6 md:px-12 text-white text-center">
-        <div className="flex flex-col lg:flex-row justify-between items-center gap-4 lg:gap-12">
-          <div className="md:w-5/12 w-12/12">
-            <div className="flex flex-col h-full">
-              <div>
-                <h2 className="text-4xl md:leading-[1.3] md:text-5xl md:text-left lg:text-[40px] font-semibold redhat text-white">
-                  Let’s Grow <br /> Together
-                </h2>
-              </div>
-              <div className="md:mt-[50%] mt-14 h-full text-left">
-                <ul className="mb-6 text-base md:text-[17px]">
-                  <li>
-                    Whether you’re a nature lover, corporate, policymaker, or <br />
-                    changemaker—there’s a way for you to be part of our vision.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setError("");
+        setSuccess(false);
 
-          <div className="md:w-5/12 w-12/12">
-            <div className="bg-white text-black p-6 rounded-3xl shadow-lg w-full max-w-md">
-              <h2 className="text-xl md:text-2xl font-medium mb-6 text-center md:text-left">
-                Book a Visit
-              </h2>
+        const { location, email, phone } = formData;
 
-              <form onSubmit={handleSubmit}>
-                <div className="flex flex-wrap gap-4 mb-4">
-                  <input
-                    type="text"
-                    name="location"
-                    value={formData.location}
-                    onChange={handleChange}
-                    className="outline-none font-normal px-4 p-3 poppins rounded-md w-full bg-[#F6F6F8]"
-                    placeholder="Location:"
-                  />
-                  <input
-                    type="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="outline-none font-normal px-4 p-3 poppins rounded-md w-full bg-[#F6F6F8]"
-                    placeholder="Email:"
-                  />
-                  <input
-                    type="text"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    className="outline-none font-normal px-4 p-3 poppins rounded-md w-full bg-[#F6F6F8]"
-                    placeholder="Phone Number"
-                  />
+        // Simple validation
+        if (!location || !email || !phone) {
+            setError("All fields are required.");
+            return;
+        }
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            setError("Please enter a valid email.");
+            return;
+        }
+
+        if (phone.length < 6 || !/^\+?\d+$/.test(phone)) {
+            setError("Enter a valid phone number.");
+            return;
+        }
+
+        try {
+            const res = await fetch("/data/project", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(formData)
+            });
+
+            if (res.ok) {
+                setSuccess(true);
+                setFormData({ location: "", email: "", phone: "" });
+            } else {
+                const data = await res.json();
+                setError(data.error || "Something went wrong.");
+            }
+        } catch (err) {
+            setError("Failed to send. Please try again.");
+        }
+    };
+
+    return (
+        <section
+            className="pt-14 pb-14 lg:pt-20 lg:pb-20 relative"
+            style={{
+                background: `url(${contactbg.src}) center center / cover no-repeat`
+            }}
+        >
+            <div className="absolute inset-0 bg-black bg-opacity-35"></div>
+            <div className="relative max-w-7xl mx-auto px-6 md:px-12 text-white text-center">
+                <div className="flex flex-col lg:flex-row justify-between items-center gap-4 lg:gap-12">
+                    <div className="md:w-5/12 w-12/12">
+                        <div className="flex flex-col h-full">
+                            <div>
+                                <h2 className="text-4xl md:leading-[1.3] md:text-5xl md:text-left lg:text-[40px] font-semibold redhat text-white">
+                                    Let’s Grow <br /> Together
+                                </h2>
+                            </div>
+                            <div className="md:mt-[50%] mt-14 h-full text-left">
+                                <ul className="mb-6 text-base md:text-[17px]">
+                                    <li>
+                                        Whether you’re a nature lover, corporate, policymaker, or <br />
+                                        changemaker—there’s a way for you to be part of our vision.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="md:w-5/12 w-12/12">
+                        <div className="bg-white text-black p-6 rounded-3xl shadow-lg w-full max-w-md">
+                            <h2 className="text-xl md:text-2xl font-medium mb-6 text-center md:text-left">
+                                Book a Visit
+                            </h2>
+
+                            <form onSubmit={handleSubmit}>
+                                <div className="flex flex-wrap gap-4 mb-4">
+                                    <input
+                                        type="text"
+                                        name="location"
+                                        value={formData.location}
+                                        onChange={handleChange}
+                                        className="outline-none font-normal px-4 p-3 poppins rounded-md w-full bg-[#F6F6F8]"
+                                        placeholder="Location:"
+                                    />
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        value={formData.email}
+                                        onChange={handleChange}
+                                        className="outline-none font-normal px-4 p-3 poppins rounded-md w-full bg-[#F6F6F8]"
+                                        placeholder="Email:"
+                                    />
+                                    <input
+                                        type="text"
+                                        name="phone"
+                                        value={formData.phone}
+                                        onChange={handleChange}
+                                        className="outline-none font-normal px-4 p-3 poppins rounded-md w-full bg-[#F6F6F8]"
+                                        placeholder="Phone Number"
+                                    />
+                                </div>
+
+                                <button
+                                    type="submit"
+                                    className="poppins mt-6 md:text-[17px] font-medium text-white w-full py-3 rounded-[10px] bg-[#1B453C]"
+                                >
+                                    Submit
+                                </button>
+
+                                {success && (
+                                    <p className="text-green-600 mt-4 text-sm">Successfully submitted!</p>
+                                )}
+                                {error && (
+                                    <p className="text-red-600 mt-4 text-sm">{error}</p>
+                                )}
+                            </form>
+                        </div>
+                    </div>
                 </div>
-
-                <button
-                  type="submit"
-                  className="poppins mt-6 md:text-[17px] font-medium text-white w-full py-3 rounded-[10px] bg-[#1B453C]"
-                >
-                  Submit
-                </button>
-
-                {success && (
-                  <p className="text-green-600 mt-4 text-sm">Successfully submitted!</p>
-                )}
-                {error && (
-                  <p className="text-red-600 mt-4 text-sm">{error}</p>
-                )}
-              </form>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+        </section>
+    );
 };

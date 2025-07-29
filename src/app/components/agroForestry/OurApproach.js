@@ -13,7 +13,7 @@ import icon4 from "../../../assets/images/business/icons/icon4.svg";
 import icon5 from "../../../assets/images/business/icons/icon5.svg";
 import icon6 from "../../../assets/images/business/icons/icon6.svg";
 
-import banner from "../../../assets/images/business/Banner-Agroforestry.webp";
+import banner from "../../../assets/images/business/Agroforestry.webp";
 
 
 export const OurApproach = () => {

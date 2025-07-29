@@ -25,13 +25,13 @@ export const Respirtaory = () => {
     Grow Health with Every Breath`,
     title: 'Respiratory health has become a critical focus in recent years, with rising pollution, seasonal allergies, and the impact of respiratory infections driving global demand for natural remedies. Traditional herbal medicine offers a time-tested approach to supporting lung function, reducing inflammation, and relieving congestion.',
     opacity: 'opacity-50'
-}
-return (
+  }
+  return (
     <>
-        <BannerPage heading={text.heading} subtitle={text.subtitle} title={text.title} banner={text.banner} opacity={text.opacity} />
-        <Wave />
+      <BannerPage heading={text.heading} subtitle={text.subtitle} title={text.title} banner={text.banner} opacity={text.opacity} />
+      <Wave />
     </>
-)
+  )
 }
 
 
@@ -40,86 +40,86 @@ export const Pippali = () => {
   const basketData = {
     note: "The Atulye Krishi Vana project is dedicated to promoting the cultivation of powerful respiratory herbs like Pippali (Piper longum), Bharangi (Clerodendrum serratum), Vajradanti (Barleria prionitis), and Tulsi (Ocimum tenuiflorum). These plants not only offer relief from respiratory ailments but also contribute to overall immune health, reduce oxidative stress, and improve air quality through natural phytoremediation.    ",
     image: info,
-};
+  };
 
-const main_heading = "Pippali (Piper longum)"
-const shortinfo = "<b>The Lung Tonic and Metabolism Booster</b>  <br/> Pippali, also known as Indian long pepper, is a powerful herb used extensively in Ayurveda for its respiratory and digestive benefits. It is known to clear mucus, enhance lung function, and improve overall respiratory health. The plant contains bioactive compounds like piperine, which have anti-inflammatory, antimicrobial, and bronchodilator effects. Pippali is often included in herbal formulations for treating cough, asthma, and chronic bronchitis."
-const gridBox = "xl:!grid-cols-4 custom_height"
-const whyChooseData = [
+  const main_heading = "Pippali (Piper longum)"
+  const shortinfo = "<b>The Lung Tonic and Metabolism Booster</b>  <br/> Pippali, also known as Indian long pepper, is a powerful herb used extensively in Ayurveda for its respiratory and digestive benefits. It is known to clear mucus, enhance lung function, and improve overall respiratory health. The plant contains bioactive compounds like piperine, which have anti-inflammatory, antimicrobial, and bronchodilator effects. Pippali is often included in herbal formulations for treating cough, asthma, and chronic bronchitis."
+  const gridBox = "xl:!grid-cols-4 custom_height"
+  const whyChooseData = [
 
-  {
-    image: key1,
-    title: 'Clears respiratory passages and reduces mucus buildup',
+    {
+      image: key1,
+      title: 'Clears respiratory passages and reduces mucus buildup',
 
-  },
-  {
-    image: key2,
-    title: 'Acts as a natural bronchodilator, improving lung function',
-  },
-  {
-    image: key3,
-    title: 'Enhances metabolism and digestion',
-  },
-  {
-    image: key4,
-    title: 'Supports immune function and overall vitality',
-  },
+    },
+    {
+      image: key2,
+      title: 'Acts as a natural bronchodilator, improving lung function',
+    },
+    {
+      image: key3,
+      title: 'Enhances metabolism and digestion',
+    },
+    {
+      image: key4,
+      title: 'Supports immune function and overall vitality',
+    },
 
-];
+  ];
 
-const GrowthHeading = "Agro-climatic Suitability & Economic Potential";
-const slides = [
-  {
+  const GrowthHeading = "Agro-climatic Suitability & Economic Potential";
+  const slides = [
+    {
 
-    image: circle1,
-    desc: `Pippali grows well in tropical and subtropical regions, preferring warm, humid climates. It requires well-drained, fertile soils with a slightly acidic to neutral pH. The plant thrives under partial shade, making it suitable for agroforestry and intercropping systems. <br/><br/> Pippali is in high demand for use in Ayurvedic formulations, herbal teas, cough syrups, and respiratory tonics. It is also used as a natural preservative and flavoring agent in traditional foods.`,
+      image: circle1,
+      desc: `Pippali grows well in tropical and subtropical regions, preferring warm, humid climates. It requires well-drained, fertile soils with a slightly acidic to neutral pH. The plant thrives under partial shade, making it suitable for agroforestry and intercropping systems. <br/><br/> Pippali is in high demand for use in Ayurvedic formulations, herbal teas, cough syrups, and respiratory tonics. It is also used as a natural preservative and flavoring agent in traditional foods.`,
 
-  },
+    },
 
-];
+  ];
 
-return (
+  return (
     <>
 
-        <section className="py-12 md:!pt-0  px-4 md:px-8 lg:px-16 bg-[#1B453C]">
-            <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-8'>
-                <div className="flex flex-col-reverse justify-between lg:flex-row   gap-8">
-                    <div className="w-full md:w-1/2">
-                        <p className="mt-0 md:mt-4 text-white" dangerouslySetInnerHTML={{ __html: basketData.note }} ></p>
-                    </div>
-                    <div className="w-full md:w-[40%]">
-                        <div className="rounded-xl overflow-hidden">
-                            <Image
-                                src={basketData.image}
-                                alt="Basket of fruits and vegetables"
-                                width={600}
-                                height={400}
-                                className="object-cover w-full h-auto"
-                            />
-
-                        </div>
-                    </div>
-                </div>
+      <section className="py-12 md:!pt-0  px-4 md:px-8 lg:px-16 bg-[#1B453C]">
+        <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-8'>
+          <div className="flex flex-col-reverse justify-between lg:flex-row  items-center gap-8">
+            <div className="w-full md:w-1/2">
+              <p className="mt-0 md:mt-4 text-white" dangerouslySetInnerHTML={{ __html: basketData.note }} ></p>
             </div>
-        </section>
+            <div className="w-full md:w-[40%]">
+              <div className="rounded-xl overflow-hidden">
+                <Image
+                  src={basketData.image}
+                  alt="Basket of fruits and vegetables"
+                  width={600}
+                  height={400}
+                  className="object-cover w-full h-auto"
+                />
 
-        <section className="py-12  px-4 md:px-8 lg:px-16 bg-[#1B453C] text-center">
-    <div className='mx-auto max-w-3xl px-4 md:px-6 lg:px-8'>
-      <h2 className="text-3xl md:text-4xl redhat font-semibold text-center text-[#D7DD87] mb-10  md:mb-6">
-        {main_heading}
-      </h2>
-      <p className="mt-0 md:mt-4 text-white" dangerouslySetInnerHTML={{ __html: shortinfo }}></p>
-    </div>
-  </section>
-  <Gridbox heading="Key Benefits" data={whyChooseData} gridBox={gridBox} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <GrowthSlider
-    GrowthHeading={GrowthHeading}
-    slides={slides}
-  />
+      <section className="py-12  px-4 md:px-8 lg:px-16 bg-[#1B453C] text-center">
+        <div className='mx-auto max-w-3xl px-4 md:px-6 lg:px-8'>
+          <h2 className="text-3xl md:text-4xl redhat font-semibold text-center text-[#D7DD87] mb-10  md:mb-6">
+            {main_heading}
+          </h2>
+          <p className="mt-0 md:mt-4 text-white" dangerouslySetInnerHTML={{ __html: shortinfo }}></p>
+        </div>
+      </section>
+      <Gridbox heading="Key Benefits" data={whyChooseData} gridBox={gridBox} />
+
+      <GrowthSlider
+        GrowthHeading={GrowthHeading}
+        slides={slides}
+      />
 
     </>
-)
+  )
 }
 
 
@@ -168,7 +168,7 @@ export const Bharangi = () => {
           <h2 className="text-3xl md:text-4xl redhat font-semibold text-center text-[#3D7436] mb-10  md:mb-6">
             {main_heading}
           </h2>
-          <p className="mt-0 md:mt-4 text-black" dangerouslySetInnerHTML={{__html:shortinfo}}></p>
+          <p className="mt-0 md:mt-4 text-black" dangerouslySetInnerHTML={{ __html: shortinfo }}></p>
         </div>
       </section>
       <Gridbox heading="Key Benefits" data={whyChooseData} className={custom_class} gridBox={gridBox} />

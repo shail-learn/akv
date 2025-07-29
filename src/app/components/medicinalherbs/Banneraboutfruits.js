@@ -100,7 +100,7 @@ export const Bel = () => {
     <>
       <section className="py-12 md:!pt-0  px-4 md:px-8 lg:px-16 bg-[#1B453C]">
         <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
-          <div className="flex flex-col-reverse justify-between lg:flex-row   gap-8">
+          <div className="flex flex-col-reverse justify-between lg:flex-row  items-center gap-8">
             <div className="w-full md:w-1/2">
               <p
                 className="mt-0 md:mt-4 text-white"
