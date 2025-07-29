@@ -276,12 +276,12 @@ export const OurJourney = () => {
                         </ul>
 
                         {/* <div className="italic  text-sm mb-3 md:mb-5 md:leading-7" dangerouslySetInnerHTML={{ __html: item.description.content }}></div> */}
-                        <a
+                        {/* <a
                           className="text-[#C6C6C6] text-[12px] hover:text-[#1B453C]"
                           href="#"
                         >
                           *Read More
-                        </a>
+                        </a> */}
                       </div>
                     </div>
                   </div>

@@ -60,7 +60,7 @@ function ClientPage() {
         "<b>Nature:</b> A thriving environment for future generations.",
         "<b class='text-base md:text-xl'>Under his leadership, AKV has:</b>",
         "Restored 5,000+ acres of degraded land",
-        "Planted over 2 lakh trees",
+        "Planted over 5 lakh trees",
         "Empowered rural communities, especially women and youth ",
         "Integrated cutting-edge tech like AI, drones, and solar power",
         "<b>Agroforestry Visionary</b>",

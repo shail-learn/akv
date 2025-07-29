@@ -150,7 +150,7 @@ export const FaqsLayout = ({ heading, description, faqs }) => {
                       }`}
                   >
                     <p
-                      className=" pt-0  mb-6 py-4 text-[15px] md:text-base font-light text-[#00] text-opacity-75"
+                      className=" pt-0  mb-6 py-4 text-[15px] md:text-base font-light text-[#00] text-opacity-75 text-justify"
                       dangerouslySetInnerHTML={{ __html: faq.answer }}
                     ></p>
                   </div>

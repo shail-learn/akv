@@ -190,7 +190,7 @@ export const Faq = () => {
                                         className={`overflow-hidden bg-[#345951] rounded-bl-2xl rounded-br-2xl px-4 text-white transition-[max-height] duration-300 ease-in-out
                                 ${openIndex === index ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}
                                     >
-                                        <p className=' pt-0  mb-6 py-4 text-[15px] md:text-base font-light text-[#00] text-opacity-75'>
+                                        <p className=' pt-0  mb-6 py-4 text-[15px] md:text-base font-light text-[#00] text-opacity-75 text-justify'>
                                             {faq.answer}
                                         </p>
                                     </div>

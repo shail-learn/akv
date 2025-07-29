@@ -171,7 +171,7 @@ export const Together = () => {
         <>
             <section className="bg-[#f1f1f1] py-10 px-4">
                 <div className="mx-auto max-w-7xl px-4 md:px-8 lg:px-2 flex flex-col-reverse md:flex-row items-center gap-8">
-                    {/* Content */}
+
                     <div className="w-full md:w-1/2 text-center md:text-left">
                         <h2 className="text-3xl md:text-4xl redhat font-semibold text-center md:text-left text-[#1B453C]  mb-4">
                             {growData.heading}
@@ -183,9 +183,9 @@ export const Together = () => {
                             </p>
                         ))}
                         <div className='mt-12'>
-                            <Link href="https://atulye-foundation.org/" target='_blank'
+                            <Link href="/contact-us"
                                 className="text-lg text-[#1B453C] font-normal px-4 py-2 border border-[#1B453C]">
-                              Visit Our Nursery
+                                Visit Our Nursery
                             </Link>
                         </div>
                     </div>

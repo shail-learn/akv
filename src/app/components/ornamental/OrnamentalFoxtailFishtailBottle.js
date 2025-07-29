@@ -91,7 +91,7 @@ export const Foxtail = () => {
 
             <section className="py-12 md:!pt-0  px-4 md:px-8 lg:px-16 bg-[#1B453C]">
                 <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-8'>
-                    <div className="flex flex-col-reverse justify-between lg:flex-row   gap-8">
+                    <div className="flex flex-col-reverse justify-between lg:flex-row  items-center gap-8">
                         <div className="w-full md:w-1/2">
                             <p className="mt-0 md:mt-4 text-white" dangerouslySetInnerHTML={{ __html: basketData.note }} ></p>
                         </div>
@@ -144,70 +144,70 @@ export const Fishtail = () => {
     const main_heading = "Fishtail Palm (Caryota urens)"
     const shortinfo = `<b>The Tropical Texture Master</b> <br/> Named for its jagged, fishtail-like leaves, Caryota urens is a unique palm native to India and Southeast Asia. Unlike many palms, it has a more bushy, clustered appearance and is often grown in groups for dense coverage or solitary for a bold, textured look.`
     const whyChooseData = [
-      {
-        image: key5,
-        title: 'Textural Interest',
-        description:"Bipinnate leaves provide a distinctive visual break in tropical gardens"
-      },
-      {
-        image: key6,
-        title: 'Cluster Growth',
-        description:"Can form multi-stemmed clumps, suitable for privacy or screening."
+        {
+            image: key5,
+            title: 'Textural Interest',
+            description: "Bipinnate leaves provide a distinctive visual break in tropical gardens"
+        },
+        {
+            image: key6,
+            title: 'Cluster Growth',
+            description: "Can form multi-stemmed clumps, suitable for privacy or screening."
 
-      },
-      {
-        image: key7,
-        title: 'Native Heritage',
-        description:"Naturally adapted to Indian conditions and soil profiles."
+        },
+        {
+            image: key7,
+            title: 'Native Heritage',
+            description: "Naturally adapted to Indian conditions and soil profiles."
 
-      },
-      {
-        image: key8,
-        title: 'Fast Growth',
-        description:"Establishes quickly in moist, shaded environments."
+        },
+        {
+            image: key8,
+            title: 'Fast Growth',
+            description: "Establishes quickly in moist, shaded environments."
 
-      },
+        },
 
     ];
 
     const custom_class1 = "growth_white"
     const GrowthHeading = "Agro-climatic Suitability";
     const slides = [
-      {
+        {
 
-        image: circle2,
-        desc: `Fishtail Palm prefers moist, warm climates and partial to full sun. It thrives in loamy, fertile soils and tolerates high humidity. Found commonly in Kerala, Assam, Odisha, and Eastern ghats, it is highly adaptable to home gardens and public parks.`,
-      },
+            image: circle2,
+            desc: `Fishtail Palm prefers moist, warm climates and partial to full sun. It thrives in loamy, fertile soils and tolerates high humidity. Found commonly in Kerala, Assam, Odisha, and Eastern ghats, it is highly adaptable to home gardens and public parks.`,
+        },
 
 
 
     ];
 
     return (
-      <>
-        <section className="py-12 md:pt-16   px-4 md:px-8 lg:px-16 bg-white text-center">
-          <div className='mx-auto max-w-3xl px-4 md:px-6 lg:px-8'>
-            <h2 className="text-3xl md:text-4xl redhat font-semibold text-center text-[#3D7436] mb-10  md:mb-6">
-              {main_heading}
-            </h2>
-            <p className="mt-0 md:mt-4 text-black" dangerouslySetInnerHTML={{__html:shortinfo}}></p>
-          </div>
-        </section>
-        <Gridbox heading="Key Benefits" data={whyChooseData} className={custom_class} gridBox={gridBox} />
+        <>
+            <section className="py-12 md:pt-16   px-4 md:px-8 lg:px-16 bg-white text-center">
+                <div className='mx-auto max-w-3xl px-4 md:px-6 lg:px-8'>
+                    <h2 className="text-3xl md:text-4xl redhat font-semibold text-center text-[#3D7436] mb-10  md:mb-6">
+                        {main_heading}
+                    </h2>
+                    <p className="mt-0 md:mt-4 text-black" dangerouslySetInnerHTML={{ __html: shortinfo }}></p>
+                </div>
+            </section>
+            <Gridbox heading="Key Benefits" data={whyChooseData} className={custom_class} gridBox={gridBox} />
 
-        <GrowthSlider
-          GrowthHeading={GrowthHeading}
-          slides={slides}
-          className={custom_class1}
-          applicationsData={[
-            "Tropical screens and privacy hedges",
-            "Botanical gardens and forest-themed landscapes",
-            "Waterbody edges and shaded outdoor zones",
-            "Landscaping in wellness resorts and eco-lodges"
-        ]}
-        />
+            <GrowthSlider
+                GrowthHeading={GrowthHeading}
+                slides={slides}
+                className={custom_class1}
+                applicationsData={[
+                    "Tropical screens and privacy hedges",
+                    "Botanical gardens and forest-themed landscapes",
+                    "Waterbody edges and shaded outdoor zones",
+                    "Landscaping in wellness resorts and eco-lodges"
+                ]}
+            />
 
-      </>
+        </>
     )
 }
 

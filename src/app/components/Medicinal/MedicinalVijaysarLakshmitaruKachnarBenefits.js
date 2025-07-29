@@ -103,7 +103,7 @@ export const Vijaysar = () => {
 
             <section className="py-12 md:!pt-0  px-4 md:px-8 lg:px-16 bg-[#1B453C]">
                 <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-8'>
-                    <div className="flex flex-col-reverse justify-between lg:flex-row   gap-8">
+                    <div className="flex flex-col-reverse justify-between lg:flex-row  items-center gap-8">
                         <div className="w-full md:w-1/2">
                             <p className="mt-0 md:mt-4 text-white" dangerouslySetInnerHTML={{ __html: basketData.note }} ></p>
                         </div>
@@ -157,70 +157,70 @@ export const Lakshmitaru = () => {
     const main_heading = "Lakshmi Taru (Simarouba glauca)"
     const shortinfo = `<b>The Miracle Tree for Biofuel and Health</b> <br/> Originally native to Central America, Lakshmi Taru is gaining prominence in India due to its adaptability and multi-use potential. Every part of the tree—leaves, seeds, bark, and oil—has commercial and medicinal value.`
     const whyChooseData = [
-      {
-        image: key5,
-        title: 'Biofuel Production',
-        description:"Seeds yield oil ideal for biodiesel"
-      },
-      {
-        image: key6,
-        title: 'Medicinal Uses',
-        description:"Anti-cancer and anti-viral properties"
+        {
+            image: key5,
+            title: 'Biofuel Production',
+            description: "Seeds yield oil ideal for biodiesel"
+        },
+        {
+            image: key6,
+            title: 'Medicinal Uses',
+            description: "Anti-cancer and anti-viral properties"
 
-      },
-      {
-        image: key7,
-        title: 'Drought Tolerant',
-        description:"Grows well in arid and semi-arid regions"
+        },
+        {
+            image: key7,
+            title: 'Drought Tolerant',
+            description: "Grows well in arid and semi-arid regions"
 
-      },
-      {
-        image: key8,
-        title: 'Fast-Growing',
-        description:"Useful for soil regeneration and carbon capture"
+        },
+        {
+            image: key8,
+            title: 'Fast-Growing',
+            description: "Useful for soil regeneration and carbon capture"
 
-      },
+        },
 
     ];
 
     const custom_class1 = "growth_white"
     const GrowthHeading = "Agro-climatic Suitability";
     const slides = [
-      {
+        {
 
-        image: circle2,
-        desc: `Lakshmi Taru thrives in dry, marginal soils and saline environments. It is suitable for the Deccan Plateau, Rajasthan, and arid coastal regions. Requires minimal irrigation after establishment.`,
-      },
+            image: circle2,
+            desc: `Lakshmi Taru thrives in dry, marginal soils and saline environments. It is suitable for the Deccan Plateau, Rajasthan, and arid coastal regions. Requires minimal irrigation after establishment.`,
+        },
 
 
 
     ];
 
     return (
-      <>
-        <section className="py-12 md:pt-16   px-4 md:px-8 lg:px-16 bg-white text-center">
-          <div className='mx-auto max-w-3xl px-4 md:px-6 lg:px-8'>
-            <h2 className="text-3xl md:text-4xl redhat font-semibold text-center text-[#3D7436] mb-10  md:mb-6">
-              {main_heading}
-            </h2>
-            <p className="mt-0 md:mt-4 text-black" dangerouslySetInnerHTML={{__html:shortinfo}}></p>
-          </div>
-        </section>
-        <Gridbox heading="Key Benefits" data={whyChooseData} className={custom_class} gridBox={gridBox} />
+        <>
+            <section className="py-12 md:pt-16   px-4 md:px-8 lg:px-16 bg-white text-center">
+                <div className='mx-auto max-w-3xl px-4 md:px-6 lg:px-8'>
+                    <h2 className="text-3xl md:text-4xl redhat font-semibold text-center text-[#3D7436] mb-10  md:mb-6">
+                        {main_heading}
+                    </h2>
+                    <p className="mt-0 md:mt-4 text-black" dangerouslySetInnerHTML={{ __html: shortinfo }}></p>
+                </div>
+            </section>
+            <Gridbox heading="Key Benefits" data={whyChooseData} className={custom_class} gridBox={gridBox} />
 
-        <GrowthSlider
-          GrowthHeading={GrowthHeading}
-          slides={slides}
-          className={custom_class1}
-          applicationsData={[
-            "Biofuel production and green energy",
-            "Herbal and nutraceutical industries",
-            "Soil reclamation and arid land greening",
-            "Intercropping in degraded landscapes"
-        ]}
-        />
+            <GrowthSlider
+                GrowthHeading={GrowthHeading}
+                slides={slides}
+                className={custom_class1}
+                applicationsData={[
+                    "Biofuel production and green energy",
+                    "Herbal and nutraceutical industries",
+                    "Soil reclamation and arid land greening",
+                    "Intercropping in degraded landscapes"
+                ]}
+            />
 
-      </>
+        </>
     )
 }
 
@@ -302,38 +302,38 @@ export const Kachnar = () => {
 export const Benefits = () => {
     const heading = "Benefits of Medicinal & Multi-purpose Trees"
     const fruitData = [
-      {
-        title: "Reviving Herbal Traditions",
-        image: choose1,
-        flip: "These trees form the foundation of India’s ancient wellness systems. Their cultivation revives traditional healing knowledge, supports community health, and fosters biodiversity."
-      },
-      {
-        title: "Income from High-Value Products",
-        image: choose2,
-        flip: "Heartwood, oils, gums, flowers, and bark can be processed into products with export potential. Farmers can sell raw or value-added goods to ayurvedic firms and eco-conscious markets."
-      },
-      {
-        title: "Climate Resilience and Land Reclamation",
-        image: choose3,
-        flip: "Species like Lakshmi Taru can thrive in harsh conditions, regenerating degraded land. Vijaysar and Kachnar contribute to carbon capture, water retention, and erosion control."
-      },
-      {
-        title: "Low Maintenance, High Returns",
-        image: choose4,
-        flip: "Once established, these trees require minimal inputs. Their long lifespan ensures sustained yields, reducing dependence on seasonal crops and creating a long-term revenue model."
-      },
-      {
-        title: "Integrates with Agroforestry",
-        image: choose4,
-        flip: "All three trees blend well with food crops, pulses, or medicinal herbs. They can be used in boundary planting, intercropping, and home garden models."
-      },
+        {
+            title: "Reviving Herbal Traditions",
+            image: choose1,
+            flip: "These trees form the foundation of India’s ancient wellness systems. Their cultivation revives traditional healing knowledge, supports community health, and fosters biodiversity."
+        },
+        {
+            title: "Income from High-Value Products",
+            image: choose2,
+            flip: "Heartwood, oils, gums, flowers, and bark can be processed into products with export potential. Farmers can sell raw or value-added goods to ayurvedic firms and eco-conscious markets."
+        },
+        {
+            title: "Climate Resilience and Land Reclamation",
+            image: choose3,
+            flip: "Species like Lakshmi Taru can thrive in harsh conditions, regenerating degraded land. Vijaysar and Kachnar contribute to carbon capture, water retention, and erosion control."
+        },
+        {
+            title: "Low Maintenance, High Returns",
+            image: choose4,
+            flip: "Once established, these trees require minimal inputs. Their long lifespan ensures sustained yields, reducing dependence on seasonal crops and creating a long-term revenue model."
+        },
+        {
+            title: "Integrates with Agroforestry",
+            image: choose4,
+            flip: "All three trees blend well with food crops, pulses, or medicinal herbs. They can be used in boundary planting, intercropping, and home garden models."
+        },
 
 
     ];
     return (
-      <>
-        <Productlist heading={heading} fruitData={fruitData} />
+        <>
+            <Productlist heading={heading} fruitData={fruitData} />
 
-      </>
+        </>
     )
 }
