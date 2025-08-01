@@ -87,31 +87,9 @@ export const Banner2 = () => {
 export const VedioHome = () => {
   const videoRef = useRef(null);
   const pathname = usePathname();
-  const isHomepage = pathname === "/";
+  const isHomepage = pathname === '/';
   const [showUnmuteBtn, setShowUnmuteBtn] = useState(false);
   const [isUnmuted, setIsUnmuted] = useState(false);
-
-  // useEffect(() => {
-  //   const video = videoRef.current;
-  //   if (!video) return;
-
-  //   const startVideo = async () => {
-  //     try {
-  //       video.muted = true;
-  //       await video.play();
-  //       setShowUnmuteBtn(true); // show unmute after autoplay success
-  //     } catch (err) {
-  //       console.warn('Autoplay failed:', err);
-  //     }
-  //   };
-
-  //   if (video.readyState >= 2) {
-  //     startVideo();
-  //   } else {
-  //     video.addEventListener('loadedmetadata', startVideo, { once: true });
-  //   }
-  // }, [isHomepage]);
-
 
   useEffect(() => {
     const video = videoRef.current;
@@ -121,63 +99,55 @@ export const VedioHome = () => {
       try {
         video.muted = true;
         await video.play();
-        setShowUnmuteBtn(true); // show unmute button after autoplay success
+        setShowUnmuteBtn(true);
       } catch (err) {
-        console.warn("Autoplay failed:", err);
+        console.warn('Autoplay failed:', err);
       }
     };
 
     if (video.readyState >= 2) {
       startVideo();
     } else {
-      video.addEventListener("loadedmetadata", startVideo, { once: true });
+      video.addEventListener('loadedmetadata', startVideo, { once: true });
     }
 
-    const handleInteraction = async () => {
-      try {
-        if (video.muted) {
-          video.muted = false;
-          setIsUnmuted(true);
-          await video.play(); // re-trigger play with audio
+    const handleInteraction = () => {
+      if (video && video.muted) {
+        video.muted = false;
+        setIsUnmuted(true);
 
-          setTimeout(() => {
-            video.muted = true;
-            setIsUnmuted(false);
-          }, 10000);
-        }
-      } catch (err) {
-        console.warn("Unmuting failed:", err);
+        // Mute again after 10 seconds
+        setTimeout(() => {
+          video.muted = true;
+          setIsUnmuted(false);
+        }, 10000);
       }
     };
 
-    // ✅ Only allow 'click' and 'touchstart'
-    const events = ["click", "touchstart"];
-    events.forEach(event =>
-      window.addEventListener(event, handleInteraction, { once: true })
+    // ✅ Listen to user interaction across devices
+    const events = ['click', 'touchstart'];
+    events.forEach((event) =>
+      document.body.addEventListener(event, handleInteraction, { once: true })
     );
 
     return () => {
-      events.forEach(event =>
-        window.removeEventListener(event, handleInteraction)
+      events.forEach((event) =>
+        document.body.removeEventListener(event, handleInteraction)
       );
     };
   }, [isHomepage]);
-  const handleUnmute = () => {
+
+  const handleUnmuteClick = () => {
     const video = videoRef.current;
     if (!video) return;
 
-    try {
-      video.muted = false;
-      setIsUnmuted(true);
+    video.muted = false;
+    setIsUnmuted(true);
 
-      // Re-mute after 10 seconds
-      setTimeout(() => {
-        video.muted = true;
-        setIsUnmuted(false);
-      }, 10000);
-    } catch (err) {
-      console.warn('Unmuting failed:', err);
-    }
+    setTimeout(() => {
+      video.muted = true;
+      setIsUnmuted(false);
+    }, 10000);
   };
 
   return (
@@ -197,7 +167,7 @@ export const VedioHome = () => {
         {/* 🔊 Floating Unmute Button */}
         {showUnmuteBtn && !isUnmuted && (
           <button
-            onClick={handleUnmute}
+            onClick={handleUnmuteClick}
             className="absolute bottom-4 right-4 bg-white bg-opacity-80 text-black px-4 py-2 rounded-lg shadow-md text-sm hover:bg-opacity-100 transition"
           >
             🔊 Unmute
