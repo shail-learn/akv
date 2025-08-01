@@ -91,6 +91,28 @@ export const VedioHome = () => {
   const [showUnmuteBtn, setShowUnmuteBtn] = useState(false);
   const [isUnmuted, setIsUnmuted] = useState(false);
 
+  // useEffect(() => {
+  //   const video = videoRef.current;
+  //   if (!video) return;
+
+  //   const startVideo = async () => {
+  //     try {
+  //       video.muted = true;
+  //       await video.play();
+  //       setShowUnmuteBtn(true); // show unmute after autoplay success
+  //     } catch (err) {
+  //       console.warn('Autoplay failed:', err);
+  //     }
+  //   };
+
+  //   if (video.readyState >= 2) {
+  //     startVideo();
+  //   } else {
+  //     video.addEventListener('loadedmetadata', startVideo, { once: true });
+  //   }
+  // }, [isHomepage]);
+
+
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
@@ -99,19 +121,47 @@ export const VedioHome = () => {
       try {
         video.muted = true;
         await video.play();
-        setShowUnmuteBtn(true); // show unmute after autoplay success
+        setShowUnmuteBtn(true); // show unmute button after autoplay success
       } catch (err) {
-        console.warn('Autoplay failed:', err);
+        console.warn("Autoplay failed:", err);
       }
     };
 
     if (video.readyState >= 2) {
       startVideo();
     } else {
-      video.addEventListener('loadedmetadata', startVideo, { once: true });
+      video.addEventListener("loadedmetadata", startVideo, { once: true });
     }
-  }, [isHomepage]);
 
+    const handleInteraction = async () => {
+      try {
+        if (video.muted) {
+          video.muted = false;
+          setIsUnmuted(true);
+          await video.play(); // re-trigger play with audio
+
+          setTimeout(() => {
+            video.muted = true;
+            setIsUnmuted(false);
+          }, 10000);
+        }
+      } catch (err) {
+        console.warn("Unmuting failed:", err);
+      }
+    };
+
+    // ✅ Only allow 'click' and 'touchstart'
+    const events = ["click", "touchstart"];
+    events.forEach(event =>
+      window.addEventListener(event, handleInteraction, { once: true })
+    );
+
+    return () => {
+      events.forEach(event =>
+        window.removeEventListener(event, handleInteraction)
+      );
+    };
+  }, [isHomepage]);
   const handleUnmute = () => {
     const video = videoRef.current;
     if (!video) return;
