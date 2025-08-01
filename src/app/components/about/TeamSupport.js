@@ -24,7 +24,7 @@ export const Team = () => {
     {
       id: 1,
       image: Team1,
-      name: "Emeritus <br> Lt. M.K. Aggarwal",
+      name: "Emeritus <br> Lt. Shri M.K. Aggarwal",
       designation: "Chairman",
     },
     {

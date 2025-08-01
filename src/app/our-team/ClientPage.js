@@ -32,7 +32,7 @@ function ClientPage() {
 
   const founders = [
     {
-      "name": "Emeritus Lt. M.K. Aggarwal",
+      "name": "Emeritus Lt. Shri M.K. Aggarwal",
       "title": "Chairman",
       "linkedin": "",
       "quote": "\"A Legacy of Vision, Innovation, and Sustainable Growth\"",

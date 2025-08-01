@@ -185,7 +185,6 @@
   {
     "title": "Employee Engagement Activities",
     "images": [
-
       {
         "id": 2,
         "src": "https://www.akv.org.in/admin/rmimages/Activity1.webp",
@@ -221,13 +220,11 @@
         "src": "https://www.akv.org.in/admin/rmimages/Activity7.webp",
         "alt": "Office 8"
       }
-
     ]
   },
   {
     "title": "CSR Books Distribution",
     "images": [
-
       {
         "id": 2,
         "src": "https://www.akv.org.in/admin/rmimages/2csrbook.webp",
@@ -248,7 +245,6 @@
         "src": "https://www.akv.org.in/admin/rmimages/5csrbook.webp",
         "alt": "Office 5"
       }
-
     ]
   },
   {
@@ -411,11 +407,7 @@
         "src": "https://www.akv.org.in/admin/rmimages/030csrplantation.webp",
         "alt": "Office 10"
       },
-      {
-        "id": 11,
-        "src": "https://www.akv.org.in/admin/rmimages/31csrplantation.webp",
-        "alt": "Office 11"
-      },
+
       {
         "id": 12,
         "src": "https://www.akv.org.in/admin/rmimages/32csrplantation.webp",
@@ -506,31 +498,13 @@
         "src": "https://www.akv.org.in/admin/rmimages/46csrhallachievers.webp",
         "alt": "Office 1"
       },
-      {
-        "id": 2,
-        "src": "https://www.akv.org.in/admin/rmimages/47csrhallachievers.webp",
-        "alt": "Office 2"
-      },
-      {
-        "id": 3,
-        "src": "https://www.akv.org.in/admin/rmimages/48csrhallachievers.webp",
-        "alt": "Office 3"
-      },
+
       {
         "id": 4,
         "src": "https://www.akv.org.in/admin/rmimages/49csrhallachievers.webp",
         "alt": "Office 4"
       },
-      {
-        "id": 5,
-        "src": "https://www.akv.org.in/admin/rmimages/50csrhallachievers.webp",
-        "alt": "Office 5"
-      },
-      {
-        "id": 6,
-        "src": "https://www.akv.org.in/admin/rmimages/51csrhallachievers.webp",
-        "alt": "Office 6"
-      },
+
       {
         "id": 7,
         "src": "https://www.akv.org.in/admin/rmimages/52csrhallachievers.webp",
@@ -551,11 +525,7 @@
         "src": "https://www.akv.org.in/admin/rmimages/55csrhallachievers.webp",
         "alt": "Office 10"
       },
-      {
-        "id": 11,
-        "src": "https://www.akv.org.in/admin/rmimages/56csrhallachievers.webp",
-        "alt": "Office 11"
-      },
+
       {
         "id": 12,
         "src": "https://www.akv.org.in/admin/rmimages/57csrhallachievers.webp",
@@ -566,11 +536,7 @@
         "src": "https://www.akv.org.in/admin/rmimages/58csrhallachievers.webp",
         "alt": "Office 13"
       },
-      {
-        "id": 14,
-        "src": "https://www.akv.org.in/admin/rmimages/59csrhallachievers.webp",
-        "alt": "Office 14"
-      },
+
       {
         "id": 15,
         "src": "https://www.akv.org.in/admin/rmimages/60csrhallachievers.webp",
@@ -578,5 +544,4 @@
       }
     ]
   }
-
 ]
