@@ -62,7 +62,7 @@ export const Support = () => {
                                     {partnerships.map((partner, index) => (
                                         <div className='w-full w-12/12 mt-10' key={index}>
                                             <div className="relative bg-white border border-[#F7C35F]  rounded-full overflow-hidden shadow-lg">
-                                                <Image src={partner.image} alt={partner.title} className="w-full h-56  rounded-full object-cover" />
+                                                <Image src={partner.image} alt={partner.title} className="w-full h-56 object-bottom  rounded-full object-cover" />
                                                 <div className="absolute inset-0 flex items-center justify-start">
                                                     <div className="bg-white p-8 text-center flex flex-col items-center justify-center h-56 w-56 rounded-full">
                                                         <h3 className="text-xl font-semibold text-[#1B453C]">{partner.title}</h3>

@@ -361,7 +361,7 @@ export const Impact = () => {
                                     {partnerships.map((partner, index) => (
                                         <div className='w-full w-12/12 mt-10' key={index}>
                                             <div className="relative bg-white border border-[#F7C35F]  rounded-full overflow-hidden shadow-lg">
-                                                <Image src={partner.image} alt={partner.title} className="w-full h-44 md:h-56  rounded-full " />
+                                                <Image src={partner.image} alt={partner.title} className="w-full h-44 md:h-56 object-cover rounded-full " />
                                                 <div className="absolute inset-0 flex items-center justify-start">
                                                     <div className="bg-white p-8 text-center flex flex-col items-center justify-center h-44 w-44 md:h-56 md:w-56 rounded-full border-2 border-[#F7C35F]">
                                                         <h3 className="text-base md:text-xl text-[#1B453C] font-semibold">{partner.title}</h3>
