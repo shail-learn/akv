@@ -42,7 +42,7 @@ export const Bigcard = () => {
   return (
     <>
 
-      <section className='py-14  lg:py-20' >
+      <section className='py-16  lg:py-20' >
         <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2'>
           <div className='flex flex-col lg:flex-row justify-between items-center gap-12 lg:gap-16'>
             <div className="md:w-1/2 w-full">
@@ -63,7 +63,7 @@ export const Bigcard = () => {
             </div>
             <div className='lg:w-6/12  w-12/12'>
 
-              <h2 className="text-3xl md:leading-[1.3] md:text-4xl font-semibold redhat mb-4 md:mb-6 text-[#1B453C]">{plantingData.title}</h2>
+              <h2 className="text-3xl md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold redhat mb-4 md:mb-6 text-[#1B453C]">{plantingData.title}</h2>
               <p
                 className="text-base md:text-[17px] font-normal redhat text-black mb-10 md:mb-14"
                 dangerouslySetInnerHTML={{ __html: plantingData.shortdesciption }}
@@ -114,7 +114,7 @@ export const Blogitem = () => {
     <>
       <section className="py-14 md:py-20 !pt-14 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl text-center md:leading-[1.3] md:text-4xl font-semibold redhat mb-6 md:mb-10 text-[#1B453C]">
+          <h2 className="text-3xl text-center md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold redhat mb-8 md:mb-10 text-[#1B453C]">
             Latest Blogs
           </h2>
 
@@ -134,13 +134,13 @@ export const Blogitem = () => {
                 </div>
 
                 <div className="p-6">
-                  <h3 className="text-md font-semibold text-black mb-4 md:mb-6 uppercase">
+                  <h3 className="text-lg md:text-xl font-semibold text-black mb-4 md:mb-6 uppercase">
                     {blog.title}
                   </h3>
-                  <p className="text-sm text-gray-700 mb-4">{blog.description}</p>
+                  <p className="text-base md:text-[17px] text-gray-700 mb-4">{blog.description}</p>
                   <div className='my-3 pt-4 text-center'>
                     <Link href={blog.link}>
-                      <span className="inline-block border border-gray-800 text-gray-800 text-sm px-6 py-3 hover:bg-gray-800 hover:text-white transition" style={{ boxShadow: shadow }}>
+                      <span className="inline-block border border-gray-800 text-gray-800 text-base md:text-[17px] px-8 py-3 hover:bg-gray-800 hover:text-white transition" style={{ boxShadow: shadow }}>
                         Read More
                       </span>
                     </Link>
@@ -170,13 +170,13 @@ export const Blogitem = () => {
             className="w-full p-3 text-black mb-6 mt-8 md:mt-12"
           />
 
-          <p className="text-sm py-4 font-light leading-relaxed mb-6">
+          <p className="text-base md:text-[17px] py-4 font-light leading-relaxed mb-6">
             Follow Us On Social Media For Real-Time Updates, Project Sneak Peeks, And More.
             Stay In The Know And See What’s Happening Behind The Scenes! CONTACT US THROUGH
             EMAILS AND CHAT WITH US!!!
           </p>
 
-          <button className="border border-white text-white py-3 px-10 hover:bg-white hover:text-black transition-all">
+          <button className="border border-white font-medium text-white py-3 px-12 hover:bg-white hover:text-black transition-all">
             SUBMIT
           </button>
         </div>

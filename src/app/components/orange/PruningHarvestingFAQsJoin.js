@@ -233,7 +233,7 @@ export const FAQs = () => {
                                         className={`overflow-hidden bg-[#E9A343] rounded-bl-2xl rounded-br-2xl px-4 text-black transition-[max-height] duration-300 ease-in-out
                                 ${openIndex === index ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}
                                     >
-                                        <p className=' pt-0  mb-6 py-4 text-[15px] md:text-base font-light text-[#00] text-opacity-75' dangerouslySetInnerHTML={{__html: faq.answer}}>
+                                        <p className=' pt-0  mb-6 py-4 text-[15px] md:text-base font-light text-[#00] text-opacity-75 text-justify text-justify' dangerouslySetInnerHTML={{ __html: faq.answer }}>
 
                                         </p>
                                     </div>
@@ -262,15 +262,15 @@ export const Join = () => {
                             <div className="flex flex-col h-full">
                                 <div className="">
                                     <h2 className="text-4xl md:leading-[1.3] md:text-5xl md:text-left font-bold redhat text-white">
-                                    Join Hands with <br/> Atulye Today!
+                                        Join Hands with <br /> Atulye Today!
                                     </h2>
                                 </div>
                                 <div className="mt-6 h-full text-left">
 
                                     <ul className="mb-6 text-md">
                                         <li>
-If you’re planning to grow oranges and want expert guidance, premium resources, and market support, Athulya is your perfect partner. Let’s cultivate success together!
-</li>
+                                            If you’re planning to grow oranges and want expert guidance, premium resources, and market support, Athulya is your perfect partner. Let’s cultivate success together!
+                                        </li>
 
                                     </ul>
                                 </div>

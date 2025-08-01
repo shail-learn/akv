@@ -83,7 +83,7 @@ function ClientPage() {
       />
       <section className="py-14 md:py-20 !pt-14">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl text-center md:leading-[1.3] md:text-4xl font-semibold redhat mb-6 md:mb-10 text-[#1B453C]">
+          <h2 className="text-3xl text-center md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold redhat mb-6 md:mb-10 text-[#1B453C]">
             PR Activity
           </h2>
 
@@ -119,31 +119,31 @@ function ClientPage() {
             ))}
           </div>
 
-            <div className='mt-20'>
-            <h2 className="text-3xl text-center md:leading-[1.3] md:text-4xl font-semibold redhat mb-6 md:mb-10 text-[#1B453C]">
-            PR Gallery
-          </h2>
+          <div className='mt-20'>
+            <h2 className="text-3xl text-center md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold redhat mb-6 md:mb-10 text-[#1B453C]">
+              PR Gallery
+            </h2>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            {gallery.map((blog, index) => (
-              <div
-                key={index}
-                className="bg-white shadow-sm hover:shadow-md border border-gray-300 transition duration-300"
-              >
-                <div className="relative">
+            <div className="grid md:grid-cols-3 gap-6">
+              {gallery.map((blog, index) => (
+                <div
+                  key={index}
+                  className="bg-white shadow-sm hover:shadow-md border border-gray-300 transition duration-300"
+                >
+                  <div className="relative">
 
-                  <Image
-                    src={blog.image}
-                    alt="gallery"
-                    className="  w-full h-full"
-                  />
+                    <Image
+                      src={blog.image}
+                      alt="gallery"
+                      className="  w-full h-full"
+                    />
+                  </div>
+
                 </div>
-
-              </div>
-            ))}
-          </div>
-
+              ))}
             </div>
+
+          </div>
 
 
 

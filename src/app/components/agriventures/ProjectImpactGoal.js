@@ -1,7 +1,7 @@
 "use client"
 import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Navigation, Grid } from 'swiper/modules';
+import { Pagination, Navigation, Grid, Autoplay } from 'swiper/modules';
 
 import 'swiper/css/grid';
 import 'swiper/css';
@@ -101,12 +101,12 @@ export const Project = () => {
                                             {/* <Image className='absolute -bottom-[100px] left-0 rounded-full border-[8px] border-white' width={200} height={200} src={item.image2} alt='banner' /> */}
                                         </div>
 
-                                        <div className='lg:w-6/12 mt-32 md:mt-4 w-full  w-12/12'>
-                                            <h3 className='text-xl font-medium'>{item.subtitle}</h3>
-                                            <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-medium redhat text-black mt-4 mb-6'>{item.heading}</h2>
-                                            <p className='text-black text-base text-justify redhat mb-10' dangerouslySetInnerHTML={{ __html: item.info }}>
+                                        <div className='lg:w-6/12 mt-4 md:mt-4 w-full  w-12/12'>
+                                            <h3 className='text-xl md:text-[22px] font-medium'>{item.subtitle}</h3>
+                                            <h2 className='text-3xl md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold redhat text-black mt-4 mb-6'>{item.heading}</h2>
+                                            <p className='text-black text-base md:text-[17px] text-justify redhat mb-10' dangerouslySetInnerHTML={{ __html: item.info }}>
                                             </p>
-                                            <div className='description_project redhat mb-10' dangerouslySetInnerHTML={{ __html: item.description }}>
+                                            <div className='description_project text-base md:text-[17px] redhat mb-10' dangerouslySetInnerHTML={{ __html: item.description }}>
                                             </div>
 
                                         </div>
@@ -186,18 +186,18 @@ export const Impact = () => {
 
                     </div>
                     <div className='w-full md:w-6/12'>
-                        <h2 className="lg:leading-snug text-white redhat mb-4 pt-10 text-center md:text-left text-3xl md:text-4xl  font-medium  w-full"> {heading}</h2>
+                        <h2 className="lg:leading-snug text-white redhat mb-4 pt-10 text-center md:text-left text-3xl md:text-4xl  font-semibold lg:text-[40px]  w-full"> {heading}</h2>
 
-                        <div ref={containerRef} className='custom_left_scroll mr-6
-          overflow-y-scroll   h-[800px]' >
+                        <div ref={containerRef} className='custom_left_scroll mr-6 md:pb-8
+           ' >
                             {impactData.map((impact, index) => (
                                 <div key={index} className="p-4">
                                     <div className=" flex gap-4 lg:gap-8">
                                         <div className='text-white mt-1'>
-                                            <span className='text-sm redhat opacity-70'>{(index + 1).toString().padStart(2, "0")}</span>
+                                            <span className='text-sm md:text-[15px] redhat opacity-70'>{(index + 1).toString().padStart(2, "0")}</span>
                                         </div>
                                         <div>
-                                            <h3 className="text-xl lg:text-2xl redhat text-white font-semibold">
+                                            <h3 className="text-xl lg:text-[26px] redhat text-white font-semibold">
                                                 {impact.title}</h3>
                                             {/* <p className="mt-2 text-gray-300">{impact.description}</p> */}
 
@@ -244,15 +244,17 @@ export const FeatureGoal = () => {
         <>
             <section className='relative text-center md:text-left pt-12 pb-12 overflow-hidden lg:pt-20 lg:pb-24' style={{ background: `url(${banner.src})center center / cover no-repeat` }}>
                 <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2 relative'>
-                    <h2 className='text-3xl text-center md:leading-[1.3] md:text-4xl font-medium redhat text-black mt-4 mb-12 lg:mb-16'>{heading}</h2>
+                    <h2 className='text-3xl text-center md:leading-[1.3] md:text-4xl font-semibold lg:text-[40px] redhat text-black mt-4 mb-12 lg:mb-16'>{heading}</h2>
                     <div className='border-full'>
                         <Swiper
                             slidesPerView={1}
                             spaceBetween={10}
+
                             autoplay={{
                                 delay: 4000,
                                 disableOnInteraction: false,
                             }}
+                            modules={[Autoplay]}
                             breakpoints={{
                                 320: {
                                     slidesPerView: 1,
@@ -279,8 +281,8 @@ export const FeatureGoal = () => {
                                         <Image className='mx-auto mb-4' src={bulletpoint} alt='icon' />
                                         <h3 className='text-2xl lg:text-3xl font-medium mb-2 text-[#1F4E3D]'>({item.year})</h3>
                                     </div>
-                                    <h4 className='text-lg lg:text-xl redhat font-semibold mb-4 text-[#1F4E3D]'>{item.title}</h4>
-                                    <div className='text-black opacity-75 redhat' dangerouslySetInnerHTML={{ __html: item.description }} />
+                                    <h4 className='text-lg lg:text-[22px] redhat font-semibold mb-4 text-[#1F4E3D]'>{item.title}</h4>
+                                    <div className='text-black opacity-75 redhat md:text-[17px]' dangerouslySetInnerHTML={{ __html: item.description }} />
                                 </SwiperSlide>
                             ))}
 

@@ -48,7 +48,7 @@ export const Drone = () => {
                 classname={text.className}
                 opacity={text.opacity}
             />
-            <section className="relative text-center md:text-left  my-20 md:my-[4rem] mb-0">
+            <section className="relative text-center md:text-left  my-20 md:my-[4rem] mb-10">
                 <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-2 relative z-1 ">
                     <div className="flex md:flex-col flex-col lg:flex-row justify-between gap-4 lg:gap-12  ">
                         <div className="lg:w-6/12  w-full  w-12/12 ">
@@ -59,12 +59,12 @@ export const Drone = () => {
                             />
                         </div>
                         <div className="lg:w-6/12 mt-2 md:mt-4 w-full  w-12/12">
-                            <h2 className="text-3xl md:leading-[1.3] md:text-4xl font-medium redhat text-black mt-4 mb-8 ">
+                            <h2 className="text-3xl md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold redhat text-black mt-4 mb-8 ">
                                 {IntroData.heading}
                             </h2>
 
                             <p
-                                className="text-black text-base md:text-lg   redhat mb-10"
+                                className="text-black text-base md:text-[17px]   redhat mb-10"
                                 dangerouslySetInnerHTML={{ __html: IntroData.info }}
                             ></p>
 
@@ -107,10 +107,10 @@ export const Why = () => {
 
                 <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-2 relative z-1 ">
                     <div className='md:max-w-[70%] mx-auto'>
-                        <h2 className="text-3xl md:leading-[1.3] md:text-4xl font-medium text-center redhat text-white mb-12">
+                        <h2 className="text-3xl md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold text-center redhat text-white mb-12">
                             {heading}
                         </h2>
-                        <p className='text-base text-white mb-12 md:mb-16'>{info}</p>
+                        <p className='text-base md:text-[17px] text-white mb-12 md:mb-16'>{info}</p>
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 md:gap-16">
                             {features.map((feature, index) => (
@@ -124,7 +124,7 @@ export const Why = () => {
                                         />
                                     </div>
                                     <div>
-                                        <h3 className="text-white opacity-75 text-[17px] text-left redhat relative"
+                                        <h3 className="text-white opacity-75 text-lg text-left redhat relative"
                                             dangerouslySetInnerHTML={{ __html: feature.title }}
                                         />
 
@@ -154,10 +154,10 @@ export const Overview = () => {
 
                 <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-2 relative z-1 ">
                     <div className='md:max-w-[70%] mx-auto'>
-                        <h2 className="text-3xl md:leading-[1.3] md:text-4xl font-medium text-center redhat text-[#1B453C] mb-12">
+                        <h2 className="text-3xl md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold text-center redhat text-[#1B453C] mb-12">
                             {heading}
                         </h2>
-                        <p className='text-base text-black mb-12 md:mb-16' dangerouslySetInnerHTML={{ __html: info }} />
+                        <p className='text-base md:text-[17px] text-black mb-12 md:mb-16' dangerouslySetInnerHTML={{ __html: info }} />
 
 
                     </div>

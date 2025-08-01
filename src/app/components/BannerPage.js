@@ -50,7 +50,7 @@ const BannerPage = ({
             {/* Heading */}
             {heading && (
               <h1
-                className="text-white text-3xl md:text-4xl lg:leading-tight lg:text-[40px] font-bold w-full"
+                className="text-white text-3xl md:text-4xl lg:leading-tight lg:text-[44px] font-bold w-full"
                 dangerouslySetInnerHTML={{ __html: heading }}
               />
             )}
@@ -65,7 +65,7 @@ const BannerPage = ({
 
             {/* Title (Plain text) */}
             {title && (
-              <p className="w-full text-white text-[15px] mt-5 mb-7 lg:mt-7 lg:mb-10" dangerouslySetInnerHTML={{ __html: title }}/>
+              <p className="w-full text-white text-[15px] md:text-base mt-5 mb-7 lg:mt-7 lg:mb-10" dangerouslySetInnerHTML={{ __html: title }}/>
             )}
 
             {/* Button */}

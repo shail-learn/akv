@@ -1,9 +1,9 @@
 "use client"
 import React, { useState } from "react";
-import Team1 from "../../../assets/images/home/team1.png";
-import Team2 from "../../../assets/images/home/team2.webp";
-import Team3 from "../../../assets/images/home/team3.png";
-import Team4 from "../../../assets/images/home/team4.png";
+import Team1 from "../../../assets/images/home/mk.webp";
+import Team2 from "../../../assets/images/home/atul.webp";
+import Team3 from "../../../assets/images/home/sk-pande.webp";
+import Team4 from "../../../assets/images/home/sanjay.webp";
 import Team5 from "../../../assets/images/home/team5.png";
 import Team6 from "../../../assets/images/home/team6.png";
 
@@ -21,25 +21,25 @@ export const Ourteam = () => {
   const ourTeamData = [
     {
       id: 1,
-      img: Team1,
-      name: "Late and Emeritus <br/> Shri MK Aggarwal",
-      designation: "Founder",
+      image: Team1,
+      name: "Emeritus <br> Lt. M.K. Aggarwal",
+      designation: "Chairman",
     },
     {
       id: 2,
-      img: Team2,
+      image: Team2,
       name: "Shri Atul Aggarwal",
       designation: "Co-Founder & Chairman",
     },
     {
       id: 3,
-      img: Team3,
+      image: Team3,
       name: "Dr. SK Pande",
-      designation: "Director, School of Agriculture Science-ex",
+      designation: "Associate Director",
     },
     {
       id: 4,
-      img: Team4,
+      image: Team4,
       name: "Shri Sanjay Mittal",
       designation: "Technology Consultant",
     },
@@ -62,7 +62,7 @@ export const Ourteam = () => {
     <>
       <section className="container mx-auto pb-0 lg:pb-20  lg:py-0 ">
         <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2 '>
-          <h4 className="text-3xl md:text-4xl redhat text-center font-medium mb-8">
+          <h4 className="text-3xl md:text-4xl redhat text-center  lg:text-[40px] font-semibold mb-8">
             Our  <span className="text-[#498A8A]">Visionary Team</span>
           </h4>
           <div className=" flex flex-wrap  justify-center gap-4 lg:gap-8">
@@ -70,18 +70,18 @@ export const Ourteam = () => {
 
               <div key={item.id} className="text-center w-[47%] lg:w-[20%]">
                 <div className="bg-[#A8A8A8] rounded-[20px] overflow-hidden">
-                <Link href="/our-team" >
-                  <Image
-                    src={item.img}
-                    alt={item.name}
-                    className="w-full h-full mx-auto"
-                    quality={90}
-                  />
+                  <Link href="/our-team" >
+                    <Image
+                      src={item.image}
+                      alt={item.name}
+                      className="w-full h-full mx-auto"
+                      quality={90}
+                    />
                   </Link>
                 </div>
                 <Link href="/our-team" >
-                <h5 className="text-lg mb-2 mt-4 font-normal" dangerouslySetInnerHTML={{__html: item.name}}/>
-                <h6 className="text-sm font-semibold">{item.designation}</h6>
+                  <h5 className="text-xl mb-2 mt-4 font-normal" dangerouslySetInnerHTML={{ __html: item.name }} />
+                  <h6 className="text-[15px] font-semibold">{item.designation}</h6>
                 </Link>
               </div>
 

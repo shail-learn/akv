@@ -15,7 +15,7 @@ import icon6 from "../../../assets/images/home/logo/panchvatika.svg";
 
 
 export const WorkingOn = () => {
-  const text = [" Our goal is to create a legacy of environmental preservation without taking from future generations. Our vision is to foster ‘billionaires’ of natural wealth by ensuring sustainable prosperity and environmental protection."]
+  const text = ["Our goal is to create a legacy of environmental preservation without taking from future generations. Our vision is to foster ‘billionaires’ of natural wealth by ensuring sustainable prosperity and environmental protection."]
 
 
   const boxslider = [
@@ -45,11 +45,11 @@ export const WorkingOn = () => {
   return (
     <>
       <section
-        className=" bg-[#ECF7F3]   pt-12 pb-12 lg:pt-16 lg:pb-18 working-sec" >
+        className=" bg-[#ECF7F3]   pt-16 pb-4 lg:pt-16 lg:pb-18 working-sec" >
         <div className='mx-auto max-w-7xl px-4 md:px-8 lg:px-2 '>
           <div className='flex flex-wrap lg:flex-nowrap items-center gap-6 px-0 md:px-6 lg:px-2'>
             <div className='w-full lg:w-3/12 '>
-              <h2 className="lg:leading-snug text-black redhat lg:mb-7 text-center lg:text-left text-3xl md:text-4xl  font-medium  w-full">
+              <h2 className="lg:leading-snug text-black redhat lg:mb-7 text-center lg:text-left text-3xl md:text-4xl lg:text-[40px] font-semibold  w-full">
                 What We’re <br /> <span className='text-[#4C9E8C]'>Working</span> On</h2>
             </div>
 
@@ -93,15 +93,15 @@ export const WorkingOn = () => {
 
                 {boxslider.map((item, index) => (
                   <SwiperSlide key={index}>
-                    <div className='w-full h-64 lg:h-60 item-center flex text-center items-center rounded-3xl px-8 lg:px-4 md:pt-5 mb-5 border-black border-[1px] item_slider relative'>
+                    <div className='w-full h-72 item-center flex text-center items-center rounded-3xl px-8 lg:px-4 md:pt-5 mb-5 border-black border-[1px] item_slider relative'>
                       <div className='lg:w-12/12 mx-auto'>
-                        <div className='absolute left-1/2 -translate-x-1/2 -top-8'>
+                        <div className='absolute left-1/2 -translate-x-1/2 -top-10'>
                           <div className='rounded-full bg-white p-3 shadow-md'>
-                          <Image src={item.image} alt='icon' className='w-12 lg:w-[40px] lg:h-[40px] mx-auto object-contain  ' />
+                            <Image src={item.image} alt='icon' className='w-12 lg:w-[40px] lg:h-[40px] mx-auto object-contain  ' />
                           </div>
                         </div>
                         <p
-                          className='text-sm lg:text-[16] text-black text-justify font-normal b-600'
+                          className='text-base lg:text-[17px] text-black text-justify font-normal b-600'
                           dangerouslySetInnerHTML={{ __html: item.description }}
                         ></p>
                       </div>

@@ -13,6 +13,7 @@ import use1 from "../../../assets/images/projects/project5/key1.webp";
 import use2 from "../../../assets/images/projects/project5/key2.webp";
 import use3 from "../../../assets/images/projects/project5/key3.webp";
 import use4 from "../../../assets/images/projects/project5/key4.webp";
+import InfoSection from '../InfoSection';
 
 
 export const Guest = () => {
@@ -74,45 +75,19 @@ export const Garden = () => {
 
   return (
     <>
+      <InfoSection heading={heading} image={image2} infoData={infoData} />
 
-      <section className='relative text-center md:text-left   pb-16  pt-20 lg:pb-16 bg-[#f5f5f5]'  >
-        <div className='mx-auto max-w-7xl px-4 md:px-6 mx:px-2 relative z-1 '>
-          <div className='flex flex-col lg:flex-row justify-between items-center gap-12'>
-            <div className='md:w-[40%] w-full  w-12/12'>
-              <div className='relative'>
-                <Image className='w-full h-full rounded-xl' src={image2} alt='banner' />
 
-              </div>
-            </div>
-            <div className='md:w-[60%]  w-full  w-12/12'>
-              <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-medium redhat text-[#1B453C] mb-8'>{heading}</h2>
-
-              <div className='my-6 mb-14'>
-                {infoData.map((item, index) => (
-                  <div key={index} className="flex items-start space-x-3 mb-4 py-1">
-                    <RiCheckboxCircleFill className="h-5 w-5 text-green-800 mt-1" />
-                    <div>
-                      <h3 className="font-semibold redhat text-left text-lg">{item.title}</h3>
-                      <p className="text-black redhat">{item.description}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section className='text-center md:text-left pb-16 pt-16 lg:pb-20 lg:pt-20'>
         <div className='mx-auto max-w-7xl  px-6'>
-          <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-medium redhat text-[#1B453C] mb-8'>{main_heading}</h2>
+          <h2 className='text-3xl md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold redhat text-[#1B453C] mb-8'>{main_heading}</h2>
         </div>
         <div className='mx-auto max-w-7xl  px-6 flex flex-col-reverse md:flex-row items-center gap-10'>
           <div className='w-full md:w-2/3 text-center md:text-left'>
 
             <div className='w-full p-4 md:p-8 bg-[#1B453C] rounded-2xl'>
-              <p className='text-white text-base redhat' dangerouslySetInnerHTML={{ __html: shortinfo }}>
+              <p className='text-white text-base md:text-[17px] redhat' dangerouslySetInnerHTML={{ __html: shortinfo }}>
               </p>
             </div>
           </div>
@@ -141,24 +116,24 @@ export const History = () => {
     `
 
 
-    const heading = "History and Vision"
-    const Description = "The Guest Garden was envisioned and established by Mr. Mithilesh Aggarwal ji as part of Atulye Krishi Vana’s larger mission to integrate sustainability with cultural traditions.    "
+  const heading = "History and Vision"
+  const Description = "The Guest Garden was envisioned and established by Mr. Mithilesh Aggarwal ji as part of Atulye Krishi Vana’s larger mission to integrate sustainability with cultural traditions.    "
 
-    const boxslider = [
-      {
-        heading: "A green welcome area for visitors",
-      },
-      {
-        heading: "A living archive of guest memories",
-      },
-      {
-        heading: "A model for eco-friendly landscaping and guest engagement",
-      },
-      {
-        heading: "A tranquil space where guests can connect with nature and reflect in peace",
-      },
+  const boxslider = [
+    {
+      heading: "A green welcome area for visitors",
+    },
+    {
+      heading: "A living archive of guest memories",
+    },
+    {
+      heading: "A model for eco-friendly landscaping and guest engagement",
+    },
+    {
+      heading: "A tranquil space where guests can connect with nature and reflect in peace",
+    },
 
-    ]
+  ]
 
   return (
     <>
@@ -262,15 +237,15 @@ export const Atulye = () => {
       className="relative bg-no-repeat py-14 lg:py-32 !mb-0 bg-cover w-full my-8 md:my-12 !mt-0"
       style={{ backgroundImage: `url(${PartnerBg.src})` }}
     >
-            <div className='absolute top-0 left-0 w-full h-full bg-black opacity-50'></div>
+      <div className='absolute top-0 left-0 w-full h-full bg-black opacity-50'></div>
 
       <div className="relative z-10 h-full flex mx-auto px-4   max-w-7xl">
         <div className="max-w-2xl text-white text-center md:text-left pl-3   mt-5">
-          <h2 className=" w-full  text-3xl md:text-4xl leading-snug font-bold mb-8 md:mb-10 redhat">
+          <h2 className=" w-full  text-3xl md:text-4xl leading-snug lg:text-[40px] font-semibold mb-8 md:mb-10 redhat">
             {heading}
           </h2>
           <p
-            className="mb-4 text-sm  md:text-base   w-full"
+            className="mb-4 text-base  md:text-[17px]   w-full"
             dangerouslySetInnerHTML={{ __html: description }}
           ></p>
 

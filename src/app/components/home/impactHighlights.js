@@ -5,7 +5,7 @@ import icon1 from "../../../assets/images/home/leaf.svg";
 import Image from 'next/image';
 import Link from 'next/link';
 const ImpactHighlights = () => {
-    const heading ="What Sets Us Apart"
+    const heading = "What Sets Us Apart"
     const text = {
         heading: 'We Believe in Making a Real Green Revolution',
         title: 'At Atulye Krishi Vana, we are committed to building the world’s most impactful agri-company through sustainable agriculture and agroforestry. Our mission is to address climate change, global warming, and greenhouse gas emissions while fostering environmental resilience. <br> Our journey began in Madhya Pradesh, India, with a flagship project focused on sustainable forestry and organic plantations. By creating ecosystems that balance resource generation with environmental preservation, we aim to secure a prosperous and sustainable future for generations to come.'
@@ -38,17 +38,17 @@ const ImpactHighlights = () => {
                     <div className='mx-auto lg:w-10/12 w-12/12'>
                         <div className='flex flex-col lg:flex-row justify-between items-center gap-4 lg:gap-12'>
                             <div className='lg:w-5/12  w-12/12'>
-                                <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-medium redhat text-white'>{text.heading}</h2>
+                                <h2 className='text-3xl md:leading-[1.3] md:text-4xl mb-4 md:mb-0 lg:text-[40px] font-semibold redhat text-white'>{text.heading}</h2>
                             </div>
                             <div className='lg:w-6/12  w-12/12'>
-                                <p className='text-white text-base font-light text-justify text-light' dangerouslySetInnerHTML={{ __html: text.title }}>
+                                <p className='text-white text-base md:text-[17px] font-light text-justify text-light' dangerouslySetInnerHTML={{ __html: text.title }}>
 
                                 </p>
                             </div>
                         </div>
                         <div className='flex flex-col pt-10 lg:pt-20 lg:flex-row justify-between  gap-4 lg:gap-12'>
                             <div className='w-12/12'>
-                                <h2 className='text-md  font-medium poppins text-white mb-6'>{heading}</h2>
+                                <h2 className='text-lg md:text-xl  font-medium poppins text-white mb-6'>{heading}</h2>
 
                             </div>
                         </div>
@@ -60,7 +60,7 @@ const ImpactHighlights = () => {
                                             <div className='w-6 h-6 mx-auto'>
                                                 <Image src={item.icon} width="50" height="50" alt="icon" />
                                             </div>
-                                            <p className='text-base font-light text-white'>{item.description}</p>
+                                            <p className='text-lg font-medium text-white'>{item.description}</p>
                                         </div>
                                     </div>
                                 )
@@ -70,7 +70,7 @@ const ImpactHighlights = () => {
 
                         <div className='flex flex-col  pt-14 lg:flex-row justify-center items-center gap-4 lg:gap-12'>
                             <div className='w-12/12'>
-                                <Link href="/contact-us" className='text-white bg-transparent border border-white p-3 px-12 lg:px-20 hover:bg-white hover:text-[#1B453C] transition delay-100 duration-100 ease-in-out'>Join the Mission</Link>
+                                <Link href="/contact-us" className='text-white font-medium text-[17px] bg-transparent border border-white p-3 px-12 lg:px-20 hover:bg-white hover:text-[#1B453C] transition delay-100 duration-100 ease-in-out'>Join the Mission</Link>
 
                             </div>
                         </div>

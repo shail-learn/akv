@@ -43,8 +43,8 @@ export const Certification = () => {
           <div className='flex md:flex-col flex-col lg:flex-row justify-between items-center gap-8 md:gap-10'>
             <div className='md:w-3/12 w-full'>
               <div className='md:max-w-[100%]'>
-                <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-normal text-center md:text-left redhat text-[#1B453C] mb-6'>{heading}</h2>
-                <p className='text-[#1B453C] text-normal text-center md:text-left font-light text-base mb-8 lg:mb-10'>{subtitle}</p>
+                <h2 className='text-3xl md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold text-center md:text-left redhat text-[#1B453C] mb-6'>{heading}</h2>
+                <p className='text-[#1B453C] text-normal text-center md:text-left font-normal *: mb-8 lg:mb-10 text-xl'>{subtitle}</p>
               </div>
             </div>
 
@@ -62,7 +62,7 @@ export const Certification = () => {
                         className='w-14 h-14 object-contain z-10 relative mx-auto'
                         alt='icon'
                       />
-                      <p className='text-normal text-white relative z-10 text-sm lg:text-[13px] pt-4 font-light italic'>
+                      <p className='text-normal text-white relative z-10 text-base lg:text-[17px] pt-4 font-light italic'>
                         {item.description}
                       </p>
                     </div>
@@ -115,7 +115,7 @@ export const Faq = () => {
         <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2'>
           <div className='flex md:flex-col flex-col lg:flex-row justify-between items-center gap-8 md:gap-10'>
             <div className='md:w-12/12 w-full'>
-              <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-normal text-center md:text-left redhat text-[#1B453C] mb-14'>{heading}</h2>
+              <h2 className='text-3xl md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold text-center md:text-left redhat text-[#1B453C] mb-14'>{heading}</h2>
               <div className='border-t border-[#E5C17C]'>
                 {faqs.map((faq, index) => (
                   <div
@@ -127,7 +127,7 @@ export const Faq = () => {
                       onClick={() => toggleFAQ(index)}
                       className='w-full text-left flex items-center justify-between py-4 transition-all duration-300'
                     >
-                      <span className='mdtext-2xl text-xl text-[#000] redhat font-medium'>
+                      <span className='md:text-2xl text-xl text-[#000] redhat font-medium'>
                         {faq.question}
                       </span>
                       {openIndex === index ? (
@@ -142,7 +142,7 @@ export const Faq = () => {
                       className={`overflow-hidden transition-[max-height] duration-300 ease-in-out
                                 ${openIndex === index ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}
                     >
-                      <p className=' pt-0  mb-6  py-4 text-sm text-[#00] text-opacity-75'>
+                      <p className=' pt-0  mb-6  py-4 text-base md:text-[17px] text-[#00] text-opacity-75'>
                         {faq.answer}
                       </p>
                     </div>
@@ -173,11 +173,11 @@ export const Register = () => {
             <div className='md:w-5/12  w-12/12'>
               <div className="flex flex-col h-full">
                 <div className="">
-                  <h2 className="text-3xl md:leading-[1.3] md:text-4xl md:text-left font-medium redhat text-white">Join the Movement – <br /> Register Today!</h2>
+                  <h2 className="text-3xl md:leading-[1.3] md:text-4xl md:text-left lg:text-[40px] font-semibold redhat text-white">Join the Movement – <br /> Register Today!</h2>
                 </div>
                 <div className="md:mt-[50%] mt-14 h-full text-left">
-                  <p className="mb-4 text-lg flex gap-4 items-center font-semibold"><FaCalendarDays className='text-[#F7C35F]' /> Upcoming Training Sessions:</p>
-                  <ul className="mb-6 text-md">
+                  <p className="mb-4 text-lg md:text-xl flex gap-4 items-center font-semibold"><FaCalendarDays className='text-[#F7C35F]' /> Upcoming Training Sessions:</p>
+                  <ul className="mb-6 md:text-[17px]">
                     <li>  Agroforestry Essentials – 15th March 2025</li>
                     <li> Smart Farming & AI – 22nd April 2025</li>
                     <li>Eco-Tourism & Farm Entrepreneurship – 5th May 2025</li>
@@ -186,9 +186,9 @@ export const Register = () => {
               </div>
             </div>
             <div className='md:w-5/12  w-12/12'>
-              <p className="text-white font-semibold text-base mb-6 md:text-left">Ready to transform your future? Enroll today!</p>
+              <p className="text-white font-semibold text-xl mb-6 md:text-left">Ready to transform your future? Enroll today!</p>
               <div className="bg-white text-black p-6 rounded-3xl shadow-lg w-full max-w-md">
-                <h2 className="text-xl font-medium mb-4 text-center md:text-left">Inquiry Form</h2>
+                <h2 className="text-2xl font-medium mb-4 text-center md:text-left">Inquiry Form</h2>
                 <form>
                   <div className='flex flex-wrap gap-4 mb-4'>
                     <input type="text" className='outline-none font-normal px-4 p-3 poppins rounded-xl w-full bg-[#F6F6F8]' placeholder='Name: ' />
@@ -198,7 +198,7 @@ export const Register = () => {
                     <textarea className='outline-none px-4 font-normal p-3 poppins rounded-xl w-full bg-[#F6F6F8] ' placeholder='Message:' />
                   </div>
 
-                  <button className='poppins  font-normal text-white w-full py-3 rounded-[10px] bg-[#1B453C]'>Submit</button>
+                  <button className='poppins  font-medium text-white w-full py-3 rounded-[10px] bg-[#1B453C]'>Submit</button>
                 </form>
               </div>
             </div>
@@ -220,16 +220,16 @@ export const GreenRevolution = () => {
       <div className="flex flex-wrap md:flex-nowrap items-center w-full gap-6 md:gap-10 py-6 md:py-20">
         <div className="md:w-2/12">
           <div dir="rtl">
-          <div className="w-full h-5 bg-[#6D8C54] rounded-s-md"></div>
+            <div className="w-full h-5 bg-[#6D8C54] rounded-s-md"></div>
           </div>
         </div>
         <div className="md:w-3/12 w-full text-center">
-          <button className="bg-[#1B453C] text-white redhat px-6 py-4 rounded-lg shadow-lg w-3/4 mx-auto md:w-full">
+          <a href="/contact-us" className="bg-[#1B453C] text-white font-medium md:text-[17px] redhat px-10 py-4 rounded-lg shadow-lg w-[3/4] mx-auto md:w-full">
             Join the Green Revolution!
-          </button>
+          </a>
         </div>
-        <div className="md:w-3/12 w-full text-center">
-          <p className="text-gray-700 text-center md:text-left text-sm md:text-base">
+        <div className="md:w-3/12 w-full text-center mt-6 md:mt-0">
+          <p className="text-gray-700 text-center md:text-left text-base md:text-[17px]">
             Together, we can grow a greener, smarter, and more sustainable world!
           </p>
         </div>

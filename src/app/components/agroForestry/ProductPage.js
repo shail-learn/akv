@@ -34,62 +34,68 @@ export const ProductPage = () => {
   const productlist = [
     {
       img: img2,
-      link: "agroForestry/timber/rosewood",
+
+      link: "agroforestry/timber/rosewood",
     },
     {
       img: img3,
-      link: "agroForestry/gamhar",
+      link: "agroforestry/gamhar",
     },
     {
       img: img4,
-      link: "agroForestry/timber/teak",
+      link: "agroforestry/timber/teak",
     },
     {
       img: img5,
-      link: "agroForestry/mahagony",
+      link: "agroforestry/mahagony",
+
     },
   ];
   const productlist2 = [
     {
       img: img7,
-      link: "agroForestry/guava",
+
+      link: "agroforestry/guava",
     },
     {
       img: img8,
-      link: "/agroForestry/papaya",
+      link: "/agroforestry/papaya",
     },
     {
       img: img9,
-      link: "/agroForestry/amla",
+      link: "/agroforestry/amla",
     },
     {
       img: img10,
-      link: "/agroForestry/orange",
+      link: "/agroforestry/orange",
+
     },
   ];
   const productlist3 = [
     {
       img: img02,
-      link: "agroForestry/medicinal-herbal-plants/stress-relief-and-cognitive-wellness",
+
+      link: "agroforestry/medicinal-herbal-plants/stress-relief-and-cognitive-wellness",
     },
     {
       img: img03,
-      link: "agroForestry/medicinal-herbal-plants/immunity-and-infection-control",
+      link: "agroforestry/medicinal-herbal-plants/immunity-and-infection-control",
     },
     {
       img: img04,
-      link: "agroForestry/medicinal-herbal-plants/digestive-liver-and-metabolism",
+      link: "agroforestry/medicinal-herbal-plants/digestive-liver-and-metabolism",
     },
     {
       img: img05,
-      link: "agroForestry/medicinal-herbal-plants/respirtaory-inflammatory-relief",
+      link: "agroforestry/medicinal-herbal-plants/respirtaory-inflammatory-relief",
+
     },
   ];
   return (
     <>
       <section className="py-6 pt-16">
         <div className="mx-auto max-w-7xl px-4 md:px-8 lg:px-2 max-full bg-white">
-          <h2 className="text-black text-center md:text-left text-3xl md:text-4xl mb-4 lg:mb-8 lg:leading-tight  redhat  font-medium  w-full">
+          <h2 className="text-black text-center md:text-left text-3xl md:text-4xl mb-4 lg:mb-8 lg:leading-tight  redhat  lg:text-[40px] font-semibold  w-full">
             {heading}
           </h2>
         </div>
@@ -107,7 +113,9 @@ export const ProductPage = () => {
               />
 
               <Link
-                href="agroForestry/timber" className="bg-[#9A9771] text-center md:text-left text-2xl text-white px-6 block w-full lg:px-8 p-4 lg:p-5">
+
+                href="agroforestry/timber" className="bg-[#9A9771] text-center md:text-left font-medium text-2xl text-white px-6 block w-full lg:px-8 p-4 lg:p-5">
+
                 {category1}
               </Link>
             </div>
@@ -123,7 +131,7 @@ export const ProductPage = () => {
                       />
                       <Link
                         href={item.link}
-                        className="text-sm border-[1px] border-[#646464] w-full text-center rounded-full p-2 hover:bg-[#1B453C] hover:text-white "
+                        className="text-[15px] font-medium border-[1px] border-[#646464] w-full text-center rounded-full p-2 hover:bg-[#1B453C] hover:text-white "
                       >
                         Explore More
                       </Link>
@@ -146,8 +154,10 @@ export const ProductPage = () => {
                 className="w-full h-auto rounded-tl-3xl rounded-tr-3xl"
               />
               <Link
-                href="agroForestry/fruits-and-vegetables"
-                className="bg-[#719A8E] text-center md:text-left text-2xl text-white px-6 block w-full lg:px-8 p-4 lg:p-5"
+
+                href="agroforestry/fruits-and-vegetables"
+
+                className="bg-[#719A8E] font-medium text-center md:text-left text-2xl text-white px-6 block w-full lg:px-8 p-4 lg:p-5"
               >
                 {category2}
               </Link>
@@ -160,7 +170,7 @@ export const ProductPage = () => {
                       <Image src={item.img} alt="product" className="rounded-3xl h-full" />
                       <Link
                         href={item.link}
-                        className="text-sm border-[1px] border-[#646464] w-full text-center rounded-full p-2 hover:bg-[#1B453C] hover:text-white "
+                        className="text-[15px] font-medium border-[1px] border-[#646464] w-full text-center rounded-full p-2 hover:bg-[#1B453C] hover:text-white "
                       >
                         Explore More
                       </Link>
@@ -185,7 +195,9 @@ export const ProductPage = () => {
               />
 
               <Link
-                href="agroForestry/medicinal-herbal-plants" className="bg-[#337049] text-center md:text-left text-2xl text-white px-6 block w-full lg:px-8 p-4 lg:p-5">
+
+                href="agroforestry/medicinal-herbal-plants" className="bg-[#337049] font-medium text-center md:text-left text-2xl text-white px-6 block w-full lg:px-8 p-4 lg:p-5">
+
                 {category3}
               </Link>
             </div>
@@ -201,7 +213,7 @@ export const ProductPage = () => {
                       />
                       <Link
                         href={item.link}
-                        className="text-sm border-[1px] border-[#646464] w-full text-center rounded-full p-2 hover:bg-[#1B453C] hover:text-white "
+                        className="text-[15px] font-medium border-[1px] border-[#646464] w-full text-center rounded-full p-2 hover:bg-[#1B453C] hover:text-white "
                       >
                         Explore More
                       </Link>

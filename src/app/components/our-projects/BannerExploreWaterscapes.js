@@ -68,9 +68,9 @@ export const Banner = () => {
                 <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2'>
 
                     <div className='w-full md:w-3/4 text-center mx-auto'>
-                        <h1 className='text-3xl md:leading-[1.3] md:text-4xl font-semibold redhat mb-4 md:mb-6 text-[#1B453C]'>{heading}</h1>
+                        <h2 className='text-3xl md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold redhat mb-6 text-[#1B453C]'>{heading}</h2>
                         <div className='bg-[#1B453C]  p-6 rounded-3xl'>
-                            <p className='w-full text-white text-base redhat tracking-wide py-2'>{description}</p>
+                            <p className='w-full text-white text-base md:text-[17px] redhat tracking-wide py-2'>{description}</p>
                         </div>
                     </div>
                 </div>
@@ -320,7 +320,7 @@ export const Waterscapes = () => {
             <section
                 className=" pt-14 pb-16 lg:pt-16 lg:pb-20" >
                 <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2 '>
-                    <h2 className="lg:leading-snug text-[#1B453C] redhat mb-7 text-center text-3xl md:text-4xl  font-medium  w-full">
+                    <h2 className="lg:leading-snug text-[#1B453C] redhat mb-7 text-center text-3xl md:text-4xl  lg:text-[40px] font-semibold  w-full">
                         {heading1}  </h2>
 
 
@@ -371,7 +371,7 @@ export const Waterscapes = () => {
                                                 <div className='grid gap-2 items-center justify-center mb-8 relative'>
                                                     <Image src={item.image} alt='icon' className='w-full h-full mx-auto' />
 
-                                                    <Link href={item.link} className='text-md text-white font-normal flex justify-between gap-1 absolute bottom-3 w-[90%] left-[5%] right-[5%] '>{item.description}  <IoIosArrowRoundForward className='text-3xl' /></Link>
+                                                    <Link href={item.link} className='text-lg text-white font-medium flex justify-between gap-1 absolute bottom-3 w-[90%] left-[5%] right-[5%] '>{item.description}  <IoIosArrowRoundForward className='text-3xl' /></Link>
                                                 </div>
                                             </div>
                                         </div>

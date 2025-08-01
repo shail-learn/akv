@@ -19,22 +19,30 @@ export const SliderCard = () => {
     {
       title: "Shrubs & Hedges",
       image: img1,
-      link: "/agroForestry/shrubs-and-hedges",
+
+      link: "/agroforestry/shrubs-and-hedges",
+
     },
     {
       title: "Shrubs",
       image: img2,
-      link: "/agroForestry/shrubs-and-hedges/shrubs",
+
+      link: "/agroforestry/shrubs-and-hedges/shrubs",
+
     },
     {
       title: "Hedges",
       image: img3,
-      link: "/agroForestry/shrubs-and-hedges/hedges",
+
+      link: "/agroforestry/shrubs-and-hedges/hedges",
+
     },
     {
       title: "Shrubs",
       image: img2,
-      link: "/agroForestry/shrubs-and-hedges/shrubs",
+
+      link: "/agroforestry/shrubs-and-hedges/shrubs",
+
     },
 
   ]
@@ -45,7 +53,7 @@ export const SliderCard = () => {
       <div className='mx-auto max-w-7xl px-4 md:px-8 lg:px-2 max-ful'>
 
         <div className='w-full lg:w-12/12 relative'>
-          <h2 className="text-black left-2/4 top-[30px] text-center md:absolute md:text-left text-2xl  md:mb-4  lg:leading-tight  redhat  font-normal">
+          <h2 className="text-black left-2/4 top-[30px] text-center md:absolute md:text-left text-2xl md:text-3xl  md:mb-4  lg:leading-tight  redhat  font-medium">
             {heading1}
           </h2>
           <Swiper
@@ -91,8 +99,8 @@ export const SliderCard = () => {
                 <div key={index} className='w-full md:col-span-4 relative'>
                   <Image src={item.image} alt="banner" className='w-full h-full rounded-tl-3xl rounded-tr-3xl' />
                   <div className='  hidden gap-4 items-center justify-between absolute bottom-0 left-0 bg-[#719A8E] w-full md:p-4 py-2 px-4'>
-                    <p className='text-white text-xl md:text-2xl'>{item.title}</p>
-                    <Link href={item.link} className='text-sm border-[1px] border-[#646464] w-[150px] text-center rounded-xl p-2 hover:bg-[#1B453C] hover:text-white '>Explore More</Link>
+                    <p className='text-white text-xl font-medium md:text-2xl'>{item.title}</p>
+                    <Link href={item.link} className='text-[15px] font-medium border-[1px] border-[#646464] w-[150px] text-center rounded-xl p-2 hover:bg-[#1B453C] hover:text-white '>Explore More</Link>
                   </div>
                 </div>
 
@@ -141,7 +149,7 @@ export const SliderVarieties = () => {
         <div className='mx-auto max-w-[1400px]  px-4 md:px-8 lg:px-2 '>
           <div className='flex flex-wrap lg:flex-nowrap items-center gap-0 md:gap-6 px-0 md:px-6    lg:px-2'>
             <div className='w-full  '>
-              <h2 className="lg:leading-snug  text-[#1B453C] redhat mb-0 md:mb-4 lg:mb-7 text-center lg:text-left text-3xl md:text-4xl  font-medium  w-full">
+              <h2 className="lg:leading-snug  text-[#1B453C] redhat mb-0 md:mb-4 lg:mb-7 text-center lg:text-left text-3xl md:text-4xl  lg:text-[40px] font-semibold w-full">
                 {heading1}
               </h2>
 
@@ -155,7 +163,7 @@ export const SliderVarieties = () => {
         <div className='mx-auto max-w-[1400px]  px-4 md:px-8 lg:px-2 '>
           <div className='flex flex-wrap lg:flex-nowrap items-center gap-0 md:gap-6 px-0 md:px-6    lg:px-2'>
             <div className='w-full lg:w-3/12 '>
-              <h2 className="lg:leading-snug  text-[#1B453C] redhat mb-0 md:mb-4 lg:mb-7 text-center lg:text-left text-3xl md:text-4xl  font-medium  w-full">
+              <h2 className="lg:leading-snug  text-[#1B453C] redhat mb-0 md:mb-4 lg:mb-7 text-center lg:text-left text-3xl md:text-4xl  lg:text-[40px] font-semibold  w-full">
                 {heading}
               </h2>
 

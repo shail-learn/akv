@@ -1,19 +1,19 @@
 import React from 'react'
 import BannerPage from '../BannerPage'
-import banner from "../../../assets/images/projects/project20/banner.webp";
-import image2 from "../../../assets/images/projects/project20/key.webp";
+import banner from "../../../assets/images/projects/sangam/banner.webp";
+import image2 from "../../../assets/images/projects/sangam/key.webp";
 import Image from 'next/image';
 import { RiCheckboxCircleFill } from "react-icons/ri";
-import image3 from "../../../assets/images/projects/project20/histroy.webp";
+import image3 from "../../../assets/images/projects/sangam/histroy.webp";
 import Titleslider from '../Titleslider';
 
 import { Gridbox } from '../Gridbox';
 import use1 from "../../../assets/images/projects/project20/use1.webp";
 import use2 from "../../../assets/images/projects/project20/use2.webp";
-import use3 from "../../../assets/images/projects/project20/use3.webp";
-import use4 from "../../../assets/images/projects/project20/use4.webp";
-import use5 from "../../../assets/images/projects/project20/use5.webp";
-import use6 from "../../../assets/images/projects/project20/use6.webp";
+import use3 from "../../../assets/images/projects/sangam/use3.webp";
+import use4 from "../../../assets/images/projects/sangam/use4.webp";
+import use5 from "../../../assets/images/projects/sangam/use5.webp";
+import use6 from "../../../assets/images/projects/sangam/use6.webp";
 import PartnerBg from "../../../assets/images/projects/project20/bg.webp";
 
 export const Sangam = () => {
@@ -140,15 +140,15 @@ export const Histroy = () => {
     const description = `The conception of Sangam Kund was rooted in the urgent need for sustainable water management to combat agricultural water scarcity. Envisioned as a rainwater harvesting and storage structure, its development signified a major leap toward eco-friendly farming. <br> <br> Since its construction, the pond has served as a cornerstone of irrigation infrastructure at Atulye Krishi Vana, reflecting the project's long-term commitment to environmental responsibility, resilience, and self-sufficiency.`
     return (
         <section className='relative py-12 mb-8 md:mb-10 md:py-16 bg-[#f5f5f5]'>
-                <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-8'>
+            <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-8'>
                 <h2 className='text-3xl md:leading-[1.3] md:text-4xl text-center font-medium redhat text-[#1B453C] mb-8'>{heading}</h2>
-                    <div className='md:w-[90%] mx-auto'>
-                        <p className='mt-0 md:mt-4 text-black font-normal text-center'
-                            dangerouslySetInnerHTML={{ __html: description }} />
-                    </div>
+                <div className='md:w-[90%] mx-auto'>
+                    <p className='mt-0 md:mt-4 text-black font-normal text-center'
+                        dangerouslySetInnerHTML={{ __html: description }} />
                 </div>
+            </div>
 
-            </section>
+        </section>
     )
 }
 
@@ -157,70 +157,70 @@ export const Uses = () => {
     const gridBox = "xl:!grid-cols-3 grid3";
     const custom_class = "white_grid grid_padding";
     const whyChooseData = [
-      {
-        image: use1,
-        title: "Irrigation:",
-        description:
-          "Supplies water to crops and plants, especially vital during dry seasons.",
-      },
-      {
-        image: use2,
-        title: "Water Storage: ",
-        description:
-          "Collects rainwater and runoff, ensuring availability during times of shortage.",
-      },
-      {
-        image: use3,
-        title: "Cost Savings:",
-        description:
-          "Reduces dependency on external water sources, saving on irrigation costs.",
-      },
+        {
+            image: use1,
+            title: "Irrigation:",
+            description:
+                "Supplies water to crops and plants, especially vital during dry seasons.",
+        },
+        {
+            image: use2,
+            title: "Water Storage: ",
+            description:
+                "Collects rainwater and runoff, ensuring availability during times of shortage.",
+        },
+        {
+            image: use3,
+            title: "Cost Savings:",
+            description:
+                "Reduces dependency on external water sources, saving on irrigation costs.",
+        },
 
 
     ];
 
     const whyChooseData1 = [
 
-      {
-        image: use4,
-        title: "Sustainable Farming: ",
-        description:
-          "Encourages groundwater conservation by prioritizing harvested rainwater.",
-      },
-      {
-        image: use5,
-        title: "Flood Management:",
-        description:
-          "Helps absorb excess rainwater, mitigating flood risks on the property.",
-      },
-      {
-        image: use6,
-        title: "Ecosystem Support: ",
-        description:
-          "Enhances biodiversity by offering a habitat for aquatic and nearby wildlife.",
-      },
+        {
+            image: use4,
+            title: "Sustainable Farming: ",
+            description:
+                "Encourages groundwater conservation by prioritizing harvested rainwater.",
+        },
+        {
+            image: use5,
+            title: "Flood Management:",
+            description:
+                "Helps absorb excess rainwater, mitigating flood risks on the property.",
+        },
+        {
+            image: use6,
+            title: "Ecosystem Support: ",
+            description:
+                "Enhances biodiversity by offering a habitat for aquatic and nearby wildlife.",
+        },
     ]
 
     return (
-      <>
+        <>
 
-        <Gridbox
-          heading="Uses"
-          data={whyChooseData}
-          className={custom_class}
-          gridBox={gridBox}
-        />
-        <div className='-mt-8'>
-        <Gridbox
-          data={whyChooseData1}
-          className={custom_class}
-          gridBox={gridBox}
-        />
-  </div>
+            <Gridbox
+                heading="Uses"
+                data={whyChooseData}
+                className={custom_class}
+                gridBox={gridBox}
+            />
+            <div className='-mt-8'>
+                <Gridbox
+                    data={whyChooseData1}
+                    className={custom_class}
+                    gridBox={gridBox}
+                />
+            </div>
 
 
 
-      </>
+        </>
     );
 }
 

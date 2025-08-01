@@ -32,8 +32,8 @@ function ClientPage() {
 
   const founders = [
     {
-      "name": "Late and Emeritus Shri M.K. Aggarwal",
-      "title": "Founder",
+      "name": "Emeritus Lt. M.K. Aggarwal",
+      "title": "Chairman",
       "linkedin": "",
       "quote": "\"A Legacy of Vision, Innovation, and Sustainable Growth\"",
       "image": member1,
@@ -60,7 +60,7 @@ function ClientPage() {
         "<b>Nature:</b> A thriving environment for future generations.",
         "<b class='text-base md:text-xl'>Under his leadership, AKV has:</b>",
         "Restored 5,000+ acres of degraded land",
-        "Planted over 2 lakh trees",
+        "Planted over 5 lakh trees",
         "Empowered rural communities, especially women and youth ",
         "Integrated cutting-edge tech like AI, drones, and solar power",
         "<b>Agroforestry Visionary</b>",
@@ -69,7 +69,7 @@ function ClientPage() {
     },
     {
       "name": "Dr. S.K. Pande",
-      "title": "Director, School of Agriculture Science-ex",
+      "title": "Associate Director",
       "quote": "\"A Legacy of Research, Innovation, and Agricultural Excellence\"",
       "linkedin": "https://www.linkedin.com/in/dr-subodh-kumar-pande-604930295/",
 
@@ -136,8 +136,8 @@ function ClientPage() {
                       height={600}
                       className="rounded-[16px] w-full object-cover bg-[#A8A8A8]"
                     />
-                     <div className={`absolute w-20  h-20 bg-[#D2AE6D] -top-8 ${isEven ? '-left-8' : '-left-8'} -z-10 rounded-lg`}></div>
-                  <div className={`absolute w-20 h-20 bg-[#6D8C54] -bottom-10 ${isEven ? '-right-0 md:-right-8' : 'md:-right-8 right-0'} -z-10 rounded-lg`}></div>
+                    <div className={`absolute w-20  h-20 bg-[#D2AE6D] -top-8 ${isEven ? '-left-8' : '-left-8'} -z-10 rounded-lg`}></div>
+                    <div className={`absolute w-20 h-20 bg-[#6D8C54] -bottom-10 ${isEven ? '-right-0 md:-right-8' : 'md:-right-8 right-0'} -z-10 rounded-lg`}></div>
                   </div>
 
 
@@ -146,7 +146,7 @@ function ClientPage() {
 
 
                 <div className="w-full md:w-1/2 space-y-4">
-                  <h2 className="text-xl  font-bold">{founder.name}</h2>
+                  <h2 className="text-xl md:text-2xl  font-bold">{founder.name}</h2>
                   <p className="text-lg text-gray-700 redhat !mt-0">{founder.title}</p>
                   {founder.linkedin && (
                     <a
@@ -159,11 +159,11 @@ function ClientPage() {
                       <span color='text-[#FFFFFF33]'>|</span> Connect on LinkedIn
                     </a>
                   )}
-                  <p className="text-[#6C8A54] md:text-lg redhat pt-2">{founder.quote}</p>
+                  <p className="text-[#6C8A54] md:text-lg lg:text-[20px] redhat pt-2">{founder.quote}</p>
                   {founder.description.map((htmlLine, i) => (
                     <p
                       key={i}
-                      className="text-base font-medium redhat text-gray-800"
+                      className="text-base md:text-[17px] text-justify font-medium redhat text-gray-800"
                       dangerouslySetInnerHTML={{ __html: htmlLine }}
                     />
                   ))}

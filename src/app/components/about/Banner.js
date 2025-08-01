@@ -12,7 +12,7 @@ import Image from 'next/image';
 import BannerPage from '../BannerPage';
 export const Banner = () => {
     const text = {
-        vedio : "https://www.akv.org.in/admin/rmimages/aboutpagevideo.mp4",
+        vedio: "https://www.akv.org.in/admin/rmimages/aboutpagevideo.mp4",
         heading: `Our Essence: <span style="color:#48A490">Who We Are</span>`,
         title: `<a href="/">Atulye Krishi Vana</a> is a pioneering initiative dedicated to reshaping the future of agroforestry. By combining innovative, sustainable practices with a strong focus on community empowerment, we aim to restore ecosystems, uplift rural livelihoods, and foster long-term prosperity. Our work goes beyond agriculture – it’s a movement to create a greener, more resilient world.`,
 
@@ -21,7 +21,7 @@ export const Banner = () => {
     }
     return (
         <>
-           <BannerPage heading={text.heading}  title={text.title} video={text.vedio} button={text.button} link={text.link} />
+            <BannerPage heading={text.heading} title={text.title} video={text.vedio} button={text.button} link={text.link} />
         </>
     )
 }
@@ -82,12 +82,13 @@ export const UnderBanner = () => {
     const pageUrl = "/";
     return (
         <>
-            <section className='bg-cover bg-bottom md:bg-center relative text-center md:text-left -mt-10 pt-16 pb-16 lg:pt-36 lg:pb-36' style={{ background: `url(${bgbanner.src})center / cover no-repeat` }}>
+            <section className='bg-cover bg-bottom md:bg-center relative text-center md:text-left   py-16 lg:py-24' style={{ background: `url(${bgbanner.src})center / cover no-repeat` }}>
+                <div className='absolute left-0 top-0 w-full h-full bg-black opacity-30'></div>
                 <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2 relative z-1 '>
                     <div className='flex flex-col lg:flex-row justify-between items-center gap-4 lg:gap-12'>
                         <div className='lg:w-5/12  w-12/12'>
-                            <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-medium redhat text-white mb-6'>{heading}</h2>
-                            <p className='text-white text-sm font-light text-light text-justify italic' dangerouslySetInnerHTML={{ __html: description }}>
+                            <h2 className='text-3xl md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold redhat text-white mb-6'>{heading}</h2>
+                            <p className='text-white text-[15px] md:text-base font-light text-light text-justify italic' dangerouslySetInnerHTML={{ __html: description }}>
 
                             </p>
                             {/* <div className='pt-12 md:pt-16'>

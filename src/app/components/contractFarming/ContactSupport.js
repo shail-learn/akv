@@ -12,7 +12,7 @@ import Image from 'next/image'
 
 export const Support = () => {
 
-   const star = middleimg
+    const star = middleimg
 
     const heading = "Support & Partnerships"
     const text = "We collaborate with various stakeholders to ensure the success of our contract farming initiative:"
@@ -61,12 +61,12 @@ export const Support = () => {
                                 <div className='w-full  md:w-12/12'>
                                     {partnerships.map((partner, index) => (
                                         <div className='w-full w-12/12 mt-10' key={index}>
-                                           <div className="relative bg-white border border-[#F7C35F]  rounded-full overflow-hidden shadow-lg">
+                                            <div className="relative bg-white border border-[#F7C35F]  rounded-full overflow-hidden shadow-lg">
                                                 <Image src={partner.image} alt={partner.title} className="w-full h-56  rounded-full object-cover" />
                                                 <div className="absolute inset-0 flex items-center justify-start">
                                                     <div className="bg-white p-8 text-center flex flex-col items-center justify-center h-56 w-56 rounded-full">
-                                                        <h3 className="text-xl text-[#1B453C]">{partner.title}</h3>
-                                                        <p className="text-sm text-[#1B453C] mt-2">{partner.description}</p>
+                                                        <h3 className="text-xl font-semibold text-[#1B453C]">{partner.title}</h3>
+                                                        <p className="text-sm font-medium text-[#1B453C] mt-2">{partner.description}</p>
 
                                                     </div>
                                                 </div>
@@ -79,25 +79,25 @@ export const Support = () => {
                             </div>
                         </div>
                         <div className='w-full md:w-2/12 self-start'>
-                        <Image src={star} className='w-auto mx-auto h-auto  hidden md:block' alt="icon" />
+                            <Image src={star} className='w-auto mx-auto h-auto  hidden md:block' alt="icon" />
                         </div>
                         <div className='w-full md:w-5/12'>
-                        {partnerships1.map((partner, index) => (
-                                        <div className='w-full w-12/12 mt-10' key={index}>
-                                            <div className="relative bg-white border border-[#F7C35F]  rounded-full overflow-hidden shadow-lg">
-                                                <Image src={partner.image} alt={partner.title} className="w-full h-56  rounded-full object-cover" />
-                                                <div className="absolute inset-0 flex items-center justify-end">
-                                                    <div className="bg-white p-8 text-center flex flex-col items-center justify-center h-56 w-56 rounded-full">
+                            {partnerships1.map((partner, index) => (
+                                <div className='w-full w-12/12 mt-10' key={index}>
+                                    <div className="relative bg-white border border-[#F7C35F]  rounded-full overflow-hidden shadow-lg">
+                                        <Image src={partner.image} alt={partner.title} className="w-full h-56  rounded-full object-cover" />
+                                        <div className="absolute inset-0 flex items-center justify-end">
+                                            <div className="bg-white p-8 text-center flex flex-col items-center justify-center h-56 w-56 rounded-full">
 
-                                                        <h3 className="text-xl text-[#1B453C]">{partner.title}</h3>
-                                                        <p className="text-sm text-[#1B453C] mt-2">{partner.description}</p>
+                                                <h3 className="text-xl font-semibold text-[#1B453C]">{partner.title}</h3>
+                                                <p className="text-sm font-medium text-[#1B453C] mt-2">{partner.description}</p>
 
-                                                    </div>
-                                                </div>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
 
-                                    ))}
+                            ))}
                         </div>
 
 
@@ -125,8 +125,8 @@ export const Contact = () => {
             <div className='  gap-10  grid  grid-cols-1  lg:grid-cols-12 items-center justify-center'>
                 <div className='col-span-1'></div>
                 <div className='w-full  p-6 py-16 md:h-full border-[1px] poppins text-xl text-center border-[#F7C35F] md:p-6 rounded-3xl lg:p-10 col-span-5  h-full grid items-center justify-center '>
-                    <h2 className='text-black redhat text-center md:text-left mb-0 font-medium leading-relaxed text-3xl md:text-4xl  md:mb-8'>{heading}</h2>
-                    <h3 className=' text-justify'>{text}</h3>
+                    <h2 className='text-black redhat text-center md:text-left mb-6 font-medium leading-relaxed text-3xl md:text-4xl  md:mb-8'>{heading}</h2>
+                    <h3 className=' text-justify  text-[17px] md:text-lg'>{text}</h3>
                 </div>
                 <div className='w-full col-span-5 p-6 border border-[#E9E9E9]  rounded-3xl h-full grid   '
                     style={{ boxShadow: '8px 8px 8px 0px #0000001A' }}

@@ -1,107 +1,89 @@
 [
-    {
-        "id": "1",
-        "image": "https://www.akv.org.in/admin/rmimages/service1.webp",
-        "title": "Agroforestry",
-        "designation": [
-            "Combining trees with agriculture for sustainable growth.",
-            "Agroforestry integrates trees, shrubs, and crops on the same land, promoting biodiversity, improving soil health, and providing additional income streams."
-          ],
-          "link":"/agroforestry"
+  {
+    "id": "1",
+    "image": "https://www.akv.org.in/admin/rmimages/service1.webp",
+    "title": "Agroforestry",
+    "designation": [
+      "Combining trees with agriculture for sustainable growth.",
+      "Agroforestry integrates trees, shrubs, and crops on the same land, promoting biodiversity, improving soil health, and providing additional income streams."
+    ],
+    "link": "/agroforestry"
+  },
+  {
+    "id": "02",
+    "image": "https://www.akv.org.in/admin/rmimages/service02.webp",
+    "title": "Agro - tourism",
+    "designation": [
+      "Experiencing sustainable farming and rural culture.",
+      "We offer immersive experiences for visitors, connecting them with eco-friendly farming practices and rural heritage."
+    ],
+    "link": "/agro-tourism"
+  },
+  {
+    "id": "04",
+    "image": "https://www.akv.org.in/admin/rmimages/service04.webp",
+    "title": "Contract Farming",
+    "designation": [
+      "Exploring collaborative cultivation and rural empowerment.",
+      "Visitors get a chance to understand how contract farming uplifts communities while ensuring quality and consistency in agriculture."
+    ],
+    "link": "/contract-farming"
+  },
+  {
+    "id": "4",
+    "image": "https://www.akv.org.in/admin/rmimages/service4.webp",
+    "title": "Training & Development",
+    "designation": [
+      "Empowering farmers and communities through knowledge.",
+      "Our workshops and training programs equip farmers with skills in sustainable farming, resource management, and new technologies."
+    ],
+    "link": "/training-development"
+  },
+  {
+    "id": "03",
+    "image": "https://www.akv.org.in/admin/rmimages/service03.webp",
+    "title": "Nursery ",
+    "designation": [
+      "Developing certified nurseries under MIDH to supply quality horticultural planting material.  "
+    ],
+    "link": "/nursery"
+  },
 
-    },
-    {
-        "id": "02",
-        "image": "https://www.akv.org.in/admin/rmimages/service02.webp",
-        "title": "Agro - tourism",
-        "designation": [
-            "Experiencing sustainable farming and rural culture.",
-            "We offer immersive experiences for visitors, connecting them with eco-friendly farming practices and rural heritage."
-
-          ],
-          "link":"/agro-tourism"
-
-    },
-    {
-        "id": "04",
-        "image": "https://www.akv.org.in/admin/rmimages/service04.webp",
-        "title": "Contract Farming",
-        "designation": [
-            "Exploring collaborative cultivation and rural empowerment.",
-            "Visitors get a chance to understand how contract farming uplifts communities while ensuring quality and consistency in agriculture."
-
-          ],
-          "link":"/contract-farming"
-
-    },
-    {
-        "id": "4",
-        "image": "https://www.akv.org.in/admin/rmimages/service4.webp",
-        "title": "Training & Development",
-        "designation": [
-            "Empowering farmers and communities through knowledge.",
-            "Our workshops and training programs equip farmers with skills in sustainable farming, resource management, and new technologies."
-
-          ],
-          "link":"/training-development"
-
-    },
-    {
-        "id": "03",
-        "image": "https://www.akv.org.in/admin/rmimages/service03.webp",
-        "title": "MIDH Nursery Development ",
-        "designation": [
-            "Developing certified nurseries under MIDH to supply quality horticultural planting material.  "
-
-          ],
-          "link":"/midh-nursery"
-
-    },
-
-    {
-        "id": "2",
-        "image": "https://www.akv.org.in/admin/rmimages/service2.webp",
-        "title": "Carbon Sequestration",
-        "designation": [
-            "Capturing carbon for a cleaner, greener planet.",
-            "We implement strategies that trap atmospheric carbon in plants and soil, combating climate change while boosting agricultural productivity."
-
-          ]
-
-    },
-    {
-        "id": "3",
-        "image": "https://www.akv.org.in/admin/rmimages/service3.webp",
-        "title": "Soil Conservation",
-        "designation": [
-            "Protecting and enriching soil for future generations.",
-            "Through techniques like contour farming and mulching, we prevent erosion, maintain fertility, and ensure long-term land productivity."
-
-          ]
-
-
-    },
-
-    {
-        "id": "5",
-        "image": "https://www.akv.org.in/admin/rmimages/service5.webp",
-        "title": "Water Conservation & Harvesting",
-        "designation": [
-            "Preserving water for agricultural resilience.",
-            "We design water management systems, such as rainwater harvesting and drip irrigation, to optimize usage and ensure availability."
-
-          ]
-
-    },
-    {
-        "id": "6",
-        "image": "https://www.akv.org.in/admin/rmimages/service6.webp",
-        "title": "Animal Husbandry",
-        "designation": [
-            "Sustainable livestock management for rural prosperity.",
-            "Our practices focus on improving livestock health, productivity, and welfare, contributing to community livelihood."
-
-          ]
-
-    }
+  {
+    "id": "2",
+    "image": "https://www.akv.org.in/admin/rmimages/service2.webp",
+    "title": "Carbon Sequestration",
+    "designation": [
+      "Capturing carbon for a cleaner, greener planet.",
+      "We implement strategies that trap atmospheric carbon in plants and soil, combating climate change while boosting agricultural productivity."
     ]
+  },
+  {
+    "id": "3",
+    "image": "https://www.akv.org.in/admin/rmimages/service3.webp",
+    "title": "Soil Conservation",
+    "designation": [
+      "Protecting and enriching soil for future generations.",
+      "Through techniques like contour farming and mulching, we prevent erosion, maintain fertility, and ensure long-term land productivity."
+    ]
+  },
+
+  {
+    "id": "5",
+    "image": "https://www.akv.org.in/admin/rmimages/service5.webp",
+    "title": "Water Conservation & Harvesting",
+    "designation": [
+      "Preserving water for agricultural resilience.",
+      "We design water management systems, such as rainwater harvesting and drip irrigation, to optimize usage and ensure availability."
+    ]
+  },
+  {
+    "id": "6",
+    "image": "https://www.akv.org.in/admin/rmimages/service6.webp",
+    "title": "Animal Husbandry",
+    "designation": [
+      "Sustainable livestock management for rural prosperity.",
+      "Our practices focus on improving livestock health, productivity, and welfare, contributing to community livelihood."
+    ]
+  }
+]

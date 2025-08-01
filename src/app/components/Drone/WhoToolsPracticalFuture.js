@@ -57,13 +57,13 @@ export const Who = () => {
 
     return (
         <>
-        <div className='py-14'>
-            <Iconslider
-                card={cardData}
-                heading={heading}
-                custom_class={custom_class}
-            />
-</div>
+            <div className='py-14'>
+                <Iconslider
+                    card={cardData}
+                    heading={heading}
+                    custom_class={custom_class}
+                />
+            </div>
 
         </>
     );
@@ -136,7 +136,7 @@ export const Practical = () => {
                 <div className="mx-auto max-w-7xl  px-6 flex flex-col-reverse justify-between md:flex-row items-center gap-10">
 
                     <div className="w-full md:w-[45%] text-center md:text-left">
-                        <h2 className="text-3xl md:leading-[1.3] md:text-4xl font-normal redhat text-black mb-2">
+                        <h2 className="text-3xl md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold redhat text-black mb-2">
                             {heading}
                         </h2>
 
@@ -149,7 +149,7 @@ export const Practical = () => {
                                     <span className="w-6 h-6 text-[#1B453C] flex items-center justify-center rounded-full">
                                         <MdCheckCircle className='w-6 h-6' />
                                     </span>
-                                    <p className="text-[#141414] text-left opacity-80">{plan}</p>
+                                    <p className="text-[#141414] text-left md:text-[17px] opacity-80">{plan}</p>
                                 </li>
                             ))}
                         </ul>
@@ -187,11 +187,11 @@ export const Future = () => {
 
             <div className="relative z-10 h-full flex mx-auto px-4   max-w-7xl">
                 <div className="max-w-2xl text-white text-center md:text-left pl-3   mt-5">
-                    <h2 className=" w-full  text-3xl md:text-4xl leading-snug font-bold mb-8 md:mb-10 redhat">
+                    <h2 className=" w-full  text-3xl md:text-4xl lg:text-[40px] font-semibold leading-snug   mb-8 md:mb-10 redhat">
                         {heading}
                     </h2>
                     <p
-                        className="mb-6 text-sm  md:text-base   w-full"
+                        className="mb-6 text-base  md:text-[17px]   w-full"
                         dangerouslySetInnerHTML={{ __html: description }}
                     ></p>
 

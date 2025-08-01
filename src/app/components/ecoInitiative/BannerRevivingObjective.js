@@ -25,7 +25,7 @@ export const Banner = () => {
         heading: `A Journey Towards Prosperous <br> Sustainability`,
         // buttonText: "Join Our Mission",
         // buttonLink: "/",
-        opacity :"opacity-0"
+        opacity: "opacity-0"
     }
     return (
         <>
@@ -73,28 +73,30 @@ export const Reviving = () => {
                                     </div>
 
                                     <div className='text-left'>
-                                        <h3 className="text-2xl lg:text-3xl redhat font-normal">{value}</h3>
-                                        <p className="text-sm mt-2 md:mt-3">Successfully Project Completed</p>
+                                        <h3 className="text-2xl lg:text-3xl redhat font-semibold">{value}</h3>
+                                        <p className="text-base md:text-[17px] mt-2 md:mt-3">Successfully Project Completed</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className='md:w-6/12  w-full  w-12/12'>
-                            <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-normal redhat text-[#1B453C] mb-6'>{heading}</h2>
-                            <p className='text-black text-base redhat mb-10' dangerouslySetInnerHTML={{ __html: description }}>
+                            <h2 className='text-3xl md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold redhat text-[#1B453C] mb-6'>{heading}</h2>
+                            <p className='text-black text-base md:text-[17px] redhat mb-10' dangerouslySetInnerHTML={{ __html: description }}>
                             </p>
                             <div className='my-6 mb-14'>
                                 {infoData.map((item, index) => (
                                     <div key={index} className="flex items-start space-x-3 mb-4">
                                         <RiCheckboxCircleFill className="h-5 w-5 text-green-800 mt-1" />
                                         <div>
-                                            <h3 className="font-semibold redhat text-left text-lg">{item.title}</h3>
-                                            <p className="text-black redhat">{item.description}</p>
+                                            <h3 className="font-semibold redhat text-left text-lg md:text-xl">{item.title}</h3>
+                                            <p className="text-black redhat md:text-[17px]">{item.description}</p>
                                         </div>
                                     </div>
                                 ))}
                             </div>
-                            <Link href="/agroForestry" className='bg-[#1B453C] text-white   py-3 px-12 inline-block text-center text-base hover:bg-black hover:text-[#fff] transition-all  duration-500 '>Learn More About Us</Link>
+
+                            <Link href="/agroforestry" className='bg-[#1B453C] text-white py-3 px-12 inline-block text-center text-base md:text-[17px] hover:bg-black hover:text-[#fff] transition-all  duration-500 '>Learn More About Us</Link>
+
 
                         </div>
                     </div>
@@ -150,19 +152,19 @@ export const Objective = () => {
 
                 <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2 relative z-1 '>
                     <div className='lg:w-12/12  w-full  w-12/12'>
-                        <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-normal redhat text-center text-white mb-4'>{heading}</h2>
-                        <h5 className='text-xl md:leading-[1.3] md:text-2xl font-normal redhat text-center text-[#F7C35F] mb-3'>{heading2}</h5>
-                        <p className='text-base md:leading-[1.3] font-normal redhat text-center text-white mb-12 mb:20 lg:mb-24'>{text}</p>
+                        <h2 className='text-3xl md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold redhat text-center text-white mb-4'>{heading}</h2>
+                        <h5 className='text-xl md:leading-[1.3] md:text-2xl font-medium redhat text-center text-[#F7C35F] mb-3'>{heading2}</h5>
+                        <p className='text-base md:leading-[1.3] md:text-[17px] redhat text-center text-white mb-12 mb:20 lg:mb-24'>{text}</p>
                     </div>
 
                     <div className="mt-10 relative">
                         <div className='grid col-span-8 justify-center '>
-                            <div className="border_number relative">
+                            <div className="border_number relative eco_dotted">
                                 {objectives.map((obj, index) => (
                                     <div key={index} className="flex  gap-4 md:gap-6 items-center mb-10 relative">
 
 
-                                        <div className="md:min-w-28 md:h-28 w-28 rounded-lg overflow-hidden">
+                                        <div className="md:min-w-28 md:h-28 min-w-24 rounded-lg overflow-hidden">
                                             <Image src={obj.image} alt={obj.title} width={100} height={100} className="object-cover" />
                                         </div>
                                         <div className=' '>
@@ -177,7 +179,7 @@ export const Objective = () => {
 
                                         <div className="ml-6 w-3/4 text-left">
                                             <h3 className="text-xl lg:text-2xl text-white redhat mt-6 mb-3 font-semibold">{obj.title}:</h3>
-                                            <p className="text-gray-300 redhat text-sm">{obj.description}</p>
+                                            <p className="text-gray-300 redhat text-base md:text-[17px]">{obj.description}</p>
                                         </div>
                                     </div>
                                 ))}

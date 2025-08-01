@@ -23,126 +23,126 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const Value = () => {
-    const heading = 'Our Core Values'
-    const coreValues = [
-        {
-            title: "Sustainability",
-            description: "Every project is designed with the planet’s future in mind.",
-            icon: value1,
-        },
-        {
-            title: "Innovation",
-            description: "Leveraging cutting-edge technologies to enhance productivity.",
-            icon: value2,
-        },
-        {
-            title: "Empowerment",
-            description: "Supporting communities with knowledge, skills, and opportunities.",
-            icon: value3,
-        },
-        {
-            title: "Transparency",
-            description: "Building trust through ethical practices and accountability.",
-            icon: value4,
-        },
-    ];
-    return (
-        <>
-            <section className='relative text-center bg-[#F5F5F5] md:text-left pt-12 pb-12 lg:pt-10 lg:pb-20'>
-                <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2 relative'>
-                    <h2 className='text-3xl text-center md:leading-[1.3] md:text-4xl font-medium redhat text-black mt-4 mb-16'>{heading}</h2>
-                    <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-                        {coreValues.map((value, index) => (
-                            <div key={index} className="relative flex flex-col items-center text-center">
+  const heading = 'Our Core Values'
+  const coreValues = [
+    {
+      title: "Sustainability",
+      description: "Every project is designed with the planet’s future in mind.",
+      icon: value1,
+    },
+    {
+      title: "Innovation",
+      description: "Leveraging cutting-edge technologies to enhance productivity.",
+      icon: value2,
+    },
+    {
+      title: "Empowerment",
+      description: "Supporting communities with knowledge, skills, and opportunities.",
+      icon: value3,
+    },
+    {
+      title: "Transparency",
+      description: "Building trust through ethical practices and accountability.",
+      icon: value4,
+    },
+  ];
+  return (
+    <>
+      <section className='relative text-center bg-[#F5F5F5] md:text-left pt-12 pb-12 lg:pt-10 lg:pb-20'>
+        <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2 relative'>
+          <h2 className='text-3xl text-center md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold redhat text-black mt-4 mb-16'>{heading}</h2>
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+            {coreValues.map((value, index) => (
+              <div key={index} className="relative flex flex-col items-center text-center">
 
-                                <div className="w-32 h-32 flex items-center justify-center rounded-full outline-dashed outline-[#c4a87c]  outline-2  border-4 border-solid border-[#F5F5F5] bg-[#1B453C]">
-                                    <Image src={value.icon} alt={value.title} width={50} height={50} className="w-20 h-20" />
-                                </div>
-
-
-                                {index !== coreValues.length - 1 && (
-                                    <div className="absolute right-[-50px] top-1/2 transform -translate-y-[100px] hidden md:block">
-                                        <Image src={indicateicon} width={50} height={50} alt="arrow" className="w-14 h-14 " />
-                                    </div>
-                                )}
-
-
-                                <h3 className="text-lg lg:text-xl redhat font-semibold text-gray-900 mt-6">{value.title}</h3>
-                                <p className="text-[#141414] opacity-75 redhat mt-2 max-w-xs">{value.description}</p>
-                            </div>
-                        ))}
-                    </div>
+                <div className="w-32 h-32 flex items-center justify-center rounded-full outline-dashed outline-[#c4a87c]  outline-2  border-4 border-solid border-[#F5F5F5] bg-[#1B453C]">
+                  <Image src={value.icon} alt={value.title} width={50} height={50} className="w-20 h-20" />
                 </div>
-            </section>
 
 
-        </>
-    )
+                {index !== coreValues.length - 1 && (
+                  <div className="absolute right-[-50px] top-1/2 transform -translate-y-[100px] hidden md:block">
+                    <Image src={indicateicon} width={50} height={50} alt="arrow" className="w-14 h-14 " />
+                  </div>
+                )}
+
+
+                <h3 className="text-xl lg:text-2xl redhat font-semibold text-gray-900 mt-6">{value.title}</h3>
+                <p className="text-[#141414] opacity-75 md:text-[17px] redhat mt-2 max-w-xs">{value.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
+    </>
+  )
 }
 
 
 export const Explore = () => {
-    const heading = "Explore Our Initiatives"
-    const initiatives = [
-        {
-            title: "Krishivana Agroforestry",
-            description: "A sustainable agroforestry project transforming barren land into vibrant ecosystems.",
-            icon: explore1,
-        },
-        {
-            title: "Surabhi – Fodder Farming",
-            description: "Focused on large-scale fodder farming in Rajasthan and Uttar Pradesh to support livestock.",
-            icon: explore2,
-        },
-        {
-            title: "Purnima – Contract Farming Hub",
-            description: "Developing clusters for high-value crops and timber production.",
-            icon: explore3,
-        },
-        {
-            title: "Eco-Tourism Highlights:",
-            description: "• Star-gazing zones.\n• Agro-wellness centers.\n• Cultural experiences with local communities.",
-            icon: explore4,
-        },
-    ];
-    return (
-        <>
+  const heading = "Explore Our Initiatives"
+  const initiatives = [
+    {
+      title: "Krishivana Agroforestry",
+      description: "A sustainable agroforestry project transforming barren land into vibrant ecosystems.",
+      icon: explore1,
+    },
+    {
+      title: "Surabhi – Fodder Farming",
+      description: "Focused on large-scale fodder farming in Rajasthan and Uttar Pradesh to support livestock.",
+      icon: explore2,
+    },
+    {
+      title: "Purnima – Contract Farming Hub",
+      description: "Developing clusters for high-value crops and timber production.",
+      icon: explore3,
+    },
+    {
+      title: "Eco-Tourism Highlights:",
+      description: "• Star-gazing zones.\n• Agro-wellness centers.\n• Cultural experiences with local communities.",
+      icon: explore4,
+    },
+  ];
+  return (
+    <>
 
-            <section
-                className=" bg-[#9A9771] pt-0 pb-14 lg:pt-0 lg:pb-0">
-                <div className='mx-auto max-full flex flex-wrap md:flex-nowrap gap-0 md:gap-12'>
-                    <div className='w-full md:w-6/12'>
-                        <Image className='h-full w-full' src={image3} alt="banner" />
+      <section
+        className=" bg-[#9A9771] pt-0 pb-14 lg:pt-0 lg:pb-0">
+        <div className='mx-auto max-full flex flex-wrap md:flex-nowrap gap-0 md:gap-12'>
+          <div className='w-full md:w-6/12'>
+            <Image className='h-full w-full xl:h-[800px] object-cover' src={image3} alt="banner" />
 
+          </div>
+          <div className='w-full md:w-6/12'>
+            <h2 className="lg:leading-snug text-white redhat mb-14 pt-12 md:pt-16 text-center md:text-left text-3xl md:text-4xl  lg:text-[40px] font-semibold  w-full"> {heading}</h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-8 px-4 lg:px-0">
+              {initiatives.map((item, index) => (
+                <div key={index} className="flex items-start gap-4 border-b border-white pb-6 border-opacity-40 ">
+                  {/* Icon */}
+                  <div className="flex-shrink-0">
+                    <div className="w-16 h-16 rounded-full bg-[#344C31] p-4" >
+                      <Image src={item.icon} alt={item.title} width={40} height={40} className="w-full h-full" />
                     </div>
-                    <div className='w-full md:w-6/12'>
-                        <h2 className="lg:leading-snug text-white redhat mb-14 pt-16 text-center md:text-left text-3xl md:text-4xl  font-medium  w-full"> {heading}</h2>
-
-                        <div className="grid grid-cols-1 md:grid-cols-1 gap-8 px-4 lg:px-0">
-                            {initiatives.map((item, index) => (
-                                <div key={index} className="flex items-start gap-4 border-b border-white pb-6 border-opacity-40 ">
-                                    {/* Icon */}
-                                    <div className="flex-shrink-0">
-                                        <div className="w-16 h-16 rounded-full bg-[#344C31] p-4" >
-                                            <Image src={item.icon} alt={item.title} width={40} height={40} className="w-full h-full" />
-                                        </div>
-                                    </div>
-                                    {/* Content */}
-                                    <div>
-                                        <h3 className="text-xl mb-1 redhat font-medium text-white">{item.title}</h3>
-                                        <p className="text-white redhat text-sm whitespace-pre-line">{item.description}</p>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-
-                    </div>
-
+                  </div>
+                  {/* Content */}
+                  <div>
+                    <h3 className="text-xl md:text-2xl mb-1 redhat font-medium text-white">{item.title}</h3>
+                    <p className="text-white redhat text-[15px] text-base md:text-[17px] whitespace-pre-line">{item.description}</p>
+                  </div>
                 </div>
-            </section>
+              ))}
+            </div>
 
-        </>
-    )
+          </div>
+
+        </div>
+      </section>
+
+    </>
+  )
 }
 
 
@@ -234,7 +234,7 @@ export const Change = () => {
         <div className="mx-auto max-w-7xl w-full">
           <div className="mx-auto max-full flex flex-wrap md:flex-nowrap gap-0 md:gap-12">
             <div className="w-full md:w-6/12 text-center md:text-left">
-              <h2 className="lg:leading-snug text-[#344C31] redhat text-center mb-6 md:text-left text-3xl md:text-4xl font-medium w-full">
+              <h2 className="lg:leading-snug text-[#344C31] redhat text-center mb-6 md:text-left text-3xl md:text-4xl lg:text-[40px] font-semibold w-full">
                 {heading}
               </h2>
 
@@ -252,17 +252,16 @@ export const Change = () => {
                 <button
                   onClick={handleDonate}
                   disabled={loading}
-                  className={`poppins font-normal w-[120px] py-3 rounded-[4px] transition-all duration-500 ${
-                    loading
-                      ? 'bg-gray-400 cursor-not-allowed text-white'
-                      : 'bg-[#344C31] text-white hover:bg-white hover:text-[#344C31]'
-                  }`}
+                  className={`poppins font-normal w-[120px] py-3 rounded-[4px] transition-all duration-500 ${loading
+                    ? 'bg-gray-400 cursor-not-allowed text-white'
+                    : 'bg-[#344C31] text-white hover:bg-white hover:text-[#344C31]'
+                    }`}
                 >
                   {loading ? 'Processing...' : 'Donate'}
                 </button>
               </div>
 
-              <p className="mt-6 text-black text-justify opacity-80">{description}</p>
+              <p className="mt-6 text-black md:text-[17px] text-justify opacity-80">{description}</p>
             </div>
 
             <div className="w-full md:w-6/12">

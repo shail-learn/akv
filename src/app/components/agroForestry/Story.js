@@ -34,12 +34,12 @@ export const Story = () => {
                 className=" py-20 lg:py-20" >
 
                 <div className='mx-auto max-w-7xl px-4 md:px-8 lg:px-2 max-full bg-white'>
-                    <div className='grid items-center grid-col-1  md:grid-cols-12 justify-center gap-6'>
+                    <div className='grid items-center grid-col-1  md:grid-cols-12 justify-center gap-8'>
                         {card.map((item, index) => (
-                            <div key={index} className='w-full text-white h-full rounded-2xl px-10 py-10 md:p-8 md:py-14 md:col-span-4  bg-[#729A71] hover:bg-[#8DBAAD]'>
-                                <div className='flex gap-4 lg:gap-8 items-center'>
+                            <div key={index} className='w-full text-white h-full rounded-2xl px-8 py-10 md:p-8 md:py-14 md:col-span-4  bg-[#729A71] hover:bg-[#8DBAAD]'>
+                                <div className='flex gap-6 lg:gap-8 items-center'>
                                     <Image src={item.icon} className='w-14 md:w-auto md:h-auto' alt="icon" />
-                                    <p className='text-base md:w-2/4 md:text-left  font-normal'> {item.quote}   </p>
+                                    <p className='text-base md:text-lg md:w-2/4 md:text-left  font-normal'> {item.quote}   </p>
                                 </div>
                             </div>
 

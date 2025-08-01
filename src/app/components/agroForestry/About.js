@@ -9,12 +9,12 @@ export const About = () => {
         title: "Agroforestry is a transformative approach that integrates agriculture with forestry to create sustainable systems that benefit the environment and communities."
     }
     return (
-        <div className='bg-cover bg-center relative  pt-0 pb-44 lg:py-0' style={{ backgroundImage: `url(${banner.src})` }}>
+        <div className='bg-cover bg-center relative  pt-0 pb-10 md:pb-44 lg:py-0' style={{ backgroundImage: `url(${banner.src})` }}>
             <section
                 className=" pt-16 pb-10 lg:pt-24" >
                 <div className='mx-auto max-full'>
                     <div className='w-full text-center'>
-                        <h2 className="text-[#1B453C] text-3xl md:text-4xl lg:leading-tight  redhat  font-medium  w-full">{heading}</h2>
+                        <h2 className="text-[#1B453C] text-3xl md:text-4xl lg:leading-tight  redhat  lg:text-[40px] font-semibold  w-full">{heading}</h2>
 
                     </div>
 

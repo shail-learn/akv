@@ -45,8 +45,8 @@ export const Guide = () => {
         <div className='mx-auto max-full max-w-7xl px-4 md:px-6 lg:px-4'>
           <div className='w-full text-center'>
             <div className='mx-auto w-full lg:w-7/12'>
-              <h2 className="text-white text-3xl md:text-4xl mb-6 lg:leading-tight  redhat  font-medium  w-full">{heading}</h2>
-              <p className='text-[15px] text-white text-center font-light mb-10 md:mb-16'>{description}</p>
+              <h2 className="text-white text-3xl md:text-4xl lg:text-[40px] mb-6 lg:leading-tight  redhat  font-semibold  w-full">{heading}</h2>
+              <p className='text-[15px] md:text-base lg:text-[17px]  text-white text-center font-light mb-10 md:mb-16'>{description}</p>
             </div>
           </div>
         </div>
@@ -111,15 +111,15 @@ export const Mission = () => {
   return (
     <>
       <section
-        className=" bg-white pt-0 pb-8 lg:pt-20 lg:pb-20 outer-arrow left-outer green_icon_slider outer_hide_slider" >
+        className=" bg-white  py-16 lg:py-20 outer-arrow left-outer green_icon_slider outer_hide_slider" >
         <div className='mx-auto max-w-[1400px] md:mr-0 px-4 md:px-8 lg:px-2 '>
           <div className='flex flex-wrap lg:flex-nowrap items-center gap-6 px-0 md:px-6    lg:px-2'>
             <div className='w-full lg:w-3/12 '>
-              <h2 className="lg:leading-snug  text-[#1B453C] redhat mb-4 lg:mb-7 text-center lg:text-left text-3xl md:text-4xl  font-medium  w-full">
+              <h2 className="lg:leading-snug  text-[#1B453C] redhat mb-4 lg:mb-7 text-center lg:text-left text-3xl md:text-4xl lg:text-[40px] font-semibold  w-full">
                 {heading}
               </h2>
 
-              <p className='text-base text-center md:text-left'>{shortdescription}</p>
+              <p className='text-base md:text-[17px] text-center md:text-left'>{shortdescription}</p>
             </div>
 
             <div className='w-full lg:w-9/12'>
@@ -168,9 +168,9 @@ export const Mission = () => {
                         <div className='mb-4'>
                           <Image src={item.image} alt='icon' className='w-10 lg:w-[35px] lg:h-[35px]' />
                         </div>
-                        <h2 className='text-2xl font-medium pb-6' dangerouslySetInnerHTML={{ __html: item.heading }}></h2>
+                        <h2 className='text-2xl md:text-[26px] font-medium pb-6' dangerouslySetInnerHTML={{ __html: item.heading }}></h2>
 
-                        <p className='text-sm lg:text-base font-light' dangerouslySetInnerHTML={{ __html: item.description }}>
+                        <p className='text-base lg:text-[17px] font-light' dangerouslySetInnerHTML={{ __html: item.description }}>
                         </p>
                       </div>
                     </div>

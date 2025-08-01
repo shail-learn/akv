@@ -88,7 +88,7 @@ export const Seed = () => {
             heading: "",
             details: [
                 "<strong>Partner with us today!For consultation, bulk seed orders, or farm visits, contact </strong> <br/>" +
-                '<strong><a href="mailto:info@atulyekrishivana.com" class="text-[#5F5FFF] font-medium">info@atulyekrishivana.com</a> or visit our farm in Sehore, Madhya Pradesh.</strong>',
+                '<strong><a href="mailto:info@akv.org.in" >info@akv.org.in</a> or visit our farm in Sehore, Madhya Pradesh.</strong>',
             ],
         },
     ];
@@ -155,8 +155,8 @@ export const Seed = () => {
                             <h2 className="text-3xl md:leading-[1.3] md:text-4xl mb-10 font-semibold redhat text-white">
                                 Why Choose Atulye Krishi Vana for Papaya Farming?
                             </h2>
-                            </div>
-                            <div className="w-[95%] md:w-5/12 mx-auto">
+                        </div>
+                        <div className="w-[95%] md:w-5/12 mx-auto">
                             <div className="bg-[#F2F2F2DE] p-8 rounded-[20px]">
                                 {plantSearon.map((section, sectionIndex) => (
                                     <div key={sectionIndex} className="mb-6">

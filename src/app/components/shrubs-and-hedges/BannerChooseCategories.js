@@ -96,12 +96,16 @@ export const Categories = () => {
         {
             title: "Shrubs",
             image: product1,
-            link: "/agroForestry/shrubs-and-hedges/shrubs",
+
+            link: "/agroforestry/shrubs-and-hedges/shrubs",
+
         },
         {
             title: "Hedges",
             image: product2,
-            link: "/agroForestry/shrubs-and-hedges/hedges",
+
+            link: "/agroforestry/shrubs-and-hedges/hedges",
+
         },
 
 

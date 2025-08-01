@@ -31,14 +31,14 @@ export const WhoAre = () => {
 
     return (
         <>
-            <section className='relative text-center md:text-left   pb-16  pt-20 lg:pb-16' style={{ background: "linear-gradient(186deg, rgba(255,255,255,1) 0%, rgba(225,225,225,1) 100%)" }}>
+            <section className='relative text-center md:text-left   pb-16  md:pt-20 lg:pb-16' style={{ background: "linear-gradient(186deg, rgba(255,255,255,1) 0%, rgba(225,225,225,1) 100%)" }}>
                 <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2 relative z-1 '>
                     <div className='flex md:flex-col lg:flex-row justify-between items-center gap-4 lg:gap-12 flex-col-reverse'>
                         <div className='lg:w-6/12  w-full  w-12/12'>
-                            <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-normal redhat text-black mb-6'>{heading}</h2>
-                            <p className='text-black text-base redhat mb-10' dangerouslySetInnerHTML={{ __html: description }}>
+                            <h2 className='text-3xl md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold redhat text-black mb-6'>{heading}</h2>
+                            <p className='text-black text-base md:text-[17px] redhat mb-10' dangerouslySetInnerHTML={{ __html: description }}>
                             </p>
-                            <Link href="/about-us" className='bg-[#e9e9e9] text-black border-black border py-3 px-16 inline-block text-center text-base hover:bg-white transition-all  duration-500 '>About Us</Link>
+                            <Link href="/about-us" className='bg-[#e9e9e9] text-black border-black border py-3 px-16 inline-block text-center text-base md:text-[17px] font-medium hover:bg-white transition-all  duration-500 '>About Us</Link>
 
                         </div>
                         <div className='lg:w-6/12  w-full  w-12/12'>
@@ -58,38 +58,38 @@ export const OurService = () => {
     const heading = "Our Services"
     const [showAll, setShowAll] = useState(false);
 
-  // Show only 6 items initially
-  const visibleServices = showAll ? service : service.slice(0, 6);
+    // Show only 6 items initially
+    const visibleServices = showAll ? service : service.slice(0, 6);
     return (
         <>
-            <section className='relative text-center md:text-left   pb-16  pt-20 lg:pb-12' >
+            <section className='relative text-center md:text-left   pb-16  pt-20 lg:pb-20' >
                 <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2 relative z-1 '>
                     <div className='lg:w-12/12  w-full  w-12/12'>
-                        <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-normal redhat text-black mb-6'>{heading}</h2>
+                        <h2 className='text-3xl md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold redhat text-black mb-6'>{heading}</h2>
                     </div>
-                    <div className='lg:grid flex flex-wrap gap-4 lg:gap-4 grid-cols-1 lg:grid-cols-12'>
-                    {visibleServices.map((item, index) => (
-            <div key={index} className="lg:col-span-4 md:col-span-3 sm:col-span-2">
-              <BusinessCard
-                image={item.image}
-                title={item.title}
-                info={item.designation}
-                link={item.link}
-              />
-            </div>
-          ))}
+                    <div className='lg:grid flex flex-wrap gap-8 lg:gap-4 grid-cols-1  !gap-x-6 lg:grid-cols-12 items-start'>
+                        {visibleServices.map((item, index) => (
+                            <div key={index} className="lg:col-span-4 md:col-span-3 sm:col-span-2 h-full pt-10">
+                                <BusinessCard
+                                    image={item.image}
+                                    title={item.title}
+                                    info={item.designation}
+                                    link={item.link}
+                                />
+                            </div>
+                        ))}
 
                     </div>
                     {!showAll && service.length > 6 && (
-          <div className="text-center mt-6">
-            <button
-              onClick={() => setShowAll(true)}
-              className="inline-flex items-center mt-6 mb-8 justify-center gap-4 py-3 px-12 shadow-lg text-white bg-[#1B453C] redhat font-medium border-[#1B453C] border hover:bg-white hover:text-[#1B453C] transition-all duration-300"
-            >
-              See All Services
-            </button>
-          </div>
-        )}
+                        <div className="text-center mt-6">
+                            <button
+                                onClick={() => setShowAll(true)}
+                                className="inline-flex items-center mt-6 mb-8 justify-center gap-4 py-3 px-12 shadow-lg text-white bg-[#1B453C] redhat font-medium border-[#1B453C] border hover:bg-white hover:text-[#1B453C] transition-all duration-300 md:text-[17px]"
+                            >
+                                See All Services
+                            </button>
+                        </div>
+                    )}
                 </div>
             </section>
         </>

@@ -11,13 +11,36 @@ import jounery3 from "../../../assets/images/home/jounery3.webp";
 import jounery4 from "../../../assets/images/home/jounery4.webp";
 import jounery5 from "../../../assets/images/home/jounery5.webp";
 import jounery6 from "../../../assets/images/home/jounery6.webp";
+import jounery7 from "../../../assets/images/home/jounery7.webp";
+
 
 import Image from "next/image";
 import Link from "next/link";
 export const OurJourney = () => {
   const journey = [
     {
-      image: jounery6,
+      image: jounery7,
+      year: "2025",
+      title: "Growth & Green Innovation",
+      description: [
+        {
+          item: 1,
+          content:
+            "Expanded green footprint from 250 acres to over 5,000 acres; 10,000-acre target underway.",
+        },
+        {
+          item: 2,
+          content: "Deployed innovative, scalable revenue models to support long-term sustainability.",
+        },
+        {
+          item: 3,
+          content:
+            "Advanced agro-eco-tourism with eco-conscious practices and deeper local partnerships.",
+        },
+      ],
+    },
+    {
+      image: jounery5,
       year: "2024",
       title: "Expansion and Revenue Models",
       description: [
@@ -38,7 +61,7 @@ export const OurJourney = () => {
       ],
     },
     {
-      image: jounery5,
+      image: jounery6,
       year: "2023",
       title: "Growth and Innovation",
       description: [
@@ -161,9 +184,10 @@ export const OurJourney = () => {
         <div className="mx-auto max-full flex flex-wrap md:flex-nowrap gap-0 md:gap-12">
           <div className="w-full md:w-6/12">
             <Image
-              className="h-full w-full"
+              className="h-full w-full md:h-[890px] object-cover"
               src={journey[activeIndex].image}
               alt="banner"
+
             />
           </div>
           <div
@@ -171,14 +195,14 @@ export const OurJourney = () => {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-            <h2 className="lg:leading-snug text-black redhat mb-2 pt-10 text-center text-3xl md:text-4xl  font-normal  w-full">
+            <h2 className="lg:leading-snug text-black redhat mb-2 pt-10 text-center text-3xl md:text-4xl lg:text-[40px] font-semibold w-full">
               Our <span className="text-[#498A8A]">Journey</span>
             </h2>
-            <p className="text-center mb-8">
+            <p className="text-center mb-8 text-lg">
               Steps Towards a Thriving Tomorrow
             </p>
             <div className="flex gap-4 px-4 lg:px-0">
-              <div className="flex gap-4 md:gap-12">
+              <div className="flex gap-4 md:gap-12 md:h-[700px]">
                 {/* <Image src={banner1} alt="banner" /> */}
                 <div>
                   <Image
@@ -197,18 +221,18 @@ export const OurJourney = () => {
                             e.preventDefault();
                             handleLeafClick(index);
                           }}
-                          className={`text-base font-medium ${
-                            activeIndex === index
-                              ? "text-[#1B453C] underline opacity-100"
-                              : "text-[#C6C6C6] opacity-20"
-                          } hover:text-[#1B453C]`}
+                          className={`text-base font-medium ${activeIndex === index
+                            ? "text-[#1B453C] underline opacity-100"
+                            : "text-[#C6C6C6] opacity-20"
+                            } hover:text-[#1B453C]`}
                         >
                           <Image
                             src={branch}
-                            className="relative z-0"
+                            className="relative z-0 h-16"
                             alt="banner"
                             width="40px"
                             height="40px"
+
                           />
                         </a>
                       </li>
@@ -221,11 +245,10 @@ export const OurJourney = () => {
                       marginTop: `${3 * (index + 1)}%`,
                     }}
                     key={index}
-                    className={`div-${index + 1}  ${
-                      activeIndex === index
-                        ? "block fade-in transition delay-150 duration-300 ease-in-out"
-                        : "hidden"
-                    }`}
+                    className={`div-${index + 1}  ${activeIndex === index
+                      ? "block fade-in transition delay-150 duration-300 ease-in-out"
+                      : "hidden"
+                      }`}
                   >
                     <div className="flex items-center gap-4">
                       <h3 className="text-[#1B453C] text-xl md:text-3xl font-bold">
@@ -253,12 +276,12 @@ export const OurJourney = () => {
                         </ul>
 
                         {/* <div className="italic  text-sm mb-3 md:mb-5 md:leading-7" dangerouslySetInnerHTML={{ __html: item.description.content }}></div> */}
-                        <a
+                        {/* <a
                           className="text-[#C6C6C6] text-[12px] hover:text-[#1B453C]"
                           href="#"
                         >
                           *Read More
-                        </a>
+                        </a> */}
                       </div>
                     </div>
                   </div>

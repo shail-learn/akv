@@ -82,7 +82,7 @@ export const Impact = () => {
                 <div className="absolute h-full top-0 bottom-0 w-full bg-[#1B453C] opacity-1 mix-blend-multiply"></div>
                 <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2 relative z-1 '>
                     <div className='lg:w-12/12  w-full  w-12/12'>
-                        <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-normal redhat text-center text-white mb-16'>{heading}</h2>
+                        <h2 className='text-3xl md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold redhat text-center text-white mb-16'>{heading}</h2>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
                         {impactData.map((item, index) => (
@@ -94,8 +94,8 @@ export const Impact = () => {
                                     <Image src={item.icon} alt="icon" className='w-full h-full' />
                                 </div>
                                 <div className='pl-4 text-white text-left'>
-                                    <h3 className="text-lg font-medium">{item.title}</h3>
-                                    <p className="mt-2 font-extralight text-sm">{item.description}</p>
+                                    <h3 className="text-lg md:text-2xl  font-medium">{item.title}</h3>
+                                    <p className="mt-2 font-extralight text-base md:text-[17px]" >{item.description}</p>
                                 </div>
                             </div>
                         ))}
@@ -143,16 +143,16 @@ export const Project = () => {
     return (
         <>
             <section
-                className=" bg-[#9A9771] pt-0 pb-14 lg:pt-0 lg:pb-0 mt-6">
+                className=" bg-[#9A9771] pt-0 pb-14 lg:pt-0 lg:pb-0 mt-0">
                 <div className='mx-auto max-full justify-between flex flex-wrap md:flex-nowrap gap-0 md:gap-12'>
                     <div className='w-full md:w-5/12'>
-                        <Image className='h-auto w-full' src={image3} alt="banner" />
+                        <Image className='h-auto w-full xl:h-[900px] object-cover' src={image3} alt="banner" />
 
                     </div>
                     <div className='w-full md:w-6/12'>
-                        <h2 className="lg:leading-snug text-white redhat mb-14 pt-16 text-center md:text-left text-3xl md:text-4xl  font-normal  w-full"> {heading}</h2>
+                        <h2 className="lg:leading-snug text-white redhat mb-14 pt-16 text-center md:text-left text-3xl md:text-4xl  lg:text-[40px] font-semibold w-full"> {heading}</h2>
 
-                        <div className="grid grid-cols-1 md:grid-cols-1 gap-8 px-4 lg:px-0">
+                        <div className="grid grid-cols-1 md:grid-cols-1 gap-8 px-4 lg:pr-8">
                             {initiatives.map((item, index) => (
                                 <div key={index} className="flex items-start gap-4 border-b border-white pb-6 border-opacity-40 ">
 
@@ -163,8 +163,8 @@ export const Project = () => {
                                     </div>
 
                                     <div>
-                                        <h3 className="text-xl mb-1 redhat font-medium text-white">{item.title}</h3>
-                                        <p className="text-white  redhat text-sm whitespace-pre-line">{item.description}</p>
+                                        <h3 className="text-xl md:text-2xl mb-1 redhat font-medium text-white">{item.title}</h3>
+                                        <p className="text-white  redhat text-base md:text-[17px] whitespace-pre-line">{item.description}</p>
                                     </div>
                                 </div>
                             ))}
@@ -195,23 +195,23 @@ export const Goal = () => {
     const info4 = `Plantation of 100,000 trees, reducing carbon emissions by 10,000 tons over five years.`
 
     return (
-        <section className='relative text-center md:text-left pb-16 pt-16 lg:pb-20 lg:pt-20'>
+        <section className='relative text-center md:text-left py-14 pt-10'>
 
             <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2 relative z-1 '>
-            <div
-                className="bg-cover bg-center relative " >
-                <div className="iframe-container">
-                    <video
+                <div
+                    className="bg-cover bg-center relative " >
+                    <div className="iframe-container">
+                        <video
 
-                        className="w-full h-full object-cover"
-                        src={vedio}
-                        autoPlay
-                        loop
-                        muted
-                    />
+                            className="w-full h-full object-cover md:scale-100 scale-110"
+                            src={vedio}
+                            autoPlay
+                            loop
+                            muted
+                        />
 
+                    </div>
                 </div>
-            </div>
                 {/* <div className='lg:w-12/12  w-full  w-12/12'>
                     <h2 className='text-3xl md:leading-[1.3] md:text-4xl font-normal redhat text-center text-[#1B453C] mb-16'>{heading}</h2>
                 </div>

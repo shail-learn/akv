@@ -31,17 +31,17 @@ export const BannerTraining = () => {
 };
 export const IntroSection = () => {
   const IntroData = {
-    heading: "Introduction to",
-    subHeading: "Training & Development",
-    info: "At Atulye Krishi Vana, we believe that knowledge is the key to a prosperous and sustainable future. Our Training & Development initiatives focus on empowering farmers, agripreneurs, and enthusiasts with hands-on learning in agroforestry, precision farming, water conservation, and eco-sustainability.",
-    info2: "Our structured training programs are designed to:",
+    heading: "Introduction to <br>Training & Development",
+
     description: `
+    At Atulye Krishi Vana, we believe that knowledge is the key to a prosperous and sustainable future. Our Training & Development initiatives focus on empowering farmers, agripreneurs, and enthusiasts with hands-on learning in agroforestry, precision farming, water conservation, and eco-sustainability. <br><br>Our structured training programs are designed to:
+    <br><br>
           <ul><li>Planted over 200,000 trees across 400 acres in Sehore District, Madhya Pradesh.
           </li><li>Species include sandalwood, teak, bamboo, rosewood, and medicinal plants.</li><li>Created dedicated spaces like the Shri Tridev Triveni Vatika and Shri Dhanvantri Vatika for spiritual, medicinal, and ecological benefits.</li>
           </ul>
+           Join us in building a future where knowledge and nature grow together!
           `,
-    joinUs:
-      "Join us in building a future where knowledge and nature grow together!",
+
     image: IntroImg,
   };
 
@@ -58,29 +58,18 @@ export const IntroSection = () => {
               />
             </div>
             <div className="lg:w-6/12 mt-2 md:mt-4 w-full  w-12/12">
-              <h2 className="text-3xl md:leading-[1.3] md:text-4xl font-medium redhat text-black mt-4 ">
-                {IntroData.heading}
-              </h2>
-              <h2 className="text-3xl md:leading-[1.3] md:text-4xl font-medium redhat text-black mb-6">
-                {IntroData.subHeading}
-              </h2>
-              <p
-                className="text-black text-base redhat mb-10"
-                dangerouslySetInnerHTML={{ __html: IntroData.info }}
-              ></p>
-              <p
-                className="text-black text-base redhat mb-6"
-                dangerouslySetInnerHTML={{ __html: IntroData.info2 }}
-              ></p>
+              <h2 className="text-3xl md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold redhat text-black mt-4 mb-4"
+                dangerouslySetInnerHTML={{ __html: IntroData.heading }}
+              />
+
+
+
               <div
-                className="description_project redhat mb-10"
+                className="description_project redhat mb-8 text-base md:text-[17px]"
                 dangerouslySetInnerHTML={{ __html: IntroData.description }}
               ></div>
 
-              <p
-                className="text-black text-base redhat mb-10"
-                dangerouslySetInnerHTML={{ __html: IntroData.joinUs }}
-              ></p>
+
             </div>
           </div>
         </div>

@@ -100,7 +100,7 @@ export const Fodder = () => {
 
   return (
     <>
-      <section className='pt-10 pb-12 lg:pt-14 lg:pb-14'>
+      <section className='pt-4 pb-12 lg:pt-14 lg:pb-14'>
         <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2'>
 
           <div className='flex  md:flex-col lg:flex-row flex-col-reverse justify-between  gap-8 md:gap-10'>
@@ -139,13 +139,13 @@ export const Fodder = () => {
                       >
                         <div className='absolute top-0 left-0 w-full h-full rounded-2xl bg-black bg-opacity-30'></div>
                         <div className='z-10 relative'>
-                        <h2
-                          className="text-3xl md:leading-[1.3] md:text-4xl h-full font-medium redhat text-white mb-10 md:mb-14"
-                          dangerouslySetInnerHTML={{ __html: item.title }}
-                        ></h2>
-                        <p className="text-base font-medium redhat text-white">
-                          {item.description}
-                        </p>
+                          <h2
+                            className="text-3xl md:leading-[1.3] md:text-4xl h-full font-medium md:font-semibold redhat text-white mb-10 md:mb-14"
+                            dangerouslySetInnerHTML={{ __html: item.title }}
+                          ></h2>
+                          <p className="text-lg md:text-xl font-medium redhat text-white">
+                            {item.description}
+                          </p>
                         </div>
                       </div>
                     </SwiperSlide>
@@ -176,8 +176,8 @@ export const Fodder = () => {
               </div>
             </div>
             <div className='md:w-5/12  w-full  w-12/12'>
-              <h2 className='text-3xl md:leading-[1.3] md:text-4xl  text-center md:text-left font-medium redhat text-[#1B453C] mt-10 mb-4'>{heading}</h2>
-              <p className="text-base text-center md:text-left font-medium redhat text-black">
+              <h2 className='text-3xl md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold text-center md:text-left redhat text-[#1B453C] mt-10 mb-4'>{heading}</h2>
+              <p className="text-base md:text-[17px] text-center md:text-left font-medium redhat text-black">
                 {description}
               </p>
             </div>
@@ -224,7 +224,7 @@ export const Works = () => {
     <>
       <section className='relative text-center bg-[#F5F5F5] md:text-left pt-12 pb-12 lg:pt-10 lg:pb-20'>
         <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2 relative'>
-          <h2 className='text-3xl text-center md:leading-[1.3] md:text-4xl font-medium redhat text-black mt-4 mb-16'>{heading}</h2>
+          <h2 className='text-3xl text-center md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold redhat text-black mt-4 mb-16'>{heading}</h2>
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             {coreValues.map((value, index) => (
               <div key={index} className="relative flex flex-col items-center text-center">
@@ -237,8 +237,8 @@ export const Works = () => {
                   </div>
                 )}
                 <div className='w-4/5 '>
-                  <h3 className="text-lg lg:text-xl redhat font-semibold text-gray-900 mt-6">{value.title}</h3>
-                  <p className="text-[#141414] opacity-75  redhat mt-2 max-w-xs">{value.description}</p>
+                  <h3 className="text-xl lg:text-2xl redhat font-semibold text-gray-900 mt-6">{value.title}</h3>
+                  <p className="text-[#141414] opacity-75 text-[17px] md:text-[17px] redhat mt-2 max-w-xs">{value.description}</p>
                 </div>
               </div>
             ))}
@@ -297,12 +297,12 @@ export const Sustainability = () => {
       <section
         className=" bg-white pt-16 pb-16 lg:pt-20 lg:pb-20 " style={{ background: `url(${bgimpact.src})center center / cover no-repeat` }}>
         <div className='mx-auto max-w-[1400px] md:mr-0 px-4 md:px-8 lg:px-2 '>
-          <div className='flex flex-wrap lg:flex-nowrap items-center gap-6 px-0 md:px-6    lg:px-2'>
+          <div className='flex flex-wrap lg:flex-nowrap items-center gap-8 px-0 md:px-6    lg:px-2'>
             <div className='w-full lg:w-3/12 '>
-              <h2 className="lg:leading-snug  text-white redhat mb-4 lg:mb-7 text-center lg:text-left text-3xl md:text-4xl  font-medium  w-full">
+              <h2 className="lg:leading-snug  text-white redhat mb-4 lg:mb-7 text-center lg:text-left text-3xl md:text-4xl  lg:text-[40px] font-semibold  w-full">
                 {heading}
               </h2>
-              <p className='text-sm md:text-[15px] text-center md:text-left text-white '>{text}</p>
+              <p className='text-base md:text-[17px] text-center md:text-left text-white '>{text}</p>
 
             </div>
 
@@ -358,9 +358,9 @@ export const Sustainability = () => {
                           <div className='mb-4'>
                             <Image src={item.image} alt='icon' className='w-full h-full rounded-xl' />
                           </div>
-                          <h2 className='text-2xl font-normal pb-4' dangerouslySetInnerHTML={{ __html: item.heading }}></h2>
+                          <h2 className='text-2xl font-semibold pb-4' dangerouslySetInnerHTML={{ __html: item.heading }}></h2>
 
-                          <p className='text-sm lg:text-[16] font-light' dangerouslySetInnerHTML={{ __html: item.description }}>
+                          <p className='text-base lg:text-[17px] font-light' dangerouslySetInnerHTML={{ __html: item.description }}>
                           </p>
                         </div>
                       </div>
@@ -384,7 +384,7 @@ export const Sustainability = () => {
                         }`}
                       disabled={isEnd}
                     >
-                      </button>
+                    </button>
                   </div>
                   <div>
                     <div className="custom-pagination4 flex justify-start mb-3 space-x-2"></div>
@@ -449,7 +449,7 @@ export const Economic = () => {
         <div className='mx-auto max-w-[1400px] md:mr-0 px-4 md:px-8 lg:px-2 '>
           <div className='flex flex-wrap lg:flex-nowrap items-center gap-6 px-0 md:px-6    lg:px-2'>
             <div className='w-full lg:w-3/12 '>
-              <h2 className="lg:leading-snug  text-[#1B453C] redhat mb-4 lg:mb-7 text-center lg:text-left text-3xl md:text-4xl  font-medium  w-full">
+              <h2 className="lg:leading-snug  text-[#1B453C] redhat mb-4 lg:mb-7 text-center lg:text-left text-3xl md:text-4xl  lg:text-[40px] font-semibold w-full">
                 {heading}
               </h2>
 
@@ -501,9 +501,9 @@ export const Economic = () => {
                         <div className='mb-4'>
                           <Image src={item.image} alt='icon' className='w-10 lg:w-[35px] lg:h-[35px]' />
                         </div>
-                        <h2 className='text-2xl font-light pb-6' dangerouslySetInnerHTML={{ __html: item.heading }}></h2>
+                        <h2 className='text-2xl md:text-[26px] font-medium  pb-6' dangerouslySetInnerHTML={{ __html: item.heading }}></h2>
 
-                        <p className='text-sm lg:text-[15] font-light italic' dangerouslySetInnerHTML={{ __html: item.description }}>
+                        <p className='text-base lg:text-[17px] font-light italic' dangerouslySetInnerHTML={{ __html: item.description }}>
                         </p>
                       </div>
                     </div>

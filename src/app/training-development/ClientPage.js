@@ -9,16 +9,16 @@ import WhyChooseUs from '../components/training-development/WhyChooseUs'
 function ClientPage() {
   return (
     <>
-    <BannerTraining/>
-    <IntroSection/>
-    <TrainingProgram/>
-    <WhyChooseUs/>
-    <SuccessStories/>
-     <Certification/>
-     <Faq/>
-     <Register/>
-     <GreenRevolution/>
-     </>
+      <BannerTraining />
+      <IntroSection />
+      <TrainingProgram />
+      <WhyChooseUs />
+      <SuccessStories />
+      <Certification />
+      <Faq />
+      <Register />
+      <GreenRevolution />
+    </>
   )
 }
 

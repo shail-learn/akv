@@ -33,7 +33,7 @@ export const Stress = () => {
 
 export const Ashwagandha = () => {
   const basketData = {
-    note: "To counteract these issues naturally, our project encourages the propagation of traditional herbs renowned in Ayurveda and ethnomedicine for their calming, neuroprotective, and adaptogenic effects. <br/> This vertical focuses on five time-tested herbs: Ashwagandha, Brahmi, Mandukparni, Shatavari, and Tulsi. These plants are not only easy to cultivate in Indian agro-climatic conditions but also hold immense therapeutic value and commercial potential in the wellness and nutraceutical industries.",
+    note: "To counteract these issues naturally, our project encourages the propagation of traditional herbs renowned in Ayurveda and ethnomedicine for their calming, neuroprotective, and adaptogenic effects. <br/><br/> This vertical focuses on five time-tested herbs: Ashwagandha, Brahmi, Mandukparni, Shatavari, and Tulsi. These plants are not only easy to cultivate in Indian agro-climatic conditions but also hold immense therapeutic value and commercial potential in the wellness and nutraceutical industries.",
     image: farmer,
   };
   return (
@@ -41,7 +41,7 @@ export const Ashwagandha = () => {
 
       <section className="py-12 md:!pt-0  px-4 md:px-8 lg:px-16 bg-[#1B453C]">
         <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-8'>
-          <div className="flex flex-col-reverse justify-between lg:flex-row   gap-8">
+          <div className="flex flex-col-reverse justify-between lg:flex-row  items-center gap-8">
             <div className="w-full md:w-1/2">
               <p className="mt-0 md:mt-4 text-white" dangerouslySetInnerHTML={{ __html: basketData.note }} ></p>
             </div>
