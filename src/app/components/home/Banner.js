@@ -111,12 +111,14 @@ export const VedioHome = () => {
       video.addEventListener('loadedmetadata', startVideo, { once: true });
     }
 
-    const handleInteraction = () => {
+    // 💻 Desktop-only click-to-unmute
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    const handleDesktopClick = () => {
       if (video && video.muted) {
         video.muted = false;
+        video.play(); // sometimes necessary to resume audio
         setIsUnmuted(true);
 
-        // Mute again after 10 seconds
         setTimeout(() => {
           video.muted = true;
           setIsUnmuted(false);
@@ -124,16 +126,14 @@ export const VedioHome = () => {
       }
     };
 
-    // ✅ Listen to user interaction across devices
-    const events = ['click', 'touchstart'];
-    events.forEach((event) =>
-      document.body.addEventListener(event, handleInteraction, { once: true })
-    );
+    if (!isMobile) {
+      document.body.addEventListener('click', handleDesktopClick, { once: true });
+    }
 
     return () => {
-      events.forEach((event) =>
-        document.body.removeEventListener(event, handleInteraction)
-      );
+      if (!isMobile) {
+        document.body.removeEventListener('click', handleDesktopClick);
+      }
     };
   }, [isHomepage]);
 
@@ -142,6 +142,7 @@ export const VedioHome = () => {
     if (!video) return;
 
     video.muted = false;
+    video.play(); // make sure audio plays again
     setIsUnmuted(true);
 
     setTimeout(() => {
@@ -164,7 +165,7 @@ export const VedioHome = () => {
           preload="auto"
         />
 
-        {/* 🔊 Floating Unmute Button */}
+        {/* 🔘 Floating Unmute Button */}
         {showUnmuteBtn && !isUnmuted && (
           <button
             onClick={handleUnmuteClick}
@@ -184,5 +185,3 @@ export const VedioHome = () => {
     </div>
   );
 };
-
-//latest test touch feature
