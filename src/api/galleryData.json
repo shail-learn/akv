@@ -341,6 +341,11 @@
         "id": 5,
         "src": "https://www.akv.org.in/admin/rmimages/5csrbook.webp",
         "alt": "Office 5"
+      },
+      {
+        "id": 7,
+        "src": "https://cruxcreativedemo2.com/mailer/akv/21csrbook.webp",
+        "alt": "Office 5"
       }
     ]
   },
@@ -359,17 +364,12 @@
       },
       {
         "id": 3,
-        "src": "https://www.akv.org.in/admin/rmimages/9csrclothes.webp",
-        "alt": "Office 3"
+        "src": "https://cruxcreativedemo2.com/mailer/akv/11csrclothes.webp",
+        "alt": "Office 5"
       },
       {
         "id": 4,
-        "src": "https://www.akv.org.in/admin/rmimages/10csrclothes.webp",
-        "alt": "Office 4"
-      },
-      {
-        "id": 5,
-        "src": "https://www.akv.org.in/admin/rmimages/11csrclothes.webp",
+        "src": "https://cruxcreativedemo2.com/mailer/akv/12csrclothes.webp",
         "alt": "Office 5"
       }
     ]
