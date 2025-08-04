@@ -53,6 +53,98 @@
     ]
   },
   {
+    "title": "Maharaja Ji’s Visit",
+    "images": [
+      {
+        "id": 2,
+        "src": "https://cruxcreativedemo2.com/mailer/akv/mahraj2.webp",
+        "alt": "Office 2"
+      },
+      {
+        "id": 3,
+        "src": "https://cruxcreativedemo2.com/mailer/akv/mahraj3.webp",
+        "alt": "Office 3"
+      },
+      {
+        "id": 4,
+        "src": "https://cruxcreativedemo2.com/mailer/akv/mahraj4.webp",
+        "alt": "Office 4"
+      },
+      {
+        "id": 5,
+        "src": "https://cruxcreativedemo2.com/mailer/akv/mahraj5.webp",
+        "alt": "Office 5"
+      },
+      {
+        "id": 6,
+        "src": "https://cruxcreativedemo2.com/mailer/akv/mahraj6.webp",
+        "alt": "Office 6"
+      },
+      {
+        "id": 7,
+        "src": "https://cruxcreativedemo2.com/mailer/akv/mahraj7.webp",
+        "alt": "Office 7"
+      },
+      {
+        "id": 8,
+        "src": "https://cruxcreativedemo2.com/mailer/akv/mahraj8.webp",
+        "alt": "Office 8"
+      },
+      {
+        "id": 9,
+        "src": "https://cruxcreativedemo2.com/mailer/akv/mahraj9.webp",
+        "alt": "Office 9"
+      },
+      {
+        "id": 10,
+        "src": "https://cruxcreativedemo2.com/mailer/akv/mahraj10.webp",
+        "alt": "Office 10"
+      },
+      {
+        "id": 11,
+        "src": "https://cruxcreativedemo2.com/mailer/akv/mahraj11.webp",
+        "alt": "Office 11"
+      }
+    ]
+  },
+  {
+    "title": "Guest Visit",
+    "images": [
+      {
+        "id": 2,
+        "src": "https://cruxcreativedemo2.com/mailer/akv/guest1.webp",
+        "alt": "Office 2"
+      },
+      {
+        "id": 3,
+        "src": "https://cruxcreativedemo2.com/mailer/akv/guest2.webp",
+        "alt": "Office 3"
+      },
+      {
+        "id": 4,
+        "src": "https://cruxcreativedemo2.com/mailer/akv/guest3.webp",
+        "alt": "Office 4"
+      },
+      {
+        "id": 5,
+        "src": "https://cruxcreativedemo2.com/mailer/akv/guest4.webp",
+        "alt": "Office 4"
+      },
+
+      {
+        "id": 6,
+        "src": "https://cruxcreativedemo2.com/mailer/akv/guest5.webp",
+        "alt": "Office 6"
+      },
+      {
+        "id": 7,
+        "src": "https://cruxcreativedemo2.com/mailer/akv/guest6.webp",
+        "alt": "Office 7"
+      }
+    ]
+  },
+
+  {
     "title": "Agroforestry",
     "images": [
       {
@@ -241,6 +333,11 @@
         "alt": "Office 4"
       },
       {
+        "id": 6,
+        "src": "https://www.akv.org.in/admin/rmimages/12csrclothes.webp",
+        "alt": "Office 6"
+      },
+      {
         "id": 5,
         "src": "https://www.akv.org.in/admin/rmimages/5csrbook.webp",
         "alt": "Office 5"
@@ -274,11 +371,6 @@
         "id": 5,
         "src": "https://www.akv.org.in/admin/rmimages/11csrclothes.webp",
         "alt": "Office 5"
-      },
-      {
-        "id": 6,
-        "src": "https://www.akv.org.in/admin/rmimages/12csrclothes.webp",
-        "alt": "Office 6"
       }
     ]
   },

@@ -53,7 +53,7 @@ export const Reviving = () => {
         },
         {
             title: "Impact",
-            description: "2 lakh trees planted since 2018",
+            description: "5 lakh trees planted since 2018",
         },
     ];
     const value = "86,700"
