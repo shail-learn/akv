@@ -23,7 +23,8 @@ function Page() {
             <section className="max-w-7xl mx-auto calender_event">
                 <div className="w-full px-4 my-10">
                     <iframe
-                        src="https://calendar.google.com/calendar/embed?src=info%40akv.org.in&ctz=Asia%2FKolkata"
+                        // src="https://calendar.google.com/calendar/embed?src=info%40akv.org.in&ctz=Asia%2FKolkata"
+                        src="https://calendar.google.com/calendar/embed?src=atulyekrishivana1%40gmail.com&ctz=Asia%2FKolkata"
                         style={{ border: 0, display: 'block' }}
                         width="100%"
                         height="600"
