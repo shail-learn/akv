@@ -2,20 +2,16 @@
 import { useEffect } from 'react';
 import Swal from 'sweetalert2';
 
-const ExitReviewPopup = () => {
+const ExitPopup = () => {
   useEffect(() => {
-    const neverShowAgain = localStorage.getItem('reviewNeverShow');
-    const alreadyShown = localStorage.getItem('reviewShown');
-
-    if (neverShowAgain || alreadyShown) return;
+    // Check localStorage on mount; if true, skip attaching the event listener
+    if (localStorage.getItem('reviewNeverShow') === 'true') return;
 
     const handleMouseOut = (e) => {
-      if (e.clientY < 50) {
-        localStorage.setItem('reviewShown', 'true');
-
+      // Check localStorage on every mouseout event
+      if (e.clientY < 50 && localStorage.getItem('reviewNeverShow') !== 'true') {
         Swal.fire({
           title: 'Enjoyed Atulya Krishi Vana?',
-          text: 'Leave us a quick Google review. It helps a lot ❤️',
           icon: 'question',
           showCancelButton: true,
           confirmButtonText: 'Sure!',
@@ -29,12 +25,17 @@ const ExitReviewPopup = () => {
               <label for="dontShowAgainCheckbox" style="margin-left: 5px;">Don't show this again</label>
             </div>
           `,
-          didClose: () => {
+          didOpen: () => {
             const checkbox = document.getElementById('dontShowAgainCheckbox');
-            if (checkbox && checkbox.checked) {
-              localStorage.setItem('reviewNeverShow', 'true');
+            if (checkbox) {
+              checkbox.addEventListener('change', () => {
+                if (checkbox.checked) {
+                  localStorage.setItem('reviewNeverShow', 'true');
+                  Swal.close(); // Close popup immediately
+                }
+              });
             }
-          }
+          },
         }).then((result) => {
           if (result.isConfirmed) {
             window.open(
@@ -53,4 +54,4 @@ const ExitReviewPopup = () => {
   return null;
 };
 
-export default ExitReviewPopup;
+export default ExitPopup;
