@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "PR Activity",
+  title: "Muina – Nature-Driven Korean Skincare for You",
   description: "PR Activity",
 };
 

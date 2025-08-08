@@ -5,7 +5,7 @@ import { Footer } from "./components/Footer";
 import CustomCursor from "./components/CustomCursor";
 import Clientonly from "./components/Clientonly";
 import ReCaptchaProviderWrapper from "./components/ReCaptchaProviderWrapper";
-import ExitPopup from "./components/ExitPopup";
+//import ExitPopup from "./components/ExitPopup";
 
 
 
@@ -62,7 +62,7 @@ export default function RootLayout({ children }) {
           {children}
           
           <CustomCursor />
-          <ExitPopup />
+          {/* <ExitPopup /> */}
         </Clientonly>
         <Footer />
         </ReCaptchaProviderWrapper>
