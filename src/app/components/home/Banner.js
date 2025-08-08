@@ -169,7 +169,7 @@ export const VedioHome = () => {
         {showUnmuteBtn && !isUnmuted && (
           <button
             onClick={handleUnmuteClick}
-            className="absolute bottom-4 right-4 bg-white bg-opacity-80 text-black px-4 py-2 rounded-lg shadow-md text-sm hover:bg-opacity-100 transition"
+            className="absolute top-4 right-4 bg-white bg-opacity-80 text-black px-4 py-2 rounded-lg shadow-md text-sm hover:bg-opacity-100 transition"
           >
             🔊 Unmute
           </button>
@@ -177,7 +177,7 @@ export const VedioHome = () => {
 
         {/* ✅ Show "Playing with Sound" */}
         {isUnmuted && (
-          <div className="absolute bottom-4 right-4 bg-green-600 text-white px-4 py-2 rounded-lg shadow-md text-sm">
+          <div className="absolute top-4 right-4 bg-green-600 text-white px-4 py-2 rounded-lg shadow-md text-sm">
             🔊 Playing with sound
           </div>
         )}
