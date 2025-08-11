@@ -13,6 +13,10 @@ import img6 from "../../assets/images/blog/news6.webp";
 import img01 from "../../assets/images/blog/gallery1.jpg";
 import img02 from "../../assets/images/blog/gallery2.jpg";
 import img03 from "../../assets/images/blog/gallery3.jpg";
+import img04 from "../../assets/images/blog/gallery4.webp";
+import img05 from "../../assets/images/blog/gallery5.webp";
+
+
 
 import Image from 'next/image';
 import Link from 'next/link';
@@ -66,6 +70,12 @@ function ClientPage() {
     },
     {
       image: img03,
+    },
+    {
+      image: img04,
+    },
+    {
+      image: img05,
     },
 
   ];
