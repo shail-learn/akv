@@ -85,33 +85,10 @@ export const Bigcard = ({ blog }) => {
 };
 
 
-export const Blogitem = () => {
+export const Blogitem = ({ blogs }) => {
+  if (!blogs || blogs.length === 0) return null;
 
   const shadow = "0px 4px 4px 0px #00000052";
-
-  const blogs = [
-    {
-      title: "UNDERSTANDING THE COSTS OF BUYING THE HOUSE",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-      image: img2,
-      link: "#",
-    },
-    {
-      title: "UNDERSTANDING THE COSTS OF BUYING THE HOUSE",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-      image: img3,
-      link: "#",
-    },
-    {
-      title: "UNDERSTANDING THE COSTS OF BUYING THE HOUSE",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-      image: img4,
-      link: "#",
-    },
-  ];
 
   return (
     <>
@@ -129,10 +106,14 @@ export const Blogitem = () => {
               >
                 <div className="h-56 relative">
                   <Image
-                    src={blog.image}
+                    src={
+                      blog.blog_image
+                        ? `http://127.0.0.1:8000/blogs/${blog.blog_image}`
+                        : "/default-blog.jpg"
+                    }
                     alt={blog.title}
                     fill
-                    className="object-cover"
+                    className="object-cover rounded-t-[10px]"
                   />
                 </div>
 
@@ -140,10 +121,15 @@ export const Blogitem = () => {
                   <h3 className="text-lg md:text-xl font-semibold text-black mb-4 md:mb-6 uppercase">
                     {blog.title}
                   </h3>
-                  <p className="text-base md:text-[17px] text-gray-700 mb-4">{blog.description}</p>
-                  <div className='my-3 pt-4 text-center'>
-                    <Link href={blog.link}>
-                      <span className="inline-block border border-gray-800 text-gray-800 text-base md:text-[17px] px-8 py-3 hover:bg-gray-800 hover:text-white transition" style={{ boxShadow: shadow }}>
+                  <p className="text-base md:text-[17px] text-gray-700 mb-4">
+                    {blog.description || blog.content?.slice(0, 150) + "..."}
+                  </p>
+                  <div className="my-3 pt-4 text-center">
+                    <Link href={`/blogs/${blog.slug}`}>
+                      <span
+                        className="inline-block border border-gray-800 text-gray-800 text-base md:text-[17px] px-8 py-3 hover:bg-gray-800 hover:text-white transition"
+                        style={{ boxShadow: shadow }}
+                      >
                         Read More
                       </span>
                     </Link>
@@ -154,40 +140,6 @@ export const Blogitem = () => {
           </div>
         </div>
       </section>
-
-
-
-      <section
-        className="py-20 md:py-32 bg-cover bg-center flex items-center justify-center px-4"
-        style={{
-          background: `url(${contactbg.src}) center center / cover no-repeat`,
-        }}
-
-      >
-        <div className="border p-10 md:p-14 max-w-xl w-full text-center text-white bg-black/10">
-          <h2 className="text-3xl md:leading-[1.3] md:text-4xl font-semibold redhat mb-4 md:mb-6 text-white">NEWSLETTER</h2>
-
-          <input
-            type="email"
-            placeholder="Your Email"
-            className="w-full p-3 text-black mb-6 mt-8 md:mt-12"
-          />
-
-          <p className="text-base md:text-[17px] py-4 font-light leading-relaxed mb-6">
-            Follow Us On Social Media For Real-Time Updates, Project Sneak Peeks, And More.
-            Stay In The Know And See What’s Happening Behind The Scenes! CONTACT US THROUGH
-            EMAILS AND CHAT WITH US!!!
-          </p>
-
-          <button className="border border-white font-medium text-white py-3 px-12 hover:bg-white hover:text-black transition-all">
-            SUBMIT
-          </button>
-        </div>
-      </section>
-
-
-
-
     </>
-  )
-}
+  );
+};

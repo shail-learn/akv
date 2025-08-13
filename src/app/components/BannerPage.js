@@ -5,23 +5,32 @@ const BannerPage = ({
   video,
   heading,
   title,
-  banner, // string URL ya null
+  banner,
   button,
   link,
   classname = "",
   subtitle,
   opacity,
 }) => {
+  // Determine the final image URL
+  const bannerUrl =
+    typeof banner === "string"
+      ? banner // plain string (static or dynamic URL)
+      : banner?.src; // object with src property
+
   return (
     <div
       className={`py-16 lg:h-[550px] flex items-center justify-center relative`}
       style={
-        !video && banner
-          ? { background: `url(${banner}) center center / cover no-repeat` }
+        !video
+          ? {
+              background: bannerUrl
+                ? `url(${bannerUrl}) center center / cover no-repeat`
+                : "none",
+            }
           : {}
       }
     >
-      {/* Background Video */}
       {video && (
         <video
           className="absolute top-0 left-0 w-full h-full object-cover"
@@ -30,7 +39,7 @@ const BannerPage = ({
           loop
           muted
           playsInline
-          poster={banner || undefined}
+          poster={bannerUrl}
         />
       )}
 
@@ -50,21 +59,18 @@ const BannerPage = ({
               dangerouslySetInnerHTML={{ __html: heading }}
             />
           )}
-
           {subtitle && (
             <p
               className="w-full text-white text-xl md:text-2xl mt-3 mb-7 lg:mt-4 lg:mb-4"
               dangerouslySetInnerHTML={{ __html: subtitle }}
             />
           )}
-
           {title && (
             <p
               className="w-full text-white text-[15px] md:text-base mt-5 mb-7 lg:mt-7 lg:mb-10"
               dangerouslySetInnerHTML={{ __html: title }}
             />
           )}
-
           {button && link && (
             <Link
               className={`${classname} text-white border-2 p-2 px-12 lg:px-20 hover:bg-white hover:text-black transition delay-100 duration-100 ease-in-out`}
