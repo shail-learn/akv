@@ -86,12 +86,11 @@ export const Bigcard = ({ blog }) => {
 
 
 export const Blogitem = ({ blogs }) => {
-  if (!blogs || blogs.length === 0) return null;
-
   const shadow = "0px 4px 4px 0px #00000052";
 
   return (
     <>
+      {/* Blog Grid Section */}
       <section className="py-14 md:py-20 !pt-14 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl text-center md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold redhat mb-8 md:mb-10 text-[#1B453C]">
@@ -104,28 +103,36 @@ export const Blogitem = ({ blogs }) => {
                 key={index}
                 className="bg-white shadow-sm hover:shadow-md transition duration-300"
               >
+                {/* Blog Image */}
                 <div className="h-56 relative">
-                  <Image
-                    src={
-                      blog.blog_image
-                        ? `http://127.0.0.1:8000/blogs/${blog.blog_image}`
-                        : "/default-blog.jpg"
-                    }
-                    alt={blog.title}
-                    fill
-                    className="object-cover rounded-t-[10px]"
-                  />
-                </div>
+  {blog.blog_image ? (
+    <Image
+      src={`http://127.0.0.1:8000/blogs/${blog.blog_image}`}
+      alt={blog.title || "Blog Image"}
+      width={600}
+      height={400}
+      className="object-cover rounded-[12px]"
+    />
+  ) : (
+    <div className="h-full w-full bg-gray-200 rounded-[12px]" />
+  )}
+</div>
 
+                {/* Blog Content */}
                 <div className="p-6">
                   <h3 className="text-lg md:text-xl font-semibold text-black mb-4 md:mb-6 uppercase">
                     {blog.title}
                   </h3>
-                  <p className="text-base md:text-[17px] text-gray-700 mb-4">
-                    {blog.description || blog.content?.slice(0, 150) + "..."}
-                  </p>
+
+                  {blog.description && (
+                    <div
+                      className="text-base md:text-[17px] text-gray-700 mb-4"
+                      dangerouslySetInnerHTML={{ __html: blog.description }}
+                    />
+                  )}
+
                   <div className="my-3 pt-4 text-center">
-                    <Link href={`/blogs/${blog.slug}`}>
+                    <Link href={`/blogs/${blog.slug}` || "#"}>
                       <span
                         className="inline-block border border-gray-800 text-gray-800 text-base md:text-[17px] px-8 py-3 hover:bg-gray-800 hover:text-white transition"
                         style={{ boxShadow: shadow }}
@@ -138,6 +145,36 @@ export const Blogitem = ({ blogs }) => {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Newsletter Section */}
+      <section
+        className="py-20 md:py-32 bg-cover bg-center flex items-center justify-center px-4"
+        style={{
+          background: `url(${contactbg.src}) center center / cover no-repeat`,
+        }}
+      >
+        <div className="border p-10 md:p-14 max-w-xl w-full text-center text-white bg-black/10">
+          <h2 className="text-3xl md:leading-[1.3] md:text-4xl font-semibold redhat mb-4 md:mb-6 text-white">
+            NEWSLETTER
+          </h2>
+
+          <input
+            type="email"
+            placeholder="Your Email"
+            className="w-full p-3 text-black mb-6 mt-8 md:mt-12"
+          />
+
+          <p className="text-base md:text-[17px] py-4 font-light leading-relaxed mb-6">
+            Follow Us On Social Media For Real-Time Updates, Project Sneak Peeks,
+            And More. Stay In The Know And See What’s Happening Behind The Scenes!
+            CONTACT US THROUGH EMAILS AND CHAT WITH US!!!
+          </p>
+
+          <button className="border border-white font-medium text-white py-3 px-12 hover:bg-white hover:text-black transition-all">
+            SUBMIT
+          </button>
         </div>
       </section>
     </>
