@@ -31,55 +31,58 @@ export const Banner = () => {
 
 
 
-export const Bigcard = () => {
-  const plantingData = {
-    title: "The Miraculous Benefits of Seesham (Rose Sandalwood) – A Natural Healer",
-    shortdesciption: `Discover how AKV is transforming urban India through cutting-edge technology and smart infrastructure solutions.`,
-    imageSrc: img01,
-  };
+export const Bigcard = ({ blog }) => {
+  if (!blog) return null; // nothing to show if no blog
+
   const shadow = "0px 4px 4px 0px #00000052";
 
   return (
-    <>
-
-      <section className='py-16  lg:py-20' >
-        <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2'>
-          <div className='flex flex-col lg:flex-row justify-between items-center gap-12 lg:gap-16'>
-            <div className="md:w-1/2 w-full">
-              <div className='relative'>
-
-                <Image
-                  src={plantingData.imageSrc}
-                  alt="Planting Techniques"
-                  width={600}
-                  height={400}
-                  className="rounded-[20px]"
-                  style={{ boxShadow: "4px 4px 4px 0px #00000040" }}
-                />
-                <div className="absolute inset-0 -z-10 h-[110%] w-[96%] md:w-full translate-x-6 -translate-y-3 md:-translate-y-4 bg-white border border-gray-400 rounded-[20px] shadow-md"></div>
-
-              </div>
-
+    <section className='py-16 lg:py-20'>
+      <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-2'>
+        <div className='flex flex-col lg:flex-row justify-between items-center gap-12 lg:gap-16'>
+          
+          {/* Blog Image */}
+          <div className="md:w-1/2 w-full">
+            <div className='relative'>
+              <Image
+                src={`http://127.0.0.1:8000/blogs/${blog.blog_image}`} // dynamic image
+                alt={blog.title}
+                width={600}
+                height={400}
+                className="rounded-[20px]"
+                style={{ boxShadow: "4px 4px 4px 0px #00000040" }}
+              />
+              <div className="absolute inset-0 -z-10 h-[110%] w-[96%] md:w-full translate-x-6 -translate-y-3 md:-translate-y-4 bg-white border border-gray-400 rounded-[20px] shadow-md"></div>
             </div>
-            <div className='lg:w-6/12  w-12/12'>
-
-              <h2 className="text-3xl md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold redhat mb-4 md:mb-6 text-[#1B453C]">{plantingData.title}</h2>
-              <p
-                className="text-base md:text-[17px] font-normal redhat text-black mb-10 md:mb-14"
-                dangerouslySetInnerHTML={{ __html: plantingData.shortdesciption }}
-              ></p>
-              <div className='text-center mt-10 md:mt-14'>
-                <Link href="/blogs/the-miraculous-benefits-of-seesham-rose-sandalwood-a-natural-healer" className='border border-black py-4 px-12 hover:bg-[#1B453C] hover:text-white' style={{ boxShadow: shadow }}>READ MORE</Link>
-              </div>
-            </div>
-
           </div>
-        </div>
-      </section>
-    </>
-  )
-}
 
+          {/* Blog Content */}
+          <div className='lg:w-6/12 w-12/12'>
+            <h2 className="text-3xl md:leading-[1.3] md:text-4xl lg:text-[40px] font-semibold redhat mb-4 md:mb-6 text-[#1B453C]">
+              {blog.title}
+            </h2>
+            <p
+              className="text-base md:text-[17px] font-normal redhat text-black mb-10 md:mb-14"
+              dangerouslySetInnerHTML={{ __html: blog.content }}
+            ></p>
+            
+            {/* Read More Button */}
+            <div className='text-center mt-10 md:mt-14'>
+              <Link
+                href={`/blogs/${blog.slug}`} // dynamic link to blog page
+                className='border border-black py-4 px-12 hover:bg-[#1B453C] hover:text-white'
+                style={{ boxShadow: shadow }}
+              >
+                READ MORE
+              </Link>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  );
+};
 
 
 export const Blogitem = () => {
