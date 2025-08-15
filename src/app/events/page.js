@@ -17,10 +17,8 @@ function Page() {
 
     // Safe defaults
     const bannerUrl = data.banner
-        ? data.banner.startsWith("http")
-            ? data.banner
-            : `/images/${data.banner}`
-        : "/images/default.jpg"; // default banner
+    ? `http://127.0.0.1:8000/images/${data.banner}`
+    : "/images/default.jpg";
 
     const heading = data.heading || "Upcoming Events";
     const subtitle = data.subtitle || "";
