@@ -1,25 +1,29 @@
 "use client";
-import { React, useState, useEffect } from "react";
+import { React, useState } from "react";
 import banner from "../../assets/images/training/training-banner1.webp";
 import BannerPage from '../components/BannerPage'
 import Image from 'next/image';
+import gallerySections from '../../api/galleryData.json';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { IoCloseOutline } from "react-icons/io5";
 
+
 function ClientPage() {
 
     const text = {
         banner: banner,
         heading: `Gallery`,
-        title: "Empowering individuals through expert training and sustainable practices.",
+        title:
+            "Empowering individuals through expert training and sustainable practices.",
         className: "bg-white !text-black hover:!bg-transparent py-4 hover:!text-white",
+
         opacity: "opacity-60"
     };
 
-    const [gallerySections, setGallerySections] = useState([]);
+
     const [isOpen, setIsOpen] = useState(false);
     const [startIndex, setStartIndex] = useState(0);
     const [activeImages, setActiveImages] = useState([]);
@@ -42,13 +46,7 @@ function ClientPage() {
         }
     };
 
-    // Fetch gallery data from Laravel API
-    useEffect(() => {
-        fetch("https://www.akv.org.in/api/gallery")
-            .then(res => res.json())
-            .then(data => setGallerySections(data))
-            .catch(err => console.error("Failed to fetch gallery:", err));
-    }, []);
+
 
     return (
         <>
@@ -62,6 +60,7 @@ function ClientPage() {
                 opacity={text.opacity}
             />
 
+
             <section className="py-12 lg:py-16">
                 <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-2">
                     {gallerySections.map((section, secIdx) => (
@@ -69,9 +68,12 @@ function ClientPage() {
                             <h2 className="text-2xl md:text-3xl font-normal py-3 mb-10 bg-[#1B453C] text-white text-center">
                                 {section.title}
                             </h2>
-                            {section.description &&
+                            {
+                                section.description &&
                                 <p className="mb-8 -mt-2 text-center">{section.description}</p>
                             }
+
+
 
                             <div className={`mb-14 gap-6 ${section.title === "Videos"
                                 ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
@@ -84,7 +86,7 @@ function ClientPage() {
                                         className="cursor-pointer group"
                                     >
                                         <Image
-                                            src={`https://www.akv.org.in/${img.src}`}
+                                            src={img.src}
                                             alt={img.alt}
                                             width={600}
                                             height={600}
@@ -131,8 +133,10 @@ function ClientPage() {
                     )}
                 </div>
             </section>
+
+
         </>
     )
 }
 
-export default ClientPage;
+export default ClientPage
