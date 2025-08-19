@@ -45,7 +45,7 @@ export const Bigcard = ({ blog }) => {
           <div className="md:w-1/2 w-full">
             <div className='relative'>
               <Image
-                src={`/admin/blogs/${blog.blog_image}`} // dynamic image
+                src={`https://www.akv.org.in/admin/blogs/${blog.blog_image}`} // dynamic image
                 alt={blog.title}
                 width={600}
                 height={400}
@@ -107,7 +107,7 @@ export const Blogitem = ({ blogs }) => {
                 <div className="h-56 relative">
   {blog.blog_image ? (
     <Image
-      src={`/admin/blogs/${blog.blog_image}`}
+      src={`https://www.akv.org.in/admin/blogs/${blog.blog_image}`}
       alt={blog.title || "Blog Image"}
       width={600}
       height={400}

@@ -2,7 +2,7 @@ import ClientPage from './ClientPage';
 
 export async function generateMetadata({ params }) {
   // Fetch the blog by slug from your Laravel API
-  const res = await fetch(`/api/blogs/${params.slug}`);
+  const res = await fetch(`https://www.akv.org.in/api/blogs/${params.slug}`);
   const data = await res.json();
   const blog = data.data[0];
 
@@ -13,7 +13,7 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function BlogPage({ params }) {
-  const res = await fetch(`/api/blogs/${params.slug}`);
+  const res = await fetch(`https://www.akv.org.in/api/blogs/${params.slug}`);
   const data = await res.json();
   const blog = data.data[0]; // single blog object
 
