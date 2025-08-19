@@ -10,7 +10,7 @@ export default function ClientPage({ blog }) {
     <>
       <BannerPage
   heading={blog.title}
-  banner={blog.blog_image ? `https://akv.org.in/blogs/${blog.blog_image}` : null}
+  banner={blog.blog_image ? `/admin/blogs/${blog.blog_image}` : null}
 />
 
       <section className='py-14'>
