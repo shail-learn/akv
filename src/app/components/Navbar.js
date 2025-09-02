@@ -45,9 +45,11 @@ const navigation = [
     href: "#",
     submenu: [
       // { name: "CSR Activity", href: "/csr-activity" },
+
       { name: "Our Projects", href: "/our-projects" },
       { name: "Events", href: "/events" },
-      // { name: "Blogs", href: "/blogs" },
+
+      { name: "Blogs", href: "/blogs" },
 
     ],
   },

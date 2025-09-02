@@ -74,12 +74,12 @@ export const TreeBanner = () => {
 
                 <div className='mx-auto max-full bg-[#DFDCB1]   '>
                     <div className='grid items-center grid-col-1  md:grid-cols-12 justify-center gap-6'>
-                        <div className='w-full md:col-span-6'>
+                        <div className='w-full   md:col-span-6'>
                             <Image className='w-100' src={banner} alt="banner" />
                         </div>
-                        <div className='w-full p-6 pb-16 md:col-span-4 md:p-10'>
-                            <Image src={quotes} className='h-12 w-full md:w-auto md:h-auto' alt="icon" />
-                            <p className='text-xl text-center md:text-left md:text-2xl font-normal mt-6'>
+                        <div className='w-full p-6 pb-16 md:col-span-5 md:p-10 flex items-center gap-4'>
+                            <Image src={quotes} className='h-12 w-auto md:w-auto md:h-auto' alt="icon" />
+                            <p className='text-xl text-left md:text-2xl font-normal mt-16'>
                                 {description} <b className='text-[#1B453C]'>{bold}.</b>
                             </p>
                         </div>
