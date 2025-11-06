@@ -6,7 +6,7 @@ import banner from "../../assets/images/team/teambanner.webp";
 import member1 from "../../assets/images/team/mk.webp";
 import member2 from "../../assets/images/team/Atul-Aggarwal.webp";
 import member3 from "../../assets/images/team/Sanjay-Mittal.webp";
-import member4 from "../../assets/images/team/SK-Pande.webp";
+import member4 from "../../assets/images/team/pankaj-sarda.webp";
 
 import Image from 'next/image';
 import { GrLinkedinOption } from "react-icons/gr";
@@ -68,21 +68,15 @@ function ClientPage() {
       ]
     },
     {
-      "name": "Dr. S.K. Pande",
-      "title": "Associate Director",
-      "quote": "\"A Legacy of Research, Innovation, and Agricultural Excellence\"",
-      "linkedin": "https://www.linkedin.com/in/dr-subodh-kumar-pande-604930295/",
+      "name": "Mr. Pankaj Sarda",
+      "title": "Project Head",
+      "linkedin": "https://www.linkedin.com/in/pankaj-sarda-5a6565206/",
 
       "image": member4,
       "description": [
-        "Dr. S.K. Pande is a distinguished academician, researcher, and leader in agricultural sciences. Having decades of experience in teaching, research, and administration, he has dedicated his career in innovative agriculture technologies, advancing sustainable farming practices and plant pathology.",
-        "His expertise spans <strong>integrated pest and disease management, mycotoxin research, hydroponics, medicinal plants, and bio-fertilizers,</strong> significantly contributing to the development of eco-friendly and technology-driven agricultural solutions.",
-        "<strong class='text-base md:text-xl'>His Contributions:</strong>",
-        "Driving research in <strong>sustainable modern agriculture, food grain storage, and plant disease management etc.</strong>",
-        "Mentoring future leaders, having <strong>guided Ph.D. and M.Sc. scholars</strong> in pioneering research.",
-        "Leading multiple <strong>government-funded projects</strong> on mushrooms, medicinal plants, and crop protection.",
-        "Published  <strong>60+ research papers, authoring books, and holding patents </strong> in plant science / agriculture science.",
-        "Served as <strong>Director, School of Agriculture Science at LNCT University, Bhopal,</strong> Dr. Pande continues to <strong>shape the future of agriculture through education, research, and innovation,</strong> ensuring a greener and more resilient tomorrow."
+        "A passionate agroforestry enthusiast and advocate of sustainable agriculture, Pankaj Sarda brings over two decades of leadership in regenerative farming, agroforestry plantation management, and agribusiness innovation. With a deep connection to the greenery and harmony of Mother Nature, he finds immense joy in exploring forests, natural landscapes, and diverse ecosystems — both in person and through virtual journeys on Google Earth.        ",
+        "Driven by his belief in ecological balance and sustainable land use, Pankaj blends scientific expertise with a heartfelt respect for nature. His work focuses on creating climate-resilient agricultural systems, promoting biodiversity, and restoring degraded lands through agroforestry and biodynamic practices.",
+        "As the Project Head at Atulye Krishi Vana, he leads the planning and execution of large-scale plantations, ensuring every initiative aligns with long-term environmental and community goals. His vision reflects a perfect harmony of technology, tradition, and sustainability — making agriculture not just productive, but regenerative and inspiring."
       ]
     },
     {

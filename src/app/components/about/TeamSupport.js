@@ -8,7 +8,7 @@ import banner2 from "../../../assets/images/about/contact.webp";
 import { useState, useEffect } from 'react';
 import Team1 from "../../../assets/images/home/mk.webp";
 import Team2 from "../../../assets/images/home/atul.webp";
-import Team3 from "../../../assets/images/home/sk-pande.webp";
+import Team3 from "../../../assets/images/home/pankaj-sarda.webp";
 import Team4 from "../../../assets/images/home/sanjay.webp";
 
 import Link from 'next/link';
@@ -36,8 +36,8 @@ export const Team = () => {
     {
       id: 3,
       image: Team3,
-      name: "Dr. SK Pande",
-      designation: "Associate Director",
+      name: "Mr. Pankaj Sarda",
+      designation: "Project Head",
     },
     {
       id: 4,
