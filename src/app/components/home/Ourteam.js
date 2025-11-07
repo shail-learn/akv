@@ -31,18 +31,19 @@ export const Ourteam = () => {
       name: "Shri Atul Aggarwal",
       designation: "Co-Founder & Chairman",
     },
-    {
-      id: 3,
-      image: Team3,
-      name: "Mr. Pankaj Sarda",
-      designation: "Project Head",
-    },
+
     {
       id: 4,
       image: Team4,
       name: "Shri Sanjay Mittal",
       designation: "Technology Consultant",
     },
+    // {
+    //   id: 3,
+    //   image: Team3,
+    //   name: "Mr. Pankaj Sarda",
+    //   designation: "Project Head",
+    // },
     // {
     //   id: 5,
     //   img: Team5,
