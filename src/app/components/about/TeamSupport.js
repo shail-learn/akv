@@ -33,12 +33,12 @@ export const Team = () => {
       name: "Shri Atul Aggarwal",
       designation: "Co-Founder & Chairman",
     },
-    {
-      id: 3,
-      image: Team3,
-      name: "Mr. Pankaj Sarda",
-      designation: "Project Head",
-    },
+    // {
+    //   id: 3,
+    //   image: Team3,
+    //   name: "Mr. Pankaj Sarda",
+    //   designation: "Project Head",
+    // },
     {
       id: 4,
       image: Team4,
@@ -60,7 +60,7 @@ export const Team = () => {
               <div className='lg:col-span-8 w-full w-12/12' >
                 <div className='lg:grid flex flex-wrap gap-6  lg:gap-6 grid-cols-1 lg:grid-cols-12'>
                   {teamMember.map((item, index) => (
-                    <div key={index} className='md:col-span-3 md:w-full md:w-12/12 col-span-2 w-[46%]' >
+                    <div key={index} className='md:col-span-4 md:w-full md:w-12/12 col-span-2 w-[46%]' >
                       <TeamCard data={item} />
                     </div>
                   ))}

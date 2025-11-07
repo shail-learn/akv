@@ -67,18 +67,18 @@ function ClientPage() {
         "His vision is to develop the world’s most sustainable private forestry system and position agroforestry as a global solution to climate change, food security, and economic resilience."
       ]
     },
-    {
-      "name": "Mr. Pankaj Sarda",
-      "title": "Project Head",
-      "linkedin": "https://www.linkedin.com/in/pankaj-sarda-5a6565206/",
+    // {
+    //   "name": "Mr. Pankaj Sarda",
+    //   "title": "Project Head",
+    //   "linkedin": "https://www.linkedin.com/in/pankaj-sarda-5a6565206/",
 
-      "image": member4,
-      "description": [
-        "A passionate agroforestry enthusiast and advocate of sustainable agriculture, Pankaj Sarda brings over two decades of leadership in regenerative farming, agroforestry plantation management, and agribusiness innovation. With a deep connection to the greenery and harmony of Mother Nature, he finds immense joy in exploring forests, natural landscapes, and diverse ecosystems — both in person and through virtual journeys on Google Earth.        ",
-        "Driven by his belief in ecological balance and sustainable land use, Pankaj blends scientific expertise with a heartfelt respect for nature. His work focuses on creating climate-resilient agricultural systems, promoting biodiversity, and restoring degraded lands through agroforestry and biodynamic practices.",
-        "As the Project Head at Atulye Krishi Vana, he leads the planning and execution of large-scale plantations, ensuring every initiative aligns with long-term environmental and community goals. His vision reflects a perfect harmony of technology, tradition, and sustainability — making agriculture not just productive, but regenerative and inspiring."
-      ]
-    },
+    //   "image": member4,
+    //   "description": [
+    //     "A passionate agroforestry enthusiast and advocate of sustainable agriculture, Pankaj Sarda brings over two decades of leadership in regenerative farming, agroforestry plantation management, and agribusiness innovation. With a deep connection to the greenery and harmony of Mother Nature, he finds immense joy in exploring forests, natural landscapes, and diverse ecosystems — both in person and through virtual journeys on Google Earth.        ",
+    //     "Driven by his belief in ecological balance and sustainable land use, Pankaj blends scientific expertise with a heartfelt respect for nature. His work focuses on creating climate-resilient agricultural systems, promoting biodiversity, and restoring degraded lands through agroforestry and biodynamic practices.",
+    //     "As the Project Head at Atulye Krishi Vana, he leads the planning and execution of large-scale plantations, ensuring every initiative aligns with long-term environmental and community goals. His vision reflects a perfect harmony of technology, tradition, and sustainability — making agriculture not just productive, but regenerative and inspiring."
+    //   ]
+    // },
     {
       "name": "Shri Sanjay Mittal",
       "title": "Technology Consultant",
